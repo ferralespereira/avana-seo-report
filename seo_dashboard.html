@@ -123,17 +123,6 @@
   }
   .indicator-title { font-size: 18px; font-weight: 700; }
   .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
-  .indicator-summary {
-    margin-left: auto;
-    padding-left: 20px;
-    border-left: 1px solid rgba(255,255,255,.2);
-    max-width: 360px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 6px;
-  }
   .status-badge {
     display: inline-block;
     padding: 3px 12px;
@@ -142,15 +131,47 @@
     font-weight: 800;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
   }
   .status-badge.good  { background: var(--green);  color: #fff; }
   .status-badge.warn  { background: var(--orange); color: #fff; }
   .status-badge.bad   { background: var(--red);    color: #fff; }
   .status-badge.info  { background: var(--teal);   color: #fff; }
-  .summary-text {
+
+  /* ── Indicator summary panel ── */
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
     font-size: 12px;
-    color: #c8d8e8;
-    line-height: 1.6;
+    color: #444;
+    line-height: 1.55;
   }
   .indicator-body { padding: 24px; }
 
@@ -328,9 +349,34 @@
         <div class="indicator-title">Findings — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">avanaplasticsurgery.com · Feb 14 – May 14, 2026</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge good">Good</span>
-        <div class="summary-text">Strong organic performance — SEO is the #1 acquisition channel (47.96% of all sessions). Financing pages drive 41% of conversions. Core KPIs are healthy but non-branded traffic is the key gap.</div>
+      <span class="status-badge good">Good</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Traffic</div>
+          <div class="summary-item-text">62,500 clicks · 1.62M impressions · 3.9% CTR · avg. position 14.4 over 3 months. Organic search is performing well at scale.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Organic Sessions</div>
+          <div class="summary-item-text">115,997 organic sessions via GA4 — 47.96% of all 241,838 total sessions. SEO is the undisputed #1 acquisition channel for this business.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Engagement</div>
+          <div class="summary-item-text">52.13% engagement rate · 1m 10s avg. engagement time. Strong quality signal — organic visitors are genuinely interested, not bounce traffic.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Conversions</div>
+          <div class="summary-item-text">8,143 key events from organic. Financing pages drive 3,361 of those events (41% of all organic conversions) — the highest-converting content category on the site.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Rankings &amp; Authority</div>
+          <div class="summary-item-text">10,877 keywords ranked · AS 29/100 · $59,300/mo estimated traffic value. Solid presence but Authority Score is below the 40+ held by top Miami competitors.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Site Health</div>
+          <div class="summary-item-text">90% Semrush site health · 8 errors · 1,763 warnings. Technically functional but 1,243 nofollow internal links and 212 broken links are suppressing the site's full potential.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -407,9 +453,34 @@
         <div class="indicator-title">Opportunities — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">Quick wins and long-term growth opportunities</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge warn">Needs Work</span>
-        <div class="summary-text">BBL Miami (127K impressions, 0.97% CTR) and Tummy Tuck (48K impressions, 1.08% CTR) are leaving massive traffic on the table. Meta rewrites alone could 3–5× clicks without needing rank improvements.</div>
+      <span class="status-badge warn">Needs Work</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">BBL Miami Page</div>
+          <div class="summary-item-text">126,985 impressions but only 0.97% CTR. This single page is the biggest missed opportunity on the site — a better title and meta description alone could add 1,000+ clicks/month.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Tummy Tuck Miami</div>
+          <div class="summary-item-text">48,210 impressions at 1.08% CTR. Same pattern as BBL — high visibility but uncompelling snippet. Users are seeing the page but choosing competitors' results instead.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Non-Branded Keywords</div>
+          <div class="summary-item-text">90%+ of clicks are branded navigational queries. Procedure terms like 'rhinoplasty miami' and 'mommy makeover miami' are severely underperforming relative to search volume.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Financing CTAs</div>
+          <div class="summary-item-text">Financing pages convert at 41% but financing CTAs are absent from all procedure pages. Adding them site-wide is the fastest conversion rate improvement available.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Internal PageRank</div>
+          <div class="summary-item-text">1,243 internal nofollow links are blocking equity from flowing to key procedure pages. Fixing these will redistribute PageRank and likely lift rankings on competitive terms.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Schema Markup</div>
+          <div class="summary-item-text">No MedicalProcedure, LocalBusiness, or BreadcrumbList schema implemented. Missing structured data limits SERP rich snippet eligibility and reduces click-through rates.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -460,9 +531,34 @@
         <div class="indicator-title">Technical Issues — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">GSC Coverage · Semrush Site Audit · Core Web Vitals</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">1,243 nofollow internal links are blocking PageRank flow site-wide — the single most damaging technical issue. 212 broken links (404s) compound the problem. Site health is 90% but these two issues override the score.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Nofollow Internal Links</div>
+          <div class="summary-item-text">1,243 internal links carry the nofollow attribute, blocking PageRank from flowing to procedure and service pages. This is the single highest-impact technical fix available — it affects the entire site.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Broken Links (404s)</div>
+          <div class="summary-item-text">212 internal 404 errors create dead ends for users and waste crawl budget. Search engines encountering 404s reduce crawl frequency and can downgrade the affected sections.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Semrush Site Audit</div>
+          <div class="summary-item-text">90% health score with 8 critical errors and 1,763 warnings. Errors include redirect chains, missing alt tags, and duplicate content signals that dilute page authority.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Core Web Vitals</div>
+          <div class="summary-item-text">Issues detected on mobile. LCP and CLS are the primary concerns on high-traffic procedure pages. Poor CWV scores directly impact Google's ranking algorithm for mobile search.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Coverage</div>
+          <div class="summary-item-text">1,010 pages indexed — valid, but crawl anomalies need ongoing monitoring. Any important pages returning errors or excluded from indexing represent direct lost ranking opportunities.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Missing Schema</div>
+          <div class="summary-item-text">MedicalBusiness, MedicalProcedure, BreadcrumbList, and Review schema are all absent. Structured data is required for rich SERP features that increase CTR on medical queries.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -562,9 +658,34 @@
         <div class="indicator-title">Current Positioning — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">GSC · Semrush Organic Rankings · Authority Labs (186 keywords)</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge warn">Needs Work</span>
-        <div class="summary-text">10,877 keywords ranked and $59.3K/mo traffic value are solid, but 90%+ of clicks are branded. Procedure terms like 'bbl miami' and 'tummy tuck miami' rank far below potential. Non-branded strategy is the priority.</div>
+      <span class="status-badge warn">Needs Work</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Overview</div>
+          <div class="summary-item-text">Avg. position 14.4 across all indexed queries. A 3.9% CTR at this average position suggests many ranking URLs sit just outside the top 5 — the sweet spot for meaningful click volume.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Authority Labs — Top 3</div>
+          <div class="summary-item-text">40 of 186 tracked keywords rank in positions 1–3. Strong in branded terms and 'lipo 360' (#1), but the top-3 count drops sharply for competitive procedure keywords.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Branded Keywords</div>
+          <div class="summary-item-text">'Avana plastic surgery' ranks #1 driving 19,800 clicks/quarter. Brand dominance is strong, but this performance masks poor non-branded procedure keyword rankings.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Procedure Ranking Gaps</div>
+          <div class="summary-item-text">'BBL miami' at #6 · 'tummy tuck miami' ranked but underperforming vs. impression count · 'rhinoplasty miami' not consistently in the top 10. These are the highest-value gaps to close.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Traffic Value</div>
+          <div class="summary-item-text">$59,300/mo estimated traffic value (Semrush). This is a significant SEO asset — any ranking drop on top branded or procedure terms would immediately impact revenue and lead generation.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Authority Score</div>
+          <div class="summary-item-text">29/100 (Semrush). Functional for a local medical site but well below the 40+ scores of top Miami plastic surgery competitors. Low AS limits ranking ceiling on competitive terms.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -663,9 +784,34 @@
         <div class="indicator-title">Competition — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">Semrush Organic Rankings — 4,017 total competitors identified</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge warn">Needs Work</span>
-        <div class="summary-text">CGCosmetic.com (32.1K traffic) and MiamiPlasticSurgery.com (20.4K) outperform on procedure keywords. Avana's referring domain count (533) is well below competitors at 800–1,200+. Link building is urgent.</div>
+      <span class="status-badge warn">Needs Work</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Top Competitor</div>
+          <div class="summary-item-text">CGCosmetic.com generates 32.1K organic traffic/month — 2.5× Avana's estimated traffic. It outranks on most non-branded procedure terms and has a significantly stronger backlink profile.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Second Competitor</div>
+          <div class="summary-item-text">MiamiPlasticSurgery.com generates 20.4K traffic/month. Strong on BBL, tummy tuck, and rhinoplasty keywords — the exact procedure terms where Avana most needs to improve.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Keyword Overlap</div>
+          <div class="summary-item-text">Semrush identifies 4,017 organic competitors. The top 5 share 60%+ keyword overlap with Avana — this is a highly competitive market with established players on every key query.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Backlink Gap</div>
+          <div class="summary-item-text">Avana: 533 referring domains. Top competitors average 800–1,200+. This gap directly correlates with Avana's ranking disadvantages on competitive non-branded procedure searches.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Competitive Strengths</div>
+          <div class="summary-item-text">Avana holds #1 on all branded terms and owns 'lipo 360' at #1 (33,100 searches/mo, KD 21). These are valuable positions — but they alone are not enough to capture procedure-intent traffic.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Link Velocity</div>
+          <div class="summary-item-text">Referring domains declined from 817 to 521 over 12 months — a loss of 296 linking domains. While Avana is losing links, competitors are likely maintaining or growing their backlink profiles.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -726,9 +872,34 @@
         <div class="indicator-title">Content — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">On-page analysis · E-E-A-T · Backlinks · Local SEO</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge warn">Needs Work</span>
-        <div class="summary-text">Referring domains declined from 817 to 521 over 12 months — active link loss. E-E-A-T is weak: no doctor bios, credentials, or procedure schema. Financing CTAs are missing from procedure pages despite driving 41% of conversions.</div>
+      <span class="status-badge warn">Needs Work</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Page Volume</div>
+          <div class="summary-item-text">1,010 indexed pages — good scale. However, content quality and search intent alignment vary significantly across procedure categories. A content audit is needed to prioritize updates.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Backlink Profile</div>
+          <div class="summary-item-text">AS 29 · 533 referring domains actively declining from a peak of 817 — a loss of 296 domains in 12 months. This is a critical signal that requires an immediate link-building response.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">E-E-A-T Gaps</div>
+          <div class="summary-item-text">No individual surgeon bio pages, no credentials displayed online, no before/after galleries with schema markup. For a YMYL medical site, these trust signals are essential to rank on competitive terms.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Structured Data</div>
+          <div class="summary-item-text">No MedicalProcedure, LocalBusiness, or Review schema implemented. Structured data is required for medical SERP features — star ratings, procedure details, and local pack appearance.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Conversion Content</div>
+          <div class="summary-item-text">Financing pages convert at 41% — the highest of any content type. Yet financing CTAs are absent from all procedure pages. Adding them site-wide is the highest-ROI content change available.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Local SEO</div>
+          <div class="summary-item-text">GBP status unverified for Miami and Dallas locations. Local citation audit is pending (Semrush local was unavailable). RealSelf, Healthgrades, and Zocdoc profiles are critical for medical local SEO.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -812,9 +983,34 @@
         <div class="indicator-title">Keywords — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">GSC Queries · Semrush Organic Rankings · Authority Labs (186 keywords)</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge warn">Needs Work</span>
-        <div class="summary-text">'Lipo 360' at #1 is a standout win. But 'bbl miami' sits at #6 and 'tummy tuck miami' is underperforming vs. its impression volume. 90%+ of traffic is branded — the non-branded keyword strategy needs an urgent overhaul.</div>
+      <span class="status-badge warn">Needs Work</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Authority Labs Overview</div>
+          <div class="summary-item-text">186 keywords tracked · 40 in positions 1–3 · 73 in top 10 · 34 in positions 11–20 · 39 below position 20. Strong top-3 count but concentrated in branded queries.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Top Performers</div>
+          <div class="summary-item-text">'Lipo 360' ranks #1 (33,100 searches/mo, KD 21) — the most valuable non-branded keyword the site owns. 'Avana plastic surgery' #1. 'Plastic surgery miami' is trending upward.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Priority Gaps</div>
+          <div class="summary-item-text">'BBL miami' at #6 (~5K searches/mo) · 'tummy tuck miami' ranking but below first page · 'rhinoplasty miami' at #12–15. These three terms represent the highest-value ranking improvements available.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Branded vs Non-Branded</div>
+          <div class="summary-item-text">Over 90% of GSC clicks are branded navigational queries. The site is not capturing transactional (procedure-intent) searches effectively — this is the core keyword strategy problem.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Keyword Intent</div>
+          <div class="summary-item-text">Top-ranking terms are primarily navigational (branded), not transactional (procedure searches). A content and link-building strategy targeting non-branded procedure keywords is the next growth lever.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Expand Tracking</div>
+          <div class="summary-item-text">186 tracked keywords is a good start — recommend expanding to 300+ to capture 'mommy makeover miami', 'rhinoplasty miami', 'breast augmentation miami', and key Dallas procedure terms.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -868,9 +1064,34 @@
         <div class="indicator-title">Recommendations — Avana Plastic Surgery</div>
         <div class="indicator-subtitle">Prioritized action plan · High / Medium / Low</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge info">Action Plan</span>
-        <div class="summary-text">3 critical fixes: nofollow internal links, BBL/Tummy Tuck meta optimization, and link-building campaign. Medium-term: add financing CTAs to all procedure pages, implement schema markup, and expand Google Business Profile coverage.</div>
+      <span class="status-badge info">Action Plan</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — Nofollow Links</div>
+          <div class="summary-item-text">Fix all 1,243 nofollow internal links. This is the single highest-ROI technical fix — it immediately improves PageRank distribution to every procedure and service page on the site.</div>
+        </div>
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — Meta Optimization</div>
+          <div class="summary-item-text">Rewrite BBL Miami and Tummy Tuck Miami title tags and meta descriptions targeting 2–4% CTR. Estimated impact: +2,000–5,000 additional clicks/month from existing rankings alone.</div>
+        </div>
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — Link Building</div>
+          <div class="summary-item-text">Launch a link-building campaign immediately. Referring domains dropped from 817 to 521 in 12 months. Target: recover to 700+ quality referring domains within 6 months.</div>
+        </div>
+        <div class="summary-item priority-med">
+          <div class="summary-item-label">MEDIUM — Financing CTAs</div>
+          <div class="summary-item-text">Add financing CTAs to all procedure pages. Financing content converts at 41% — the highest of any category — yet these CTAs are missing from the pages that drive the most procedure-intent traffic.</div>
+        </div>
+        <div class="summary-item priority-med">
+          <div class="summary-item-label">MEDIUM — Schema Markup</div>
+          <div class="summary-item-text">Implement MedicalProcedure, LocalBusiness, BreadcrumbList, and Review schema across all procedure and location pages. Required for rich SERP features that increase organic CTR.</div>
+        </div>
+        <div class="summary-item priority-low">
+          <div class="summary-item-label">LOW — Expand &amp; Build</div>
+          <div class="summary-item-text">Grow Authority Labs tracking to 300+ keywords · add surgeon bio pages with credentials · verify GBP for Miami and Dallas · build out RealSelf, Healthgrades, and Zocdoc profiles.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -914,9 +1135,34 @@
         <div class="indicator-title">Findings — Avana Wellness Plus</div>
         <div class="indicator-subtitle">avanawellnessplus.com · Feb 14 – May 14, 2026</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">Minimal organic presence — 558 clicks, 0.8% CTR, 772 sessions. Zero conversion tracking in GA4 means no results can be measured. This site is 150× behind Plastic Surgery and needs foundational SEO work immediately.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Traffic</div>
+          <div class="summary-item-text">558 clicks · 72K impressions · 0.8% CTR · avg. position 17.7 over 3 months. Extremely low click volume relative to impression count — the site is visible in search but not compelling enough to click.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Organic Sessions</div>
+          <div class="summary-item-text">772 organic sessions via GA4 · 51.42% engagement rate. Traffic is minimal but engagement quality is acceptable — the problem is volume, not user experience once they arrive.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Conversions</div>
+          <div class="summary-item-text">Zero key events recorded in GA4. Conversion tracking is not configured — there is no data on leads, calls, or appointments. We cannot measure the ROI of any SEO investment on this site.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Indexed Pages</div>
+          <div class="summary-item-text">Only 61 pages indexed by Google. This is far below the threshold needed to compete for visibility in any wellness niche. Content volume is the primary structural barrier to growth.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Data Coverage</div>
+          <div class="summary-item-text">Authority Score, keyword rankings, backlinks, Core Web Vitals, and the full site audit are all unavailable — blocked by the expired Semrush plan. Strategy is operating with incomplete data.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Scale Comparison</div>
+          <div class="summary-item-text">This site generates 150× less organic traffic than Avana Plastic Surgery (558 vs. 62,500 clicks). Foundational SEO infrastructure — tracking, content, and technical baseline — must be established first.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -985,9 +1231,34 @@
         <div class="indicator-title">Opportunities — Avana Wellness Plus</div>
         <div class="indicator-subtitle">Quick wins and long-term growth opportunities</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge warn">Needs Work</span>
-        <div class="summary-text">72K impressions with only 558 clicks is a significant signal — the site is visible but not compelling enough to click. Title and meta description rewrites are the fastest win available without needing rank improvements.</div>
+      <span class="status-badge warn">Needs Work</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">CTR Optimization</div>
+          <div class="summary-item-text">72K impressions at 0.8% CTR is a clear signal: users are seeing the pages but clicking competitors instead. Rewriting all title tags and meta descriptions to match search intent could 3–5× clicks with zero rank change.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">GA4 Configuration</div>
+          <div class="summary-item-text">Zero conversion events are configured. Setting up form submissions, phone calls, and appointment bookings as key events is the immediate priority — without this, no result of SEO work can be measured.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Content Gap</div>
+          <div class="summary-item-text">61 indexed pages vs. competitors likely at 300–800+. Building service pages, condition pages, practitioner bios, and FAQ content is the highest-leverage long-term growth action available.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Authority Labs Setup</div>
+          <div class="summary-item-text">This domain is not added to Authority Labs. Daily keyword rank tracking does not exist. Add it immediately — without daily tracking, ranking progress is invisible and improvements can't be measured or reported.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Semrush Renewal</div>
+          <div class="summary-item-text">Renewing Semrush unlocks the full site audit, keyword ranking data, backlink analysis, and competitor intelligence. It is a prerequisite for virtually every other analysis and strategy decision on this site.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Local SEO</div>
+          <div class="summary-item-text">GBP status for Wellness Plus locations has not been verified. For a local wellness clinic, Google Business Profile is likely the fastest traffic acquisition channel available — it needs to be activated and optimized.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -1039,9 +1310,34 @@
         <div class="indicator-title">Technical Issues — Avana Wellness Plus</div>
         <div class="indicator-subtitle">GSC Coverage · Core Web Vitals (May 15, 2026)</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">Only 61 pages indexed — far too few to compete in any niche. 8 broken links on a small site is a high ratio. No Core Web Vitals data and no Semrush audit available. Technical baseline is unknown and must be established.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Indexed Pages</div>
+          <div class="summary-item-text">Only 61 pages indexed by Google. Possible causes: thin content triggering soft-404s, crawl blocks in robots.txt, aggressive noindex tags, or canonical issues. The root cause must be diagnosed before adding new content.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Broken Links (404s)</div>
+          <div class="summary-item-text">8 broken links on a 61-page site equals a 13% broken page ratio — disproportionately high. Every 404 on a small site is a significant crawl budget waste and user experience failure.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Core Web Vitals</div>
+          <div class="summary-item-text">No CWV data from the Chrome UX Report — traffic is too low to meet the threshold for data collection. As traffic grows, CWV will need to be monitored proactively on mobile to avoid ranking penalties.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Semrush Audit</div>
+          <div class="summary-item-text">No site health score, no error or warning count — the full technical audit is blocked by the expired Semrush plan. The technical baseline for this site is unknown and must be established as the first step.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Schema Status</div>
+          <div class="summary-item-text">No structured data confirmed on this site. MedicalBusiness, MedicalService, and LocalBusiness schemas are almost certainly absent. For a wellness clinic, these are required for local SERP features.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Indexation</div>
+          <div class="summary-item-text">A manual GSC Coverage report review is needed to identify the gap between total site pages and the 61 indexed. Any excluded pages with content value represent a direct indexation fix opportunity.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -1097,9 +1393,34 @@
         <div class="indicator-title">Current Positioning — Avana Wellness Plus</div>
         <div class="indicator-subtitle">GSC Queries export (May 15, 2026) · Semrush pending</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">Avg. position 17.7 puts most pages off the first page. Authority Score, keyword rankings, and backlink data are all unavailable until Semrush is renewed. The site has no tracking infrastructure in place to measure progress.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Overview</div>
+          <div class="summary-item-text">Avg. position 17.7 across all queries — most pages rank on page 2 or further. At position 17, organic click rates are typically below 1%, which explains the 0.8% CTR observed.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Click Volume</div>
+          <div class="summary-item-text">Top individual queries generate only 7–15 clicks over 3 months. Brand visibility and organic presence are minimal. The site has not yet established authority in any content category.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Keyword Data</div>
+          <div class="summary-item-text">No Semrush keyword ranking data is available. Exact keyword positions, search volumes, and keyword difficulty scores are unknown until the plan is renewed — blocking all strategy work.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Authority Score</div>
+          <div class="summary-item-text">Unknown — Semrush required to calculate. Based on traffic volume, domain age, and link count, the AS is likely in the 1–10 range. Low authority directly limits the ranking ceiling for competitive wellness terms.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Authority Labs</div>
+          <div class="summary-item-text">Not configured for this domain — no daily keyword rank tracking exists. Without tracking, we cannot measure whether SEO actions are improving rankings or whether the site is trending up or down.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Benchmark Target</div>
+          <div class="summary-item-text">The site needs to reach avg. position ≤10 across target wellness keywords before meaningful click volume becomes possible. This requires consistent content creation and link acquisition over 6–12 months.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -1166,9 +1487,34 @@
         <div class="indicator-title">Competition — Avana Wellness Plus</div>
         <div class="indicator-subtitle">Market analysis based on GSC data · Semrush pending plan renewal</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">No competitor data available until Semrush is renewed. The site is competing blind in a wellness/aesthetics market with established local rivals. A keyword gap and backlink audit are required before any strategy can be built.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Data Availability</div>
+          <div class="summary-item-text">All competitor data is blocked until the Semrush plan is renewed. No organic overlap analysis, no competitor keyword report, and no backlink comparison is possible in the current state.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Market Context</div>
+          <div class="summary-item-text">Wellness and aesthetics is a competitive local market. Established clinics have 5+ years of domain authority, extensive content libraries, and local citation profiles — all of which take time and investment to build.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Known Rivals</div>
+          <div class="summary-item-text">No confirmed competitor list has been established yet. The Semrush Organic Competitors report and keyword overlap analysis are required to identify who the actual threats are and what they rank for.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Keyword Gap</div>
+          <div class="summary-item-text">A keyword gap analysis cannot be performed without Semrush data. We don't know which competitor keywords are within reach to target — strategy is operating entirely blind without this data.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Backlink Benchmark</div>
+          <div class="summary-item-text">No referring domain or Authority Score data is available for Wellness Plus. The link authority gap vs. competitors is unknown — but based on traffic levels, it is likely very significant.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Priority Action</div>
+          <div class="summary-item-text">Renew Semrush immediately. No competitive strategy can be built without knowing who the competitors are, what they rank for, and how far behind Wellness Plus is in backlinks and domain authority.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -1216,9 +1562,34 @@
         <div class="indicator-title">Content — Avana Wellness Plus</div>
         <div class="indicator-subtitle">On-page analysis · E-E-A-T · Content gaps</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">61 indexed pages is far below the threshold for competitive visibility in any niche. No schema, no E-E-A-T signals, no doctor credentials online. Content needs to be built from zero — this is the site's biggest long-term blocker.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Page Count</div>
+          <div class="summary-item-text">61 indexed pages vs. competitors likely at 300–800+. Content volume is the single biggest structural barrier to organic visibility. The site cannot compete until this gap is substantially closed.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">E-E-A-T Signals</div>
+          <div class="summary-item-text">No practitioner bio pages, no credentials displayed, no medical qualifications online. For a YMYL wellness/medical site, E-E-A-T is not optional — Google explicitly evaluates these signals for health-related content.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Structured Data</div>
+          <div class="summary-item-text">MedicalBusiness, MedicalService, and LocalBusiness schemas are not implemented. Without structured data, the site is ineligible for rich SERP features like local pack appearance, service details, and review stars.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Content Quality</div>
+          <div class="summary-item-text">Existing pages are likely thin or poorly optimized for intent. Before adding new pages, audit all 61 current pages for content length, keyword targeting, and intent-match. Fix before scale.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Educational Content</div>
+          <div class="summary-item-text">No blog or resource section detected. Educational content (conditions, treatments, FAQs) is critical for topical authority in medical and wellness niches — Google rewards sites that demonstrate expertise at scale.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Content Target</div>
+          <div class="summary-item-text">Goal: grow to 200+ indexed pages within 6 months. Priority content types: service/procedure pages, condition overview pages, practitioner bio pages, location pages, and FAQ/blog content.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -1289,9 +1660,34 @@
         <div class="indicator-title">Keywords — Avana Wellness Plus</div>
         <div class="indicator-subtitle">GSC Queries export · Semrush &amp; Authority Labs pending setup</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge bad">Critical</span>
-        <div class="summary-text">No keyword tracking exists for this domain. 72K GSC impressions represent queries we can't identify. Authority Labs and Semrush are both unavailable. Keyword strategy must be built entirely from scratch once tools are set up.</div>
+      <span class="status-badge bad">Critical</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item">
+          <div class="summary-item-label">Tracking Status</div>
+          <div class="summary-item-text">No Authority Labs configured, no Semrush data, no daily keyword monitoring. Current ranking positions are completely unknown. We cannot measure whether any action taken is improving or harming rankings.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">GSC Impressions</div>
+          <div class="summary-item-text">72K impressions over 3 months represent queries this site ranks for — but we cannot fully identify or analyze them. The full GSC query export must be analyzed to find which terms to prioritize.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Semrush Data</div>
+          <div class="summary-item-text">Keyword ranking reports, search volume data, keyword difficulty scores, and the full keyword opportunity list are all unavailable until the Semrush plan is renewed. All keyword strategy is blocked.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Keyword Strategy</div>
+          <div class="summary-item-text">No keyword strategy exists for this site. A full strategy — target keyword list, intent mapping, and content calendar — must be built from scratch once Authority Labs and Semrush are operational.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Intent Focus</div>
+          <div class="summary-item-text">Target keyword mix should be: 40% informational (wellness education), 40% local transactional (service + city), and 20% branded. This balance builds authority while capturing ready-to-book searchers.</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-item-label">Priority Action</div>
+          <div class="summary-item-text">Renew Semrush and add to Authority Labs this week. Export all GSC queries and identify the top 50 terms to prioritize. These three steps are the foundation of any keyword strategy for this site.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
@@ -1341,9 +1737,34 @@
         <div class="indicator-title">Recommendations — Avana Wellness Plus</div>
         <div class="indicator-subtitle">Prioritized action plan · High / Medium / Low</div>
       </div>
-      <div class="indicator-summary">
-        <span class="status-badge info">Action Plan</span>
-        <div class="summary-text">Immediate: GA4 key events, Semrush renewal, Authority Labs setup, fix 8 broken links, optimize all page titles and metas. Short-term: grow indexed pages to 200+, implement schema markup, and establish E-E-A-T signals for all practitioners.</div>
+      <span class="status-badge info">Action Plan</span>
+    </div>
+    <div class="indicator-summary">
+      <div class="summary-items">
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — GA4 Key Events</div>
+          <div class="summary-item-text">Set up conversion tracking immediately. Define form submissions, phone calls, and appointment bookings as key events. Without this, no result of SEO work on this site can be measured or reported.</div>
+        </div>
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — Semrush Renewal</div>
+          <div class="summary-item-text">Renew the Semrush plan this week. It is required for the site audit, keyword rankings, backlink analysis, and competitor intelligence. Virtually every other analysis and strategy decision is blocked without it.</div>
+        </div>
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — Authority Labs</div>
+          <div class="summary-item-text">Add avanawellnessplus.com to Authority Labs immediately. Begin daily keyword rank tracking. Export all GSC queries and identify the top 50 target terms to focus content and optimization efforts on.</div>
+        </div>
+        <div class="summary-item priority-high">
+          <div class="summary-item-label">HIGH — Meta Rewrites</div>
+          <div class="summary-item-text">Rewrite all 61 page title tags and meta descriptions. The 0.8% CTR means users are not clicking despite seeing the site. Better snippets that match search intent are the fastest traffic win available right now.</div>
+        </div>
+        <div class="summary-item priority-med">
+          <div class="summary-item-label">MEDIUM — Technical Fixes</div>
+          <div class="summary-item-text">Fix all 8 broken links. Investigate and resolve the 61-page indexation gap via GSC Coverage report. Implement MedicalBusiness and LocalBusiness schema on all key pages.</div>
+        </div>
+        <div class="summary-item priority-med">
+          <div class="summary-item-label">MEDIUM — Content &amp; E-E-A-T</div>
+          <div class="summary-item-text">Build content library to 200+ indexed pages: service pages, condition pages, practitioner bio pages, and FAQs. Add medical credentials and qualifications to all practitioner profiles to meet YMYL trust standards.</div>
+        </div>
       </div>
     </div>
     <div class="indicator-body">
