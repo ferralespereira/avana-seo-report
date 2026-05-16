@@ -61,6 +61,13 @@
   .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
   .site-tab:hover  { color: #fff; }
 
+  /* ── Top bar (sticky wrapper) ── */
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
   /* ── Indicator nav ── */
   .indicator-nav {
     display: flex;
@@ -69,9 +76,6 @@
     background: #fff;
     padding: 14px 40px;
     border-bottom: 1px solid var(--midGray);
-    position: sticky;
-    top: 0;
-    z-index: 100;
     box-shadow: 0 2px 6px rgba(0,0,0,.07);
   }
   .ind-btn {
@@ -252,19 +256,22 @@
 </head>
 <body>
 
-<!-- ── HEADER ──────────────────────────────────────────────── -->
-<div class="site-header">
-  <h1>SEO Audit Report — Avana Plastic Surgery &amp; Avana Wellness Plus</h1>
-  <p>Prepared by Javier Ferrales · Sevenlogik · Period: Feb 14 – May 14, 2026 · Sources: GSC, GA4, Semrush, Authority Labs</p>
+<!-- ── TOP BAR (sticky: header + tabs + indicator nav) ──────── -->
+<div class="top-bar">
+
+<!-- ── HEADER + SITE TABS (revealed on hover) ────────────── -->
+<div class="top-bar-dropdown">
+  <div class="site-header">
+    <h1>SEO Audit Report — Avana Plastic Surgery &amp; Avana Wellness Plus</h1>
+    <p>Prepared by Javier Ferrales · Sevenlogik · Period: Feb 14 – May 14, 2026 · Sources: GSC, GA4, Semrush, Authority Labs</p>
+  </div>
+  <div class="site-tabs">
+    <div class="site-tab active" onclick="switchSite('ps')">Avana Plastic Surgery</div>
+    <div class="site-tab" onclick="switchSite('wp')">Avana Wellness Plus</div>
+  </div>
 </div>
 
-<!-- ── SITE TABS ─────────────────────────────────────────── -->
-<div class="site-tabs">
-  <div class="site-tab active" onclick="switchSite('ps')">Avana Plastic Surgery</div>
-  <div class="site-tab" onclick="switchSite('wp')">Avana Wellness Plus</div>
-</div>
-
-<!-- ── INDICATOR NAV ─────────────────────────────────────── -->
+<!-- ── INDICATOR NAV (always visible) ───────────────────── -->
 <div class="indicator-nav" id="indicator-nav">
   <button class="ind-btn" onclick="scrollToSection('findings')">1 · Findings</button>
   <button class="ind-btn" onclick="scrollToSection('opportunities')">2 · Opportunities</button>
@@ -275,6 +282,8 @@
   <button class="ind-btn" onclick="scrollToSection('keywords')">7 · Keywords</button>
   <button class="ind-btn" onclick="scrollToSection('recommendations')">8 · Recommendations</button>
 </div>
+
+</div><!-- /.top-bar -->
 
 <!-- ════════════════════════════════════════════════════════════
      PLASTIC SURGERY PANEL
