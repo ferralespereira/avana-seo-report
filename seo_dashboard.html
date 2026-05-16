@@ -173,6 +173,41 @@
     color: #444;
     line-height: 1.55;
   }
+  .card-breakdown {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .breakdown-good,
+  .breakdown-warn,
+  .breakdown-bad {
+    padding: 7px 10px;
+    border-radius: 4px;
+  }
+  .breakdown-good { background: rgba(39,174,96,0.09); }
+  .breakdown-warn { background: rgba(230,126,34,0.09); }
+  .breakdown-bad  { background: rgba(192,57,43,0.09); }
+  .breakdown-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+  }
+  .breakdown-good .breakdown-label { color: var(--green); }
+  .breakdown-warn .breakdown-label { color: var(--orange); }
+  .breakdown-bad  .breakdown-label { color: var(--red); }
+  .card-breakdown ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+  .card-breakdown li {
+    font-size: 11px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 2px;
+  }
   .indicator-body { padding: 24px; }
 
   /* ── KPI cards ── */
@@ -355,7 +390,24 @@
       <div class="summary-items">
         <div class="summary-item priority-med">
           <div class="summary-item-label">GSC Traffic <span class="status-badge warn" style="font-size:9px;padding:2px 8px;">Needs Work</span></div>
-          <div class="summary-item-text">62,500 clicks · 1.62M impressions · 3.9% CTR · avg. position 14.4 over 3 months. Volume is solid but avg. position 14.4 means most keywords are stuck on page 2 — moving to page 1 could 2–3x clicks with no new content.</div>
+          <div class="summary-item-text">62,500 clicks · 1.62M impressions · 3.9% CTR · avg. position 14.4 — 3-month window.</div>
+          <div class="card-breakdown">
+            <div class="breakdown-good">
+              <div class="breakdown-label">✓ Good</div>
+              <ul>
+                <li>62,500 clicks is strong volume for a specialty medical clinic</li>
+                <li>1.62M impressions — Google considers the site relevant across a wide keyword set</li>
+                <li>3.9% CTR is above average for position 14 (typical is 1–2%) — titles/snippets are compelling</li>
+              </ul>
+            </div>
+            <div class="breakdown-warn">
+              <div class="breakdown-label">⚠ Needs Work</div>
+              <ul>
+                <li>Avg. position 14.4 means most keywords sit on page 2, where almost no users scroll</li>
+                <li>Moving the avg. position to 8–10 (page 1) could realistically 2–3x clicks with no new content</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="summary-item">
           <div class="summary-item-label">Organic Sessions</div>
