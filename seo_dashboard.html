@@ -266,14 +266,14 @@
 
 <!-- ── INDICATOR NAV ─────────────────────────────────────── -->
 <div class="indicator-nav" id="indicator-nav">
-  <button class="ind-btn" onclick="scrollTo('findings')">1 · Findings</button>
-  <button class="ind-btn" onclick="scrollTo('opportunities')">2 · Opportunities</button>
-  <button class="ind-btn" onclick="scrollTo('technical')">3 · Technical Issues</button>
-  <button class="ind-btn" onclick="scrollTo('positioning')">4 · Current Positioning</button>
-  <button class="ind-btn" onclick="scrollTo('competition')">5 · Competition</button>
-  <button class="ind-btn" onclick="scrollTo('content')">6 · Content</button>
-  <button class="ind-btn" onclick="scrollTo('keywords')">7 · Keywords</button>
-  <button class="ind-btn" onclick="scrollTo('recommendations')">8 · Recommendations</button>
+  <button class="ind-btn" onclick="scrollToSection('findings')">1 · Findings</button>
+  <button class="ind-btn" onclick="scrollToSection('opportunities')">2 · Opportunities</button>
+  <button class="ind-btn" onclick="scrollToSection('technical')">3 · Technical Issues</button>
+  <button class="ind-btn" onclick="scrollToSection('positioning')">4 · Current Positioning</button>
+  <button class="ind-btn" onclick="scrollToSection('competition')">5 · Competition</button>
+  <button class="ind-btn" onclick="scrollToSection('content')">6 · Content</button>
+  <button class="ind-btn" onclick="scrollToSection('keywords')">7 · Keywords</button>
+  <button class="ind-btn" onclick="scrollToSection('recommendations')">8 · Recommendations</button>
 </div>
 
 <!-- ════════════════════════════════════════════════════════════
@@ -1286,7 +1286,7 @@
     window.scrollTo({ top: document.querySelector('.indicator-nav').offsetTop - 10, behavior: 'smooth' });
   }
 
-  function scrollTo(indicator) {
+  function scrollToSection(indicator) {
     const el = document.getElementById(currentSite.val + '-' + indicator);
     if (el) {
       const navH = document.querySelector('.indicator-nav').offsetHeight;
