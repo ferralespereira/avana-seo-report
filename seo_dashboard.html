@@ -322,6 +322,22 @@
     margin: 20px 0 12px;
   }
 
+  /* ── Language toggle button ── */
+  .lang-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--gold);
+    background: transparent;
+    transition: background .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
+
   /* ── Responsive ── */
   @media (max-width: 900px) {
     .main { padding: 16px; }
@@ -363,6 +379,7 @@
   <button class="ind-btn" onclick="scrollToSection('content')">6 · Content</button>
   <button class="ind-btn" onclick="scrollToSection('keywords')">7 · Keywords</button>
   <button class="ind-btn" onclick="scrollToSection('recommendations')">8 · Recommendations</button>
+  <button class="lang-btn" id="lang-toggle" onclick="toggleLang()">🇪🇸 Español</button>
 </div>
 
 </div><!-- /.top-bar -->
@@ -1592,6 +1609,257 @@
       const top = el.getBoundingClientRect().top + window.scrollY - navH - 12;
       window.scrollTo({ top, behavior: 'smooth' });
     }
+  }
+
+  // ── LANGUAGE TOGGLE ───────────────────────────────────────
+  let _lang = 'en';
+  let _orig = null; // captured on first toggle
+
+  const T_ES = {
+    html: {
+      // Header
+      '.site-header h1': 'Informe de Auditoría SEO — Avana Plastic Surgery &amp; Avana Wellness Plus',
+      '.site-header p': 'Preparado por Javier Ferrales · Sevenlogik · Período: 14 Feb – 14 May, 2026 · Fuentes: GSC, GA4, Semrush, Authority Labs',
+      // Tabs
+      "[onclick=\"switchSite('ps')\"]": 'Avana Cirugía Plástica',
+      // Nav buttons
+      "[onclick=\"scrollToSection('findings')\"]": '1 · Hallazgos',
+      "[onclick=\"scrollToSection('opportunities')\"]": '2 · Oportunidades',
+      "[onclick=\"scrollToSection('technical')\"]": '3 · Problemas Técnicos',
+      "[onclick=\"scrollToSection('positioning')\"]": '4 · Posicionamiento Actual',
+      "[onclick=\"scrollToSection('competition')\"]": '5 · Competencia',
+      "[onclick=\"scrollToSection('content')\"]": '6 · Contenido',
+      "[onclick=\"scrollToSection('keywords')\"]": '7 · Palabras Clave',
+      "[onclick=\"scrollToSection('recommendations')\"]": '8 · Recomendaciones',
+      // ── PS FINDINGS
+      '#ps-findings .indicator-title': 'Hallazgos — Avana Plastic Surgery',
+      '#ps-findings .indicator-subtitle': 'avanaplasticsurgery.com · 14 Feb – 14 May, 2026',
+      '#ps-findings .indicator-header > .status-badge': 'Bien',
+      '#ps-findings .summary-item-label': 'Resumen de Hallazgos <span class="status-badge warn" style="font-size:9px;padding:2px 8px;">Por Mejorar</span>',
+      '#ps-findings .breakdown-good': '<div class="breakdown-label">✓ Bien</div>SEO es el canal #1 (48% de sesiones); CTR 3.9% por encima del promedio; el financiamiento impulsa el 41% de conversiones; valor de tráfico $59K/mes.',
+      '#ps-findings .breakdown-warn': '<div class="breakdown-label">⚠ Por Mejorar</div>Pos. prom. 14.4 = página 2; 1,243 enlaces nofollow bloquean PageRank; dominios referentes bajando 817→521; más del 90% del tráfico es de marca.',
+      // ── PS OPPORTUNITIES
+      '#ps-opportunities .indicator-title': 'Oportunidades — Avana Plastic Surgery',
+      '#ps-opportunities .indicator-subtitle': 'Victorias rápidas y oportunidades de crecimiento a largo plazo',
+      '#ps-opportunities .indicator-header > .status-badge': 'Por Mejorar',
+      '#ps-opportunities .summary-item-label': 'Principales Oportunidades <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#ps-opportunities .breakdown-good': '<div class="breakdown-label">✓ Bien</div>Marca #1 + \'lipo 360\' #1 (33K/mes, KD 21); 49K impresiones en español; contenido de financiamiento convierte al 41%.',
+      '#ps-opportunities .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>BBL/Tummy Tuck bajo 1% CTR — reescribir meta agrega +2K clics; eliminar nofollow = corrección con mayor ROI; CTAs de financiamiento en páginas de procedimientos son gratis de agregar.',
+      // ── PS TECHNICAL
+      '#ps-technical .indicator-title': 'Problemas Técnicos — Avana Plastic Surgery',
+      '#ps-technical .indicator-subtitle': 'Cobertura GSC · Auditoría Semrush · Core Web Vitals',
+      '#ps-technical .indicator-header > .status-badge': 'Crítico',
+      '#ps-technical .summary-item-label': 'Auditoría Técnica <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#ps-technical .breakdown-good': '<div class="breakdown-label">✓ Bien</div>90% de salud del sitio supera a competidores; CWV en escritorio aprueba (750 URLs); schemas FAQ/Perfil/Reseña todos válidos.',
+      '#ps-technical .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>1,243 nofollow + 212 páginas rotas suprimen el PageRank; 314 páginas rastreadas no indexadas indican contenido delgado; schema faltante bloquea todos los rich results.',
+      // ── PS POSITIONING
+      '#ps-positioning .indicator-title': 'Posicionamiento Actual — Avana Plastic Surgery',
+      '#ps-positioning .indicator-subtitle': 'GSC · Rankings Orgánicos Semrush · Authority Labs (186 palabras clave)',
+      '#ps-positioning .indicator-header > .status-badge': 'Por Mejorar',
+      '#ps-positioning .summary-item-label': 'Rankings Actuales <span class="status-badge warn" style="font-size:9px;padding:2px 8px;">Por Mejorar</span>',
+      '#ps-positioning .breakdown-good': '<div class="breakdown-label">✓ Bien</div>40 rankings en top 3; \'lipo 360\' #1 con KD 21; marca total en #1 (44.7% CTR); valor de tráfico $59K/mes.',
+      '#ps-positioning .breakdown-warn': '<div class="breakdown-label">⚠ Por Mejorar</div>BBL/tummy tuck/rinoplastia fuera de página 1; AS 29 vs competidores 40+; 62% palabras clave informacionales vs 21% transaccionales; backlinks bajando.',
+      // ── PS COMPETITION
+      '#ps-competition .indicator-title': 'Competencia — Avana Plastic Surgery',
+      '#ps-competition .indicator-subtitle': 'Rankings Orgánicos Semrush — 4,017 competidores identificados',
+      '#ps-competition .indicator-header > .status-badge': 'Por Mejorar',
+      '#ps-competition .summary-item-label': 'Panorama Competitivo <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#ps-competition .breakdown-good': '<div class="breakdown-label">✓ Bien</div>Marca #1; \'lipo 360\' #1 (KD 21); 90% de salud del sitio supera a la mayoría; alta superposición = estrategias de competidores visibles y replicables.',
+      '#ps-competition .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>CGCosmetic tiene 2.5× el tráfico de Avana; dominios referentes bajaron 817→521 mientras competidores crecen; brecha de backlinks limita directamente el techo de rankings.',
+      // ── PS CONTENT
+      '#ps-content .indicator-title': 'Contenido — Avana Plastic Surgery',
+      '#ps-content .indicator-subtitle': 'Análisis On-page · E-E-A-T · Backlinks · SEO Local',
+      '#ps-content .indicator-header > .status-badge': 'Por Mejorar',
+      '#ps-content .summary-item-label': 'Contenido &amp; Autoridad <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#ps-content .breakdown-good': '<div class="breakdown-label">✓ Bien</div>1,010 páginas = amplia superficie de ranking; contenido de financiamiento convierte al 41%; 531 eventos de dirección; schemas FAQ/Reseña válidos.',
+      '#ps-content .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>296 dominios perdidos en 12 meses — link building urgente; credenciales faltantes suprimen rankings YMYL; sin schema = sin estrellas ni paquete local; GBP y RealSelf sin atender.',
+      // ── PS KEYWORDS
+      '#ps-keywords .indicator-title': 'Palabras Clave — Avana Plastic Surgery',
+      '#ps-keywords .indicator-subtitle': 'Consultas GSC · Rankings Orgánicos Semrush · Authority Labs (186 palabras clave)',
+      '#ps-keywords .indicator-header > .status-badge': 'Por Mejorar',
+      '#ps-keywords .summary-item-label': 'Resumen de Palabras Clave <span class="status-badge warn" style="font-size:9px;padding:2px 8px;">Por Mejorar</span>',
+      '#ps-keywords .breakdown-good': '<div class="breakdown-label">✓ Bien</div>\'Lipo 360\' #1 (KD 21); marca en #1; 186 palabras clave rastreadas; valor $59K/mes; 21% de intención transaccional ya capturada.',
+      '#ps-keywords .breakdown-warn': '<div class="breakdown-label">⚠ Por Mejorar</div>Más del 90% branded = sin tráfico de descubrimiento; BBL/tummy tuck fuera de página 1; 42 palabras clave sin posicionar; se necesitan 300+ KWs para visibilidad completa.',
+      // ── PS RECOMMENDATIONS
+      '#ps-recommendations .indicator-title': 'Recomendaciones — Avana Plastic Surgery',
+      '#ps-recommendations .indicator-subtitle': 'Plan de acción priorizado · Alto / Medio / Bajo',
+      '#ps-recommendations .indicator-header > .status-badge': 'Plan de Acción',
+      '#ps-recommendations .summary-item-label': 'Plan de Acción <span class="status-badge info" style="font-size:9px;padding:2px 8px;">Priorizado</span>',
+      '#ps-recommendations .breakdown-good': '<div class="breakdown-label">✓ Impacto</div>Eliminación de nofollow = mejora de PageRank inmediata; reescritura de meta = +2K–5K clics desde impresiones existentes; 700+ dominios referentes eleva el AS y desbloquea rankings de procedimientos.',
+      '#ps-recommendations .breakdown-bad': '<div class="breakdown-label">⚠ Riesgo de Demora</div>175K impresiones al 1% CTR regala clics a competidores cada día; la brecha de dominios se amplía mensualmente; CTAs de financiamiento ausentes = tráfico de alta intención convirtiendo en otro lugar.',
+      // ── WP FINDINGS
+      '#wp-findings .indicator-title': 'Hallazgos — Avana Wellness Plus',
+      '#wp-findings .indicator-subtitle': 'avanawellnessplus.com · 14 Feb – 14 May, 2026',
+      '#wp-findings .indicator-header > .status-badge': 'Crítico',
+      '#wp-findings .summary-item-label': 'Resumen de Hallazgos <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-findings .breakdown-good': '<div class="breakdown-label">✓ Bien</div>72K impresiones — Google sirve el sitio a buscadores; 51% de engagement; orgánico es el canal #1 (63%); páginas en español superan el inglés 5:1.',
+      '#wp-findings .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>0 conversiones rastreadas; 61 páginas no pueden construir autoridad en ninguna categoría; 0.8% CTR = 99% de apariciones sin clics; Semrush vencido bloquea todo análisis profundo.',
+      // ── WP OPPORTUNITIES
+      '#wp-opportunities .indicator-title': 'Oportunidades — Avana Wellness Plus',
+      '#wp-opportunities .indicator-subtitle': 'Victorias rápidas y oportunidades de crecimiento a largo plazo',
+      '#wp-opportunities .indicator-header > .status-badge': 'Por Mejorar',
+      '#wp-opportunities .summary-item-label': 'Principales Oportunidades <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-opportunities .breakdown-good': '<div class="breakdown-label">✓ Bien</div>Keloid/inmigración cerca de página 1 — 3 victorias rápidas posibles de inmediato; contenido en español validado; 72K impresiones = base de visibilidad ya existe.',
+      '#wp-opportunities .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>99% de impresiones sin clic; GA4 sin rastrear = SEO no medible; Authority Labs no configurado; Semrush vencido bloquea todo análisis profundo.',
+      // ── WP TECHNICAL
+      '#wp-technical .indicator-title': 'Problemas Técnicos — Avana Wellness Plus',
+      '#wp-technical .indicator-subtitle': 'Cobertura GSC · Core Web Vitals (15 May, 2026)',
+      '#wp-technical .indicator-header > .status-badge': 'Crítico',
+      '#wp-technical .summary-item-label': 'Auditoría Técnica <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-technical .breakdown-good': '<div class="breakdown-label">✓ Bien</div>84% de tasa de indexación es limpia; sin errores de servidor; GSC muestra cada problema claramente; páginas de médicos listas para schema.',
+      '#wp-technical .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>8/61 páginas rotas (13% del sitio — cada página importa aquí); sin Semrush = auditoría completa bloqueada; sin schema = no elegible para paquete local ni rich results.',
+      // ── WP POSITIONING
+      '#wp-positioning .indicator-title': 'Posicionamiento Actual — Avana Wellness Plus',
+      '#wp-positioning .indicator-subtitle': 'Exportación de Consultas GSC (15 May, 2026) · Semrush pendiente',
+      '#wp-positioning .indicator-header > .status-badge': 'Crítico',
+      '#wp-positioning .summary-item-label': 'Rankings Actuales <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-positioning .breakdown-good': '<div class="breakdown-label">✓ Bien</div>Consultas de marca alcanzan 30–40% CTR; keloid removal cerca de página 1 (pos 9–11); GSC cubre 200+ consultas para priorizar de inmediato.',
+      '#wp-positioning .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>Pos. 17.7 = página 2 para casi cada palabra clave; clics no de marca en dígitos simples; dificultad/volumen bloqueados; Authority Labs no configurado.',
+      // ── WP COMPETITION
+      '#wp-competition .indicator-title': 'Competencia — Avana Wellness Plus',
+      '#wp-competition .indicator-subtitle': 'Análisis de mercado basado en datos GSC · Semrush pendiente de renovación',
+      '#wp-competition .indicator-header > .status-badge': 'Crítico',
+      '#wp-competition .summary-item-label': 'Análisis Competitivo <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-competition .breakdown-good': '<div class="breakdown-label">✓ Bien</div>Examen de inmigración tiene baja competencia (pos 11) — un nicho ganeable antes de renovar Semrush; GSC muestra qué categorías dominan los competidores como punto de partida.',
+      '#wp-competition .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>Análisis completo de competidores totalmente bloqueado; clínicas establecidas tienen años de autoridad; la renovación de Semrush es el prerrequisito para toda estrategia competitiva.',
+      // ── WP CONTENT
+      '#wp-content .indicator-title': 'Contenido — Avana Wellness Plus',
+      '#wp-content .indicator-subtitle': 'Análisis On-page · E-E-A-T · Brechas de Contenido',
+      '#wp-content .indicator-header > .status-badge': 'Crítico',
+      '#wp-content .summary-item-label': 'Contenido &amp; Autoridad <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-content .breakdown-good': '<div class="breakdown-label">✓ Bien</div>Páginas en español superan el inglés 5:1 — expansión bilingüe validada; páginas de bio de médicos existen; 200+ páginas alcanzable en 6 meses.',
+      '#wp-content .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>61 páginas no pueden construir autoridad en ninguna categoría; credenciales faltantes suprimen rankings YMYL; todas las páginas de alta impresión tienen CTR casi cero — auditar y reescribir todo antes de expandir.',
+      // ── WP KEYWORDS
+      '#wp-keywords .indicator-title': 'Palabras Clave — Avana Wellness Plus',
+      '#wp-keywords .indicator-subtitle': 'Exportación GSC · Semrush y Authority Labs pendientes de configuración',
+      '#wp-keywords .indicator-header > .status-badge': 'Crítico',
+      '#wp-keywords .summary-item-label': 'Resumen de Palabras Clave <span class="status-badge bad" style="font-size:9px;padding:2px 8px;">Crítico</span>',
+      '#wp-keywords .breakdown-good': '<div class="breakdown-label">✓ Bien</div>GSC cubre las 50 prioridades principales ahora; keloid e inmigración ya muestran intención transaccional; las 3 acciones top (renovar Semrush, agregar Authority Labs, definir objetivos) empiezan esta semana.',
+      '#wp-keywords .breakdown-bad': '<div class="breakdown-label">⚠ Por Mejorar</div>Sin herramienta de rastreo activa; dificultad/rankings de competidores desconocidos; sin estrategia de palabras clave; 95% branded = sin descubrimiento de categoría de servicio.',
+      // ── WP RECOMMENDATIONS
+      '#wp-recommendations .indicator-title': 'Recomendaciones — Avana Wellness Plus',
+      '#wp-recommendations .indicator-subtitle': 'Plan de acción priorizado · Alto / Medio / Bajo',
+      '#wp-recommendations .indicator-header > .status-badge': 'Plan de Acción',
+      '#wp-recommendations .summary-item-label': 'Plan de Acción <span class="status-badge info" style="font-size:9px;padding:2px 8px;">Priorizado</span>',
+      '#wp-recommendations .breakdown-good': '<div class="breakdown-label">✓ Impacto</div>Configuración GA4 = ROI medible de inmediato; reescritura de metas = 3–5× clics desde 72K impresiones existentes; renovación de Semrush desbloquea toda la estrategia en una sola acción.',
+      '#wp-recommendations .breakdown-bad': '<div class="breakdown-label">⚠ Riesgo de Demora</div>0 key events = valor SEO completamente invisible; CTR 0.8% pierde el 99% de las impresiones cada semana; contenido YMYL delgado sin credenciales no puede rankear sin importar cuánto crezca el tráfico.',
+    },
+    // H3 subsection headings per section (in order of appearance)
+    h3: {
+      '#ps-findings': [
+        'Desglose de Canales — Todas las Fuentes de Tráfico',
+        'Páginas con Mayor Conversión — Búsqueda Orgánica'
+      ],
+      '#ps-opportunities': [
+        'Oportunidades de Palabras Clave Prioritarias (por Impresiones GSC)',
+        'Sin Posicionamiento — Brechas de Contenido'
+      ],
+      '#ps-technical': [
+        'Errores Semrush — Corregir de Inmediato',
+        'Advertencias Semrush — Atender en 30 Días',
+        'Problemas de Cobertura de Índice GSC',
+        'Core Web Vitals',
+        'Datos Estructurados / Schema'
+      ],
+      '#ps-positioning': [
+        'Distribución de Intención de Palabras Clave',
+        'Authority Labs — Distribución de Posiciones (186 palabras clave)',
+        'Posiciones 1–3 — Mejores Rankings',
+        'Posiciones 4–10 — Oportunidades de Victoria Rápida',
+        'Principales Consultas GSC por Clics (3 meses)'
+      ],
+      '#ps-competition': [
+        'Principales Competidores Orgánicos',
+        'Fortalezas de Competidores a Abordar',
+        'Comparación de Salud del Sitio vs Competidores'
+      ],
+      '#ps-content': [
+        'Principales Páginas de Aterrizaje por Clics (GSC)',
+        'Problemas On-Page Identificados',
+        'Señales E-E-A-T (Crítico para Sitio Médico YMYL)',
+        'Backlinks y Autoridad de Dominio',
+        'SEO Local'
+      ],
+      '#ps-keywords': [
+        'Mejores Rankings en Semrush',
+        'Palabras Clave en Página 2 — Alto Esfuerzo, Alta Recompensa'
+      ],
+      '#wp-findings': [
+        'Desglose de Canales — Todo el Tráfico',
+        'Rendimiento por Dispositivo'
+      ],
+      '#wp-opportunities': [
+        'Palabras Clave de Victoria Rápida — Cerca de Página 1',
+        'Palabras Clave de Alto Volumen — Actualmente Invisibles'
+      ],
+      '#wp-technical': [
+        'Problemas de Cobertura de Índice GSC',
+        'Core Web Vitals',
+        'Datos Estructurados / Schema'
+      ],
+      '#wp-positioning': [
+        'Principales Consultas por Clics — GSC (3 meses)',
+        'Principales Páginas de Aterrizaje por Clics'
+      ],
+      '#wp-competition': [
+        'Probables Competidores Clave — Mercado Wellness y Dermatología Miami',
+        'Rendimiento de Palabras Clave Locales vs Competencia'
+      ],
+      '#wp-content': [
+        'Prioridad de Contenido por Página',
+        'Brecha de Contenido — Páginas de Servicio Faltantes',
+        'Señales E-E-A-T (Crítico para Sitio Médico/Wellness)',
+        'Estrategia de Contenido en Español'
+      ],
+      '#wp-keywords': [
+        'Configuración de Palabras Clave Requerida — Recomendaciones Authority Labs',
+        'Todas las Palabras Clave GSC con Impresiones Significativas'
+      ]
+    }
+  };
+
+  function toggleLang() {
+    // Capture originals on first toggle
+    if (!_orig) {
+      _orig = { html: {}, h3: {} };
+      for (const sel of Object.keys(T_ES.html)) {
+        const el = document.querySelector(sel);
+        if (el) _orig.html[sel] = el.innerHTML;
+      }
+      for (const sec of Object.keys(T_ES.h3)) {
+        _orig.h3[sec] = Array.from(document.querySelectorAll(sec + ' h3')).map(el => el.textContent);
+      }
+    }
+
+    _lang = _lang === 'en' ? 'es' : 'en';
+    const btn = document.getElementById('lang-toggle');
+
+    if (_lang === 'es') {
+      for (const [sel, html] of Object.entries(T_ES.html)) {
+        const el = document.querySelector(sel);
+        if (el) el.innerHTML = html;
+      }
+      for (const [sec, texts] of Object.entries(T_ES.h3)) {
+        document.querySelectorAll(sec + ' h3').forEach((el, i) => {
+          if (texts[i] !== undefined) el.textContent = texts[i];
+        });
+      }
+      btn.textContent = '🇺🇸 English';
+      btn.classList.add('active-es');
+    } else {
+      for (const [sel, html] of Object.entries(_orig.html)) {
+        const el = document.querySelector(sel);
+        if (el) el.innerHTML = html;
+      }
+      for (const [sec, texts] of Object.entries(_orig.h3)) {
+        document.querySelectorAll(sec + ' h3').forEach((el, i) => {
+          if (texts[i] !== undefined) el.textContent = texts[i];
+        });
+      }
+      btn.textContent = '🇪🇸 Español';
+      btn.classList.remove('active-es');
+    }
+    document.documentElement.lang = _lang;
   }
 
   // Highlight active indicator button on scroll
