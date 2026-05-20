@@ -87,7 +87,17 @@
   }
   .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
 
-  .main { padding: 32px 40px; max-width: 1300px; margin: 0 auto; }
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
 
   .site-panel { display: none; }
   .site-panel.active { display: block; }
@@ -212,6 +222,7 @@
 
   .data-table {
     width: 100%;
+    min-width: 2100px;
     border-collapse: separate;
     border-spacing: 0 8px;
     margin: 12px 0;
@@ -408,6 +419,7 @@
 <body>
 
   <main class="main">
+    <div class="table-wrap">
     <table class="data-table">
       <thead>
         <tr>
@@ -499,6 +511,7 @@
 
       </tbody>
     </table>
+    </div>
   </main>
 
 </body>
