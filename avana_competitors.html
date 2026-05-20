@@ -234,6 +234,11 @@
     color: var(--navy);
     position: relative;
   }
+  .data-table th.cta-column {
+    background: var(--orange);
+    color: #fff;
+    position: relative;
+  }
   .data-table th.content-column::after {
     content: "CONTENT";
     display: inline-block;
@@ -255,6 +260,19 @@
     border-radius: 10px;
     background: rgba(27, 58, 92, .15);
     color: var(--navy);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.cta-column::after {
+    content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
     font-size: 9px;
     font-weight: 800;
     letter-spacing: .6px;
@@ -291,6 +309,9 @@
   }
   .data-table td.trust-column {
     background: #fff8e8;
+  }
+  .data-table td.cta-column {
+    background: #fff3ec;
   }
   .data-table td:first-child {
     border-left: 1px solid #dce6f0;
@@ -401,6 +422,9 @@
           <th class="trust-column">Do they show surgeon credentials?</th>
           <th class="trust-column">Do they have patient reviews?</th>
           <th class="trust-column">Do they mention financing?</th>
+          <th class="cta-column">Is there a clear booking button?</th>
+          <th class="cta-column">Is there a phone number visible?</th>
+          <th class="cta-column">Is there a consultation form?</th>
         </tr>
       </thead>
       <tbody>
@@ -417,6 +441,9 @@
           <td class="trust-column"></td>
           <td class="trust-column"></td>
           <td class="trust-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
         </tr>
 
         <tr>
@@ -431,6 +458,9 @@
           <td class="trust-column"></td>
           <td class="trust-column"></td>
           <td class="trust-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
         </tr>
 
         <tr>
@@ -445,6 +475,9 @@
           <td class="trust-column"></td>
           <td class="trust-column"></td>
           <td class="trust-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
         </tr>
         
         <tr>
@@ -459,6 +492,9 @@
           <td class="trust-column"></td>
           <td class="trust-column"></td>
           <td class="trust-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
+          <td class="cta-column"></td>
         </tr>
 
       </tbody>
