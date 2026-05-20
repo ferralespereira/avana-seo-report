@@ -250,6 +250,11 @@
     color: #fff;
     position: relative;
   }
+  .data-table th.schema-column {
+    background: #6366f1;
+    color: #fff;
+    position: relative;
+  }
   .data-table th.content-column::after {
     content: "CONTENT";
     display: inline-block;
@@ -278,6 +283,19 @@
   }
   .data-table th.cta-column::after {
     content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.schema-column::after {
+    content: "SCHEMA TYPE";
     display: inline-block;
     margin-left: 8px;
     padding: 1px 6px;
@@ -323,6 +341,9 @@
   }
   .data-table td.cta-column {
     background: #fff3ec;
+  }
+  .data-table td.schema-column {
+    background: #f0f0ff;
   }
   .data-table td:first-child {
     border-left: 1px solid #dce6f0;
@@ -466,6 +487,14 @@
           <th class="cta-column">Is there a clear booking button?</th>
           <th class="cta-column">Is there a phone number visible?</th>
           <th class="cta-column">Is there a consultation form?</th>
+          <th class="schema-column">FAQPage</th>
+          <th class="schema-column">PriceRange</th>
+          <th class="schema-column">MedicalProcedure</th>
+          <th class="schema-column">Review/AggregateRating</th>
+          <th class="schema-column">VideoObject</th>
+          <th class="schema-column">BreadcrumbList</th>
+          <th class="schema-column">LocalBusiness</th>
+          <th class="schema-column">Person/Physician</th>
         </tr>
       </thead>
       <tbody>
@@ -485,6 +514,14 @@
           <td class="cta-column">Yes – "Schedule A Free Consultation Today" form with location selector</td>
           <td class="cta-column">Yes – (305) 501-6000 at top and bottom</td>
           <td class="cta-column">Yes – consultation form with language, location, and consent fields</td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
         </tr>
 
         <tr>
@@ -502,6 +539,14 @@
           <td class="cta-column">Yes – "Apply for CareCredit" / "Find a Doctor"</td>
           <td class="cta-column">No</td>
           <td class="cta-column">No – redirects to CareCredit apply page</td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
         </tr>
 
         <tr>
@@ -519,6 +564,14 @@
           <td class="cta-column">Yes – "Free Consultation" button + "Book a Consultation"</td>
           <td class="cta-column">Yes – (786) 233-7080</td>
           <td class="cta-column">Yes – contact form at page bottom (name, email, phone, message)</td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
         </tr>
 
         <tr>
@@ -536,6 +589,14 @@
           <td class="cta-column">Yes – "Get a Quote" and "Get Started Now" buttons throughout</td>
           <td class="cta-column">Yes – (786) 901-7788 prominently at top and multiple locations</td>
           <td class="cta-column">Yes – quote request form (name, email, phone, procedure, message)</td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
         </tr>
         
         <tr>
@@ -553,6 +614,14 @@
           <td class="cta-column">Yes – "Request a Consultation" and "Request Your Private Consultation" throughout</td>
           <td class="cta-column">Yes – (702) 242-6488 in header and footer</td>
           <td class="cta-column">Yes – contact form embedded at page bottom</td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
+          <td class="schema-column"></td>
         </tr>
 
       </tbody>
