@@ -229,6 +229,11 @@
     background: var(--teal);
     position: relative;
   }
+  .data-table th.trust-column {
+    background: var(--gold);
+    color: var(--navy);
+    position: relative;
+  }
   .data-table th.content-column::after {
     content: "CONTENT";
     display: inline-block;
@@ -237,6 +242,19 @@
     border-radius: 10px;
     background: rgba(255, 255, 255, .2);
     color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.trust-column::after {
+    content: "TRUST SIGNAL";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(27, 58, 92, .15);
+    color: var(--navy);
     font-size: 9px;
     font-weight: 800;
     letter-spacing: .6px;
@@ -270,6 +288,9 @@
   }
   .data-table td.content-column {
     background: #f4fbfb;
+  }
+  .data-table td.trust-column {
+    background: #fff8e8;
   }
   .data-table td:first-child {
     border-left: 1px solid #dce6f0;
@@ -377,6 +398,9 @@
           <th class="content-column">How long is the page?</th>
           <th class="content-column">Do they have before/after photos?</th>
           <th class="content-column">Do they have a FAQ section?</th>
+          <th class="trust-column">Do they show surgeon credentials?</th>
+          <th class="trust-column">Do they have patient reviews?</th>
+          <th class="trust-column">Do they mention financing?</th>
         </tr>
       </thead>
       <tbody>
@@ -390,6 +414,9 @@
           <td class="content-column"></td>
           <td class="content-column"></td>
           <td class="content-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
         </tr>
 
         <tr>
@@ -401,6 +428,9 @@
           <td class="content-column"></td>
           <td class="content-column"></td>
           <td class="content-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
         </tr>
 
         <tr>
@@ -412,6 +442,9 @@
           <td class="content-column"></td>
           <td class="content-column"></td>
           <td class="content-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
         </tr>
         
         <tr>
@@ -423,6 +456,9 @@
           <td class="content-column"></td>
           <td class="content-column"></td>
           <td class="content-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
+          <td class="trust-column"></td>
         </tr>
 
       </tbody>
