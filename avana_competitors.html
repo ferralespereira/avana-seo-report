@@ -212,7 +212,8 @@
 
   .data-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 8px;
     margin: 12px 0;
     font-size: 13px;
   }
@@ -224,12 +225,43 @@
     font-weight: 700;
     font-size: 12px;
   }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
   .data-table td {
     padding: 9px 12px;
-    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
     vertical-align: top;
   }
-  .data-table tr:nth-child(even) td { background: var(--lightGray); }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 
   .priority-high { background: var(--redBg) !important; color: var(--red); font-weight: 700; }
   .priority-medium { background: var(--yellowBg) !important; color: #7d5a00; font-weight: 700; }
@@ -323,6 +355,7 @@
         </tr>
       </thead>
       <tbody>
+        
         <tr>
           <td>https://www.carecredit.com/well-u/health-wellness/lipo-360-cost/</td>
           <td></td>
