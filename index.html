@@ -338,9 +338,60 @@
   }
   .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
 
+  /* ── Page links ── */
+  .page-links {
+    max-width: 1300px;
+    margin: 16px auto 0;
+    padding: 0 40px;
+  }
+  .page-links h3 {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .page-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .page-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1.5px solid var(--teal);
+    background: #fff;
+    color: var(--teal);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .15s, color .15s, border-color .15s, transform .15s;
+  }
+  .page-links a::before {
+    content: "↗";
+    font-size: 11px;
+    line-height: 1;
+  }
+  .page-links a:hover {
+    background: var(--teal);
+    color: #fff;
+    border-color: var(--teal);
+    transform: translateY(-1px);
+  }
+  .page-links a:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
   /* ── Responsive ── */
   @media (max-width: 900px) {
     .main { padding: 16px; }
+    .page-links { padding: 0 16px; }
     .site-tabs, .indicator-nav { padding: 0 16px; }
     .kpi-row.cols-4 { grid-template-columns: repeat(2,1fr); }
     .kpi-row.cols-3 { grid-template-columns: repeat(2,1fr); }
@@ -384,6 +435,14 @@
 </div>
 
 </div><!-- /.top-bar -->
+
+<div class="page-links">
+  <h3>Page Links</h3>
+  <ul>
+    <li><a href="avana_competitors.html">Competitors Analysis</a></li>
+    <li><a href="avana_keywords.html">Keywords Report</a></li>
+  </ul>
+</div>
 
 <!-- ════════════════════════════════════════════════════════════
      PLASTIC SURGERY PANEL
