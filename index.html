@@ -387,6 +387,25 @@
     outline: 2px solid var(--gold);
     outline-offset: 2px;
   }
+  .page-links a.query-link {
+    gap: 6px;
+  }
+  .page-links a.query-link .seed {
+    color: var(--navy);
+    font-weight: 800;
+  }
+  .page-links a.query-link .arrow {
+    color: var(--orange);
+    font-weight: 900;
+  }
+  .page-links a.query-link .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
 
   /* ── Responsive ── */
   @media (max-width: 900px) {
@@ -438,7 +457,13 @@
 <div class="page-links">
   <h3>Keywords Report</h3>
   <ul>
-    <li><a href="lipo-360-miami.html">lipo 360 cost</a></li>
+    <li>
+      <a class="query-link" href="lipo-360-miami.html">
+        <span class="seed">lipo 360 miami</span>
+        <span class="arrow">&rArr;</span>
+        <span class="query">lipo 360 cost (query)</span>
+      </a>
+    </li>
   </ul>
 </div>
 
