@@ -917,8 +917,25 @@
 .carousel-dot.active {
   background-color: #717171;
 }
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
 </style>
 <div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
   <div class="carousel-container">
     <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
     <div class="carousel-slide active">
