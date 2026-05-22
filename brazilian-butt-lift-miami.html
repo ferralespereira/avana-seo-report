@@ -933,19 +933,63 @@
   text-align: center;
   letter-spacing: 0.5px;
 }
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
 </style>
 <div class="carousel">
   <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
   <div class="carousel-container">
     <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
     <div class="carousel-slide active">
-      <img src="img/brazilian-butt-lift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis"/>
+      <img src="img/brazilian-butt-lift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
     </div>
     <div class="carousel-slide">
-      <img src="img/brazilian-butt-lift-miami_semrush.png" alt="Semrush SEO Analysis"/>
+      <img src="img/brazilian-butt-lift-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
     </div>
     <div class="carousel-slide">
-      <img src="img/brazilian-butt-lift-miami_google.png" alt="Google SEO Analysis"/>
+      <img src="img/brazilian-butt-lift-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
     </div>
     <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
   </div>
@@ -953,6 +997,12 @@
     <span class="carousel-dot active" onclick="currentSlide(0)"></span>
     <span class="carousel-dot" onclick="currentSlide(1)"></span>
     <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
   </div>
 </div>
 <script>
@@ -973,6 +1023,16 @@ function showSlide(n) {
   slides[currentIndex].classList.add('active');
   dots[currentIndex].classList.add('active');
 }
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
 </script>
 </div>
 
