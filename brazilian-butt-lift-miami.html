@@ -845,15 +845,118 @@
   </div>
 </div>
 </div>
-<div style="margin-top:20px;padding:16px 20px;background:#fff;border:1px solid #dce6f0;">
-<img src="img/brazilian-butt-lift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" style="max-width:100%;height:auto;display:block;"/>
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/brazilian-butt-lift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/brazilian-butt-lift-miami_semrush.png" alt="Semrush SEO Analysis"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/brazilian-butt-lift-miami_google.png" alt="Google SEO Analysis"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
 </div>
-<div style="margin-top:20px;padding:16px 20px;background:#fff;border:1px solid #dce6f0;">
-<img src="img/brazilian-butt-lift-miami_semrush.png" alt="Semrush SEO Analysis" style="max-width:100%;height:auto;display:block;"/>
-</div>
-<div style="margin-top:20px;padding:16px 20px;background:#fff;border:1px solid #dce6f0;">
-<img src="img/brazilian-butt-lift-miami_google.png" alt="Google SEO Analysis" style="max-width:100%;height:auto;display:block;"/>
-</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+</script>
 </div>
 
 
