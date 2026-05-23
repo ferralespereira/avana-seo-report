@@ -145,6 +145,7 @@
 
   col.c-pos    { width: 130px; }
   col.c-page   { width: auto; }
+  col.c-keyword { width: 210px; }
   col.c-status { width: 110px; }
   col.c-impr   { width: 130px; }
   col.c-clicks { width: 90px; }
@@ -214,6 +215,14 @@
   }
 
   .page-link:hover { text-decoration: underline; }
+
+  .keyword-cell {
+    font-size: 12px;
+    color: var(--darkGray);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   /* badge */
   .badge {
@@ -300,6 +309,7 @@
       <colgroup>
         <col class="c-pos">
         <col class="c-page">
+        <col class="c-keyword">
         <col class="c-status">
         <col class="c-impr">
         <col class="c-clicks">
@@ -309,6 +319,7 @@
         <tr>
           <th data-key="pos"># Pos <span class="sort-icon on" id="icon-pos">↓</span></th>
           <th data-key="page">Page <span class="sort-icon" id="icon-page">↕</span></th>
+          <th data-key="keyword">Primary Keyword <span class="sort-icon" id="icon-keyword">↕</span></th>
           <th data-key="status">Status <span class="sort-icon" id="icon-status">↕</span></th>
           <th data-key="impr" class="num">Impressions <span class="sort-icon" id="icon-impr">↕</span></th>
           <th data-key="clicks" class="num">Clicks <span class="sort-icon" id="icon-clicks">↕</span></th>
@@ -416,6 +427,12 @@ function formatPageLabel(path) {
     .replace(/-/g, ' ');
 }
 
+function getPrimaryKeyword(path) {
+  return path
+    .replace(/^\//, '')
+    .replace(/-/g, ' ');
+}
+
 function renderSummary() {
   const stats = getSummaryStats();
 
@@ -453,6 +470,7 @@ function render() {
 
   rows.sort((a, b) => {
     if (sortKey === 'page') return sortDir * a.page.localeCompare(b.page);
+    if (sortKey === 'keyword') return sortDir * getPrimaryKeyword(a.page).localeCompare(getPrimaryKeyword(b.page));
     if (sortKey === 'status') return sortDir * (b.pos - a.pos);
     const map = { pos: 'pos', impr: 'impr', clicks: 'clicks', ctr: 'ctr' };
     const k = map[sortKey] || 'pos';
@@ -476,6 +494,7 @@ function render() {
     const st = getStatus(r.pos);
     const barPct = Math.min((r.pos / 50) * 100, 100).toFixed(1);
     const color = barColor(r.pos);
+    const primaryKeyword = getPrimaryKeyword(r.page);
     return `<tr>
       <td>
         <div class="pos-cell">
@@ -486,6 +505,7 @@ function render() {
         </div>
       </td>
       <td><a class="page-link" href="https://avanaplasticsurgery.com${r.page}" target="_blank" rel="noopener">${r.page}</a></td>
+      <td class="keyword-cell" title="${primaryKeyword}">${primaryKeyword}</td>
       <td><span class="badge ${st.cls}">${st.label}</span></td>
       <td class="num-cell">${r.impr.toLocaleString()}</td>
       <td class="num-cell">${r.clicks}</td>
@@ -505,7 +525,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 // Sort headers
-const keys = ['pos','page','status','impr','clicks','ctr'];
+const keys = ['pos','page','keyword','status','impr','clicks','ctr'];
 document.querySelectorAll('th[data-key]').forEach(th => {
   th.addEventListener('click', () => {
     const key = th.dataset.key;
