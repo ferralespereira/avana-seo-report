@@ -171,6 +171,10 @@
   th:hover { background: #254e7a; }
   th.num { text-align: right; }
 
+  th.kw-col { background: var(--teal); }
+  th.kw-col:hover { background: #0a6160; }
+  td.kw-col { background: #eaf5f5; }
+
   .sort-icon { opacity: .5; margin-left: 4px; }
   .sort-icon.on { opacity: 1; }
 
@@ -331,9 +335,9 @@
           <th data-key="impr" class="num">Impressions <span class="sort-icon" id="icon-impr">↕</span></th>
           <th data-key="clicks" class="num">Clicks <span class="sort-icon" id="icon-clicks">↕</span></th>
           <th data-key="ctr" class="num">CTR <span class="sort-icon" id="icon-ctr">↕</span></th>
-          <th data-key="keyword">Primary Keyword <span class="sort-icon" id="icon-keyword">↕</span></th>
-          <th data-key="keywordpos" class="num">Primary Keyword Position <span class="sort-icon" id="icon-keywordpos">↕</span></th>
-          <th data-key="keywordimpr" class="num">Primary Keyword Impressions <span class="sort-icon" id="icon-keywordimpr">↕</span></th>
+          <th data-key="keyword" class="kw-col">Primary Keyword <span class="sort-icon" id="icon-keyword">↕</span></th>
+          <th data-key="keywordpos" class="num kw-col">Primary Keyword Position <span class="sort-icon" id="icon-keywordpos">↕</span></th>
+          <th data-key="keywordimpr" class="num kw-col">Primary Keyword Impressions <span class="sort-icon" id="icon-keywordimpr">↕</span></th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -559,9 +563,9 @@ function render() {
       <td class="num-cell">${r.impr.toLocaleString()}</td>
       <td class="num-cell">${r.clicks}</td>
       <td class="num-cell">${r.ctr.toFixed(2)}%</td>
-      <td class="keyword-cell" title="${r.keyword}">${r.link ? `<a href="${r.link}" target="_blank" rel="noopener">${r.keyword}</a>` : r.keyword}</td>
-      <td class="num-cell" title="${kposTitle}">${kposLabel}</td>
-      <td class="num-cell">${r.kimpr === null ? '—' : r.kimpr.toLocaleString()}</td>
+      <td class="keyword-cell kw-col" title="${r.keyword}">${r.link ? `<a href="${r.link}" target="_blank" rel="noopener">${r.keyword}</a>` : r.keyword}</td>
+      <td class="num-cell kw-col" title="${kposTitle}">${kposLabel}</td>
+      <td class="num-cell kw-col">${r.kimpr === null ? '—' : r.kimpr.toLocaleString()}</td>
     </tr>`;
   }).join('');
 }
