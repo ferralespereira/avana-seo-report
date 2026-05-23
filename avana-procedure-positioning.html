@@ -262,28 +262,28 @@
 
   <div class="summary">
     <div class="sum-card">
-      <div class="num num-red">12</div>
+      <div class="num num-red" id="summary-critical">0</div>
       <div class="lbl">Critical (pos &gt; 30)</div>
     </div>
     <div class="sum-card">
-      <div class="num num-amber">8</div>
+      <div class="num num-amber" id="summary-poor">0</div>
       <div class="lbl">Poor (pos 20–30)</div>
     </div>
     <div class="sum-card">
-      <div class="num num-green">11</div>
+      <div class="num num-green" id="summary-good">0</div>
       <div class="lbl">Good (pos &lt; 15)</div>
     </div>
     <div class="sum-card">
-      <div class="num num-blue">17,019</div>
-      <div class="lbl">Impr. wasted — rhinoplasty</div>
+      <div class="num num-blue" id="summary-wasted-impr">0</div>
+      <div class="lbl" id="summary-wasted-label">Impr. wasted</div>
     </div>
   </div>
 
   <div class="filters">
-    <button class="filter-btn active" data-filter="all">All (45)</button>
-    <button class="filter-btn" data-filter="critical">🔴 Critical &gt;30 (12)</button>
-    <button class="filter-btn" data-filter="poor">🟡 Poor 20–30 (8)</button>
-    <button class="filter-btn" data-filter="ok">🟢 Good &lt;15 (11)</button>
+    <button class="filter-btn active" data-filter="all" id="filter-all">All (0)</button>
+    <button class="filter-btn" data-filter="critical" id="filter-critical">🔴 Critical &gt;30 (0)</button>
+    <button class="filter-btn" data-filter="poor" id="filter-poor">🟡 Poor 20–30 (0)</button>
+    <button class="filter-btn" data-filter="ok" id="filter-ok">🟢 Good &lt;15 (0)</button>
     <button class="filter-btn" data-filter="highimpr">High impressions &gt;10k</button>
   </div>
 
@@ -383,6 +383,55 @@ let currentFilter = 'all';
 let sortKey = 'pos';
 let sortDir = 1; // 1 = desc (worst first), -1 = asc
 
+function getSummaryStats() {
+  const criticalRows = data.filter(r => r.pos > 30);
+  const poorRows = data.filter(r => r.pos > 20 && r.pos <= 30);
+  const goodRows = data.filter(r => r.pos <= 15);
+  const mostWastedRow = criticalRows.reduce((best, row) => {
+    if (!best || row.impr > best.impr) return row;
+    return best;
+  }, null);
+
+  return {
+    total: data.length,
+    critical: criticalRows.length,
+    poor: poorRows.length,
+    good: goodRows.length,
+    mostWastedRow,
+  };
+}
+
+function formatPageLabel(path) {
+  return path
+    .replace(/^\//, '')
+    .replace(/-miami$/, '')
+    .replace(/-/g, ' ');
+}
+
+function renderSummary() {
+  const stats = getSummaryStats();
+
+  document.getElementById('summary-critical').textContent = stats.critical.toLocaleString();
+  document.getElementById('summary-poor').textContent = stats.poor.toLocaleString();
+  document.getElementById('summary-good').textContent = stats.good.toLocaleString();
+  document.getElementById('filter-all').textContent = `All (${stats.total})`;
+  document.getElementById('filter-critical').textContent = `🔴 Critical >30 (${stats.critical})`;
+  document.getElementById('filter-poor').textContent = `🟡 Poor 20–30 (${stats.poor})`;
+  document.getElementById('filter-ok').textContent = `🟢 Good <15 (${stats.good})`;
+
+  const wastedImpr = document.getElementById('summary-wasted-impr');
+  const wastedLabel = document.getElementById('summary-wasted-label');
+
+  if (!stats.mostWastedRow) {
+    wastedImpr.textContent = '0';
+    wastedLabel.textContent = 'Impr. wasted';
+    return;
+  }
+
+  wastedImpr.textContent = stats.mostWastedRow.impr.toLocaleString();
+  wastedLabel.textContent = `Impr. wasted - ${formatPageLabel(stats.mostWastedRow.page)}`;
+}
+
 function render() {
   let rows = [...data];
 
@@ -467,6 +516,7 @@ document.querySelectorAll('th[data-key]').forEach(th => {
   });
 });
 
+renderSummary();
 render();
 </script>
 </body>
