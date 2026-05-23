@@ -65,7 +65,7 @@
   /* ── Summary cards ── */
   .summary {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     margin-bottom: 24px;
   }
@@ -96,6 +96,7 @@
 
   .num-red   { color: var(--red)    !important; }
   .num-amber { color: var(--orange) !important; }
+  .num-fair  { color: var(--navy)   !important; }
   .num-green { color: var(--green)  !important; }
   .num-blue  { color: var(--navy)   !important; }
 
@@ -270,6 +271,10 @@
       <div class="lbl">Poor (pos 20–30)</div>
     </div>
     <div class="sum-card">
+      <div class="num num-fair" id="summary-fair">0</div>
+      <div class="lbl">Fair (pos 15–20)</div>
+    </div>
+    <div class="sum-card">
       <div class="num num-green" id="summary-good">0</div>
       <div class="lbl">Good (pos &lt; 15)</div>
     </div>
@@ -283,6 +288,7 @@
     <button class="filter-btn active" data-filter="all" id="filter-all">All (0)</button>
     <button class="filter-btn" data-filter="critical" id="filter-critical">🔴 Critical &gt;30 (0)</button>
     <button class="filter-btn" data-filter="poor" id="filter-poor">🟡 Poor 20–30 (0)</button>
+    <button class="filter-btn" data-filter="fair" id="filter-fair">🔵 Fair 15–20 (0)</button>
     <button class="filter-btn" data-filter="ok" id="filter-ok">🟢 Good &lt;15 (0)</button>
     <button class="filter-btn" data-filter="highimpr">High impressions &gt;10k</button>
   </div>
@@ -386,6 +392,7 @@ let sortDir = 1; // 1 = desc (worst first), -1 = asc
 function getSummaryStats() {
   const criticalRows = data.filter(r => r.pos > 30);
   const poorRows = data.filter(r => r.pos > 20 && r.pos <= 30);
+  const fairRows = data.filter(r => r.pos > 15 && r.pos <= 20);
   const goodRows = data.filter(r => r.pos <= 15);
   const mostWastedRow = criticalRows.reduce((best, row) => {
     if (!best || row.impr > best.impr) return row;
@@ -396,6 +403,7 @@ function getSummaryStats() {
     total: data.length,
     critical: criticalRows.length,
     poor: poorRows.length,
+    fair: fairRows.length,
     good: goodRows.length,
     mostWastedRow,
   };
@@ -413,10 +421,12 @@ function renderSummary() {
 
   document.getElementById('summary-critical').textContent = stats.critical.toLocaleString();
   document.getElementById('summary-poor').textContent = stats.poor.toLocaleString();
+  document.getElementById('summary-fair').textContent = stats.fair.toLocaleString();
   document.getElementById('summary-good').textContent = stats.good.toLocaleString();
   document.getElementById('filter-all').textContent = `All (${stats.total})`;
   document.getElementById('filter-critical').textContent = `🔴 Critical >30 (${stats.critical})`;
   document.getElementById('filter-poor').textContent = `🟡 Poor 20–30 (${stats.poor})`;
+  document.getElementById('filter-fair').textContent = `🔵 Fair 15–20 (${stats.fair})`;
   document.getElementById('filter-ok').textContent = `🟢 Good <15 (${stats.good})`;
 
   const wastedImpr = document.getElementById('summary-wasted-impr');
@@ -437,6 +447,7 @@ function render() {
 
   if (currentFilter === 'critical') rows = rows.filter(r => r.pos > 30);
   else if (currentFilter === 'poor') rows = rows.filter(r => r.pos > 20 && r.pos <= 30);
+  else if (currentFilter === 'fair') rows = rows.filter(r => r.pos > 15 && r.pos <= 20);
   else if (currentFilter === 'ok')   rows = rows.filter(r => r.pos <= 15);
   else if (currentFilter === 'highimpr') rows = rows.filter(r => r.impr > 10000);
 
