@@ -148,6 +148,7 @@
   col.c-pos    { width: 130px; }
   col.c-page   { width: auto; }
   col.c-keyword { width: 210px; }
+  col.c-keyword-pos { width: 170px; }
   col.c-status { width: 110px; }
   col.c-impr   { width: 130px; }
   col.c-clicks { width: 90px; }
@@ -320,6 +321,7 @@
         <col class="c-clicks">
         <col class="c-ctr">
         <col class="c-keyword">
+        <col class="c-keyword-pos">
       </colgroup>
       <thead>
         <tr>
@@ -330,6 +332,7 @@
           <th data-key="clicks" class="num">Clicks <span class="sort-icon" id="icon-clicks">↕</span></th>
           <th data-key="ctr" class="num">CTR <span class="sort-icon" id="icon-ctr">↕</span></th>
           <th data-key="keyword">Primary Keyword <span class="sort-icon" id="icon-keyword">↕</span></th>
+          <th data-key="keywordpos" class="num">Primary Keyword Position <span class="sort-icon" id="icon-keywordpos">↕</span></th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -478,7 +481,7 @@ function render() {
     if (sortKey === 'page') return sortDir * a.page.localeCompare(b.page);
     if (sortKey === 'keyword') return sortDir * getPrimaryKeyword(a.page).localeCompare(getPrimaryKeyword(b.page));
     if (sortKey === 'status') return sortDir * (b.pos - a.pos);
-    const map = { pos: 'pos', impr: 'impr', clicks: 'clicks', ctr: 'ctr' };
+    const map = { pos: 'pos', impr: 'impr', clicks: 'clicks', ctr: 'ctr', keywordpos: 'pos' };
     const k = map[sortKey] || 'pos';
     return sortDir * (b[k] - a[k]);
   });
@@ -516,6 +519,7 @@ function render() {
       <td class="num-cell">${r.clicks}</td>
       <td class="num-cell">${r.ctr.toFixed(2)}%</td>
       <td class="keyword-cell" title="${primaryKeyword}">${primaryKeyword}</td>
+      <td class="num-cell">${r.pos.toFixed(1)}</td>
     </tr>`;
   }).join('');
 }
@@ -531,7 +535,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 // Sort headers
-const keys = ['pos','page','keyword','status','impr','clicks','ctr'];
+const keys = ['pos','page','keyword','status','impr','clicks','ctr','keywordpos'];
 document.querySelectorAll('th[data-key]').forEach(th => {
   th.addEventListener('click', () => {
     const key = th.dataset.key;
