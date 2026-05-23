@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avana Plastic Surgery — Procedure Page Rankings</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f5f3ee;
+    --surface: #ffffff;
+    --border: #e0dcd4;
+    --text: #1a1814;
+    --muted: #7a766e;
+    --red: #c93434;
+    --red-bg: #fdf0f0;
+    --amber: #9a5e0a;
+    --amber-bg: #fdf6e8;
+    --blue: #1a5fa8;
+    --blue-bg: #eef4fc;
+    --green: #1a7a4a;
+    --green-bg: #edf7f2;
+    --mono: 'DM Mono', monospace;
+    --serif: 'Fraunces', Georgia, serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 2.5rem 2.5rem 2rem;
+    background: var(--surface);
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: .5rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: -.01em;
+    color: var(--text);
+    margin-bottom: .3rem;
+  }
+
+  h1 em {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ── Summary cards ── */
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem 4rem;
+  }
+
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .sum-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.1rem 1.25rem;
+    border-radius: 4px;
+  }
+
+  .sum-card .num {
+    font-family: var(--serif);
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: .35rem;
+  }
+
+  .sum-card .lbl {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: .02em;
+  }
+
+  .num-red   { color: var(--red); }
+  .num-amber { color: var(--amber); }
+  .num-green { color: var(--green); }
+  .num-blue  { color: var(--blue); }
+
+  /* ── Filters ── */
+  .filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+
+  .filter-btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 5px 14px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background: var(--surface);
+    color: var(--muted);
+    cursor: pointer;
+    transition: all .15s;
+    letter-spacing: .02em;
+  }
+
+  .filter-btn:hover { border-color: #aaa; color: var(--text); }
+
+  .filter-btn.active {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+  }
+
+  /* ── Table ── */
+  .table-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  col.c-pos    { width: 130px; }
+  col.c-page   { width: auto; }
+  col.c-status { width: 100px; }
+  col.c-impr   { width: 120px; }
+  col.c-clicks { width: 90px; }
+  col.c-ctr    { width: 80px; }
+
+  thead tr {
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    background: #faf9f7;
+  }
+
+  th:hover { color: var(--text); }
+
+  th.num { text-align: right; }
+
+  .sort-icon { opacity: .35; margin-left: 4px; }
+  .sort-icon.on { opacity: 1; }
+
+  td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #f0ede8;
+    vertical-align: middle;
+  }
+
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #faf9f7; }
+
+  /* position cell */
+  .pos-cell { display: flex; align-items: center; gap: 10px; }
+
+  .pos-bar-track {
+    width: 52px;
+    height: 4px;
+    background: #ebe8e2;
+    border-radius: 2px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .pos-bar-fill { height: 100%; border-radius: 2px; }
+
+  .pos-num {
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 30px;
+    text-align: right;
+  }
+
+  /* page link */
+  .page-link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .page-link:hover { text-decoration: underline; }
+
+  /* badge */
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .05em;
+    padding: 2px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  .badge-red   { background: var(--red-bg);   color: var(--red); }
+  .badge-amber { background: var(--amber-bg); color: var(--amber); }
+  .badge-blue  { background: var(--blue-bg);  color: var(--blue); }
+  .badge-green { background: var(--green-bg); color: var(--green); }
+
+  .num-cell { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  /* empty state */
+  .empty { padding: 2.5rem; text-align: center; color: var(--muted); font-size: 12px; }
+
+  /* count label */
+  .count-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: .75rem;
+    padding-left: 2px;
+  }
+
+  @media (max-width: 700px) {
+    header, .main { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .summary { grid-template-columns: repeat(2, 1fr); }
+    col.c-impr, col.c-clicks { width: 80px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Google Search Console · May 2026</div>
+    <h1>Avana Plastic Surgery — <em>Procedure Rankings</em></h1>
+    <div class="subtitle">45 procedure pages · sorted by position</div>
+  </div>
+</header>
+
+<div class="main">
+
+  <div class="summary">
+    <div class="sum-card">
+      <div class="num num-red">12</div>
+      <div class="lbl">Critical (pos &gt; 30)</div>
+    </div>
+    <div class="sum-card">
+      <div class="num num-amber">8</div>
+      <div class="lbl">Poor (pos 20–30)</div>
+    </div>
+    <div class="sum-card">
+      <div class="num num-green">11</div>
+      <div class="lbl">Good (pos &lt; 15)</div>
+    </div>
+    <div class="sum-card">
+      <div class="num num-blue">17,019</div>
+      <div class="lbl">Impr. wasted — rhinoplasty</div>
+    </div>
+  </div>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All (45)</button>
+    <button class="filter-btn" data-filter="critical">🔴 Critical &gt;30 (12)</button>
+    <button class="filter-btn" data-filter="poor">🟡 Poor 20–30 (8)</button>
+    <button class="filter-btn" data-filter="ok">🟢 Good &lt;15 (11)</button>
+    <button class="filter-btn" data-filter="highimpr">High impressions &gt;10k</button>
+  </div>
+
+  <div class="count-label" id="count-label">Showing 45 pages</div>
+
+  <div class="table-wrap">
+    <table>
+      <colgroup>
+        <col class="c-pos">
+        <col class="c-page">
+        <col class="c-status">
+        <col class="c-impr">
+        <col class="c-clicks">
+        <col class="c-ctr">
+      </colgroup>
+      <thead>
+        <tr>
+          <th data-key="pos"># Pos <span class="sort-icon on" id="icon-pos">↓</span></th>
+          <th data-key="page">Page <span class="sort-icon" id="icon-page">↕</span></th>
+          <th data-key="status">Status <span class="sort-icon" id="icon-status">↕</span></th>
+          <th data-key="impr" class="num">Impressions <span class="sort-icon" id="icon-impr">↕</span></th>
+          <th data-key="clicks" class="num">Clicks <span class="sort-icon" id="icon-clicks">↕</span></th>
+          <th data-key="ctr" class="num">CTR <span class="sort-icon" id="icon-ctr">↕</span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="empty" id="empty" style="display:none">No pages match this filter.</div>
+  </div>
+
+</div>
+
+<script>
+const data = [
+  {page:'/brow-lift-miami',pos:46.7,clicks:19,impr:6548,ctr:0.29},
+  {page:'/botox-injections-miami',pos:39.9,clicks:8,impr:8651,ctr:0.09},
+  {page:'/breast-implant-revision-miami',pos:38.6,clicks:4,impr:2936,ctr:0.14},
+  {page:'/rhinoplasty-miami',pos:38.3,clicks:11,impr:17019,ctr:0.06},
+  {page:'/earlobe-repair-miami',pos:37.8,clicks:18,impr:4634,ctr:0.39},
+  {page:'/dermal-fillers-miami',pos:37.8,clicks:2,impr:3846,ctr:0.05},
+  {page:'/thigh-lift-miami',pos:35.1,clicks:20,impr:3962,ctr:0.50},
+  {page:'/arm-lift-miami',pos:34.4,clicks:76,impr:4952,ctr:1.53},
+  {page:'/gynecomastia-surgery-miami',pos:34.3,clicks:8,impr:3177,ctr:0.25},
+  {page:'/labiaplasty-miami',pos:34.2,clicks:13,impr:3984,ctr:0.33},
+  {page:'/platelet-rich-plasma-facial-prp-miami',pos:33.5,clicks:2,impr:3839,ctr:0.05},
+  {page:'/miami-facelift',pos:32.2,clicks:13,impr:7497,ctr:0.17},
+  {page:'/breast-lift-miami',pos:30.7,clicks:130,impr:12098,ctr:1.07},
+  {page:'/transumbilical-breast-augmentation-miami',pos:28.6,clicks:11,impr:2167,ctr:0.51},
+  {page:'/chin-implant-miami',pos:27.4,clicks:29,impr:8347,ctr:0.35},
+  {page:'/abdominal-etching-surgery-in-miami',pos:26.5,clicks:65,impr:16040,ctr:0.41},
+  {page:'/vaginal-rejuvenation-miami',pos:26.4,clicks:19,impr:4668,ctr:0.41},
+  {page:'/eyelid-surgery-miami',pos:26.0,clicks:10,impr:773,ctr:1.29},
+  {page:'/mole-removal-miami',pos:25.6,clicks:15,impr:1828,ctr:0.82},
+  {page:'/miami-otoplasty',pos:25.1,clicks:37,impr:14954,ctr:0.25},
+  {page:'/male-plastic-surgery-miami',pos:23.0,clicks:23,impr:1595,ctr:1.44},
+  {page:'/liposuction-miami',pos:21.6,clicks:109,impr:23516,ctr:0.46},
+  {page:'/breast-augmentation-miami',pos:21.4,clicks:161,impr:23491,ctr:0.69},
+  {page:'/bbl-revision-miami',pos:21.2,clicks:67,impr:6908,ctr:0.97},
+  {page:'/buccal-fat-removal-miami',pos:19.9,clicks:4,impr:4349,ctr:0.09},
+  {page:'/body-contouring-miami',pos:19.8,clicks:4,impr:5970,ctr:0.07},
+  {page:'/chin-liposuction-miami',pos:19.8,clicks:96,impr:16140,ctr:0.59},
+  {page:'/verrucas-removal-miami',pos:18.3,clicks:17,impr:2847,ctr:0.60},
+  {page:'/mommy-makeover-miami',pos:18.1,clicks:1182,impr:44747,ctr:2.64},
+  {page:'/j-plasma-skin-tightening-in-miami',pos:18.0,clicks:58,impr:4466,ctr:1.30},
+  {page:'/macho-makeover-miami',pos:17.2,clicks:236,impr:7012,ctr:3.37},
+  {page:'/scar-revision-surgery-in-miami',pos:16.3,clicks:11,impr:3255,ctr:0.34},
+  {page:'/breast-reduction-miami',pos:16.3,clicks:242,impr:13156,ctr:1.84},
+  {page:'/brazilian-butt-lift-miami',pos:15.6,clicks:1214,impr:124263,ctr:0.98},
+  {page:'/skin-cancer-removal-surgery-in-miami',pos:14.4,clicks:11,impr:5010,ctr:0.22},
+  {page:'/butt-implants-in-miami',pos:13.9,clicks:78,impr:5782,ctr:1.35},
+  {page:'/breast-implants-miami',pos:11.8,clicks:50,impr:24269,ctr:0.21},
+  {page:'/transabdominal-breast-augmentation-miami',pos:11.7,clicks:4,impr:742,ctr:0.54},
+  {page:'/buttock-reduction-miami',pos:10.6,clicks:49,impr:3723,ctr:1.32},
+  {page:'/sebaceous-cysts-removal-miami',pos:10.2,clicks:29,impr:9560,ctr:0.30},
+  {page:'/tummy-tuck-miami',pos:9.9,clicks:542,impr:49404,ctr:1.10},
+  {page:'/lipoma-removal-miami',pos:8.8,clicks:101,impr:18573,ctr:0.54},
+  {page:'/keratosis-removal-in-miami',pos:8.4,clicks:26,impr:3426,ctr:0.76},
+  {page:'/lipo-360-miami',pos:7.5,clicks:140,impr:70347,ctr:0.20},
+  {page:'/hourglass-tummy-tuck-in-miami',pos:4.0,clicks:10,impr:10968,ctr:0.09},
+];
+
+function getStatus(pos) {
+  if (pos > 30) return { label: 'Critical', cls: 'badge-red',   group: 'critical' };
+  if (pos > 20) return { label: 'Poor',     cls: 'badge-amber', group: 'poor' };
+  if (pos > 15) return { label: 'Fair',     cls: 'badge-blue',  group: 'fair' };
+  return             { label: 'Good',     cls: 'badge-green', group: 'ok' };
+}
+
+function barColor(pos) {
+  if (pos > 30) return '#c93434';
+  if (pos > 20) return '#c07a12';
+  if (pos > 15) return '#1a5fa8';
+  return '#1a7a4a';
+}
+
+let currentFilter = 'all';
+let sortKey = 'pos';
+let sortDir = 1; // 1 = desc (worst first), -1 = asc
+
+function render() {
+  let rows = [...data];
+
+  if (currentFilter === 'critical') rows = rows.filter(r => r.pos > 30);
+  else if (currentFilter === 'poor') rows = rows.filter(r => r.pos > 20 && r.pos <= 30);
+  else if (currentFilter === 'ok')   rows = rows.filter(r => r.pos <= 15);
+  else if (currentFilter === 'highimpr') rows = rows.filter(r => r.impr > 10000);
+
+  rows.sort((a, b) => {
+    if (sortKey === 'page') return sortDir * a.page.localeCompare(b.page);
+    if (sortKey === 'status') return sortDir * (b.pos - a.pos);
+    const map = { pos: 'pos', impr: 'impr', clicks: 'clicks', ctr: 'ctr' };
+    const k = map[sortKey] || 'pos';
+    return sortDir * (b[k] - a[k]);
+  });
+
+  const tbody = document.getElementById('tbody');
+  const empty = document.getElementById('empty');
+  const countLabel = document.getElementById('count-label');
+
+  countLabel.textContent = `Showing ${rows.length} page${rows.length !== 1 ? 's' : ''}`;
+
+  if (rows.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = rows.map(r => {
+    const st = getStatus(r.pos);
+    const barPct = Math.min((r.pos / 50) * 100, 100).toFixed(1);
+    const color = barColor(r.pos);
+    return `<tr>
+      <td>
+        <div class="pos-cell">
+          <div class="pos-bar-track">
+            <div class="pos-bar-fill" style="width:${barPct}%;background:${color};"></div>
+          </div>
+          <span class="pos-num" style="color:${color}">${r.pos.toFixed(1)}</span>
+        </div>
+      </td>
+      <td><a class="page-link" href="https://avanaplasticsurgery.com${r.page}" target="_blank" rel="noopener">${r.page}</a></td>
+      <td><span class="badge ${st.cls}">${st.label}</span></td>
+      <td class="num-cell">${r.impr.toLocaleString()}</td>
+      <td class="num-cell">${r.clicks}</td>
+      <td class="num-cell">${r.ctr.toFixed(2)}%</td>
+    </tr>`;
+  }).join('');
+}
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    render();
+  });
+});
+
+// Sort headers
+const keys = ['pos','page','status','impr','clicks','ctr'];
+document.querySelectorAll('th[data-key]').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.key;
+    if (sortKey === key) sortDir *= -1;
+    else { sortKey = key; sortDir = 1; }
+
+    keys.forEach(k => {
+      const icon = document.getElementById('icon-' + k);
+      if (!icon) return;
+      icon.classList.remove('on');
+      icon.textContent = '↕';
+    });
+    const activeIcon = document.getElementById('icon-' + key);
+    if (activeIcon) {
+      activeIcon.classList.add('on');
+      activeIcon.textContent = sortDir === 1 ? '↓' : '↑';
+    }
+    render();
+  });
+});
+
+render();
+</script>
+</body>
+</html>
