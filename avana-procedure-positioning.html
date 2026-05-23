@@ -442,6 +442,33 @@ function getPrimaryKeyword(path) {
     .replace(/-/g, ' ');
 }
 
+// Exact primary-keyword query positions from Queries.csv.
+const primaryKeywordPositionMap = {
+  'brow lift miami': 30.11,
+  'thigh lift miami': 21.33,
+  'labiaplasty miami': 25.29,
+  'breast lift miami': 20.21,
+  'vaginal rejuvenation miami': 15.95,
+  'liposuction miami': 28.83,
+  'breast augmentation miami': 35.9,
+  'bbl revision miami': 13.67,
+  'buccal fat removal miami': 25.1,
+  'mommy makeover miami': 9.57,
+  'breast reduction miami': 11.94,
+  'brazilian butt lift miami': 4.6,
+  'butt implants in miami': 12.73,
+  'tummy tuck miami': 11.56,
+  'lipoma removal miami': 10.22,
+  'lipo 360 miami': 16.85,
+};
+
+function getPrimaryKeywordPosition(keyword) {
+  const key = keyword.toLowerCase();
+  return Object.prototype.hasOwnProperty.call(primaryKeywordPositionMap, key)
+    ? primaryKeywordPositionMap[key]
+    : null;
+}
+
 function renderSummary() {
   const stats = getSummaryStats();
 
@@ -480,8 +507,16 @@ function render() {
   rows.sort((a, b) => {
     if (sortKey === 'page') return sortDir * a.page.localeCompare(b.page);
     if (sortKey === 'keyword') return sortDir * getPrimaryKeyword(a.page).localeCompare(getPrimaryKeyword(b.page));
+    if (sortKey === 'keywordpos') {
+      const aKeywordPos = getPrimaryKeywordPosition(getPrimaryKeyword(a.page));
+      const bKeywordPos = getPrimaryKeywordPosition(getPrimaryKeyword(b.page));
+      if (aKeywordPos === null && bKeywordPos === null) return 0;
+      if (aKeywordPos === null) return 1;
+      if (bKeywordPos === null) return -1;
+      return sortDir * (bKeywordPos - aKeywordPos);
+    }
     if (sortKey === 'status') return sortDir * (b.pos - a.pos);
-    const map = { pos: 'pos', impr: 'impr', clicks: 'clicks', ctr: 'ctr', keywordpos: 'pos' };
+    const map = { pos: 'pos', impr: 'impr', clicks: 'clicks', ctr: 'ctr' };
     const k = map[sortKey] || 'pos';
     return sortDir * (b[k] - a[k]);
   });
@@ -504,6 +539,8 @@ function render() {
     const barPct = Math.min((r.pos / 50) * 100, 100).toFixed(1);
     const color = barColor(r.pos);
     const primaryKeyword = getPrimaryKeyword(r.page);
+    const primaryKeywordPosition = getPrimaryKeywordPosition(primaryKeyword);
+    const primaryKeywordPositionLabel = primaryKeywordPosition === null ? 'N/A' : primaryKeywordPosition.toFixed(2);
     return `<tr>
       <td>
         <div class="pos-cell">
@@ -519,7 +556,7 @@ function render() {
       <td class="num-cell">${r.clicks}</td>
       <td class="num-cell">${r.ctr.toFixed(2)}%</td>
       <td class="keyword-cell" title="${primaryKeyword}">${primaryKeyword}</td>
-      <td class="num-cell">${r.pos.toFixed(1)}</td>
+      <td class="num-cell" title="${primaryKeywordPosition === null ? 'No exact match in Queries.csv' : 'Matched in Queries.csv'}">${primaryKeywordPositionLabel}</td>
     </tr>`;
   }).join('');
 }
