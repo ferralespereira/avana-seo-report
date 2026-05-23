@@ -386,7 +386,7 @@ const data = [
   {page:'/tummy-tuck-miami',pos:9.9,clicks:542,impr:49404,ctr:1.10,keyword:'tummy tuck miami',kpos:11.6},
   {page:'/lipoma-removal-miami',pos:8.8,clicks:101,impr:18573,ctr:0.54,keyword:'lipoma removal miami',kpos:10.2},
   {page:'/keratosis-removal-in-miami',pos:8.4,clicks:26,impr:3426,ctr:0.76,keyword:'keratosis removal in miami',kpos:null},
-  {page:'/lipo-360-miami',pos:7.5,clicks:140,impr:70347,ctr:0.20,keyword:'lipo 360 miami',kpos:16.9},
+  {page:'/lipo-360-miami',pos:7.5,clicks:140,impr:70347,ctr:0.20,keyword:'lipo 360 miami',kpos:16.9,link:'lipo-360-miami.html'},
   {page:'/hourglass-tummy-tuck-in-miami',pos:4.0,clicks:10,impr:10968,ctr:0.09,keyword:'hourglass tummy tuck in miami',kpos:null},
 ];
 
@@ -551,7 +551,7 @@ function render() {
       <td class="num-cell">${r.impr.toLocaleString()}</td>
       <td class="num-cell">${r.clicks}</td>
       <td class="num-cell">${r.ctr.toFixed(2)}%</td>
-      <td class="keyword-cell" title="${r.keyword}">${r.keyword}</td>
+      <td class="keyword-cell" title="${r.keyword}">${r.link ? `<a href="${r.link}">${r.keyword}</a>` : r.keyword}</td>
       <td class="num-cell" title="${kposTitle}">${kposLabel}</td>
     </tr>`;
   }).join('');
