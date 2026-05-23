@@ -4,230 +4,212 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Avana Plastic Surgery — Procedure Page Rankings</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --bg: #f5f3ee;
-    --surface: #ffffff;
-    --border: #e0dcd4;
-    --text: #1a1814;
-    --muted: #7a766e;
-    --red: #c93434;
-    --red-bg: #fdf0f0;
-    --amber: #9a5e0a;
-    --amber-bg: #fdf6e8;
-    --blue: #1a5fa8;
-    --blue-bg: #eef4fc;
-    --green: #1a7a4a;
-    --green-bg: #edf7f2;
-    --mono: 'DM Mono', monospace;
-    --serif: 'Fraunces', Georgia, serif;
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
   }
 
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
   body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--mono);
-    font-size: 13px;
-    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
     min-height: 100vh;
   }
 
   /* ── Header ── */
   header {
-    border-bottom: 1px solid var(--border);
-    padding: 2.5rem 2.5rem 2rem;
-    background: var(--surface);
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
   }
 
-  .header-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+  header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  header p  { font-size: 13px; color: #aac; margin-top: 4px; }
 
-  .eyebrow {
-    font-size: 10px;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: .5rem;
-  }
-
-  h1 {
-    font-family: var(--serif);
-    font-weight: 300;
-    font-size: 2rem;
-    letter-spacing: -.01em;
-    color: var(--text);
-    margin-bottom: .3rem;
-  }
-
-  h1 em {
-    font-style: italic;
-    font-weight: 300;
-  }
-
-  .subtitle {
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #aac;
     font-size: 12px;
-    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color .15s;
+  }
+  .back-link:hover { color: #fff; }
+
+  /* ── Main ── */
+  .main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 32px 40px;
   }
 
   /* ── Summary cards ── */
-  .main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 2.5rem 4rem;
-  }
-
   .summary {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    margin-bottom: 2rem;
+    margin-bottom: 24px;
   }
 
   .sum-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 1.1rem 1.25rem;
-    border-radius: 4px;
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
   }
 
   .sum-card .num {
-    font-family: var(--serif);
-    font-size: 2.25rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1;
-    margin-bottom: .35rem;
+    margin-bottom: 6px;
+    color: var(--teal);
   }
 
   .sum-card .lbl {
     font-size: 11px;
-    color: var(--muted);
-    letter-spacing: .02em;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: .4px;
   }
 
-  .num-red   { color: var(--red); }
-  .num-amber { color: var(--amber); }
-  .num-green { color: var(--green); }
-  .num-blue  { color: var(--blue); }
+  .num-red   { color: var(--red)    !important; }
+  .num-amber { color: var(--orange) !important; }
+  .num-green { color: var(--green)  !important; }
+  .num-blue  { color: var(--navy)   !important; }
 
   /* ── Filters ── */
   .filters {
     display: flex;
-    gap: 6px;
+    gap: 8px;
     flex-wrap: wrap;
-    margin-bottom: 1.25rem;
+    margin-bottom: 12px;
   }
 
   .filter-btn {
-    font-family: var(--mono);
-    font-size: 11px;
-    padding: 5px 14px;
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    background: var(--surface);
-    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--navy);
     cursor: pointer;
-    transition: all .15s;
-    letter-spacing: .02em;
+    transition: background .15s, color .15s;
   }
 
-  .filter-btn:hover { border-color: #aaa; color: var(--text); }
-
+  .filter-btn:hover,
   .filter-btn.active {
-    background: var(--text);
-    color: var(--bg);
-    border-color: var(--text);
+    background: var(--navy);
+    color: #fff;
   }
 
-  /* ── Table ── */
+  /* ── Table wrapper ── */
   .table-wrap {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 4px;
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-radius: 8px;
     overflow: hidden;
+    margin-top: 8px;
   }
 
   table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+    font-size: 13px;
   }
 
   col.c-pos    { width: 130px; }
   col.c-page   { width: auto; }
-  col.c-status { width: 100px; }
-  col.c-impr   { width: 120px; }
+  col.c-status { width: 110px; }
+  col.c-impr   { width: 130px; }
   col.c-clicks { width: 90px; }
-  col.c-ctr    { width: 80px; }
+  col.c-ctr    { width: 85px; }
 
-  thead tr {
-    border-bottom: 1px solid var(--border);
-  }
+  thead tr { border-bottom: 1px solid var(--midGray); }
 
   th {
-    padding: 10px 14px;
+    padding: 10px 12px;
     text-align: left;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--navy);
+    color: #fff;
     cursor: pointer;
     user-select: none;
     white-space: nowrap;
-    background: #faf9f7;
   }
 
-  th:hover { color: var(--text); }
-
+  th:hover { background: #254e7a; }
   th.num { text-align: right; }
 
-  .sort-icon { opacity: .35; margin-left: 4px; }
+  .sort-icon { opacity: .5; margin-left: 4px; }
   .sort-icon.on { opacity: 1; }
 
   td {
-    padding: 9px 14px;
-    border-bottom: 1px solid #f0ede8;
+    padding: 9px 12px;
+    border-bottom: 1px solid #e8e8e8;
     vertical-align: middle;
   }
 
   tr:last-child td { border-bottom: none; }
-  tr:hover td { background: #faf9f7; }
+  tr:nth-child(even) td { background: var(--lightGray); }
+  tr:hover td { background: var(--blueBg) !important; }
 
   /* position cell */
   .pos-cell { display: flex; align-items: center; gap: 10px; }
 
   .pos-bar-track {
     width: 52px;
-    height: 4px;
-    background: #ebe8e2;
-    border-radius: 2px;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 3px;
     flex-shrink: 0;
     overflow: hidden;
   }
 
-  .pos-bar-fill { height: 100%; border-radius: 2px; }
+  .pos-bar-fill { height: 100%; border-radius: 3px; }
 
   .pos-num {
     font-size: 13px;
-    font-weight: 500;
-    min-width: 30px;
+    font-weight: 700;
+    min-width: 32px;
     text-align: right;
   }
 
   /* page link */
   .page-link {
-    color: var(--text);
+    color: var(--teal);
     text-decoration: none;
     font-size: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
+    font-weight: 700;
   }
 
   .page-link:hover { text-decoration: underline; }
@@ -235,34 +217,34 @@
   /* badge */
   .badge {
     display: inline-block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: .05em;
+    font-size: 11px;
+    font-weight: 700;
     padding: 2px 8px;
-    border-radius: 2px;
+    border-radius: 12px;
     text-transform: uppercase;
+    letter-spacing: .3px;
   }
 
-  .badge-red   { background: var(--red-bg);   color: var(--red); }
-  .badge-amber { background: var(--amber-bg); color: var(--amber); }
-  .badge-blue  { background: var(--blue-bg);  color: var(--blue); }
-  .badge-green { background: var(--green-bg); color: var(--green); }
+  .badge-red   { background: var(--redBg);    color: var(--red); }
+  .badge-amber { background: var(--yellowBg); color: #7d5a00; }
+  .badge-blue  { background: var(--blueBg);   color: var(--navy); }
+  .badge-green { background: var(--greenBg);  color: var(--green); }
 
-  .num-cell { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .num-cell { text-align: right; color: var(--darkGray); font-variant-numeric: tabular-nums; }
 
   /* empty state */
-  .empty { padding: 2.5rem; text-align: center; color: var(--muted); font-size: 12px; }
+  .empty { padding: 2.5rem; text-align: center; color: #999; font-size: 13px; }
 
   /* count label */
   .count-label {
-    font-size: 11px;
-    color: var(--muted);
-    margin-bottom: .75rem;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
     padding-left: 2px;
   }
 
   @media (max-width: 700px) {
-    header, .main { padding-left: 1.25rem; padding-right: 1.25rem; }
+    header, .main { padding-left: 20px; padding-right: 20px; }
     .summary { grid-template-columns: repeat(2, 1fr); }
     col.c-impr, col.c-clicks { width: 80px; }
   }
@@ -271,11 +253,9 @@
 <body>
 
 <header>
-  <div class="header-inner">
-    <div class="eyebrow">Google Search Console · May 2026</div>
-    <h1>Avana Plastic Surgery — <em>Procedure Rankings</em></h1>
-    <div class="subtitle">45 procedure pages · sorted by position</div>
-  </div>
+  <a class="back-link" href="index.html">← Back to SEO Dashboard</a>
+  <h1>Avana Plastic Surgery — Procedure Rankings</h1>
+  <p>Google Search Console · May 2026 · 45 procedure pages</p>
 </header>
 
 <div class="main">
@@ -393,10 +373,10 @@ function getStatus(pos) {
 }
 
 function barColor(pos) {
-  if (pos > 30) return '#c93434';
-  if (pos > 20) return '#c07a12';
-  if (pos > 15) return '#1a5fa8';
-  return '#1a7a4a';
+  if (pos > 30) return '#C0392B';
+  if (pos > 20) return '#E67E22';
+  if (pos > 15) return '#1B3A5C';
+  return '#1E7E34';
 }
 
 let currentFilter = 'all';
