@@ -551,7 +551,7 @@ function render() {
       <td class="num-cell">${r.impr.toLocaleString()}</td>
       <td class="num-cell">${r.clicks}</td>
       <td class="num-cell">${r.ctr.toFixed(2)}%</td>
-      <td class="keyword-cell" title="${r.keyword}">${r.link ? `<a href="${r.link}">${r.keyword}</a>` : r.keyword}</td>
+      <td class="keyword-cell" title="${r.keyword}">${r.link ? `<a href="${r.link}" target="_blank" rel="noopener">${r.keyword}</a>` : r.keyword}</td>
       <td class="num-cell" title="${kposTitle}">${kposLabel}</td>
     </tr>`;
   }).join('');
