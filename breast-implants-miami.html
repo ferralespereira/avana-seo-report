@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana Issues</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th.content-column {
+    background: var(--teal);
+    position: relative;
+  }
+  .data-table th.trust-column {
+    background: var(--gold);
+    color: var(--navy);
+    position: relative;
+  }
+  .data-table th.cta-column {
+    background: var(--orange);
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.schema-column {
+    background: #6366f1;
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.content-column::after {
+    content: "CONTENT";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.trust-column::after {
+    content: "TRUST SIGNAL";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(27, 58, 92, .15);
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.cta-column::after {
+    content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.schema-column::after {
+    content: "SCHEMA TYPE";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td.content-column {
+    background: #f4fbfb;
+  }
+  .data-table td.trust-column {
+    background: #fff8e8;
+  }
+  .data-table td.cta-column {
+    background: #fff3ec;
+  }
+  .data-table td.schema-column {
+    background: #f0f0ff;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .priority-high { background: var(--redBg) !important; color: var(--red); font-weight: 700; }
+  .priority-medium { background: var(--yellowBg) !important; color: #7d5a00; font-weight: 700; }
+  .priority-low { background: var(--greenBg) !important; color: var(--green); font-weight: 700; }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .subsection h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .lang-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--gold);
+    background: transparent;
+    transition: background .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .site-tabs,
+    .indicator-nav { padding: 0 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+    .site-header { padding: 16px; }
+    .site-header h1 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<main class="main">
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  brazilian butt lift miami
+  <button onclick="navigator.clipboard.writeText('brazilian butt lift miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/brazilian-butt-lift-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/brazilian-butt-lift-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+</div>
+</div>
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">8</div>
+<div class="kpi-source">Brazilian Butt Lift Miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">1,940</div>
+<div class="kpi-source">Brazilian Butt Lift Miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">0.41%</div>
+<div class="kpi-source">Brazilian Butt Lift Miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">4.52</div>
+<div class="kpi-source">Brazilian Butt Lift Miami — primary query</div>
+</div>
+</div>
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for "Brazilian Butt Lift Miami"</div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Mobile</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">5</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">905</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0.55%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">6.88</td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">🖥️ Desktop</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">3</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">1,034</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0.29%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">2.45</td>
+</tr>
+<tr>
+<td style="padding:9px 14px;">📟 Tablet</td>
+<td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+<td style="padding:9px 14px;text-align:right;color:#7c3aed;">1</td>
+<td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+<td style="padding:9px 14px;text-align:right;color:#d97706;">4.0</td>
+</tr>
+</tbody>
+</table>
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+</div>
+</div>
+<div style="margin-top:32px;">
+</div>
+</div>
+<div id="bbl-url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el=document.getElementById('bbl-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/brazilian-butt-lift-miami</span> — Last 3 months (May 22, 2026)</div>
+</a>
+<a href="#" onclick="var el=document.getElementById('bbl-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+</div>
+<div id="bbl-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">1,218</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">124,921</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">0.98%</div>
+</div>
+</div>
+<!-- Queries with clicks -->
+<div style="margin-bottom:16px;">
+<div style="background:#059669;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">✅ QUERIES WITH CLICKS — Top 25 by clicks</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;"><thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#6ec6ff;">Clicks</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#34d399;">CTR</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+<th style="padding:7px 10px;text-align:left;">Note</th>
+</tr>
+</thead><tbody><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">118</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">3,535</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.34%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.21</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🎯 Highest volume — 3.34% CTR — good organic link performance</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is a bbl in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">51</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2,656</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.92%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.17</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ High intent cost query — 1.92% CTR</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">miami bbl</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">44</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,803</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.44%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.4</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 2.44% CTR — strong local intent</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">30</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,048</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.86%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.19</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 2.86% CTR — strong</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl surgery miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">23</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">639</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.6%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.15</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 3.60% CTR — transactional intent</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl miami cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">21</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">383</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.48%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.12</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 5.48% CTR — best performer — cost + local</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl cost miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">15</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">540</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.78%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.19</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 2.78% CTR — cost intent</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">miami bbl cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">15</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">318</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.72%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.14</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 4.72% CTR — strong cost intent</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl miami fl</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">11</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">214</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.14%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.32</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 5.14% CTR</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl florida</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">10</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">503</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.99%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.26</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ 1.99% CTR — broader geo</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl in florida</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">9</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">162</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.56%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.37</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 5.56% CTR</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">brazilian butt lift miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">8</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,853</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0.43%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.51</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ 0.43% CTR — AI Overview stealing clicks</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is a bbl in florida</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">474</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.48%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.68</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 1.48% CTR — geo variant</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl in miami cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">250</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.8%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.27</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl miami florida</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">104</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.73%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.49</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl specials miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">99</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.07%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.76</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl in miami florida</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">88</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.95%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.45</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">brazilian butt lift cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">6</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,430</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0.42%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">13.37</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ 0.42% CTR — low — pos 13.37 — improve ranking</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much does a bbl cost in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">6</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">501</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.2%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.14</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl surgery florida</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">6</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">45</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">13.33%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.78</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,561</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0.32%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">12.68</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ 0.32% CTR — low — pos 12.68 — page 2</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl cost in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">280</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.79%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.29</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">miami bbl surgeons</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">270</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.85%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.93</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">miami bbl doctors</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">140</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.57%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">9.96</td>
+</tr><tr style="background:#f8fbff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much are bbls in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">102</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.9%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.3</td>
+</tr></tbody></table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#555;font-style:italic;">Showing top 25 of 134 queries with clicks</div>
+</div>
+</div>
+</div>
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Avana ✅ | Aeris ✅ | CG Cosmetic ✅ | Spectrum ✅ confirmed from page source</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+
+
+<th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Avana 🔴 OUR PAGE<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/brazilian-butt-lift-miami</a><button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/brazilian-butt-lift-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th><th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Spectrum Aesthetics ✅ pos 2<br/><span style="font-weight:400;font-size:11px;"><a href="https://spectrum-aesthetics.com/brazilian-butt-lift/" style="color:#fff;text-decoration:none;" target="_blank">spectrum-aesthetics.com/brazilian-butt-lift/</a><button onclick="navigator.clipboard.writeText('https://spectrum-aesthetics.com/brazilian-butt-lift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th><th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Aeris (Top Plastic Surgeons) ✅ pos 3<br/><span style="font-weight:400;font-size:11px;"><a href="https://aeris.co/plastic-surgeons-miami-fl/body/brazilian-butt-lift/" style="color:#fff;text-decoration:none;" target="_blank">aeris.co/plastic-surgeons-miami-fl/body/brazilian-butt-lift/</a><button onclick="navigator.clipboard.writeText('https://aeris.co/plastic-surgeons-miami-fl/body/brazilian-butt-lift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th><th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">CG Cosmetic ✅ pos 4<br/><span style="font-weight:400;font-size:11px;"><a href="https://www.cgcosmetic.com/brazilian-butt-lift-miami-fat-transfer/" style="color:#fff;text-decoration:none;" target="_blank">www.cgcosmetic.com/brazilian-butt-lift-miami-fat-transfer/</a><button onclick="navigator.clipboard.writeText('https://www.cgcosmetic.com/brazilian-butt-lift-miami-fat-transfer/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th></tr>
+</thead>
+<tbody>
+<!-- Title tag -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Weak for cost intent</div>"Brazilian Butt Lift Miami - $3499 BBL Fat Transfer | Avana Plastic Surgery"<div style="margin-top:4px;font-size:11px;color:#e67e22;">✅ Price in title ($3499)<br/>❌ No "cost" keyword<br/>❌ No year 2026</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest title of all competitors</div>"Brazilian Butt Lift Miami | BBL Miami Cost $3200"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Cost" keyword in title<br/>✅ Price $3,200 — lowest hook of all competitors<br/>✅ "BBL Miami" + "Miami" — double geo signal<br/><span style="color:#e67e22;">⚠️ Actual page price is $3,500 — title uses $3,200 as click hook</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ No cost or price in title</div>"Best Brazilian Butt Lift Miami, FL | Aeris"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Best" — competitive signal<br/>❌ No price<br/>❌ No "cost" keyword</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong cost signal</div>"Brazilian Butt Lift Miami, BBL From $3,500"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "BBL From $3,500" — price in title<br/>✅ "From" sets affordable expectation<br/>❌ No "cost" keyword explicitly</div></td></tr>
+<!-- H1 -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">"Brazilian Butt Lift Miami"<div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ No cost signal in H1</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">"Brazilian Butt Lift Miami - BBL Cost $3500*"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ "Cost" + price in H1 — unique among all competitors<br/><span style="color:#e67e22;">⚠️ Asterisk (*) — price conditional, not transparent</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">"Brazilian Butt Lift"<div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ No Miami — no cost signal</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">"Brazilian Butt Lift in Miami"<div style="font-size:11px;color:#999;margin-top:3px;">Location in H1 ✅ — no cost signal</div></td></tr>
+<!-- Primary keyword -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">brazilian butt lift miami</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">bbl miami cost</span><div style="font-size:11px;color:#059669;margin-top:3px;">✅ Confirmed — "cost" in title, H1, H2, meta</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">brazilian butt lift miami</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">brazilian butt lift miami</span></td></tr>
+<!-- Secondary keywords -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(from H2 headings)</span></td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="margin-bottom:3px;">✅ optimal BBL candidates</div><div style="margin-bottom:3px;">✅ BBL before &amp; after miami</div><div style="margin-bottom:3px;">✅ BBL surgery advantages</div><div style="margin-bottom:3px;">✅ different techniques (butterfly, thong, c-lift)</div><div style="margin-bottom:3px;">✅ BBL safety standards</div><div style="margin-bottom:3px;">✅ BBL recovery miami</div><div style="margin-bottom:3px;">✅ BBL cost in miami (H2 — own price $3,500–$5,500)</div><div style="margin-bottom:3px;">✅ lipo 360 and bbl</div><div style="margin-bottom:3px;">✅ BBL FAQs (12 questions)</div><div style="color:#c0392b;">❌ No "bbl miami cost" as primary target<br/>❌ Techniques not clearly named (no VASER, PAL, etc.)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="margin-bottom:3px;">✅ what is BBL / butt augmentation (H2)</div><div style="margin-bottom:3px;">✅ am I a good candidate for BBL (H3)</div><div style="margin-bottom:3px;">✅ how is BBL performed (H3)</div><div style="margin-bottom:3px;">✅ BBL recovery time (H3)</div><div style="margin-bottom:3px;">✅ how long do BBL results last (H3)</div><div style="margin-bottom:3px;">✅ how much does a BBL cost (H2 — question format matching PAA)</div><div style="margin-bottom:3px;">✅ BBL age limit (H3)</div><div style="margin-bottom:3px;">✅ butt implants vs fat transfer (H3)</div><div style="margin-bottom:3px;">✅ how much fat required for BBL (H3)</div><div style="margin-bottom:3px;">✅ compression garment after BBL (H3)</div><div style="margin-bottom:3px;">✅ BBL before tummy tuck (H3)</div><div style="margin-bottom:3px;">✅ lipo combined with BBL (H3)</div><div style="margin-bottom:3px;">✅ 18 FAQs — all cost-related ✅</div><div style="margin-bottom:3px;">✅ out-of-town patients — dedicated section (90% stat)</div><div style="color:#c0392b;margin-top:4px;">❌ No skinny BBL section (unique to Aeris)<br/>❌ No table of contents / anchor links<br/>❌ No specific financing lenders named (vague only)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="margin-bottom:3px;">✅ about BBL / traditional vs BBL</div><div style="margin-bottom:3px;">✅ BBL benefits</div><div style="margin-bottom:3px;">✅ BBL candidates</div><div style="margin-bottom:3px;">✅ skinny BBL (unique subsection)</div><div style="margin-bottom:3px;">✅ hybrid BBL (unique)</div><div style="margin-bottom:3px;">✅ BBL procedure</div><div style="margin-bottom:3px;">✅ BBL recovery</div><div style="margin-bottom:3px;">✅ BBL results</div><div style="margin-bottom:3px;color:#e67e22;">⚠️ BBL cost — section exists but no specific price quoted</div><div style="margin-bottom:3px;">✅ corresponding procedures (breast aug, lipo, tummy tuck)</div><div style="margin-bottom:3px;">✅ 4 FAQs</div><div style="color:#059669;">✅ Table of contents with anchor links — excellent UX</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="margin-bottom:3px;">✅ fat transfer to buttocks</div><div style="margin-bottom:3px;">✅ BBL candidates / skinny BBL</div><div style="margin-bottom:3px;">✅ BBL recovery</div><div style="margin-bottom:3px;">✅ how much is a BBL (H2 — direct cost question)</div><div style="margin-bottom:3px;">✅ BBL vs butt implants comparison</div><div style="margin-bottom:3px;">✅ BBL financing section</div><div style="margin-bottom:3px;">✅ best BBL surgeon in miami</div><div style="margin-bottom:3px;">✅ exercise vs BBL</div><div style="color:#059669;">✅ Most FAQ questions of all — 10+ covering cost, insurance, surgeon selection, cheap BBL risks</div></td></tr>
+<!-- Word count -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count<br/><span style="font-size:11px;font-weight:400;color:#666;">(approx. — body text)</span></td>
+
+
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Comprehensive — ~3,500 words</div><div>• 12 FAQs ✅ — before/after ✅ — 5 surgeons listed ✅</div><div>• BBL techniques section (4 types) ✅</div><div>• Safety standards section ✅</div><div style="color:#c0392b;margin-top:4px;">❌ Cost section thin — RealSelf average cited</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 4,396 words — confirmed (Article schema)</div><div>• 18 FAQs ✅ — before/after gallery linked ✅</div><div>• 4 surgeons named ✅</div><div>• Butt implants vs fat transfer comparison table ✅</div><div>• Out-of-town section with recovery houses ✅</div><div style="color:#e67e22;margin-top:4px;">⚠️ No specific lenders named in financing section<br/>⚠️ Affirm JS loaded but no widget shown on page</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Very comprehensive — ~3,000 words</div><div>• Table of contents ✅ — 4 FAQs ✅ — before/after ✅</div><div>• Skinny BBL + Hybrid BBL unique sections ✅</div><div style="color:#e67e22;margin-top:4px;">⚠️ No price stated — "contact for quote"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Long — ~2,500 words</div><div>• 10+ FAQ sections as H2/H3 ✅</div><div>• Direct cost questions answered ✅</div><div>• Financing section ✅</div><div>• BMI requirement stated (below 31) ✅</div></td></tr>
+<!-- Cost keyword signal -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost keyword<br/>signal strength</td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Moderate</div><div>• "$3500 to $5500" — OWN pricing ✅</div><div>• RealSelf average $6,525 cited ✅</div><div>• BBL COST IN MIAMI — dedicated H2 ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No "cost" in title tag</div><div style="color:#c0392b;">❌ No PriceRange schema</div><div style="color:#c0392b;">❌ Cost section near bottom of page</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest cost signal of all competitors</div><div>• "BBL Miami Cost $3200" in title ✅</div><div>• "BBL Cost $3200" in meta description ✅</div><div>• "BBL Cost $3500*" in H1 ✅</div><div>• "How much does a BBL cost?" as H2 ✅ (PAA-matching)</div><div>• Starting price $3,500 stated in body ✅</div><div>• Includes: physician, OR, anesthesia, labs, 1yr follow-up ✅</div><div style="color:#e67e22;margin-top:4px;">⚠️ $3,200 in title vs $3,500 on page — price mismatch<br/>⚠️ Financing vague — no lenders or monthly payments shown</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ Weakest cost signal</div><div>• No price in title</div><div>• No specific price on page — "contact for quote"</div><div>• Cost section exists but vague</div><div style="color:#e67e22;margin-top:4px;">⚠️ Ranks position 3 despite no pricing — driven by "Best" + surgeon credentials + before/after</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong cost signals</div><div>• "BBL From $4,500" in hero section</div><div>• "From $3,500" in title (special pricing)</div><div>• Direct FAQ: "How Much is a BBL?" answered with $4,500–$9,000</div><div>• Financing section with CareCredit + United Medical Credit ✅</div><div>• BMI requirement stated ✅ — sets expectations</div></td></tr>
+<!-- Meta description -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;margin-bottom:4px;">⚠️ Price but generic</div>"Brazilian Butt Lift Miami. Affordable BBL procedure starting at $3499. BBL fat transfer will reshape your body..."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Price $3499 in meta<br/>✅ "Affordable" signal<br/>❌ No financing<br/>❌ No "cost" keyword explicitly</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;margin-bottom:4px;">✅ Best meta of all competitors</div>"Brazilian Butt Lift Miami (BBL) Cost $3200 to give a perky, round, lifted buttock by fat transfer procedure by Florida top plastic surgeon."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Cost" keyword in meta<br/>✅ Price $3,200 explicitly stated<br/>✅ "Florida top plastic surgeon" — authority signal<br/><span style="color:#e67e22;">⚠️ No financing language<br/>⚠️ $3,200 conflicts with $3,500 on page</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#c0392b;margin-bottom:4px;">❌ No cost language</div>"Our Practice is Ranked #1 in Plastic Surgery in Miami specializing in Brazilian Butt Lift. Click to learn more."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "#1" claim — strong authority signal<br/>❌ No price — no cost — no financing</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#e67e22;margin-bottom:4px;">⚠️ Procedure-focused — no price</div>"Brazilian Butt Lift in Miami using your own fat from unwanted areas to enhance the buttocks also known as buttock augmentation or BBL..."<div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No price in meta<br/>❌ No "cost" keyword<br/>❌ No financing mention</div></td></tr>
+<!-- FAQ coverage -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage<br/><span style="font-size:11px;font-weight:400;color:#666;">(targets PAA boxes)</span></td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="margin-bottom:3px;">12 FAQs — comprehensive ✅</div><div style="color:#c0392b;">❌ No "how much" cost FAQ</div><div style="color:#c0392b;">❌ No FAQPage schema on this page</div><div style="color:#059669;margin-top:4px;">✅ Best FAQ coverage of all — 12 questions including recovery, side effects, scars, massages</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="margin-bottom:3px;">18 FAQs — most of all competitors ✅</div><div style="color:#059669;">✅ "What factors affect BBL cost in Miami?" ✅<br/>✅ "Are there financing options?" ✅<br/>✅ "Does insurance cover BBL?" ✅<br/>✅ "What are the risks?" ✅<br/>✅ "How long does surgery take?" ✅<br/>✅ "Butt implants vs fat transfer?" ✅<br/>✅ "How much fat is required?" ✅<br/>✅ FAQPage schema confirmed ✅</div><div style="color:#e67e22;margin-top:4px;">⚠️ Financing FAQ vague — no lenders named<br/>⚠️ No specific cost amounts in FAQ answers</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="margin-bottom:3px;">4 FAQs — focused ✅</div><div style="color:#059669;">✅ Recovery FAQ<br/>✅ Risks FAQ<br/>✅ Scars FAQ<br/>✅ Results permanence FAQ</div><div style="color:#c0392b;margin-top:4px;">❌ No cost FAQ<br/>❌ Schema status unknown</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="margin-bottom:3px;">10+ FAQ sections ✅</div><div style="color:#059669;">✅ "How Much is a BBL?" — direct cost answer ✅<br/>✅ "Can I finance?" ✅<br/>✅ "Is there a weight limit?" ✅<br/>✅ "Cheap BBL risks?" ✅<br/>✅ "Best BBL surgeon?" ✅<br/>✅ Insurance coverage FAQ ✅</div><div style="color:#c0392b;margin-top:4px;">❌ Schema status unknown — needs Rich Results Test</div></td></tr>
+<!-- Missing keywords -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Missing secondary<br/>keywords</td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ Missing — add to page:</div><div>• "cost" in title tag</div><div>• bbl miami cost (5.48% CTR — top performer)</div><div>• how much is a bbl in miami (1.92% CTR)</div><div>• skinny bbl miami (unique section)</div><div>• bbl cost miami 2026 (freshness signal)</div><div>• PriceRange schema — nobody has this</div><div>• FAQPage schema with cost FAQs</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Minor gaps:</div><div>• Price mismatch: $3,200 in title/meta vs $3,500 on page</div><div>• Financing FAQ vague — no lenders or monthly payments named</div><div>• No Skinny BBL or Hybrid BBL section</div><div>• No table of contents / anchor links</div><div style="color:#059669;margin-top:4px;">✅ Strengths:</div><div>• Cost keyword in title + meta + H1 + H2 — unique</div><div>• Most FAQs (18) of all competitors</div><div>• 90% out-of-town stat — unique trust signal</div><div>• Recovery houses — unique differentiator</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Notable gaps:</div><div>• No specific price quoted anywhere</div><div>• No cost FAQ</div><div>• No financing details on page</div><div style="color:#059669;margin-top:4px;">✅ Strengths:</div><div>• Skinny BBL + Hybrid BBL unique sections</div><div>• Table of contents — excellent UX</div><div>• 3 named surgeons with bios</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Minor gaps:</div><div>• Meta description has no price</div><div>• No "cost" in title explicitly</div><div style="color:#059669;margin-top:4px;">✅ Strengths:</div><div>• Most cost FAQs of all competitors</div><div>• BMI requirement transparent</div><div>• 8 named surgeons</div><div>• Financing section detailed</div></td></tr>
+<!-- Trust Signals -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals<br/><span style="font-size:11px;font-weight:400;color:#666;">(credentials, reviews, social proof)</span></td>
+
+
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong — 5 surgeons</div><div>• 5 board-certified surgeons named with photos ✅</div><div>• 3 patient reviews with names ✅</div><div>• Safety standards section ✅</div><div>• Ultrasound-Assisted BBL safety protocol ✅</div><div>• Phone + consultation form ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No star ratings shown on page</div><div style="color:#c0392b;">❌ No board certifications listed on page</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Good trust signals</div><div>• Dr. Mel Ortega, Dr. Oliver Chang, Dr. Nidia De Jesus, Dr. Drew Kreegel — 4 named ✅</div><div>• Before/after gallery linked ✅</div><div>• "90% out-of-town patients" — unique social proof ✅</div><div>• Recovery houses available — unique ✅</div><div>• Respond.io live chat ✅</div><div>• Board certified stated ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No star ratings or review count on procedure page<br/>❌ No board certification org named (ABPS, ABCS)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong credentials</div><div>• Dr. Marcelo Ghersi — named and linked ✅</div><div>• Dr. Liann Chin Casey ✅</div><div>• Dr. Jacob Carlson ✅</div><div>• Before/after gallery ✅</div><div>• Patient testimonials section ✅</div><div>• "#1 in Plastic Surgery Miami" claim ✅</div><div>• 5.0 stars — 14 reviews shown in footer</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Most surgeons — 8 named</div><div>• 8 board-certified surgeons listed ✅</div><div>• Testimonials page linked ✅</div><div>• ABPS board certification noted ✅</div><div>• Multiple financing partners named ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No reviews shown on procedure page</div></td></tr>
+<!-- CTA -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA (Call to Action)<br/><span style="font-size:11px;font-weight:400;color:#666;">(conversion elements present on page)</span></td>
+
+
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Good multiple CTAs</div><div>• "Financing" link ✅</div><div>• "Schedule A Free Consultation" form ✅</div><div>• Language + location selector ✅ (Miami/Dallas)</div><div>• Phone (305) 501-6000 ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No urgency language</div><div style="color:#c0392b;">❌ No "Get a Quote" CTA</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong CTAs</div><div>• Phone 305-514-0318 (click-to-call) ✅</div><div>• Respond.io live chat widget ✅</div><div>• "Before &amp; After" gallery CTA ✅</div><div>• "Special Offers" button ✅</div><div>• "Our Doctors" button ✅</div><div>• Contact Us popup ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No financing CTA with monthly payment amount<br/>❌ No consultation form on page (popup only)<br/>❌ No virtual consultation option</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong CTAs</div><div>• "Request Consultation" — in-person &amp; virtual ✅</div><div>• Phone (305) 280-2947 ✅</div><div>• Contact form ✅</div><div>• "In-Person &amp; Virtual" — reduces friction ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No financing CTA on procedure page</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong CTAs</div><div>• "Book a Consultation | Live Chat" ✅</div><div>• "Request Callback" ✅</div><div>• Phone 305-446-7277 ✅</div><div>• Financing link ✅</div><div style="color:#059669;margin-top:4px;">✅ Live chat option — highest conversion tool</div></td></tr>
+<!-- Schema -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema confirmed<br/><span style="font-size:11px;font-weight:400;color:#666;">(Rich Results Test)</span></td>
+
+
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;margin-bottom:4px;">⚠️ Needs verification</div><div style="color:#c0392b;">❌ FAQPage — likely missing<br/>❌ PriceRange — missing<br/>❌ MedicalProcedure — missing<br/>❌ BreadcrumbList — unknown</div><div style="font-size:11px;color:#666;margin-top:4px;">Run Rich Results Test to confirm</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest schema of all competitors</div><div style="color:#059669;">✅ FAQPage (18 questions)<br/>✅ MedicalProcedure<br/>✅ SurgicalProcedure<br/>✅ Article<br/>✅ WebPage / MedicalWebPage<br/>✅ Organization<br/>✅ ImageObject</div><div style="color:#c0392b;margin-top:4px;">❌ No PriceRange schema<br/>❌ No BreadcrumbList<br/>❌ No VideoObject</div><div style="font-size:11px;color:#666;margin-top:4px;">Confirmed from page source JSON-LD — Oct 24, 2025</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#999;margin-bottom:4px;">⚠️ Unknown — needs verification</div><div style="font-size:11px;color:#666;">Run Rich Results Test:<br/>aeris.co/plastic-surgeons-miami-fl/body/brazilian-butt-lift/</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#999;margin-bottom:4px;">⚠️ Unknown — needs verification</div><div style="font-size:11px;color:#666;">Run Rich Results Test:<br/>cgcosmetic.com/brazilian-butt-lift-miami-fat-transfer/</div></td></tr>
+</tbody>
+</table>
+<!-- Key takeaway -->
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from keyword analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Why competitors rank above Avana for "bbl miami cost":</strong><br/>
+    1. Spectrum: "BBL Miami Cost $3200" — "cost" keyword in title + meta + H1 + H2, 18 FAQs, 5 schema types<br/>
+    2. CG Cosmetic: Price in title + 10+ cost FAQs answering every price question<br/>
+    3. Aeris: "#1" authority claim + "Best" in title + virtual consultations<br/>
+    4. All competitors: More transactional signals in title and meta
+  </div>
+<div>
+<strong>What Avana must add to improve BBL page CTR:</strong><br/>
+    1. Add "cost" to title — "BBL Miami Cost | Starting $3,499 | Avana"<br/>
+    2. Add FAQPage schema with cost-specific questions<br/>
+    3. Add PriceRange schema — no competitor has this<br/>
+    4. Move cost section higher on page — currently near bottom<br/>
+    5. Add financing terms to meta description
+  </div>
+</div>
+</div>
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/brazilian-butt-lift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/brazilian-butt-lift-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/brazilian-butt-lift-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+
+
+
+</div></main>
+</body>
+</html>
