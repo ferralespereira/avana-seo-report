@@ -1007,6 +1007,157 @@ document.getElementById('zoomModal').addEventListener('click', function(e) {
 
 
 
+
+
+<!-- ===== CANNIBALIZATION NOTE ===== -->
+<div style="margin-top:32px;background:#fff;border:1px solid #CCCCCC;border-radius:8px;overflow:hidden;">
+  <div style="background:#1B3A5C;padding:16px 24px;display:flex;align-items:center;gap:14px;">
+    <div style="width:36px;height:36px;background:#C0392B;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff;flex-shrink:0;">⚠️</div>
+    <div>
+      <div style="font-size:18px;font-weight:700;color:#fff;">Keyword Cannibalization Issue</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;">Detected via AuthorityLabs · May 23, 2026</div>
+    </div>
+    <span style="margin-left:auto;background:#C0392B;color:#fff;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:3px 12px;border-radius:12px;">Critical</span>
+  </div>
+
+  <div style="padding:24px;">
+
+    <!-- What is happening -->
+    <div style="margin-bottom:24px;">
+      <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#1B3A5C;margin-bottom:12px;">What is happening</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="background:#FDECEA;border:1.5px solid #C0392B;border-radius:6px;padding:14px 16px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#C0392B;margin-bottom:6px;">🔴 Wrong page ranking</div>
+          <div style="font-size:13px;color:#444;line-height:1.6;">For the keyword <strong>"breast implants miami"</strong>, Google is ranking <strong>/breast-augmentation-miami</strong> instead of <strong>/breast-implants-miami</strong>. AuthorityLabs confirms the ranking URL is the augmentation page, not the implants page.</div>
+        </div>
+        <div style="background:#FEF9E7;border:1.5px solid #E67E22;border-radius:6px;padding:14px 16px;">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#E67E22;margin-bottom:6px;">⚠️ Why Google is confused</div>
+          <div style="font-size:13px;color:#444;line-height:1.6;">Both pages cover the same three implant types (saline, silicone, gummy bear) with no meaningful content difference. The meta descriptions are nearly identical in topic and both mention pricing — Google cannot determine which page is the authoritative one for the keyword.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Evidence -->
+    <div style="margin-bottom:24px;">
+      <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#1B3A5C;margin-bottom:12px;">Evidence from the data</div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:13px;">
+          <thead>
+            <tr style="background:#1B3A5C;color:#fff;">
+              <th style="padding:10px 14px;text-align:left;font-size:12px;">Page</th>
+              <th style="padding:10px 14px;text-align:center;font-size:12px;">GSC Position<br/>"breast implants miami"</th>
+              <th style="padding:10px 14px;text-align:center;font-size:12px;">AuthorityLabs Rank</th>
+              <th style="padding:10px 14px;text-align:center;font-size:12px;">Clicks</th>
+              <th style="padding:10px 14px;text-align:center;font-size:12px;">Impressions</th>
+              <th style="padding:10px 14px;text-align:left;font-size:12px;">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;font-family:monospace;font-size:12px;">/breast-implants-miami</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;color:#C0392B;font-weight:700;">41.48</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;color:#999;">Not ranking</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;color:#C0392B;font-weight:700;">0</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;">658</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;"><span style="background:#FDECEA;color:#C0392B;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;">❌ Ignored by Google</span></td>
+            </tr>
+            <tr style="background:#f8fbff;">
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;font-family:monospace;font-size:12px;">/breast-augmentation-miami</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;color:#E67E22;font-weight:700;">28.25</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;color:#059669;font-weight:700;">7</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;color:#C0392B;font-weight:700;">0</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:center;">779</td>
+              <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;"><span style="background:#FEF9E7;color:#E67E22;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;">⚠️ Wrong page ranking</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-size:11px;color:#666;margin-top:6px;font-style:italic;">Despite AuthorityLabs showing position 7 for /breast-augmentation-miami, GSC records 0 clicks — meaning the ranking exists but the page is not converting impressions into traffic for this keyword.</div>
+    </div>
+
+    <!-- Root cause -->
+    <div style="margin-bottom:24px;">
+      <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#1B3A5C;margin-bottom:12px;">Root cause — content overlap</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="background:#F4F6F8;border-radius:6px;padding:14px 16px;border-left:3px solid #C0392B;">
+          <div style="font-size:12px;font-weight:700;color:#C0392B;margin-bottom:8px;">/breast-implants-miami</div>
+          <div style="font-size:12px;color:#444;line-height:1.7;">
+            Title: "Breast Implants Miami - Silicone and Saline"<br/>
+            Price: $2,500<br/>
+            Topics: Saline, Silicone, Gummy Bear<br/>
+            Meta: "Saline, Silicone, Gummy bear implants available for your breast augmentation"<br/><br/>
+            <span style="color:#C0392B;">❌ Schema: 0 items detected<br/>❌ No unique content angle<br/>❌ Price conflicts with augmentation page</span>
+          </div>
+        </div>
+        <div style="background:#F4F6F8;border-radius:6px;padding:14px 16px;border-left:3px solid #E67E22;">
+          <div style="font-size:12px;font-weight:700;color:#E67E22;margin-bottom:8px;">/breast-augmentation-miami</div>
+          <div style="font-size:12px;color:#444;line-height:1.7;">
+            Title: "Breast Augmentation Miami - Starts at $3000"<br/>
+            Price: $3,000<br/>
+            Topics: Saline, Silicone, Gummy Bear<br/>
+            Meta: "We offer silicone, saline, and gummy bear implants at a very affordable price"<br/><br/>
+            <span style="color:#E67E22;">⚠️ Google picks this one<br/>⚠️ But still gets 0 clicks<br/>⚠️ Same implant types listed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to fix -->
+    <div>
+      <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#1B3A5C;margin-bottom:12px;">How to fix it — step by step</div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#EAF4EC;border-radius:6px;border-left:3px solid #1E7E34;">
+          <div style="background:#1E7E34;color:#fff;font-weight:800;font-size:12px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">1</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1E7E34;margin-bottom:3px;">Differentiate the content of each page completely</div>
+            <div style="font-size:12px;color:#444;line-height:1.6;"><strong>/breast-implants-miami</strong> → make it the definitive guide to implant types, brands (Mentor, Allergan, Sientra), sizes, shapes (round vs teardrop), saline vs silicone vs gummy bear comparison table, implant lifespan, and cost per type.<br/><strong>/breast-augmentation-miami</strong> → focus entirely on the surgical procedure: surgery steps, anesthesia, incision types, recovery timeline, surgeon credentials, before/after results, and total procedure cost.</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#EAF4EC;border-radius:6px;border-left:3px solid #1E7E34;">
+          <div style="background:#1E7E34;color:#fff;font-weight:800;font-size:12px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">2</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1E7E34;margin-bottom:3px;">Add a strong internal link from augmentation → implants</div>
+            <div style="font-size:12px;color:#444;line-height:1.6;">On <strong>/breast-augmentation-miami</strong>, in the first or second paragraph of body content, add a sentence like: <em>"Choosing the right implant is one of the most important decisions in your journey — learn about all available <a href="https://avanaplasticsurgery.com/breast-implants-miami" style="color:#0E7C7B;">breast implants in Miami</a> including saline, silicone, and gummy bear options."</em><br/>The anchor text <strong>"breast implants in Miami"</strong> tells Google exactly what the destination page is about.</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#EAF4EC;border-radius:6px;border-left:3px solid #1E7E34;">
+          <div style="background:#1E7E34;color:#fff;font-weight:800;font-size:12px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">3</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1E7E34;margin-bottom:3px;">Fix the price inconsistency</div>
+            <div style="font-size:12px;color:#444;line-height:1.6;">/breast-implants-miami shows <strong>$2,500</strong> and /breast-augmentation-miami shows <strong>$3,000</strong> for what Google sees as the same procedure. Align them or clearly explain what each price covers — e.g. "implant cost starting at $2,500" vs "full procedure starting at $3,000 including surgeon fee, anesthesia, and facility."</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#EAF4EC;border-radius:6px;border-left:3px solid #1E7E34;">
+          <div style="background:#1E7E34;color:#fff;font-weight:800;font-size:12px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">4</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1E7E34;margin-bottom:3px;">Add schema to /breast-implants-miami</div>
+            <div style="font-size:12px;color:#444;line-height:1.6;">The Rich Results Test confirmed <strong>0 schema items</strong> on this page. Add at minimum: FAQPage schema with implant comparison questions, MedicalProcedure schema, and BreadcrumbList. This signals to Google that this is a substantive, unique page — not a duplicate of the augmentation page.</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;background:#EAF4EC;border-radius:6px;border-left:3px solid #1E7E34;">
+          <div style="background:#1E7E34;color:#fff;font-weight:800;font-size:12px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">5</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1E7E34;margin-bottom:3px;">Request reindexing after changes</div>
+            <div style="font-size:12px;color:#444;line-height:1.6;">Once the content is differentiated and the internal link is added, go to Google Search Console → URL Inspection → enter <strong>https://avanaplasticsurgery.com/breast-implants-miami</strong> → click <strong>"Request Indexing"</strong>. This tells Google to recrawl the page and reassess which URL should rank for the keyword.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:16px;padding:12px 16px;background:#D6E8F5;border-radius:6px;border-left:3px solid #1B3A5C;">
+        <div style="font-size:12px;color:#1B3A5C;line-height:1.6;"><strong>Expected outcome:</strong> Once Google recognizes /breast-implants-miami as a distinct, authoritative page for implant-type queries and /breast-augmentation-miami as the procedure page, both pages can rank independently — capturing two separate positions in the SERP for related but different search intents. The current position 7 ranking on the augmentation page is also wasted because it gets 0 clicks — fixing the SERP listing (title + meta) of whichever page ranks should recover that traffic immediately.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ===== END CANNIBALIZATION NOTE ===== -->
+
 </div></main>
 </body>
 </html>
