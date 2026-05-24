@@ -462,6 +462,47 @@
     background: #ffe4cc;
     color: #c0530a;
   }
+  /* Keyword group table */
+  .kw-group-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .kw-group-table thead tr {
+    background: rgba(0,0,0,0.04);
+  }
+  .kw-group-table th {
+    padding: 7px 12px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #888;
+    white-space: nowrap;
+  }
+  .kw-group-table th:not(:first-child) { text-align: right; }
+  .kw-group-table td {
+    padding: 8px 12px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    color: var(--navy);
+    font-weight: 600;
+  }
+  .kw-group-table td:not(:first-child) {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .kw-group-table tbody tr:hover { background: rgba(255,255,255,0.6); }
+  /* CTR badge inside table */
+  .ctr-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .ctr-badge.warn { background: #ffe4cc; color: #c0530a; }
+  .ctr-badge.bad  { background: #fde8e8; color: #c0392b; }
 
   /* ── Responsive ── */
   @media (max-width: 900px) {
@@ -521,18 +562,30 @@
         <span class="kw-group-label impressions-label">📊 Most Impressions</span>
         <span class="kw-group-label ctr-low-label">⚠️ CTR &lt; 1%</span>
       </div>
-      <ul>
-        <li>
-          <a class="query-link" href="lipo-360-miami.html">
-            <span class="seed">lipo 360 miami</span>
-          </a>
-        </li>
-        <li>
-          <a class="query-link" href="brazilian-butt-lift-miami.html">
-            <span class="seed">brazilian butt lift miami</span>
-          </a>
-        </li>
-      </ul>
+      <table class="kw-group-table">
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Impressions</th>
+            <th>Clicks</th>
+            <th>CTR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a class="query-link" href="lipo-360-miami.html"><span class="seed">lipo 360 miami</span></a></td>
+            <td>2,263</td>
+            <td>20</td>
+            <td><span class="ctr-badge warn">0.88%</span></td>
+          </tr>
+          <tr>
+            <td><a class="query-link" href="brazilian-butt-lift-miami.html"><span class="seed">brazilian butt lift miami</span></a></td>
+            <td>1,940</td>
+            <td>8</td>
+            <td><span class="ctr-badge bad">0.41%</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
   </div>
