@@ -503,6 +503,16 @@
   }
   .ctr-badge.warn { background: #ffe4cc; color: #c0530a; }
   .ctr-badge.bad  { background: #fde8e8; color: #c0392b; }
+  /* URL cell link */
+  .kw-url-link {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--teal);
+    text-decoration: none;
+    font-family: monospace;
+    white-space: nowrap;
+  }
+  .kw-url-link:hover { text-decoration: underline; }
 
   /* ── Responsive ── */
   @media (max-width: 900px) {
@@ -566,6 +576,7 @@
         <thead>
           <tr>
             <th>Keyword</th>
+            <th>URL</th>
             <th>Impressions</th>
             <th>Clicks</th>
             <th>CTR</th>
@@ -574,12 +585,14 @@
         <tbody>
           <tr>
             <td><a class="query-link" href="lipo-360-miami.html"><span class="seed">lipo 360 miami</span></a></td>
+            <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/lipo-360-miami" target="_blank">/lipo-360-miami</a></td>
             <td>2,263</td>
             <td>20</td>
             <td><span class="ctr-badge warn">0.88%</span></td>
           </tr>
           <tr>
             <td><a class="query-link" href="brazilian-butt-lift-miami.html"><span class="seed">brazilian butt lift miami</span></a></td>
+            <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" target="_blank">/brazilian-butt-lift-miami</a></td>
             <td>1,940</td>
             <td>8</td>
             <td><span class="ctr-badge bad">0.41%</span></td>
