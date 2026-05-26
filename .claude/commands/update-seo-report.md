@@ -189,6 +189,27 @@ Use URL-filtered totals (from `Pages.csv`) for impressions, clicks, CTR.
 
 ---
 
+---
+
+## Step 6 — Update avana-procedure-positioning.html
+
+Find the entry in the `const data = [...]` array in `avana-procedure-positioning.html` that matches `page:'/[keyword-slug]'`.
+
+Update the following fields with fresh values:
+- `pos` → URL-filtered average position (from `Pages.csv`)
+- `clicks` → URL-filtered total clicks
+- `impr` → URL-filtered total impressions
+- `ctr` → URL-filtered CTR as a decimal number (e.g. `0.09` for 0.09%)
+- `kpos` → keyword-filtered position (from keyword `Queries.csv`, row matching the exact keyword)
+- `kimpr` → keyword-filtered impressions
+- `kctr` → keyword-filtered CTR as decimal
+- `kclicks` → keyword-filtered clicks
+- **Add `link:'[keyword-slug].html'`** if not already present — this makes the keyword cell a clickable link in the rankings table
+
+If no entry exists for the page, add one in sorted order by `pos` (descending — highest pos value first).
+
+---
+
 ## Notes
 
 - **Always use keyword-filtered data for KPI cards** — not URL-filtered
