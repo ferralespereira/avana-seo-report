@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lipo 360 Miami – Meta Tags Update</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: #6a737d;
+            margin-bottom: 28px;
+        }
+
+        .code-card {
+            background: #1e1e2e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+            max-width: 860px;
+        }
+
+        .code-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #2a2a3d;
+            padding: 12px 18px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+
+        .filename {
+            margin-left: 8px;
+            font-size: 0.78rem;
+            color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+
+        pre {
+            margin: 0;
+            padding: 24px 28px;
+            overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem;
+            line-height: 1.7;
+            color: #cdd6f4;
+            tab-size: 4;
+        }
+
+        /* Syntax colours */
+        .c-tag    { color: #89b4fa; }   /* tag names  */
+        .c-attr   { color: #a6e3a1; }   /* attributes */
+        .c-val    { color: #f38ba8; }   /* values     */
+        .c-razor  { color: #f9e2af; }   /* @razor     */
+        .c-comment{ color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item { font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <h1>Lipo 360 Miami — Meta Tags</h1>
+    <p class="subtitle">articlemetas.cshtml &nbsp;·&nbsp; Updated 2026-05-29</p>
+
+    <div class="code-card">
+        <div class="code-card-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="filename">lipo-360-miami / En / articlemetas.cshtml</span>
+        </div>
+        <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+
+
+<span class="c-comment fix-item">@* Fixing Typo in Circu<strong>m</strong>ferential *@</span>
+<span class="c-tag">&lt;title&gt;</span>Lipo 360 Miami - $3000 Circumferential Lipo | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+
+
+
+<span class="c-comment fix-item">@* Optimization of the meta description to fewer than 160 characters *@</span>
+<span class="c-comment">@* &lt;meta name="description" content="Lipo 360 Miami. Remove the fat in abdomen, flanks, and back and get amazing results with the best surgeons in FL. Schedule your circumferential lipo consultation today." /&gt; *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami. Remove fat from abdomen, flanks and back with the best surgeons in FL. Get stunning results. Schedule your circumferential lipo consultation."</span> <span class="c-tag">/&gt;</span>
+
+
+
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/lipo-360-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2018-09-25T15:39:45<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami - $3000 Circumferential Lipo | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami. Remove fat from abdomen, flanks and back with the best surgeons in FL. Get stunning results. Schedule your circumferential lipo consultation."</span> <span class="c-tag">/&gt;</span>
+
+
+<span class="c-comment fix-item">@* Adjust the Open Graph URL to the absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/lipo-360-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/lipo-360-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Woman at the beach showing Lipo 360 Miami results"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami - $3000 Circumferential Lipo | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami. Remove fat from abdomen, flanks and back with the best surgeons in FL. Get stunning results. Schedule your circumferential lipo consultation."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/lipo-360-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+    </div>
+
+</body>
+</html>
