@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lipo 360 Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: #6a737d;
+            margin-bottom: 40px;
+        }
+
+        /* ── Section headers ── */
+        .section-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #24292e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db;
+            max-width: 900px;
+        }
+
+        .section-wrap {
+            margin-bottom: 48px;
+        }
+
+        /* ── Code card (meta tags) ── */
+        .code-card {
+            background: #1e1e2e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+            max-width: 900px;
+        }
+
+        .code-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #2a2a3d;
+            padding: 12px 18px;
+        }
+
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+
+        .filename {
+            margin-left: 8px;
+            font-size: 0.78rem;
+            color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+
+        pre {
+            margin: 0;
+            padding: 24px 28px;
+            overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem;
+            line-height: 1.7;
+            color: #cdd6f4;
+            tab-size: 4;
+        }
+
+        .c-tag    { color: #89b4fa; }
+        .c-attr   { color: #a6e3a1; }
+        .c-val    { color: #f38ba8; }
+        .c-razor  { color: #f9e2af; }
+        .c-comment{ color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item { font-size: 1.1rem; }
+
+        /* ── Keyword table ── */
+        .kw-table-wrap {
+            max-width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .kw-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.84rem;
+        }
+
+        .kw-table thead th {
+            background: #2a2a3d;
+            color: #cdd6f4;
+            font-weight: 600;
+            padding: 12px 16px;
+            text-align: left;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+        }
+
+        .kw-table thead th:nth-child(3),
+        .kw-table thead th:nth-child(4) { text-align: center; }
+
+        .kw-table tbody tr:nth-child(even) { background: #f8f9fb; }
+        .kw-table tbody tr:hover { background: #eef2ff; }
+
+        .kw-table td {
+            padding: 9px 16px;
+            color: #24292e;
+            border-bottom: 1px solid #e8eaed;
+        }
+
+        .kw-table td:first-child {
+            color: #6a737d;
+            font-variant-numeric: tabular-nums;
+            width: 40px;
+        }
+
+        .kw-table td:nth-child(3),
+        .kw-table td:nth-child(4) {
+            text-align: center;
+            font-variant-numeric: tabular-nums;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+
+        .badge-before {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            border-radius: 99px;
+            padding: 1px 10px;
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+
+        .badge-after {
+            display: inline-block;
+            background: #d1fae5;
+            color: #065f46;
+            border-radius: 99px;
+            padding: 1px 10px;
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+
+        .badge-zero {
+            display: inline-block;
+            background: #f1f3f5;
+            color: #9ca3af;
+            border-radius: 99px;
+            padding: 1px 10px;
+            font-weight: 500;
+            font-size: 0.78rem;
+        }
+
+        .kw-table-note {
+            padding: 10px 16px;
+            font-size: 0.78rem;
+            color: #6a737d;
+            background: #2a2a3d;
+            color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+
+        /* ── Info cards (new sections & cannibalization) ── */
+        .info-card {
+            max-width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .info-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #2a2a3d;
+            padding: 12px 18px;
+        }
+
+        .info-card-header .filename { margin-left: 0; }
+
+        .info-card-body {
+            padding: 22px 26px;
+        }
+
+        /* new sections list */
+        .sections-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 10px;
+        }
+
+        .sections-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: #24292e;
+            background: #f4f5f7;
+            border-radius: 7px;
+            padding: 9px 12px;
+        }
+
+        .sections-list li::before {
+            content: "✦";
+            color: #89b4fa;
+            flex-shrink: 0;
+            margin-top: 1px;
+            font-size: 0.7rem;
+        }
+
+        /* FAQs added */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 4px;
+        }
+
+        .faq-q {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #24292e;
+            margin-bottom: 4px;
+        }
+
+        .faq-a {
+            font-size: 0.84rem;
+            color: #444d56;
+            line-height: 1.65;
+        }
+
+        /* cannibalization card */
+        .cannibal-block {
+            background: #fff8f0;
+            border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            font-size: 0.86rem;
+            color: #24292e;
+            line-height: 1.6;
+        }
+
+        .cannibal-block .removed {
+            text-decoration: line-through;
+            color: #f38ba8;
+            background: #fff0f0;
+            border-radius: 3px;
+            padding: 0 3px;
+        }
+
+        .cannibal-block .reason {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.8rem;
+            color: #6a737d;
+            font-style: italic;
+        }
+
+        /* ── Schema cards ── */
+        .schemas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px;
+            max-width: 900px;
+        }
+
+        .schema-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .schema-card-head {
+            background: #2a2a3d;
+            padding: 13px 16px;
+        }
+
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #f9e2af;
+            background: rgba(249,226,175,0.12);
+            border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px;
+            padding: 2px 8px;
+            margin-bottom: 4px;
+        }
+
+        .schema-card-title {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #cdd6f4;
+        }
+
+        .schema-card-body {
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .schema-subsection-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #8b8ba7;
+            margin-bottom: 6px;
+        }
+
+        .schema-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .schema-field {
+            display: flex;
+            gap: 8px;
+            font-size: 0.8rem;
+        }
+
+        .schema-field .sf-key {
+            color: #a6e3a1;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0;
+            min-width: 110px;
+        }
+
+        .schema-field .sf-val {
+            color: #444d56;
+        }
+
+        .schema-advantages {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .schema-advantages li {
+            font-size: 0.79rem;
+            color: #444d56;
+            line-height: 1.5;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .schema-advantages li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #28c840;
+            font-size: 0.72rem;
+            top: 2px;
+        }
+
+        .schema-divider {
+            height: 1px;
+            background: #e8eaed;
+        }
+
+        /* FAQ list in schema 3 */
+        .faq-q-list {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .faq-q-item {
+            font-size: 0.78rem;
+            color: #444d56;
+            padding-left: 18px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .faq-q-item .q-num {
+            position: absolute;
+            left: 0;
+            color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            background: #d1fae5;
+            color: #065f46;
+            border-radius: 3px;
+            padding: 0 5px;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lipo 360 Miami — SEO Improvements</h1>
+    <p class="subtitle">lipo-360-miami &nbsp;·&nbsp; Updated 2026-05-29</p>
+
+
+    <!-- ════════════════════════════════════════════
+         1. META TAGS FIXES
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Fixes in Meta Tags</div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">lipo-360-miami / En / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+
+
+<span class="c-comment fix-item">@* Fixing Typo in Circu<strong>m</strong>ferential *@</span>
+<span class="c-tag">&lt;title&gt;</span>Lipo 360 Miami - $3000 Circumferential Lipo | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+
+
+
+<span class="c-comment fix-item">@* Optimization of the meta description to fewer than 160 characters *@</span>
+<span class="c-comment">@* &lt;meta name="description" content="Lipo 360 Miami. Remove the fat in abdomen, flanks, and back and get amazing results with the best surgeons in FL. Schedule your circumferential lipo consultation today." /&gt; *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami. Remove fat from abdomen, flanks and back with the best surgeons in FL. Get stunning results. Schedule your circumferential lipo consultation."</span> <span class="c-tag">/&gt;</span>
+
+
+
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/lipo-360-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2018-09-25T15:39:45<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami - $3000 Circumferential Lipo | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami. Remove fat from abdomen, flanks and back with the best surgeons in FL. Get stunning results. Schedule your circumferential lipo consultation."</span> <span class="c-tag">/&gt;</span>
+
+
+<span class="c-comment fix-item">@* Adjust the Open Graph URL to the absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/lipo-360-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+
+
+<span class="c-comment fix-item">@* Adjust the Open Graph Image to the absolute URL + add alt / width / height *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/lipo-360-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Woman at the beach showing Lipo 360 Miami results"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami - $3000 Circumferential Lipo | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Lipo 360 Miami. Remove fat from abdomen, flanks and back with the best surgeons in FL. Get stunning results. Schedule your circumferential lipo consultation."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/lipo-360-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         2. KEYWORD OCCURRENCE COUNT
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keyword Occurrence Count &nbsp;<small style="font-size:0.75rem;font-weight:500;color:#6a737d;text-transform:none;letter-spacing:0">(24 new valuable keywords added)</small></div>
+
+        <div class="kw-table-wrap">
+            <table class="kw-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Keyword</th>
+                        <th>Before</th>
+                        <th>After</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>lipo 360</td><td><span class="badge-before">37</span></td><td><span class="badge-after">61</span></td></tr>
+                    <tr><td>2</td><td>360 lipo</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">6</span></td></tr>
+                    <tr><td>3</td><td>lipo 360 miami</td><td><span class="badge-before">8</span></td><td><span class="badge-after">11</span></td></tr>
+                    <tr><td>4</td><td>lipo 360 cost</td><td><span class="badge-before">1</span></td><td><span class="badge-after">3</span></td></tr>
+                    <tr><td>5</td><td>360 lipo cost</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">2</span></td></tr>
+                    <tr><td>6</td><td>lipo 360 price</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>7</td><td>how much is lipo 360</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>8</td><td>how much does lipo 360 cost</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>9</td><td>best lipo 360 in miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>10</td><td>best lipo 360 doctor in miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">2</span></td></tr>
+                    <tr><td>11</td><td>lipo 360 near me</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">2</span></td></tr>
+                    <tr><td>12</td><td>360 lipo near me</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>13</td><td>lipo 360 with bbl</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>14</td><td>lipo 360 bbl</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>15</td><td>lipo 360 bbl near me</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>16</td><td>lipo 360 with bbl in miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>17</td><td>liposuction miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>18</td><td>liposuction 360</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>19</td><td>liposuction 360 near me</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>20</td><td>liposculpture 360</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">2</span></td></tr>
+                    <tr><td>21</td><td>liposculpture in miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">2</span></td></tr>
+                    <tr><td>22</td><td>liposculpture 360 cost</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>23</td><td>best lipo in miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>24</td><td>fat removal in miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>25</td><td>fat removal miami</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">1</span></td></tr>
+                    <tr><td>26</td><td>plastic surgery miami prices</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">2</span></td></tr>
+                    <tr><td>27</td><td>lipo 360 miami specials</td><td><span class="badge-zero">0</span></td><td><span class="badge-after">3</span></td></tr>
+                </tbody>
+            </table>
+            <div class="kw-table-note">27 keywords tracked &nbsp;·&nbsp; 24 new &nbsp;·&nbsp; 3 expanded</div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         3. NEW SECTIONS ADDED
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">New Sections Added</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Content Sections &nbsp;·&nbsp; New FAQs</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:24px;">
+
+                <div>
+                    <div class="schema-subsection-label">Section Content Created</div>
+                    <ul class="sections-list">
+                        <li>What is Lipo 360?</li>
+                        <li>Good Candidate for 360 Lipo?</li>
+                        <li>Lipo 360 Patients Reviews</li>
+                        <li>Top-Rated Lipo 360 Surgeons in Miami</li>
+                        <li>Schedule A Free Consultation Today</li>
+                        <li>Traditional Lipo vs. 360 Lipo</li>
+                        <li>Lipo 360 at Avana Plastic Surgery</li>
+                        <li>Benefits of 360 Degree Lipo</li>
+                        <li>Lipo 360 Cost in Miami</li>
+                        <li>Lipo 360 Procedure FAQs</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Lipo 360 Patients Reviews</div>
+                    <ul class="sections-list">
+                        <li>New section showcasing real patient reviews for lipo 360</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Top-Rated Lipo 360 Surgeons in Miami</div>
+                    <ul class="sections-list">
+                        <li>New section highlighting Avana's top-rated lipo 360 surgeons in Miami</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">3 New FAQs Added</div>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-q">Is lipo 360 dangerous?</div>
+                            <div class="faq-a">Like any surgical procedure, lipo 360 carries some risk; however, when performed by a qualified, board-certified surgeon it is considered a safe and well-established technique. Selecting the best lipo 360 doctor in Miami with proven experience is the most important step toward a safe outcome. During your consultation, your surgeon will review your medical history and identify any factors that could increase complications, ensuring the procedure is tailored specifically to you.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">How do I find lipo 360 near me in Miami?</div>
+                            <div class="faq-a">If you are searching for lipo 360 near me, 360 lipo near me, or liposuction 360 near me, Avana Plastic Surgery is conveniently located in Miami, Florida, serving patients from across the state and beyond. As a trusted destination for liposculpture in Miami, Florida, our clinic provides world-class care to help you achieve the contoured figure you desire. Contact us today to schedule a free consultation.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">Does Avana offer lipo 360 Miami specials?</div>
+                            <div class="faq-a">Yes! We regularly provide lipo 360 Miami specials to make this life-changing procedure more accessible. Our flexible financing options and periodic promotions help patients manage the cost of lipo 360 comfortably. Contact our office or check our website to stay updated on the latest lipo 360 Miami specials and competitive plastic surgery Miami prices.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         4. CANNIBALIZATION FIX
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Fixing the Cannibalization Issue</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Sentence removed from lipo-360-miami page</span>
+            </div>
+            <div class="info-card-body">
+                <div class="cannibal-block">
+                    <span class="removed">A tummy tuck removes excess fat and skin in the abdomen and helps tighten abdominal muscles resulting in a toned and firmer abdominal wall.</span>
+                    <span class="reason">Removed because this sentence describes a topic specific to the Tummy Tuck page, which would compete with that URL and create keyword cannibalization between the two pages.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         5. GOOGLE MARKUP SCHEMAS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Three Google Markup Schemas Added</div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">SurgicalProcedure</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Lipo 360 Miami</span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">Circumferential Liposuction, 360 Lipo, Liposculpture 360, 360-Degree Liposuction</span></div>
+                            <div class="schema-field"><span class="sf-key">bodyLocation</span><span class="sf-val">Abdomen, Flanks, Back, Waist</span></div>
+                            <div class="schema-field"><span class="sf-key">howPerformed</span><span class="sf-val">Step-by-step surgical description</span></div>
+                            <div class="schema-field"><span class="sf-key">preparation</span><span class="sf-val">Pre-op requirements</span></div>
+                            <div class="schema-field"><span class="sf-key">followup</span><span class="sf-val">Recovery timeline</span></div>
+                            <div class="schema-field"><span class="sf-key">risks</span><span class="sf-val">Swelling, bruising, skin irregularities</span></div>
+                            <div class="schema-field"><span class="sf-key">specialty</span><span class="sf-val">Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">performer</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Tells Google this is a medical procedure page, increasing topical authority</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">alternateName</code> covers all keyword variants directly in structured data</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">howPerformed</code>, <code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">preparation</code>, <code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">followup</code>, and <code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">risks</code> make the page eligible for rich results in medical knowledge panels</li>
+                            <li>Reinforces E-E-A-T signals that Google prioritizes for health queries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">MedicalClinic + LocalBusiness</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">["MedicalClinic", "LocalBusiness"]</span></div>
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">medicalSpecialty</span><span class="sf-val">Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">telephone</span><span class="sf-val">+1-305-501-6000</span></div>
+                            <div class="schema-field"><span class="sf-key">priceRange</span><span class="sf-val">$$</span></div>
+                            <div class="schema-field"><span class="sf-key">address</span><span class="sf-val">8700 W Flagler St Suite 250, Miami FL 33174</span></div>
+                            <div class="schema-field"><span class="sf-key">geo</span><span class="sf-val">lat 25.7685486 / lng -80.337497</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Dual <code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">@type</code> hits both medical and local SEO simultaneously</li>
+                            <li>Geo coordinates make the clinic eligible for Google Maps rich results and "near me" queries</li>
+                            <li>Telephone and address reinforce NAP consistency — a key local ranking factor</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">priceRange</code> can surface in Google local pack snippets</li>
+                            <li>Combined with FAQPage schema, signals a fully-structured authoritative local medical business page</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">FAQPage</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 13 Q&amp;A Pairs</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">Q1</span>&nbsp;&nbsp;What areas of the body can be treated with lipo 360?</div>
+                            <div class="faq-q-item"><span class="q-num">Q2</span>&nbsp;&nbsp;How much fat can be removed by lipo 360?</div>
+                            <div class="faq-q-item"><span class="q-num">Q3</span>&nbsp;&nbsp;Will fat return after 360-degree liposuction?</div>
+                            <div class="faq-q-item"><span class="q-num">Q4</span>&nbsp;&nbsp;What can I expect during recovery?</div>
+                            <div class="faq-q-item"><span class="q-num">Q5</span>&nbsp;&nbsp;How long will the swelling last?</div>
+                            <div class="faq-q-item"><span class="q-num">Q6</span>&nbsp;&nbsp;How can postoperative swelling, bruising, and tenderness be minimized?</div>
+                            <div class="faq-q-item"><span class="q-num">Q7</span>&nbsp;&nbsp;How long before I can return to work?</div>
+                            <div class="faq-q-item"><span class="q-num">Q8</span>&nbsp;&nbsp;When will I see the final results?</div>
+                            <div class="faq-q-item"><span class="q-num">Q9</span>&nbsp;&nbsp;Do you perform 360 degree liposuction for men?</div>
+                            <div class="faq-q-item"><span class="q-num">Q10</span>&nbsp;Can I do lipo 360 if I live out-of-town?</div>
+                            <div class="faq-q-item"><span class="q-num">Q11</span>&nbsp;Is lipo 360 dangerous? <span class="new-badge">NEW</span></div>
+                            <div class="faq-q-item"><span class="q-num">Q12</span>&nbsp;How do I find lipo 360 near me in Miami? <span class="new-badge">NEW</span></div>
+                            <div class="faq-q-item"><span class="q-num">Q13</span>&nbsp;Does Avana offer lipo 360 Miami specials? <span class="new-badge">NEW</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables Google FAQ rich results directly in search listings, increasing CTR</li>
+                            <li>Each Q&amp;A targets a specific long-tail keyword naturally</li>
+                            <li>Q11–Q13 are newly added and cover "dangerous", "near me", and "specials"</li>
+                            <li>Signals comprehensive topical coverage to Google's content relevance algorithms</li>
+                            <li>Works alongside SurgicalProcedure and MedicalClinic schemas to build a fully-structured, authoritative medical page</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
