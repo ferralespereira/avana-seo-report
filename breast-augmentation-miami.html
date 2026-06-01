@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana — Breast Augmentation Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;"><a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a></div>
+<main class="main">
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    breast augmentation miami
+    <button onclick="navigator.clipboard.writeText('breast augmentation miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://avanaplasticsurgery.com/breast-augmentation-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/breast-augmentation-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/breast-augmentation-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">2</div>
+    <div class="kpi-source">Keyword: "breast augmentation miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">2,824</div>
+    <div class="kpi-source">Keyword: "breast augmentation miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0.07%</div>
+    <div class="kpi-source">Keyword: "breast augmentation miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">32.3</div>
+    <div class="kpi-source">Keyword: "breast augmentation miami" — primary query</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for keyword "breast augmentation miami"</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Mobile</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">2</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">989</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0.2%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">32.41</td>
+      </tr>
+      <tr style="background:#f8fbff;">
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">🖥️ Desktop</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">1,834</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">32.25</td>
+      </tr>
+      <tr>
+        <td style="padding:9px 14px;">📟 Tablet</td>
+        <td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;text-align:right;color:#7c3aed;">1</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;text-align:right;color:#d97706;">31</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="breast-augmentation-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('breast-augmentation-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/breast-augmentation-miami</span> — Last 3 months</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('breast-augmentation-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+  </div>
+  <div id="breast-augmentation-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">187</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">26,170</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">0.71%</div>
+      </div>
+    </div>
+    <!-- Zero-click queries table -->
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Zero-Click Queries with 100+ Impressions</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Query</th>
+            <th style="padding:7px 10px;text-align:right;">Impressions</th>
+            <th style="padding:7px 10px;text-align:right;">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami breast augmentation</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">350</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">27.31</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">how much is a boob job</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">298</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">11.44</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">gummy bear implant cost</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">207</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">42.14</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast augmentation surgeon miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">165</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">50.76</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast implants cost in florida</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">144</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">58.87</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast augmentation in miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">138</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">27.32</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast augmentation florida cost</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">125</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">43.87</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast augmentation miami fl</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">115</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">27.59</td></tr>
+          <tr><td style="padding:6px 10px;">best breast augmentation surgery miami</td><td style="padding:6px 10px;text-align:right;">102</td><td style="padding:6px 10px;text-align:right;">34.29</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Showing all 9 zero-click queries with 100+ impressions · Source: GSC URL-filtered export 2026-06-01</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Avana ✅ | Spectrum Aesthetics ✅ | CG Cosmetic ✅ | Dr. Hochstein ✅ confirmed from page source</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Avana 🔴 OUR PAGE<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://avanaplasticsurgery.com/breast-augmentation-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/breast-augmentation-miami</a>
+              <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/breast-augmentation-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Spectrum Aesthetics ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://spectrum-aesthetics.com/breast-augmentation/" style="color:#fff;text-decoration:none;" target="_blank">spectrum-aesthetics.com/breast-augmentation/</a>
+              <button onclick="navigator.clipboard.writeText('https://spectrum-aesthetics.com/breast-augmentation/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            CG Cosmetic ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.cgcosmetic.com/breast-augmentation-miami/" style="color:#fff;text-decoration:none;" target="_blank">cgcosmetic.com/breast-augmentation-miami/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.cgcosmetic.com/breast-augmentation-miami/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Dr. Hochstein ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.lhochsteinmd.com/procedure/breast-augmentation-miami/" style="color:#fff;text-decoration:none;" target="_blank">lhochsteinmd.com/procedure/breast-augmentation-miami/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.lhochsteinmd.com/procedure/breast-augmentation-miami/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- Title Tag -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Price present — no "cost" keyword</div>
+            "Breast Augmentation Miami - Starts at $3000 | Avana Plastic Surgery"
+            <div style="margin-top:4px;font-size:11px;">
+              <span style="color:#059669;">✅ "Breast Augmentation Miami" exact match<br/>✅ Price anchor "$3000"</span><br/>
+              <span style="color:#c0392b;">❌ No "cost" keyword<br/>❌ Price higher than all competitors<br/>❌ No year signal</span>
+            </div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest title — lowest price + "cost"</div>
+            "Breast Implants Miami - Breast Augmentation Cost $2300"
+            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Cost" keyword in title<br/>✅ Lowest price hook ($2,300)<br/>✅ Two keyword variants in one title<br/>✅ All-inclusive package reinforces the price</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Exact keyword match + price hook</div>
+            "Breast Augmentation Miami | From $2,500 at CG Cosmetic"
+            <div style="margin-top:4px;font-size:11px;">
+              <span style="color:#059669;">✅ "Breast Augmentation Miami" exact match<br/>✅ "From $2,500" clear price anchor<br/>✅ Brand name reinforces authority</span><br/>
+              <span style="color:#e67e22;">⚠️ No "cost" keyword</span>
+            </div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Authority brand — no price</div>
+            "Breast Augmentation | Miami, FL | Dr. Leonard Hochstein"
+            <div style="margin-top:4px;font-size:11px;">
+              <span style="color:#059669;">✅ Geo signal "Miami, FL"<br/>✅ Doctor's name = trust signal</span><br/>
+              <span style="color:#c0392b;">❌ No "Breast Augmentation Miami" exact match<br/>❌ No price — no cost signal</span>
+            </div>
+          </td>
+        </tr>
+
+        <!-- H1 -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Breast Augmentation Miami"
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Short — no implant types, no value signal, no cost mention</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Breast Augmentation Miami, Florida with saline and silicone (gel) breast implants at affordable cost..."
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Implant types named in H1<br/>✅ "Affordable cost" — value signal<br/>✅ State geo expansion "Florida"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Breast Augmentation in Miami Starting at $2,500"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Price in H1 — strongest cost signal<br/>✅ Clear starting-price anchor</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Breast Augmentation With Implants in Miami, FL"
+            <div style="font-size:11px;color:#999;margin-top:3px;">✅ "With Implants" differentiates intent<br/>⚠️ No cost signal in H1</div>
+          </td>
+        </tr>
+
+        <!-- Meta description -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;margin-bottom:4px;">🔴 Weak — generic implant types, no CTA signal</div>
+            "We offer silicone, saline, and gummy bear implants at a very affordable price"
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No price amount<br/>❌ No "breast augmentation miami" keyword<br/>❌ No consultation CTA<br/>❌ Under 80 characters — opportunity wasted</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;margin-bottom:4px;">✅ Implant types + affordability + surgeon authority</div>
+            "Breast Implants Miami (Saline, Silicone) at affordable low cost to enlarge the breast size by Florida's top Breast Augmentation surgeon."
+            <div style="margin-top:4px;font-size:11px;">
+              <span style="color:#059669;">✅ Implant types listed<br/>✅ "Affordable low cost" — value signal<br/>✅ "Florida's top surgeon" — authority claim</span><br/>
+              <span style="color:#e67e22;">⚠️ No specific price amount<br/>⚠️ No free consultation mention</span>
+            </div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;margin-bottom:4px;">✅ Price + natural results + affordability</div>
+            "Looking for breast augmentation in Miami? CG Cosmetic offers stunning, natural results starting at $2,500, breast implants on a budget."
+            <div style="margin-top:4px;font-size:11px;">
+              <span style="color:#059669;">✅ "$2,500" explicit price<br/>✅ "Natural results" outcome focus<br/>✅ "On a budget" affordability signal</span><br/>
+              <span style="color:#e67e22;">⚠️ No implant type mention<br/>⚠️ No CTA button text</span>
+            </div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;margin-bottom:4px;">⚠️ Not found / not rendering</div>
+            Not available from page source
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Authority brand doesn't rely on meta desc — but it should still be optimized<br/>❌ Missed click-through opportunity</div>
+          </td>
+        </tr>
+
+        <!-- Cost signals -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Mixed pricing — creates confusion</div>
+            <div>• "$3,000" in title — highest starting price among competitors<br/>• "average cost $6,000–$7,000" mentioned in body<br/>• Financing section present<br/>• No price breakdown by implant type<br/>• No package inclusions listed</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Most detailed pricing — package clarity wins</div>
+            <div>• "$2,300" saline — lowest market price ✅<br/>• "$3,300" silicone gel ✅<br/>• "$300" deposit to lock offer ✅<br/>• All-inclusive: physician, OR, anesthesia, garment, 1-year follow-up ✅<br/>• Price transparency = trust signal that converts</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Price with industry context</div>
+            <div>• "$2,500" gummy bear starting price ✅<br/>• Industry avg $4,516 (ASPS cited) ✅<br/>• National range $4,000–$8,000 for context ✅<br/>• Financing section prominent<br/>• Same-day financing approval ✅</div>
+            <div style="color:#e67e22;margin-top:4px;">⚠️ No per-implant-type price breakdown</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No price listed — authority-only strategy</div>
+            <div>• No price on page — "varies based on implant selection"<br/>• CareCredit financing mentioned<br/>• Sientra Platinum20™ warranty — unique value angle ✅<br/>• 30,000+ surgeries = implied quality at any price</div>
+            <div style="color:#e67e22;margin-top:4px;">⚠️ Price-sensitive searchers will click competitors first</div>
+          </td>
+        </tr>
+
+        <!-- FAQ & content -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ &amp; content</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ Content thin — 9 FAQs but missing key topics</div>
+            <div>Word count: ~2,700 (shortest of all 4)</div>
+            <div style="color:#059669;margin-top:4px;">✅ 9 FAQ topics present<br/>✅ 17 H2 headings — good structure<br/>✅ Recovery, risk, cost sections present<br/>✅ 13+ named surgeons linked</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No implant type comparison table<br/>❌ No "how much does breast augmentation cost?" FAQ<br/>❌ No "is breast augmentation safe?" FAQ<br/>❌ No "can I breastfeed after?" FAQ<br/>❌ No gummy bear vs saline vs silicone comparison</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Longest + most comprehensive — 14+ FAQs</div>
+            <div>Word count: ~6,500 (2.4× Avana's length)</div>
+            <div style="color:#059669;margin-top:4px;">✅ 14+ FAQ topics<br/>✅ Safety + breastfeeding + mammogram FAQs<br/>✅ Saline vs silicone vs gummy bear section<br/>✅ Pregnancy timing FAQ<br/>✅ 1-year follow-up included — trust-builder<br/>✅ Recovery house/hotel option mentioned</div>
+            <div style="color:#e67e22;margin-top:4px;">⚠️ No specific implant brand comparison</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Strong team + 13 FAQ topics</div>
+            <div>Word count: ~4,500</div>
+            <div style="color:#059669;margin-top:4px;">✅ 13 FAQ topics incl. cost + age + recovery<br/>✅ 8 surgeon profiles with photos<br/>✅ Anesthesia & nursing team profiles<br/>✅ RealSelf testimonials embedded<br/>✅ FDA safety statement on textured implants<br/>✅ Gummy bear implant section</div>
+            <div style="color:#e67e22;margin-top:4px;">⚠️ No mammogram/breastfeeding FAQ</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Authority content — 12 H2s + 5 FAQs</div>
+            <div>Word count: ~4,500</div>
+            <div style="color:#059669;margin-top:4px;">✅ "Internal Bra" unique section — differentiator<br/>✅ Combination procedures section<br/>✅ 30,000+ surgeries claim<br/>✅ Video testimonials section<br/>✅ Sientra Platinum20™ warranty — unique</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ Only 5 FAQ topics — least comprehensive<br/>❌ No cost FAQ<br/>❌ No implant type comparison</div>
+          </td>
+        </tr>
+
+        <!-- What to add / gaps -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">What to add / gaps</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Must fix:</div>
+            <div>• Rewrite meta description — add price, keyword, and CTA<br/>• Add implant type comparison table (saline vs silicone vs gummy bear)<br/>• Add FAQPage schema — 0 confirmed schema items on page<br/>• Expand FAQ: cost, safety, breastfeeding, mammogram, pregnancy timing<br/>• Add MedicalProcedure schema with priceRange<br/>• Grow content from ~2,700 to 4,500+ words<br/>• Fix: "breast augmentation miami" at pos 35.9 — 0.08% CTR</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Minor gaps:</div>
+            <div>• No implant brand comparison (Mentor, Allergan, Sientra)<br/>• No year freshness signal in title</div>
+            <div style="color:#059669;margin-top:4px;">✅ Strengths:<br/>• Lowest all-inclusive price ($2,300 saline)<br/>• Longest content (~6,500 words)<br/>• Most FAQ topics (14+)<br/>• Package transparency = high conversion trust</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Minor gaps:</div>
+            <div>• No mammogram/breastfeeding FAQ<br/>• No per-implant-type pricing breakdown<br/>• No MedicalProcedure schema confirmed</div>
+            <div style="color:#059669;margin-top:4px;">✅ Strengths:<br/>• Best team transparency (8 surgeons + anesthesia team)<br/>• RealSelf testimonials = high trust<br/>• FDA safety statement on textured implants<br/>• Same-day financing approval<br/>• Price with industry context builds credibility</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Notable gaps:</div>
+            <div>• No price signal anywhere — loses cost-intent searchers<br/>• Only 5 FAQs — missing cost, breastfeeding, comparison queries<br/>• No implant type comparison section</div>
+            <div style="color:#059669;margin-top:4px;">✅ Strengths:<br/>• 30,000+ breast surgeries — unmatched authority claim<br/>• "The Boob God™" brand recognition<br/>• Media features (NYT, Bravo, People) — massive E-E-A-T<br/>• Sientra Platinum20™ warranty — unique differentiator<br/>• "Internal Bra" unique procedure section</div>
+          </td>
+        </tr>
+
+        <!-- Schema -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Schema</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No FAQPage schema — LocalBusiness only implied</div>
+            <div style="color:#c0392b;">❌ No FAQPage schema<br/>❌ No MedicalProcedure schema<br/>❌ No PriceRange schema<br/>❌ No BreadcrumbList schema<br/>❌ LocalBusiness/MedicalBusiness only implied</div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">No schema = no rich result eligibility. FAQPage schema alone could unlock FAQ snippets in SERP and push CTR from 0.08% toward 1–2%.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Organization + LocalBusiness + BreadcrumbList</div>
+            <div style="color:#059669;">✅ Organization schema<br/>✅ LocalBusiness schema<br/>✅ BreadcrumbList</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No FAQPage schema (despite having 14+ FAQs)<br/>❌ No MedicalProcedure schema<br/>❌ No PriceRange schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ No explicit schema detected</div>
+            <div style="color:#c0392b;">❌ No confirmed JSON-LD schema markup<br/>❌ No FAQPage<br/>❌ No MedicalProcedure<br/>❌ No LocalBusiness confirmed</div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">Standard organizational data may be present but no rich result eligibility confirmed.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Organization + LocalBusiness + MedicalBusiness likely</div>
+            <div style="color:#059669;">✅ Organization schema (likely)<br/>✅ LocalBusiness schema (likely)<br/>✅ MedicalBusiness (inferred)</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No FAQPage schema (despite FAQ section)<br/>❌ No confirmed PriceRange<br/>❌ No MedicalProcedure schema confirmed</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from keyword analysis:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Why Spectrum Aesthetics &amp; CG Cosmetic outrank Avana for "breast augmentation miami":</strong><br/>
+          1. <strong>Lower price hooks win first click:</strong> Spectrum at $2,300 all-inclusive and CG at $2,500 vs Avana's $3,000 — transactional searchers click the lowest price first<br/>
+          2. <strong>2–3× more content:</strong> Spectrum has ~6,500 words vs Avana's ~2,700 — depth signals expertise and E-E-A-T to Google<br/>
+          3. <strong>Package transparency converts:</strong> Spectrum itemizes exactly what's included (OR, anesthesia, garment, 1-year follow-up) — reduces price anxiety better than a headline number alone<br/>
+          4. <strong>More FAQ coverage:</strong> Competitors answer 13–14 key patient questions vs Avana's 9 — missing cost, safety, breastfeeding, and mammogram FAQs that rank for high-volume informational queries<br/>
+          5. <strong>Team transparency (CG Cosmetic):</strong> 8 surgeon + anesthesia team profiles with photos vs Avana's linked profiles — makes trust immediately visible without clicking away
+        </div>
+        <div>
+          <strong>What Avana must add to dominate "breast augmentation miami" (pos 35.9 → target pos 5):</strong><br/>
+          1. <strong>Rewrite the meta description:</strong> "Breast augmentation Miami starts at $3,000. Silicone, saline &amp; gummy bear implants — board-certified surgeons. Free consultation. Call [phone]." — current meta is 80 chars and wastes 80 chars of click-through potential<br/>
+          2. <strong>Add FAQPage + MedicalProcedure + PriceRange schema:</strong> Page has 0 confirmed schema items — adding FAQPage schema alone could unlock FAQ rich snippets and multiply CTR from 0.08% to 1–2%<br/>
+          3. <strong>Build implant type comparison section:</strong> Add saline vs silicone vs gummy bear comparison table — this content drives the highest impression volume for the page's associated queries<br/>
+          4. <strong>Expand FAQ to 13+ questions:</strong> Add "How much does breast augmentation cost in Miami?", "Is breast augmentation safe?", "Can I breastfeed after breast augmentation?", "How long do breast implants last?", "What is the difference between saline and silicone implants?" — these are confirmed high-impression zero-click queries<br/>
+          5. <strong>Grow content to 4,500+ words:</strong> Add implant brand guide (Mentor, Allergan, Sientra), detailed recovery timeline, incision type comparison, and before/after patient stories with location keywords — close the 2× content gap vs top competitors
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/breast-augmentation-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/breast-augmentation-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/breast-augmentation-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+<!-- ===== CANNIBALIZATION CROSS-REFERENCE ===== -->
+<div style="margin-top:32px;background:#fff;border:1px solid #CCCCCC;border-radius:8px;overflow:hidden;">
+  <div style="background:#1B3A5C;padding:16px 24px;display:flex;align-items:center;gap:14px;">
+    <div style="width:36px;height:36px;background:#E67E22;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff;flex-shrink:0;">⚠️</div>
+    <div>
+      <div style="font-size:18px;font-weight:700;color:#fff;">Cross-Page Cannibalization — Context</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;">See full analysis in breast-implants-miami.html · May 2026</div>
+    </div>
+    <span style="margin-left:auto;background:#E67E22;color:#fff;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:3px 12px;border-radius:12px;">Warning</span>
+  </div>
+  <div style="padding:20px 24px;font-size:13px;line-height:1.7;color:#444;">
+    <p>This page (<strong>/breast-augmentation-miami</strong>) currently ranks for <strong>both</strong> "breast augmentation miami" (pos 35.9, keyword-filtered) and "breast implants miami" (pos 28.25, GSC). Google is surfacing this page for the implants keyword — stealing ranking from <strong>/breast-implants-miami</strong> — because both pages cover the same three implant types (saline, silicone, gummy bear) with overlapping content.</p>
+    <p style="margin-top:10px;"><strong>What this means for this page:</strong> fixing the cannibalization (differentiating /breast-implants-miami as the implant-type guide, and keeping /breast-augmentation-miami strictly procedure-focused) will actually <em>help</em> this page rank better for its primary keyword, because Google will no longer split authority between two competing URLs.</p>
+    <p style="margin-top:10px;"><a href="breast-implants-miami.html" style="color:var(--teal);font-weight:700;">→ See full cannibalization fix guide in the breast-implants-miami.html report</a></p>
+  </div>
+</div>
+
+</main>
+</body>
+</html>
