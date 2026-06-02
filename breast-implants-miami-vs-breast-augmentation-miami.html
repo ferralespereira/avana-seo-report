@@ -179,6 +179,30 @@
   h3.sub { font-size: 14px; font-weight: 700; color: var(--navy); margin: 16px 0 8px; }
 
   .site-header a { color: white; }
+
+  /* ── Keyword frequency table ── */
+  .kw-table { width:100%; border-collapse:collapse; font-size:12px; margin-bottom:16px; }
+  .kw-table thead tr { background:var(--navy); color:#fff; }
+  .kw-table thead th { padding:9px 14px; text-align:left; font-size:11px; font-weight:700; letter-spacing:.4px; }
+  .kw-table thead th.th-imp { background:var(--implants); text-align:center; }
+  .kw-table thead th.th-aug { background:var(--augment);  text-align:center; }
+  .kw-table tbody tr:nth-child(even) { background:#f8fbff; }
+  .kw-table tbody tr:hover { background:#eef6ff; }
+  .kw-table td { padding:6px 14px; border-bottom:1px solid #e8eef5; vertical-align:middle; }
+  .kw-table td.kw-name { font-family:monospace; font-size:12px; color:var(--darkGray); }
+  .kw-table td.kw-cnt { text-align:center; font-weight:700; font-size:13px; }
+  .kw-table td.kw-cnt.imp { color:var(--implants); }
+  .kw-table td.kw-cnt.aug { color:var(--augment); }
+  .kw-table td.kw-cnt.zero { color:#bbb; font-weight:400; }
+  .kw-dom { display:inline-block; font-size:10px; font-weight:700; padding:2px 8px; border-radius:10px; }
+  .kw-dom.imp { background:#ede9fe; color:var(--implants); }
+  .kw-dom.aug { background:#fee2e2; color:var(--augment); }
+  .kw-dom.tie { background:#f0f4f8; color:#555; }
+  .kw-head { font-size:13px; font-weight:700; margin:18px 0 8px; padding:8px 14px; border-radius:6px; }
+  .kw-head.shared   { background:#fef9c3; color:#7d5a00; border-left:4px solid #e67e22; }
+  .kw-head.imp-only { background:#ede9fe; color:var(--implants); border-left:4px solid var(--implants); }
+  .kw-head.aug-only { background:#fee2e2; color:var(--augment);  border-left:4px solid var(--augment); }
+  .kw-excl-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
 </style>
 </head>
 <body>
@@ -190,6 +214,130 @@
 </div>
 
 <div class="main">
+
+  <!-- ── Keyword Frequency Table ── -->
+  <div class="section">
+    <div class="section-header">🔑 Keyword Frequency Analysis — Both Pages Compared</div>
+    <div class="section-body">
+      <p style="font-size:13px;color:#555;margin-bottom:4px;">
+        Keyword occurrences counted from page body text, headings, and FAQs (Python n-gram analysis).
+        <strong style="color:#7d5a00;">Shared keywords</strong> signal direct SEO cannibalization — Google sees both pages competing for the same queries.
+      </p>
+
+      <!-- ─ Shared ─ -->
+      <div class="kw-head shared">⚠️ Shared Keywords — Both Pages Compete for These (29 terms)</div>
+      <table class="kw-table">
+        <thead>
+          <tr>
+            <th style="width:260px;">Keyword</th>
+            <th class="th-imp">Occurrences — /breast-implants-miami</th>
+            <th class="th-aug">Occurrences — /breast-augmentation-miami</th>
+            <th style="width:130px;text-align:center;">Dominant Page</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="kw-name">breast implants</td><td class="kw-cnt imp">57</td><td class="kw-cnt aug">11</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">breast augmentation</td><td class="kw-cnt imp">6</td><td class="kw-cnt aug">35</td><td style="text-align:center;"><span class="kw-dom aug">augmentation</span></td></tr>
+          <tr><td class="kw-name">breast implant</td><td class="kw-cnt imp">15</td><td class="kw-cnt aug">4</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">breast implant surgery</td><td class="kw-cnt imp">6</td><td class="kw-cnt aug">1</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">silicone</td><td class="kw-cnt imp">17</td><td class="kw-cnt aug">9</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">silicone implants</td><td class="kw-cnt imp">6</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">saline</td><td class="kw-cnt imp">22</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">saline breast implants</td><td class="kw-cnt imp">6</td><td class="kw-cnt aug">1</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">miami</td><td class="kw-cnt imp">15</td><td class="kw-cnt aug">8</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">plastic surgery</td><td class="kw-cnt imp">7</td><td class="kw-cnt aug">6</td><td style="text-align:center;"><span class="kw-dom tie">tie</span></td></tr>
+          <tr><td class="kw-name">rupture</td><td class="kw-cnt imp">13</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">incision</td><td class="kw-cnt imp">6</td><td class="kw-cnt aug">6</td><td style="text-align:center;"><span class="kw-dom tie">tie</span></td></tr>
+          <tr><td class="kw-name">placement</td><td class="kw-cnt imp">4</td><td class="kw-cnt aug">4</td><td style="text-align:center;"><span class="kw-dom tie">tie</span></td></tr>
+          <tr><td class="kw-name">recovery</td><td class="kw-cnt imp">1</td><td class="kw-cnt aug">4</td><td style="text-align:center;"><span class="kw-dom aug">augmentation</span></td></tr>
+          <tr><td class="kw-name">fda</td><td class="kw-cnt imp">9</td><td class="kw-cnt aug">1</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">anatomical</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">4</td><td style="text-align:center;"><span class="kw-dom aug">augmentation</span></td></tr>
+          <tr><td class="kw-name">subglandular</td><td class="kw-cnt imp">1</td><td class="kw-cnt aug">3</td><td style="text-align:center;"><span class="kw-dom aug">augmentation</span></td></tr>
+          <tr><td class="kw-name">submuscular</td><td class="kw-cnt imp">1</td><td class="kw-cnt aug">3</td><td style="text-align:center;"><span class="kw-dom aug">augmentation</span></td></tr>
+          <tr><td class="kw-name">pectoral</td><td class="kw-cnt imp">2</td><td class="kw-cnt aug">4</td><td style="text-align:center;"><span class="kw-dom aug">augmentation</span></td></tr>
+          <tr><td class="kw-name">breast reconstruction</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">3</td><td style="text-align:center;"><span class="kw-dom tie">tie</span></td></tr>
+          <tr><td class="kw-name">breast tissue</td><td class="kw-cnt imp">4</td><td class="kw-cnt aug">3</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">consultation</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">breastfeeding</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">capsular contracture</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">1</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">cancer</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">1</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">pain</td><td class="kw-cnt imp">4</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+          <tr><td class="kw-name">scar</td><td class="kw-cnt imp">3</td><td class="kw-cnt aug">3</td><td style="text-align:center;"><span class="kw-dom tie">tie</span></td></tr>
+          <tr><td class="kw-name">cohesive gel</td><td class="kw-cnt imp">2</td><td class="kw-cnt aug">2</td><td style="text-align:center;"><span class="kw-dom tie">tie</span></td></tr>
+          <tr><td class="kw-name">surgeon</td><td class="kw-cnt imp">10</td><td class="kw-cnt aug">7</td><td style="text-align:center;"><span class="kw-dom imp">implants</span></td></tr>
+        </tbody>
+      </table>
+
+      <!-- ─ Exclusive columns ─ -->
+      <div class="kw-excl-grid">
+
+        <!-- Page 1 only -->
+        <div>
+          <div class="kw-head imp-only">✦ Exclusive to /breast-implants-miami (17 terms)</div>
+          <table class="kw-table">
+            <thead>
+              <tr>
+                <th>Keyword</th>
+                <th class="th-imp" style="width:80px;">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="kw-name">teardrop</td><td class="kw-cnt imp">8</td></tr>
+              <tr><td class="kw-name">deflation</td><td class="kw-cnt imp">5</td></tr>
+              <tr><td class="kw-name">shell (silicone shell)</td><td class="kw-cnt imp">5</td></tr>
+              <tr><td class="kw-name">allergan</td><td class="kw-cnt imp">4</td></tr>
+              <tr><td class="kw-name">mri</td><td class="kw-cnt imp">4</td></tr>
+              <tr><td class="kw-name">rippling</td><td class="kw-cnt imp">4</td></tr>
+              <tr><td class="kw-name">gummy bear implants</td><td class="kw-cnt imp">4</td></tr>
+              <tr><td class="kw-name">teardrop shaped</td><td class="kw-cnt imp">4</td></tr>
+              <tr><td class="kw-name">round implants</td><td class="kw-cnt imp">3</td></tr>
+              <tr><td class="kw-name">implant rupture</td><td class="kw-cnt imp">3</td></tr>
+              <tr><td class="kw-name">implant brands / manufacturers</td><td class="kw-cnt imp">3</td></tr>
+              <tr><td class="kw-name">teardrop breast implants</td><td class="kw-cnt imp">2</td></tr>
+              <tr><td class="kw-name">mentor</td><td class="kw-cnt imp">2</td></tr>
+              <tr><td class="kw-name">sientra</td><td class="kw-cnt imp">2</td></tr>
+              <tr><td class="kw-name">transumbilical / tuba</td><td class="kw-cnt imp">2</td></tr>
+              <tr><td class="kw-name">mammography</td><td class="kw-cnt imp">2</td></tr>
+              <tr><td class="kw-name">anaplastic large cell lymphoma</td><td class="kw-cnt imp">1</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Page 2 only -->
+        <div>
+          <div class="kw-head aug-only">✦ Exclusive to /breast-augmentation-miami (17 terms)</div>
+          <table class="kw-table">
+            <thead>
+              <tr>
+                <th>Keyword</th>
+                <th class="th-aug" style="width:80px;">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="kw-name">prostheses / prosthesis</td><td class="kw-cnt aug">21</td></tr>
+              <tr><td class="kw-name">breast augmentation surgery</td><td class="kw-cnt aug">4</td></tr>
+              <tr><td class="kw-name">breast augmentation miami</td><td class="kw-cnt aug">4</td></tr>
+              <tr><td class="kw-name">submuscular breast augmentation</td><td class="kw-cnt aug">3</td></tr>
+              <tr><td class="kw-name">cost</td><td class="kw-cnt aug">3</td></tr>
+              <tr><td class="kw-name">candidates</td><td class="kw-cnt aug">3</td></tr>
+              <tr><td class="kw-name">cosmetic surgery</td><td class="kw-cnt aug">2</td></tr>
+              <tr><td class="kw-name">small breasts</td><td class="kw-cnt aug">2</td></tr>
+              <tr><td class="kw-name">simulation (trial prostheses)</td><td class="kw-cnt aug">2</td></tr>
+              <tr><td class="kw-name">axillary (incision route)</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">periareolar (incision route)</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">inframammary (incision route)</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">seroma</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">animation deformity</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">breast implant illness (bii)</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">mammoplasty</td><td class="kw-cnt aug">1</td></tr>
+              <tr><td class="kw-name">financing</td><td class="kw-cnt aug">1</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- /kw-excl-grid -->
+    </div><!-- /section-body -->
+  </div><!-- /section -->
 
   <!-- ── Page identity cards ── -->
   <div class="summary-strip">
