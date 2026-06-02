@@ -203,6 +203,43 @@
   .kw-head.imp-only { background:#ede9fe; color:var(--implants); border-left:4px solid var(--implants); }
   .kw-head.aug-only { background:#fee2e2; color:var(--augment);  border-left:4px solid var(--augment); }
   .kw-excl-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+
+  /* ── Volume Keywords Table ── */
+  .vol-section { background:#fff; border-radius:10px; border:1px solid var(--midGray); margin-bottom:24px; overflow:hidden; }
+  .vol-section-header { background:var(--navy); color:#fff; padding:13px 20px; font-weight:700; font-size:14px; letter-spacing:.3px; }
+  .vol-section-header span { font-size:11px; font-weight:400; opacity:.7; margin-left:10px; }
+  .vol-filter-strip { background:#f8fafc; border-bottom:1px solid #e2e8f0; padding:10px 20px; display:flex; gap:7px; flex-wrap:wrap; align-items:center; }
+  .vol-filter-label { font-size:11px; font-weight:700; color:#666; margin-right:4px; }
+  .vol-badge { display:inline-block; padding:3px 11px; border-radius:12px; font-size:11px; font-weight:700; }
+  .vol-badge.shared   { background:#dbeafe; color:#1d4ed8; }
+  .vol-badge.missing  { background:#fee2e2; color:#b91c1c; }
+  .vol-badge.weak     { background:#fef3c7; color:#b45309; }
+  .vol-badge.strong   { background:#d1fae5; color:#065f46; }
+  .vol-badge.untapped { background:#ede9fe; color:#6d28d9; }
+  .vol-badge.unique   { background:#f1f5f9; color:#475569; }
+  .vol-badge.all      { background:#1B3A5C; color:#fff; }
+  .vol-table { width:100%; border-collapse:collapse; font-size:12px; }
+  .vol-table thead tr { background:var(--navy); color:#fff; }
+  .vol-table thead th { padding:8px 10px; text-align:center; font-size:10px; font-weight:700; letter-spacing:.4px; white-space:nowrap; }
+  .vol-table thead th.th-kw { text-align:left; min-width:200px; }
+  .vol-table thead th.th-avana { background:#7c3aed; }
+  .vol-table thead th.th-c1    { background:#16a34a; }
+  .vol-table thead th.th-c2    { background:#ea580c; }
+  .vol-table thead th.th-c3    { background:#0369a1; }
+  .vol-table tbody tr:nth-child(even) { background:#f8fbff; }
+  .vol-table tbody tr:hover { background:#eef6ff; }
+  .vol-table td { padding:6px 10px; border-bottom:1px solid #e8eef5; text-align:center; vertical-align:middle; white-space:nowrap; }
+  .vol-table td.td-kw { text-align:left; font-family:monospace; color:var(--darkGray); font-weight:600; white-space:normal; }
+  .vol-table td.td-num { font-weight:700; color:var(--darkGray); }
+  .vol-table td.td-zero { color:#ccc; }
+  .vol-table td.td-vol { font-weight:700; color:var(--navy); }
+  .kd-pill { display:inline-block; font-size:11px; font-weight:700; padding:2px 8px; border-radius:8px; }
+  .kd-pill.low  { background:#d1fae5; color:#065f46; }
+  .kd-pill.med  { background:#fef3c7; color:#b45309; }
+  .kd-pill.high { background:#fee2e2; color:#b91c1c; }
+  .intent-badge { display:inline-block; font-size:9px; font-weight:700; padding:1px 5px; border-radius:4px; margin:0 1px; line-height:1.5; }
+  .intent-badge.C { background:#fef3c7; color:#92400e; }
+  .intent-badge.I { background:#dbeafe; color:#1d4ed8; }
 </style>
 </head>
 <body>
@@ -214,6 +251,269 @@
 </div>
 
 <div class="main">
+
+  <!-- ── Volume Keywords Table ── -->
+  <div class="vol-section">
+    <div class="vol-section-header">
+      📊 Keywords with more Volume for (breast implants miami)
+      <span>Source: Keyword Gap Analysis — avanaplasticsurgery.com vs 3 competitors · Sorted by Volume desc</span>
+    </div>
+    <div class="vol-filter-strip">
+      <span class="vol-filter-label">Keyword gap:</span>
+      <span class="vol-badge shared">Shared 11</span>
+      <span class="vol-badge missing">Missing 47</span>
+      <span class="vol-badge weak">Weak 11</span>
+      <span class="vol-badge strong">Strong 0</span>
+      <span class="vol-badge untapped">Untapped 670</span>
+      <span class="vol-badge unique">Unique 12</span>
+      <span class="vol-badge all">All 699</span>
+    </div>
+    <div style="overflow-x:auto;padding:0 0 4px;">
+      <table class="vol-table">
+        <thead>
+          <tr>
+            <th class="th-kw">Keyword</th>
+            <th>Intent</th>
+            <th class="th-avana">avanaplasticsurgery.com</th>
+            <th class="th-c1">miamiplastics...</th>
+            <th class="th-c2">spectrum-ae...</th>
+            <th class="th-c3">cgcosmetic.com</th>
+            <th>Volume</th>
+            <th>KD%</th>
+            <th>CPC</th>
+            <th>Com.</th>
+            <th>Results</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-kw">breast augmentation</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-num">76</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">60.5K</td>
+            <td><span class="kd-pill high">73</span></td>
+            <td>$3.27</td>
+            <td>0.45</td>
+            <td>47.5M</td>
+          </tr>
+          <tr>
+            <td class="td-kw">boob job</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-num">4</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">14.8K</td>
+            <td><span class="kd-pill med">54</span></td>
+            <td>$2.55</td>
+            <td>0.25</td>
+            <td>123</td>
+          </tr>
+          <tr>
+            <td class="td-kw">how much is boob augmentation</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">73</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">14.8K</td>
+            <td><span class="kd-pill low">8</span></td>
+            <td>$2.28</td>
+            <td>0.29</td>
+            <td>171</td>
+          </tr>
+          <tr>
+            <td class="td-kw">how much is a boob job</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">54</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">12.1K</td>
+            <td><span class="kd-pill low">8</span></td>
+            <td>$2.28</td>
+            <td>0.29</td>
+            <td>137</td>
+          </tr>
+          <tr>
+            <td class="td-kw">tit job</td>
+            <td><span class="intent-badge C">C</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">65</td>
+            <td class="td-vol">12.1K</td>
+            <td><span class="kd-pill med">42</span></td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>102</td>
+          </tr>
+          <tr>
+            <td class="td-kw">breast jobs cost</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">14</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">6.6K</td>
+            <td><span class="kd-pill low">7</span></td>
+            <td>$2.56</td>
+            <td>0.35</td>
+            <td>138</td>
+          </tr>
+          <tr>
+            <td class="td-kw">breast implant cost</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">6</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">5.4K</td>
+            <td><span class="kd-pill low">17</span></td>
+            <td>$2.56</td>
+            <td>0.35</td>
+            <td>134</td>
+          </tr>
+          <tr>
+            <td class="td-kw">how much are breast implants</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">12</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">5.4K</td>
+            <td><span class="kd-pill low">14</span></td>
+            <td>$2.28</td>
+            <td>0.29</td>
+            <td>168</td>
+          </tr>
+          <tr>
+            <td class="td-kw">boob job cost</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">48</td>
+            <td class="td-vol">4.4K</td>
+            <td><span class="kd-pill low">8</span></td>
+            <td>$2.56</td>
+            <td>0.35</td>
+            <td>135</td>
+          </tr>
+          <tr>
+            <td class="td-kw">breast implants cost</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">13</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">4.4K</td>
+            <td><span class="kd-pill low">11</span></td>
+            <td>$2.56</td>
+            <td>0.35</td>
+            <td>134</td>
+          </tr>
+          <tr>
+            <td class="td-kw">surgical breast augmentation</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-num">27</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">4.4K</td>
+            <td><span class="kd-pill med">44</span></td>
+            <td>$2.91</td>
+            <td>0.11</td>
+            <td>105</td>
+          </tr>
+          <tr>
+            <td class="td-kw">what is breast job</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-num">6</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">3.6K</td>
+            <td><span class="kd-pill med">57</span></td>
+            <td>$1.99</td>
+            <td>0.07</td>
+            <td>125</td>
+          </tr>
+          <tr>
+            <td class="td-kw">boob job procedures</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-num">14</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">2.9K</td>
+            <td><span class="kd-pill med">40</span></td>
+            <td>$3.24</td>
+            <td>0.13</td>
+            <td>117</td>
+          </tr>
+          <tr>
+            <td class="td-kw">boob jobs</td>
+            <td><span class="intent-badge C">C</span><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-num">15</td>
+            <td class="td-num">71</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">2.9K</td>
+            <td><span class="kd-pill high">63</span></td>
+            <td>$2.55</td>
+            <td>0.25</td>
+            <td>133</td>
+          </tr>
+          <tr>
+            <td class="td-kw">breast augmentation miami</td>
+            <td><span class="intent-badge C">C</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">3</td>
+            <td class="td-num">11</td>
+            <td class="td-vol">2.9K</td>
+            <td><span class="kd-pill low">26</span></td>
+            <td>$4.05</td>
+            <td>0.64</td>
+            <td>131</td>
+          </tr>
+          <tr>
+            <td class="td-kw">plastic surgeon breast augmentation</td>
+            <td><span class="intent-badge C">C</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">64</td>
+            <td class="td-vol">2.9K</td>
+            <td><span class="kd-pill med">49</span></td>
+            <td>$4.67</td>
+            <td>0.03</td>
+            <td>11.6M</td>
+          </tr>
+          <tr>
+            <td class="td-kw">how much is a breast augmentation</td>
+            <td><span class="intent-badge I">I</span></td>
+            <td class="td-zero">—</td>
+            <td class="td-zero">—</td>
+            <td class="td-num">6</td>
+            <td class="td-zero">—</td>
+            <td class="td-vol">2.4K</td>
+            <td><span class="kd-pill low">5</span></td>
+            <td>$2.60</td>
+            <td>0.35</td>
+            <td>164</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="padding:8px 20px 12px;font-size:11px;color:#888;">
+      Avana shows 0 rankings for all 17 keywords — these are <strong style="color:#b91c1c;">missing/untapped</strong> high-volume opportunities. Numbers in competitor columns indicate their ranking position for that keyword.
+    </div>
+  </div>
 
   <!-- ── Keyword Frequency Table ── -->
   <div class="section">
