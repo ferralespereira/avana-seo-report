@@ -1,0 +1,42 @@
+Liposuccion 360 en Miami — SEO Improvements
+/espanol/lipo-360-en-miami
+=========================================================
+
+NOTE — LIMITED SCOPE (intentional)
+-----------------------------------------------------------
+No major changes were made to this page. The /espanol/lipo-360-en-miami
+page is currently ranking #1 in Authority Labs, SEMrush, and Google for
+its target keywords, and it is actively targeting the first position in
+Google Search results. All modifications were kept minimal and non-disruptive
+on purpose to preserve that ranking position. The changes listed below
+(meta tag corrections and tag additions) are safe, technical improvements
+that do not alter the page's content, keyword targeting, or internal
+linking structure, and therefore will not compromise its current ranking
+behavior.
+-----------------------------------------------------------
+
+
+1. FIXES IN META TAGS
+   File: lipo-360-en-miami / Es / articlemetas.cshtml
+   -------------------------------------------------------
+   - Page title updated — price aligned with the English version ($3,500 → $3,000):
+     New: "Lipo 360 Miami - $3000 Mejor Precio | [Center Name]"
+
+   - og:locale added (new): "es_US"
+     Reason: content is in Spanish targeting the US market.
+
+   - og:locale:alternate added (new): "en_US"
+     Reason: signals to platforms that an English version of the page exists.
+
+   - og:url changed to absolute URL:
+     https://avanaplasticsurgery.com/espanol/lipo-360-en-miami
+
+   - og:image changed to absolute URL:
+     https://avanaplasticsurgery.com/themes/avana/images/services/910x960/lipo-360-miami.jpg
+
+   - og:image:alt added (new): "Mujer en la playa mostrando resultados de Lipo 360 Miami"
+   - og:image:width added (new): 910
+   - og:image:height added (new): 960
+
+   - canonical tag added:
+     https://avanaplasticsurgery.com/espanol/lipo-360-en-miami
