@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyword Overlap — implantes-de-senos-en-miami vs aumento-de-senos-miami</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FFF8E1;
+    --blueBg:    #D6E8F5;
+    --amberBorder: #F9A825;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #aac;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color .15s;
+  }
+  .back-link:hover { color: #fff; }
+
+  header h1 { font-size: 24px; font-weight: 700; letter-spacing: .4px; }
+  header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 40px;
+  }
+
+  /* ── Summary cards ── */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+  }
+
+  .card-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--teal);
+    margin-bottom: 6px;
+  }
+
+  .card-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+  }
+
+  .card-sub {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  .card-shared .card-value { color: var(--amberBorder); }
+
+  /* ── Notice box ── */
+  .notice-box {
+    background: var(--yellowBg);
+    border: 1.5px solid var(--gold);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: var(--navy);
+    line-height: 1.6;
+  }
+  .notice-box strong { color: var(--navy); }
+
+  /* ── Controls ── */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    border: 1.5px solid var(--midGray);
+    border-radius: 20px;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s;
+    color: var(--darkGray);
+  }
+  .filter-btn:hover  { border-color: var(--teal); color: var(--teal); }
+  .filter-btn.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+  /* ── Table ── */
+  .table-wrap {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead th {
+    background: var(--navy);
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover { background: #254a73; }
+  thead th .sort-arrow { margin-left: 4px; opacity: .5; }
+  thead th.sorted .sort-arrow { opacity: 1; }
+
+  tbody tr { border-bottom: 1px solid #eee; }
+  tbody tr:last-child { border-bottom: none; }
+
+  tbody tr.row-shared {
+    background: var(--yellowBg);
+    border-left: 3px solid var(--amberBorder);
+  }
+  tbody tr.row-p1 {
+    background: var(--blueBg);
+    border-left: 3px solid #5B9BD5;
+  }
+  tbody tr.row-p2 {
+    background: var(--greenBg);
+    border-left: 3px solid #4CAF50;
+  }
+
+  td {
+    padding: 10px 16px;
+    font-size: 13px;
+    vertical-align: middle;
+  }
+
+  .kw-cell {
+    font-weight: 600;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .badge-shared {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    background: var(--amberBorder);
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 10px;
+  }
+
+  .count { font-weight: 700; text-align: center; }
+  .count-high  { color: #C0392B; }
+  .count-mid   { color: #E67E22; }
+  .count-low   { color: var(--teal); }
+  .count-zero  { color: #bbb; }
+
+  td.count { text-align: center; }
+
+  .total-cell { font-weight: 700; color: var(--navy); text-align: center; }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: var(--darkGray);
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .ld-shared { background: var(--amberBorder); }
+  .ld-p1     { background: #5B9BD5; }
+  .ld-p2     { background: #4CAF50; }
+
+  .no-results {
+    padding: 32px;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="back-link" href="index.html">&#8592; Back to Dashboard</a>
+  <h1>Keyword Phrase Overlap Analysis</h1>
+  <p>implantes-de-senos-en-miami &nbsp;vs&nbsp; aumento-de-senos-miami &mdash; 2–3 word phrases only</p>
+</header>
+
+<div class="main">
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-label">implantes-de-senos-en-miami</div>
+      <div class="card-value" id="countP1">—</div>
+      <div class="card-sub">keyword phrases found</div>
+    </div>
+    <div class="card">
+      <div class="card-label">aumento-de-senos-miami</div>
+      <div class="card-value" id="countP2">—</div>
+      <div class="card-sub">keyword phrases found</div>
+    </div>
+    <div class="card card-shared">
+      <div class="card-label">Shared — Cannibalization Risk</div>
+      <div class="card-value" id="countShared">—</div>
+      <div class="card-sub">phrases on both pages</div>
+    </div>
+  </div>
+
+  <div class="notice-box">
+    <strong>Note:</strong> Only 2–3 word phrases are listed below. Single words are excluded because they are too generic to represent real search intent.
+    Counts are the number of times each phrase appears in the main content area of each page.
+    Highlighted rows (amber) indicate <strong>cannibalization risk</strong> — both pages compete for the same phrase in Google.
+  </div>
+
+  <div class="controls">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="shared">Shared Only</button>
+    <button class="filter-btn" data-filter="p1">Only implantes-de-senos</button>
+    <button class="filter-btn" data-filter="p2">Only aumento-de-senos</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="kwTable">
+      <thead>
+        <tr>
+          <th data-col="kw">Keyword Phrase <span class="sort-arrow">&#9650;</span></th>
+          <th data-col="p1">implantes-de-senos <span class="sort-arrow">&#9650;</span></th>
+          <th data-col="p2">aumento-de-senos <span class="sort-arrow">&#9650;</span></th>
+          <th data-col="total">Total <span class="sort-arrow">&#9650;</span></th>
+        </tr>
+      </thead>
+      <tbody id="kwBody"></tbody>
+    </table>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot ld-shared"></div> Shared (cannibalization risk)</div>
+    <div class="legend-item"><div class="legend-dot ld-p1"></div> Only in implantes-de-senos</div>
+    <div class="legend-item"><div class="legend-dot ld-p2"></div> Only in aumento-de-senos</div>
+  </div>
+
+</div>
+
+<script>
+  const keywords = [
+    // Shared — both pages
+    { kw: "implantes mamarios",           p1: 12, p2: 6  },
+    { kw: "implante mamario",             p1: 8,  p2: 5  },
+    { kw: "cirugía plástica",             p1: 4,  p2: 5  },
+    { kw: "solución salina",              p1: 5,  p2: 4  },
+    { kw: "tejido mamario",               p1: 2,  p2: 4  },
+    { kw: "implantes de senos",           p1: 3,  p2: 3  },
+    { kw: "aumento de senos",             p1: 2,  p2: 12 },
+    { kw: "implantes de silicona",        p1: 2,  p2: 2  },
+    { kw: "senos en Miami",               p1: 2,  p2: 2  },
+    { kw: "tipo de implante",             p1: 2,  p2: 2  },
+    { kw: "tamaño del implante",          p1: 2,  p2: 2  },
+    { kw: "más naturales",                p1: 1,  p2: 2  },
+    { kw: "forma natural",                p1: 1,  p2: 2  },
+    { kw: "cirujano plástico certificado",p1: 1,  p2: 2  },
+    // P1 only — implantes-de-senos-en-miami
+    { kw: "menor riesgo",                 p1: 2,  p2: 0  },
+    // P2 only — aumento-de-senos-miami
+    { kw: "cirujano plástico",            p1: 0,  p2: 8  },
+    { kw: "cirugía de aumento",           p1: 0,  p2: 3  },
+    { kw: "aumento de mama",              p1: 0,  p2: 3  },
+    { kw: "incisión periareolar",         p1: 0,  p2: 2  },
+    { kw: "resultado natural",            p1: 0,  p2: 2  },
+    { kw: "bajo el músculo",              p1: 0,  p2: 2  },
+  ];
+
+  const body   = document.getElementById('kwBody');
+  const table  = document.getElementById('kwTable');
+  const btnAll     = document.querySelector('[data-filter="all"]');
+
+  let currentFilter = 'all';
+  let sortCol = 'total';
+  let sortDir = -1;
+
+  function rowClass(d) {
+    if (d.p1 > 0 && d.p2 > 0) return 'row-shared';
+    if (d.p1 > 0)              return 'row-p1';
+    return 'row-p2';
+  }
+
+  function countClass(n) {
+    if (n === 0)  return 'count-zero';
+    if (n >= 8)   return 'count-high';
+    if (n >= 4)   return 'count-mid';
+    return 'count-low';
+  }
+
+  function render() {
+    let data = [...keywords];
+
+    if (currentFilter === 'shared') data = data.filter(d => d.p1 > 0 && d.p2 > 0);
+    if (currentFilter === 'p1')     data = data.filter(d => d.p1 > 0 && d.p2 === 0);
+    if (currentFilter === 'p2')     data = data.filter(d => d.p2 > 0 && d.p1 === 0);
+
+    data.sort((a, b) => {
+      let va, vb;
+      if (sortCol === 'kw')    { va = a.kw; vb = b.kw; return sortDir * va.localeCompare(vb, 'es'); }
+      if (sortCol === 'p1')    { va = a.p1; vb = b.p1; }
+      if (sortCol === 'p2')    { va = a.p2; vb = b.p2; }
+      if (sortCol === 'total') { va = a.p1 + a.p2; vb = b.p1 + b.p2; }
+      return sortDir * (va - vb);
+    });
+
+    if (data.length === 0) {
+      body.innerHTML = '<tr><td colspan="4" class="no-results">No phrases match this filter.</td></tr>';
+      return;
+    }
+
+    body.innerHTML = data.map(d => {
+      const shared  = d.p1 > 0 && d.p2 > 0;
+      const rc      = rowClass(d);
+      const badge   = shared ? '<span class="badge-shared">shared</span>' : '';
+      const total   = d.p1 + d.p2;
+      return `<tr class="${rc}">
+        <td><div class="kw-cell">${d.kw}${badge}</div></td>
+        <td class="count ${countClass(d.p1)}">${d.p1 || '—'}</td>
+        <td class="count ${countClass(d.p2)}">${d.p2 || '—'}</td>
+        <td class="total-cell">${total}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  function updateCards() {
+    const p1Count     = keywords.filter(d => d.p1 > 0).length;
+    const p2Count     = keywords.filter(d => d.p2 > 0).length;
+    const sharedCount = keywords.filter(d => d.p1 > 0 && d.p2 > 0).length;
+    document.getElementById('countP1').textContent     = p1Count;
+    document.getElementById('countP2').textContent     = p2Count;
+    document.getElementById('countShared').textContent = sharedCount;
+  }
+
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  // Sort columns
+  document.querySelectorAll('thead th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.col;
+      if (sortCol === col) {
+        sortDir *= -1;
+      } else {
+        sortCol = col;
+        sortDir = col === 'kw' ? 1 : -1;
+      }
+      document.querySelectorAll('thead th').forEach(h => h.classList.remove('sorted'));
+      th.classList.add('sorted');
+      th.querySelector('.sort-arrow').textContent = sortDir === 1 ? '▲' : '▼';
+      render();
+    });
+  });
+
+  updateCards();
+  render();
+</script>
+</body>
+</html>
