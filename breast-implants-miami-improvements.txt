@@ -1,303 +1,108 @@
--------------------
-metas
------------------
-
-@model ServicePageViewModel
-<title>Breast Implants Miami - Silicone and Saline | @Settings.GetCenterName</title>
-
-@* <meta name="description" content="Breast Implants Miami starting at $ 2500. Saline, Silicone, Gummy bear implants available for your breast augmentation. Financing available. Expert breast augmentation doctors in Miami." /> *@
-
-@* Meta description adjusted to 153 characters from 185 characters. *@
-<meta name="description" content="Breast Implants Miami starting from $2,500. Saline, Silicone & Gummy bear implants available. Financing available. Expert breast implant surgeons in Miami." />
-<link rel="canonical" href="https://avanaplasticsurgery.com/breast-implants-miami" />
-<meta property="article:published_time" content="2018-09-28T15:39:45@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Breast Implants Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="Breast Implants Miami starting from $2,500. Saline, Silicone & Gummy bear implants available. Financing available. Expert breast implant surgeons in Miami." />
-@* Adjust the Open Graph URL to the absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/breast-implants-miami" />
-<meta property="og:site_name" content="@Settings.GetCenterName" />
-@* Adjust the Open Graph Image to the absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg" />
-@* (Added) Creating Open Graph image alt, width, and height *@
-<meta property="og:image:alt" content="Woman showing Breast Implants Miami results" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Breast Implants Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Breast Implants Miami starting from $2,500. Saline, Silicone & Gummy bear implants available. Financing available. Expert breast implant surgeons in Miami." />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg" />      
+Breast Implants Miami — SEO Improvements
+breast-implants-miami
+=========================================================
 
 
+1. FIXES IN META TAGS
+   File: breast-implants-miami / En / articlemetas.cshtml
+   -------------------------------------------------------
+   - Meta description shortened from 185 characters to 153 characters.
+     New: "Breast Implants Miami starting from $2,500. Saline, Silicone &
+     Gummy bear implants available. Financing available. Expert breast
+     implant surgeons in Miami."
 
---------------
-content
--------------
+   - og:url changed to absolute URL:
+     https://avanaplasticsurgery.com/breast-implants-miami
 
-* Removing "Breast Aumentation" keyword
+   - og:image changed to absolute URL:
+     https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg
 
-* Adding Content section
-		 <!--================ Table of Contents ================-->
-        <section class="text-left c-section container mobile-margin-5-9 mobile-content-padding-x">
-            <ul class="ul-content">
-                <li><a href="#breast-implant-composition">Breast Implant Composition</a></li>
-                <li><a href="#breast-implants-infographics">Breast Implants Infographics</a></li>
-                <li><a href="#contact-form-section">Schedule A Free Consultation Today</a></li>
-                <li><a href="#choose-shape-implants">Choose the Shape of Your Implants</a></li>
-                <li><a href="#new-trends-implants">New Trends in Breast Implants</a></li>
-                <li><a href="#choose-implants-needs">Choose the Breast Implants That Meet Your Needs</a></li>
-                <li><a href="#different-brands-implants">Different Brands of Breast Implants</a></li>
-                <li><a href="#breast-implants-faqs">Breast Implants Miami FAQs</a></li>
-            </ul>
-        </section>
-
-* (New) Adding the "The Highest-Rated Breast Implant Surgeons in Miami" section
-
-* Changing Refering link for a suitable reference content:
-   https://www.mayoclinic.org/healthy-lifestyle/womens-health/basics/womens-health/hlv-20049411 -> https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/breast-implants/art-20045957
-
-* (New) Pricing paragraph added to the article body — "Breast implants at Avana Plastic Surgery start from $2,500..." (makes price citable by AI)
-
---------------
-google markup schema
---------------
+   - og:image:alt added (new): "Woman showing Breast Implants Miami results"
+   - og:image:width added (new): 910
+   - og:image:height added (new): 960
 
 
-<script type="application/ld+json">
-{
-    "@@context": "https://schema.org",
-    "@@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@@type": "Question",
-            "name": "Can breast implants cause cancer?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "The FDA has been investigating reports of women with a risk of developing anaplastic large cell lymphoma (ALCL) after breast implantation. The calculated risk is approximately one in one million per year, which may be slightly higher than in women without breast implants, but this has not been proven."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "What should I know before getting breast implants?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Breast implants are not lifetime devices. If removed rather than replaced, you may experience cosmetic changes such as wrinkling and dimpling. Patients may experience more difficulty during self-examinations and routine mammography. Silicone implant rupture is often silent, so patients are advised to have an MRI 3 years after surgery and every two years thereafter."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "Can breast implants stop breastfeeding?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "While women with enhanced breasts may encounter challenges in breastfeeding, they can still breastfeed. Breast implants should not pose any danger to the baby. Most women who choose smaller implants have no problem breastfeeding."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "What are some complications with breast implants?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "The main complications are implant removal, reoperation, implant rupture with silicone-filled implants, and deflation with saline implants. Severe capsular contracture (scar tissue formation around the implant) is also possible. Other complications may include scarring, change in nipple sensation, and wrinkling, particularly with saline implants."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "Can breast implants leak? How can I tell?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Deflation can occur suddenly or slowly, and the patient will notice loss of size and shape of the breast. Silicone implants are filled with a gel that does not leak visibly like saline implants; a rupture is difficult to detect without an MRI. Gummy bear implants do not have this problem as the gel stays in place even if the implant is cut."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "How can I avoid implant rupture?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Talk to your surgeon before surgery, as some practices like the trans-umbilical approach or overfilling the implant can increase rupture risk. Sub-muscular placement offers more protection. After surgery, avoid high contact sports and strenuous activities, and have an MRI every two years for silicone implants."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "What type of breast implant is most common today?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Gummy bear implants are among the most requested implants today. They are less likely to break, last longer, and look very natural. However, they require a larger incision compared to other implant types."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "Do you recommend round or teardrop-shaped implants?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Saline implants are round, while cohesive implants can be round or teardrop. When implants are placed above the muscle, anatomical or teardrop-shaped implants yield the best results. Round implants are ideal for a fuller look. When placed under the muscle, both types give similar results, though round implants may have a lower complication rate."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "Which breast implant placement is best for me?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "There are two options: pectoral and sub-pectoral. Your surgeon will choose the optimal placement based on your body type, breast shape, and expected results. Thin patients generally benefit from placement behind the muscle; patients with droopier breasts may achieve better results with placement above the muscle."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "Do breast implants hurt?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "During surgery, general anesthesia prevents any pain or discomfort. Once the anesthesia wears off, patients may feel soreness in the armpits and chest, which can be managed with pain medication. When fully healed, the patient should not experience pain from the implants."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "What should I tell my surgeon during the initial consultation?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Inform your surgeon about autoimmune diseases, a weakened immune system, any planned chemotherapy or radiation therapy, medications or conditions that may interfere with wound healing, and any mental health disorders. It is vital to select a certified plastic surgeon and review before and after photos prior to proceeding."
-            }
-        },
-        {
-            "@@type": "Question",
-            "name": "How much do breast implants cost in Miami?",
-            "acceptedAnswer": {
-                "@@type": "Answer",
-                "text": "Breast implants at Avana Plastic Surgery start from $2,500. Final pricing depends on implant type, placement, and anesthesia fees. Financing options are available."
-            }
-        }
-    ]
-}
-</script>
+2. CONTENT CHANGES
+   -------------------------------------------------------
+   - Keyword "Breast Augmentation" removed from page to fix keyword
+     cannibalization with the dedicated breast-augmentation-miami URL.
 
-<script type="application/ld+json">
-{
-    "@@context": "https://schema.org",
-    "@@type": "SurgicalProcedure",
-    "name": "Breast Implants Miami",
-    "alternateName": ["Breast Implant Surgery", "Silicone Breast Implants", "Saline Breast Implants", "Gummy Bear Implants", "Breast Enhancement Surgery"],
-    "description": "Breast implant surgery in Miami involves placing saline, silicone, or gummy bear implants to enhance the size and shape of the breasts. Available in a variety of shapes, sizes, and textures, breast implants can correct congenital anomalies, chest wall deformities, or improve aesthetic appearance.",
-    "url": "https://avanaplasticsurgery.com/breast-implants-miami",
-    "image": "https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg",
-    "bodyLocation": ["Breast"],
-    "howPerformed": "The surgeon selects the appropriate implant type (saline, silicone, or gummy bear) and placement (sub-muscular or sub-glandular) based on the patient's anatomy and goals. Incisions are made to minimize visible scarring. The implant is inserted and positioned to achieve natural-looking results.",
-    "preparation": "Patients must maintain a stable weight before surgery. A consultation reviews medical history, current medications, and health status. Some medications, vitamins, and supplements may need to be discontinued prior to the procedure.",
-    "followup": "Patients are advised to have an MRI 3 years after breast implant surgery and every two years thereafter for silicone implants. High-contact sports and strenuous activity should be avoided during recovery. Regular follow-up appointments with the surgeon are required.",
-    "risks": "Risks include capsular contracture, implant rupture or deflation, scarring, changes in nipple sensation, wrinkling (particularly with saline implants), and reoperation. Silent rupture may occur with silicone implants.",
-    "relevantSpecialty": {
-        "@@type": "MedicalSpecialty",
-        "name": "Plastic Surgery"
-    },
-    "performer": {
-        "@@type": "MedicalOrganization",
-        "name": "Avana Plastic Surgery",
-        "url": "https://avanaplasticsurgery.com"
-    },
-    "offers": {
-        "@@type": "Offer",
-        "price": "2500",
-        "priceCurrency": "USD",
-        "description": "Starting price for breast implant surgery"
-    }
-}
-</script>
+   - Table of Contents section added with the following entries:
+       · Breast Implant Composition
+       · Breast Implants Infographics
+       · Schedule A Free Consultation Today
+       · Choose the Shape of Your Implants
+       · New Trends in Breast Implants
+       · Choose the Breast Implants That Meet Your Needs
+       · Different Brands of Breast Implants
+       · Breast Implants Miami FAQs
 
-<script type="application/ld+json">
-{
-    "@@context": "https://schema.org",
-    "@@type": ["MedicalClinic", "LocalBusiness"],
-    "name": "Avana Plastic Surgery",
-    "url": "https://avanaplasticsurgery.com",
-    "image": "https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg",
-    "description": "Avana Plastic Surgery is a leading plastic surgery center in Miami, Florida, specializing in breast implants including saline, silicone, and gummy bear implants for natural-looking breast implant results.",
-    "medicalSpecialty": "Plastic Surgery",
-    "telephone": "+1-305-501-6000",
-    "priceRange": "$$",
-    "address": {
-        "@@type": "PostalAddress",
-        "streetAddress": "8700 W Flagler St Suite 250",
-        "addressLocality": "Miami",
-        "addressRegion": "FL",
-        "postalCode": "33174",
-        "addressCountry": "US"
-    },
-    "geo": {
-        "@@type": "GeoCoordinates",
-        "latitude": 25.7685486,
-        "longitude": -80.337497
-    },
-    "sameAs": [
-        "https://goo.gl/maps/nsUufKdqsdQR5K39A",
-        "https://www.facebook.com/people/Avana-Plastic-Surgery/100063473569475",
-        "https://www.tiktok.com/@@avana.plasticsurgery",
-        "https://www.youtube.com/c/AvanaPlasticSurgery",
-        "https://www.instagram.com/avanaplasticsurgery"
-    ]
-}
-</script>
+   - New section added: "The Highest-Rated Breast Implant Surgeons in Miami"
 
-<script type="application/ld+json">
-{
-    "@@context": "https://schema.org",
-    "@@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://avanaplasticsurgery.com"
-        },
-        {
-            "@@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://avanaplasticsurgery.com/services"
-        },
-        {
-            "@@type": "ListItem",
-            "position": 3,
-            "name": "Breast Implants Miami",
-            "item": "https://avanaplasticsurgery.com/breast-implants-miami"
-        }
-    ]
-}
-</script>
+   - Referring external link updated:
+       Old: https://www.mayoclinic.org/healthy-lifestyle/womens-health/basics/womens-health/hlv-20049411
+       New: https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/breast-implants/art-20045957
+       Reason: replaced with a more specific, topically-relevant Mayo Clinic
+       article directly about breast implants.
 
-<script type="application/ld+json">
-{
-    "@@context": "https://schema.org",
-    "@@type": "WebPage",
-    "name": "Breast Implants Miami",
-    "url": "https://avanaplasticsurgery.com/breast-implants-miami",
-    "speakable": {
-        "@@type": "SpeakableSpecification",
-        "cssSelector": [
-            ".milenia-entity-title",
-            ".milenia-panels-definition"
-        ]
-    }
-}
-</script>
+   - Pricing paragraph added to article body (GEO):
+     "Breast implants at Avana Plastic Surgery start from $2,500..." —
+     price is explicitly stated in body text to make it citable by
+     AI-powered search engines.
 
 
+3. GOOGLE MARKUP SCHEMAS ADDED (5 total)
+   -------------------------------------------------------
+   Schema 1 — FAQPage
+     · 12 Q&A pairs covering patient concerns.
+     · Q12 (new): "How much do breast implants cost in Miami?" — targets
+       pricing queries and is AI-citable.
+     · Enables Google FAQ rich results, increases CTR.
+
+   Schema 2 — SurgicalProcedure
+     · Fields: name, alternateName (Silicone, Saline, Gummy Bear, etc.),
+       bodyLocation, howPerformed, preparation, followup, risks,
+       specialty, performer, offers.price ($2,500 USD starting).
+     · Makes pricing machine-readable for AI citation.
+     · Reinforces E-E-A-T signals for health queries.
+
+   Schema 3 — MedicalClinic + LocalBusiness
+     · @type: ["MedicalClinic", "LocalBusiness"]
+     · Fields: name, medicalSpecialty, telephone (+1-305-501-6000),
+       priceRange ($$), address (8700 W Flagler St Suite 250, Miami FL
+       33174), geo (lat 25.7685486 / lng -80.337497), sameAs (Google
+       Maps, Facebook, TikTok, YouTube, Instagram).
+     · Geo coordinates enable Google Maps rich results and "near me"
+       queries; sameAs links boost entity authority.
+
+   Schema 4 — BreadcrumbList
+     · 3 items: Home → Services → Breast Implants Miami
+     · Enables breadcrumb trail in Google search snippets; clarifies
+       site hierarchy to Googlebot.
+
+   Schema 5 — WebPage + Speakable
+     · speakable cssSelector: .milenia-entity-title, .milenia-panels-definition
+     · Marks page sections as eligible for voice search and AI assistant
+       responses (GEO optimization).
 
 
-----------------------
-GEO  (Generative Engine Optimization)
-----------------------
-Done:
+4. GEO (GENERATIVE ENGINE OPTIMIZATION) STATUS
+   -------------------------------------------------------
+   Completed:
+     ✓ FAQPage schema (12 questions)
+     ✓ SurgicalProcedure schema + offers
+     ✓ MedicalClinic / LocalBusiness schema + sameAs + geo
+     ✓ BreadcrumbList schema
+     ✓ WebPage + Speakable schema
+     ✓ Pricing paragraph in article body
+     ✓ Cost FAQ entry (Q12 — AI-citable price)
 
-FAQPage schema (12 questions)
-SurgicalProcedure schema + offers
-MedicalClinic / LocalBusiness schema + sameAs + geo
-BreadcrumbList schema
-WebPage + speakable schema
-Pricing paragraph in article body
-Cost FAQ entry
-
-Still missing — all require a verified source:
-Action	What's needed
-Recovery section + FAQ	Fetch Mayo Clinic or ASPS
-FAQ: how long do implants last?	Fetch Mayo Clinic or ASPS
-FAQ: how long does surgery take?	Fetch Mayo Clinic or ASPS
-Update 2017 statistics	Fetch ASPS annual report
+   Still Needed:
+     ⚠ Recovery section + FAQ
+       (requires verified source: Mayo Clinic or ASPS)
+     ⚠ FAQ: How long do implants last?
+       (requires verified source: Mayo Clinic or ASPS)
+     ⚠ FAQ: How long does surgery take?
+       (requires verified source: Mayo Clinic or ASPS)
+     ⚠ Update 2017 statistics
+       (requires ASPS annual statistics report)
