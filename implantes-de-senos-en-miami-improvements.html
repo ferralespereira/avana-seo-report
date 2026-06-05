@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implantes de Senos en Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: #6a737d;
+            margin-bottom: 40px;
+        }
+
+        /* ── Section headers ── */
+        .section-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #24292e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db;
+            max-width: 900px;
+        }
+
+        .section-wrap {
+            margin-bottom: 48px;
+        }
+
+        /* ── Code card (meta tags) ── */
+        .code-card {
+            background: #1e1e2e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+            max-width: 900px;
+        }
+
+        .code-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #2a2a3d;
+            padding: 12px 18px;
+        }
+
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+
+        .filename {
+            margin-left: 8px;
+            font-size: 0.78rem;
+            color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+
+        pre {
+            margin: 0;
+            padding: 24px 28px;
+            overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem;
+            line-height: 1.7;
+            color: #cdd6f4;
+            tab-size: 4;
+        }
+
+        .c-tag    { color: #89b4fa; }
+        .c-attr   { color: #a6e3a1; }
+        .c-val    { color: #f38ba8; }
+        .c-razor  { color: #f9e2af; }
+        .c-comment{ color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item { font-size: 1.1rem; }
+
+        /* ── Info cards ── */
+        .info-card {
+            max-width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .info-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #2a2a3d;
+            padding: 12px 18px;
+        }
+
+        .info-card-header .filename { margin-left: 0; }
+
+        .info-card-body {
+            padding: 22px 26px;
+        }
+
+        /* sections list */
+        .sections-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 10px;
+        }
+
+        .sections-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.88rem;
+            color: #24292e;
+            background: #f4f5f7;
+            border-radius: 7px;
+            padding: 9px 12px;
+        }
+
+        .sections-list li::before {
+            content: "✦";
+            color: #89b4fa;
+            flex-shrink: 0;
+            margin-top: 1px;
+            font-size: 0.7rem;
+        }
+
+        /* cannibalization card */
+        .cannibal-block {
+            background: #fff8f0;
+            border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            font-size: 0.86rem;
+            color: #24292e;
+            line-height: 1.6;
+        }
+
+        .cannibal-block .removed {
+            text-decoration: line-through;
+            color: #f38ba8;
+            background: #fff0f0;
+            border-radius: 3px;
+            padding: 0 3px;
+        }
+
+        .cannibal-block .reason {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.8rem;
+            color: #6a737d;
+            font-style: italic;
+        }
+
+        /* link change block */
+        .link-change {
+            background: #f4f5f7;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 0.82rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .link-old {
+            text-decoration: line-through;
+            color: #f38ba8;
+            word-break: break-all;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.75rem;
+        }
+        .link-new {
+            color: #28c840;
+            word-break: break-all;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.75rem;
+        }
+        .link-arrow {
+            color: #89b4fa;
+            font-weight: 700;
+            font-size: 0.78rem;
+            margin-top: 4px;
+        }
+
+        /* ── Schema cards ── */
+        .schemas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px;
+            max-width: 900px;
+        }
+
+        .schema-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .schema-card-head {
+            background: #2a2a3d;
+            padding: 13px 16px;
+        }
+
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #f9e2af;
+            background: rgba(249,226,175,0.12);
+            border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px;
+            padding: 2px 8px;
+            margin-bottom: 4px;
+        }
+
+        .schema-card-title {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #cdd6f4;
+        }
+
+        .schema-card-body {
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .schema-subsection-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #8b8ba7;
+            margin-bottom: 6px;
+        }
+
+        .schema-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .schema-field {
+            display: flex;
+            gap: 8px;
+            font-size: 0.8rem;
+        }
+
+        .schema-field .sf-key {
+            color: #a6e3a1;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0;
+            min-width: 110px;
+        }
+
+        .schema-field .sf-val {
+            color: #444d56;
+        }
+
+        .schema-advantages {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .schema-advantages li {
+            font-size: 0.79rem;
+            color: #444d56;
+            line-height: 1.5;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .schema-advantages li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #28c840;
+            font-size: 0.72rem;
+            top: 2px;
+        }
+
+        .schema-divider {
+            height: 1px;
+            background: #e8eaed;
+        }
+
+        /* FAQ list in schema card */
+        .faq-q-list {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .faq-q-item {
+            font-size: 0.78rem;
+            color: #444d56;
+            padding-left: 18px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .faq-q-item .q-num {
+            position: absolute;
+            left: 0;
+            color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            background: #d1fae5;
+            color: #065f46;
+            border-radius: 3px;
+            padding: 0 5px;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        /* ── GEO Status section ── */
+        .geo-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 640px) {
+            .geo-cols { grid-template-columns: 1fr; }
+        }
+        .geo-col-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 10px;
+        }
+        .geo-done-title  { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+        .geo-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.84rem;
+            color: #24292e;
+            border-radius: 7px;
+            padding: 8px 12px;
+            line-height: 1.5;
+        }
+        .geo-list.done li   { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note {
+            display: block;
+            font-size: 0.75rem;
+            color: #6a737d;
+            font-style: italic;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Implantes de Senos en Miami — SEO Improvements</h1>
+    <p class="subtitle">implantes-de-senos-en-miami &nbsp;·&nbsp; Updated 2026-06-03</p>
+
+
+    <!-- ════════════════════════════════════════════
+         1. META TAGS FIXES
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Fixes in Meta Tags</div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">implantes-de-senos-en-miami / Es / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+
+<span class="c-comment fix-item">@* Add an "s" to "Implante" to match the page slug and the h1 tag. *@</span>
+<span class="c-comment">@* &lt;title&gt;Implante de Senos en Miami | <span class="c-razor">@Settings.GetCenterName</span>&lt;/title&gt; *@</span>
+<span class="c-tag">&lt;title&gt;</span>Implantes de Senos en Miami | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+
+
+<span class="c-comment fix-item">@* Meta description ajustada para incluir precio $2,500 y teléfono (157 characters) *@</span>
+<span class="c-comment">@* &lt;meta name="description" content="Infórmese sobre los tamaños de implantes de senos, formas, perfiles, y texturas. Consulte con su cirujano cual es la mejor opción para ud." /&gt; *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy bear, nuestros cirujanos logran resultados de apariencia natural. Llámanos <span class="c-razor">@Settings.GetPhoneFormated</span>"</span> <span class="c-tag">/&gt;</span>
+
+
+<span class="c-comment fix-item">@* Added og:site_name to display the site name on social cards. *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Added og:locale and og:locale:alternate to indicate Spanish language with an English version available. *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"es_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale:alternate"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Implantes de Senos en Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy bear, nuestros cirujanos logran resultados de apariencia natural. Llámanos <span class="c-razor">@Settings.GetPhoneFormated</span>"</span> <span class="c-tag">/&gt;</span>
+
+
+<span class="c-comment fix-item">@* Adjust the Open Graph URL to the absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:tag"</span> <span class="c-attr">content</span>=<span class="c-val">"implantes de senos"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2022-05-21T12:16:55<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+
+
+<span class="c-comment fix-item">@* Adjust the Open Graph Image to the absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Added -&gt; Creating Open Graph image alt, width, and height *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Mujer mostrando resultados de implantes de senos en Miami en Avana Plastic Surgery"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Added -&gt; twitter:card required to render cards on Twitter/X *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Implantes de Senos en Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy bear, nuestros cirujanos logran resultados de apariencia natural. Llámanos <span class="c-razor">@Settings.GetPhoneFormated</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         2. CONTENT CHANGES
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Changes</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Content &nbsp;·&nbsp; Keyword Fix, Citation Fix, New Sections &amp; GEO Pricing</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:24px;">
+
+                <div>
+                    <div class="schema-subsection-label">Keyword Removed (Cannibalization Fix)</div>
+                    <div class="cannibal-block">
+                        Keyword <span class="removed">aumento de senos</span> removed from page — 7 of 7 occurrences replaced.
+                        <span class="reason">Replaced with page-appropriate alternatives (implantes de senos, implantes mamarios, cirugía de implantes de senos, etc.) to stop this page competing with the aumento-de-senos-miami page on that keyword.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Table of Contents Section Added</div>
+                    <ul class="sections-list">
+                        <li>Composición de los Implantes de Senos</li>
+                        <li>Infografía de Implantes Mamarios</li>
+                        <li>Programa una Consulta Gratuita Hoy</li>
+                        <li>Elige la Forma de Tus Implantes</li>
+                        <li>Nuevas Tendencias en Implantes de Mama</li>
+                        <li>Elige los Implantes Mamarios que se Ajusten a Tus Necesidades</li>
+                        <li>Diferentes Marcas de Implantes Mamarios</li>
+                        <li>Preguntas Frecuentes sobre Implantes de Senos en Miami</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">New Section Added</div>
+                    <ul class="sections-list">
+                        <li>The Highest-Rated Breast Implant Surgeons in Miami</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Mayo Clinic Citation Corrected</div>
+                    <div class="cannibal-block" style="border-color:#89b4fa;background:#f0f4ff;">
+                        The original quote was fabricated — it mentioned reconstruction and said "mujeres" when the real Mayo Clinic text says "people" and only mentions making breasts larger.
+                        <span class="reason">Replaced with an accurate Spanish translation of the actual Mayo Clinic quote.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Mayo Clinic External Link Added <span class="new-badge">NEW</span></div>
+                    <div class="cannibal-block" style="border-color:#28c840;background:#f0fdf4;">
+                        The Spanish version had no external link at all. The phrase "Según un artículo publicado en la Clínica Mayo" was wrapped with <code style="font-size:0.8rem;background:#e6f4ea;padding:0 4px;border-radius:3px">&lt;a target="_blank" rel="noreferrer" href="..."&gt;</code> pointing to the same Mayo Clinic URL used in the English version.
+                        <span class="reason">Adding a credible external citation is a direct E-E-A-T signal — Google uses outbound links to authoritative sources to gauge the trustworthiness of health-related content.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Image Alt Text Translated to Spanish</div>
+                    <ul class="sections-list">
+                        <li>All image alt attributes converted from English to Spanish, incorporating common Spanish search keywords for improved accessibility and image-search relevance.</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Pricing Paragraph Added to Article Body <span class="new-badge">GEO</span></div>
+                    <ul class="sections-list">
+                        <li>"Los implantes de senos en Avana Plastic Surgery comienzan desde $2,500..." — el precio está declarado explícitamente en el cuerpo del texto, lo que lo hace citable por motores de búsqueda impulsados por IA (optimización GEO).</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">New FAQ Question Added <span class="new-badge">NEW</span></div>
+                    <ul class="sections-list">
+                        <li>¿Cuánto cuestan los implantes mamarios en Miami? — added to FAQPage schema and page content to target cost-intent queries in AI-driven search.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         3. GOOGLE MARKUP SCHEMAS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Five Google Markup Schemas Added</div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1: FAQPage -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">FAQPage</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 12 Q&amp;A Pairs (en Español)</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">Q1</span>&nbsp;&nbsp;¿Pueden los implantes de senos causar cáncer?</div>
+                            <div class="faq-q-item"><span class="q-num">Q2</span>&nbsp;&nbsp;¿Qué debo saber antes de ponerme implantes de senos?</div>
+                            <div class="faq-q-item"><span class="q-num">Q3</span>&nbsp;&nbsp;¿Pueden los implantes de senos detener la lactancia materna?</div>
+                            <div class="faq-q-item"><span class="q-num">Q4</span>&nbsp;&nbsp;¿Cuáles son algunas complicaciones con los implantes de senos?</div>
+                            <div class="faq-q-item"><span class="q-num">Q5</span>&nbsp;&nbsp;¿Pueden filtrarse los implantes de senos? ¿Cómo puedo saberlo?</div>
+                            <div class="faq-q-item"><span class="q-num">Q6</span>&nbsp;&nbsp;¿Cómo puedo evitar la rotura del implante?</div>
+                            <div class="faq-q-item"><span class="q-num">Q7</span>&nbsp;&nbsp;¿Qué tipo de implante de senos es más común hoy en día?</div>
+                            <div class="faq-q-item"><span class="q-num">Q8</span>&nbsp;&nbsp;¿Recomienda implantes redondos o en forma de gota?</div>
+                            <div class="faq-q-item"><span class="q-num">Q9</span>&nbsp;&nbsp;¿Cuál es la mejor colocación de implantes de senos para mí?</div>
+                            <div class="faq-q-item"><span class="q-num">Q10</span>&nbsp;¿Duelen los implantes de senos?</div>
+                            <div class="faq-q-item"><span class="q-num">Q11</span>&nbsp;¿Qué debo decirle a mi cirujano durante la consulta inicial?</div>
+                            <div class="faq-q-item"><span class="q-num">Q12</span>&nbsp;¿Cuánto cuestan los implantes mamarios en Miami? <span class="new-badge">NEW</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables Google FAQ rich results in search listings, increasing CTR</li>
+                            <li>Each Q&amp;A targets a specific patient concern naturally in Spanish</li>
+                            <li>Q12 adds a cost entry directly answering pricing queries in AI-driven search</li>
+                            <li>Signals comprehensive topical coverage to Google's content relevance algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2: SurgicalProcedure -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">SurgicalProcedure</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Implantes de Senos en Miami</span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">Cirugía de Implantes de Senos, Implantes Mamarios de Silicona, Implantes Salinos, Implantes Gummy Bear, Cirugía de Mejora de Senos</span></div>
+                            <div class="schema-field"><span class="sf-key">bodyLocation</span><span class="sf-val">Senos</span></div>
+                            <div class="schema-field"><span class="sf-key">url</span><span class="sf-val">/espanol/implantes-de-senos-en-miami</span></div>
+                            <div class="schema-field"><span class="sf-key">howPerformed</span><span class="sf-val">Descripción quirúrgica paso a paso en español (tipo de implante, colocación, incisión)</span></div>
+                            <div class="schema-field"><span class="sf-key">preparation</span><span class="sf-val">Requisitos preoperatorios en español (peso estable, revisión de medicamentos)</span></div>
+                            <div class="schema-field"><span class="sf-key">followup</span><span class="sf-val">Calendario de MRI, restricciones de actividad, visitas de seguimiento</span></div>
+                            <div class="schema-field"><span class="sf-key">risks</span><span class="sf-val">Contractura capsular, rotura, cicatrices, cambios en la sensación del pezón</span></div>
+                            <div class="schema-field"><span class="sf-key">specialty</span><span class="sf-val">Cirugía Plástica</span></div>
+                            <div class="schema-field"><span class="sf-key">performer</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">offers.price</span><span class="sf-val">$2,500 USD (desde)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Tells Google this is a medical procedure page, boosting topical authority</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">alternateName</code> covers all Spanish implant-type keyword variants in structured data</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">offers</code> block makes pricing machine-readable for AI citation</li>
+                            <li>Reinforces E-E-A-T signals that Google prioritizes for health queries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3: MedicalClinic + LocalBusiness -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">MedicalClinic + LocalBusiness</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">["MedicalClinic", "LocalBusiness"]</span></div>
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">description</span><span class="sf-val">En español</span></div>
+                            <div class="schema-field"><span class="sf-key">medicalSpecialty</span><span class="sf-val">Cirugía Plástica</span></div>
+                            <div class="schema-field"><span class="sf-key">telephone</span><span class="sf-val">+1-305-501-6000</span></div>
+                            <div class="schema-field"><span class="sf-key">priceRange</span><span class="sf-val">$$</span></div>
+                            <div class="schema-field"><span class="sf-key">address</span><span class="sf-val">8700 W Flagler St Suite 250, Miami FL 33174</span></div>
+                            <div class="schema-field"><span class="sf-key">geo</span><span class="sf-val">lat 25.7685486 / lng -80.337497</span></div>
+                            <div class="schema-field"><span class="sf-key">sameAs</span><span class="sf-val">Google Maps, Facebook, TikTok, YouTube, Instagram</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Dual <code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">@type</code> hits both medical and local SEO simultaneously</li>
+                            <li>Geo coordinates make the clinic eligible for Google Maps rich results and "near me" queries</li>
+                            <li>Telephone and address reinforce NAP consistency — a key local ranking factor</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">sameAs</code> links social profiles, boosting entity authority</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4: BreadcrumbList -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Breadcrumb Items (en Español)</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Inicio → avanaplasticsurgery.com/espanol</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Servicios → avanaplasticsurgery.com/espanol/servicios</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Implantes de Senos en Miami → .../espanol/implantes-de-senos-en-miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables breadcrumb trail in Google search snippets, improving CTR</li>
+                            <li>Spanish labels ("Inicio", "Servicios") match the page language, improving UX signals</li>
+                            <li>Helps users and search engines understand page context within the Spanish site</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5: WebPage + Speakable -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 5</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Implantes de Senos en Miami</span></div>
+                            <div class="schema-field"><span class="sf-key">url</span><span class="sf-val">avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">cssSelector: .milenia-entity-title, .milenia-panels-definition</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Speakable markup marks page sections as eligible for voice search and AI assistant responses</li>
+                            <li>Increases the likelihood of being cited by generative AI search engines (GEO)</li>
+                            <li>Works alongside FAQPage and SurgicalProcedure schemas to make the page fully machine-readable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         4. GEO STATUS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">GEO (Generative Engine Optimization) Status</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">AI-Citation Readiness &nbsp;·&nbsp; implantes-de-senos-en-miami</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> FAQPage schema (12 preguntas en español)</li>
+                            <li><em class="geo-icon">✓</em> SurgicalProcedure schema + offers</li>
+                            <li><em class="geo-icon">✓</em> MedicalClinic / LocalBusiness schema + sameAs + geo</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList schema (español)</li>
+                            <li><em class="geo-icon">✓</em> WebPage + speakable schema</li>
+                            <li><em class="geo-icon">✓</em> Pricing paragraph in article body</li>
+                            <li><em class="geo-icon">✓</em> Cost FAQ entry (Q12 — AI-citable price)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="geo-col-title geo-needed-title">⚠ Still Needed</div>
+                        <ul class="geo-list needed">
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>Sección de recuperación + FAQ
+                                    <span class="geo-note">Requiere fuente verificada: Mayo Clinic o ASPS</span>
+                                </span>
+                            </li>
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>FAQ: ¿Cuánto tiempo duran los implantes?
+                                    <span class="geo-note">Requiere fuente verificada: Mayo Clinic o ASPS</span>
+                                </span>
+                            </li>
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>FAQ: ¿Cuánto dura la cirugía?
+                                    <span class="geo-note">Requiere fuente verificada: Mayo Clinic o ASPS</span>
+                                </span>
+                            </li>
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>Actualizar estadísticas de 2017
+                                    <span class="geo-note">Requiere informe estadístico anual de ASPS</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
