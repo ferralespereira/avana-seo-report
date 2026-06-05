@@ -1,108 +1,132 @@
--------------------------
-metas
--------------------------
-@model ServicePageViewModel
-
-@* Add an "s" to "Implante" to match the page slug and the h1 tag. *@
-@* <title>Implante de Senos en Miami | @Settings.GetCenterName</title> *@
-<title>Implantes de Senos en Miami | @Settings.GetCenterName</title>
+================================================================
+SEO IMPROVEMENTS — Implantes de Senos en Miami
+Page:   /espanol/implantes-de-senos-en-miami
+File:   articlemetas.cshtml  (Spanish)
+Date:   June 5, 2026
+================================================================
 
 
-@* Meta description ajustada para incluir precio $2,500 y teléfono (157 characters) *@
-@* <meta name="description" content="Infórmese sobre los tamaños de implantes de senos, formas, perfiles, y texturas. Consulte con su cirujano cual es la mejor opción para ud." /> *@
-<meta name="description" content="Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy bear, nuestros cirujanos logran resultados de apariencia natural. Llámanos @Settings.GetPhoneFormated" />
+SECTION 1 — META TAGS
+----------------------------------------------------------------
 
-@* Added og:site_name to display the site name on social cards. *@
-<meta property="og:site_name" content="@Settings.GetCenterName" />
+1.1  Title Tag — Added missing "s"
+     Before: <title>Implante de Senos en Miami | @Settings.GetCenterName</title>
+     After:  <title>Implantes de Senos en Miami | @Settings.GetCenterName</title>
+     Reason: Added missing "s" to match the page slug and the H1 tag.
 
-@* Added og:locale and og:locale:alternate to indicate Spanish language with an English version available. *@
-<meta property="og:locale" content="es_US" />
-<meta property="og:locale:alternate" content="en_US" />
+1.2  Meta Description — Rewritten (157 characters)
+     Before: "Infórmese sobre los tamaños de implantes de senos, formas, perfiles,
+              y texturas. Consulte con su cirujano cual es la mejor opción para ud."
+     After:  "Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy
+              bear, nuestros cirujanos logran resultados de apariencia natural.
+              Llámanos @Settings.GetPhoneFormated"
+     Reason: Includes starting price ($2,500) and phone number to improve CTR.
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Implantes de Senos en Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy bear, nuestros cirujanos logran resultados de apariencia natural. Llámanos @Settings.GetPhoneFormated" />
+1.3  og:site_name — Added
+     <meta property="og:site_name" content="@Settings.GetCenterName" />
+     Reason: Displays the site name on social media cards.
 
-@* Adjust the Open Graph URL to the absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami" />
+1.4  og:locale — Added
+     <meta property="og:locale"           content="es_US" />
+     <meta property="og:locale:alternate" content="en_US" />
+     Reason: Tells social crawlers this is a Spanish-language page with an
+             English alternate available.
 
+1.5  og:url — Updated to Absolute URL
+     <meta property="og:url"
+           content="https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami" />
 
-<meta property="article:tag" content="implantes de senos" />
-<meta property="article:published_time" content="2022-05-21T12:16:55@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+1.6  og:image:alt, og:image:width, og:image:height — Added
+     alt:    "Mujer mostrando resultados de implantes de senos en Miami
+              en Avana Plastic Surgery"
+     width:  910
+     height: 960
+     Reason: Enables rich image display on social cards; alt text is in Spanish
+             with target keywords.
 
-@* Adjust the Open Graph Image to the absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg" />
+1.7  twitter:card — Added (was missing entirely)
+     <meta name="twitter:card" content="summary" />
+     Reason: Required for Twitter/X to render any card for this page.
 
-@* Added-> Creating Open Graph image alt, width, and height *@
-<meta property="og:image:alt" content="Mujer mostrando resultados de implantes de senos en Miami en Avana Plastic Surgery" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
-
-
-@* Added -> twitter:card required to render cards on Twitter/X *@
-<meta name="twitter:card" content="summary" />
-
-<meta name="twitter:title" content="Implantes de Senos en Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Implantes de senos en Miami desde $2,500. Salinos, Silicona o Gummy bear, nuestros cirujanos logran resultados de apariencia natural. Llámanos @Settings.GetPhoneFormated" />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implants-miami.jpg" />
-<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami" />
-
-
-------------------------
-content
-------------------------
-
-* Removed "aumento de senos" (cannibalization fix)
-Replaced 7 of 7 occurrences with page-appropriate alternatives (implantes de senos, implantes mamarios, cirugía de implantes de senos, etc.) to stop this page competing with the aumento-de-senos-miami page on that keyword.
-
-* Adding:
-	<!--================ Table of Contents ================-->
-        <section class="text-left c-section container mobile-margin-5-9 mobile-content-padding-x">
-            <ul class="ul-content">
-                <li><a href="#breast-implant-composition">Composición de los Implantes de Senos</a></li>
-                <li><a href="#breast-implants-infographics">Infografía de Implantes Mamarios</a></li>
-                <li><a href="#contact-form-section">Programa una Consulta Gratuita Hoy</a></li>
-                <li><a href="#choose-shape-implants">Elige la Forma de Tus Implantes</a></li>
-                <li><a href="#new-trends-implants">Nuevas Tendencias en Implantes de Mama</a></li>
-                <li><a href="#choose-implants-needs">Elige los Implantes Mamarios que se Ajusten a Tus Necesidades</a></li>
-                <li><a href="#different-brands-implants">Diferentes Marcas de Implantes Mamarios</a></li>
-                <li><a href="#breast-implants-faqs">Preguntas Frecuentes sobre Implantes de Senos en Miami</a></li>
-            </ul>
-        </section>
-       <!--================ End of Table of Contents ================-->
-
-* New Section Added
-The Highest-Rated Breast Implant Surgeons in Miami
+1.8  canonical — Updated to Absolute URL
+     <link rel="canonical"
+           href="https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami" />
 
 
-* Corrected the Mayo Clinic citation
-The original quote was fabricated — it mentioned reconstruction and said "mujeres" when the real Mayo Clinic text says "people" and only mentions making breasts larger. Replaced with an accurate Spanish translation of the actual quote.
+SECTION 2 — CONTENT CHANGES
+----------------------------------------------------------------
 
-* Added the Mayo Clinic external link
-Wrapped "Según un artículo publicado en la Clínica Mayo" with <a target="_blank" rel="noreferrer" href="..."> pointing to the same URL used in the English version — a trust/E-E-A-T signal for Google.
+2.1  Keyword Cannibalization Fix — "aumento de senos" Removed
+     Replaced 7 of 7 occurrences with page-appropriate alternatives:
+     implantes de senos, implantes mamarios, cirugía de implantes de senos, etc.
+     Reason: Stops this page from competing with the dedicated
+             /aumento-de-senos-miami page on that keyword.
 
-* Translated to Spanish — from English alt text to Spanish, including common Spanish keywords into the alt
+2.2  Table of Contents — Added
+     - Composición de los Implantes de Senos
+     - Infografía de Implantes Mamarios
+     - Programa una Consulta Gratuita Hoy
+     - Elige la Forma de Tus Implantes
+     - Nuevas Tendencias en Implantes de Mama
+     - Elige los Implantes Mamarios que se Ajusten a Tus Necesidades
+     - Diferentes Marcas de Implantes Mamarios
+     - Preguntas Frecuentes sobre Implantes de Senos en Miami
 
-* Pricing Paragraph Added to Article Body GEO
-"Breast implants at Avana Plastic Surgery start from $2,500..." — price is now explicitly stated in body text, making it citable by AI-powered search engines (GEO optimization)
+2.3  New Section — Added
+     "The Highest-Rated Breast Implant Surgeons in Miami"
 
-* adding a new question to the FAQschema
-	¿Cuánto cuestan los implantes mamarios en Miami?
+2.4  Mayo Clinic Citation — Corrected
+     The original quote was fabricated: it mentioned reconstruction and
+     referred to "mujeres" when the real Mayo Clinic text says "people"
+     and only covers making breasts larger.
+     Replaced with an accurate Spanish translation of the actual quote.
+
+2.5  Mayo Clinic External Link — Added (did not exist in Spanish version)
+     Wrapped "Según un artículo publicado en la Clínica Mayo" with:
+       <a target="_blank" rel="noreferrer" href="[Mayo Clinic URL]">
+     Pointing to the same article used in the English version.
+     Reason: Outbound link to a credible medical source — a direct
+             E-E-A-T signal for Google.
+
+2.6  Image Alt Text — Translated to Spanish
+     All image alt attributes converted from English to Spanish,
+     incorporating common Spanish search keywords for improved
+     accessibility and image-search relevance.
+
+2.7  Pricing Paragraph — Added to Article Body (GEO Optimization)
+     "Los implantes de senos en Avana Plastic Surgery comienzan desde $2,500..."
+     Reason: Price explicitly stated in body text, making it citable by
+             AI-powered search engines (ChatGPT, Gemini, Perplexity, etc.).
+
+2.8  New FAQ Question — Added
+     "¿Cuánto cuestan los implantes mamarios en Miami?"
+     Added to both the page FAQ section and the FAQPage schema.
 
 
+SECTION 3 — GOOGLE MARKUP SCHEMAS (5 Added)
+----------------------------------------------------------------
 
-----------------------------
-schemas
---------------------------------
-added:
-All 5 schemas added. Here's a summary of what was written and the key localization decisions:
+Schema 1 — FAQPage
+  All 12 Q&As taken directly from the Spanish HTML content.
+  New question added (Q12): "¿Cuánto cuestan los implantes mamarios en Miami?"
 
-Schema	Key localization
-FAQPage	All 12 Q&As taken directly from the Spanish HTML content
-SurgicalProcedure	url → /espanol/implantes-de-senos-en-miami, bodyLocation → "Senos", all descriptions in Spanish
-MedicalClinic / LocalBusiness	Description in Spanish; address, phone, geo, sameAs identical to English
-BreadcrumbList	"Inicio" / "Servicios" / "Implantes de Senos en Miami" with Spanish URLs
-WebPage (speakable)	Spanish URL; same CSS selectors (.milenia-entity-title, .milenia-panels-definition)
+Schema 2 — SurgicalProcedure
+  url          →  /espanol/implantes-de-senos-en-miami
+  bodyLocation →  "Senos"
+  All descriptions in Spanish.
+  offers.price →  $2,500 USD (starting) — machine-readable for AI citation.
 
+Schema 3 — MedicalClinic / LocalBusiness
+  Description in Spanish.
+  Address, phone, geo coordinates, and sameAs links identical to English version.
 
+Schema 4 — BreadcrumbList
+  Position 1:  Inicio                    → avanaplasticsurgery.com/espanol
+  Position 2:  Servicios                 → avanaplasticsurgery.com/espanol/servicios
+  Position 3:  Implantes de Senos en Miami → /espanol/implantes-de-senos-en-miami
+
+Schema 5 — WebPage + Speakable
+  url       →  avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami
+  speakable →  cssSelector: .milenia-entity-title, .milenia-panels-definition
+
+================================================================
