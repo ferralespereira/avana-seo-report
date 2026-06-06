@@ -13,12 +13,16 @@ keywords = [
         "url": "avanaplasticsurgery.com/lipo-360-miami"
     },
     {
-        "keyword": "breast augmentation miami",
-        "url": "avanaplasticsurgery.com/breast-augmentation-miami"
+        "keyword": "liposucción 360 en miami",
+        "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami"
     },
     {
-        "keyword": "tummy tuck miami",
-        "url": "avanaplasticsurgery.com/tummy-tuck-miami"
+        "keyword": "breast implants miami",
+        "url": "https://avanaplasticsurgery.com/breast-implants-miami"
+    },
+    {
+        "keyword": "implantes de senos en miami",
+        "url": "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami"
     },
 ]
 
