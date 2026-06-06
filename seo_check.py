@@ -2,6 +2,7 @@ import anthropic
 import json
 import os
 import re
+import time
 from datetime import datetime
 
 client = anthropic.Anthropic(
@@ -118,6 +119,7 @@ for item in keywords:
     result["time"] = datetime.now().strftime("%H:%M")
     reports.append(result)
     print(f"Result: Position {result.get('position')}")
+    time.sleep(30)  # ← wait 30 seconds between each search
 
 # Save reports
 os.makedirs("reports", exist_ok=True)
