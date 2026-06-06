@@ -1,0 +1,36 @@
+name: Daily SEO Rank Check
+
+on:
+  schedule:
+    - cron: '0 11 * * *'  # 7am Miami time
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  seo-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Run SEO Check
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python seo_check.py
+
+      - name: Commit results
+        run: |
+          git config --global user.email "seo-bot@github.com"
+          git config --global user.name "SEO Bot"
+          git add reports/
+          git commit -m "SEO report $(date +%Y-%m-%d)" || echo "No changes"
+          git push
