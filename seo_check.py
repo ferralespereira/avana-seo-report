@@ -3,15 +3,22 @@ import json
 import os
 import time
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 SERPER_KEY = os.environ.get("SERPER_API_KEY")
+
+# Miami timezone — auto-handles EDT/EST daylight saving switches
+MIAMI = ZoneInfo("America/New_York")
+
+# Your domain — used to detect ANY of your pages ranking
+MY_DOMAIN = "avanaplasticsurgery.com"
 
 # Each keyword: its target URL and language ("en" or "es")
 keywords = [
     {"keyword": "lipo 360 miami",
      "url": "https://avanaplasticsurgery.com/lipo-360-miami",
      "lang": "en"},
-    {"keyword": "liposuccion 360 en miami",
+    {"keyword": "liposucción 360 en miami",
      "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami",
      "lang": "es"},
     {"keyword": "breast implants miami",
@@ -22,13 +29,10 @@ keywords = [
      "lang": "es"},
 ]
 
-# Locations to check each keyword from
+# Locations to check each keyword from (Miami only)
 locations = [
-    {"name": "Miami", "location": "Miami, Florida, United States"},   # city-level
+    {"name": "Miami", "location": "Miami, Florida, United States"},
 ]
-
-# Your domain — used to detect ANY of your pages ranking
-MY_DOMAIN = "avanaplasticsurgery.com"
 
 
 def check_ranking(keyword, target_url, lang, location):
@@ -36,7 +40,7 @@ def check_ranking(keyword, target_url, lang, location):
         "q": keyword,
         "gl": "us",          # country = United States
         "hl": lang,          # result language (en or es)
-        "num": 20,
+        "num": 20,           # top 20 results
     }
     if location:             # add city-level targeting when provided
         payload["location"] = location
@@ -96,8 +100,8 @@ for item in keywords:
             "keyword": item["keyword"],
             "target_url": item["url"],
             "location": loc["name"],
-            "date": datetime.now().strftime("%Y-%m-%d"),
-            "time": datetime.now().strftime("%H:%M"),
+            "date": datetime.now(MIAMI).strftime("%Y-%m-%d"),
+            "time": datetime.now(MIAMI).strftime("%H:%M"),
         })
         reports.append(result)
         print(f"  -> Target position: {result['position']}")
@@ -108,7 +112,7 @@ for item in keywords:
 
 # Save reports
 os.makedirs("reports", exist_ok=True)
-date = datetime.now().strftime("%Y-%m-%d")
+date = datetime.now(MIAMI).strftime("%Y-%m-%d")
 
 with open(f"reports/{date}.json", "w", encoding="utf-8") as f:
     json.dump(reports, f, indent=2, ensure_ascii=False)
@@ -116,7 +120,7 @@ with open(f"reports/{date}.json", "w", encoding="utf-8") as f:
 with open("reports/latest.json", "w", encoding="utf-8") as f:
     json.dump(reports, f, indent=2, ensure_ascii=False)
 
-# Append to history CSV (now includes which of your pages ranked top + its position)
+# Append to history CSV
 csv_file = "reports/history.csv"
 if not os.path.exists(csv_file):
     with open(csv_file, "w", encoding="utf-8") as f:
