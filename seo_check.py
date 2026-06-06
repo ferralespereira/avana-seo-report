@@ -24,7 +24,6 @@ keywords = [
 
 # Locations to check each keyword from
 locations = [
-    {"name": "United States", "location": None},                     # country-level (gl=us)
     {"name": "Miami", "location": "Miami, Florida, United States"},   # city-level
 ]
 
