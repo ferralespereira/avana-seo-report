@@ -40,7 +40,7 @@ def check_ranking(keyword, target_url, lang, location):
         "q": keyword,
         "gl": "us",          # country = United States
         "hl": lang,          # result language (en or es)
-        "num": 20,           # top 20 results
+        "num": 100,          # top 100 results
     }
     if location:             # add city-level targeting when provided
         payload["location"] = location
