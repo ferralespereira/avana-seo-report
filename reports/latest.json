@@ -2,62 +2,62 @@
   {
     "keyword": "lipo 360 miami",
     "target_url": "avanaplasticsurgery.com/lipo-360-miami",
-    "position": "not found",
-    "found_on_page_1": false,
+    "position": 1,
+    "found_on_page_1": true,
     "top_10_competitors": [
       {
         "position": 1,
+        "url": "https://avanaplasticsurgery.com/lipo-360-miami",
+        "title": "Lipo 360 Miami - $3000 Circumferential Lipo"
+      },
+      {
+        "position": 2,
         "url": "https://iconcosmeticcenter.com/360-lipo-miami",
         "title": "Lipo 360 Miami - Best Price $3000 | Icon Cosmetic Center"
       },
       {
-        "position": 2,
+        "position": 3,
+        "url": "https://revivesurgery.com/body/lipo-360/",
+        "title": "Lipo 360 in Miami, FL | Revive Plastic Surgery"
+      },
+      {
+        "position": 4,
         "url": "https://miamilifecosmetic.com/procedure/lipo-360/",
         "title": "Lipo 360 – Miami Life Cosmetic Surgery"
       },
       {
-        "position": 3,
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360 | Mia Aesthetics"
+        "position": 5,
+        "url": "https://drkmiamiplasticsurgery.com/360-liposuction-miami",
+        "title": "360 Liposuction - Miami"
       },
       {
-        "position": 4,
+        "position": 6,
+        "url": "https://boutinicaesthetics.com/lipo-360-miami/",
+        "title": "Lipo 360 Miami - From $3,300 | Boutinic Aesthetics"
+      },
+      {
+        "position": 7,
         "url": "https://drnathan.com/plastic-surgery/body/360-liposuction/",
         "title": "Lipo 360 Miami | Lipo 360 in Miramar, FL | The Nathan Clinic"
       },
       {
-        "position": 5,
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/lipo-360-miami/",
-        "title": "Lipo 360 Miami - The Secret Plastic Surgery"
-      },
-      {
-        "position": 6,
-        "url": "https://vixenplasticsurgery.com/",
-        "title": "Cosmetic Surgery in Miami | Vixen Plastic Surgery"
-      },
-      {
-        "position": 7,
-        "url": "https://avanaplasticsurgery.com/lipo-360/before-and-after",
-        "title": "Lipo 360 Before and after Photos | Avana Plastic Surgery"
-      },
-      {
         "position": 8,
-        "url": "https://juventuscosmeticsurgery.com/lipo-360-miami-prices-recovery-results/",
-        "title": "Lipo 360 in Miami: real prices, recovery, and results (2025 guide)"
+        "url": "https://prestigeplasticsurgery.com/liposuction/",
+        "title": "Lipo 360 at Prestige Plastic Surgery - Miami's Best Liposuction Procedure"
       },
       {
         "position": 9,
-        "url": "https://spectrum-aesthetics.com/liposuction/",
-        "title": "Liposuction (Lipo) Miami, Florida Cost $1500 | Spectrum Aesthetics"
+        "url": "https://miamilifeplasticsurgery.com/procedure/lipo-360/",
+        "title": "Lipo 360 – Miami Life Plastic Surgery"
       },
       {
         "position": 10,
-        "url": "https://spectrum-aesthetics.com/",
-        "title": "Spectrum Aesthetics® - Plastic Surgery in Miami"
+        "url": "https://miamiaestheticcenter.com/360-lipo-miami",
+        "title": "360 Lipo Miami - Circumferential Liposuction| Miami Aesthetic Center"
       }
     ],
     "date": "2026-06-06",
-    "time": "14:45"
+    "time": "14:55"
   },
   {
     "keyword": "liposucción 360 en miami",
@@ -117,7 +117,7 @@
       }
     ],
     "date": "2026-06-06",
-    "time": "14:47"
+    "time": "14:57"
   },
   {
     "keyword": "breast implants miami",
@@ -177,7 +177,7 @@
       }
     ],
     "date": "2026-06-06",
-    "time": "14:47"
+    "time": "14:57"
   },
   {
     "keyword": "implantes de senos en miami",
@@ -237,6 +237,6 @@
       }
     ],
     "date": "2026-06-06",
-    "time": "14:48"
+    "time": "14:58"
   }
 ]
