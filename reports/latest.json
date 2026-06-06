@@ -2,62 +2,27 @@
   {
     "keyword": "lipo 360 miami",
     "target_url": "avanaplasticsurgery.com/lipo-360-miami",
-    "position": 1,
-    "found_on_page_1": true,
+    "position": "not found",
+    "found_on_page_1": false,
     "top_10_competitors": [
       {
         "position": 1,
-        "url": "https://avanaplasticsurgery.com/lipo-360-miami",
-        "title": "Lipo 360 Miami - $3000 Circumferential Lipo"
-      },
-      {
-        "position": 2,
         "url": "https://iconcosmeticcenter.com/360-lipo-miami",
         "title": "Lipo 360 Miami - Best Price $3000 | Icon Cosmetic Center"
       },
       {
-        "position": 3,
-        "url": "https://revivesurgery.com/body/lipo-360/",
-        "title": "Lipo 360 in Miami, FL | Revive Plastic Surgery"
-      },
-      {
-        "position": 4,
+        "position": 2,
         "url": "https://miamilifecosmetic.com/procedure/lipo-360/",
         "title": "Lipo 360 – Miami Life Cosmetic Surgery"
       },
       {
-        "position": 5,
-        "url": "https://drkmiamiplasticsurgery.com/360-liposuction-miami",
-        "title": "360 Liposuction - Miami"
-      },
-      {
-        "position": 6,
-        "url": "https://boutinicaesthetics.com/lipo-360-miami/",
-        "title": "Lipo 360 Miami - From $3,300 | Boutinic Aesthetics"
-      },
-      {
-        "position": 7,
-        "url": "https://drnathan.com/plastic-surgery/body/360-liposuction/",
-        "title": "Lipo 360 Miami | Lipo 360 in Miramar, FL | The Nathan Clinic"
-      },
-      {
-        "position": 8,
-        "url": "https://prestigeplasticsurgery.com/liposuction/",
-        "title": "Lipo 360 at Prestige Plastic Surgery - Miami's Best Liposuction Procedure"
-      },
-      {
-        "position": 9,
-        "url": "https://miamilifeplasticsurgery.com/procedure/lipo-360/",
-        "title": "Lipo 360 – Miami Life Plastic Surgery"
-      },
-      {
-        "position": 10,
-        "url": "https://miamiaestheticcenter.com/360-lipo-miami",
-        "title": "360 Lipo Miami - Circumferential Liposuction| Miami Aesthetic Center"
+        "position": 3,
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
+        "title": "Lipo 360 | Mia Aesthetics"
       }
     ],
     "date": "2026-06-06",
-    "time": "14:55"
+    "time": "15:05"
   },
   {
     "keyword": "liposucción 360 en miami",
@@ -112,12 +77,12 @@
       },
       {
         "position": 10,
-        "url": "https://prestigeplasticsurgery.com/liposuction/",
-        "title": "Lipo 360 at Prestige Plastic Surgery - Miami's Best Liposuction Procedure"
+        "url": "https://iconcosmeticcenter.com/liposuction-miami",
+        "title": "Liposucción en Miami - Mejor precio $2900"
       }
     ],
     "date": "2026-06-06",
-    "time": "14:57"
+    "time": "15:05"
   },
   {
     "keyword": "breast implants miami",
@@ -177,66 +142,15 @@
       }
     ],
     "date": "2026-06-06",
-    "time": "14:57"
+    "time": "15:05"
   },
   {
     "keyword": "implantes de senos en miami",
     "target_url": "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami",
-    "position": "not found",
+    "position": "exception",
     "found_on_page_1": false,
-    "top_10_competitors": [
-      {
-        "position": 1,
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
-        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami"
-      },
-      {
-        "position": 2,
-        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
-        "title": "Miami Cirugia Plastica, Aumento de Senos $2500 | CG Cosmetic Surgery"
-      },
-      {
-        "position": 3,
-        "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
-        "title": "Aumento de Senos Miami $2799 - Fl"
-      },
-      {
-        "position": 4,
-        "url": "https://www.zuriplasticsurgery.com/es/senos/aumento-de-senos/",
-        "title": "Aumento de Senos Miami | Los mejores Implantes Mamarios | Dr. Zuri"
-      },
-      {
-        "position": 5,
-        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL | Dr. Ary Krau"
-      },
-      {
-        "position": 6,
-        "url": "https://epicplasticsurgery.com/sp/senos/aumento-de-senos/",
-        "title": "Aumento de Senos en Miami | Epic Cirugía Plástica"
-      },
-      {
-        "position": 7,
-        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Aumento de Senos Miami con Implantes ..."
-      },
-      {
-        "position": 8,
-        "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
-        "title": "Aumento de Senos - Miami, FL - Careaga Plastic Surgery"
-      },
-      {
-        "position": 9,
-        "url": "https://www.arcplasticsurgeons.com/es/senos/implantes-mamarios/",
-        "title": "Implantes mamarios en Miami | Dr. White - ARC Plastic Surgery"
-      },
-      {
-        "position": 10,
-        "url": "https://aeris.co/plastic-surgeons-miami-fl/breast/breast-augmentation/",
-        "title": "Best Aumento de Senos Miami, FL | Aeris"
-      }
-    ],
+    "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': \"This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: c4ae6fbd-936d-4770-a20c-95c35eb22d92, model: claude-sonnet-4-6). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Reduce the prompt length or the maximum tokens requested, or try again later. View your current limits at https://console.anthropic.com/settings/limits. To raise this limit, purchase credits to advance to the next usage tier at https://console.anthropic.com/settings/billing.\"}, 'request_id': 'req_011CbnDJb6srKrr6kHCAGw4Y'}",
     "date": "2026-06-06",
-    "time": "14:58"
+    "time": "15:05"
   }
 ]
