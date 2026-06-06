@@ -12,7 +12,7 @@ client = anthropic.Anthropic(
 keywords = [
     {
         "keyword": "lipo 360 miami",
-        "url": "avanaplasticsurgery.com/lipo-360-miami"
+        "url": "https://avanaplasticsurgery.com/lipo-360-miami"
     },
     {
         "keyword": "liposucción 360 en miami",
