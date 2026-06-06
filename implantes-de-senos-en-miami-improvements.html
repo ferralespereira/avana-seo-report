@@ -390,12 +390,93 @@
             font-style: italic;
             margin-top: 2px;
         }
+
+        /* ── Page info bar ── */
+        .page-info-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .page-info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px;
+            padding: 8px 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #8b8ba7;
+        }
+        .page-info-link {
+            color: #89b4fa;
+            text-decoration: none;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.8rem;
+        }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword {
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.8rem;
+            color: #f9e2af;
+        }
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 5px;
+            color: #8b8ba7;
+            font-size: 0.72rem;
+            padding: 3px 9px;
+            cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+
+        /* ── Back to index link ── */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #8b8ba7;
+            text-decoration: none;
+            margin-bottom: 18px;
+            transition: color 0.15s;
+        }
+        .back-link:hover { color: #cdd6f4; }
+        .back-link::before { content: "←"; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
+    <a class="back-link" href="index.html">Index</a>
     <h1>Implantes de Senos en Miami — SEO Improvements</h1>
     <p class="subtitle">implantes-de-senos-en-miami &nbsp;·&nbsp; Updated 2026-06-03</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami" target="_blank" rel="noopener">https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Primary Keyword</span>
+            <span class="page-info-keyword">implantes de senos en miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('implantes de senos en miami', this)">copy</button>
+        </div>
+    </div>
 
 
     <!-- ════════════════════════════════════════════
@@ -796,6 +877,17 @@
         </div>
     </div>
 
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
 
 </body>
 </html>
