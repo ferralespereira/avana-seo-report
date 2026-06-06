@@ -3,7 +3,7 @@ name: Daily SEO Rank Check
 on:
   schedule:
     - cron: '0 11 * * *'  # 7am Miami time
-  workflow_dispatch:        # manual trigger
+  workflow_dispatch:
 
 jobs:
   seo-check:
@@ -12,10 +12,10 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 

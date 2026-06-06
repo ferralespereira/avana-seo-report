@@ -47,7 +47,7 @@ def extract_json(text):
 def check_ranking(keyword, target_url):
     try:
         message = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             max_tokens=2000,
             tools=[
                 {
