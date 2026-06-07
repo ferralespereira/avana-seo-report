@@ -2235,8 +2235,10 @@
     document.querySelectorAll('.site-tab').forEach(t => t.classList.remove('active'));
     document.getElementById('panel-' + site).classList.add('active');
     document.querySelectorAll('.site-tab')[site === 'ps' ? 0 : 1].classList.add('active');
-    // scroll to top of main
-    window.scrollTo({ top: document.querySelector('.top-bar').offsetTop - 10, behavior: 'smooth' });
+    // scroll so the panel content is visible just below the sticky nav
+    const mainEl = document.querySelector('.main');
+    const navH   = document.querySelector('.top-bar').offsetHeight;
+    window.scrollTo({ top: mainEl.getBoundingClientRect().top + window.scrollY - navH, behavior: 'smooth' });
   }
 
   function scrollToSection(indicator) {
