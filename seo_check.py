@@ -30,6 +30,9 @@ keywords = [
     {"keyword": "brazilian butt lift miami",
      "url": "https://avanaplasticsurgery.com/brazilian-butt-lift-miami",
      "lang": "en"},
+    {"keyword": "breast augmentation miami",
+     "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
+     "lang": "en"},
 ]
 
 # Locations to check each keyword from (Miami only)
