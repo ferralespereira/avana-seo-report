@@ -16,7 +16,7 @@ window.SEO_POSITION_DATA = {
     "competitors": [
       {
         "url": "https://iconcosmeticcenter.com/360-lipo-miami",
-        "title": "Lipo 360 Miami - Best Price $3000",
+        "title": "Lipo 360 Miami - Best Price $3000 - Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -46,7 +46,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360",
+        "title": "Lipo 360 | Mia Aesthetics",
         "domain": "miaaesthetics.com",
         "series": [
           {
@@ -60,13 +60,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/lipo-360-miami/",
-        "title": "Lipo 360 Miami",
-        "domain": "thesecretplasticsurgery.com",
+        "url": "https://vixenplasticsurgery.com/",
+        "title": "Vixen Plastic Surgery: Cosmetic Surgery in Miami",
+        "domain": "vixenplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-07",
@@ -75,13 +75,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://prestigeplasticsurgery.com/liposuction/",
-        "title": "Liposuction Surgery in Miami",
-        "domain": "prestigeplasticsurgery.com",
+        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/lipo-360-miami/",
+        "title": "Lipo 360 Miami - The Secret Plastic Surgery",
+        "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 7
+            "position": 4
           },
           {
             "date": "2026-06-07",
@@ -91,7 +91,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://juventuscosmeticsurgery.com/lipo-360-miami-prices-recovery-results/",
-        "title": "Lipo 360 in Miami: prices and recovery",
+        "title": "Lipo 360 in Miami: prices and recovery - Juventus Cosmetic Surgery",
         "domain": "juventuscosmeticsurgery.com",
         "series": [
           {
@@ -105,13 +105,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://chopraplasticsurgery.com/body/liposuction-360/",
-        "title": "Liposuction 360 Miami | Lipo in Miami, FL",
-        "domain": "chopraplasticsurgery.com",
+        "url": "https://www.instagram.com/p/DX9VX5aCSKf/",
+        "title": "Lipo 360 is designed to contour the midsection more ... - Instagram",
+        "domain": "instagram.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 5
+            "position": 8
           },
           {
             "date": "2026-06-07",
@@ -120,13 +120,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://www.instagram.com/p/DX9VX5aCSKf/",
-        "title": "Lipo 360 is designed to contour the midsection more ...",
-        "domain": "instagram.com",
+        "url": "https://prestigeplasticsurgery.com/liposuction/",
+        "title": "Liposuction – Miami, FL - Prestige Plastic Surgery",
+        "domain": "prestigeplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 8
+            "position": 7
           },
           {
             "date": "2026-06-07",
@@ -136,7 +136,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://revivesurgery.com/body/lipo-360/",
-        "title": "Lipo 360 in Miami, FL",
+        "title": "Lipo 360 in Miami, FL | Revive Plastic Surgery",
         "domain": "revivesurgery.com",
         "series": [
           {
@@ -150,13 +150,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://www.pureplasticsurgery.com/blog/top-5-reasons-to-have-lipo-360-at-pure-plastic-surgery-miami",
-        "title": "Top 5 Reasons to have Lipo 360 at Pure Plastic Surgery ...",
-        "domain": "pureplasticsurgery.com",
+        "url": "https://chopraplasticsurgery.com/body/liposuction-360/",
+        "title": "Liposuction 360 Miami | Lipo in Miami, FL - Chopra Plastic Surgery",
+        "domain": "chopraplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-07",
@@ -211,13 +211,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://miamilifecosmetic.com/procedure/lipo-360/",
-        "title": "Lipo 360 – Miami Life Cosmetic Surgery",
-        "domain": "miamilifecosmetic.com",
+        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
+        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción? - Dr David Delgado",
+        "domain": "daviddelgadocirujano.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-07",
@@ -226,13 +226,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
-        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción? - Dr David Delgado",
-        "domain": "daviddelgadocirujano.com",
+        "url": "https://miamilifecosmetic.com/procedure/lipo-360/",
+        "title": "Lipo 360 – Miami Life Cosmetic Surgery",
+        "domain": "miamilifecosmetic.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 4
+            "position": 5
           },
           {
             "date": "2026-06-07",
@@ -256,13 +256,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://juventuscosmeticsurgery.com/es/lipo-360-miami-precios-recuperacion-resultados/",
-        "title": "Lipo 360 en Miami: precios y recuperación | Juventus",
-        "domain": "juventuscosmeticsurgery.com",
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
+        "title": "Lipo 360 | Mia Aesthetics",
+        "domain": "miaaesthetics.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-06-07",
@@ -286,6 +286,21 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
+        "url": "https://juventuscosmeticsurgery.com/es/lipo-360-miami-precios-recuperacion-resultados/",
+        "title": "Lipo 360 en Miami: precios y recuperación | Juventus",
+        "domain": "juventuscosmeticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 6
+          },
+          {
+            "date": "2026-06-07",
+            "position": 8
+          }
+        ]
+      },
+      {
         "url": "https://chopraplasticsurgery.com/es/body/liposuction-360/",
         "title": "Liposucción 360 Miami | Chopra Cirugía Plástica",
         "domain": "chopraplasticsurgery.com",
@@ -296,7 +311,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-07",
-            "position": 8
+            "position": 9
           }
         ]
       },
@@ -308,21 +323,6 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-06-06",
             "position": 10
-          },
-          {
-            "date": "2026-06-07",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360 | Mia Aesthetics",
-        "domain": "miaaesthetics.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 7
           },
           {
             "date": "2026-06-07",
@@ -467,13 +467,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://therealdrmiami.com/",
-        "title": "Dr. Miami | Plastic Surgery Miami | Dr. Michael Salzhauer | Plastic ...",
-        "domain": "therealdrmiami.com",
+        "url": "https://4beauty.net/breast-implants/",
+        "title": "Breast Implants in Miami - 4Beauty Aesthetic Institute",
+        "domain": "4beauty.net",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 10
+            "position": 8
           },
           {
             "date": "2026-06-07",
@@ -482,13 +482,13 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
-        "title": "Best Breast Augmentation in Miami, FL | Gables Plastic Surgery",
-        "domain": "gablesplasticsurgery.com",
+        "url": "https://therealdrmiami.com/",
+        "title": "Dr. Miami | Plastic Surgery Miami | Dr. Michael Salzhauer | Plastic ...",
+        "domain": "therealdrmiami.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-07",
@@ -644,6 +644,21 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-06-07",
             "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=eIaaIufhMAo",
+        "title": "Implantes de senos en My Cosmetic Surgery Miami - YouTube",
+        "domain": "youtube.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": 10
           }
         ]
       }
