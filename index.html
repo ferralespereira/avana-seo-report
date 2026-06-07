@@ -916,6 +916,60 @@
   </div>
 </div>
 
+<script>
+(function () {
+  const tbl = document.querySelector('.kw-group-table');
+  if (!tbl) return;
+
+  // Inject "Position" header after the Keyword column
+  const headerRow = tbl.querySelector('thead tr');
+  if (headerRow) {
+    const th = document.createElement('th');
+    th.textContent = 'Position';
+    th.style.whiteSpace = 'nowrap';
+    headerRow.insertBefore(th, headerRow.children[1]);
+  }
+
+  const data = window.SEO_POSITION_DATA || {};
+
+  tbl.querySelectorAll('tbody tr').forEach(row => {
+    const urlLink = row.querySelector('a.kw-url-link');
+    const url = urlLink ? urlLink.href : null;
+    const td = document.createElement('td');
+    td.style.cssText = 'white-space:nowrap;font-size:13px;text-align:center;vertical-align:middle;';
+
+    const urlData = url ? data[url] : null;
+    if (!urlData || !urlData.series || !urlData.series.length) {
+      td.innerHTML = '<span style="color:#bbb;">—</span>';
+    } else {
+      const series = urlData.series;
+      const latest = series[series.length - 1];
+      const first  = series[0];
+      const cur    = latest.position;
+      const start  = first.position;
+
+      if (cur === null) {
+        td.innerHTML = '<span style="color:#999;font-size:12px;">Not ranked</span>';
+      } else {
+        let html = `<strong>#${cur}</strong>`;
+        if (start !== null && series.length > 1) {
+          const diff = start - cur; // positive = moved up (improved)
+          if (diff > 0) {
+            html += ` <span style="color:#1E7E34;font-size:11px;">&#9650;${diff}</span>`;
+          } else if (diff < 0) {
+            html += ` <span style="color:#C0392B;font-size:11px;">&#9660;${Math.abs(diff)}</span>`;
+          }
+        }
+        td.innerHTML = html;
+      }
+    }
+
+    // Insert before the Note column (second td)
+    row.insertBefore(td, row.children[1]);
+  });
+})();
+</script>
+
 <!-- ════════════════════════════════════════════════════════════
      PLASTIC SURGERY PANEL
      ════════════════════════════════════════════════════════ -->
