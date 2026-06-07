@@ -34,3 +34,9 @@ jobs:
           git add reports/
           git commit -m "SEO report $(date +%Y-%m-%d)" || echo "No changes"
           git push
+
+      - name: Send email report
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python send_email_report.py
