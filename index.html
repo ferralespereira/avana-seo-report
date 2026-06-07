@@ -706,6 +706,7 @@
         pointHoverRadius: 6,
         spanGaps: true,
         _color: color,
+        _url: url.replace(/^https?:\/\//, ''),
       };
     });
 
@@ -741,7 +742,8 @@
               label(ctx) {
                 const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
                 const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
-                return `  ${ctx.dataset.label}: ${val}`;
+                const url = ctx.dataset._url || '';
+                return `  ${ctx.dataset.label}: ${val}  (${url})`;
               }
             }
           }
