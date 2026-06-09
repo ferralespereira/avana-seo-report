@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana Issues &#8212; aumento de senos en miami</title>
+<style>
+  :root{--navy:#1B3A5C;--teal:#0E7C7B;--gold:#C9A84C;--lightBlue:#D6E8F5;--lightGray:#F4F6F8;--midGray:#CCCCCC;--darkGray:#444444;--red:#C0392B;--green:#1E7E34;--orange:#E67E22;--redBg:#FDECEA;--greenBg:#EAF4EC;--yellowBg:#FEF9E7;--blueBg:#D6E8F5;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Arial,sans-serif;background:#f0f2f5;color:var(--darkGray);font-size:14px;}
+  .main{padding:24px;width:min(98vw,2200px);max-width:2200px;margin:0 auto;}
+  .kpi-row{display:grid;gap:12px;margin-bottom:20px;}
+  .kpi-row.cols-4{grid-template-columns:repeat(4,1fr);}
+  .kpi-card{background:var(--blueBg);border:1.5px solid var(--teal);border-radius:8px;padding:16px;text-align:center;}
+  .kpi-card.zero{background:#fef2f2;border-color:#dc2626;}
+  .kpi-label{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.4px;}
+  .kpi-value{font-size:24px;font-weight:700;color:var(--teal);margin:6px 0 4px;}
+  .kpi-card.zero .kpi-value{color:#dc2626;}
+  .kpi-source{font-size:11px;color:#999;}
+  .insight{display:flex;gap:10px;padding:10px 14px;border-radius:5px;border-left:4px solid;margin:8px 0;font-size:13px;line-height:1.5;}
+  .insight.good{background:var(--greenBg);border-color:var(--green);color:#155724;}
+  .insight.warn{background:var(--yellowBg);border-color:var(--orange);color:#7d5a00;}
+  .insight.bad{background:var(--redBg);border-color:var(--red);color:#7b1a14;}
+  .insight.info{background:var(--blueBg);border-color:var(--navy);color:var(--navy);}
+  .insight-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+  @media(max-width:900px){.main{padding:16px;}.kpi-row.cols-4{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.kpi-row.cols-4{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">&larr; Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; aumento de senos en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/espanol/aumento-de-senos-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;"><canvas id="positionChart"></canvas></div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/espanol/aumento-de-senos-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  const TARGET_URL='https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami';
+  const COMP_COLORS=['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+  function formatDate(d){const[,m,day]=d.split('-');const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return months[parseInt(m,10)-1]+' '+parseInt(day,10);}
+  function buildChart(){
+    const msgEl=document.getElementById('chartMessage');const wrapEl=document.getElementById('chartWrap');
+    const legendEl=document.getElementById('chartLegend');const statusEl=document.getElementById('chartStatus');const noteEl=document.getElementById('chartNote');
+    const urlData=window.SEO_POSITION_DATA&&window.SEO_POSITION_DATA[TARGET_URL];
+    const entries=(urlData&&urlData.series)||[];const competitors=(urlData&&urlData.competitors)||[];
+    if(!entries.length){msgEl.textContent='No tracking data found yet. Run seo_check.py to start collecting data.';return;}
+    let maxRanked=10;
+    entries.forEach(e=>{if(e.position!==null&&e.position>maxRanked)maxRanked=e.position;});
+    competitors.forEach(c=>c.series.forEach(e=>{if(e.position!==null&&e.position>maxRanked)maxRanked=e.position;}));
+    const NOT_FOUND_VAL=maxRanked+5;
+    const labels=entries.map(e=>formatDate(e.date));const rawVals=entries.map(e=>e.position);
+    const chartVals=rawVals.map(v=>v===null?NOT_FOUND_VAL:v);
+    const ptColors=rawVals.map(v=>v===null?'#e2e8f0':'#0E7C7B');const ptBorder=rawVals.map(v=>v===null?'#94a3b8':'#1B3A5C');
+    const latest=entries[entries.length-1];
+    statusEl.textContent=latest.position===null?`Latest (${formatDate(latest.date)}): Not ranked`:`Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent=`${entries.length} check${entries.length!==1?'s':''} recorded`;
+    competitors.forEach((comp,i)=>{
+      const isAvana=comp.url.includes('avanaplasticsurgery');const color=isAvana?'#C9A84C':(COMP_COLORS[i]||'#999');
+      const el=document.createElement('span');el.style.cssText='display:flex;align-items:center;gap:6px;';
+      el.innerHTML=(isAvana?`<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`:`<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`)+`<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;${isAvana?`font-weight:700;color:${color};`:''}">${comp.url.replace(/^https?:\/\//,'')}</span>`;
+      legendEl.insertBefore(el,noteEl);
+    });
+    msgEl.style.display='none';wrapEl.style.display='block';legendEl.style.display='flex';
+    const compDatasets=competitors.map((comp,i)=>{
+      const isAvana=comp.url.includes('avanaplasticsurgery');const color=isAvana?'#C9A84C':(COMP_COLORS[i]||'#999');
+      return{label:comp.url.replace(/^https?:\/\//,''),data:comp.series.map(e=>e.position===null?NOT_FOUND_VAL:e.position),borderColor:color,backgroundColor:'transparent',borderWidth:isAvana?2:1.5,borderDash:isAvana?[]:[5,3],tension:0.3,fill:false,pointRadius:isAvana?4:3,pointHoverRadius:isAvana?6:5,spanGaps:true,rawSeries:comp.series.map(e=>e.position)};
+    });
+    const ctx=document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx,{type:'line',data:{labels,datasets:[{label:TARGET_URL.replace(/^https?:\/\//,''),data:chartVals,borderColor:'#0E7C7B',backgroundColor:'rgba(14,124,123,0.08)',borderWidth:2.5,tension:0.3,fill:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:ptColors,pointBorderColor:ptBorder,pointBorderWidth:1.5,spanGaps:true,rawSeries:rawVals},...compDatasets]},options:{responsive:true,maintainAspectRatio:true,aspectRatio:3.5,plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false,callbacks:{label(ctx){const raw=ctx.dataset.rawSeries?ctx.dataset.rawSeries[ctx.dataIndex]:undefined;const name=ctx.dataset.label||'';const val=(raw===null||raw===undefined)?'Not ranked':'#'+raw;return(name.includes('avanaplasticsurgery')?'&#9733; ':'  ')+name+': '+val;}}}},scales:{x:{grid:{color:'#f0f0f0'},ticks:{font:{size:11},color:'#666'}},y:{reverse:true,min:1,max:NOT_FOUND_VAL+1,grid:{color:'#f0f0f0'},ticks:{font:{size:11},color:'#666',stepSize:1,callback(val){return val>=NOT_FOUND_VAL?'Not ranked':'#'+val;}},title:{display:true,text:'Position (1 = top result)',font:{size:11},color:'#888'}}}}});
+  }
+  buildChart();
+})();
+</script>
+
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    aumento de senos en miami
+    <button onclick="navigator.clipboard.writeText('aumento de senos en miami');this.textContent='Copied!';setTimeout(()=>this.textContent='&#128203;',2000);" style="margin-left:12px;padding:6px 12px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">&#128203; Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami');this.textContent='Copied!';setTimeout(()=>this.textContent='&#128203;',2000);" style="margin-left:8px;padding:4px 10px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">&#128203;</button>
+  </div>
+</div>
+
+<div class="insight warn" style="margin-bottom:16px;">
+  <span class="insight-icon">&#9888;&#65039;</span>
+  <span><strong>P&aacute;gina 2 &mdash; posici&oacute;n 14.38 para el keyword exacto.</strong> GSC registra 1 clic y 237 impresiones para &ldquo;aumento de senos en miami&rdquo;. La URL /espanol/aumento-de-senos-miami acumula <strong>121 clics y 23,478 impresiones</strong> de todas las variantes relacionadas. KPI cards = datos filtrados por keyword; dispositivos y consultas = datos filtrados por URL.</span>
+</div>
+
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">1</div>
+    <div class="kpi-source">aumento de senos en miami &mdash; all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">237</div>
+    <div class="kpi-source">aumento de senos en miami &mdash; all devices</div>
+  </div>
+  <div class="kpi-card zero">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0.42%</div>
+    <div class="kpi-source">aumento de senos en miami &mdash; all devices</div>
+  </div>
+  <div class="kpi-card zero">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">14.38</div>
+    <div class="kpi-source">aumento de senos en miami &mdash; primary query</div>
+  </div>
+</div>
+
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC &mdash; Device Breakdown for &ldquo;aumento de senos en miami&rdquo; (URL-filtered)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">&#128241; Mobile</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">29</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">6,582</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0.44%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">7.91</td>
+      </tr>
+      <tr style="background:#f8fbff;">
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">&#128421;&#65039; Desktop</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">2,279</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#e67e22;">10.43</td>
+      </tr>
+      <tr>
+        <td style="padding:9px 14px;">&#128031; Tablet</td>
+        <td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;text-align:right;color:#7c3aed;">17</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">5.94</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div onmouseout="this.style.opacity='0.9'" onmouseover="this.style.opacity='1'" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;transition:opacity 0.2s ease;opacity:0.9;">GSC &mdash; All Queries for <span style="font-size:18px;font-weight:900;color:#fff;">https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami</span> &mdash; Last 3 months (Jun 9, 2026)</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">&#9658; Show</a>
+  </div>
+  <div id="url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">121</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">23,478</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">0.52%</div>
+      </div>
+    </div>
+    <div>
+      <div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">&#128308; 0-CLICK QUERIES &mdash; 8 oportunidades con 100+ impresiones</div>
+      <div style="font-size:11px;color:#666;margin-bottom:6px;font-style:italic;">Estas consultas muestran que la p&aacute;gina aparece en Google &mdash; pero nadie hace clic. Cada una es una oportunidad de contenido inmediata.</div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+              <th style="padding:7px 10px;text-align:left;">Query</th>
+              <th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+              <th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">operaci&oacute;n de senos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">250</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.27</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">206</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.68</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos en miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">195</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.26</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">132</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.90</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">precio de operacion de senos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">122</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.65</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">cirugia de senos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">110</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.81</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">levantamiento de senos miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">109</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">20.67</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">cuanto cuesta un aumento de senos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">108</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.40</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top:6px;font-size:11px;color:#999;font-style:italic;">Mostrando 8 de 8 consultas con 0 clics y 100+ impresiones</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">&#128273; Primary &amp; Secondary Keywords &mdash; Page Analysis</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Avana vs Miami Plastic Surgery | CG Cosmetic | Dr. Ary Krau &mdash; datos extra&iacute;dos de p&aacute;ginas en vivo</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;">Avana &#128308; (our page)<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/espanol/aumento-de-senos-miami</a></span></th>
+          <th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;">Miami Plastic Surgery &#9989;<br/><span style="font-weight:400;font-size:11px;"><a href="https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/" style="color:#fff;text-decoration:none;" target="_blank">miamiplasticsurgery.com/es/breast-augmentation</a></span></th>
+          <th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;">CG Cosmetic &#128176;<br/><span style="font-weight:400;font-size:11px;"><a href="https://www.cgcosmetic.com/aumento-de-senos-miami/" style="color:#fff;text-decoration:none;" target="_blank">cgcosmetic.com/aumento-de-senos-miami</a></span></th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;">Dr. Ary Krau<br/><span style="font-weight:400;font-size:11px;"><a href="https://www.arykraumd.com/espanol/aumento-de-senos/" style="color:#fff;text-decoration:none;" target="_blank">arykraumd.com/espanol/aumento-de-senos</a></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Precio en title &mdash; buen keyword match</div>
+            "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery"
+            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; "$2799" captura intent de costo<br/>&#9989; "aumento de senos miami" en title</div>
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; Sin meta description &mdash; Google auto-genera</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Keyword diferente &mdash; sin precio</div>
+            "Implantes mamarios en Miami | Cirug&iacute;a Pl&aacute;stica Miami"
+            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; "implantes mamarios" vs "aumento de senos"<br/>&#9889; Ciudad incluida &bull; &#10060; Sin precio</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Precio $2,500 &mdash; m&aacute;s agresivo</div>
+            "Miami Cirugia Plastica, Aumento de Senos $2500 | CG Cosmetic Surgery"
+            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; "$2500" en title &bull; &#9989; keyword presente<br/>&#10060; Sin tildes (SEO no nativo ES)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Keyword exacto incluido</div>
+            "Cirujano pl&aacute;stico dedicado al aumento de senos en Miami, FL | Dr. Ary Krau"
+            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9889; "aumento de senos en Miami" presente<br/>&#10060; Sin precio &bull; &#10060; Demasiado largo</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            "Aumento de Senos en Miami"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">&#9989; Keyword exacto en H1</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            "Aumento de senos en Miami y Coral Gables"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">&#9989; Keyword principal + dos ciudades</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            "Buenos Resultados y Excelente Cirujanos"
+            <div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; H1 gen&eacute;rico sin keyword ni ciudad</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            "AUMENTO DE SENOS: RESULTADOS NATURALES"
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; "aumento de senos" &bull; &#10060; Sin "miami"</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos miami</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#9989; Keyword exacto en H1 + title</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">implantes mamarios en miami</span><div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; Variante diferente &mdash; otro intent</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos miami $2,500</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#9989; Precio prominente &mdash; intent transaccional</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos miami Dr. Krau</span><div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; Orientado a marca</div></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(from H2 headings)</span></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&#9989; &iquest;Qu&eacute; es un aumento de senos?</div>
+            <div>&#9989; Candidatos, Ventajas, Opciones</div>
+            <div>&#9989; Fotos antes y despu&eacute;s</div>
+            <div>&#9989; Tipos, tama&ntilde;o y forma de implantes</div>
+            <div>&#9989; Preparaci&oacute;n y procedimiento</div>
+            <div>&#9989; Costo + Financiaci&oacute;n</div>
+            <div>&#9989; 13 Preguntas frecuentes</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Sin FAQPage schema &mdash; 13 FAQs sin marcar<br/>&#10060; Sin FAQ de costo como primera pregunta<br/>&#10060; Sin meta description</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&#9989; Qu&eacute; es / Candidato / Tipos</div>
+            <div style="color:#059669;font-weight:700;">&#9989; Testimonios en p&aacute;gina</div>
+            <div>&#9989; Consulta / Recuperaci&oacute;n</div>
+            <div style="color:#059669;font-weight:700;">&#9989; "&iquest;Cu&aacute;nto cuesta?" (H2 dedicado)</div>
+            <div>&#9989; 7 FAQs incluyendo costo</div>
+            <div style="color:#059669;font-weight:700;">&#9989; LocalBusiness (6) + BreadcrumbList schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div>&#9989; Preguntas comunes</div>
+            <div>&#9989; Tama&ntilde;o / Forma / Material</div>
+            <div style="color:#059669;font-weight:700;">&#9989; "Precios y Financiaci&oacute;n" H2 con $2,500</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Contenido delgado (~1,200 palabras)<br/>&#10060; H1 gen&eacute;rico sin keyword &bull; &#10060; Sin schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div>&#9989; Candidata / Levantamiento / Consulta</div>
+            <div>&#9989; Elecci&oacute;n de implantes</div>
+            <div style="color:#059669;font-weight:700;">&#9989; Recuperaci&oacute;n (secci&oacute;n completa)</div>
+            <div>&#9989; Riesgos</div>
+            <div style="color:#059669;font-weight:700;">&#9989; "Precio y financiamiento" H2</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Sin secci&oacute;n FAQ formal</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><div style="color:#059669;font-weight:700;">&#9989; El m&aacute;s extenso &mdash; ~4,500&ndash;5,000</div><div>Cubre todos los aspectos del procedimiento</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><div style="color:#e67e22;font-weight:700;">&#9888;&#65039; Moderado &mdash; ~2,500 palabras</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;">&#10060; Muy corto &mdash; ~1,200 palabras</div><div>Gana por precio bajo, no por contenido</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;">&#9888;&#65039; Moderado &mdash; ~3,500&ndash;4,000</div></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Se&ntilde;al de costo</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; $2,799 en title tag</div>
+            <div>&bull; Secci&oacute;n "Costo de la cirug&iacute;a" en p&aacute;gina</div>
+            <div>&bull; Rango $3,500&ndash;$8,000 (referencia)</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Estad&iacute;stica 2016 ($3,719) &mdash; desactualizada<br/>&#10060; Sin FAQ de precio como primera pregunta</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Secci&oacute;n de costo sin precio espec&iacute;fico</div>
+            <div>&bull; H2 "&iquest;Cu&aacute;nto cuesta?" + FAQ de costo</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; $2,500 &mdash; precio m&aacute;s agresivo</div>
+            <div>&bull; "$2,500" en title + H2 + body</div>
+            <div>&bull; Salinos desde $2,500 (explicitado)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; $4,500&ndash;$8,500 &mdash; rango alto</div>
+            <div>&bull; H2 de precios y financiamiento</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description &mdash; Google auto-genera</div>
+            <div style="font-size:11px;color:#059669;margin-top:4px;">Propuesta: "Aumento de senos en Miami desde $2,799. Silicona, salinos y Gummy Bear por cirujanos certificados. Consulta gratuita."</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description detectada</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description detectada</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description detectada</div></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div><strong>13 FAQs &mdash; enfocadas en procedimiento</strong></div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; Sin FAQ de costo como primera pregunta<br/>&#10060; Sin FAQPage schema &mdash; rich results bloqueados</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div><strong>7 FAQs incl. costo e insurance</strong></div>
+            <div style="color:#059669;margin-top:3px;">&#9989; FAQ de costo / seguridad / riesgos</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div><strong>3 FAQs b&aacute;sicas (implante, tama&ntilde;o, material)</strong></div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; Sin FAQ de costo ni recuperaci&oacute;n</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div><strong>Sin secci&oacute;n FAQ formal</strong></div>
+            <div style="color:#e67e22;margin-top:3px;">&#9888;&#65039; Contenido educativo por secciones H2</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Mayor volumen de cirujanos</div>
+            <div>&bull; 10+ cirujanos nombrados &#9989;</div>
+            <div>&bull; Galer&iacute;a antes/despu&eacute;s &#9989;</div>
+            <div>&bull; Referencia ASPS &#9989;</div>
+            <div>&bull; Anestesi&oacute;logos certificados &#9989;</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Sin AggregateRating schema<br/>&#10060; Sin rese&ntilde;as visibles en p&aacute;gina</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Mejor prueba social</div>
+            <div>&bull; 3 cirujanos board-certified &#9989;</div>
+            <div>&bull; 6+ testimonios 5&#11088; en p&aacute;gina &#9989;</div>
+            <div>&bull; Video de procedimiento &#9989;</div>
+            <div>&bull; Review snippets en SERPs &#11088;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Moderado</div>
+            <div>&bull; 8 cirujanos board-certified &#9989;</div>
+            <div>&bull; 8 fotos antes/despu&eacute;s &#9989;</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Sin rese&ntilde;as en p&aacute;gina</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Credenciales individuales m&aacute;s fuertes</div>
+            <div>&bull; NYU School of Medicine &#9989;</div>
+            <div>&bull; 20+ a&ntilde;os &bull; 400+ procedimientos/a&ntilde;o &#9989;</div>
+            <div>&bull; &lt;2% tasa contractura capsular &#9989;</div>
+            <div>&bull; "Voted Best Miami Breast Surgeon" &#9989;</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&bull; "Enviar Mensaje" (formulario)</div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; Sin urgencia ni "consulta gratis"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&bull; "Solicitar una consulta" &#9989;</div>
+            <div>&bull; "RESERVA AHORA" &#9989;</div>
+            <div>&bull; Tel. 305.595.2969 &#9989;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div>&bull; "Comienza Aqui | Live Chat"</div>
+            <div style="color:#e67e22;margin-top:3px;">&#9888;&#65039; CTA junto al precio &mdash; buen contexto</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div>&bull; "Book an Appointment" / (305) 861-6881</div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; Sin bot&oacute;n de reserva online ES<br/>&#10060; Sin "consulta gratis"</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td>
+          <td style="padding:10px 14px;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin schema identificado</div>
+            <div style="color:#c0392b;">&#10060; FAQPage &mdash; 13 FAQs sin marcar<br/>&#10060; SurgicalProcedure &mdash; ausente<br/>&#10060; MedicalClinic/LocalBusiness &mdash; ausente<br/>&#10060; BreadcrumbList &mdash; ausente<br/>&#10060; AggregateRating &mdash; ausente</div>
+          </td>
+          <td style="padding:10px 14px;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Mejor schema &mdash; 17 items v&aacute;lidos</div>
+            <div style="color:#059669;">&#9989; BreadcrumbList (1)<br/>&#9989; LocalBusiness (6) + Organization (6)<br/>&#9989; Review snippets (4) &mdash; &#11088; en SERPs</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; FAQPage ausente &bull; &#10060; MedicalProcedure ausente</div>
+          </td>
+          <td style="padding:10px 14px;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin schema identificado</div>
+            <div style="color:#c0392b;">&#10060; FAQPage ausente &bull; &#10060; LocalBusiness ausente</div>
+          </td>
+          <td style="padding:10px 14px;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; BreadcrumbList posiblemente</div>
+            <div style="color:#c0392b;">&#10060; FAQPage ausente &bull; &#10060; SurgicalProcedure ausente</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">&#128273; Key takeaway del an&aacute;lisis de keywords:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Por qu&eacute; Dr. Ary Krau y Miami Plastic Surgery compiten fuerte:</strong><br/>
+          1. Dr. Krau: "Voted Best Miami Breast Surgeon" + 400+ procedimientos/a&ntilde;o &mdash; credibilidad cuantificada que Avana no tiene<br/>
+          2. Dr. Krau: &lt;2% tasa de contractura capsular &mdash; dato cl&iacute;nico espec&iacute;fico que genera confianza YMYL<br/>
+          3. Miami PS: 17 items de schema v&aacute;lidos &mdash; review snippets &#11088; en SERPs aumentan CTR sin importar la posici&oacute;n<br/>
+          4. CG Cosmetic: "$2,500" en title captura toda b&uacute;squeda de precio &mdash; 7 de 8 zero-click queries son sobre costo<br/>
+          5. Avana tiene el mejor contenido (~5,000 palabras) pero sin schema ni meta description &mdash; invisible para rich results
+        </div>
+        <div>
+          <strong>Qu&eacute; debe agregar Avana para dominar "aumento de senos en miami":</strong><br/>
+          1. Agregar FAQPage schema &mdash; 13 FAQs ya existen, solo marcarlas con JSON-LD para activar rich results<br/>
+          2. Agregar meta description ES con precio: "Aumento de senos en Miami desde $2,799. Silicona, salinos y Gummy Bear por cirujanos certificados."<br/>
+          3. Mover FAQ de costo al primer lugar: "&iquest;Cu&aacute;nto cuesta el aumento de senos en Miami?" &mdash; captura 7 de 8 zero-click queries<br/>
+          4. Agregar SurgicalProcedure + LocalBusiness + BreadcrumbList schema para competir con &#11088; de Miami PS<br/>
+          5. Actualizar estad&iacute;stica 2016 ($3,719) con datos ASPS 2024 &mdash; dato obsoleto da&ntilde;a credibilidad E-E-A-T
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:20px;">
+<style>
+.carousel{position:relative;max-width:100%;margin:auto;background:#fff;border:1px solid #dce6f0;}
+.carousel-container{position:relative;padding:16px 20px;display:flex;align-items:center;justify-content:center;min-height:400px;}
+.carousel-slide{display:none;width:100%;}
+.carousel-slide.active{display:block;}
+.carousel-slide img{max-width:100%;height:auto;display:block;}
+.carousel-prev,.carousel-next{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:white;background-color:rgba(0,0,0,0.5);font-weight:bold;font-size:18px;transition:0.6s ease;border-radius:3px;user-select:none;}
+.carousel-next{right:0;}.carousel-prev{left:0;}
+.carousel-prev:hover,.carousel-next:hover{background-color:rgba(0,0,0,0.8);}
+.carousel-dots{text-align:center;padding:12px 20px;background:#f9f9f9;border-top:1px solid #dce6f0;}
+.carousel-dot{cursor:pointer;height:12px;width:12px;margin:0 5px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;}
+.carousel-dot.active{background-color:#717171;}
+.carousel{max-width:900px;margin:30px auto;box-shadow:0 4px 8px rgba(0,0,0,0.1);border-radius:8px;overflow:hidden;}
+.carousel-title{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 20px;font-size:16px;font-weight:600;text-align:center;letter-spacing:0.5px;}
+.carousel-slide img{cursor:pointer;transition:transform 0.2s ease;}
+.carousel-slide img:hover{transform:scale(1.02);}
+.zoom-modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.9);}
+.zoom-modal.active{display:flex;align-items:center;justify-content:center;}
+.zoom-modal-content{max-width:90vw;max-height:90vh;position:relative;}
+.zoom-modal-content img{width:100%;height:auto;}
+.zoom-close{position:absolute;top:20px;right:40px;color:white;font-size:40px;font-weight:bold;cursor:pointer;user-select:none;}
+.zoom-close:hover{color:#bbb;}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active"><img src="img/aumento-de-senos-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/></div>
+    <div class="carousel-slide"><img src="img/aumento-de-senos-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/></div>
+    <div class="carousel-slide"><img src="img/aumento-de-senos-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/></div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex=0;
+function changeSlide(n){showSlide(currentIndex+=n);}
+function currentSlide(n){showSlide(currentIndex=n);}
+function showSlide(n){
+  const slides=document.querySelectorAll('.carousel-slide');const dots=document.querySelectorAll('.carousel-dot');
+  if(n>=slides.length)currentIndex=0;if(n<0)currentIndex=slides.length-1;
+  slides.forEach(s=>s.classList.remove('active'));dots.forEach(d=>d.classList.remove('active'));
+  slides[currentIndex].classList.add('active');dots[currentIndex].classList.add('active');
+}
+function openZoom(src){document.getElementById('zoomImage').src=src;document.getElementById('zoomModal').classList.add('active');}
+function closeZoom(){document.getElementById('zoomModal').classList.remove('active');}
+document.getElementById('zoomModal').addEventListener('click',function(e){if(e.target===this)closeZoom();});
+</script>
+</div>
+
+</main></body>
+</html>
