@@ -1,30 +1,54 @@
-@model ServicePageViewModel
-<title>Brazilian Butt Lift Miami - $3499 BBL Fat Transfer | @Settings.GetCenterName</title>
-<meta name="description" content="Brazilian Butt Lift Miami. Affordable BBL procedure starting at $3499. BBL fat transfer will reshape your body transferring fat to the buttocks for an hourglass figure." />
-<link rel="canonical" href="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" />
-<meta property="article:published_time" content="2018-08-20T15:39:45@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Brazilian Butt Lift Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="Brazilian Butt Lift Miami. Affordable BBL procedure by the best plastic surgeons. The procedure will reshape your body transferring fat to the buttocks for an hourglass figure." />
+==============================================================================
+SEO IMPROVEMENTS REPORT
+Page: Brazilian Butt Lift Miami
+URL:  https://avanaplasticsurgery.com/brazilian-butt-lift-miami
+File: brazilian-butt-lift-miami / articlemetas.cshtml
+Date: June 9, 2026
+==============================================================================
 
-@* Adjusted og:url to absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" />
-@* (Added) article:tag *@
-<meta property="article:tag" content="Brazilian Butt Lift" />
 
-<meta property="og:site_name" content="@Settings.GetCenterName" />
+OVERVIEW
+--------
+This report documents SEO improvements made to the Brazilian Butt Lift (BBL).
 
-@* (Added) og:image to absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/brazilian-butt-lift.jpg" />
 
-@* (Added) og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
-<meta property="og:image:alt" content="Woman showing the results of a Brazilian butt lift at Avana Plastic Surgery Miami." />
-<meta property="og:image:width"  content="910" />
-<meta property="og:image:height" content="960" />
+------------------------------------------------------------------------------
+SECTION 1 — COMPLETED: META TAG IMPROVEMENTS
+------------------------------------------------------------------------------
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Brazilian Butt Lift Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Brazilian Butt Lift Miami. Affordable BBL procedure by the best plastic surgeons. The procedure will reshape your body transferring fat to the buttocks for an hourglass figure." />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/brazilian-butt-lift.jpg" />      
+All changes were applied to: articlemetas.cshtml
+
+1. FIXED — og:url (relative → absolute URL)
+   Open Graph URLs must be absolute. The previous value was relative,
+   which could cause duplicate content issues in social crawlers.
+   <meta property="og:url" content="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" />
+
+2. ADDED — article:tag
+   Adds a content tag for the article Open Graph type, improving
+   categorization in social platforms.
+   <meta property="article:tag" content="Brazilian Butt Lift" />
+
+3. ADDED — og:image with absolute URL
+   The Open Graph image URL was present but not absolute. Updated to an absolute URL
+   for correct rendering in WhatsApp, Facebook, iMessage, and LinkedIn.
+   <meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/brazilian-butt-lift.jpg" />
+
+4. ADDED — og:image:alt, og:image:width, og:image:height
+   Image alt text improves accessibility audits and AI-citation signals.
+   Width/height allow social platforms to pre-size the preview box
+   without having to download the image first.
+   <meta property="og:image:alt"    content="Woman showing the results of a Brazilian butt lift at Avana Plastic Surgery Miami." />
+   <meta property="og:image:width"  content="910" />
+   <meta property="og:image:height" content="960" />
+
+Already present (no changes needed):
+   - og:locale: en_US
+   - og:site_name
+   - og:type: article
+   - article:published_time / article:modified_time
+   - twitter:card: summary
+   - canonical (already absolute)
+
+==============================================================================
+END OF REPORT
+==============================================================================
