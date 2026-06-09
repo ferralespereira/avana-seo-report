@@ -232,21 +232,21 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://chopraplasticsurgery.com/body/liposuction-360/",
-        "title": "Liposuction 360 Miami | Lipo in Miami, FL - Chopra Plastic Surgery",
-        "domain": "chopraplasticsurgery.com",
+        "url": "https://www.realself.com/find/Florida/Miami/Lipo-360",
+        "title": "Top Lipo 360 Doctors in Miami, FL - Realself",
+        "domain": "realself.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-07",
-            "position": 7
+            "position": 9
           },
           {
             "date": "2026-06-08",
-            "position": 9
+            "position": 10
           },
           {
             "date": "2026-06-09",
@@ -350,29 +350,6 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
-        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción? - Dr David Delgado",
-        "domain": "daviddelgadocirujano.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 4
-          },
-          {
-            "date": "2026-06-07",
-            "position": 4
-          },
-          {
-            "date": "2026-06-08",
-            "position": 4
-          },
-          {
-            "date": "2026-06-09",
-            "position": 4
-          }
-        ]
-      },
-      {
         "url": "https://iconcosmeticcenter.com/es/liposuccion-360-en-miami",
         "title": "Liposucción 360 en Miami - Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
@@ -391,7 +368,53 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-09",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
+        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción? - Dr David Delgado",
+        "domain": "daviddelgadocirujano.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 4
+          },
+          {
+            "date": "2026-06-07",
+            "position": 4
+          },
+          {
+            "date": "2026-06-08",
+            "position": 4
+          },
+          {
+            "date": "2026-06-09",
             "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
+        "title": "Lipo 360 | Mia Aesthetics",
+        "domain": "miaaesthetics.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 7
+          },
+          {
+            "date": "2026-06-07",
+            "position": 6
+          },
+          {
+            "date": "2026-06-08",
+            "position": 10
+          },
+          {
+            "date": "2026-06-09",
+            "position": 6
           }
         ]
       },
@@ -414,7 +437,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-09",
-            "position": 6
+            "position": 7
           }
         ]
       },
@@ -434,29 +457,6 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-06-08",
             "position": 7
-          },
-          {
-            "date": "2026-06-09",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://chopraplasticsurgery.com/es/body/liposuction-360/",
-        "title": "Liposucción 360 Miami | Chopra Cirugía Plástica",
-        "domain": "chopraplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 9
-          },
-          {
-            "date": "2026-06-07",
-            "position": 9
-          },
-          {
-            "date": "2026-06-08",
-            "position": 8
           },
           {
             "date": "2026-06-09",
@@ -488,21 +488,21 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360 | Mia Aesthetics",
-        "domain": "miaaesthetics.com",
+        "url": "https://chopraplasticsurgery.com/es/body/liposuction-360/",
+        "title": "Liposucción 360 Miami | Chopra Cirugía Plástica",
+        "domain": "chopraplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 7
+            "position": 9
           },
           {
             "date": "2026-06-07",
-            "position": 6
+            "position": 9
           },
           {
             "date": "2026-06-08",
-            "position": 10
+            "position": 8
           },
           {
             "date": "2026-06-09",
@@ -998,29 +998,6 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=eIaaIufhMAo",
-        "title": "Implantes de senos en My Cosmetic Surgery Miami - YouTube",
-        "domain": "youtube.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": 10
-          },
-          {
-            "date": "2026-06-08",
-            "position": 10
-          },
-          {
-            "date": "2026-06-09",
-            "position": 10
-          }
-        ]
       }
     ]
   },
@@ -1064,7 +1041,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://spectrum-aesthetics.com/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift Miami | BBL Miami Cost $3200",
+        "title": "Brazilian Butt Lift Miami | BBL Miami Cost $3200 - Spectrum Aesthetics",
         "domain": "spectrum-aesthetics.com",
         "series": [
           {
@@ -1102,7 +1079,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/men/body/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift Miami, FL",
+        "title": "Brazilian Butt Lift Miami, FL | The Maercks Institute",
         "domain": "themaercksinstitute.com",
         "series": [
           {
@@ -1121,7 +1098,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://www.cgcosmetic.com/brazilian-butt-lift-miami-fat-transfer/",
-        "title": "Brazilian Butt Lift Miami, BBL From ...",
+        "title": "Brazilian Butt Lift Miami, BBL From $3,500 - CG Cosmetic Surgery",
         "domain": "cgcosmetic.com",
         "series": [
           {
@@ -1140,7 +1117,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://iconcosmeticcenter.com/brazilian-butt-lift-miami",
-        "title": "Best Brazilian Butt Lift Miami",
+        "title": "Best Brazilian Butt Lift Miami | Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -1159,7 +1136,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/brazilian-butt-lift-miami/",
-        "title": "Brazilian Butt Lift Miami",
+        "title": "Brazilian Butt Lift Miami - The Secret Plastic Surgery",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -1178,7 +1155,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://miamilifecosmetic.com/procedure/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift",
+        "title": "Brazilian Butt Lift – Miami Life Cosmetic Surgery",
         "domain": "miamilifecosmetic.com",
         "series": [
           {
@@ -1216,7 +1193,7 @@ window.SEO_POSITION_DATA = {
       },
       {
         "url": "https://revivesurgery.com/body/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift | BBL in Miami, FL",
+        "title": "Brazilian Butt Lift | BBL in Miami, FL - Revive Surgical Institute",
         "domain": "revivesurgery.com",
         "series": [
           {
@@ -1388,25 +1365,6 @@ window.SEO_POSITION_DATA = {
         ]
       },
       {
-        "url": "https://vixenplasticsurgery.com/",
-        "title": "Vixen Plastic Surgery: Cosmetic Surgery in Miami",
-        "domain": "vixenplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": 8
-          }
-        ]
-      },
-      {
         "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
         "title": "Top Breast Augmentation Doctors in Miami, FL - Realself",
         "domain": "realself.com",
@@ -1421,23 +1379,163 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-09",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.drgerthplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Breast Augmentation in Miami, FL | Dr. David Gerth",
+        "domain": "drgerthplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": 8
+          },
+          {
+            "date": "2026-06-08",
+            "position": 9
+          },
+          {
+            "date": "2026-06-09",
             "position": 9
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami - Icon Cosmetic Center",
-        "domain": "iconcosmeticcenter.com",
+        "url": "https://miamiplasticsurgery.com/",
+        "title": "Miami Plastic Surgery: Expert Plastic Surgery in Miami, FL",
+        "domain": "miamiplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-07",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-08",
-            "position": null
+            "position": 10
           },
+          {
+            "date": "2026-06-09",
+            "position": 10
+          }
+        ]
+      }
+    ]
+  },
+  "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami": {
+    "series": [
+      {
+        "date": "2026-06-09",
+        "position": 4,
+        "keyword": "aumento de senos en miami"
+      }
+    ],
+    "competitors": [
+      {
+        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
+        "title": "Aumento de Senos - Miami, FL - Careaga Plastic Surgery",
+        "domain": "careagaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "title": "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
+        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
+        "title": "Aumento de Senos en miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/aumento-de-senos-en-miami/",
+        "title": "Aumento de Senos en Miami - The Secret Plastic Surgery",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://epicplasticsurgery.com/sp/senos/aumento-de-senos/",
+        "title": "Aumento de Senos en Miami | Epic Cirugía Plástica",
+        "domain": "epicplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://aeris.co/es/procedimientos/senos/aumento-de-senos/",
+        "title": "Best Aumento de Senos Miami, FL | Aeris",
+        "domain": "aeris.co",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.miamibreastcenter.com/sp",
+        "title": "Reconstrucción y Aumento de Senos con Transferencia de Grasa ...",
+        "domain": "miamibreastcenter.com",
+        "series": [
           {
             "date": "2026-06-09",
             "position": 10
