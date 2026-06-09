@@ -1,37 +1,66 @@
-@model ServicePageViewModel
-<title>Aumento de Senos Miami @Model.GetPrice - Fl | @Settings.GetCenterName</title>
-<meta name="description" content="Aumento de senos Miami @Model.GetPrice. @Settings.GetCenterName ofrece la mejor cirugía de implantes de senos en Miami. Para una consulta, llame Ahora!" />
+==============================================================================
+SEO IMPROVEMENTS REPORT
+Page: Aumento de Senos Miami (Spanish)
+URL:  https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami
+File: espanol/aumento-de-senos-miami / Es / articlemetas.cshtml
+Date: June 9, 2026
+==============================================================================
 
-@* (Added) site_name meta tag *@
-<meta property="og:site_name" content="@Settings.GetCenterName" />
 
-@* (Added) es_US because the content is Spanish targeting the US market *@
-<meta property="og:locale" content="es_US" />
+OVERVIEW
+--------
+This report documents SEO improvements made to the Spanish-language breast
+augmentation Page.
 
-@* (Added) en_US to signal there's an English version of the same page *@
-<meta property="og:locale:alternate" content="en_US" />
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Aumento de Senos Miami Fl | @Settings.GetCenterName" />
-<meta property="og:description" content="El aumento de senos es un procedimiento quirúrgico donde se introduce implantes mamarios para aumentar el volumen cambiando la forma y la textura de las mamas." />
-<meta property="article:published_time" content="2017-05-12T18:19:31@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+------------------------------------------------------------------------------
+SECTION 1 — COMPLETED: META TAG IMPROVEMENTS
+------------------------------------------------------------------------------
 
-@* Adjust the Open Graph URL to the absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" />
+All changes were applied to: articlemetas.cshtml
 
-@* (Added) Article tag *@
-<meta property="article:tag" content="Aumento de Senos" />
+1. ADDED — og:site_name
+   Explicitly declares the site name for social sharing previews.
+   <meta property="og:site_name" content="Avana Plastic Surgery" />
 
-@* Adjust the Open Graph Image to the absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-augmentation.jpg" />
-@* (Added) Creating Open Graph image alt, width, and height *@
-<meta property="og:image:alt" content="Woman showing breast augmentation at Avana Plastic Surgery Miami" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
+2. ADDED — og:locale (es_US)
+   Signals that the content is in Spanish targeting the US market.
+   Previously missing — social crawlers were inferring language incorrectly.
+   <meta property="og:locale" content="es_US" />
 
-<meta name="twitter:title" content="Aumento de Senos | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Aumento de senos desde @Model.GetPrice. @Settings.GetCenterName ofrece la mejor cirugía de implantes de senos en Miami. Para una consulta gratis llame Ahora!" />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-augmentation.jpg" />
+3. ADDED — og:locale:alternate (en_US)
+   Signals that an English version of this page exists, helping Facebook
+   and other platforms link both language versions.
+   <meta property="og:locale:alternate" content="en_US" />
 
-<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" />
+4. FIXED — og:url (relative → absolute URL)
+   Open Graph URLs must be absolute. The previous value was relative,
+   which could cause duplicate content issues in social crawlers.
+   <meta property="og:url" content="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" />
+
+5. ADDED — article:tag
+   Adds a content tag for the article Open Graph type, improving
+   categorization in social platforms.
+   <meta property="article:tag" content="Aumento de Senos" />
+
+6. FIXED — og:image (relative → absolute URL)
+   Same issue as og:url — image URL must be absolute for correct
+   rendering in WhatsApp, Facebook, iMessage, etc.
+   <meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-augmentation.jpg" />
+
+7. ADDED — og:image:alt, og:image:width, og:image:height
+   Image alt text improves accessibility audits and AI-citation signals.
+   Width/height allow social platforms to pre-size the preview box
+   without having to download the image first.
+   <meta property="og:image:alt"    content="Woman showing breast augmentation at Avana Plastic Surgery Miami" />
+   <meta property="og:image:width"  content="910" />
+   <meta property="og:image:height" content="960" />
+
+8. FIXED — canonical (relative → absolute URL)
+   Canonical tags must use absolute URLs. Relative canonicals are
+   technically invalid per Google's guidelines.
+   <link rel="canonical" href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" />
+
+==============================================================================
+END OF REPORT
+==============================================================================
