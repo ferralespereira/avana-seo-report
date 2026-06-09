@@ -104,11 +104,15 @@ def build_email():
         </tbody>
       </table>
     </div>
-    <div style="padding:14px 28px;background:#fafafa;border-top:1px solid #eee;">
+    <div style="padding:16px 28px;background:#fafafa;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
       <p style="margin:0;font-size:12px;color:#999;">
         &#9650; improved &nbsp;|&nbsp; &#9660; dropped &nbsp;|&nbsp; &#8212; no change &nbsp;|&nbsp;
         Positions based on Google Miami search (top 100)
       </p>
+      <a href="https://ferralespereira.github.io/avana-seo-report/"
+         style="display:inline-block;padding:8px 16px;background:#1a1a2e;color:#fff;font-size:13px;font-weight:600;text-decoration:none;border-radius:5px;white-space:nowrap;">
+        &#128202; View Full SEO Report
+      </a>
     </div>
   </div>
 </body>
