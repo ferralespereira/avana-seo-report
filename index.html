@@ -1039,6 +1039,72 @@
 })();
 </script>
 
+<!-- ===== Backlinks / AS — click value to view Semrush screenshot ===== -->
+<style>
+  .kw-group-table td.bl-clickable { cursor: zoom-in; }
+  .kw-group-table td.bl-clickable .bl-val {
+    color: #0E7C7B; text-decoration: underline dotted; text-underline-offset: 2px;
+  }
+  .kw-group-table td.bl-clickable:hover .bl-val { color: #C9A84C; }
+  .bl-modal {
+    display: none; position: fixed; inset: 0; z-index: 1000;
+    background: rgba(0,0,0,0.85); padding: 30px; cursor: zoom-out;
+  }
+  .bl-modal img {
+    display: block; margin: auto; max-width: 95%; max-height: 90vh;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6); border-radius: 6px;
+  }
+  .bl-modal-close {
+    position: absolute; top: 14px; right: 28px; color: #fff;
+    font-size: 40px; font-weight: bold; line-height: 1; cursor: pointer;
+  }
+  .bl-modal-caption {
+    position: absolute; bottom: 18px; left: 0; right: 0; text-align: center;
+    color: #ddd; font-size: 13px; font-family: Arial, sans-serif;
+  }
+</style>
+<div id="blImgModal" class="bl-modal" onclick="this.style.display='none'">
+  <span class="bl-modal-close">&times;</span>
+  <img id="blImgModalImg" src="" alt="Semrush Backlinks screenshot"/>
+  <div id="blImgModalCaption" class="bl-modal-caption"></div>
+</div>
+<script>
+(function(){
+  const tbl = document.querySelector('.kw-group-table');
+  if (!tbl) return;
+
+  // Locate the "Backlinks" column index from the live header (after Position was injected)
+  let blIndex = -1;
+  tbl.querySelectorAll('thead th').forEach((th, i) => {
+    if (/Backlinks/i.test(th.textContent)) blIndex = i;
+  });
+  if (blIndex < 0) return;
+
+  const modal   = document.getElementById('blImgModal');
+  const modalImg = document.getElementById('blImgModalImg');
+  const caption = document.getElementById('blImgModalCaption');
+
+  tbl.querySelectorAll('tbody tr').forEach(row => {
+    const cell = row.children[blIndex];
+    if (!cell || !cell.textContent.trim()) return;          // skip empty cells
+
+    const kwLink = row.querySelector('a.query-link');
+    if (!kwLink) return;
+    const slug = kwLink.getAttribute('href').replace(/\.html$/, '');
+    const imgSrc = 'img/' + slug + '_semrush_backlinks.png';
+
+    cell.classList.add('bl-clickable');
+    cell.innerHTML = '<span class="bl-val">' + cell.innerHTML + '</span>';
+    cell.title = 'Click to view Semrush backlinks screenshot';
+    cell.addEventListener('click', () => {
+      modalImg.src = imgSrc;
+      caption.textContent = slug + '_semrush_backlinks.png';
+      modal.style.display = 'block';
+    });
+  });
+})();
+</script>
+
 <!-- ════════════════════════════════════════════════════════════
      PLASTIC SURGERY PANEL
      ════════════════════════════════════════════════════════ -->
