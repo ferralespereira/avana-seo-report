@@ -1,0 +1,233 @@
+================================================================================
+ SEO IMPROVEMENTS — LEVANTAMIENTO DE GLÚTEOS BRASILEÑO EN MIAMI (BBL)
+================================================================================
+ Page ....... https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami
+ Language ... Spanish (es_US)
+ Primary KW . levantamiento de glúteos brasileño en miami
+ Date ....... June 11, 2026
+================================================================================
+
+
+--------------------------------------------------------------------------------
+ EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This page was optimized across four areas: meta tags, on-page content,
+structured data, and local/national geo-targeting. Key outcomes:
+
+  • Added 6 JSON-LD schema blocks — the page previously had ZERO structured data.
+  • Closed SEMrush keyword gaps: 8 target terms (rank 0) now appear in body copy.
+  • Reinforced 4 Google Search Console queries inside a newly translated video
+    section (the video was previously 100% English).
+  • Added a 15-item Table of Contents, 3 internal links, and translated all 11
+    image alt attributes to keyword-rich Spanish.
+  • Corrected outdated 2016 cost figures and added an authoritative ASPS citation
+    (E-E-A-T), plus 6 spelling/orthographic fixes.
+  • Added a geo-targeting section covering Miami-Dade neighborhoods and national
+    medical-tourism patients.
+
+
+================================================================================
+ 1. META TAGS
+================================================================================
+File: espanol/levantamiento-de-gluteos-en-miami / Es / articlemetas.cshtml
+
+  • TITLE
+    <title>Levantamiento de Glúteos Brasileño en Miami - @Model.GetPrice | @Settings.GetCenterName</title>
+
+  • META DESCRIPTION (trimmed to 143 chars, down from 167, to avoid truncation)
+    "Levantamiento de Glúteos Brasileño en Miami desde @Model.GetPrice con los
+     mejores cirujanos de @Settings.GetCenterName. Información y precios del BBL aquí."
+
+  • OPEN GRAPH / TWITTER (added or corrected)
+    - og:locale = es_US  +  og:locale:alternate = en_US (signals an English version)
+    - og:type = article, og:title, og:description, og:site_name
+    - og:url  -> absolute URL
+    - og:image -> absolute URL, plus og:image:alt / width (910) / height (960)
+    - article:tag = "Aumento de Glúteos"; article:published_time; article:modified_time
+    - twitter:title / twitter:description / twitter:image
+
+
+================================================================================
+ 2. ON-PAGE CONTENT
+================================================================================
+Purpose: add missing SEMrush keywords (my_keywords = 0) into the page content,
+woven naturally — no keyword stuffing.
+
+--------------------------------------------------------------------------------
+ 2.1  SEMrush keywords added to body copy
+--------------------------------------------------------------------------------
+  CHANGE 1 — Intro paragraph
+    Added: "cirugía de glúteos", "cirugía plástica de glúteos", "BBL en español",
+           "qué es un BBL"
+
+  CHANGE 2 — Cost section ("¿Cuánto cuesta un aumento de glúteos con grasa en Miami?")
+    Added: "cuánto cuesta un BBL en USA", "aumento de glúteos en USA",
+           "lipotransferencia precio Miami"
+    New paragraph clarifying that BBL pricing varies by fat volume, technique
+    and surgeon experience.
+
+  CHANGE 3 — Surgeons section ("Mejores cirujanos de levantamiento de glúteos (BBL)")
+    Added: "BBL cirugía", "cirugía de glúteos", "cirugía plástica de glúteos"
+    New paragraph on choosing a board-certified surgeon for safe, natural results.
+
+  CHANGE 4 — Dedicated gap-keyword paragraph
+    New definition paragraph for "levantamiento de glúteos brasileño"
+    (SEMrush "Missing", volume 90, rank 0): explains the BBL uses the patient's
+    own fat (no implants) to create a natural, curvier figure.
+
+--------------------------------------------------------------------------------
+ 2.2  Keyword verification — exact-phrase count (live rendered page)
+--------------------------------------------------------------------------------
+Method: exact-phrase match in VISIBLE body text, case- & accent-insensitive
+("gluteos" matches "glúteos"). HTML tags, alt attributes and meta excluded.
+
+  Keyword                                  Before   After   Current
+  ----------------------------------------------------------------------
+  cirugía de glúteos                          0       2       2
+  cirugía plástica de glúteos                 0       2       2
+  levantamiento de glúteos                   18      20      28
+  levantamiento de glúteos brasileño         11      13      18
+  cuánto cuesta un BBL en USA                 0       1       1
+  BBL en español                              0       1       1
+  BBL cirugía                                 0       1       1
+
+--------------------------------------------------------------------------------
+ 2.3  Google Search Console queries reinforced (in the video section)
+--------------------------------------------------------------------------------
+  GSC query                                       Impr / Pos   On-page count
+  --------------------------------------------------------------------------
+  levantamiento de glúteos brasileño en miami      73 / 13.2        4
+  aumento de glúteos con grasa miami               46 / 38.5        5
+  aumento de glúteos brasileño miami               39 / 26          2
+  aumento de glúteos brasileño south florida       33 / 12.9        3  (sur de la Florida)
+
+  Note: GSC strings without "en" ("...con grasa miami") or with "south florida"
+  show 0 as an exact match because the on-page copy uses natural Spanish
+  ("en Miami", "sur de la Florida"); Google still matches via the individual tokens.
+
+--------------------------------------------------------------------------------
+ 2.4  Table of Contents added (15 jump-links)
+--------------------------------------------------------------------------------
+In-page navigation better UX on a long article, and a chance at "jump to" 
+sitelinks in Google. Inserted after the intro paragraph, linking all 15 H2/H3
+sections (¿Qué es un BBL?, Candidatos Ideales, Transferencia vs Implantes, Cirugía,
+Preparación, Mejores Cirujanos, Consulta, Detalles, Testimonio en Video, Técnicas, 
+Duración del Resultado, Por qué Avana, Recuperación, Costo, Preguntas Frecuentes).
+
+--------------------------------------------------------------------------------
+ 2.5  Patient testimonial video section translated to Spanish
+--------------------------------------------------------------------------------
+The video (YouTube ID lfJeQ9ree_8) was 100% English. Changes:
+  • Visible H2/H3 + description translated to Spanish.
+  • VideoObject schema text translated; added inLanguage="es".
+  • Spanish captions forced on the player (&cc_load_policy=1&cc_lang_pref=es&hl=es).
+  • GSC queries woven into the new Spanish copy (see 2.3).
+
+--------------------------------------------------------------------------------
+ 2.6  Internal links to related procedures (topic cluster / link equity)
+--------------------------------------------------------------------------------
+Existing body text hyperlinked (no new content) — one contextual link per target:
+  "implantes de glúteos" -> /espanol/implantes-de-gluteos-miami
+  "liposucción"          -> /espanol/liposuccion-en-miami-florida
+  "Lipo 360"             -> /espanol/lipo-360-en-miami
+
+--------------------------------------------------------------------------------
+ 2.7  Image alt text translated to Spanish + keyword-rich (11 images)
+--------------------------------------------------------------------------------
+All 11 <img> alt attributes rewritten from English/weak text to descriptive
+Spanish: 5 surgeon photos, 4 technique illustrations (thong lift, butterfly lift,
+inner/posterior lift, C-Lift), 1 result image, 1 video thumbnail.
+
+--------------------------------------------------------------------------------
+ 2.8  ASPS statistic updated + authoritative citation (E-E-A-T)
+--------------------------------------------------------------------------------
+Section: cost section blockquote (Sociedad Americana de Cirujanos Plásticos / ASPS).
+  Before: outdated 2016 figures — $4,300 / $4,800 / $4,500, mislabeled "costo"
+          and "implantes de cola".
+  After:  current ASPS surgeon fees — $7,264 / $7,964 / $7,062, correctly labeled
+          "tarifa promedio del cirujano" with a fee-only disclaimer; "implantes de
+          cola" -> "implantes de glúteos"; "2016" dropped.
+  Citation: <cite> is now a link to plasticsurgery.org/cosmetic-procedures/
+            buttock-enhancement/cost (target="_blank" rel="noopener").
+  Verified on plasticsurgery.org (June 2026). Figures fall within the clinic's
+  stated $2,500–$10,000 range — no conflict.
+
+--------------------------------------------------------------------------------
+ 2.9  Spelling / orthographic fixes (6)
+--------------------------------------------------------------------------------
+  "Glúteos Brazileño"           -> "Glúteos Brasileño"          (H3 spelling)
+  "aumento de gluteos"          -> "aumento de glúteos"         (missing accent)
+  "la cirugia de levantamiento" -> "la cirugía de..."           (missing accent)
+  "se ajustan a la mayoria"     -> "...a la mayoría"            (missing accent)
+  "que cambiaras tu forma"      -> "que cambiarás..."           (future-tense accent)
+  "levantamiento de culata"     -> "levantamiento de glúteos"   (incorrect term)
+
+--------------------------------------------------------------------------------
+ 2.10  Geo-targeting section added (local + national)
+--------------------------------------------------------------------------------
+New <h3> "Atendemos a Miami y sus Comunidades Cercanas" placed at the end of the
+"¿Por qué Elegir a un Cirujano de Avana?" section. Covers Miami-Dade neighborhoods
+(Doral, Hialeah, Coral Gables, Kendall, West Miami, Sweetwater, Fontainebleau)
+plus an out-of-state medical-tourism paragraph. Written as natural prose, not a
+city list — BBL-specific wording avoids duplicate content and doorway-page risk.
+
+
+================================================================================
+ 3. STRUCTURED DATA (JSON-LD) — 6 SCHEMA BLOCKS ADDED
+================================================================================
+The page previously had ZERO JSON-LD (only old inline video microdata). Added the
+full set, mirroring the breast-augmentation-miami (En) template, adapted to
+Spanish + BBL content. Placement: end of article.cshtml, after the FAQ accordion.
+
+  Block 1 — FAQPage
+    9 Question/acceptedAnswer pairs matching the visible on-page FAQ accordion.
+    Makes the FAQ eligible for rich results; gives AI engines extractable Q&A.
+
+  Block 2 — SurgicalProcedure
+    name "Levantamiento de Glúteos Brasileño en Miami"; alternateName (BBL,
+    Brazilian Butt Lift, etc.); bodyLocation Glúteos/Nalgas; howPerformed /
+    preparation / followup / risks; performer = Avana; offers price 4000 USD.
+
+  Block 3 — MedicalClinic + LocalBusiness  (@id .../#organization)
+    NAP (8700 W Flagler St Suite 250, Miami FL 33174), tel +1-305-501-6000,
+    geo coordinates, availableLanguage [es,en], priceRange, sameAs
+    (Maps/Facebook/TikTok/YouTube/Instagram), opening hours.
+
+  Block 4 — BreadcrumbList
+    Inicio (/espanol) > Cuerpo (/espanol/cuerpo) > Levantamiento de Glúteos
+    Brasileño en Miami.
+
+  Block 5 — WebPage + SpeakableSpecification
+    inLanguage "es"; speakable cssSelector [.milenia-entity-title,
+    .milenia-panels-definition].
+
+  Block 6 — @graph of 5 Person entities (the surgeons shown on the page)
+    Dr. Mameniskis, Dr. Pane, Dr. Schusterman, Dr. McDaniel, Dra. Luster —
+    each with Spanish bio URL, image, jobTitle, and worksFor -> #organization.
+
+  Verified on live page: 6 ld+json blocks render, all parse as VALID JSON,
+  no "@@" Razor leakage.
+
+
+================================================================================
+ 4. VERIFICATION & PENDING ITEMS
+================================================================================
+  DONE (verified on the live rendered page)
+    ✓ Meta tags, Open Graph, Twitter, canonical
+    ✓ SEMrush keyword gaps closed (8 terms)
+    ✓ GSC queries reinforced in translated video section
+    ✓ Table of Contents (15 links), 3 internal links, 11 alt texts
+    ✓ ASPS figures updated + citation link; 6 spelling fixes
+    ✓ Geo-targeting section (local + national)
+    ✓ 6 JSON-LD schema blocks render and parse as valid JSON
+
+  PENDING
+    ⚠ Run Google Rich Results Test on the production URL after deploy
+      (localhost cannot be validated by Google's tool).
+    ⚠ Add Review / AggregateRating schema once verified patient reviews are available.
+    ⚠ Page-level backlinks currently = 0; 1–2 links from Spanish health/beauty
+      sites would add page-level authority (most Spanish competitors also have few).
+
+================================================================================
+ END OF REPORT
+================================================================================

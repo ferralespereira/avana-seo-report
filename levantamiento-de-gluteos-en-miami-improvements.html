@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Levantamiento de Glúteos Brasileño en Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        /* ── Section headers ── */
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card (meta tags) ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item  { font-size: 1.1rem; }
+
+        /* ── Info cards ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* sections list */
+        .sections-list {
+            list-style: none; display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
+        }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* cannibalization / note card */
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .removed {
+            text-decoration: line-through; color: #f38ba8;
+            background: #fff0f0; border-radius: 3px; padding: 0 3px;
+        }
+        .cannibal-block .added {
+            color: #065f46; background: #e6f4ea; border-radius: 3px; padding: 0 3px; font-weight: 600;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        /* keyword count table */
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .kw-table th, .kw-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eef0f2; }
+        .kw-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b8ba7; }
+        .kw-table td.num { text-align: center; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; }
+        .kw-table .up { color: #065f46; font-weight: 700; }
+        .kw-table tr:last-child td { border-bottom: none; }
+
+        /* link change block */
+        .link-change {
+            background: #f4f5f7; border-radius: 8px; padding: 12px 16px;
+            font-size: 0.82rem; display: flex; flex-direction: column; gap: 5px;
+        }
+        .link-new {
+            color: #28c840; word-break: break-all;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.78rem;
+        }
+        .link-arrow { color: #89b4fa; font-weight: 700; font-size: 0.78rem; }
+
+        /* ── Schema cards ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .schema-divider { height: 1px; background: #e8eaed; }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── GEO Status section ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="levantamiento-de-gluteos-en-miami.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">← Levantamiento de Glúteos en Miami Rankings</a>
+    </div>
+    <h1>Levantamiento de Glúteos Brasileño en Miami — SEO Improvements</h1>
+    <p class="subtitle">espanol/levantamiento-de-gluteos-en-miami &nbsp;·&nbsp; Updated 2026-06-11</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami" target="_blank" rel="noopener">https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Primary Keyword</span>
+            <span class="page-info-keyword">levantamiento de gluteos brasileño en miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('levantamiento de gluteos brasileño en miami', this)">copy</button>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         1. META TAGS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Meta Tags</div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">espanol/levantamiento-de-gluteos-en-miami / Es / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+<span class="c-tag">&lt;title&gt;</span>Levantamiento de Glúteos Brasileño en Miami - <span class="c-razor">@Model.GetPrice</span> | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+
+<span class="c-comment fix-item">@* Meta description trimmed to 143 characters (down from 167) to avoid truncation in search results. *@</span>
+<span class="c-comment">@* &lt;meta name="description" content="Levantamiento de Glúteos Brasileño en Miami desde @Model.GetPrice realizado por los mejores cirujanos en @Settings.GetCenterName. Información y precios del aumento de glúteos aquí" /&gt; *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Levantamiento de Glúteos Brasileño en Miami desde <span class="c-razor">@Model.GetPrice</span> con los mejores cirujanos de <span class="c-razor">@Settings.GetCenterName</span>. Información y precios del BBL aquí."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"es_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* (Added) en_US — signals there is an English version of this page *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale:alternate"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Aumento de Glúteos en Miami Desde <span class="c-razor">@Model.GetPrice</span> | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span> tiene toda la información sobre la cirugía plástica de Brazilian Butt Lift en Miami."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Adjusted og:url to absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* (Added) article:tag *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:tag"</span> <span class="c-attr">content</span>=<span class="c-val">"Aumento de Glúteos"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2017-06-06T15:49:11<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Adjusted og:image to absolute URL + added alt/width/height for rich social cards *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/brazilian-butt-lift.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Aumento de Glúteos en Miami - <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Aumento de Glúteos en Miami Desde <span class="c-razor">@Model.GetPrice</span> | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Cirugía plástica de Brazilian Butt Lift es realizada por los mejores cirujanos en <span class="c-razor">@Settings.GetCenterName</span>. Información y precios del aumento de glúteo"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/brazilian-butt-lift.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         2. CONTENT CHANGES
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Changes</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Content &nbsp;·&nbsp; SEMrush Keyword Gaps, GSC Queries, TOC, Video, Internal Links &amp; Citations</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:24px;">
+
+                <div>
+                    <div class="schema-subsection-label">SEMrush Keywords Woven Into Body Copy (my_keywords = 0)</div>
+                    <div class="cannibal-block" style="border-color:#28c840;background:#f0fdf4;">
+                        Added missing SEMrush target terms naturally across 3 passages — intro, cost section and surgeons section:
+                        <span class="added">cirugía de glúteos</span>, <span class="added">cirugía plástica de glúteos</span>,
+                        <span class="added">BBL en español</span>, <span class="added">qué es un BBL</span>,
+                        <span class="added">cuánto cuesta un BBL en USA</span>, <span class="added">aumento de glúteos en USA</span>,
+                        <span class="added">lipotransferencia precio Miami</span> y <span class="added">BBL cirugía</span>.
+                        <span class="reason">Woven into existing prose (not keyword-stuffed) to lift exact-phrase coverage for terms the page previously ranked 0 for.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Exact-Phrase Count — Before / After (live rendered page, accent-insensitive)</div>
+                    <table class="kw-table">
+                        <thead>
+                            <tr><th>Keyword</th><th>Before</th><th>After</th><th>Current</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>cirugía de glúteos</td><td class="num">0</td><td class="num">2</td><td class="num up">2</td></tr>
+                            <tr><td>cirugía plástica de glúteos</td><td class="num">0</td><td class="num">2</td><td class="num up">2</td></tr>
+                            <tr><td>levantamiento de glúteos</td><td class="num">18</td><td class="num">20</td><td class="num up">28</td></tr>
+                            <tr><td>levantamiento de glúteos brasileño</td><td class="num">11</td><td class="num">13</td><td class="num up">18</td></tr>
+                            <tr><td>cuánto cuesta un BBL en USA</td><td class="num">0</td><td class="num">1</td><td class="num up">1</td></tr>
+                            <tr><td>BBL en español</td><td class="num">0</td><td class="num">1</td><td class="num up">1</td></tr>
+                            <tr><td>BBL cirugía</td><td class="num">0</td><td class="num">1</td><td class="num up">1</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">GSC Queries Reinforced in the Video Section (impressions / avg. position)</div>
+                    <table class="kw-table">
+                        <thead>
+                            <tr><th>GSC Query</th><th>Impr / Pos</th><th>On-page Count</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>levantamiento de glúteos brasileño en miami</td><td class="num">73 / 13.2</td><td class="num up">4</td></tr>
+                            <tr><td>aumento de glúteos con grasa miami</td><td class="num">46 / 38.5</td><td class="num up">5</td></tr>
+                            <tr><td>aumento de glúteos brasileño miami</td><td class="num">39 / 26</td><td class="num up">2</td></tr>
+                            <tr><td>aumento de glúteos brasileño south florida</td><td class="num">33 / 12.9</td><td class="num up">3</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Dedicated Gap-Keyword Paragraph Added <span class="new-badge">NEW</span></div>
+                    <div class="cannibal-block" style="border-color:#28c840;background:#f0fdf4;">
+                        New paragraph for the SEMrush "Missing" term <span class="added">levantamiento de glúteos brasileño</span> (vol 90, rank 0): a clear definition explaining that the BBL uses the patient's own fat — no implants — to enlarge and shape the buttocks for a natural, curvier figure.
+                        <span class="reason">Directly answers "qué es un BBL" intent and gives AI engines an extractable definition.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Table of Contents Added (jump-link navigation, 15 items) <span class="new-badge">NEW</span></div>
+                    <ul class="sections-list">
+                        <li>¿Qué es un Levantamiento de Glúteos Brasileño?</li>
+                        <li>Candidatos Ideales para un Aumento de Glúteos con Grasa</li>
+                        <li>¿Transferencia de Grasa o Implantes de Glúteos?</li>
+                        <li>Cirugía de Levantamiento de Glúteos Brasileño</li>
+                        <li>Preparándose para el Procedimiento</li>
+                        <li>Mejores Cirujanos de Levantamiento de Glúteos (BBL)</li>
+                        <li>Programe una Consulta Gratuita Hoy</li>
+                        <li>Detalles del Procedimiento</li>
+                        <li>Testimonio en Video del Dr. Mameniskis</li>
+                        <li>Técnicas de Transferencia de Grasa a los Glúteos</li>
+                        <li>¿Cuánto Tiempo Perdura el Resultado?</li>
+                        <li>¿Por qué Elegir a un Cirujano de Avana?</li>
+                        <li>Etapa de Recuperación</li>
+                        <li>¿Cuánto Cuesta un Aumento de Glúteos con Grasa?</li>
+                        <li>Cirugía de BBL — Preguntas Frecuentes</li>
+                    </ul>
+                    <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:8px;">Mirrors the TOC pattern on the lipo-360-miami page — better UX on a long article and a chance at "jump to" sitelinks in Google.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Patient Testimonial Video Section Translated to Spanish</div>
+                    <ul class="sections-list">
+                        <li>H2/H3 + description translated to Spanish (video was 100% English).</li>
+                        <li>VideoObject schema text translated; added <code style="font-size:0.78rem;background:#f1f3f5;padding:0 3px;border-radius:3px">inLanguage="es"</code>.</li>
+                        <li>Spanish captions forced on the player: <code style="font-size:0.78rem;background:#f1f3f5;padding:0 3px;border-radius:3px">&amp;cc_load_policy=1&amp;cc_lang_pref=es&amp;hl=es</code>.</li>
+                        <li>GSC queries woven into the new Spanish copy (BBL en Miami, con grasa, sur de la Florida).</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Internal Links to Related Procedures (topic cluster / link equity) <span class="new-badge">NEW</span></div>
+                    <div class="link-change">
+                        <span class="link-arrow">"implantes de glúteos" → /espanol/implantes-de-gluteos-miami</span>
+                        <span class="link-arrow">"liposucción" → /espanol/liposuccion-en-miami-florida</span>
+                        <span class="link-arrow">"Lipo 360" → /espanol/lipo-360-en-miami</span>
+                    </div>
+                    <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:8px;">Existing body text hyperlinked (no new content) — one descriptive contextual link per target to reinforce the body-contouring cluster.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Image Alt Text Translated to Spanish + Keyword-Rich (11 images)</div>
+                    <ul class="sections-list">
+                        <li>5 surgeon photos — e.g. "Dr. Algird Mameniskis, cirujano de levantamiento de glúteos brasileño (BBL) en Miami".</li>
+                        <li>4 technique illustrations — thong lift, butterfly lift, inner/posterior lift, C-Lift (en español).</li>
+                        <li>1 result image + 1 video thumbnail — descriptive Spanish alt with BBL keywords.</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">ASPS Statistic Updated + Authoritative Citation (E-E-A-T)</div>
+                    <div class="cannibal-block">
+                        Outdated 2016 figures (<span class="removed">$4,300 / $4,800 / $4,500</span>, mislabeled "costo" and "implantes de cola") replaced with current ASPS surgeon fees:
+                        <span class="added">$7,264 / $7,964 / $7,062</span>, correctly labeled "tarifa promedio del cirujano" with a fee-only disclaimer.
+                        The <code style="font-size:0.78rem;background:#f1f3f5;padding:0 3px;border-radius:3px">&lt;cite&gt;</code> is now a live link to <a href="https://www.plasticsurgery.org/cosmetic-procedures/buttock-enhancement/cost" target="_blank" rel="noopener">plasticsurgery.org</a>.
+                        <span class="reason">Outbound link to an authoritative medical source is a direct E-E-A-T signal for health content. Figures verified on plasticsurgery.org (June 2026).</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Spelling / Orthographic Fixes (6)</div>
+                    <ul class="sections-list">
+                        <li><span style="text-decoration:line-through;color:#f38ba8;">Glúteos Brazileño</span> → Glúteos Brasileño</li>
+                        <li><span style="text-decoration:line-through;color:#f38ba8;">aumento de gluteos</span> → aumento de glúteos</li>
+                        <li><span style="text-decoration:line-through;color:#f38ba8;">la cirugia de levantamiento</span> → la cirugía de…</li>
+                        <li><span style="text-decoration:line-through;color:#f38ba8;">se ajustan a la mayoria</span> → …a la mayoría</li>
+                        <li><span style="text-decoration:line-through;color:#f38ba8;">que cambiaras tu forma</span> → que cambiarás…</li>
+                        <li><span style="text-decoration:line-through;color:#f38ba8;">levantamiento de culata</span> → levantamiento de glúteos</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Geo-Targeting Section Added (local + national) <span class="new-badge">NEW</span></div>
+                    <div class="cannibal-block" style="border-color:#28c840;background:#f0fdf4;">
+                        New <code style="font-size:0.78rem;background:#e6f4ea;padding:0 3px;border-radius:3px">&lt;h3&gt;</code> "Atendemos a Miami y sus Comunidades Cercanas" — covers Miami-Dade neighborhoods (Doral, Hialeah, Coral Gables, Kendall, West Miami, Sweetwater, Fontainebleau) plus an out-of-state medical-tourism paragraph.
+                        <span class="reason">BBL-specific wording (not a copy of breast-aug — avoids duplicate content); natural prose, not a city list (avoids doorway-page risk).</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         3. GOOGLE MARKUP SCHEMAS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Six JSON-LD Schemas Added (page previously had ZERO)</div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1: FAQPage -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">FAQPage</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 9 Q&amp;A Pairs (en Español)</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">Q1–Q9</span>&nbsp;&nbsp;9 pares de Pregunta/Respuesta que reflejan exactamente el acordeón de FAQ visible en la página (requisito de Google para FAQ rich results).</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Eligible for Google FAQ rich results, increasing CTR</li>
+                            <li>Gives AI engines extractable Spanish Q&amp;A</li>
+                            <li>Signals comprehensive BBL topical coverage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2: SurgicalProcedure -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">SurgicalProcedure</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Levantamiento de Glúteos Brasileño en Miami</span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">Brazilian Butt Lift, BBL, Aumento de Glúteos con Grasa, Lipotransferencia</span></div>
+                            <div class="schema-field"><span class="sf-key">bodyLocation</span><span class="sf-val">Glúteos / Nalgas</span></div>
+                            <div class="schema-field"><span class="sf-key">url</span><span class="sf-val">/espanol/levantamiento-de-gluteos-en-miami</span></div>
+                            <div class="schema-field"><span class="sf-key">howPerformed</span><span class="sf-val">Descripción quirúrgica en español</span></div>
+                            <div class="schema-field"><span class="sf-key">preparation</span><span class="sf-val">Requisitos preoperatorios en español</span></div>
+                            <div class="schema-field"><span class="sf-key">followup</span><span class="sf-val">Recuperación y seguimiento</span></div>
+                            <div class="schema-field"><span class="sf-key">risks</span><span class="sf-val">Riesgos del procedimiento</span></div>
+                            <div class="schema-field"><span class="sf-key">performer</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">offers.price</span><span class="sf-val">$4,000 USD (desde)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Tells Google this is a medical procedure page, boosting topical authority</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">offers</code> block makes the $4,000 price machine-readable for AI citation</li>
+                            <li>Reinforces E-E-A-T signals prioritized for health queries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3: MedicalClinic + LocalBusiness -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">MedicalClinic + LocalBusiness</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@id</span><span class="sf-val">avanaplasticsurgery.com/#organization</span></div>
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">["MedicalClinic", "LocalBusiness"]</span></div>
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">telephone</span><span class="sf-val">+1-305-501-6000</span></div>
+                            <div class="schema-field"><span class="sf-key">address</span><span class="sf-val">8700 W Flagler St Suite 250, Miami FL 33174</span></div>
+                            <div class="schema-field"><span class="sf-key">geo</span><span class="sf-val">lat 25.7685486 / lng -80.337497</span></div>
+                            <div class="schema-field"><span class="sf-key">availableLanguage</span><span class="sf-val">[es, en]</span></div>
+                            <div class="schema-field"><span class="sf-key">sameAs</span><span class="sf-val">Maps, Facebook, TikTok, YouTube, Instagram</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Dual <code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">@type</code> hits both medical and local SEO</li>
+                            <li>Geo coordinates enable Maps rich results and "near me" queries</li>
+                            <li>NAP + sameAs reinforce local ranking and entity authority</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4: BreadcrumbList -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Breadcrumb Items (en Español)</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Inicio → avanaplasticsurgery.com/espanol</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Cuerpo → avanaplasticsurgery.com/espanol/cuerpo</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Levantamiento de Glúteos Brasileño en Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables breadcrumb trail in Google snippets, improving CTR</li>
+                            <li>Spanish labels match page language, improving UX signals</li>
+                            <li>Clarifies page context within the Spanish site</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5: WebPage + Speakable -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 5</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">inLanguage</span><span class="sf-val">es</span></div>
+                            <div class="schema-field"><span class="sf-key">url</span><span class="sf-val">/espanol/levantamiento-de-gluteos-en-miami</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">cssSelector: .milenia-entity-title, .milenia-panels-definition</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks sections as eligible for voice search and AI assistant responses</li>
+                            <li>Increases likelihood of generative-AI citation (GEO)</li>
+                            <li>Works with FAQPage + SurgicalProcedure for full machine-readability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 6: @graph of 5 Person entities -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 6</div>
+                    <div class="schema-card-title">@graph — 5 Person (Surgeons)</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 5 Surgeon Entities</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">Person 1</span><span class="sf-val">Dr. Algird Mameniskis</span></div>
+                            <div class="schema-field"><span class="sf-key">Person 2</span><span class="sf-val">Dr. Thomas Pane</span></div>
+                            <div class="schema-field"><span class="sf-key">Person 3</span><span class="sf-val">Dr. Mark Schusterman</span></div>
+                            <div class="schema-field"><span class="sf-key">Person 4</span><span class="sf-val">Dr. Shane McDaniel</span></div>
+                            <div class="schema-field"><span class="sf-key">Person 5</span><span class="sf-val">Dra. Stephanie Luster</span></div>
+                            <div class="schema-field"><span class="sf-key">each has</span><span class="sf-val">image, jobTitle, bio URL, worksFor → #organization</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Establishes each surgeon as a recognized entity (E-E-A-T author authority)</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">worksFor</code> ties all 5 to the Avana organization node</li>
+                            <li>Strengthens the medical-expertise signal for health rankings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         4. GEO STATUS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">GEO (Generative Engine Optimization) Status</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">AI-Citation Readiness &nbsp;·&nbsp; levantamiento-de-gluteos-en-miami</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> FAQPage schema (9 preguntas en español)</li>
+                            <li><em class="geo-icon">✓</em> SurgicalProcedure schema + offers ($4,000)</li>
+                            <li><em class="geo-icon">✓</em> MedicalClinic / LocalBusiness schema + sameAs + geo</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList schema (español)</li>
+                            <li><em class="geo-icon">✓</em> WebPage + speakable schema (inLanguage es)</li>
+                            <li><em class="geo-icon">✓</em> @graph of 5 surgeon Person entities</li>
+                            <li><em class="geo-icon">✓</em> Pricing stated in article body ($4,000)</li>
+                            <li><em class="geo-icon">✓</em> ASPS citation + authoritative outbound link</li>
+                            <li><em class="geo-icon">✓</em> Geo-targeting section (Miami-Dade + national)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="geo-col-title geo-needed-title">⚠ Still Needed</div>
+                        <ul class="geo-list needed">
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>Review / AggregateRating schema
+                                    <span class="geo-note">Requiere reseñas verificadas de pacientes (Google / Facebook)</span>
+                                </span>
+                            </li>
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>Run Google Rich Results Test on production URL
+                                    <span class="geo-note">Pendiente (externo): localhost no puede ser validado por la herramienta de Google — ejecutar tras el deploy</span>
+                                </span>
+                            </li>
+                            <li>
+                                <em class="geo-icon">⚠</em>
+                                <span>Page-level backlinks (currently 0)
+                                    <span class="geo-note">1–2 enlaces desde blogs de salud/belleza en español darían ventaja a nivel de página</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
