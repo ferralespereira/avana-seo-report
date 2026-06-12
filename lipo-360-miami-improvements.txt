@@ -23,35 +23,39 @@ Optimize the meta description to fewer than 160 characters
 KEYWORD OCCURRENCE COUNT (added 23 new valuable keywords)
 ----------------------------------------------------------------------
 
-#   Keyword                                 Before    After
---  -----------------------------------------------  ------  ------
-1   lipo 360                                   37       61
-2   360 lipo                                    0        6
-3   lipo 360 miami                              8       11
-4   lipo 360 cost                               1        3
-5   360 lipo cost                               0        2
-6   lipo 360 price                              0        1
-7   how much is lipo 360                        0        1
-8   how much does lipo 360 cost                 0        1
-9   best lipo 360 in miami                      0        1
-10  best lipo 360 doctor in miami               0        2
-11  lipo 360 near me                            0        2
-12  360 lipo near me                            0        1
-13  lipo 360 with bbl                           0        1
-14  lipo 360 bbl                                0        1
-15  lipo 360 bbl near me                        0        1
-16  lipo 360 with bbl in miami                  0        1
-17  liposuction miami                           0        1
-18  liposuction 360                             0        1
-19  liposuction 360 near me                     0        1
-20  liposculpture 360                           0        2
-21  liposculpture in miami                      0        2
-22  liposculpture 360 cost                      0        1
-23  best lipo in miami                          0        1
-24  fat removal in miami                        0        1
-25  fat removal miami                           0        1
-26  plastic surgery miami prices                0        2
-27  lipo 360 miami specials                     0        3
+#   Keyword                                 Before    After    Now (06/12)
+--  -----------------------------------------------  ------  ------  -----------
+1   lipo 360                                   37       61       76
+2   360 lipo                                    0        6        6
+3   lipo 360 miami                              8       11       11
+4   lipo 360 cost                               1        3        5
+5   360 lipo cost                               0        2        2
+6   lipo 360 price                              0        1        4
+7   how much is lipo 360                        0        1        1
+8   how much does lipo 360 cost                 0        1        2
+9   best lipo 360 in miami                      0        1        1
+10  best lipo 360 doctor in miami               0        2        2
+11  lipo 360 near me                            0        2        3
+12  360 lipo near me                            0        1        1
+13  lipo 360 with bbl                           0        1        1
+14  lipo 360 bbl                                0        1        1
+15  lipo 360 bbl near me                        0        1        1
+16  lipo 360 with bbl in miami                  0        1        1
+17  liposuction miami                           0        1        1
+18  liposuction 360                             0        1        1
+19  liposuction 360 near me                     0        1        1
+20  liposculpture 360                           0        2        2
+21  liposculpture in miami                      0        2        2
+22  liposculpture 360 cost                      0        1        1
+23  best lipo in miami                          0        1        1
+24  fat removal in miami                        0        1        1
+25  fat removal miami                           0        1        1
+26  plastic surgery miami prices                0        2        2
+27  lipo 360 miami specials                     0        3        3
+28  how much is a lipo 360                      -        0        1
+29  cost of lipo 360                            -        1        3
+
+"Now (06/12)" = counts measured on the live page 2026-06-12, after the June-11/12 updates below.
 
 -----------------------------------------------------------------------------------------
 New Sections Added:
@@ -159,3 +163,131 @@ Advantages:
   - Signals comprehensive topical coverage to Google's content relevance algorithms
   - Works alongside SurgicalProcedure and MedicalClinic schemas to build
     a fully-structured, authoritative medical page
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — Cost-section phrasings (CTR pass)
+----------------------------------------------------------------------
+GSC: cost queries = ~37K of 41K impressions, positions 3.1-5.8, CTR only ~0.1% (zero-click SERPs).
+Goal: be the direct answer Google lifts into snippets/AI Overviews.
+
+1- Added direct-answer paragraph at top of "Lipo 360 Cost in Miami" (title promised $3000 but the
+   section never stated Avana's price):
+   "How much is a lipo 360 in Miami? At Avana, the cost of lipo 360 starts at $3,000 — one of the
+   most affordable lipo 360 price points in South Florida."
+
+2- Reworded next paragraph opener to "And how much is lipo 360 across the Miami market in general?"
+   (avoids re-asking; flow: Avana price -> market average -> factors -> comparison -> financing).
+
+3- De-duplicated: removed repeated cost-factors list and consultation/quote sentence;
+   "competitive" -> "affordable". No conflict: $3,000 sits inside RealSelf's $2,000-$8,000 range.
+
+#   Keyword                          Before    After
+--  -------------------------------  ------    -----
+1   how much is a lipo 360              0        1
+2   cost of lipo 360                    1        2
+3   lipo 360 price                      1        2
+4   lipo360 price (no space)            0        0   (skipped: typo variant, Google tokenizes it)
+
+Baseline/GSC data: keywords-lipo-360.txt
+NOTE: title/meta change DEFERRED (title changed 2026-05-26, still re-evaluating; re-check late June).
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — Cost FAQ + FAQPage schema entry
+----------------------------------------------------------------------
+Added "How much does Lipo 360 cost in Miami?" as the FIRST FAQ (panel-15) in the accordion AND as
+the first Question in the FAQPage schema (now 14 Q&As). Answer: starts at $3,000 at Avana ->
+market average $4,750 ($2,000-$8,000, RealSelf) -> financing -> free consultation.
+
+Why: cost queries are ~90% of the page's impressions but none of the 13 FAQs answered the price
+question. The cost answer now has 3 surfaces: cost section (snippet candidate), visible FAQ
+(People Also Ask candidate), FAQPage schema (rich results / AI extraction).
+VERIFIED: accordion renders, schema valid JSON (14 questions), schema text matches visible answer.
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — Schema set completed (3 new blocks, now 6 total) — SEO + GEO
+----------------------------------------------------------------------
+Added (mirroring breast-augmentation-miami template):
+  4- BreadcrumbList : Home > Body (/body) > Lipo 360 Miami
+  5- WebPage + SpeakableSpecification (inLanguage "en")
+  6- Person @graph  : 5 surgeons (Mameniskis, Pane, Schusterman, McDaniel, Luster) with English
+     profile URLs, images, job titles matching the on-page cards, worksFor -> #organization
+Also added missing "@id": ".../#organization" to the existing MedicalClinic block so the Person
+graph links to it (connected entity graph: surgeons -> Avana -> Lipo 360 -> Miami location = the
+authority signal AI engines use).
+Also added missing openingHours / openingHoursSpecification to the MedicalClinic block
+(Mo-Fr 08:00-18:00, Sa 08:00-14:00 — same as breast-aug/BBL pages; confirm vs Google Business Profile).
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — Image alt text fixes (wrong procedure context)
+----------------------------------------------------------------------
+Surgeon photos said "BBL Surgeon/expert" on a Lipo 360 page; rewritten Lipo-360-specific:
+  "Dr Mameniskis BBL Surgeon"             -> "Dr. Algird Mameniskis, Lipo 360 surgeon in Miami"
+  "Dr. Thomas Pane"                       -> "Dr. Thomas Pane, Lipo 360 plastic surgeon in Miami"
+  "dr mark schusterman BBL expert"        -> "Dr. Mark Schusterman, Lipo 360 and liposculpture expert in Miami"
+  "Dr Shane Mcdaniel BBL Surgeon in Miami"-> "Dr. Shane McDaniel, Lipo 360 cosmetic surgeon in Miami"
+  "Dr Stephanie Luster"                   -> "Dr. Stephanie Luster, Lipo 360 cosmetic surgeon in Miami"
+Infographic (alt verified against the ACTUAL image content after viewing it):
+  "What is lipo 360" -> "What is Lipo 360 infographic — circumferential liposuction of the abdomen,
+                         waist and back, with before and after illustrations"
+NOT FIXED: before/after gallery alts ("lipo 360 dr hasan ... before/after") — from patient-results
+DB via shared partial, not this file.
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — Internal link to BBL page
+----------------------------------------------------------------------
+"lipo 360 with BBL in Miami" -> anchor "BBL in Miami" -> /brazilian-butt-lift-miami.
+Completes the two-way link with the BBL page (which already links here via "Lipo 360" anchor).
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — Reciprocal link added on the English BBL page
+----------------------------------------------------------------------
+On /brazilian-butt-lift-miami (En article), testimonial paragraph: linked the existing
+"Lipo 360" mention -> /lipo-360-miami.
+The English pair is now a true two-way link:
+  /lipo-360-miami -> /brazilian-butt-lift-miami  (anchor "BBL in Miami")
+  /brazilian-butt-lift-miami -> /lipo-360-miami  (anchor "Lipo 360")
+
+Why this is important for SEO:
+  - Linked pages pass ranking authority to each other — a two-way pair strengthens both
+  - The anchor text tells Google what the target page is about (keyword relevance)
+  - Connecting related procedures builds topical authority and helps Google crawl both pages
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-11 — "Lipo 360 Quick Facts" (Datos Claves) block added (GEO)
+----------------------------------------------------------------------
+New H3 + 6-bullet fact list inserted right after the "What is Lipo 360?" section:
+  Starting cost   : $3,000 at Avana (Miami market average: $4,750, per RealSelf)
+  Areas treated   : abdomen, waist, flanks, and back — 360 degrees around the midsection
+  Procedure time  : a few hours, depending on the number of areas treated
+  Back to work    : most patients within one week; 48 hours when only 1-2 areas treated
+  Swelling        : ~90% resolves within 4 weeks with proper care + compression garments
+  Final results   : fully visible at around six months
+
+Why this is important for SEO/GEO:
+  - Labeled fact lists are the format AI engines and featured snippets extract most
+  - The page's facts were scattered across long prose; now one liftable block sits near the top
+  - Every fact is sourced from this page's own existing content (cost section, FAQ answers,
+    schema) — guaranteed internal consistency, nothing can contradict the body text
+  - Avana's name is attached to the price fact, so any AI citation carries the brand
+
+
+----------------------------------------------------------------------
+UPDATE 2026-06-12 — Geo-targeting section added (local SEO)
+----------------------------------------------------------------------
+New H3 "Serving Miami and Surrounding Communities" between the cost section and the FAQs
+(same proven pattern as the breast-aug and BBL pages):
+  - Local paragraph: opens with "lipo 360 near me" (now 3x on page, reinforces the 2 "near me"
+    FAQs), Avana's multiple Miami locations, and the Miami-Dade communities served (Doral,
+    Hialeah, Coral Gables, Kendall, West Miami, Sweetwater, Fontainebleau).
+  - National paragraph: out-of-state patients (New York, Texas, California), repeating
+    "lipo 360 cost that starts at $3,000 — well below the Miami average" (brand + price again).
+Why: neighborhood names give Google local-relevance signals for Miami-Dade searches; pairs with
+the MedicalClinic geo/NAP schema for "near me" queries.
+
