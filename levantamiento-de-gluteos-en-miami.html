@@ -54,6 +54,128 @@
     </div>
   </div>
 </div>
+
+<!-- Competitor Keyword Analysis -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;">
+    <div style="font-size:16px;font-weight:700;">&#128273; An&aacute;lisis de Palabras Clave de Competidores &mdash; levantamiento de gl&uacute;teos brasile&ntilde;o en miami</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Menciones de palabras clave en el contenido de las p&aacute;ginas mejor posicionadas. Filas ordenadas por uso de competidores; columnas de izquierda a derecha por la fuerza total de cada sitio, con <strong style="color:#fff;">Avana en su posici&oacute;n real (#2 de 7)</strong>. &nbsp;&middot;&nbsp; 6 competidores + Avana (thesecretplasticsurgery.com y epicplasticsurgery.com inaccesibles; youtube.com es un video).</div>
+  </div>
+  <div style="padding:8px 20px 16px;overflow-x:auto;">
+    <table style="border-collapse:collapse;font-size:13px;min-width:720px;width:100%;">
+      <thead>
+        <tr style="color:#888;font-size:11px;text-transform:uppercase;letter-spacing:.4px;">
+          <th style="padding:10px 8px;border-bottom:2px solid #eee;text-align:left;position:sticky;left:0;background:#fff;">Palabra clave</th>
+          <th id="kwHeadComps" style="padding:10px 6px;border-bottom:2px solid #eee;text-align:center;"></th>
+        </tr>
+      </thead>
+      <tbody id="kwAnalysisBody"></tbody>
+    </table>
+    <div style="margin-top:12px;font-size:11px;color:#999;font-style:italic;display:flex;gap:18px;flex-wrap:wrap;align-items:center;">
+      <span><span style="display:inline-block;width:32px;height:11px;background:linear-gradient(90deg,#f3f6f6,#0E7C7B);border-radius:2px;vertical-align:middle;border:1px solid #ddd;"></span> M&aacute;s oscuro = m&aacute;s menciones en esa p&aacute;gina</span>
+      <span><span style="display:inline-block;width:10px;height:10px;background:#fde8e8;border:1px solid #c0392b;border-radius:2px;vertical-align:middle;"></span> Brecha &mdash; los competidores usan el t&eacute;rmino pero Avana no</span>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var COMPETITORS = [
+    {short:"Aeris",    domain:"aeris.co"},
+    {short:"Miami PS", domain:"miamiplasticsurgery.com"},
+    {short:"Brandon",  domain:"brandonplasticsurgery.com"},
+    {short:"Icon",     domain:"iconcosmeticcenter.com"},
+    {short:"El País", domain:"elpais.com"},
+    {short:"ARC",      domain:"arcplasticsurgeons.com"}
+  ];
+  // Curated SEO keywords (ES) for this page: search phrases plus "bbl" /
+  // "liposucción" — established single-word terms. Generic vocabulary excluded.
+  // [keyword, ...6 competitor counts (COMPETITORS order)..., avana]
+  var KW = [
+    ["levantamiento de glúteos brasileño",11,8,41,14,0,5,17],
+    ["aumento de glúteos",0,19,3,5,2,3,33],
+    ["bbl",47,7,35,40,16,0,30],
+    ["cirugía bbl",1,3,10,0,0,0,0],
+    ["transferencia de grasa",5,1,12,1,0,0,24],
+    ["injerto de grasa",3,1,1,2,2,1,0],
+    ["liposucción",15,3,19,5,2,7,14],
+    ["abdominoplastia",7,0,10,1,1,2,0],
+    ["aumento de senos",6,0,4,0,0,5,0],
+    ["levantamiento de senos",2,0,3,0,0,2,0],
+    ["contorno corporal",3,1,2,0,0,0,0],
+    ["lifting facial",1,0,4,0,0,2,0],
+    ["prenda de compresión",1,1,6,1,0,0,1],
+    ["cirugía plástica",2,0,4,0,2,4,3],
+    ["cirujano plástico",1,5,10,4,3,5,10]
+  ];
+  var N = COMPETITORS.length; // 6
+
+  // Unified site list (Avana + competitors). colIndex into each KW row.
+  var SITES = COMPETITORS.map(function(c,i){
+    return {short:c.short, domain:c.domain, colIndex:1+i, isAvana:false};
+  });
+  SITES.push({short:"Avana", domain:"avanaplasticsurgery.com (posición #1)", colIndex:1+N, isAvana:true});
+  SITES.forEach(function(s){ s.total = KW.reduce(function(sum,r){ return sum + r[s.colIndex]; }, 0); });
+  SITES.sort(function(a,b){ return b.total - a.total; });
+
+  var headComps = document.getElementById('kwHeadComps');
+  headComps.textContent = 'Comp.';
+  headComps.title = 'Número de competidores (de 6) que usan el término';
+  var headRow = headComps.parentNode;
+  SITES.forEach(function(s,idx){
+    var th=document.createElement('th');
+    th.style.cssText='padding:10px 6px;border-bottom:2px solid #eee;text-align:center;font-weight:'+(s.isAvana?'800':'700')+';color:'+(s.isAvana?'#0E7C7B':'#555')+
+      (s.isAvana?';border-left:2px solid #0E7C7B;border-right:2px solid #0E7C7B;':'');
+    th.title=s.domain+' — '+s.total+' menciones totales';
+    th.innerHTML='<span style="display:block;font-size:10px;font-weight:400;color:'+(s.isAvana?'#0E7C7B':'#bbb')+';">#'+(idx+1)+'</span>'+s.short;
+    headRow.appendChild(th);
+  });
+
+  function cell(val, rowMax, isAvana){
+    var td=document.createElement('td');
+    var bg='transparent', color='#bbb', weight='400';
+    if(val>0){
+      var t = rowMax>0 ? val/rowMax : 0;
+      var alpha = 0.12 + t*0.78;
+      bg='rgba(14,124,123,'+alpha.toFixed(2)+')';
+      color = t>0.55 ? '#fff' : '#1B3A5C';
+      weight = t>0.45 ? '700' : '600';
+    }
+    td.style.cssText='padding:6px;text-align:center;font-variant-numeric:tabular-nums;background:'+bg+
+      ';color:'+color+';font-weight:'+weight+(isAvana?';border-left:2px solid #0E7C7B;border-right:2px solid #0E7C7B;':'');
+    td.textContent = val;
+    return td;
+  }
+
+  function compSum(r){ return r.slice(1,1+N).reduce(function(s,v){return s+v;},0); }
+  function compUsers(r){ return r.slice(1,1+N).filter(function(v){return v>0;}).length; }
+  KW.sort(function(a,b){ return compSum(b)-compSum(a) || compUsers(b)-compUsers(a); });
+
+  var body=document.getElementById('kwAnalysisBody');
+  KW.forEach(function(r){
+    var kw=r[0];
+    var compsUsing = compUsers(r);
+    var rowMax = Math.max.apply(null, r.slice(1));
+    var gap = r[1+N]===0;
+
+    var tr=document.createElement('tr');
+    tr.style.borderBottom='1px solid #f0f0f0';
+
+    var tdK=document.createElement('td');
+    tdK.style.cssText='padding:8px;font-weight:600;color:var(--navy);white-space:nowrap;position:sticky;left:0;background:'+(gap?'#fef5f5':'#fff')+';';
+    tdK.innerHTML = kw + (gap?' <span style="font-size:10px;font-weight:700;color:#c0392b;background:#fde8e8;border:1px solid #f5c6c6;border-radius:999px;padding:1px 7px;">brecha</span>':'');
+    tr.appendChild(tdK);
+
+    var tdC=document.createElement('td');
+    tdC.style.cssText='padding:8px 6px;text-align:center;font-weight:700;color:'+(compsUsing>=N-1?'#0E7C7B':'#888')+';';
+    tdC.textContent = compsUsing;
+    tr.appendChild(tdC);
+
+    SITES.forEach(function(s){ tr.appendChild(cell(r[s.colIndex], rowMax, s.isAvana)); });
+    body.appendChild(tr);
+  });
+})();
+</script>
+
 <script src="reports/chart-data.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
