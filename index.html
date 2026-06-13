@@ -502,17 +502,45 @@
     font-weight: 400;
     font-size: 12px;
     color: #666;
-    min-width: 140px;
-    max-width: 220px;
+    min-width: 150px;
+    max-width: 230px;
     white-space: normal;
     cursor: text;
+    vertical-align: top;
+    line-height: 1.5;
     border-left: 2px dashed #dde3ef;
     border-right: 2px dashed #dde3ef;
-    font-style: italic;
+  }
+  /* "Changes" label heading inside a note */
+  .kw-group-table td.note-cell strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 9.5px;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--gold);
+  }
+  /* Change tags rendered as chips */
+  .kw-group-table td.note-cell code {
+    display: inline-block;
+    margin: 2px 0;
+    padding: 2px 8px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--teal);
+    background: rgba(14,124,123,0.08);
+    border: 1px solid rgba(14,124,123,0.22);
+    border-radius: 5px;
+    white-space: nowrap;
   }
   .kw-group-table td.note-cell:empty::before {
     content: "add note…";
     color: #bbb;
+    font-style: italic;
   }
   .kw-group-table td.note-cell:focus {
     outline: none;
@@ -837,7 +865,7 @@
           <tr style="background:#fef9c3; border-top: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="brazilian-butt-lift-miami.html"><span class="seed">brazilian butt lift miami</span></a> <a class="done-btn" href="brazilian-butt-lift-miami-improvements.html">Done June 9, 2026</a></td>
             <td>7 / 17</td>
-            <td class="note-cell" contenteditable="true">Check Price</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><br><code>Metas</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/brazilian-butt-lift-miami" target="_blank">/brazilian-butt-lift-miami</a></td>
             <td>124,921</td>
             <td>1,218</td>
@@ -847,7 +875,7 @@
           <tr style="border-bottom: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="levantamiento-de-gluteos-en-miami.html"><span class="seed">levantamiento de gluteos brasile&ntilde;o en miami</span></a> <a class="done-btn" href="levantamiento-de-gluteos-en-miami-improvements.html">Done June 11, 2026</a></td>
             <td >0 / 0</td>
-            <td class="note-cell" contenteditable="true">Spanish page — pos 13.16 keyword · 0.41% CTR URL-filtered · 3,431 impr</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami" target="_blank">/espanol/levantamiento-de-gluteos-en-miami</a></td>
             <td>3,431</td>
             <td>14</td>
@@ -858,7 +886,7 @@
           <tr style="background:#fef9c3; border-top: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="lipo-360-miami.html"><span class="seed">lipo 360 miami</span></a> <a class="done-btn" href="lipo-360-miami-improvements.html">Done June 1, 2026</a></td>
             <td>9 / 3</td>
-            <td class="note-cell" contenteditable="true">Close page 1</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/lipo-360-miami" target="_blank">/lipo-360-miami</a></td>
             <td>69,793</td>
             <td>137</td>
@@ -867,7 +895,7 @@
           <tr style="border-bottom: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="liposuccion-360-en-miami.html"><span class="seed">liposuccion 360 en miami</span></a> <a class="done-btn" href="liposuccion-360-en-miami-improvements.html">Done June 1, 2026</a></td>
             <td>0 / 0</td>
-            <td class="note-cell" contenteditable="true">Spanish page — pos 5.18 — keyword exacto 0 impr</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/espanol/lipo-360-en-miami" target="_blank">/espanol/lipo-360-en-miami</a></td>
             <td>54,630</td>
             <td>753</td>
@@ -878,7 +906,7 @@
           <tr style="background:#fef9c3; border-top: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="breast-implants-miami.html"><span class="seed">breast implants miami</span></a> <a class="query-link" href="breast-implants-miami-vs-breast-augmentation-miami.html" style="margin-left: 8px; font-size: 11px; padding: 4px 8px; background: #333; color: #fff; border-radius: 4px; text-decoration: none; display: inline-block;">→ breast-implants-miami VS breast-augmentation-miami</a> <a class="done-btn" href="breast-implants-miami-improvements.html">Done June 3, 2026</a></td>
             <td>6 / 1</td>
-            <td class="note-cell" contenteditable="true">High Impressions, Low Clicks (Cannibalization Issue -> breast-augmentation-miami)</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/breast-implants-miami" target="_blank">/breast-implants-miami</a></td>
             <td>24,269</td>
             <td>50</td>
@@ -892,7 +920,7 @@
               <a class="done-btn" href="implantes-de-senos-en-miami-improvements.html">Done June 6, 2026</a>
             </td>
             <td>0 / 0</td>
-            <td class="note-cell" contenteditable="true">Spanish page — pos 12.35 — keyword exacto 0 impr</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami" target="_blank">/espanol/implantes-de-senos-en-miami</a></td>
             <td>1,081</td>
             <td>4</td>
@@ -903,7 +931,7 @@
           <tr style="background:#fef9c3; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="breast-augmentation-miami.html"><span class="seed">breast augmentation miami</span></a> <a class="done-btn" href="breast-augmentation-miami-improvements.html">Done June 9, 2026</a></td>
             <td>6 / 1</td>
-            <td class="note-cell" contenteditable="true">pos 35.9 keyword · 0.08% CTR · Cannibalization w/ /breast-implants-miami</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/breast-augmentation-miami" target="_blank">/breast-augmentation-miami</a></td>
             <td>26,170</td>
             <td>187</td>
@@ -913,7 +941,7 @@
           <tr style="border-bottom: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="aumento-de-senos-miami.html"><span class="seed">aumento de senos en miami</span></a> <a class="done-btn" href="aumento-de-senos-miami-improvements.html">Done June 9, 2026</a></td>
             <td>0 / 0</td>
-            <td class="note-cell" contenteditable="true">Spanish page — pos 14.38 keyword · 0.52% CTR URL-filtered · 23,478 impr</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami" target="_blank">/espanol/aumento-de-senos-miami</a></td>
             <td>23,478</td>
             <td>121</td>
