@@ -8,6 +8,9 @@ node_modules/
 __pycache__/
 *.pyc
 
+# Scratch / manually-saved competitor HTML used for keyword recompute
+/tmp/
+
 # OS / editor
 .DS_Store
 Thumbs.db

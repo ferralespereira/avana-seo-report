@@ -87,7 +87,10 @@
     legend.innerHTML =
       '<span><span style="display:inline-block;width:32px;height:11px;background:linear-gradient(90deg,#f3f6f6,' + TEAL + ');border-radius:2px;vertical-align:middle;border:1px solid #ddd;"></span> Darker = more mentions</span>' +
       '<span><span style="display:inline-block;width:10px;height:10px;background:#fde8e8;border:1px solid #c0392b;border-radius:2px;vertical-align:middle;"></span> Gap — competitors use it, Avana doesn’t</span>' +
-      '<span style="color:#bbb;">Columns ranked by total keyword strength; Avana highlighted in teal.</span>';
+      '<span style="color:#bbb;">Columns ranked by total keyword strength; Avana highlighted in teal.</span>' +
+      '<span style="color:#0E7C7B;font-weight:700;">&#9995; manual</span><span style="color:#bbb;margin-left:-12px;"> = saved-page copy</span>' +
+      '<span style="color:#7F8C9B;font-weight:700;">&#8635; carried</span><span style="color:#bbb;margin-left:-12px;"> = last live count reused</span>' +
+      '<span style="color:#E67E22;font-weight:700;">&#128229; archived</span><span style="color:#bbb;margin-left:-12px;"> = Wayback snapshot</span>';
     card.appendChild(legend);
 
     container.appendChild(card);
@@ -129,6 +132,18 @@
       if (s.ok === false || s.archived || C.sites[cj].ok === false || C.sites[cj].archived)
         return { cj: cj, status: "skip" };
       return { cj: cj, status: "match" };
+    }
+
+    // origin badge under a column header — shows where its counts came from
+    function sourceBadge(s) {
+      var src = s.source || (s.archived ? "wayback" : (s.ok === false ? "none" : "live"));
+      if (src === "wayback")
+        return '<span style="display:block;font-size:8px;font-weight:700;color:#E67E22;" title="Live page blocked — counts from a Wayback Machine archive">&#128229; archived ' + (s.archived || "") + '</span>';
+      if (src === "carried")
+        return '<span style="display:block;font-size:8px;font-weight:700;color:#7F8C9B;" title="Live page blocked — reusing last live count">&#8635; carried ' + (s.carried_from || "") + '</span>';
+      if (src === "manual")
+        return '<span style="display:block;font-size:8px;font-weight:700;color:#0E7C7B;" title="Counted from a manually-saved copy of the page">&#9995; manual ' + (s.manual_date || "") + '</span>';
+      return "";  // live (and none) get no badge
     }
 
     // small delta chip: positive = increase
@@ -186,11 +201,13 @@
         th.title = s.domain + (s.pos ? " — ranked #" + s.pos + " that day" : "") +
           " — " + P.totals[si] + " total mentions" +
           (s.ok === false ? " (page unreachable)" : "") +
+          (s.source === "manual" ? " (from a manually-saved page copy)" : "") +
+          (s.source === "carried" ? " (live blocked — last live count from " + (s.carried_from || "") + ")" : "") +
           (s.archived ? " (from Wayback Machine archive, crawled " + s.archived + ")" : "");
         th.innerHTML = '<span style="display:block;font-size:9px;font-weight:400;color:#bbb;">SERP ' + (posTxt || "&nbsp;") + '</span>' +
           s.label +
           '<span style="display:block;font-size:9px;font-weight:400;color:' + (teal ? TEAL : "#bbb") + ';">strength #' + (idx + 1) + '</span>' +
-          (s.archived ? '<span style="display:block;font-size:8px;font-weight:700;color:#E67E22;" title="Live page blocked — counts from archived snapshot">&#128229; archived ' + s.archived + '</span>' : '') +
+          sourceBadge(s) +
           (isNew ? '<span style="display:block;font-size:8px;font-weight:700;color:#0E7C7B;">NEW</span>'
                  : (moveHtml ? '<span style="display:block;">' + moveHtml + '</span>' : ''));
         hr.appendChild(th);
