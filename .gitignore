@@ -4,6 +4,10 @@ node_modules/
 # Generated output — regenerate with: node seo_report_v2.js
 *.docx
 
+# Python bytecode cache (auto-generated on import)
+__pycache__/
+*.pyc
+
 # OS / editor
 .DS_Store
 Thumbs.db

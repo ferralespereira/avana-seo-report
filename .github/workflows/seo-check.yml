@@ -27,6 +27,9 @@ jobs:
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: python seo_check.py
 
+      - name: Scan competitor keywords
+        run: python keyword_scan.py
+
       - name: Commit results
         run: |
           git config --global user.email "seo-bot@github.com"
