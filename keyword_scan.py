@@ -183,6 +183,28 @@ MMO_ES = [
     ("cirugia estetica", ["cirugia estetica"]),
 ]
 
+LIPOSUCTION_EN = [
+    ("liposuction", ["liposuction"]),
+    ("liposuction miami", ["liposuction miami", "miami liposuction"]),
+    ("liposuction cost", ["liposuction cost", "liposuction miami cost", "cost of liposuction", "how much is liposuction"]),
+    ("lipo", ["lipo"]),
+    ("lipo miami", ["lipo miami", "miami lipo"]),
+    ("lipo 360", ["lipo 360", "360 liposuction", "liposuction 360"]),
+    ("laser liposuction", ["laser liposuction", "laser lipo"]),
+    ("vaser liposuction", ["vaser liposuction", "vaser lipo"]),
+    ("high definition liposuction", ["high definition liposuction", "hd liposuction", "hd lipo", "hi def lipo"]),
+    ("chin liposuction", ["chin liposuction", "submental liposuction", "neck liposuction"]),
+    ("liposculpture", ["liposculpture", "lipo sculpting"]),
+    ("tummy tuck", ["tummy tuck"]),
+    ("body contouring", ["body contouring"]),
+    ("fat removal", ["fat removal", "remove fat", "fat reduction"]),
+    ("compression garment", ["compression garment", "compression garments"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+]
+
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":
@@ -205,6 +227,8 @@ PAGES = {
         {"slug": "mommy-makeover-miami", "lang": "en", "kw": MMO_EN},
     "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami":
         {"slug": "mommy-makeover-en-miami", "lang": "es", "kw": MMO_ES},
+    "https://avanaplasticsurgery.com/liposuction-miami":
+        {"slug": "liposuction-miami", "lang": "en", "kw": LIPOSUCTION_EN},
 }
 
 

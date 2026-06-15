@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana Issues — Mommy Makeover Miami</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th.content-column {
+    background: var(--teal);
+    position: relative;
+  }
+  .data-table th.trust-column {
+    background: var(--gold);
+    color: var(--navy);
+    position: relative;
+  }
+  .data-table th.cta-column {
+    background: var(--orange);
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.schema-column {
+    background: #6366f1;
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.content-column::after {
+    content: "CONTENT";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.trust-column::after {
+    content: "TRUST SIGNAL";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(27, 58, 92, .15);
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.cta-column::after {
+    content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.schema-column::after {
+    content: "SCHEMA TYPE";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td.content-column {
+    background: #f4fbfb;
+  }
+  .data-table td.trust-column {
+    background: #fff8e8;
+  }
+  .data-table td.cta-column {
+    background: #fff3ec;
+  }
+  .data-table td.schema-column {
+    background: #f0f0ff;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .priority-high { background: var(--redBg) !important; color: var(--red); font-weight: 700; }
+  .priority-medium { background: var(--yellowBg) !important; color: #7d5a00; font-weight: 700; }
+  .priority-low { background: var(--greenBg) !important; color: var(--green); font-weight: 700; }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .subsection h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .lang-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--gold);
+    background: transparent;
+    transition: background .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .site-tabs,
+    .indicator-nav { padding: 0 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+    .site-header { padding: 16px; }
+    .site-header h1 { font-size: 18px; }
+  }
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;"><a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a></div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; liposuction miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/liposuction-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/liposuction-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="liposuction-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/liposuction-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- Keyword header -->
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  liposuction miami
+  <button onclick="navigator.clipboard.writeText('liposuction miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left:12px;padding:6px 12px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">📋 Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/liposuction-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/liposuction-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/liposuction-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left:8px;padding:4px 10px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">📋</button>
+</div>
+</div>
+
+<!-- KPI Cards (keyword-filtered) -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">10</div>
+<div class="kpi-source">liposuction miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">6,560</div>
+<div class="kpi-source">liposuction miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">0.15%</div>
+<div class="kpi-source">liposuction miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">23.83</div>
+<div class="kpi-source">liposuction miami &mdash; all devices</div>
+</div>
+</div>
+
+<!-- Device Breakdown (URL-filtered) -->
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC &mdash; Device Breakdown for &ldquo;liposuction miami&rdquo;</div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Mobile</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">10</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">2,474</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#c0392b;">0.4%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#c0392b;">24.54</td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">🖥️ Desktop</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">4,082</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#c0392b;">0%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#c0392b;">23.42</td>
+</tr>
+<tr>
+<td style="padding:9px 14px;">📟 Tablet</td>
+<td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+<td style="padding:9px 14px;text-align:right;color:#7c3aed;">4</td>
+<td style="padding:9px 14px;text-align:right;color:#c0392b;">0%</td>
+<td style="padding:9px 14px;text-align:right;color:#059669;">5.5</td>
+</tr>
+</tbody>
+</table>
+
+<!-- All-queries collapsible -->
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el=document.getElementById('url-queries-content'); el.style.display=el.style.display==='none'?'block':'none'; return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div onmouseout="this.style.opacity='0.9'" onmouseover="this.style.opacity='1'" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;transition:opacity 0.2s ease;opacity:0.9;">GSC &mdash; All Queries for <span style="font-size:18px;font-weight:900;color:#fff;">https://avanaplasticsurgery.com/liposuction-miami</span> &mdash; Last 3 months (Jun 15, 2026)</div>
+</a>
+<a href="#" onclick="var el=document.getElementById('url-queries-content'); el.style.display=el.style.display==='none'?'block':'none'; return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">&#9658; Show</a>
+</div>
+<div id="url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">141</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">25,640</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">0.55%</div>
+</div>
+</div>
+<div>
+<div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">🔴 0-CLICK QUERIES WITH HIGH IMPRESSIONS &mdash; Top 20 opportunities</div>
+<div style="font-size:11px;color:#666;margin-bottom:6px;font-style:italic;">These queries show the page is appearing in Google &mdash; but nobody clicks. Each is an immediate content opportunity.</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#6ec6ff;">Clicks</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#34d399;">CTR</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+<th style="padding:7px 10px;text-align:left;">Opportunity</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposuction miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2,108</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">20.98</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 #1 cluster — exact target keyword at pos 21 with 0 clicks — lead title/H1 with “Liposuction Miami” + price to climb off page 2</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lipo 360 cost miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">301</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">13.89</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 301 impr at pos 14 — add a Lipo 360 cost/package-pricing section</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">chin liposuction cost miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">209</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">23.13</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 209 impr at pos 23 — add chin/submental lipo cost FAQ</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposuction cost in miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">205</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.61</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 3.6 with 0 clicks — price answer must be in title/meta to win the click</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposuction miami fl</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">180</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">19.09</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 180 impr at pos 19 — geo variant — reinforce “Miami, FL” signals</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">laser liposuction miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">173</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">20.45</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 173 impr at pos 20 — add a laser-lipo technique H2</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is lipo 360</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">167</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.32</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 6 with 0 clicks — answer “how much is lipo 360” with price above the fold</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposuction surgery in miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">151</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">15.91</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 151 impr at pos 16 — add exact phrase as an H2</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is lipo</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">149</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">25.22</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 149 impr at pos 25 — add a price FAQ</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is liposuction in miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">144</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.78</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 2.8 with 0 clicks — price must be in title/meta now</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposuction south miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">130</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">35.21</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ South Miami geo at pos 35 — add neighborhood geo copy</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lipo</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">127</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">9.65</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 10, broad head term — strengthen on-page “lipo” usage</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposuction near me</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">122</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">30.31</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ “near me” at pos 30 — reinforce LocalBusiness schema + NAP</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lipo cost miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">118</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.59</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 4.6 with 0 clicks — price/meta CTR fix</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">facial liposuction miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">113</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">50.51</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Pos 51 — add a facial/chin lipo section</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">liposculpture miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">111</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">34.59</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Pos 35 — add liposculpture synonym content</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">laser lipo miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">110</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">22.75</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 110 impr at pos 23 — laser-lipo H2</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lipo cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">110</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">30.68</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Pos 31, broad cost term — add explicit pricing</td></tr>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much does liposuction cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">105</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">16.36</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 105 impr at pos 16 — cost FAQ with a specific range</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">3055016000</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">101</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.95</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Clinic phone number (navigational) at pos 8 — brand/NAP query, not content-actionable</td></tr>
+</tbody>
+</table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#999;font-style:italic;">Showing all 20 zero-click queries with 100+ impressions</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Competitor Analysis Table -->
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Jun 15, 2026 — Avana &amp; Icon Cosmetic Center returned 403 (Icon data via search snippets); Spectrum &amp; Miami Plastic Surgery fetched live</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+<th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:220px;">Avana<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/liposuction-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/liposuction-miami</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;">Spectrum Aesthetics<br/><span style="font-weight:400;font-size:11px;"><a href="https://spectrum-aesthetics.com/liposuction/" style="color:#fff;text-decoration:none;" target="_blank">spectrum-aesthetics.com</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;">Miami Plastic Surgery<br/><span style="font-weight:400;font-size:11px;"><a href="https://miamiplasticsurgery.com/surgical-services/body/liposuction/" style="color:#fff;text-decoration:none;" target="_blank">miamiplasticsurgery.com</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;">Icon Cosmetic Center<br/><span style="font-weight:400;font-size:11px;"><a href="https://iconcosmeticcenter.com/360-lipo-miami" style="color:#fff;text-decoration:none;" target="_blank">iconcosmeticcenter.com</a></span></th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Could not confirm (403)</div>Page blocked automated fetch<div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; No price/cost anchor confirmed in title<br/>&#10003; GSC: ranks top-5 for cost queries (“how much is liposuction in miami” pos 2.8) — relevance is there, CTR is not</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Aggressive price anchor</div>&ldquo;Liposuction (Lipo) Miami, Florida Cost $1500 | Spectrum Aesthetics&rdquo;<div style="margin-top:4px;font-size:11px;color:#059669;">&#10003; $1,500 + keyword + geo + brand in one title</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Clean but no price</div>&ldquo;Liposuction Surgery in Miami, FL | Miami Plastic Surgery&rdquo;<div style="margin-top:4px;font-size:11px;color:#059669;">&#10003; Exact keyword + geo</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; No cost signal — misses the cost-intent clusters</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price anchor in title</div>&ldquo;Lipo 360 Miami - Best Price $3000 | Icon Cosmetic Center&rdquo;<div style="margin-top:4px;font-size:11px;color:#059669;">&#10003; $3,000 (360) / $2,900 on its lipo page — price-led</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Page 403’d — title via search snippet</div></td>
+</tr>
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Could not confirm (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; Verify “Liposuction Miami” exact match + price are in H1</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price leads the H1</div>&ldquo;Liposuction Cost $1500&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Cost-intent captured immediately above the fold</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Keyword + geo</div>&ldquo;Liposuction in Miami, Florida&rdquo;<div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No price in H1</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Not confirmed (403)</div>Likely “Lipo 360 Miami”<div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; H1 not verifiable</div></td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">liposuction miami</span><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; GSC: exact term at pos 25 (2,108 impr, 0 clicks) — indexed but weak on the head term</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">liposuction miami cost</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Optimizes the cost variant — title/H1/body all price-led</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">liposuction miami</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Clean keyword + geo focus across title/H1/H2s</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">lipo 360 miami</span><div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Lead page targets 360 lipo; separate page for plain liposuction</div></td>
+</tr>
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(H2 headings)</span></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ H2s not confirmed (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; Zero-click clusters imply gaps: laser lipo (283 impr), lipo 360 (468 impr), chin/facial lipo (322 impr) — likely thin or missing H2s</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Deep, price-oriented (10 H2s)</div><div>&#10003; Payment Plans</div><div>&#10003; Lipo Miami / Liposuction Miami FL</div><div>&#10003; Best Liposuction Surgeon in Miami</div><div>&#10003; About the Liposuction Procedure</div><div>&#10003; Our Doctors</div><div>&#10003; Liposuction Results</div><div style="color:#059669;font-weight:700;">&#10003; How Much Does a Lipo Cost? (pricing H2)</div><div>&#10003; Look &amp; Feel After Liposuction</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Strong structure (11 H2s)</div><div>&#10003; Best Doctor for HD Liposuction</div><div>&#10003; Dr. Max Polo / Dr. Jason Altman</div><div>&#10003; Real Patient Transformations</div><div>&#10003; What Is Liposuction?</div><div>&#10003; Our Approach: Customized Techniques</div><div>&#10003; What to Expect / Recovery</div><div>&#10003; Frequently Asked Questions</div><div style="color:#c0392b;margin-top:4px;">&#10060; No cost/pricing H2</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Not confirmed (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; H2 structure not extractable — price-led landing page</div></td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div>141 URL clicks across 25,640 impr suggests substantial content</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Most comprehensive — ~3,200–3,400 words</div>10 H2 sections + large FAQ + doctor bios</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Comprehensive — ~2,800 words</div>11 H2s + FAQ + surgeon bios + before/after</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div>Price-led landing page — depth not verifiable</td>
+</tr>
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403) — but GSC shows the gap</div>Ranks top-5 for “liposuction cost in miami” (pos 3.6) &amp; “how much is liposuction in miami” (pos 2.8) yet <strong>0 clicks</strong><div style="font-size:11px;color:#c0392b;margin-top:4px;">&#10060; Price almost certainly not surfaced in title/meta — the click-killer here</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Strongest — $1,500 everywhere</div>“starting from $1500” in title, H1, body + Payment Plans H2<div style="font-size:11px;color:#059669;margin-top:4px;">&#10003; Lowest anchor of the set — maximum cost-intent pull</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No price shown</div>No dollar amount anywhere — defers to consultation</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price in title</div>$3,000 (Lipo 360) / $2,900 (liposuction page); lipo range $2,000–$6,000<div style="font-size:11px;color:#059669;margin-top:4px;">&#10003; Price-led positioning like Spectrum</div></td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; Verify meta includes a price anchor + CTA</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Not visible</div>Likely auto-generated; title already carries the $1,500 hook</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Not provided</div>Google will auto-generate from body content</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Not confirmed (403)</div>Title carries the price signal</td>
+</tr>
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; Cost questions (“how much is lipo 360” 167 impr, “how much does liposuction cost” 105 impr) sit at 0 clicks — cost FAQ likely missing<br/>&#10060; FAQPage schema unconfirmed</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Extensive FAQ</div><div style="font-size:11px;">Cost variability, technique differences, skin laxity, scarring, pain, recovery, permanence, cellulite, anesthesia, candidacy…</div><div style="color:#c0392b;margin-top:4px;">&#10060; FAQPage schema not confirmed</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; FAQ present (4+)</div><div>&#10003; Is liposuction right for me?</div><div>&#10003; How long do results last?</div><div>&#10003; Combine with other procedures?</div><div>&#10003; Will I have scars?</div><div style="color:#c0392b;margin-top:4px;">&#10060; No cost FAQ — FAQPage schema unconfirmed</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; FAQ presence not verifiable</div></td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Moderate (inferred)</div><div>&#10003; Multi-location Miami practice</div><div>&#10003; Board-certified surgeons</div><div style="color:#c0392b;margin-top:4px;">&#10060; Review count / before-after on page not confirmed</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Solid</div><div>&#10003; Board-certified (Dr. Ortega, Dr. De Jesus)</div><div>&#10003; Before/after galleries</div><div>&#10003; Patient reviews + pre-op evaluation</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Strongest credentials</div><div>&#10003; 5-star reviews with patient names</div><div>&#10003; Dr. Polo (ABPS, 20+ yrs) / Dr. Altman (Webster Fellow)</div><div>&#10003; Before/after gallery + research honors</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Partial (403)</div><div>&#10003; Board-certified plastic surgeons</div><div>&#10003; Individualized pricing at consult</div><div style="color:#c0392b;margin-top:4px;">&#10060; Reviews / before-after not verifiable</div></td>
+</tr>
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div><div style="font-size:11px;">Likely “Book a Consultation” + location selector (other Avana pages)</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Offer-driven</div><div>&#10003; “Get Special Offer”</div><div>&#10003; “Contact Us”</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Clear booking CTA</div><div>&#10003; “Request a Consultation”</div></td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Not confirmed (403)</div><div style="font-size:11px;">Likely “Book Now” / special-offer CTA</div></td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td>
+<td style="padding:10px 14px;vertical-align:top;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Unknown (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; FAQPage / PriceRange / MedicalProcedure unconfirmed<br/>⚠️ Adding FAQPage + PriceRange + LocalBusiness = competitive edge</div></td>
+<td style="padding:10px 14px;vertical-align:top;background:#f0fff4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; None visible</div><div style="font-size:11px;color:#c0392b;">&#10060; No FAQPage / PriceRange detected despite FAQ + pricing</div></td>
+<td style="padding:10px 14px;vertical-align:top;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Not confirmed</div><div style="font-size:11px;color:#c0392b;">&#10060; Likely LocalBusiness/MedicalBusiness; FAQPage not confirmed</div></td>
+<td style="padding:10px 14px;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Unknown (403)</div><div style="font-size:11px;color:#c0392b;">&#10060; Not verifiable</div></td>
+</tr>
+</tbody>
+</table>
+<!-- Key takeaway -->
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from competitor analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Why competitors rank — what they do better:</strong><br/>
+1. <strong>Spectrum Aesthetics</strong> leads with an aggressive <strong>$1,500</strong> price anchor in the title AND H1 — the single strongest cost-intent signal on the SERP, backed by ~3,300 words and a deep FAQ<br/>
+2. <strong>Icon Cosmetic Center</strong> also anchors price in the title ($3,000 / $2,900) — price-in-title is the pattern that wins liposuction SERPs<br/>
+3. <strong>Miami Plastic Surgery</strong> wins on trust depth: named 5-star reviews, board-certified surgeons (20+ yrs), research honors, before/after gallery<br/>
+4. All three structure content around technique + recovery + FAQ H2s; Spectrum &amp; MPS both ship full FAQ sections<br/>
+5. Spectrum &amp; MPS run dedicated surgeon-bio sections (E-E-A-T) directly on the page
+</div>
+<div>
+<strong>What Avana must add to dominate “liposuction miami”:</strong><br/>
+1. <strong>Put the price in the title + H1.</strong> Avana ranks top-5 for cost queries (“how much is liposuction in miami” pos 2.8, “liposuction cost in miami” pos 3.6) but gets <strong>0 clicks</strong> — a visible “$X,XXX” anchor converts those impressions<br/>
+2. The head term <strong>“liposuction miami”</strong> sits at pos 21–25 with <strong>2,108 impr / 0 clicks</strong> — needs exact-match title/H1 + content depth to reach page 1<br/>
+3. Add technique H2s for the zero-click clusters: laser lipo (283 impr), lipo 360 (468 impr), chin/facial lipo (322 impr)<br/>
+4. Add a cost FAQ (“how much does liposuction cost”, “how much is lipo 360”) + <strong>FAQPage + PriceRange</strong> schema — competitors lack confirmed FAQPage<br/>
+5. Reinforce <strong>LocalBusiness / NAP</strong> schema for “liposuction near me” (122 impr, pos 30) and the “south miami” geo cluster (130 impr)
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Carousel -->
+<div style="margin-top:20px;">
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/liposuction-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/liposuction-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/liposuction-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) { showSlide(currentIndex += n); }
+function currentSlide(n) { showSlide(currentIndex = n); }
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
