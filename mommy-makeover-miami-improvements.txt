@@ -1,0 +1,33 @@
+-----------------------
+metas
+-----------------------
+
+@model ServicePageViewModel
+<title>Best Mommy Makeover Miami - $5675 Cost | @Settings.GetCenterName</title>
+<meta name="description" content="Mommy Makeover Miami - $5675. Our top-rated surgeons will restore your breasts, abdomen, and contours to bring back your pre-pregnancy body - Free consultation." />
+<link rel="canonical" href="https://avanaplasticsurgery.com/mommy-makeover-miami" />
+<meta property="article:published_time" content="2018-08-29T15:39:45@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Mommy Makeover Miami - $5675 All Costs Included | @Settings.GetCenterName" />
+<meta property="og:description" content="Best prices in Miami for Mommy Makeover procedure. Restore your body with the expertise of our plastic surgeons. Free consultation and financing available." />
+
+@* og:url — updated to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/mommy-makeover-miami" />
+
+@* (Added) article:tag *@
+<meta property="article:tag" content="Mommy Makeover" />
+
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+@* Updated the og:image to absolute URL and Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/mommy-makeover.jpg" />
+<meta property="og:image:alt" content="Woman with a contoured waistline showing mommy makeover body contouring results in Miami" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Mommy Makeover Miami | @Settings.GetCenterName" />
+<meta name="twitter:description" content="Best prices in Miami for Mommy Makeover procedure. Restore your body with the expertise of our plastic surgeons. Free consultation and financing available." />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/mommy-makeover.jpg" />      
