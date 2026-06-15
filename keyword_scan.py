@@ -163,6 +163,25 @@ MMO_EN = [
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
 ]
+MMO_ES = [
+    ("mommy makeover", ["mommy makeover"]),
+    ("mommy makeover en miami", ["mommy makeover en miami", "mommy makeover miami"]),
+    ("cambio de imagen para mamas", ["cambio de imagen para mamas", "cambio de imagen de mama", "cambio de imagen para mama"]),
+    ("mommy makeover precio", ["mommy makeover precio", "precio de mommy makeover", "precio del mommy makeover"]),
+    ("cuanto cuesta un mommy makeover", ["cuanto cuesta un mommy makeover", "cuanto cuesta el mommy makeover", "cuanto cuesta una mommy makeover"]),
+    ("abdominoplastia", ["abdominoplastia"]),
+    ("aumento de senos", ["aumento de senos"]),
+    ("levantamiento de senos", ["levantamiento de senos"]),
+    ("liposuccion", ["liposuccion"]),
+    ("transferencia de grasa", ["transferencia de grasa"]),
+    ("contorno corporal", ["contorno corporal"]),
+    ("diastasis", ["diastasis", "separacion abdominal", "separacion de los musculos"]),
+    ("despues del parto", ["despues del parto", "posparto", "post parto"]),
+    ("financiamiento", ["financiamiento", "financiacion"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+]
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
@@ -184,6 +203,8 @@ PAGES = {
         {"slug": "aumento-de-senos-miami", "lang": "es", "kw": BREAST_ES},
     "https://avanaplasticsurgery.com/mommy-makeover-miami":
         {"slug": "mommy-makeover-miami", "lang": "en", "kw": MMO_EN},
+    "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami":
+        {"slug": "mommy-makeover-en-miami", "lang": "es", "kw": MMO_ES},
 }
 
 
