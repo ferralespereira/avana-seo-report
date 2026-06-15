@@ -205,6 +205,26 @@ LIPOSUCTION_EN = [
     ("cosmetic surgery", ["cosmetic surgery"]),
 ]
 
+LIPOSUCCION_ES = [
+    ("liposuccion", ["liposuccion"]),
+    ("liposuccion en miami", ["liposuccion en miami", "liposuccion miami", "liposuccion en miami florida"]),
+    ("lipoescultura", ["lipoescultura", "lipo escultura"]),
+    ("liposuccion precio", ["liposuccion precio", "precio de liposuccion", "precio liposuccion"]),
+    ("cuanto cuesta una lipo", ["cuanto cuesta una lipo", "cuanto cuesta una liposuccion", "cuanto cuesta la lipo"]),
+    ("lipo 360", ["lipo 360", "liposuccion 360"]),
+    ("lipotransferencia", ["lipotransferencia", "transferencia de grasa"]),
+    ("liposuccion laser", ["liposuccion laser", "lipolaser", "lipo laser"]),
+    ("alta definicion", ["liposuccion de alta definicion", "alta definicion", "lipo hd"]),
+    ("liposuccion de brazos", ["liposuccion de brazos", "lipo de brazos"]),
+    ("abdominoplastia", ["abdominoplastia"]),
+    ("contorno corporal", ["contorno corporal"]),
+    ("lipopapada", ["lipopapada", "liposuccion de papada"]),
+    ("financiamiento", ["financiamiento", "financiacion"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+]
+
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":
@@ -229,6 +249,8 @@ PAGES = {
         {"slug": "mommy-makeover-en-miami", "lang": "es", "kw": MMO_ES},
     "https://avanaplasticsurgery.com/liposuction-miami":
         {"slug": "liposuction-miami", "lang": "en", "kw": LIPOSUCTION_EN},
+    "https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida":
+        {"slug": "liposuccion-en-miami-florida", "lang": "es", "kw": LIPOSUCCION_ES},
 }
 
 
