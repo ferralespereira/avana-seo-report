@@ -1,38 +1,69 @@
-@model ServicePageViewModel
-<title>Mommy Makeover en Miami - $5675 Mejor Precio  | @Settings.GetCenterName</title>
-<meta name="description" content="La cirugía de Mommy Makeover en Miami te permite lograr la figura que siempre has soñado. Restaura tus senos, abdomen y contorno con este procedimiento estético" />
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SEO IMPROVEMENTS REPORT
+  Mommy Makeover en Miami  (Spanish page)
+  avanaplasticsurgery.com/espanol/mommy-makeover-en-miami
+  Updated: June 16, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-@* (Added) og:site_name *@
-<meta property="og:site_name" content="@Settings.GetCenterName" />
+  SCOPE
+  This update covered the META TAGS only (the article's <meta> markup).
+  No body content, FAQs, or schema were changed in this round.
 
-@* (Added) es_US — Spanish content targeting the US market *@
-<meta property="og:locale" content="es_US" />
 
-@* (Added) en_US — signals there is an English version of this page *@
-<meta property="og:locale:alternate" content="en_US" />
+  SUMMARY
+  ├─ 4 new Open Graph / locale tags added
+  ├─ 2 URLs made absolute  (og:url, og:image)
+  └─ 3 Open Graph image attributes added  (alt, width, height)
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Mommy Makeover en Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="El paquete Mommy Makeover combina la cirugía de abdominoplastia y aumento de senos para mejorar la apariencia corporal de las mujeres después del embarazo." />
 
-@* Adjusted og:url to absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami" />
+─────────────────────────────────────────────────────────────
+  1.  META TAGS
+─────────────────────────────────────────────────────────────
 
-@* (Added) article:tag *@
-<meta property="article:tag" content="Mommy Makeover" />
+  FILE: mommy-makeover-en-miami / Es / articlemetas.cshtml
 
-<meta property="article:published_time" content="2017-05-21T11:21:59@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+  [ADDED] og:site_name
+    Sets the site name shown on social shares.
 
-@* Adjusted og:image to absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/mommy-makeover.jpg" />
+  [ADDED] og:locale = es_US
+    Flags this page as Spanish content aimed at the US market.
 
-@* Updated the og:image to absolute URL and Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
-<meta property="og:image:alt" content="Mujer con una cintura contorneada mostrando los resultados de mommy makeover en Miami" />
-<meta property="og:image:width" content="910" />    
-<meta property="og:image:height" content="960" />
+  [ADDED] og:locale:alternate = en_US
+    Tells search engines an English version of this page exists, so Google
+    can connect the Spanish and English pages as a language pair.
 
-<meta name="twitter:title" content="Mommy Makeover en Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Consigue la figura que siempre has soñado con un Mommy Makeover, con los mejores cirujanos certificados por la junta en Cirugía Estética." />
-<meta name="twitter:image" content="/themes/avana/images/services/910x960/mommy-makeover.jpg" />
-<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami" />
+  [FIXED] og:url → updated to absolute URL
+    https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami
+
+  [ADDED] article:tag = "Mommy Makeover"
+    Adds a topic tag for the article.
+
+  [FIXED] og:image → updated to absolute URL
+    .../themes/avana/images/services/910x960/mommy-makeover.jpg
+
+  [ADDED] Open Graph image attributes
+    og:image:alt    = "Mujer con una cintura contorneada mostrando los
+                       resultados de mommy makeover en Miami"
+    og:image:width  = 910
+    og:image:height = 960
+    Why: Shows a proper preview image when the page is shared on social media.
+
+
+  ── Current title & description (Spanish, for reference) ─────
+
+  Title:        "Mommy Makeover en Miami - $5675 Mejor Precio |
+                 Avana Plastic Surgery"   (leads with the price)
+  Description:  "La cirugía de Mommy Makeover en Miami te permite lograr la
+                 figura que siempre has soñado. Restaura tus senos, abdomen y
+                 contorno con este procedimiento estético."
+
+
+  ── Note  ─────────────────────────────────
+
+  The es_US / en_US locale pair is the main win here: it tells Google this is
+  the Spanish counterpart of the English Mommy Makeover page, which helps each
+  version rank for the right audience and avoids the two pages competing.
+  Making og:url and og:image absolute ensures social shares always resolve to
+  the correct page and image.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
