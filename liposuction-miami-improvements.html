@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liposuction Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .fix-item  { font-size: 1.05rem; }
+
+        /* ── Info card ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* ── Keyword table ── */
+        .kw-table-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; max-width: 900px;
+        }
+        .kw-table-wrap { overflow-x: auto; }
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        .kw-table th {
+            background: #2a2a3d; color: #8b8ba7; font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            padding: 10px 12px; text-align: left; white-space: nowrap;
+        }
+        .kw-table th.num { text-align: right; }
+        .kw-table td { padding: 9px 12px; border-bottom: 1px solid #e8eaed; color: #24292e; vertical-align: middle; }
+        .kw-table tr:last-child td { border-bottom: none; }
+        .kw-table tbody tr:hover td { background: #f8f9fa; }
+        .kw-before { text-align: right; color: #f38ba8; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-after  { text-align: right; color: #28c840; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-change { text-align: right; color: #0070c9; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+        /* ── Sections list ── */
+        .sections-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* ── Subsection group label ── */
+        .group-label {
+            font-size: 0.75rem; color: #444d56; font-weight: 700;
+            margin-bottom: 14px; border-bottom: 1px solid #e8eaed;
+            padding-bottom: 6px;
+        }
+
+        /* ── Sub-section label ── */
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+
+        /* ── Before / After blocks ── */
+        .ba-before {
+            background: #fff8f8; border-left: 3px solid #f38ba8;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-after {
+            background: #f0fdf4; border-left: 3px solid #28c840;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-note { font-size: 0.79rem; color: #6a737d; font-style: italic; }
+
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        .schema-divider { height: 1px; background: #e8eaed; }
+
+        /* ── Schema grid ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+
+        /* ── Badge ── */
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── GEO Status ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="liposuction-miami.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">← Liposuction Miami Rankings</a>
+    </div>
+    <h1>Liposuction Miami — SEO Improvements</h1>
+    <p class="subtitle">liposuction-miami &nbsp;·&nbsp; Updated 2026-06-16 &nbsp;·&nbsp; git diffstat: 486 insertions(+), 40 deletions(−)</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://avanaplasticsurgery.com/liposuction-miami" target="_blank" rel="noopener">https://avanaplasticsurgery.com/liposuction-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://avanaplasticsurgery.com/liposuction-miami', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Primary Keyword</span>
+            <span class="page-info-keyword">liposuction miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('liposuction miami', this)">copy</button>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         1. META TAGS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Meta Tags</div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">liposuction-miami / En / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+
+<span class="c-tag">&lt;title&gt;</span>Liposuction Miami - $3000 Lipo cost | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"page-topic"</span> <span class="c-attr">content</span>=<span class="c-val">"Liposuction Miami, Liposuction, lipo, lipo miami, Liposuction surgery, Liposuction procedure, best liposuction miami, liposuction cost"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"page-type"</span> <span class="c-attr">content</span>=<span class="c-val">"Liposuction cosmetic surgery in Miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span>
+     <span class="c-attr">content</span>=<span class="c-val">"Liposuction Miami from $3000. We remove the excess of fat and sculpt your body. Safe and proven aesthetic results. Choose our facility for your dream body."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/liposuction-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2018-08-23T15:39:45<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span>       <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span>        <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span>       <span class="c-attr">content</span>=<span class="c-val">"Liposuction Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span>  <span class="c-attr">content</span>=<span class="c-val">"Liposuction Miami. We remove the excess of fat and sculpt your body from $3000. Safe and proven aesthetic results. Choose our state-of-the-art facility for your dream body."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* og:url — updated to absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/liposuction-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* og:image — updated to absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span>
+     <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/liposuction.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span>    <span class="c-attr">content</span>=<span class="c-val">"Woman with toned, sculpted figure wearing an Avana Plastic Surgery swimsuit, showcasing liposuction body contouring results in Miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span>  <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span>        <span class="c-attr">content</span>=<span class="c-val">"summary"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span>       <span class="c-attr">content</span>=<span class="c-val">"Liposuction Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span>  <span class="c-attr">content</span>=<span class="c-val">"Liposuction Miami. We remove the excess of fat and sculpt your body from $3000. Safe and proven aesthetic results. Choose our state-of-the-art facility for your dream body."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span>
+     <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/liposuction.jpg"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. KEYWORD TARGETS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keywords On The Page — Before → After</div>
+
+        <div class="kw-table-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Literal visible-text occurrences &nbsp;·&nbsp; sorted by After, high → low</span>
+            </div>
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th class="num">Before</th>
+                            <th class="num">After</th>
+                            <th class="num">Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>liposuction miami</td><td class="kw-before">7</td><td class="kw-after">8</td><td class="kw-change">+1</td></tr>
+                        <tr><td>liposuction near me</td><td class="kw-before">0</td><td class="kw-after">5</td><td class="kw-change">+5</td></tr>
+                        <tr><td>lipo cost</td><td class="kw-before">1</td><td class="kw-after">5</td><td class="kw-change">+4</td></tr>
+                        <tr><td>liposuction surgery in miami</td><td class="kw-before">1</td><td class="kw-after">4</td><td class="kw-change">+3</td></tr>
+                        <tr><td>liposuction cost in miami</td><td class="kw-before">0</td><td class="kw-after">3</td><td class="kw-change">+3</td></tr>
+                        <tr><td>how much is lipo</td><td class="kw-before">0</td><td class="kw-after">3</td><td class="kw-change">+3</td></tr>
+                        <tr><td>how much is liposuction in miami</td><td class="kw-before">0</td><td class="kw-after">3</td><td class="kw-change">+3</td></tr>
+                        <tr><td>how much does liposuction cost</td><td class="kw-before">1</td><td class="kw-after">2</td><td class="kw-change">+1</td></tr>
+                        <tr><td>liposuction miami fl</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>liposuction south miami</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>lipo cost miami</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>liposculpture miami</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. CONTENT CHANGES
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Changes</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Content &nbsp;·&nbsp; New Sections, Rewrites, FAQs &amp; Source Fixes</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:26px;">
+
+                <!-- A: New content -->
+                <div>
+                    <div class="group-label">A — Content Added (New)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; Cost Section — "How Much Is Liposuction in Miami?" <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>id <code style="font-size:0.78rem">#liposuction-cost-miami</code></li>
+                                <li>Price answer up top: <strong>$3,000 start</strong>; <strong>$1,600–$10,300</strong> range; <strong>~$6,100</strong> avg</li>
+                                <li>Closing paragraph on what the price covers</li>
+                                <li>In-content link to <code style="font-size:0.78rem">#contact-form-section</code></li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">Puts an AI-citable, above-the-fold price answer on the highest-intent cost queries</li>
+                            </ul>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Local Section — "Liposuction in Miami, FL — Looking for 'Liposuction Near Me'?" <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>Miami-Dade neighborhoods: Downtown Miami, South Miami, Coral Gables, Doral, Hialeah, Miami Beach</li>
+                                <li>Multi-location note: Miami / W Flagler St, West Miami, Hialeah Gardens</li>
+                                <li>Central phone (305) 501-6000 + link to <code style="font-size:0.78rem">/locations</code></li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">No single street address asserted in the body (multiple locations); the sitewide footer carries the "Main Location"</li>
+                            </ul>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; National Section — "A Nationwide Destination for Liposuction &amp; Liposculpture" <span class="new-badge">NEW</span></div>
+                            <div class="cannibal-block" style="border-color:#89b4fa;background:#f0f4ff;">
+                                Out-of-state / international positioning (NY, TX, CA, GA, NJ…) plus travel, lodging, and virtual-consultation coordination.
+                                <span class="reason">Targets medical-tourism queries and reinforces Avana as a national destination practice.</span>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">4 &middot; Lipo 360 Internal Link — Traditional vs HD Liposuction section <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">"If you want to contour the entire midsection in a single procedure, <strong>Lipo 360</strong> targets the abdomen, flanks, and back for 360-degree results." &nbsp;(anchor "Lipo 360" → <code style="font-size:0.78rem">/lipo-360-miami</code>, no cost keywords)</div>
+                            <div class="ba-note">Supports the dedicated Lipo 360 page without cannibalizing its cost terms.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">5 &middot; Surgeons Grid Section <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>5 board-certified surgeons: Mameniskis, Pane, Schusterman, McDaniel, Luster</li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">Adds E-E-A-T signals and feeds the Person @graph schema</li>
+                            </ul>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">6 &middot; Table of Contents (top of article) <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>2-column row: intro paragraph (left) + ToC <code style="font-size:0.78rem">&lt;ul&gt;</code> (right)</li>
+                                <li>Links all 19 section headings via #anchors</li>
+                                <li>Matching id anchors added to each H2 (e.g. <code style="font-size:0.78rem">#what-is-liposuction</code>, <code style="font-size:0.78rem">#liposuction-techniques</code>, <code style="font-size:0.78rem">#liposuction-risks</code>, <code style="font-size:0.78rem">#liposuction-faqs</code>)</li>
+                                <li>Reused existing ids: <code style="font-size:0.78rem">#top-rated-surgeons</code>, <code style="font-size:0.78rem">#contact-form-section</code>, <code style="font-size:0.78rem">#liposuction-cost-miami</code></li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">Matches the /lipo-360-miami pattern; every ToC link verified to resolve</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- B: Changed content -->
+                <div>
+                    <div class="group-label">B — Content Changed (Before / After)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; Cost Banner → Financing CTA</div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before"><strong>"How much Liposuction Miami Cost?"</strong> — "Liposuction costs may vary from $1,600 to $10,300, with an average cost of $6,100. The total price will depend on the type of Liposuction you choose, the technology employed…"</div>
+                                <div class="ba-after"><strong>"Make Your Liposuction in Miami Affordable"</strong> — "Don't let cost stand between you and the body you want. Avana Plastic Surgery offers flexible financing and payment plans that fit your budget… Schedule a free consultation and our team will build a personalized quote and a plan that works for you."</div>
+                                <div class="ba-note">Repurposed so it no longer duplicates the new cost section above it; the hard numbers now live once, in the dedicated cost section.</div>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Mayo Clinic Citation — Linked &amp; Brand Fixed</div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before">"According to the <span style="text-decoration:line-through;color:#f38ba8;">MayoClinic</span>, 'the risk of complications increases …'" — no link</div>
+                                <div class="ba-after">"According to the <a href="https://www.mayoclinic.org/tests-procedures/liposuction/about/pac-20384586" target="_blank" rel="noopener nofollow">Mayo Clinic</a>, 'the risk of complications increases …'" — external source link + corrected brand name</div>
+                                <div class="ba-note">Claim now points to the supporting source; E-E-A-T reinforced.</div>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; Typo &amp; Grammar Fixes (pre-existing prose)</div>
+                            <ul class="schema-advantages">
+                                <li>"determinate" → "determine" (candidate list)</li>
+                                <li>"areas where fay is going to be removed" → "fat" (Tumescent technique)</li>
+                                <li>"this procedure procedures better results" → "produces" (Ultrasound technique)</li>
+                                <li>"First,in the Laser Liposuction" → "First, in" (missing space)</li>
+                                <li>surgeon button "Shane Mcdaniel" → "Shane McDaniel"</li>
+                                <li>"The amount of fat removed can be removed as outpatient liposuction is 5 liters or 5000cc." → "The amount of fat that can be removed as outpatient liposuction is 5 liters or 5,000cc." (FAQ)</li>
+                                <li>"Apart, the surgeon will take photographs" → "Additionally,"</li>
+                                <li>"smoking delays the healing process increases the chances" → "…process and increases…"</li>
+                                <li>"After surgery, like Liposuction or Lipo is an outpatient procedure, you can go home…" → "Because liposuction is an outpatient procedure, you can go home… to monitor your progress."</li>
+                                <li>"…making you see in a way that was not what you want." → "…making you see yourself in a way you don't want."</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- C: FAQs -->
+                <div>
+                    <div class="group-label">C — FAQs</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; FAQ Added <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">panel-16: <strong>"Is there liposuction near me in South Miami?"</strong> (added before the hidden placeholder panel-20)</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Cost FAQ Upgraded — geo + specific Miami price (panel-11)</div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before"><strong>Q:</strong> "How much does Liposuction cost?"<br><strong>A:</strong> "It depends on the areas to be treated, the surgeon, and the clinic. We recommend that you read out our detailed article on liposuction pricing."</div>
+                                <div class="ba-after"><strong>Q:</strong> "How much does liposuction cost in Miami?"<br><strong>A:</strong> "Liposuction in Miami starts at $3,000 for a single area. A full liposuction cost in Miami generally ranges from $1,600 to $10,300, with an average of about $6,100. Your final lipo cost in Miami depends on the number of areas treated, the technique used, and fees such as anesthesia, the surgical facility, and compression garments. You can request an exact quote during a free consultation."</div>
+                                <div class="ba-note">Consolidated a duplicate "How much is liposuction in Miami?" FAQ — the page now has one cost FAQ, not two.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. SCHEMAS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Six Google Markup Schemas Added <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— page had NO JSON-LD before; all net-new</span></div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1: FAQPage -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">FAQPage</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 4 Q&amp;A Pairs</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">Q1</span>How much does liposuction cost in Miami?</div>
+                            <div class="faq-q-item"><span class="q-num">Q2</span>Is there liposuction near me / in South Miami?</div>
+                            <div class="faq-q-item"><span class="q-num">Q3</span>How long does the surgery take?</div>
+                            <div class="faq-q-item"><span class="q-num">Q4</span>How much fat can be removed?</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables FAQ rich results; Q1 cost answer is AI-citable</li>
+                            <li>Matches the page's accordion content — no schema/content mismatch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2: SurgicalProcedure -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">SurgicalProcedure</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Liposuction (Miami)</span></div>
+                            <div class="schema-field"><span class="sf-key">bodyLocation</span><span class="sf-val">Abdomen, flanks, back, arms, thighs, neck/chin</span></div>
+                            <div class="schema-field"><span class="sf-key">howPerformed</span><span class="sf-val">Techniques: tumescent, laser-assisted (LAL), ultrasound</span></div>
+                            <div class="schema-field"><span class="sf-key">preparation</span><span class="sf-val">Pre-op requirements</span></div>
+                            <div class="schema-field"><span class="sf-key">followup</span><span class="sf-val">Recovery / garments</span></div>
+                            <div class="schema-field"><span class="sf-key">risks</span><span class="sf-val">From the risks section</span></div>
+                            <div class="schema-field"><span class="sf-key">performer</span><span class="sf-val">Avana Plastic Surgery</span></div>
+                            <div class="schema-field"><span class="sf-key">offers.price</span><span class="sf-val">$3,000 USD (starting)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks the page as authoritative medical content</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">Offer</code> makes the $3,000 price machine-readable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3: MedicalClinic + LocalBusiness -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">MedicalClinic + LocalBusiness</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">NAP</span><span class="sf-val">Name / address / phone (305) 501-6000</span></div>
+                            <div class="schema-field"><span class="sf-key">geo</span><span class="sf-val">lat 25.7685486 / lng -80.337497</span></div>
+                            <div class="schema-field"><span class="sf-key">sameAs</span><span class="sf-val">Social profiles</span></div>
+                            <div class="schema-field"><span class="sf-key">areaServed</span><span class="sf-val">Miami-Dade + nationwide</span></div>
+                            <div class="schema-field"><span class="sf-key">hours</span><span class="sf-val">openingHours</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Boosts local pack + "near me" eligibility for the new local section</li>
+                            <li>Geo coordinates feed Google Maps visibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4: BreadcrumbList -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Items</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Home</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Body</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Liposuction Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables breadcrumb trail in search snippets, improving CTR</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5: WebPage + Speakable -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 5</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">.milenia-entity-title, .milenia-panels-definition</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks sections for voice search / AI assistant responses</li>
+                            <li>Increases generative-AI citation eligibility (GEO)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 6: Person @graph — 5 Surgeons -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 6</div>
+                    <div class="schema-card-title">Person @graph — 5 Surgeons</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">5 Surgeon Entities</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">Mameniskis</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">Pane</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">Schusterman</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">McDaniel</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">Luster</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Directly boosts E-E-A-T — Google's top signal for YMYL pages</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">worksFor</code> links each surgeon to the clinic entity (Schema 3)</li>
+                            <li>Mirrors the /breast-augmentation-miami schema set</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. GEO STATUS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">GEO (Generative Engine Optimization) Status</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">AI-Citation Readiness &nbsp;·&nbsp; liposuction-miami</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> FAQPage schema (4 Q&amp;As incl. cost in Miami)</li>
+                            <li><em class="geo-icon">✓</em> SurgicalProcedure schema + Offer ($3,000)</li>
+                            <li><em class="geo-icon">✓</em> MedicalClinic / LocalBusiness schema + geo + sameAs</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList schema</li>
+                            <li><em class="geo-icon">✓</em> WebPage + Speakable schema</li>
+                            <li><em class="geo-icon">✓</em> Person schema — 5 surgeons (E-E-A-T)</li>
+                            <li><em class="geo-icon">✓</em> Dedicated cost section ($3,000 start; $1,600–$10,300; ~$6,100 avg)</li>
+                            <li><em class="geo-icon">✓</em> Cost FAQ rewritten with a specific Miami price</li>
+                            <li><em class="geo-icon">✓</em> "Liposuction near me" local section + Miami-Dade neighborhoods</li>
+                            <li><em class="geo-icon">✓</em> Nationwide-destination section (out-of-state targeting)</li>
+                            <li><em class="geo-icon">✓</em> Table of Contents + 19 H2 anchors</li>
+                            <li><em class="geo-icon">✓</em> Mayo Clinic citation linked to the supporting source</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
