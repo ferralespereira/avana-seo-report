@@ -1,33 +1,59 @@
------------------------
-metas
------------------------
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SEO IMPROVEMENTS REPORT
+  Mommy Makeover Miami
+  avanaplasticsurgery.com/mommy-makeover-miami
+  Updated: June 16, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-@model ServicePageViewModel
-<title>Best Mommy Makeover Miami - $5675 Cost | @Settings.GetCenterName</title>
-<meta name="description" content="Mommy Makeover Miami - $5675. Our top-rated surgeons will restore your breasts, abdomen, and contours to bring back your pre-pregnancy body - Free consultation." />
-<link rel="canonical" href="https://avanaplasticsurgery.com/mommy-makeover-miami" />
-<meta property="article:published_time" content="2018-08-29T15:39:45@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Mommy Makeover Miami - $5675 All Costs Included | @Settings.GetCenterName" />
-<meta property="og:description" content="Best prices in Miami for Mommy Makeover procedure. Restore your body with the expertise of our plastic surgeons. Free consultation and financing available." />
+  SCOPE
+  This update covered the META TAGS only (the article's <meta> markup).
+  No body content, FAQs, or schema were changed in this round.
 
-@* og:url — updated to absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/mommy-makeover-miami" />
 
-@* (Added) article:tag *@
-<meta property="article:tag" content="Mommy Makeover" />
+  SUMMARY
+  ├─ 1 new tag added  (article:tag)
+  ├─ 2 URLs made absolute  (og:url, og:image)
+  └─ 3 Open Graph image attributes added  (alt, width, height)
 
-<meta property="og:site_name" content="@Settings.GetCenterName" />
 
-@* Updated the og:image to absolute URL and Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/mommy-makeover.jpg" />
-<meta property="og:image:alt" content="Woman with a contoured waistline showing mommy makeover body contouring results in Miami" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
+─────────────────────────────────────────────────────────────
+  1.  META TAGS
+─────────────────────────────────────────────────────────────
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Mommy Makeover Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Best prices in Miami for Mommy Makeover procedure. Restore your body with the expertise of our plastic surgeons. Free consultation and financing available." />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/mommy-makeover.jpg" />      
+  FILE: mommy-makeover-miami / En / articlemetas.cshtml
+
+  [FIXED] og:url → updated to absolute URL
+    https://avanaplasticsurgery.com/mommy-makeover-miami
+
+  [ADDED] article:tag = "Mommy Makeover"
+    Adds a topic tag for the article.
+
+  [FIXED] og:image → updated to absolute URL
+    .../themes/avana/images/services/910x960/mommy-makeover.jpg
+
+  [ADDED] Open Graph image attributes
+    og:image:alt    = "Woman with a contoured waistline showing mommy
+                       makeover body contouring results in Miami"
+    og:image:width  = 910
+    og:image:height = 960
+    Why: Shows a proper preview image when the page is shared on social media.
+
+
+  ── Current title & description (for reference) ──────────────
+
+  Title:        "Best Mommy Makeover Miami - $5675 Cost |
+                 Avana Plastic Surgery"   (leads with the price)
+  Description:  "Mommy Makeover Miami - $5675. Our top-rated surgeons will
+                 restore your breasts, abdomen, and contours to bring back
+                 your pre-pregnancy body - Free consultation."
+  OG title:     "Mommy Makeover Miami - $5675 All Costs Included | ..."
+
+
+  ── Note  ────────────────────────────────────────────────────
+
+  The title, description, and social title already lead with the $5,675
+  all-inclusive price, which targets cost-intent searches. This round added
+  the social-share image attributes (alt/width/height) and made og:url and
+  og:image absolute, so shares always resolve to the correct page and image.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
