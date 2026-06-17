@@ -1,0 +1,33 @@
+@model ServicePageViewModel
+<title>Revisión de BBL en Miami - @Model.GetPrice | @Settings.GetCenterName</title>
+<meta name="description" content="Una revisión de BBL, abreviatura de revisión de Brazilian Butt Lift, es un procedimiento quirúrgico diseñado para mejorar o corregir los resultados de un BBL previo." />
+<meta property="og:locale" content="es_US" />
+
+@* Added — en_US: signals there is an English version of this page *@
+<meta property="og:locale:alternate" content="en_US" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Revisión de BBL en Miami - @Model.GetPrice | @Settings.GetCenterName" />
+<meta property="og:description" content="Una revisión de BBL, abreviatura de revisión de Brazilian Butt Lift, es un procedimiento quirúrgico diseñado para mejorar o corregir los resultados de un BBL previo" />
+
+@* Adjusted og:url to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/revision-de-bbl-en-miami" />
+
+@* Added — article:tag *@
+<meta property="article:tag" content="Revisión de BBL" />
+
+<meta property="article:published_time" content="2023-10-26T15:49:11@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+@* Adjusted og:image to absolute URL *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/bbl-revision.jpg" />
+@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image:alt" content="Modelo de revisión de BBL en Avana Plastic Surgery" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+<meta name="twitter:title" content="Revisión de BBL en Miami - @Model.GetPrice | @Settings.GetCenterName" />
+<meta name="twitter:description" content="Una revisión de BBL, abreviatura de revisión de Brazilian Butt Lift, es un procedimiento quirúrgico diseñado para mejorar o corregir los resultados de un BBL previo" />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/bbl-revision.jpg" />
+<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/revision-de-bbl-en-miami" />  
