@@ -678,7 +678,10 @@
   <div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);overflow:hidden;">
     <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;cursor:pointer;" onclick="toggleOverviewChart(this)">
       <div>
-        <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking — All Tracked Keywords</div>
+        <div style="font-size:16px;font-weight:700;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <span>&#128200; Position Tracking — All Tracked Keywords</span>
+          <span id="overviewTop10Summary" style="font-size:12px;font-weight:600;"></span>
+        </div>
         <div style="font-size:12px;color:#aac;margin-top:2px;">avanaplasticsurgery.com &nbsp;&middot;&nbsp; Daily SERP ranking positions for all tracked pages</div>
       </div>
       <div style="display:flex;align-items:center;gap:16px;">
@@ -794,7 +797,23 @@
     });
 
     // Status label
-    statusEl.textContent = 'Last check: ' + formatDate(allDates[allDates.length - 1]);
+    const latestDate = allDates[allDates.length - 1];
+    statusEl.textContent = 'Last check: ' + formatDate(latestDate);
+
+    // Top-10 summary for the latest check (next to the title)
+    const summaryEl = document.getElementById('overviewTop10Summary');
+    if (summaryEl) {
+      let inTop10 = 0, outTop10 = 0;
+      datasets.forEach(ds => {
+        const pos = ds.rawSeries[ds.rawSeries.length - 1];
+        if (pos !== null && pos !== undefined && pos <= 10) inTop10++;
+        else outTop10++;
+      });
+      summaryEl.innerHTML =
+        `<span style="background:#1c7c54;color:#fff;padding:2px 8px;border-radius:10px;white-space:nowrap;">${inTop10} in top 10</span>`
+        + `&nbsp;&nbsp;`
+        + `<span style="background:#a33;color:#fff;padding:2px 8px;border-radius:10px;white-space:nowrap;">${outTop10} not in top 10</span>`;
+    }
 
     // Custom legend
     datasets.forEach(ds => {
@@ -1078,7 +1097,7 @@
           <tr style="background:#fef9c3; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="liposuction-miami.html"><span class="seed">liposuction miami</span></a> <a class="done-btn" href="liposuction-miami-improvements.html">Done June 16, 2026</a></td>
             <td>10 / 7</td>
-            <td class="note-cell" contenteditable="true"></td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code></td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/liposuction-miami" target="_blank">/liposuction-miami</a></td>
             <td>25,640</td>
             <td>141</td>
@@ -1088,7 +1107,7 @@
           <tr style="border-bottom: 2px solid #333; border-left: 2px solid #333; border-right: 2px solid #333;">
             <td><a class="query-link" href="liposuccion-en-miami-florida.html"><span class="seed">liposucción en miami</span></a></td>
             <td>0 / 0</td>
-            <td class="note-cell" contenteditable="true"></td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><br><strong style="color: red;">Canabalization</strong><strong style="color: black;">First Position:</strong> /espanol/lipo-360-en-miami</td>
             <td><a class="kw-url-link" href="https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida" target="_blank">/espanol/liposuccion-en-miami-florida</a></td>
             <td>10,178</td>
             <td>45</td>
