@@ -33,11 +33,13 @@ Find the row matching the exact keyword. Extract:
 - **CTR** (KPI card)
 - **Position** (KPI card)
 
-### From the URL folder — read `Devices.csv`
-Extract all three rows:
+### From the KEYWORD folder — read `Devices.csv`
+The device breakdown is **keyword-filtered** (it sits under the keyword KPI cards and is labeled with the keyword). Extract whatever device rows are present:
 - Mobile: Clicks / Impressions / CTR / Position
 - Desktop: Clicks / Impressions / CTR / Position
 - Tablet: Clicks / Impressions / CTR / Position
+
+**The keyword `Devices.csv` may have fewer than three rows, or only a header row.** Only render the device rows that actually exist in the CSV — do NOT pad with URL-filtered numbers or invent rows. If the file is header-only (the exact keyword had 0 impressions in the period), render an empty-state instead (see 2d).
 
 ### From the URL folder — read `Queries.csv`
 - Row 1 (Pages.csv or Queries.csv totals): total Clicks / Impressions / CTR for the all-queries header
@@ -67,7 +69,13 @@ Find: `GSC — Device Breakdown for "..."`
 Update the quoted string to the **full keyword** (not the URL).
 
 ### 2d. Device Breakdown Table Rows
-Update the three rows (Mobile, Desktop, Tablet) with URL-filtered Devices.csv values.
+Update the rows with **keyword-filtered** `Devices.csv` values (from the KEYWORD folder), and label the section `(keyword-filtered)`.
+- Render only the device rows that exist in the keyword `Devices.csv`. If the CSV has just Mobile + Desktop (no Tablet), render only those two — drop the Tablet row. Never pad with URL-filtered values.
+- **If the keyword `Devices.csv` is header-only (no device rows)**, replace the table body with a single empty-state row instead:
+  ```html
+  <tr><td colspan="5" style="padding:18px 14px;text-align:center;color:#999;font-style:italic;">No device data &mdash; the keyword "[full keyword]" had 0 impressions in GSC for this period, so the keyword-filtered device export is empty.</td></tr>
+  ```
+  In that case, surface the URL-level reach (impressions / avg position from `Pages.csv`) in the all-queries section below — not in this table.
 
 ### 2e. All-Queries Collapsible Section Header
 Find the blue collapsible `<details>` block. Update:
@@ -261,7 +269,8 @@ python3 -c "import ast; ast.parse(open('keyword_scan.py',encoding='utf-8').read(
 ## Notes
 
 - **Always use keyword-filtered data for KPI cards** — not URL-filtered
-- **Always use URL-filtered data for device breakdown and all-queries** — not keyword-filtered
+- **Device breakdown uses KEYWORD-filtered data** (from the keyword folder's `Devices.csv`), labeled `(keyword-filtered)`. Render only the rows present; if header-only, use the empty-state (see 2d). Never substitute URL-filtered device numbers.
+- **Always use URL-filtered data for the all-queries section** — not keyword-filtered
 - **Device breakdown label uses the keyword string** — not the URL
 - **For large HTML replacements** (competitor table tbody > 200 lines), use Python string replacement via Bash instead of the Edit tool
 - **Image files** `img/[keyword-slug]_*.png` may or may not exist — update the src regardless; note to user if images need to be uploaded

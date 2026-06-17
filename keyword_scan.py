@@ -134,6 +134,27 @@ BBL_REVISION_EN = [
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
 ]
+BBL_REVISION_ES = [
+    ("revision de bbl", ["revision de bbl", "revision bbl"]),
+    ("revision de bbl en miami", ["revision de bbl en miami", "revision bbl miami"]),
+    ("revision de levantamiento de gluteos", ["revision de levantamiento de gluteos", "revision de aumento de gluteos"]),
+    ("segunda ronda de bbl", ["segunda ronda de bbl", "segundo bbl", "segunda cirugia de bbl"]),
+    ("bbl en español", ["bbl en espanol", "que es bbl en espanol"]),
+    ("que significa bbl", ["que significa bbl", "que es bbl"]),
+    ("levantamiento de gluteos brasileno", ["levantamiento de gluteos brasileno", "aumento de gluteos brasileno"]),
+    ("aumento de gluteos", ["aumento de gluteos"]),
+    ("bbl", ["bbl"]),
+    ("precio de bbl", ["precio de bbl", "bbl precio", "cuanto cuesta un bbl", "costo de bbl"]),
+    ("transferencia de grasa", ["transferencia de grasa"]),
+    ("injerto de grasa", ["injerto de grasa", "injerto graso"]),
+    ("implantes de gluteos", ["implantes de gluteos", "implante de gluteos"]),
+    ("liposuccion", ["liposuccion"]),
+    ("prenda de compresion", ["prenda de compresion", "faja"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+]
 LIPO_EN = [
     ("lipo 360", ["lipo 360"]),
     ("lipo 360 miami", ["lipo 360 miami"]),
@@ -253,6 +274,8 @@ PAGES = {
         {"slug": "brazilian-butt-lift-miami", "lang": "en", "kw": BBL_EN},
     "https://avanaplasticsurgery.com/bbl-revision-miami":
         {"slug": "bbl-revision-miami", "lang": "en", "kw": BBL_REVISION_EN},
+    "https://avanaplasticsurgery.com/espanol/revision-de-bbl-en-miami":
+        {"slug": "revision-de-bbl-en-miami", "lang": "es", "kw": BBL_REVISION_ES},
     "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami":
         {"slug": "levantamiento-de-gluteos-en-miami", "lang": "es", "kw": BBL_ES},
     "https://avanaplasticsurgery.com/lipo-360-miami":
