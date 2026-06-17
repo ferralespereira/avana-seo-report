@@ -58,6 +58,26 @@ BREAST_EN = [
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
 ]
+BIR_EN = [
+    ("breast implant revision", ["breast implant revision", "implant revision"]),
+    ("breast implant revision miami", ["breast implant revision miami", "miami breast implant revision"]),
+    ("breast revision miami", ["breast revision miami", "breast revision in miami", "miami breast revision"]),
+    ("breast revision surgery miami", ["breast revision surgery miami", "revisional breast surgery miami", "revision breast surgery miami"]),
+    ("breast augmentation revision miami", ["breast augmentation revision miami", "revision breast augmentation miami"]),
+    ("breast revision surgeon miami", ["breast revision surgeon miami", "best breast revision miami"]),
+    ("capsular contracture miami", ["capsular contracture miami", "capsular contracture treatment miami"]),
+    ("breast implant removal miami", ["breast implant removal miami", "implant removal miami", "breast implant exchange/removal miami"]),
+    ("breast implant exchange miami", ["breast implant exchange miami", "implant exchange miami", "miami implant exchange"]),
+    ("breast implant replacement miami", ["breast implant replacement miami", "breast implant replacement south miami"]),
+    ("en bloc capsulectomy miami", ["en bloc capsulectomy miami", "en bloc capsulectomy"]),
+    ("explant surgery miami", ["explant surgery miami", "explant miami"]),
+    ("breast augmentation", ["breast augmentation"]),
+    ("breast lift", ["breast lift"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+]
 BREAST_ES = [
     ("aumento de senos", ["aumento de senos"]),
     ("aumento de senos en miami", ["aumento de senos en miami", "aumento de senos miami"]),
@@ -286,6 +306,8 @@ PAGES = {
         {"slug": "breast-implants-miami", "lang": "en", "kw": BREAST_EN},
     "https://avanaplasticsurgery.com/breast-augmentation-miami":
         {"slug": "breast-augmentation-miami", "lang": "en", "kw": BREAST_EN},
+    "https://avanaplasticsurgery.com/breast-implant-revision-miami":
+        {"slug": "breast-implant-revision-miami", "lang": "en", "kw": BIR_EN},
     "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami":
         {"slug": "implantes-de-senos-en-miami", "lang": "es", "kw": BREAST_ES},
     "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami":

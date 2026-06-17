@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana — Breast Implant Revision Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+  <a href="breast-implant-revision-miami-improvements.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">SEO Improvements ›</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; breast implant revision miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/breast-implant-revision-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/breast-implant-revision-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="breast-implant-revision-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/breast-implant-revision-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    breast implant revision miami
+    <button onclick="navigator.clipboard.writeText('breast implant revision miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://avanaplasticsurgery.com/breast-implant-revision-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/breast-implant-revision-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/breast-implant-revision-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Keyword: "breast implant revision miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">571</div>
+    <div class="kpi-source">Keyword: "breast implant revision miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0%</div>
+    <div class="kpi-source">Keyword: "breast implant revision miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">24.84</div>
+    <div class="kpi-source">Keyword: "breast implant revision miami" — primary query</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for keyword "breast implant revision miami" (keyword-filtered)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Mobile</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">210</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">23.32</td>
+      </tr>
+      <tr style="background:#f8fbff;">
+        <td style="padding:9px 14px;">🖥️ Desktop</td>
+        <td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;text-align:right;color:#7c3aed;">365</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;text-align:right;color:#d97706;">25.78</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="bir-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('bir-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/breast-implant-revision-miami</span> — Last 3 months</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('bir-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+  </div>
+  <div id="bir-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">4</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">3,566</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">0.11%</div>
+      </div>
+    </div>
+    <!-- Zero-click queries table -->
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Zero-Click Queries with 100+ Impressions</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Query</th>
+            <th style="padding:7px 10px;text-align:right;">Impressions</th>
+            <th style="padding:7px 10px;text-align:right;">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast implant revision miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">560</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">23.78</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast revision miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">550</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">37.18</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">capsular contracture miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">201</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">34.77</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast revision surgery miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">135</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">30.5</td></tr>
+          <tr><td style="padding:6px 10px;">breast augmentation revision miami</td><td style="padding:6px 10px;text-align:right;">115</td><td style="padding:6px 10px;text-align:right;">27.76</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Showing all 5 zero-click queries with 100+ impressions · Source: GSC URL-filtered export 2026-06-17</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Competitor Analysis — Page-Level SEO Comparison</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Avana ✅ | Dr. Lampert ✅ | Dr. Roudner ✅ | Dr. Krau ✅ confirmed from page source</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Avana 🔴 OUR PAGE<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://avanaplasticsurgery.com/breast-implant-revision-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/breast-implant-revision-miami</a>
+              <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/breast-implant-revision-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Dr. Lampert ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.lampertmd.com/breast/breast-revision/" style="color:#fff;text-decoration:none;" target="_blank">lampertmd.com/breast/breast-revision/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.lampertmd.com/breast/breast-revision/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Dr. Roudner ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.talroudnerplasticsurgery.com/breast-surgery/implant-revision/" style="color:#fff;text-decoration:none;" target="_blank">talroudnerplasticsurgery.com/breast-surgery/implant-revision/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.talroudnerplasticsurgery.com/breast-surgery/implant-revision/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Dr. Krau ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.arykraumd.com/breast-surgery/breast-revision-miami/" style="color:#fff;text-decoration:none;" target="_blank">arykraumd.com/breast-surgery/breast-revision-miami/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.arykraumd.com/breast-surgery/breast-revision-miami/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- Title tag -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Breast Implant Revision Miami - Implants Removal | Avana Plastic Surgery"
+            <div style="margin-top:4px;font-size:11px;">
+              <span style="color:#059669;">✅ "Breast Implant Revision Miami" exact match<br/>✅ "Implants Removal" captures explant intent</span><br/>
+              <span style="color:#c0392b;">❌ No price/cost signal<br/>❌ No year or trust hook</span>
+            </div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Breast Implant Revision in Miami | Dr. Joshua Lampert"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ Exact keyword match<br/>✅ Surgeon name = trust signal</span><br/><span style="color:#e67e22;">⚠️ No price/cost keyword</span></div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Breast Implant Revision in Miami by Dr. Tal T Roudner MD"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ Exact keyword match<br/>✅ Surgeon + MD credential</span><br/><span style="color:#e67e22;">⚠️ No price/cost keyword</span></div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Breast Revision Miami FL - Breast Implant Revision Surgeon"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ Two keyword variants in one title<br/>✅ "Surgeon" + geo "FL"</span><br/><span style="color:#e67e22;">⚠️ No price/cost keyword</span></div>
+          </td>
+        </tr>
+
+        <!-- H1 -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Breast Implant Revision Miami"
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Exact match but short — no value, surgeon, or cost signal</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Breast Implant Revision in Miami"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Exact match keyword</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Breast Revision Surgery in Miami"
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Uses "revision surgery" variant, not exact "implant revision"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Breast Revision in Miami, FL"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Geo signal "FL" in H1</div>
+          </td>
+        </tr>
+
+        <!-- Primary keyword -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">breast implant revision miami</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">breast implant revision miami</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">breast implant revision surgery miami</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">breast revision surgery miami</td>
+        </tr>
+
+        <!-- Secondary keywords -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords (H2s)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            Implant rupture/leakage · Capsular contracture · Change in shape/size · Implant material concerns · Go bigger/smaller · Rippling · Capsulectomy · Revision + lift · Recovery · Cost in Miami
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            What is revision · Dr. Lampert's approach · Before &amp; After · Breast implant issues · Lifespan of implants · Do you need revision · Consultation process
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            Benefits · Candidates · Consultation · Procedure · Recovery · Results · FAQs
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            Candidate · Consultation · Procedural details · ADM for contracture/symmastia · Recovery · Risks · Cost &amp; financing · Implant types · Implant material innovations · FAQ
+          </td>
+        </tr>
+
+        <!-- Word count -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            ~2,060 words
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Mid-length — competitive depth</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            ~1,300 words
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Shortest — wins on authority, not depth</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            ~2,400 words
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Strong depth + FAQ block</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            ~2,800 words
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Longest — implant-type education + ADM detail</div>
+          </td>
+        </tr>
+
+        <!-- Cost signal -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Price buried in body, not in title/meta</div>
+            <div>• "$4,000 to $8,000" range in cost section ✅<br/>• Financing + insurance sections present ✅<br/>• No price in title, H1, or meta description ❌</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Explicit starting price (premium)</div>
+            <div>• "Starting at $18,000" incl. facility fees<br/>• Dedicated price H2 — clear anchor</div>
+            <div style="color:#e67e22;margin-top:4px;">⚠️ Far higher price than Avana's range</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No price listed</div>
+            <div>• Refers to payment plans / financing only<br/>• No dollar amount anywhere</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ "Varies by patient" + financing</div>
+            <div>• Dedicated "Cost &amp; Financing" H2 ✅<br/>• No specific dollar figure<br/>• Frames pricing around factors + financing</div>
+          </td>
+        </tr>
+
+        <!-- Meta description -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;margin-bottom:4px;">⚠️ Generic — no price or CTA</div>
+            "Breast Implant Revision Miami. Whether you need to change your implants or remove them, avana breast surgeons can help you achieve the size and volume you desire."
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No price<br/>❌ No consultation CTA<br/>❌ Lowercase "avana" looks unpolished</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#999;margin-bottom:4px;">Not surfaced from source</div>
+            Authority/surgeon brand — relies on reviews more than meta copy
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#999;margin-bottom:4px;">Not surfaced from source</div>
+            Not visible in extracted markup
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#999;margin-bottom:4px;">Not surfaced from source</div>
+            Not visible in extracted markup
+          </td>
+        </tr>
+
+        <!-- FAQ coverage -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;margin-bottom:3px;">🔴 Only 3 FAQs — thinnest of all 4</div>
+            <div>• Risks &amp; complications<br/>• How often implants are replaced<br/>• Is the surgery painful</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No cost FAQ<br/>❌ No capsular-contracture FAQ<br/>❌ No recovery-timeline FAQ<br/>❌ No "how long do implants last" FAQ</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ No dedicated FAQ block</div>
+            Educational H2s ("Do you need revision?", "Lifespan of implants") cover FAQ intent inline
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Comprehensive FAQ section</div>
+            Capsular contracture · rippling · rupture · deflation · bottoming out · risk profile · malposition · alternatives
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;margin-bottom:3px;">✅ 6-topic FAQ</div>
+            Procedure · reasons · recovery · cost · insurance · results
+          </td>
+        </tr>
+
+        <!-- Trust signals -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ Weak on-page proof</div>
+            <div>• Board-certified surgeons (named)<br/>• Financing + insurance guidance</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No review count / star rating on page<br/>❌ No awards or media badges<br/>❌ No before/after gallery surfaced</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Strongest social proof</div>
+            <div>• 4.9★ from 790 reviews<br/>• AHCA-certified surgery center<br/>• Before/after gallery<br/>• Media (WJXT) appearance</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Reviews + award + media</div>
+            <div>• 5★ from 720 reviews<br/>• FACS board certification<br/>• "Most Outstanding in Breast Augmentation" award<br/>• Before/after gallery + In the Media</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Award + testimonials</div>
+            <div>• "Voted Best Plastic Surgeon 2022" (Miami New Times)<br/>• Extensive before/after gallery<br/>• Featured patient testimonials<br/>• Board-certified credentials</div>
+          </td>
+        </tr>
+
+        <!-- CTA -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Schedule a Free Consultation" + inline lead form
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Free consult + multi-language form</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Schedule a Consultation" (in-office + virtual)
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Call 305-767-7719 or use the form to schedule online"
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Call (305) 861-6881 to schedule an appointment"
+          </td>
+        </tr>
+
+        <!-- Schema -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Schema markup</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No JSON-LD schema detected</div>
+            <div style="color:#c0392b;">❌ No FAQPage schema<br/>❌ No MedicalProcedure schema<br/>❌ No PriceRange schema<br/>❌ No BreadcrumbList</div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">No schema = no rich-result eligibility. FAQPage + MedicalProcedure schema could unlock SERP snippets and lift CTR from 0%.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ None visible in source</div>
+            <div style="color:#666;">Standard organizational data may be present; no rich-result schema confirmed.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ None visible in source</div>
+            <div style="color:#666;">FAQ content present but no confirmed FAQPage JSON-LD.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Likely LocalBusiness + MedicalProcedure + FAQPage</div>
+            <div style="color:#059669;">Schema likely present given FAQ + cost structure (not fully confirmed in extract).</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from competitor analysis:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Why Lampert, Roudner &amp; Krau outrank Avana for "breast implant revision miami":</strong><br/>
+          1. <strong>Visible social proof:</strong> Lampert (4.9★/790) and Roudner (5★/720) surface huge review counts on-page; Avana shows none — reviews are the dominant trust signal for revision searchers<br/>
+          2. <strong>Surgeon-led E-E-A-T:</strong> All three lead with a named, credentialed surgeon (FACS, awards, media) in the title and content; Avana's title and H1 are generic with no surgeon or authority hook<br/>
+          3. <strong>Dedicated FAQ depth:</strong> Roudner and Krau ship full FAQ sections (rupture, capsular contracture, recovery, cost, insurance); Avana has only 3 FAQs and misses the highest-impression informational queries<br/>
+          4. <strong>Implant-type education (Krau):</strong> Krau's "implant types" + "material innovations" + ADM sections capture the "capsular contracture miami" (201 impr) and material-switch intent Avana barely covers<br/>
+          5. <strong>Cost framed as a feature:</strong> Lampert ($18k) and Krau both give cost its own H2; Avana's $4k–$8k range is buried in the body and absent from the title/meta
+        </div>
+        <div>
+          <strong>What Avana must add to dominate "breast implant revision miami" (pos 24.84 → target top 5):</strong><br/>
+          1. <strong>Add FAQPage + MedicalProcedure + PriceRange schema:</strong> Page has 0 confirmed schema — FAQPage schema alone could unlock FAQ rich snippets and lift CTR off 0%<br/>
+          2. <strong>Surface reviews + surgeon authority on-page:</strong> Add star rating, review count, board-certification badges, and a named revision surgeon to the title/meta and above the fold<br/>
+          3. <strong>Expand FAQ from 3 to 10+:</strong> Add "How much does breast implant revision cost in Miami?", "What is capsular contracture?", "How long is recovery?", "Does insurance cover revision?", "How long do implants last?" — all map to confirmed zero-click queries<br/>
+          4. <strong>Build a capsular-contracture / implant-type section:</strong> Target "capsular contracture miami" (201 impr, pos 34.77) and material-switch intent with a dedicated comparison + ADM explanation like Krau<br/>
+          5. <strong>Rewrite title + meta with price &amp; CTA:</strong> "Breast Implant Revision Miami from $4,000 — Board-Certified Surgeons | Free Consultation" — pull the existing $4k–$8k range and a CTA into the title/meta to win the first click
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel { position: relative; max-width: 100%; margin: auto; background: #fff; border: 1px solid #dce6f0; }
+.carousel-container { position: relative; padding: 16px 20px; display: flex; align-items: center; justify-content: center; min-height: 400px; }
+.carousel-slide { display: none; width: 100%; }
+.carousel-slide.active { display: block; }
+.carousel-slide img { max-width: 100%; height: auto; display: block; }
+.carousel-prev, .carousel-next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; background-color: rgba(0,0,0,0.5); font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 3px; user-select: none; }
+.carousel-next { right: 0; }
+.carousel-prev { left: 0; }
+.carousel-prev:hover, .carousel-next:hover { background-color: rgba(0,0,0,0.8); }
+.carousel-dots { text-align: center; padding: 12px 20px; background: #f9f9f9; border-top: 1px solid #dce6f0; }
+.carousel-dot { cursor: pointer; height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+.carousel-dot.active { background-color: #717171; }
+.carousel { max-width: 900px; margin: 30px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+.carousel-title { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 20px; font-size: 16px; font-weight: 600; text-align: center; letter-spacing: 0.5px; }
+.carousel-slide img { cursor: pointer; transition: transform 0.2s ease; }
+.carousel-slide img:hover { transform: scale(1.02); }
+.zoom-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); }
+.zoom-modal.active { display: flex; align-items: center; justify-content: center; }
+.zoom-modal-content { max-width: 90vw; max-height: 90vh; position: relative; }
+.zoom-modal-content img { width: 100%; height: auto; }
+.zoom-close { position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; user-select: none; }
+.zoom-close:hover { color: #bbb; }
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/breast-implant-revision-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/breast-implant-revision-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/breast-implant-revision-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) { showSlide(currentIndex += n); }
+function currentSlide(n) { showSlide(currentIndex = n); }
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
