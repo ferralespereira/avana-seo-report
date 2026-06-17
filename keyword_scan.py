@@ -112,6 +112,28 @@ BBL_ES = [
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
 ]
+BBL_REVISION_EN = [
+    ("bbl revision", ["bbl revision", "revision bbl"]),
+    ("bbl revision miami", ["bbl revision miami", "revision bbl miami"]),
+    ("brazilian butt lift revision", ["brazilian butt lift revision"]),
+    ("bbl reversal", ["bbl reversal", "bbl reversal miami"]),
+    ("bbl reduction", ["bbl reduction", "bbl reduction miami"]),
+    ("second bbl", ["second bbl", "2nd bbl", "second round bbl", "round 2 bbl"]),
+    ("revision butt augmentation", ["revision butt augmentation", "butt augmentation revision"]),
+    ("bbl revision cost", ["bbl revision cost", "cost of bbl revision"]),
+    ("bbl revision before and after", ["bbl revision before and after"]),
+    ("brazilian butt lift", ["brazilian butt lift"]),
+    ("bbl", ["bbl"]),
+    ("butt augmentation", ["butt augmentation", "buttock augmentation"]),
+    ("fat transfer", ["fat transfer"]),
+    ("fat grafting", ["fat grafting", "fat graft"]),
+    ("liposuction", ["liposuction"]),
+    ("compression garment", ["compression garment", "compression garments"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+]
 LIPO_EN = [
     ("lipo 360", ["lipo 360"]),
     ("lipo 360 miami", ["lipo 360 miami"]),
@@ -229,6 +251,8 @@ LIPOSUCCION_ES = [
 PAGES = {
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":
         {"slug": "brazilian-butt-lift-miami", "lang": "en", "kw": BBL_EN},
+    "https://avanaplasticsurgery.com/bbl-revision-miami":
+        {"slug": "bbl-revision-miami", "lang": "en", "kw": BBL_REVISION_EN},
     "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami":
         {"slug": "levantamiento-de-gluteos-en-miami", "lang": "es", "kw": BBL_ES},
     "https://avanaplasticsurgery.com/lipo-360-miami":
