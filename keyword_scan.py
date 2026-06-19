@@ -94,6 +94,26 @@ BREAST_ES = [
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
 ]
+BIR_ES = [
+    ("revision de implantes de senos", ["revision de implantes de senos", "revision de implantes mamarios", "revision de implantes"]),
+    ("revision de implantes de senos en miami", ["revision de implantes de senos en miami", "revision de implantes mamarios miami", "revision de implantes de senos miami"]),
+    ("revision mamaria miami", ["revision mamaria miami", "revision de senos miami", "revision de senos", "revision de senos south miami"]),
+    ("cambio de implantes mamarios miami", ["cambio de implantes mamarios miami", "cambio de implantes mamarios", "cambio de implantes", "cambio de implantes mamarios aventura"]),
+    ("extraccion de implantes mamarios miami", ["extraccion de implantes mamarios miami", "extraccion de implantes mamarios", "extraccion de implantes mamarios south miami", "extraccion de implantes"]),
+    ("retiro de implantes mamarios", ["retiro de implantes mamarios", "remover implantes mamarios", "quitar implantes mamarios", "explante mamario"]),
+    ("contractura capsular", ["contractura capsular"]),
+    ("capsulectomia", ["capsulectomia"]),
+    ("ruptura de implante", ["ruptura de implante", "fuga de implante", "implante roto"]),
+    ("implantes de senos en miami", ["implantes de senos en miami", "implantes mamarios miami", "implantes mamarios en miami"]),
+    ("aumento de senos en miami", ["aumento de senos en miami", "aumento de senos miami", "aumento de senos"]),
+    ("levantamiento de senos", ["levantamiento de senos"]),
+    ("implantes de silicona", ["implantes de silicona", "implantes salinos", "gel de silicona"]),
+    ("costo de revision de implantes de senos", ["costo de revision de implantes de senos", "precio de revision de senos", "cuanto cuesta una revision de senos", "costo de revision de implantes mamarios"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+]
 BBL_EN = [
     ("brazilian butt lift", ["brazilian butt lift"]),
     ("brazilian butt lift miami", ["brazilian butt lift miami"]),
@@ -308,6 +328,8 @@ PAGES = {
         {"slug": "breast-augmentation-miami", "lang": "en", "kw": BREAST_EN},
     "https://avanaplasticsurgery.com/breast-implant-revision-miami":
         {"slug": "breast-implant-revision-miami", "lang": "en", "kw": BIR_EN},
+    "https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami":
+        {"slug": "revision-de-implantes-de-senos-en-miami", "lang": "es", "kw": BIR_ES},
     "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami":
         {"slug": "implantes-de-senos-en-miami", "lang": "es", "kw": BREAST_ES},
     "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami":
