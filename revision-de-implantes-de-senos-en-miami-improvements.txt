@@ -1,0 +1,32 @@
+@model ServicePageViewModel
+<title>Revisión de Implantes de Senos en Miami | @Settings.GetCenterName</title>
+<meta name="description" content="Revisión de implantes de Senos en Miami. Si necesita cambiar sus implantes o extraerlos, los cirujanos de Avana pueden ayudarle a lograr el tamaño y volumen que desea." />
+<meta property="og:locale" content="es_US" />
+
+@* Added — en_US: signals there is an English version of this page *@
+<meta property="og:locale:alternate" content="en_US" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Revisión de Implantes de Senos en Miami | @Settings.GetCenterName" />
+<meta property="og:description" content="Este procedimiento está diseñado para corregir cualquier problema o inquietud que pueda haber surgido desde el aumento mamario inicial." />
+
+@* Adjusted og:url to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami" />
+
+@* Added — article:tag *@
+<meta property="article:tag" content="Revisión de Implantes de Senos" />
+<meta property="article:published_time" content="2023-10-31T15:49:11@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+@* Adjusted og:image to absolute URL *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg" />
+@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image:alt" content="Modelo de Revisión de Implantes de Senos en Miami" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+<meta name="twitter:title" content="Revisión de Implantes de Senos en Miami | @Settings.GetCenterName" />
+<meta name="twitter:description" content="Este procedimiento está diseñado para corregir cualquier problema o inquietud que pueda haber surgido desde el aumento mamario inicial." />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg" />
+<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami" />  
