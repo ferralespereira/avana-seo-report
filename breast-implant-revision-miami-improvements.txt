@@ -1,0 +1,316 @@
+------------------------
+metas
+------------------------
+
+@model ServicePageViewModel
+<title>Breast Implant Revision Miami - Implants Removal | @Settings.GetCenterName</title>
+
+@* adjusting meta tags, including Cost and Financing keywords *@
+<meta name="description" content="Breast Implant Revision in Miami: replace, exchange, or remove your implants with Avana's board-certified surgeons. See the procedure, cost &amp; financing." />
+
+<link rel="canonical" href="https://avanaplasticsurgery.com/breast-implant-revision-miami" />
+<meta property="article:published_time" content="2023-10-30T15:39:45@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+@* Added — article:tag *@
+<meta property="article:tag" content="Breast Implant Revision" />
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content=" Breast Implant Revision in Miami | @Settings.GetCenterName" />
+<meta property="og:description" content="Breast implant revision in Miami to replace, exchange, or remove your implants with Avana's board-certified surgeons — see the procedure, recovery, and cost." />
+
+@* og:url — updated to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/breast-implant-revision-miami" />
+
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+@* og:image — updated to absolute URL *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg" />
+@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image:alt" content="Breast implant revision in Miami patient consultation — @Settings.GetCenterName" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Breast Implant Revision in Miami | @Settings.GetCenterName" />
+<meta name="twitter:description" content="Breast implant revision in Miami to replace, exchange, or remove your implants with Avana's board-certified surgeons — see the procedure, recovery, and cost." />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg" />      
+
+
+------------------------
+CONTENT
+------------------------
+adding a surgeon section
+reinforcing the cost section (How much does breast implant revision cost in Miami)
+anti-cannibalization internal links (defer head terms to dedicated pages)
+adding a geo-location section (local South Florida + out-of-town/international)
+adding 6 FAQs + FAQPage schema (SEO + generative engine optimization)
+adding 5 more schemas adapted from liposuction-miami (SurgicalProcedure,
+  MedicalClinic/LocalBusiness, BreadcrumbList, WebPage/Speakable, Person graph)
+adding 1 external authority link (ASPS) for E-E-A-T
+normalizing all H2/H3 headings to Title Case
+adding a Table of Contents linking to every H2 section
+fixing typos / grammar (examination->revision surgery, gendered "He", commas, word choice)
+standardizing terminology: "breast augmentation revision" -> "breast implant revision"
+  (3 swaps: 2 H2s + their TOC entries, and the Insurance line; kept 1 synonym
+  mention in the intro "vs. exchange" paragraph for semantic breadth)
+resolving on-page DUPLICATE CONTENT: the "Preparing for Your Breast Implant
+  Revision in Miami" gray box repeated the Consultation section's paragraph
+  verbatim. Rewrote the gray box to be about PRE-OP PREPARATION (lab testing +
+  surgical clearance, stable weight, stop smoking, disclose meds / pause blood
+  thinners, arrange a caretaker) so both sections are now distinct and match
+  their headings. New copy grounded in the site's /out-of-town-patients
+  planning guide + the liposuction SurgicalProcedure schema "preparation" — no
+  invented claims.
+
+
+------------------------
+KEYWORDS (before vs after)
+------------------------
+Page: breast-implant-revision-miami / En / article.cshtml
+"Before" = last git commit (HEAD) — nothing committed yet, so HEAD is the
+original page before any of today's uncommitted changes.
+"After"  = current working tree (surgeon section + alt texts retargeted + cost
+           section reinforced + financing + anti-cannibalization links + ASPS
+           authority link + geo section + 6 new FAQs (9 total) + Title-Case
+           headings + Table of Contents + typo/grammar fixes). Schema text is
+           excluded from these counts (see SCHEMA ADDED).
+Method: commented-out blocks (@*..*@ and <!--..-->) AND <script> JSON-LD
+removed, case-insensitive; counts VISIBLE occurrences across headings + body
+text + image alt attributes (schema is counted separately, see SCHEMA ADDED).
+The AFTER counts now also include the Table-of-Contents anchor text (it repeats
+each H2 heading), which is why several phrases jumped vs the pre-TOC count.
+NOTE: phrases overlap (e.g. every "breast implant revision in miami" also
+counts inside "breast implant revision"), so they are not meant to sum.
+
+KEYWORD                                      BEFORE   AFTER   CHANGE
+breast implant revision                          18      59   +41
+breast implant revision in miami                  3      12   +9
+breast implant revision surgery                   3       9   +6
+breast implant revision surgeon                   1       5   +4
+breast implant revision surgeons in miami         0       2   +2 (NEW)
+breast implant revision cost                      0       1   +1 (NEW)
+breast augmentation revision                      4       1   -3
+breast augmentation revision in miami             1       0   -1
+breast revision surgery                           3       3   0
+breast revision                                   5       5   0
+revision surgery                                 12      17   +5
+implant revision                                 20      61   +41
+cost of breast implant revision                   1       2   +1
+cost of breast implant revision in miami          1       2   +1
+breast implant revision surgery cost              1       2   +1
+cost (any use)                                     5      11   +6
+how much                                           1       3   +2
+in miami (location)                               6      30   +24
+miami (location)                                  6      39   +33
+liposuction                                       0       0   0
+
+
+------------------------
+NEW KEYWORDS ADDED (this change)
+------------------------
+- "Top-Rated Breast Implant Revision Surgeons in Miami"  (new H2, surgeon section)
+- "breast implant revision surgeon in Miami"             (alt: Algird Mameniskis)
+- "breast implant revision plastic surgeon in Miami"     (alt: Thomas Pane)
+- "breast implant revision expert in Miami"              (alt: Mark Schusterman)
+- "breast implant revision cosmetic surgeon in Miami"    (alt: Shane McDaniel)
+- "breast implant revision cosmetic surgeon in Miami"    (alt: Stephanie Luster)
+
+These replaced the liposuction-page leftover wording that was in the
+just-added surgeon section ("Top-Rated Liposuction Surgeons In Miami" and
+"Liposuction ... surgeon in Miami" alts), so the page now has 0 "liposuction"
+mentions while reinforcing the procedure + location ("Miami") keywords.
+
+Cost section new phrasing (no new prices invented — kept the existing
+$4,000-$8,000 range; only factors already stated on THIS page are used):
+- "cost of breast implant revision" (factors list)
+- "breast implant revision surgery" cost factor (surgeon's experience line)
+NOTE: claims NOT backed by this page were removed — "anesthesia and facility
+fees" bullet, "additional procedures increases the cost" bullet, and the
+"personalized quote" CTA were all taken out.
+
+
+------------------------
+CONTENT CHANGED (before / after)
+------------------------
+COST SECTION ("HOW MUCH DOES BREAST IMPLANT REVISION SURGERY COST IN MIAMI?")
+
+BEFORE:
+  The cost of breast implant revision in Miami can range from $4,000 to
+  $8,000, and it is associated with factors such as the complexity of the
+  procedure, type of breast implant, and the surgeon's experience, among
+  others.
+
+AFTER:
+  The cost of breast implant revision in Miami can range from $4,000 to
+  $8,000. Because every case is unique, the final price of your breast
+  implant revision surgery is determined by several factors that your
+  board-certified surgeon reviews during your consultation in Miami:
+    - Complexity of the procedure (capsular contracture, repositioning,
+      rippling correction)
+    - Type of breast implant (saline vs. silicone, size/shape change)
+    - The surgeon's experience (board-certified plastic surgeon in Miami)
+  FINANCING BLOCK (reinforced — location + cost keywords):
+    H3 BEFORE: "Financing Your Procedure"
+    H3 AFTER:  "Financing Your Breast Implant Revision"
+    Paragraph: added one sentence -> "Flexible financing can make the cost of
+    your breast implant revision in Miami easier to manage, and you can find
+    out if you qualify in just a few minutes!" (financing block already on the
+    page; affordability/financing wording is sitewide, e.g. liposuction-miami).
+
+  All three factors + the $4,000-$8,000 range are already stated on this page;
+  no unsupported cost claims remain. The bullets now DESCRIBE what each factor
+  involves instead of asserting each one "adds to the cost / influences the
+  price" — the cost linkage is stated once, in the intro sentence ("the final
+  price ... is determined by several factors"), which matches the original
+  page's "associated with factors such as ..." phrasing.
+
+
+------------------------
+ANTI-CANNIBALIZATION INTERNAL LINKS
+------------------------
+This page should own only "breast implant REVISION" intent. Dedicated pages
+own the head terms, so the first natural mention of each head term now defers
+to its page (anchor = procedure name, no cost/keyword phrasing):
+  - "initial breast augmentation"  -> linked to /breast-augmentation-miami
+  - "breast implants come in 2..." -> linked to /breast-implants-miami
+(No keyword counts change — the anchor words were already visible text.)
+Note: keep this page's optimized elements (title/H1/H2/cost CTA) qualified
+with "revision"; do NOT target bare "breast implants Miami" / "breast
+augmentation Miami" here.
+
+
+------------------------
+TYPOS / GRAMMAR FIXED
+------------------------
+- "Your breast EXAMINATION at Avana ... is outpatient ... anesthesia choices"
+  -> "Your breast REVISION SURGERY ..." (copy error under "The Procedure" H2).
+- "...comprehensive transformation not to mention the psychological..."
+  -> added comma: "...transformation, not to mention...".
+- "surrounds any implant, whether medical or cosmetic and is part of..."
+  -> "...cosmetic, and is part of...".
+- "He will address aspects related to the reasons..." -> "They will address..."
+  (gendered assumption; Avana has female surgeons; fixed in BOTH the gray
+  "Preparing" box and the "Consultation" section, which share identical copy).
+- "many patients are unsatisfied" -> "dissatisfied" (word choice).
+
+NOT changed (flagged for your call, not strict errors):
+- The "Preparing for Your Breast Augmentation Revision" gray box and the
+  "Consultation with a Breast Implant Revision Surgeon" section contain the
+  SAME paragraph verbatim = on-page duplicate content; consider rewriting one.
+- "Finally, the surgeon will make the type of incision..." -> "Finally" is an
+  odd transition (it's the only step described).
+- Terminology mixes "breast augmentation revision" and "breast implant
+  revision" in a few spots (e.g. Insurance section) - consistency, not error.
+
+
+------------------------
+TABLE OF CONTENTS (new)
+------------------------
+Added a Table of Contents at the top, matching the site convention
+(/breast-augmentation-miami): a two-column row — intro paragraph on the left,
+<ul class="ul-content"> of jump links on the right. The first section was
+restructured so the intro <p> sits in the left column and the "What is" H2
+moved into its own section below (same as the breast-augmentation layout).
+
+14 links, one per rendered H2, all verified to resolve to an on-page id:
+  what-is-breast-implant-revision, common-reasons-revision, top-rated-surgeons
+  (existing section id), contact-form-section (existing section id),
+  preparing-for-revision, consultation-revision-surgeon,
+  breast-implant-revision-procedure, additional-procedures-revision,
+  recovery-and-aftercare, breast-implant-revision-cost, insurance-coverage,
+  meet-our-experts, breast-implant-revision-miami-and-beyond (existing id),
+  breast-implant-revision-faqs.
+New id="" anchors were added to the H2 tags that lacked one.
+Excluded: the commented-out "BBL Patients Reviews" H2 (not rendered).
+GEO/SEO note: a TOC of jump links can earn sitelinks/anchor results and helps
+generative engines map the page's sections.
+Model: "BREAST IMPLANT REVISION IN MIAMI" -> "Breast Implant Revision in Miami"
+(Title Case; short articles/conjunctions/prepositions like in/a/and/or/vs.
+stay lowercase). No keyword counts change (matching is case-insensitive).
+  - "HOW MUCH DOES BREAST IMPLANT REVISION SURGERY COST IN MIAMI?"
+      -> "How Much Does Breast Implant Revision Surgery Cost in Miami?"
+  - "Breast implant revision vs. breast implant exchange"
+      -> "Breast Implant Revision vs. Breast Implant Exchange"
+  - "Breast implant revision to go bigger"  -> "... to Go Bigger"
+  - "Breast implant revision to go smaller" -> "... to Go Smaller"
+  - "Undesired Aesthetic Results (rippling, flex distortion)"
+      -> "... (Rippling, Flex Distortion)"
+  - "What is Breast Implant Revision?"      -> "What Is ..."
+  - "Additional Procedures during a ..."    -> "... During a ..."
+  - "Meet our experts!"                     -> "Meet Our Experts!"
+(All other H2/H3 already matched the model. The commented-out "BBL Patients
+Reviews" heading and the dynamic @Vocabulary CTA heading were left as-is.)
+
+
+------------------------
+EXTERNAL AUTHORITY LINK (E-E-A-T)
+------------------------
+The page previously had NO external links. The existing unlinked citation
+"According to the American Society of Plastic Surgeons" (intro paragraph) now
+links out to the ASPS breast implant revision page:
+  https://www.plasticsurgery.org/cosmetic-procedures/breast-implant-revision
+  (target="_blank" rel="noopener" — matches the ASPS link on
+  /breast-augmentation-miami). URL verified live; its wording mirrors the
+  page's sentence ("replace old breast implants with new implants").
+
+
+------------------------
+GEO-LOCATION SECTION (new — local + out-of-town/international)
+------------------------
+New H2 added before the FAQs:
+  "Breast Implant Revision in Miami for Local & Out-of-Town Patients"
+Two paragraphs:
+  P1 (local): patients from across Miami & South Florida; multiple offices
+     serving Miami-Dade and surrounding communities (West Miami, Hialeah);
+     also patients traveling from across Florida/the US for revision in Miami.
+     -> internal link "multiple offices" -> /locations
+  P2 (travel): coordinate travel, lodging, and virtual consultations for
+     out-of-town & international patients; local South Florida residents to
+     patients flying in from other states and abroad.
+     -> internal link "out-of-town patients" -> /out-of-town-patients
+Modeled on the existing /liposuction-miami "Nationwide Destination" section;
+travel/lodging/virtual-consultation language is grounded in the site's
+/out-of-town-patients page. No prices or single street address asserted
+(multi-location convention). Revision-specific only — no head-term targeting.
+
+
+------------------------
+FAQs ADDED (6 new — SEO + GEO)
+------------------------
+Existing 3 FAQs kept (risks/complications, how often implants are replaced,
+is it painful). One typo fixed in the "painful" answer: "joint" -> "common".
+Six new Q&As appended to the accordion (answers grounded in this page):
+  1. How much does breast implant revision cost in Miami?  (cost + financing)
+  2. Does insurance cover breast implant revision?          (insurance)
+  3. Can I travel to Miami for breast implant revision?     (geo / travel)
+  4. Who performs breast implant revision at Avana ... Miami? (surgeons)
+  5. What is the difference between breast implant revision and exchange?
+  6. How long is recovery after breast implant revision?    (recovery)
+
+
+------------------------
+SCHEMA ADDED
+------------------------
+Six <script type="application/ld+json"> blocks at the end of the view (Razor
+@@-escaped). The FAQPage came first; the other five were adapted from the
+/liposuction-miami view to this page. All 6 validated as parseable JSON.
+
+  1. FAQPage          - all 9 visible FAQs (3 existing + 6 new) as
+                        Question/acceptedAnswer pairs.
+  2. SurgicalProcedure- "Breast Implant Revision Miami" + alternateNames;
+                        description/howPerformed/preparation/followup/risks all
+                        grounded in this page; offers.price "4000" USD = the low
+                        end of the page's stated $4,000-$8,000 range.
+  3. MedicalClinic +  - org @@id #organization, primary address
+     LocalBusiness      8700 W Flagler St Suite 250, Miami FL 33174, phone,
+                        geo, socials (sameAs), areaServed, opening hours.
+  4. BreadcrumbList   - Home > Breast (/breast) > Breast Implant Revision Miami
+                        (breast category, per breast-augmentation-miami).
+  5. WebPage +        - speakable cssSelectors (.milenia-entity-title,
+     Speakable          .milenia-panels-definition) for voice/GEO answers.
+  6. Person @@graph   - the 5 surgeons shown on this page (Mameniskis, Pane,
+                        Schusterman, McDaniel, Luster) linked to #organization.
+
+Purpose: rich-result eligibility + generative-engine answer extraction.
+NOTE: schema text is NOT included in the visible-keyword counts above.

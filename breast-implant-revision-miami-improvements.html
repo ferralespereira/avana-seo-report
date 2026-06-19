@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breast Implant Revision Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .fix-item  { font-size: 1.05rem; }
+
+        /* ── Info card ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* ── Keyword table ── */
+        .kw-table-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; max-width: 900px;
+        }
+        .kw-table-wrap { overflow-x: auto; }
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        .kw-table th {
+            background: #2a2a3d; color: #8b8ba7; font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            padding: 10px 12px; text-align: left; white-space: nowrap;
+        }
+        .kw-table th.num { text-align: right; }
+        .kw-table td { padding: 9px 12px; border-bottom: 1px solid #e8eaed; color: #24292e; vertical-align: middle; }
+        .kw-table tr:last-child td { border-bottom: none; }
+        .kw-table tbody tr:hover td { background: #f8f9fa; }
+        .kw-before { text-align: right; color: #f38ba8; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-after  { text-align: right; color: #28c840; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-change { text-align: right; color: #0070c9; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-down   { color: #d97706; }
+
+        /* ── Sections list ── */
+        .sections-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* ── Subsection group label ── */
+        .group-label {
+            font-size: 0.75rem; color: #444d56; font-weight: 700;
+            margin-bottom: 14px; border-bottom: 1px solid #e8eaed;
+            padding-bottom: 6px;
+        }
+
+        /* ── Sub-section label ── */
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+
+        /* ── Before / After blocks ── */
+        .ba-before {
+            background: #fff8f8; border-left: 3px solid #f38ba8;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-after {
+            background: #f0fdf4; border-left: 3px solid #28c840;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-note { font-size: 0.79rem; color: #6a737d; font-style: italic; }
+
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        .schema-divider { height: 1px; background: #e8eaed; }
+
+        /* ── Schema grid ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+
+        /* ── Badge ── */
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── GEO Status ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="breast-implant-revision-miami.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">← Breast Implant Revision Miami Rankings</a>
+    </div>
+    <h1>Breast Implant Revision Miami — SEO Improvements</h1>
+    <p class="subtitle">breast-implant-revision-miami &nbsp;·&nbsp; Updated 2026-06-19 &nbsp;·&nbsp; En / article.cshtml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://avanaplasticsurgery.com/breast-implant-revision-miami" target="_blank" rel="noopener">https://avanaplasticsurgery.com/breast-implant-revision-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://avanaplasticsurgery.com/breast-implant-revision-miami', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Primary Keyword</span>
+            <span class="page-info-keyword">breast implant revision</span>
+            <button class="copy-btn" onclick="copyPageInfo('breast implant revision', this)">copy</button>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         1. META TAGS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Meta Tags</div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">breast-implant-revision-miami / En / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+
+<span class="c-tag">&lt;title&gt;</span>Breast Implant Revision Miami - Implants Removal | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+
+<span class="c-comment fix-item">@* adjusting meta tags, including Cost and Financing keywords *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Breast Implant Revision in Miami: replace, exchange, or remove your implants with Avana's board-certified surgeons. See the procedure, cost &amp;amp; financing."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/breast-implant-revision-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2023-10-30T15:39:45<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Added — article:tag *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:tag"</span> <span class="c-attr">content</span>=<span class="c-val">"Breast Implant Revision"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span>       <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span>        <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span>       <span class="c-attr">content</span>=<span class="c-val">"Breast Implant Revision in Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span>  <span class="c-attr">content</span>=<span class="c-val">"Breast implant revision in Miami to replace, exchange, or remove your implants with Avana's board-certified surgeons — see the procedure, recovery, and cost."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* og:url — updated to absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/breast-implant-revision-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* og:image — updated to absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span>
+     <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span>    <span class="c-attr">content</span>=<span class="c-val">"Breast implant revision in Miami patient consultation — <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span>  <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span>        <span class="c-attr">content</span>=<span class="c-val">"summary"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span>       <span class="c-attr">content</span>=<span class="c-val">"Breast Implant Revision in Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span>  <span class="c-attr">content</span>=<span class="c-val">"Breast implant revision in Miami to replace, exchange, or remove your implants with Avana's board-certified surgeons — see the procedure, recovery, and cost."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span>
+     <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. KEYWORD TARGETS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keywords On The Page — Before → After</div>
+
+        <div class="kw-table-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Literal visible-text occurrences (schema excluded) &nbsp;·&nbsp; sorted by After, high → low</span>
+                <span style="margin-left:auto;display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap;">
+                    <span style="font-family:'Cascadia Code','Fira Code','Courier New',monospace;font-size:0.7rem;font-weight:700;color:#8b8ba7;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:5px;padding:2px 8px;">20 tracked</span>
+                    <span style="font-family:'Cascadia Code','Fira Code','Courier New',monospace;font-size:0.7rem;font-weight:700;color:#28c840;background:rgba(40,200,64,0.1);border:1px solid rgba(40,200,64,0.3);border-radius:5px;padding:2px 8px;">15 improved</span>
+                    <span style="font-family:'Cascadia Code','Fira Code','Courier New',monospace;font-size:0.7rem;font-weight:700;color:#f9e2af;background:rgba(249,226,175,0.12);border:1px solid rgba(249,226,175,0.3);border-radius:5px;padding:2px 8px;">2 brand-new</span>
+                </span>
+            </div>
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th class="num">Before</th>
+                            <th class="num">After</th>
+                            <th class="num">Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>implant revision</td><td class="kw-before">20</td><td class="kw-after">61</td><td class="kw-change">+41</td></tr>
+                        <tr><td>breast implant revision</td><td class="kw-before">18</td><td class="kw-after">59</td><td class="kw-change">+41</td></tr>
+                        <tr><td>miami (location)</td><td class="kw-before">6</td><td class="kw-after">39</td><td class="kw-change">+33</td></tr>
+                        <tr><td>in miami (location)</td><td class="kw-before">6</td><td class="kw-after">30</td><td class="kw-change">+24</td></tr>
+                        <tr><td>revision surgery</td><td class="kw-before">12</td><td class="kw-after">17</td><td class="kw-change">+5</td></tr>
+                        <tr><td>breast implant revision in miami</td><td class="kw-before">3</td><td class="kw-after">12</td><td class="kw-change">+9</td></tr>
+                        <tr><td>cost (any use)</td><td class="kw-before">5</td><td class="kw-after">11</td><td class="kw-change">+6</td></tr>
+                        <tr><td>breast implant revision surgery</td><td class="kw-before">3</td><td class="kw-after">9</td><td class="kw-change">+6</td></tr>
+                        <tr><td>breast revision</td><td class="kw-before">5</td><td class="kw-after">5</td><td class="kw-change">0</td></tr>
+                        <tr><td>breast implant revision surgeon</td><td class="kw-before">1</td><td class="kw-after">5</td><td class="kw-change">+4</td></tr>
+                        <tr><td>breast revision surgery</td><td class="kw-before">3</td><td class="kw-after">3</td><td class="kw-change">0</td></tr>
+                        <tr><td>how much</td><td class="kw-before">1</td><td class="kw-after">3</td><td class="kw-change">+2</td></tr>
+                        <tr><td>breast implant revision surgeons in miami</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>cost of breast implant revision</td><td class="kw-before">1</td><td class="kw-after">2</td><td class="kw-change">+1</td></tr>
+                        <tr><td>cost of breast implant revision in miami</td><td class="kw-before">1</td><td class="kw-after">2</td><td class="kw-change">+1</td></tr>
+                        <tr><td>breast implant revision surgery cost</td><td class="kw-before">1</td><td class="kw-after">2</td><td class="kw-change">+1</td></tr>
+                        <tr><td>breast implant revision cost</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>breast augmentation revision <span style="font-style:italic;color:#6a737d;">(standardized away)</span></td><td class="kw-before">4</td><td class="kw-after">1</td><td class="kw-change kw-down">−3</td></tr>
+                        <tr><td>breast augmentation revision in miami <span style="font-style:italic;color:#6a737d;">(standardized away)</span></td><td class="kw-before">1</td><td class="kw-after">0</td><td class="kw-change kw-down">−1</td></tr>
+                        <tr><td>liposuction <span style="font-style:italic;color:#6a737d;">(template leftover removed)</span></td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-change">0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="padding:12px 16px;font-size:0.78rem;color:#6a737d;font-style:italic;line-height:1.5;border-top:1px solid #e8eaed;">
+                Phrases overlap (e.g. every "breast implant revision in miami" also counts inside "breast implant revision"), so columns are not meant to sum. After-counts include Table-of-Contents anchor text (it repeats each H2). Schema JSON-LD is excluded from these counts.
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2b. NEW KEYWORDS ADDED
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">New Keywords Added (This Change)</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Surgeon section — heading + image alt retargeting</span>
+            </div>
+            <div class="info-card-body">
+                <ul class="sections-list">
+                    <li class="full-row"><strong>"Top-Rated Breast Implant Revision Surgeons in Miami"</strong> — new H2 (surgeon section)</li>
+                    <li>"breast implant revision surgeon in Miami" — alt: Algird Mameniskis</li>
+                    <li>"breast implant revision plastic surgeon in Miami" — alt: Thomas Pane</li>
+                    <li>"breast implant revision expert in Miami" — alt: Mark Schusterman</li>
+                    <li>"breast implant revision cosmetic surgeon in Miami" — alt: Shane McDaniel</li>
+                    <li>"breast implant revision cosmetic surgeon in Miami" — alt: Stephanie Luster</li>
+                </ul>
+                <div class="ba-note" style="margin-top:12px;">
+                    These replaced the liposuction-page leftover wording carried into the just-added surgeon section ("Top-Rated Liposuction Surgeons In Miami" + "Liposuction … surgeon in Miami" alts), so the page now has <strong>0 "liposuction" mentions</strong> while reinforcing the procedure + "Miami" location keywords.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. CONTENT CHANGES
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Changes</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Content &nbsp;·&nbsp; New Sections, Rewrites, FAQs &amp; Source Fixes</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:26px;">
+
+                <!-- A: New content -->
+                <div>
+                    <div class="group-label">A — Content Added (New)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; Surgeon Section — "Top-Rated Breast Implant Revision Surgeons in Miami" <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>5 board-certified surgeons: Mameniskis, Pane, Schusterman, McDaniel, Luster</li>
+                                <li>Each image alt retargeted to "breast implant revision … surgeon in Miami"</li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">Adds E-E-A-T signals and feeds the Person @graph schema</li>
+                            </ul>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Geo-Location Section — "Breast Implant Revision in Miami for Local &amp; Out-of-Town Patients" <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li><strong>P1 (local):</strong> patients from across Miami &amp; South Florida; multiple offices serving Miami-Dade + surrounding communities (West Miami, Hialeah)</li>
+                                <li><strong>P2 (travel):</strong> coordinated travel, lodging &amp; virtual consultations for out-of-town &amp; international patients</li>
+                                <li>Internal link "multiple offices" → <code style="font-size:0.78rem">/locations</code></li>
+                                <li>Internal link "out-of-town patients" → <code style="font-size:0.78rem">/out-of-town-patients</code></li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">Modeled on the /liposuction-miami "Nationwide Destination" section. No prices or single street address asserted (multi-location convention); revision-specific — no head-term targeting.</li>
+                            </ul>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; Table of Contents (top of article) <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>2-column row: intro paragraph (left) + ToC <code style="font-size:0.78rem">&lt;ul class="ul-content"&gt;</code> (right)</li>
+                                <li>14 links, one per rendered H2, all verified to resolve to an on-page id</li>
+                                <li class="full-row" style="overflow-x:auto;">New id anchors added to H2s that lacked one (e.g. <code style="font-size:0.78rem">#what-is-breast-implant-revision</code>, <code style="font-size:0.78rem">#breast-implant-revision-procedure</code>, <code style="font-size:0.78rem">#breast-implant-revision-cost</code>, <code style="font-size:0.78rem">#breast-implant-revision-faqs</code>)</li>
+                                <li class="full-row" style="overflow-x:auto;">Reused existing ids: <code style="font-size:0.78rem">#top-rated-surgeons</code>, <code style="font-size:0.78rem">#contact-form-section</code>, <code style="font-size:0.78rem">#breast-implant-revision-miami-and-beyond</code></li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">Matches the /breast-augmentation-miami pattern. Excluded the commented-out "BBL Patients Reviews" H2 (not rendered).</li>
+                            </ul>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">4 &middot; External Authority Link (E-E-A-T) <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">The page previously had <strong>no external links</strong>. The existing unlinked citation "According to the American Society of Plastic Surgeons" now links to the ASPS breast implant revision page → <code style="font-size:0.78rem">plasticsurgery.org/cosmetic-procedures/breast-implant-revision</code> (<code style="font-size:0.78rem">target="_blank" rel="noopener"</code>).</div>
+                            <div class="ba-note">URL verified live; matches the ASPS link convention on /breast-augmentation-miami. Its wording mirrors the page's sentence ("replace old breast implants with new implants").</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">5 &middot; Headings Normalized to Title Case + Anti-Cannibalization Links</div>
+                            <ul class="sections-list">
+                                <li>All H2/H3 headings normalized to Title Case (in/a/and/or/vs. stay lowercase)</li>
+                                <li>"initial breast augmentation" → linked to <code style="font-size:0.78rem">/breast-augmentation-miami</code></li>
+                                <li>"breast implants come in 2…" → linked to <code style="font-size:0.78rem">/breast-implants-miami</code></li>
+                                <li class="full-row" style="font-style:italic;color:#6a737d;font-size:0.8rem;">First natural mention of each head term defers to its dedicated page (anchor = procedure name). This page keeps only "breast implant REVISION" intent.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- B: Changed content -->
+                <div>
+                    <div class="group-label">B — Content Changed (Before / After)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; Cost Section — "How Much Does Breast Implant Revision Surgery Cost in Miami?"</div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before">"The cost of breast implant revision in Miami can range from <strong>$4,000 to $8,000</strong>, and it is associated with factors such as the complexity of the procedure, type of breast implant, and the surgeon's experience, among others."</div>
+                                <div class="ba-after">"The cost of breast implant revision in Miami can range from <strong>$4,000 to $8,000</strong>. Because every case is unique, the final price of your breast implant revision surgery is determined by several factors that your board-certified surgeon reviews during your consultation in Miami:"
+                                    <ul style="margin:8px 0 0 18px;font-size:0.8rem;line-height:1.6;">
+                                        <li>Complexity of the procedure (capsular contracture, repositioning, rippling correction)</li>
+                                        <li>Type of breast implant (saline vs. silicone, size/shape change)</li>
+                                        <li>The surgeon's experience (board-certified plastic surgeon in Miami)</li>
+                                    </ul>
+                                </div>
+                                <div class="ba-note">No new prices invented — kept the existing $4,000–$8,000 range; only factors already stated on this page are used.</div>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Financing Block Reinforced</div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before"><strong>H3:</strong> "Financing Your Procedure"</div>
+                                <div class="ba-after"><strong>H3:</strong> "Financing Your Breast Implant Revision" &nbsp;+&nbsp; added sentence: "Flexible financing can make the cost of your breast implant revision in Miami easier to manage, and you can find out if you qualify in just a few minutes!"</div>
+                                <div class="ba-note">Financing block already on the page; affordability/financing wording is sitewide (e.g. liposuction-miami).</div>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; Terminology Standardized</div>
+                            <div class="ba-after">"breast augmentation revision" → "breast implant revision" (3 swaps: 2 H2s + their ToC entries, and the Insurance line). Kept 1 synonym mention in the intro "vs. exchange" paragraph for semantic breadth.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">4 &middot; On-Page Duplicate Content Resolved <span class="new-badge">NEW</span></div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before">The "Preparing for Your Breast Implant Revision in Miami" gray box repeated the <strong>Consultation</strong> section's paragraph <strong>verbatim</strong> — on-page duplicate content; both blocks said the same thing.</div>
+                                <div class="ba-after">Rewrote the gray box to be about <strong>pre-op preparation</strong> so each section is now distinct and matches its heading:
+                                    <ul style="margin:8px 0 0 18px;font-size:0.8rem;line-height:1.6;">
+                                        <li>Lab testing + surgical clearance</li>
+                                        <li>Maintain a stable weight</li>
+                                        <li>Stop smoking</li>
+                                        <li>Disclose medications / pause blood thinners</li>
+                                        <li>Arrange a caretaker</li>
+                                    </ul>
+                                </div>
+                                <div class="ba-note">New copy grounded in the site's /out-of-town-patients planning guide + the liposuction SurgicalProcedure schema "preparation" — no invented claims.</div>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">5 &middot; Typo &amp; Grammar Fixes (pre-existing prose)</div>
+                            <ul class="schema-advantages">
+                                <li>"Your breast <strong>examination</strong> at Avana … is outpatient … anesthesia choices" → "Your breast <strong>revision surgery</strong> …" (copy error under "The Procedure")</li>
+                                <li>"…comprehensive transformation not to mention the psychological…" → added comma: "…transformation, not to mention…"</li>
+                                <li>"surrounds any implant, whether medical or cosmetic and is part of…" → "…cosmetic, and is part of…"</li>
+                                <li>"<strong>He</strong> will address aspects related to the reasons…" → "<strong>They</strong> will address…" (gendered assumption; Avana has female surgeons; fixed in both the "Preparing" box and the "Consultation" section)</li>
+                                <li>"many patients are <strong>unsatisfied</strong>" → "<strong>dissatisfied</strong>" (word choice)</li>
+                                <li>FAQ "painful" answer: "joint" → "common" (typo)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- C: FAQs -->
+                <div>
+                    <div class="group-label">C — FAQs (6 New — SEO + GEO)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">Existing 3 FAQs Kept</div>
+                            <div class="ba-before">Risks/complications · How often implants are replaced · Is it painful (one typo fixed: "joint" → "common")</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">6 New Q&amp;As Appended <span class="new-badge">NEW</span></div>
+                            <div class="faq-q-list">
+                                <div class="faq-q-item"><span class="q-num">Q1</span>How much does breast implant revision cost in Miami? (cost + financing)</div>
+                                <div class="faq-q-item"><span class="q-num">Q2</span>Does insurance cover breast implant revision? (insurance)</div>
+                                <div class="faq-q-item"><span class="q-num">Q3</span>Can I travel to Miami for breast implant revision? (geo / travel)</div>
+                                <div class="faq-q-item"><span class="q-num">Q4</span>Who performs breast implant revision at Avana … Miami? (surgeons)</div>
+                                <div class="faq-q-item"><span class="q-num">Q5</span>What is the difference between breast implant revision and exchange?</div>
+                                <div class="faq-q-item"><span class="q-num">Q6</span>How long is recovery after breast implant revision? (recovery)</div>
+                            </div>
+                            <div class="ba-note" style="margin-top:8px;">9 FAQs total (3 existing + 6 new); all answers grounded in this page's content.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. SCHEMAS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Six Google Markup Schemas Added <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— page had NO JSON-LD before; all net-new</span></div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1: FAQPage -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">FAQPage</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 9 Q&amp;A Pairs</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">Q1</span>Cost in Miami</div>
+                            <div class="faq-q-item"><span class="q-num">Q2</span>Insurance coverage</div>
+                            <div class="faq-q-item"><span class="q-num">Q3</span>Travel to Miami</div>
+                            <div class="faq-q-item"><span class="q-num">Q4</span>Who performs the surgery</div>
+                            <div class="faq-q-item"><span class="q-num">Q5</span>Revision vs. exchange</div>
+                            <div class="faq-q-item"><span class="q-num">Q6</span>Recovery length</div>
+                            <div class="faq-q-item"><span class="q-num">+3</span>Risks · replacement interval · is it painful</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables FAQ rich results; cost answer is AI-citable</li>
+                            <li>Matches the page's accordion content — no schema/content mismatch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2: SurgicalProcedure -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">SurgicalProcedure</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">name</span><span class="sf-val">Breast Implant Revision Miami + alternateNames</span></div>
+                            <div class="schema-field"><span class="sf-key">description</span><span class="sf-val">Grounded in this page</span></div>
+                            <div class="schema-field"><span class="sf-key">howPerformed</span><span class="sf-val">From the procedure section</span></div>
+                            <div class="schema-field"><span class="sf-key">preparation</span><span class="sf-val">Pre-op requirements</span></div>
+                            <div class="schema-field"><span class="sf-key">followup</span><span class="sf-val">Recovery / aftercare</span></div>
+                            <div class="schema-field"><span class="sf-key">risks</span><span class="sf-val">From the risks content</span></div>
+                            <div class="schema-field"><span class="sf-key">offers.price</span><span class="sf-val">$4,000 USD (low end of stated range)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks the page as authoritative medical content</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">Offer</code> makes the $4,000 starting price machine-readable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3: MedicalClinic + LocalBusiness -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">MedicalClinic + LocalBusiness</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@id</span><span class="sf-val">#organization</span></div>
+                            <div class="schema-field"><span class="sf-key">NAP</span><span class="sf-val">8700 W Flagler St Suite 250, Miami FL 33174 + phone</span></div>
+                            <div class="schema-field"><span class="sf-key">geo</span><span class="sf-val">lat / lng coordinates</span></div>
+                            <div class="schema-field"><span class="sf-key">sameAs</span><span class="sf-val">Social profiles</span></div>
+                            <div class="schema-field"><span class="sf-key">areaServed</span><span class="sf-val">Miami-Dade + beyond</span></div>
+                            <div class="schema-field"><span class="sf-key">hours</span><span class="sf-val">openingHours</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Boosts local pack + "near me" eligibility for the new geo section</li>
+                            <li>Geo coordinates feed Google Maps visibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4: BreadcrumbList -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Items</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Home</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Breast (/breast)</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Breast Implant Revision Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Enables breadcrumb trail in search snippets, improving CTR</li>
+                            <li>Breast category mirrors /breast-augmentation-miami</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5: WebPage + Speakable -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 5</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">.milenia-entity-title, .milenia-panels-definition</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks sections for voice search / AI assistant responses</li>
+                            <li>Increases generative-AI citation eligibility (GEO)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 6: Person @graph — 5 Surgeons -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 6</div>
+                    <div class="schema-card-title">Person @graph — 5 Surgeons</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">5 Surgeon Entities</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">Mameniskis</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">Pane</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">Schusterman</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">McDaniel</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                            <div class="schema-field"><span class="sf-key">Luster</span><span class="sf-val">jobTitle · specialty · worksFor Avana</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Directly boosts E-E-A-T — Google's top signal for YMYL pages</li>
+                            <li><code style="font-size:0.75rem;background:#f1f3f5;padding:0 3px;border-radius:3px">worksFor</code> links each surgeon to the clinic entity (Schema 3 #organization)</li>
+                            <li>Mirrors the /liposuction-miami &amp; /breast-augmentation-miami schema set</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p style="max-width:900px;margin-top:14px;font-size:0.79rem;color:#6a737d;font-style:italic;line-height:1.5;">
+            Six <code style="font-size:0.75rem">&lt;script type="application/ld+json"&gt;</code> blocks at the end of the view (Razor <code style="font-size:0.75rem">@@</code>-escaped). FAQPage came first; the other five were adapted from the /liposuction-miami view. All 6 validated as parseable JSON. Schema text is NOT included in the visible-keyword counts above.
+        </p>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. GEO STATUS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">GEO (Generative Engine Optimization) Status</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">AI-Citation Readiness &nbsp;·&nbsp; breast-implant-revision-miami</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> FAQPage schema (9 Q&amp;As incl. cost in Miami)</li>
+                            <li><em class="geo-icon">✓</em> SurgicalProcedure schema + Offer ($4,000)</li>
+                            <li><em class="geo-icon">✓</em> MedicalClinic / LocalBusiness schema + geo + sameAs</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList schema (breast category)</li>
+                            <li><em class="geo-icon">✓</em> WebPage + Speakable schema</li>
+                            <li><em class="geo-icon">✓</em> Person schema — 5 surgeons (E-E-A-T)</li>
+                            <li><em class="geo-icon">✓</em> Reinforced cost section ($4,000–$8,000 + factors)</li>
+                            <li><em class="geo-icon">✓</em> Cost + financing FAQ with a specific Miami price</li>
+                            <li><em class="geo-icon">✓</em> Surgeon section ("Top-Rated … Surgeons in Miami")</li>
+                            <li><em class="geo-icon">✓</em> Geo section — local South Florida + out-of-town / international</li>
+                            <li><em class="geo-icon">✓</em> Table of Contents + 14 H2 anchors</li>
+                            <li><em class="geo-icon">✓</em> ASPS authority link (first external link on the page)</li>
+                            <li><em class="geo-icon">✓</em> Anti-cannibalization internal links (defer head terms)</li>
+                            <li><em class="geo-icon">✓</em> Title-Case headings + terminology standardized</li>
+                            <li><em class="geo-icon">✓</em> On-page duplicate content resolved (pre-op "Preparing" box rewritten)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
