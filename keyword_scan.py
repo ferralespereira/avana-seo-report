@@ -114,6 +114,26 @@ BIR_ES = [
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirugia estetica", ["cirugia estetica"]),
 ]
+BR_EN = [
+    ("breast reduction", ["breast reduction", "reduction mammoplasty", "mammoplasty"]),
+    ("breast reduction miami", ["breast reduction miami", "miami breast reduction", "breast reduction in miami"]),
+    ("breast reduction surgery miami", ["breast reduction surgery miami", "breast reduction surgery in miami", "breast reduction surgery"]),
+    ("breast reduction cost", ["breast reduction cost", "cost of breast reduction", "how much is a breast reduction", "how much does a breast reduction cost", "how much is breast reduction surgery"]),
+    ("breast reduction cost miami", ["breast reduction cost miami", "breast reduction miami cost", "miami breast reduction cost", "breast reduction surgery cost miami"]),
+    ("breast reduction miami beach", ["breast reduction miami beach", "best breast reduction miami beach"]),
+    ("best breast reduction miami", ["best breast reduction miami"]),
+    ("male breast reduction miami", ["male breast reduction miami", "male breast reduction", "gynecomastia miami"]),
+    ("breast reduction insurance miami", ["breast reduction insurance miami", "breast reduction insurance", "does insurance cover breast reduction", "breast reduction insurance miramar"]),
+    ("scarless breast reduction miami", ["scarless breast reduction miami", "scarless breast reduction"]),
+    ("breast reduction recovery", ["breast reduction recovery", "breast reduction surgery recovery"]),
+    ("breast lift", ["breast lift", "breast lift miami"]),
+    ("breast augmentation", ["breast augmentation"]),
+    ("mammoplasty miami", ["mammoplasty miami"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+]
 BBL_EN = [
     ("brazilian butt lift", ["brazilian butt lift"]),
     ("brazilian butt lift miami", ["brazilian butt lift miami"]),
@@ -328,6 +348,8 @@ PAGES = {
         {"slug": "breast-augmentation-miami", "lang": "en", "kw": BREAST_EN},
     "https://avanaplasticsurgery.com/breast-implant-revision-miami":
         {"slug": "breast-implant-revision-miami", "lang": "en", "kw": BIR_EN},
+    "https://avanaplasticsurgery.com/breast-reduction-miami":
+        {"slug": "breast-reduction-miami", "lang": "en", "kw": BR_EN},
     "https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami":
         {"slug": "revision-de-implantes-de-senos-en-miami", "lang": "es", "kw": BIR_ES},
     "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami":
