@@ -170,6 +170,24 @@ RDS_ES = [
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirugia estetica", ["cirugia estetica"]),
 ]
+LEV_ES = [
+    ("levantamiento de senos", ["levantamiento de senos", "mastopexia", "elevacion de mama", "levantamiento de busto", "levantamiento de pecho"]),
+    ("levantamiento de senos en miami", ["levantamiento de senos en miami", "levantamiento de senos miami", "elevacion de mama en miami", "levantamiento de senos south miami"]),
+    ("levantamiento de senos precio", ["levantamiento de senos precio", "precio de levantamiento de senos", "cuanto cuesta levantar los senos", "cuanto cuesta un levantamiento de senos en miami"]),
+    ("levantamiento de senos sin implantes precio", ["levantamiento de senos sin implantes precio", "levantamiento de senos sin implantes", "precio de levantamiento de senos sin implantes", "levantamiento de busto sin implantes precio"]),
+    ("levantamiento de senos sin cirugia", ["levantamiento de senos sin cirugia", "senos levantados sin cirugia", "levantamiento de senos con hilos tensores precio"]),
+    ("levantamiento de senos sin cicatriz", ["levantamiento de senos sin cicatriz", "levantamiento de senos con laser", "levantamiento de senos con láser"]),
+    ("aumento de senos con levantamiento", ["aumento de senos con levantamiento", "aumento de senos con levantamiento miami", "aumento de senos con levantamiento aventura", "levantamiento de senos con implantes"]),
+    ("levantamiento de senos aventura", ["levantamiento de senos aventura", "levantamiento de senos fort lauderdale", "levantamiento de senos draper"]),
+    ("correccion de pezones miami", ["correccion de pezones miami", "correccion de pezones invertidos miami", "correccion de pezones south miami"]),
+    ("cirugia de levantamiento de senos", ["cirugia de levantamiento de senos", "operacion levantamiento de senos", "cirugia en t senos"]),
+    ("reduccion de senos miami", ["reduccion de senos miami"]),
+    ("aumento de senos miami", ["aumento de senos miami", "aumento de senos en miami"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+]
 BBL_EN = [
     ("brazilian butt lift", ["brazilian butt lift"]),
     ("brazilian butt lift miami", ["brazilian butt lift miami"]),
@@ -390,6 +408,8 @@ PAGES = {
         {"slug": "breast-lift-miami", "lang": "en", "kw": BL_EN},
     "https://avanaplasticsurgery.com/espanol/reduccion-de-senos-miami":
         {"slug": "reduccion-de-senos-miami", "lang": "es", "kw": RDS_ES},
+    "https://avanaplasticsurgery.com/espanol/levantamiento-de-senos-en-miami":
+        {"slug": "levantamiento-de-senos-en-miami", "lang": "es", "kw": LEV_ES},
     "https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami":
         {"slug": "revision-de-implantes-de-senos-en-miami", "lang": "es", "kw": BIR_ES},
     "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami":
