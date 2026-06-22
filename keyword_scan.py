@@ -58,6 +58,9 @@ BREAST_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("breast augmentation near me", ["breast augmentation near me", "breast implants near me", "breast augmentation surgeon near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BIR_EN = [
     ("breast implant revision", ["breast implant revision", "implant revision"]),
@@ -79,6 +82,9 @@ BIR_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("breast implant revision near me", ["breast implant revision near me", "breast revision near me", "breast implant removal near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BREAST_ES = [
     ("aumento de senos", ["aumento de senos"]),
@@ -96,6 +102,9 @@ BREAST_ES = [
     ("colocacion de implantes", ["colocacion de implantes", "colocacion de los implantes"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("aumento de senos cerca de mi", ["aumento de senos cerca de mi", "implantes de senos cerca de mi", "cirujano plastico cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BIR_ES = [
     ("revision de implantes de senos", ["revision de implantes de senos", "revision de implantes mamarios", "revision de implantes"]),
@@ -116,6 +125,9 @@ BIR_ES = [
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirugia estetica", ["cirugia estetica"]),
+    ("revision de implantes cerca de mi", ["revision de implantes cerca de mi", "revision de senos cerca de mi", "extraccion de implantes cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BR_EN = [
     ("breast reduction", ["breast reduction", "reduction mammoplasty", "mammoplasty"]),
@@ -136,6 +148,9 @@ BR_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("breast reduction near me", ["breast reduction near me", "breast reduction surgeon near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BL_EN = [
     ("breast lift", ["breast lift", "mastopexy", "boob lift", "breast uplift"]),
@@ -154,6 +169,9 @@ BL_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("breast lift near me", ["breast lift near me", "breast lift surgeon near me", "mastopexy near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 RDS_ES = [
     ("reduccion de senos", ["reduccion de senos", "reduccion de mamas", "reduccion mamaria"]),
@@ -172,6 +190,9 @@ RDS_ES = [
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirugia estetica", ["cirugia estetica"]),
+    ("reduccion de senos cerca de mi", ["reduccion de senos cerca de mi", "reduccion de mamas cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 LEV_ES = [
     ("levantamiento de senos", ["levantamiento de senos", "mastopexia", "elevacion de mama", "levantamiento de busto", "levantamiento de pecho"]),
@@ -190,6 +211,9 @@ LEV_ES = [
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirugia estetica", ["cirugia estetica"]),
+    ("levantamiento de senos cerca de mi", ["levantamiento de senos cerca de mi", "mastopexia cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BBL_EN = [
     ("brazilian butt lift", ["brazilian butt lift"]),
@@ -211,6 +235,9 @@ BBL_EN = [
     ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
+    ("bbl near me", ["bbl near me", "brazilian butt lift near me", "butt lift near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BBL_ES = [
     ("levantamiento de gluteos brasileno", ["levantamiento de gluteos brasileno"]),
@@ -230,6 +257,9 @@ BBL_ES = [
     ("prenda de compresion", ["prenda de compresion", "prendas de compresion"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("bbl cerca de mi", ["bbl cerca de mi", "levantamiento de gluteos cerca de mi", "aumento de gluteos cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BBL_REVISION_EN = [
     ("bbl revision", ["bbl revision", "revision bbl"]),
@@ -252,6 +282,9 @@ BBL_REVISION_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("bbl revision near me", ["bbl revision near me", "brazilian butt lift revision near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 BBL_REVISION_ES = [
     ("revision de bbl", ["revision de bbl", "revision bbl"]),
@@ -273,6 +306,9 @@ BBL_REVISION_ES = [
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirugia estetica", ["cirugia estetica"]),
+    ("revision de bbl cerca de mi", ["revision de bbl cerca de mi", "revision de gluteos cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 LIPO_EN = [
     ("lipo 360", ["lipo 360"]),
@@ -291,6 +327,9 @@ LIPO_EN = [
     ("fat removal", ["fat removal", "remove fat", "removes fat", "removing fat"]),
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
+    ("lipo 360 near me", ["lipo 360 near me", "liposuction 360 near me", "lipo near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 LIPO_ES = [
     ("lipo 360", ["lipo 360"]),
@@ -304,6 +343,9 @@ LIPO_ES = [
     ("prenda de compresion", ["prenda de compresion", "prendas de compresion"]),
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("lipo 360 cerca de mi", ["lipo 360 cerca de mi", "liposuccion 360 cerca de mi", "liposuccion cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 MMO_EN = [
     ("mommy makeover", ["mommy makeover"]),
@@ -326,6 +368,9 @@ MMO_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("mommy makeover near me", ["mommy makeover near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 MMO_ES = [
     ("mommy makeover", ["mommy makeover"]),
@@ -345,6 +390,9 @@ MMO_ES = [
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
     ("cirugia estetica", ["cirugia estetica"]),
+    ("mommy makeover cerca de mi", ["mommy makeover cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
 LIPOSUCTION_EN = [
@@ -367,6 +415,9 @@ LIPOSUCTION_EN = [
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
+    ("liposuction near me", ["liposuction near me", "lipo near me", "liposuction surgeon near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
 LIPOSUCCION_ES = [
@@ -387,6 +438,9 @@ LIPOSUCCION_ES = [
     ("cirugia plastica", ["cirugia plastica"]),
     ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
     ("cirugia estetica", ["cirugia estetica"]),
+    ("liposuccion cerca de mi", ["liposuccion cerca de mi", "lipo cerca de mi", "lipoescultura cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
 # target_url -> {slug (improvements page), lang, keyword set}
