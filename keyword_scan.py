@@ -134,6 +134,24 @@ BR_EN = [
     ("plastic surgery", ["plastic surgery"]),
     ("cosmetic surgery", ["cosmetic surgery"]),
 ]
+BL_EN = [
+    ("breast lift", ["breast lift", "mastopexy", "boob lift", "breast uplift"]),
+    ("breast lift miami", ["breast lift miami", "miami breast lift", "breast lift in miami", "breast lift miami fl", "breast lift miami florida"]),
+    ("breast lift cost", ["breast lift cost", "cost of breast lift", "how much is a breast lift", "how much does a breast lift cost", "breast lift price"]),
+    ("breast lift miami cost", ["breast lift miami cost", "breast lift cost miami", "cost of breast lift miami", "miami breast lift cost", "breast lift price miami", "breast lift miami pricing"]),
+    ("best breast lift miami", ["best breast lift miami", "best breast lift miami beach", "best breast lift doctor in miami"]),
+    ("breast lift miami beach", ["breast lift miami beach", "breast lift miami beach fl"]),
+    ("breast lift with implants miami", ["breast lift with implants miami", "breast lift with augmentation miami", "breast augmentation with lift miami", "breast lift augmentation miami", "miami breast lift with implants"]),
+    ("mastopexy miami", ["mastopexy miami", "mastopexy cost", "mastopexy near me", "mastopexy florida"]),
+    ("scarless breast lift", ["scarless breast lift", "scarless breast lift florida", "breast lift without scars florida"]),
+    ("breast lift recovery", ["breast lift recovery", "recovery after a breast lift in miami"]),
+    ("breast augmentation miami", ["breast augmentation miami", "miami breast augmentation"]),
+    ("breast reduction miami", ["breast reduction miami"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+]
 RDS_ES = [
     ("reduccion de senos", ["reduccion de senos", "reduccion de mamas", "reduccion mamaria"]),
     ("reduccion de senos en miami", ["reduccion de senos en miami", "reduccion de senos miami", "reduccion mamaria miami"]),
@@ -368,6 +386,8 @@ PAGES = {
         {"slug": "breast-implant-revision-miami", "lang": "en", "kw": BIR_EN},
     "https://avanaplasticsurgery.com/breast-reduction-miami":
         {"slug": "breast-reduction-miami", "lang": "en", "kw": BR_EN},
+    "https://avanaplasticsurgery.com/breast-lift-miami":
+        {"slug": "breast-lift-miami", "lang": "en", "kw": BL_EN},
     "https://avanaplasticsurgery.com/espanol/reduccion-de-senos-miami":
         {"slug": "reduccion-de-senos-miami", "lang": "es", "kw": RDS_ES},
     "https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami":

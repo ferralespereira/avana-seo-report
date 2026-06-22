@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana — Breast Lift Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+  <a href="breast-lift-miami-improvements.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">SEO Improvements ›</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; breast lift miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/breast-lift-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/breast-lift-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="breast-lift-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/breast-lift-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    breast lift miami
+    <button onclick="navigator.clipboard.writeText('breast lift miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://avanaplasticsurgery.com/breast-lift-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/breast-lift-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/breast-lift-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">65</div>
+    <div class="kpi-source">Keyword: "breast lift miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">4,273</div>
+    <div class="kpi-source">Keyword: "breast lift miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">1.52%</div>
+    <div class="kpi-source">Keyword: "breast lift miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">18.67</div>
+    <div class="kpi-source">Keyword: "breast lift miami" — primary query</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for keyword "breast lift miami" (keyword-filtered)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Mobile</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">60</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">2,165</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">2.77%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">21.4</td>
+      </tr>
+      <tr style="background:#f8fbff;">
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">🖥️ Desktop</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">5</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">2,106</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0.24%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">12.93</td>
+      </tr>
+      <tr>
+        <td style="padding:9px 14px;">📋 Tablet</td>
+        <td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;text-align:right;color:#7c3aed;">2</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;text-align:right;color:#d97706;">2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="br-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('br-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/breast-lift-miami</span> — Last 3 months</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('br-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+  </div>
+  <div id="br-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">241</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">15,544</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">1.55%</div>
+      </div>
+    </div>
+    <!-- Zero-click queries table -->
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Zero-Click Queries with 100+ Impressions</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Query</th>
+            <th style="padding:7px 10px;text-align:right;">Impressions</th>
+            <th style="padding:7px 10px;text-align:right;">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast augmentation miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">751</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">76.45</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">fat transfer breast augmentation miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">264</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">79.73</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast implants miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">259</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">56.61</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast lift fort lauderdale</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">228</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">71.21</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast lift near me</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">162</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">21.08</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami breast augmentation</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">154</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">43.27</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">breast lift arlington heights</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">132</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">82.36</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">best breast lift miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">128</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">10.3</td></tr>
+          <tr><td style="padding:6px 10px;">best breast lift miami beach</td><td style="padding:6px 10px;text-align:right;">104</td><td style="padding:6px 10px;text-align:right;">27.98</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Showing all 9 zero-click queries with 100+ impressions · Source: GSC URL-filtered export 2026-06-22</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Competitor Analysis &mdash; Page-Level SEO Comparison</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content &mdash; Avana ✅ | Miami Plastic Surgery ✅ | Dr. Krau ✅ | Dr. Maercks ✅ confirmed from page source</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Avana 🔴 OUR PAGE<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://avanaplasticsurgery.com/breast-lift-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/breast-lift-miami</a>
+              <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/breast-lift-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Miami Plastic Surgery ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-lift/" style="color:#fff;text-decoration:none;" target="_blank">miamiplasticsurgery.com/…/breast-lift/</a>
+              <button onclick="navigator.clipboard.writeText('https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-lift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Dr. Krau ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.arykraumd.com/breast-surgery/breast-lift-miami/" style="color:#fff;text-decoration:none;" target="_blank">arykraumd.com/breast-surgery/breast-lift-miami/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.arykraumd.com/breast-surgery/breast-lift-miami/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Dr. Maercks ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.themaercksinstitute.com/plastic-surgery-miami-fl/breast/breast-lift/" style="color:#fff;text-decoration:none;" target="_blank">themaercksinstitute.com/…/breast/breast-lift/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.themaercksinstitute.com/plastic-surgery-miami-fl/breast/breast-lift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- Title tag -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Breast Lift Miami - Starts at $3800 | Avana Plastic Surgery"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ Exact "Breast Lift Miami" match<br/>✅ Lowest price ($3800) in the title — only page leading with a number</span></div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Breast Lift With Augmentation Miami | Miami Plastic Surgery"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ "Breast Lift…Miami" + augmentation modifier</span><br/><span style="color:#e67e22;">⚠️ No price; brand-led tail</span></div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Breast Lift Miami FL - Voted Best Breast Lift Surgeon Miami"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ Exact match + geo "FL" + "Voted Best" hook</span><br/><span style="color:#e67e22;">⚠️ No price</span></div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Breast Lift Miami, FL | The Maercks Institute"
+            <div style="margin-top:4px;font-size:11px;"><span style="color:#059669;">✅ Exact match + geo "FL"</span><br/><span style="color:#e67e22;">⚠️ No price; brand-led</span></div>
+          </td>
+        </tr>
+
+        <!-- H1 -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Breast Lift Miami"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Exact match</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Miami Breast Lift"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Geo + keyword (reordered)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Breast Lift Expert in Miami, FL — A National Leader in Breast Surgery"
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Keyword + geo + authority sub-headline</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Breast Lift"
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Bare H1 — no geo or modifier</div>
+          </td>
+        </tr>
+
+        <!-- Primary keyword -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">breast lift miami</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">miami breast lift / breast lift with augmentation</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">breast lift miami</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">breast lift miami</td>
+        </tr>
+
+        <!-- Secondary keywords -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords (H2s)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            What is breast lift surgery · Before &amp; After · Candidates · Consultation · Procedure · Crescent lift incision technique · Recovery · Mastopexy risks &amp; limitations · Results · Cost of Breast Lift Miami · FAQs
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            Best Breast Lift in Miami · What is a breast lift · About surgery · Benefits · What issues it fixes · How it's performed · Candidate · Consultation · FAQ
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            Candidate · Implants with mastopexy · Consultation · Superior techniques · Benelli · Vertical/Lollipop · LeJour minimal-scar · Surgical process · Recovery · Risks · Cost &amp; financing · FAQ
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            About · Benefits · Candidates · Consultation · Preparation · FEMMA-S Pectoral Sling · Scarless Breast Lift · Recovery · Results · Corresponding procedures · Cost · FAQ
+          </td>
+        </tr>
+
+        <!-- Word count -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            ~2,300 words
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Solid, but shorter than Krau / Miami PS</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            ~2,500 words
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Broad benefit/issue coverage</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            ~3,500 words
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Longest — deep technique sections</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            ~2,200 words
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Proprietary-technique depth</div>
+          </td>
+        </tr>
+
+        <!-- Cost signal -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest + lowest price</div>
+            <div>• "Starts at $3800" in title + meta ✅<br/>• Dedicated "Cost of Breast Lift Miami" H2 ✅<br/>• Financing available ✅</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No PriceRange schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No price listed</div>
+            <div>• Financing mentioned<br/>• No dollar figure anywhere</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Mid-premium price</div>
+            <div>• "$5,000 to $8,000" stated ✅<br/>• Dedicated cost &amp; financing H2</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Premium price</div>
+            <div>• "Starting at $10,500" stated ✅<br/>• Dedicated cost H2</div>
+          </td>
+        </tr>
+
+        <!-- Meta description -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;margin-bottom:4px;">✅ Price + options + CTA</div>
+            "Breast Lift Miami (Mastopexy) $3800. Variety of options for safe &amp; effective breast lift… Financing available. Call us."
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#999;margin-bottom:4px;">Not surfaced from source</div>
+            Brand / service description
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#999;margin-bottom:4px;">Not surfaced from source</div>
+            Authority / surgeon brand
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#999;margin-bottom:4px;">Not surfaced from source</div>
+            Not visible in extracted markup
+          </td>
+        </tr>
+
+        <!-- FAQ coverage -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ FAQ block present but shallow</div>
+            "Breast Lift Miami FAQs" section on page
+            <div style="color:#c0392b;margin-top:4px;">❌ Misses high-impression cost / "best breast lift" / mastopexy questions surfaced in GSC</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ 3-topic FAQ</div>
+            Anesthesia · consultation · recovery
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;margin-bottom:3px;">✅ 5-topic FAQ</div>
+            Candidacy · results · longevity · insurance · financing
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ 4-topic FAQ</div>
+            Breastfeeding · scarless incisions · FEMMA-S · size limits
+          </td>
+        </tr>
+
+        <!-- Trust signals -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;margin-bottom:3px;">⚠️ Weak on-page proof</div>
+            <div>• Board-certified surgeons (named in surgeon section)<br/>• Before/after + case-results galleries<br/>• Free consultation + financing</div>
+            <div style="color:#c0392b;margin-top:4px;">❌ No review count / star rating on page<br/>❌ No awards or media badges</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Multiple named surgeons</div>
+            <div>• 3 board-certified surgeons (Wolf, Polo, Altman)<br/>• 5★ testimonials<br/>• Before/after galleries</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Strongest authority</div>
+            <div>• "Voted Best Plastic Surgeon 2022" (Miami New Times)<br/>• 30+ years experience<br/>• Mentor LEAD advisory board<br/>• Testimonials + before/after</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;margin-bottom:3px;">✅ Credentials + RealSelf proof</div>
+            <div>• Board-certified surgeon<br/>• RealSelf reviews (3 featured)<br/>• "Thousands of patients" + ASPS<br/>• Before/after gallery</div>
+          </td>
+        </tr>
+
+        <!-- CTA -->
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Schedule A Free Consultation Today" + inline lead form
+            <div style="font-size:11px;color:#059669;margin-top:3px;">✅ Free consult · (305) 501-6000</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Request Appointment" / "Schedule a Consultation"
+            <div style="font-size:11px;color:#666;margin-top:3px;">(305) 595-2969</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Schedule a Breast Lift Consultation"
+            <div style="font-size:11px;color:#666;margin-top:3px;">(305) 861-6881</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Book a Consultation"
+            <div style="font-size:11px;color:#666;margin-top:3px;">(305) 328-8256</div>
+          </td>
+        </tr>
+
+        <!-- Schema -->
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Schema markup</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No JSON-LD schema detected</div>
+            <div style="color:#c0392b;">❌ No FAQPage<br/>❌ No MedicalProcedure<br/>❌ No PriceRange<br/>❌ No BreadcrumbList</div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">FAQPage + MedicalProcedure + PriceRange schema would unlock rich results and surface the $3800 price as a snippet.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Likely Medical/LocalBusiness</div>
+            <div style="color:#666;">Medical-service structure implies schema; not confirmed in extract.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ None visible in source</div>
+            <div style="color:#666;">Deep FAQ present but no confirmed FAQPage JSON-LD.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Likely FAQPage/Medical</div>
+            <div style="color:#666;">Structure implies LocalBusiness + MedicalProcedure + FAQPage; not confirmed.</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from competitor analysis:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Where Avana stands vs Miami PS, Krau &amp; Maercks for "breast lift miami":</strong><br/>
+          1. <strong>Avana sits mid-page</strong> — pos 18.67 / 41 clicks / 1.2% CTR on the exact keyword (URL avg 26.84); the gap to top-5 is authority + schema, not relevance<br/>
+          2. <strong>Krau leads on authority &amp; depth:</strong> "Voted Best 2022", 30+ yrs, ~3,500 words and technique sections (Benelli, LeJour, lollipop) that own informational intent<br/>
+          3. <strong>Miami Plastic Surgery wins breadth:</strong> 3 named board-certified surgeons, ~2,500 words, broad benefit/issue H2s and a "Best Breast Lift in Miami" section<br/>
+          4. <strong>Maercks plays premium:</strong> "$10,500", proprietary FEMMA-S / scarless techniques, RealSelf proof and likely FAQPage/MedicalProcedure schema<br/>
+          5. <strong>Avana already wins on price</strong> ($3,800 vs Krau $5k–$8k, Maercks $10,500) — a real differentiator none of them match
+        </div>
+        <div>
+          <strong>What Avana must add to dominate "breast lift miami" (pos 18.67 → target top 5):</strong><br/>
+          1. <strong>Add FAQPage + MedicalProcedure + PriceRange schema</strong> — page has 0 confirmed JSON-LD; FAQPage alone could unlock FAQ rich snippets and surface the $3800 price in the SERP<br/>
+          2. <strong>Defend the cost win:</strong> "breast lift miami cost" already ranks pos 3.28 (197 impr, 9.14% CTR) — add a cost FAQ + PriceRange to push it to #1 and capture "cost of breast lift miami" (62 impr)<br/>
+          3. <strong>Capture "best" intent:</strong> "best breast lift miami" (135 impr, pos 11.24) and "…miami beach" (110, 26.66) get 0 clicks — add a "Best Breast Lift in Miami" section + reviews to match Miami PS<br/>
+          4. <strong>Surface reviews + a named board-certified surgeon</strong> above the fold and in the title/meta (match Krau's "Voted Best" and Miami PS's 3 surgeons)<br/>
+          5. <strong>Deepen technique content</strong> (anchor / lollipop / Benelli / scarless) toward Krau's ~3,500-word page to win the informational and mastopexy queries
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel { position: relative; max-width: 100%; margin: auto; background: #fff; border: 1px solid #dce6f0; }
+.carousel-container { position: relative; padding: 16px 20px; display: flex; align-items: center; justify-content: center; min-height: 400px; }
+.carousel-slide { display: none; width: 100%; }
+.carousel-slide.active { display: block; }
+.carousel-slide img { max-width: 100%; height: auto; display: block; }
+.carousel-prev, .carousel-next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; background-color: rgba(0,0,0,0.5); font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 3px; user-select: none; }
+.carousel-next { right: 0; }
+.carousel-prev { left: 0; }
+.carousel-prev:hover, .carousel-next:hover { background-color: rgba(0,0,0,0.8); }
+.carousel-dots { text-align: center; padding: 12px 20px; background: #f9f9f9; border-top: 1px solid #dce6f0; }
+.carousel-dot { cursor: pointer; height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+.carousel-dot.active { background-color: #717171; }
+.carousel { max-width: 900px; margin: 30px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+.carousel-title { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 20px; font-size: 16px; font-weight: 600; text-align: center; letter-spacing: 0.5px; }
+.carousel-slide img { cursor: pointer; transition: transform 0.2s ease; }
+.carousel-slide img:hover { transform: scale(1.02); }
+.zoom-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); }
+.zoom-modal.active { display: flex; align-items: center; justify-content: center; }
+.zoom-modal-content { max-width: 90vw; max-height: 90vh; position: relative; }
+.zoom-modal-content img { width: 100%; height: auto; }
+.zoom-close { position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; user-select: none; }
+.zoom-close:hover { color: #bbb; }
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/breast-lift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/breast-lift-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/breast-lift-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) { showSlide(currentIndex += n); }
+function currentSlide(n) { showSlide(currentIndex = n); }
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
