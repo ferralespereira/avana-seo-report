@@ -53,6 +53,7 @@ BREAST_EN = [
     ("implant placement", ["implant placement"]),
     ("implant size", ["implant size", "breast size"]),
     ("breast augmentation cost", ["breast augmentation cost", "augmentation cost", "cost of breast augmentation"]),
+    ("breast implants cost", ["breast implants cost", "breast implant cost", "cost of breast implants", "how much are breast implants"]),
     ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
     ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
     ("plastic surgery", ["plastic surgery"]),
@@ -61,6 +62,7 @@ BREAST_EN = [
 BIR_EN = [
     ("breast implant revision", ["breast implant revision", "implant revision"]),
     ("breast implant revision miami", ["breast implant revision miami", "miami breast implant revision"]),
+    ("breast implant revision cost", ["breast implant revision cost", "breast revision cost", "cost of breast implant revision", "how much is breast revision"]),
     ("breast revision miami", ["breast revision miami", "breast revision in miami", "miami breast revision"]),
     ("breast revision surgery miami", ["breast revision surgery miami", "revisional breast surgery miami", "revision breast surgery miami"]),
     ("breast augmentation revision miami", ["breast augmentation revision miami", "revision breast augmentation miami"]),
@@ -81,6 +83,7 @@ BIR_EN = [
 BREAST_ES = [
     ("aumento de senos", ["aumento de senos"]),
     ("aumento de senos en miami", ["aumento de senos en miami", "aumento de senos miami"]),
+    ("aumento de senos precio", ["aumento de senos precio", "precio de aumento de senos", "costo de aumento de senos", "cuanto cuesta un aumento de senos", "precio de implantes de senos", "costo de implantes mamarios"]),
     ("implantes de senos", ["implantes de senos", "implante de senos"]),
     ("implantes mamarios", ["implantes mamarios", "implante mamario"]),
     ("implantes de silicona", ["implantes de silicona", "implante de silicona", "gel de silicona"]),
@@ -191,6 +194,7 @@ LEV_ES = [
 BBL_EN = [
     ("brazilian butt lift", ["brazilian butt lift"]),
     ("brazilian butt lift miami", ["brazilian butt lift miami"]),
+    ("brazilian butt lift cost", ["brazilian butt lift cost", "bbl cost", "cost of a bbl", "cost of bbl", "how much is a bbl", "how much does a bbl cost"]),
     ("bbl", ["bbl"]),
     ("butt lift", ["butt lift"]),
     ("butt augmentation", ["butt augmentation", "buttock augmentation"]),
@@ -213,6 +217,7 @@ BBL_ES = [
     ("aumento de gluteos", ["aumento de gluteos"]),
     ("bbl", ["bbl"]),
     ("cirugia bbl", ["cirugia bbl", "procedimiento bbl"]),
+    ("precio de bbl", ["precio de bbl", "bbl precio", "costo de bbl", "cuanto cuesta un bbl", "precio de aumento de gluteos", "costo de aumento de gluteos"]),
     ("transferencia de grasa", ["transferencia de grasa"]),
     ("injerto de grasa", ["injerto de grasa", "injerto graso"]),
     ("implantes de gluteos", ["implantes de gluteos", "implante de gluteos"]),
@@ -272,6 +277,7 @@ BBL_REVISION_ES = [
 LIPO_EN = [
     ("lipo 360", ["lipo 360"]),
     ("lipo 360 miami", ["lipo 360 miami"]),
+    ("lipo 360 cost", ["lipo 360 cost", "lipo 360 miami cost", "cost of lipo 360", "how much is lipo 360"]),
     ("liposuction 360", ["liposuction 360", "360 liposuction"]),
     ("liposuction", ["liposuction"]),
     ("body contouring", ["body contouring"]),
@@ -289,6 +295,7 @@ LIPO_EN = [
 LIPO_ES = [
     ("lipo 360", ["lipo 360"]),
     ("lipo 360 miami", ["lipo 360 miami"]),
+    ("precio de lipo 360", ["precio de lipo 360", "lipo 360 precio", "costo de lipo 360", "cuanto cuesta una lipo 360"]),
     ("liposuccion 360", ["liposuccion 360", "360 liposuccion"]),
     ("liposuccion", ["liposuccion"]),
     ("contorno corporal", ["contorno corporal"]),
