@@ -42,7 +42,7 @@ The device breakdown is **keyword-filtered** (it sits under the keyword KPI card
 **The keyword `Devices.csv` may have fewer than three rows, or only a header row.** Only render the device rows that actually exist in the CSV — do NOT pad with URL-filtered numbers or invent rows. If the file is header-only (the exact keyword had 0 impressions in the period), render an empty-state instead (see 2d).
 
 ### From the URL folder — read `Queries.csv`
-- Row 1 (Pages.csv or Queries.csv totals): total Clicks / Impressions / CTR for the all-queries header
+- Row 1 (Pages.csv or Queries.csv totals): total Clicks / Impressions / CTR / **Average Position** for the all-queries header. The page-level average position comes from URL-filtered `Pages.csv` (the single row for this page — its `Position` column).
 - All queries with 0 clicks and 100+ impressions → zero-click query rows (top 20, ordered by impressions desc)
 - Count how many queries have 100+ impressions → use in footer text
 
@@ -78,11 +78,21 @@ Update the rows with **keyword-filtered** `Devices.csv` values (from the KEYWORD
   In that case, surface the URL-level reach (impressions / avg position from `Pages.csv`) in the all-queries section below — not in this table.
 
 ### 2e. All-Queries Collapsible Section Header
-Find the blue collapsible `<details>` block. Update:
-- Total clicks
-- Total impressions  
-- CTR percentage
-These come from URL-filtered `Pages.csv` (the single row for this page).
+Find the blue collapsible `<details>` block. It has a row of stat cards — update **all four** (set the grid to `grid-template-columns:repeat(4,1fr)` so the 4th card fits):
+- Total Clicks
+- Total Impressions
+- Average CTR
+- **Average Position**
+
+All four come from URL-filtered `Pages.csv` (the single row for this page). The Average Position card uses that row's `Position` value (e.g. `26.84`). This is the **page-level** average position (all queries the URL surfaces for) and will typically be higher/worse than the keyword-filtered KPI-card position — that's expected.
+
+If an older page only has 3 cards (Clicks / Impressions / CTR), add the 4th "Average Position" card in the same style and widen the grid to 4 columns:
+```html
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+  <div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+  <div style="font-size:22px;font-weight:700;color:#2563eb;">[position]</div>
+</div>
+```
 
 ### 2f. Zero-Click Queries Table
 Replace the existing rows with the top 20 zero-click queries (0 clicks, 100+ impressions, sorted by impressions descending) from URL-filtered `Queries.csv`.
