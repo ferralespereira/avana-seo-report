@@ -724,7 +724,206 @@
   </div>
 </div>
 
+<!-- ===== GEO OVERVIEW (AI answer-engine citability of every Avana page) ===== -->
+<div style="padding:24px 40px 0;">
+  <div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);overflow:hidden;">
+    <div style="background:#6d28d9;color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;cursor:pointer;" onclick="toggleGeoOverview(this)">
+      <div>
+        <div style="font-size:16px;font-weight:700;">&#129302; GEO Overview — AI Answer-Engine Citability</div>
+        <div style="font-size:12px;color:#dcd6f5;margin-top:2px;">How citable each Avana page is by generative engines (AI Overviews, ChatGPT, Perplexity, Claude), from the latest daily scan. Lowest scores first = priorities. Red = a ranking competitor out-signals Avana.</div>
+      </div>
+      <span id="geoOverviewToggleIcon" style="font-size:18px;color:#dcd6f5;line-height:1;">&#9660;</span>
+    </div>
+    <div id="geoOverviewBody" style="display:none;padding:16px 20px;overflow-x:auto;">
+      <div id="geoOverviewControls" style="display:none;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px;font-size:13px;color:#555;">
+        <span style="color:#6d28d9;font-weight:600;">Showing:</span>
+        <select id="geoShowDate" style="font-size:13px;padding:4px 8px;border-radius:5px;border:1px solid #b59ae8;background:#fff;color:#1B3A5C;font-weight:600;"></select>
+        <span style="color:#6d28d9;font-weight:600;margin-left:6px;">Compare to:</span>
+        <select id="geoCmpDate" style="font-size:13px;padding:4px 8px;border-radius:5px;border:1px solid #b59ae8;background:#fff;color:#1B3A5C;font-weight:600;"></select>
+        <span id="geoDayCount" style="font-size:11px;color:#999;"></span>
+      </div>
+      <div id="geoOverviewMsg" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading GEO analysis&hellip;</div>
+      <div id="geoOverviewWrap" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+
 <script src="reports/keyword-history.js"></script>
+<script>
+function toggleGeoOverview(h) {
+  var b = document.getElementById('geoOverviewBody');
+  var i = document.getElementById('geoOverviewToggleIcon');
+  var open = b.style.display === 'none';
+  b.style.display = open ? 'block' : 'none';
+  i.innerHTML = open ? '&#9650;' : '&#9660;';
+}
+(function () {
+  var H = window.KEYWORD_HISTORY;
+  var msg = document.getElementById('geoOverviewMsg');
+  var wrap = document.getElementById('geoOverviewWrap');
+  var controls = document.getElementById('geoOverviewControls');
+  var showSel = document.getElementById('geoShowDate');
+  var cmpSel = document.getElementById('geoCmpDate');
+  var dayCount = document.getElementById('geoDayCount');
+  if (!H || !msg) return;
+  var PURPLE = "#6d28d9", NAVY = "#1B3A5C";
+
+  // GEO signal columns (mirror geo-widget.js)
+  var COLS = [
+    { key: "stats_1k", label: "Stats/1k", tip: "Concrete liftable numbers per 1,000 words — the #1 GEO lever." },
+    { key: "cites",    label: "Citations", tip: "Outbound links to authority sources (.gov/.edu, FDA, ASPS…)." },
+    { key: "quotes",   label: "Quotes",   tip: "Attributed expert statements / blockquotes." },
+    { key: "qa",       label: "Q&A",      tip: "FAQ-style questions — pre-chunked answers AI can quote." },
+    { key: "defs",     label: "Defs",     tip: "“X is a procedure that…” direct-answer phrasing." },
+    { key: "auth",     label: "E-E-A-T",  tip: "Credentials & named experts (board-certified, MD, FACS)." },
+    { key: "struct",   label: "Struct",   tip: "Tables & list items — extractable formats." },
+    { key: "fresh",    label: "Fresh",    tip: "Recency signal (updated/reviewed 20xx)." }
+  ];
+  function v(g, k) { return (g && g[k] != null) ? g[k] : 0; }
+  function hasGeo(s) { return s && s.geo && s.geo.some(function (g) { return g; }); }
+  function avanaGeo(scan) {
+    if (!hasGeo(scan)) return null;
+    var ai = scan.sites.map(function (s) { return s.avana; }).indexOf(true);
+    return (ai >= 0 && scan.geo[ai]) ? { ai: ai, geo: scan.geo[ai] } : null;
+  }
+
+  // union of every date that carries GEO data on any page
+  var allDates = {};
+  Object.keys(H).forEach(function (slug) {
+    Object.keys(H[slug].scans).forEach(function (d) {
+      if (hasGeo(H[slug].scans[d])) allDates[d] = 1;
+    });
+  });
+  var dates = Object.keys(allDates).sort();          // oldest -> newest
+  if (!dates.length) { msg.textContent = 'No GEO data yet — it will populate after the next daily scan.'; return; }
+
+  // populate "Showing" (newest first)
+  dates.slice().reverse().forEach(function (d, i) {
+    var o = document.createElement('option');
+    o.value = d; o.textContent = d + (i === 0 ? '  (latest)' : '');
+    showSel.appendChild(o);
+  });
+  function fillCmp(primary) {
+    cmpSel.innerHTML = '';
+    var none = document.createElement('option');
+    none.value = ''; none.textContent = '— none —';
+    cmpSel.appendChild(none);
+    var earlier = dates.filter(function (d) { return d < primary; }).reverse();
+    earlier.forEach(function (d, i) {
+      var o = document.createElement('option');
+      o.value = d; o.textContent = d + (i === 0 ? '  (prev. day)' : '');
+      cmpSel.appendChild(o);
+    });
+    cmpSel.value = earlier.length ? earlier[0] : '';
+  }
+
+  function cell(val, beaten, isScore) {
+    var bg = beaten ? "#fef5f5" : "transparent";
+    var color = beaten ? "#c0392b" : NAVY;
+    var fw = isScore ? "800" : (beaten ? "700" : "600");
+    return '<td style="padding:7px 8px;text-align:center;font-variant-numeric:tabular-nums;background:' + bg +
+      ';color:' + color + ';font-weight:' + fw + ';border-bottom:1px solid #f0f0f0;">' + val + '</td>';
+  }
+
+  function render(showDate, cmpDate) {
+    // one row per Avana page that has GEO data on the chosen "showing" date
+    var rows = [];
+    Object.keys(H).forEach(function (slug) {
+      var e = H[slug];
+      var scan = e.scans[showDate];
+      var ag = avanaGeo(scan);
+      if (!ag) return;
+      var sites = scan.sites, geo = scan.geo, ai = ag.ai;
+      var order = sites.map(function (_, i) { return i; })
+        .sort(function (a, b) { return v(geo[b], "score") - v(geo[a], "score"); });
+      var rank = order.indexOf(ai) + 1;
+      var compMax = {};
+      COLS.concat([{ key: "score" }]).forEach(function (c) {
+        compMax[c.key] = Math.max.apply(null, sites.map(function (_, i) { return i; })
+          .filter(function (i) { return i !== ai; })
+          .map(function (i) { return v(geo[i], c.key); }).concat([0]));
+      });
+      // Avana's score on the chosen comparison date (if that page has GEO data then)
+      var prevScore = null;
+      if (cmpDate && e.scans[cmpDate]) {
+        var pg = avanaGeo(e.scans[cmpDate]);
+        if (pg) prevScore = v(pg.geo, "score");
+      }
+      rows.push({ slug: slug, label: e.keyword || slug, n: sites.length,
+                  rank: rank, geo: geo[ai], compMax: compMax, prevScore: prevScore });
+    });
+
+    if (!rows.length) {
+      wrap.style.display = 'none';
+      msg.style.display = 'block';
+      msg.textContent = 'No page has GEO data for ' + showDate + '.';
+      return;
+    }
+    rows.sort(function (a, b) { return v(a.geo, "score") - v(b.geo, "score"); }); // worst first
+
+    var html = '<table style="border-collapse:collapse;font-size:12px;width:100%;min-width:780px;">';
+    html += '<thead><tr style="color:#888;font-size:10px;text-transform:uppercase;letter-spacing:.4px;">' +
+      '<th style="padding:8px;text-align:left;border-bottom:2px solid #eee;position:sticky;left:0;background:#fff;">Page</th>' +
+      '<th style="padding:8px;text-align:center;border-bottom:2px solid #eee;">GEO score</th>' +
+      '<th style="padding:8px;text-align:center;border-bottom:2px solid #eee;" title="Change in Avana\'s GEO score vs the selected comparison date">&Delta;</th>' +
+      '<th style="padding:8px;text-align:center;border-bottom:2px solid #eee;" title="Avana\'s GEO rank among the sites ranking for this term">GEO rank</th>';
+    COLS.forEach(function (c) {
+      html += '<th style="padding:8px;text-align:center;border-bottom:2px solid #eee;cursor:help;" title="' + c.tip + '">' + c.label + '</th>';
+    });
+    html += '<th style="padding:8px;text-align:center;border-bottom:2px solid #eee;" title="Number of GEO signals where a competitor beats Avana">Gaps</th></tr></thead><tbody>';
+
+    rows.forEach(function (r) {
+      var gaps = 0;
+      COLS.forEach(function (c) { if (v(r.geo, c.key) < r.compMax[c.key]) gaps++; });
+      var scoreBeaten = v(r.geo, "score") < r.compMax.score;
+      html += '<tr>';
+      html += '<td style="padding:7px 8px;font-weight:600;color:' + NAVY + ';white-space:nowrap;position:sticky;left:0;background:#fff;border-bottom:1px solid #f0f0f0;">' +
+        '<a href="' + r.slug + '.html" style="color:' + PURPLE + ';text-decoration:none;font-weight:700;">' + r.label + '</a></td>';
+      html += cell(Math.round(v(r.geo, "score") * 10) / 10, scoreBeaten, true);
+      var dCell;
+      if (!cmpDate) {
+        dCell = '<span style="color:#ccc;" title="Pick a comparison date">—</span>';
+      } else if (r.prevScore == null) {
+        dCell = '<span style="color:#ccc;" title="This page has no GEO data on ' + cmpDate + '">—</span>';
+      } else {
+        var d = Math.round((v(r.geo, "score") - r.prevScore) * 10) / 10;
+        if (d === 0) dCell = '<span style="color:#bbb;" title="No change vs ' + cmpDate + '">±0</span>';
+        else dCell = '<span style="color:' + (d > 0 ? "#1E7E34" : "#c0392b") + ';font-weight:700;" title="vs ' + cmpDate + '">' +
+          (d > 0 ? "▲" : "▼") + Math.abs(d) + '</span>';
+      }
+      html += '<td style="padding:7px 8px;text-align:center;font-variant-numeric:tabular-nums;border-bottom:1px solid #f0f0f0;">' + dCell + '</td>';
+      html += '<td style="padding:7px 8px;text-align:center;color:' + (r.rank === 1 ? "#1E7E34" : (r.rank > r.n / 2 ? "#c0392b" : "#888")) +
+        ';font-weight:700;border-bottom:1px solid #f0f0f0;">#' + r.rank + '<span style="color:#bbb;font-weight:400;font-size:10px;"> / ' + r.n + '</span></td>';
+      COLS.forEach(function (c) {
+        var val = v(r.geo, c.key);
+        var disp = c.key === "stats_1k" ? (Math.round(val * 10) / 10) : val;
+        html += cell(disp, val < r.compMax[c.key], false);
+      });
+      html += '<td style="padding:7px 8px;text-align:center;font-weight:700;color:' + (gaps === 0 ? "#1E7E34" : "#c0392b") +
+        ';border-bottom:1px solid #f0f0f0;">' + (gaps === 0 ? "✓ 0" : gaps + " / " + COLS.length) + '</td>';
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+    html += '<div style="margin-top:10px;font-size:11px;color:#888;">Showing <strong>' + showDate + '</strong>' +
+      (cmpDate ? ' vs <strong>' + cmpDate + '</strong>' : '') +
+      '. Sorted worst-first by GEO score. <span style="color:#c0392b;font-weight:700;">Red</span> = a competitor ranking for that term out-signals Avana — content to add to win AI citations. <strong>&Delta;</strong> = change in Avana\'s GEO score vs the comparison date (<span style="color:#1E7E34;font-weight:700;">▲</span> up / <span style="color:#c0392b;font-weight:700;">▼</span> down). Click a page name for its full GEO scorecard.</div>';
+
+    wrap.innerHTML = html;
+    msg.style.display = 'none';
+    wrap.style.display = 'block';
+  }
+
+  function refresh() { render(showSel.value, cmpSel.value || null); }
+  showSel.addEventListener('change', function () { fillCmp(showSel.value); refresh(); });
+  cmpSel.addEventListener('change', refresh);
+
+  showSel.value = dates[dates.length - 1];   // latest
+  fillCmp(showSel.value);
+  dayCount.textContent = dates.length + ' day(s) with GEO data';
+  controls.style.display = 'flex';
+  refresh();
+})();
+</script>
 
 <script src="reports/chart-data.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>

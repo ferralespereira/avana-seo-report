@@ -494,11 +494,21 @@ def strip_accents(s):
     return s.replace("ñ", "n")
 
 
-def normalize(raw):
+def strip_noise(raw):
+    """Remove script/style/comment and nav/footer/header/form/svg blocks but
+    KEEP the remaining tags. This is the shared first stage of normalize(); GEO
+    signal extraction runs on it so numbers, links, list items and credentials
+    buried in JSON-LD, tracking scripts and chrome don't get miscounted as
+    visible content."""
     for tag in ("script", "style", "noscript"):
         raw = re.sub(r"(?is)<%s.*?</%s>" % (tag, tag), " ", raw)
     raw = re.sub(r"(?is)<!--.*?-->", " ", raw)
     raw = re.sub(r"(?is)<(nav|footer|header|form|svg)[^>]*>.*?</\1>", " ", raw)
+    return raw
+
+
+def normalize(raw):
+    raw = strip_noise(raw)
     raw = re.sub(r"(?s)<[^>]+>", " ", raw)
     raw = strip_accents(htmllib.unescape(raw).lower())
     raw = re.sub(r"[^a-z0-9\s]", " ", raw)
@@ -517,23 +527,27 @@ def decoded(r):
     return r.text
 
 
-def fetch_text(url):
-    """Return normalized page text, or None if unreachable/blocked."""
+def fetch_raw(url):
+    """Return the page's raw (decoded) HTML, or None if unreachable/blocked.
+
+    Raw HTML is kept so both keyword counting (via normalize()) and GEO signal
+    extraction (which needs links, tables, blockquotes and `?`-terminated
+    headings that normalize() strips) can run off the same single download."""
     try:
         r = requests.get(url, headers={"User-Agent": UA}, timeout=30, allow_redirects=True)
         if r.status_code != 200:
             return None
-        text = decoded(r)
-        if len(text) < 2000:
+        raw = decoded(r)
+        if len(raw) < 2000:
             return None
-        return normalize(text)
+        return raw
     except Exception:
         return None
 
 
 def wayback_fetch(url):
     """Fallback for blocked/unreachable pages: fetch the most recent Wayback
-    Machine snapshot. Returns (normalized_text, 'YYYY-MM-DD' crawl date) or
+    Machine snapshot. Returns (raw_html, 'YYYY-MM-DD' crawl date) or
     (None, None) if the archive has no usable capture."""
     try:
         cdx = ("http://web.archive.org/cdx/search/cdx?url=" + quote(url, safe="") +
@@ -550,11 +564,11 @@ def wayback_fetch(url):
         r2 = requests.get(snap, headers={"User-Agent": UA}, timeout=40, allow_redirects=True)
         if r2.status_code != 200:
             return None, None
-        text = decoded(r2)
-        if len(text) < 2000:
+        raw = decoded(r2)
+        if len(raw) < 2000:
             return None, None
         crawl_date = "{}-{}-{}".format(ts[0:4], ts[4:6], ts[6:8])
-        return normalize(text), crawl_date
+        return raw, crawl_date
     except Exception:
         return None, None
 
@@ -563,11 +577,103 @@ def count(text, phrase):
     return len(re.findall(r"(?<!\w)" + re.escape(phrase) + r"(?!\w)", text))
 
 
+# ── GEO (Generative Engine Optimization) signals ─────────────────────────────
+# What makes a page the kind of source an AI answer engine (Google AI Overviews,
+# ChatGPT, Perplexity, Claude) will lift and cite. Each signal is a markup-
+# agnostic heuristic over the RAW html (links/tables/blockquotes/`?` headings),
+# so it works whether or not the competitor uses structured data. Controlled GEO
+# research finds statistics, citations and quotations move visibility the most;
+# direct-answer Q&A, definitions, authority (E-E-A-T) and freshness round it out.
+GEO_AUTH_DOMAINS = (r"\.gov|\.edu|ncbi\.nlm\.nih|pubmed|fda\.gov|plasticsurgery\.org|"
+                    r"mayoclinic|clevelandclinic|hopkinsmedicine|webmd|healthline|"
+                    r"aad\.org|asps\.org|surgery\.org")
+# tags that typically hold an FAQ question title (accordion buttons, <summary>,
+# headings, definition terms, list items…). Matched as closed pairs below.
+_QTAGS = r"h[2-5]|summary|dt|button|strong|b|a|span|p|li|legend"
+
+
+def extract_faqs(raw):
+    """De-duplicated list of FAQ-style question strings on a page — any short
+    text node ending in '?' inside a heading/title-ish element. Markup-agnostic
+    so it catches accordions, <details>, list-item and plain heading+answer.
+
+    Each tag is matched as a CLOSED pair (`</\\1>`) rather than to the next
+    arbitrary `</`: with a single any-close pattern, re.findall's non-overlapping
+    scan lets an outer element swallow the region holding an accordion's
+    <button>…?</button>, dropping that question. Closing on the matching tag
+    keeps every question's element intact."""
+    out, seen = [], set()
+    for _tag, inner in re.findall(r"(?is)<(%s)\b[^>]*>(.*?)</\1>" % _QTAGS, raw):
+        t = re.sub(r"(?s)<[^>]+>", " ", inner)
+        t = re.sub(r"\s+", " ", htmllib.unescape(t)).strip()
+        if not t.endswith("?") or not (12 <= len(t) <= 200):
+            continue
+        key = strip_accents(t.lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(t)
+    return out
+
+
+def geo_signals(raw, norm_text):
+    """Per-page GEO metric dict computed from HTML + its normalized text.
+    Counts are reported raw; `stats_1k` is per-1000-words so dense liftable
+    pages aren't beaten on length alone. `score` is a weighted composite.
+
+    Regexes run on the noise-stripped HTML (scripts/JSON-LD/nav/footer removed)
+    so they measure the visible article, not chrome or structured-data blobs."""
+    raw = strip_noise(raw)
+    words = max(len(norm_text.split()), 1)
+    # 1. STATISTICS — concrete, liftable numbers (the #1 GEO lever)
+    stats = len(re.findall(
+        r"(?i)(\$\s?\d[\d,]*|\d+(?:\.\d+)?\s?%|"
+        r"\d+\s?(?:weeks?|days?|hours?|months?|years?|cc|ml|lbs?|pounds?|patients?))",
+        raw))
+    # 2. CITATIONS — outbound links to authority sources AI trusts
+    cites = len(re.findall(r'(?i)href="[^"]*(?:%s)' % GEO_AUTH_DOMAINS, raw))
+    # 3. QUOTATIONS — attributed expert statements
+    quotes = len(re.findall(r"(?is)<blockquote|<q[ >]", raw))
+    # 4. ANSWER-EXTRACTABILITY — FAQ-style questions (pre-chunked answers)
+    qa = len(extract_faqs(raw))
+    # 5. DEFINITIONS — "X is a procedure that…" direct-answer phrasing
+    defs = len(re.findall(
+        r"(?i)\b(?:is|are)\s+(?:a|an|the)\s+"
+        r"(?:procedure|surgery|surgical|technique|treatment|type of)", raw))
+    # 6. AUTHORITY / E-E-A-T — credentials, named experts, pro orgs
+    auth = len(re.findall(
+        r"(?i)board[- ]certified|\bF\.?A\.?C\.?S\.?\b|\bM\.?D\.?\b|"
+        r"american society of plastic|\bABPS\b|Dr\.\s+[A-Z]", raw))
+    # 7. STRUCTURE — tables & list items parse cleanly into answers
+    struct = len(re.findall(r"(?is)<table|<li[ >]", raw))
+    # 8. FRESHNESS — recency signals
+    fresh = 1 if re.search(
+        r"(?i)(?:updated|reviewed|last modified|medically reviewed)[^<]{0,40}20(?:2[3-9]|[3-9]\d)",
+        raw) else 0
+
+    sig = {
+        "words": words,
+        "stats": stats, "stats_1k": round(1000 * stats / words, 2),
+        "cites": cites, "quotes": quotes, "qa": qa,
+        "defs": defs, "auth": auth, "struct": struct, "fresh": fresh,
+    }
+    sig["score"] = geo_score(sig)
+    return sig
+
+
+def geo_score(s):
+    """Weighted composite GEO score — front-loads the proven levers
+    (statistics, citations, quotations)."""
+    return round(3 * s["stats_1k"] + 4 * s["cites"] + 3 * s["quotes"]
+                 + 1.5 * s["qa"] + s["defs"] + s["auth"]
+                 + 0.5 * s["struct"] + 2 * s["fresh"], 1)
+
+
 def prior_live_counts(entry, domain, nkw, before_date):
     """Most recent prior scan (before `before_date`) where `domain` was measured
-    live or manually — never from Wayback. Returns (column_values, origin_date)
-    or (None, None). Lets a blocked page reuse its last real counts instead of
-    reaching for a years-old archive."""
+    live or manually — never from Wayback. Returns (column_values, origin_date,
+    geo) or (None, None, None). Lets a blocked page reuse its last real counts
+    (and GEO signals) instead of reaching for a years-old archive."""
     scans = (entry or {}).get("scans", {})
     for d in sorted(scans.keys(), reverse=True):
         if d >= before_date:
@@ -584,9 +690,11 @@ def prior_live_counts(entry, domain, nkw, before_date):
         if len(cnts) != nkw:
             continue
         col = [cnts[r][idx] for r in range(nkw)]
+        geo_list = scan.get("geo") or []
+        geo = geo_list[idx] if idx < len(geo_list) else None
         origin = s.get("carried_from") or d        # propagate the real measurement date
-        return col, origin
-    return None, None
+        return col, origin, geo
+    return None, None, None
 
 
 def short_label(domain):
@@ -635,33 +743,41 @@ def scan_page(target_url, cfg, report_item, date, entry):
     #     "wayback" — the Wayback crawl is newer (site["archived"] = crawl date)
     #   "none"    — unreachable everywhere
     texts = []            # per-column normalized text (None when not text-sourced)
+    raws = []             # per-column raw HTML (None when not text-sourced)
     override = {}         # column index -> precomputed counts column (carried)
+    override_geo = {}     # column index -> carried-forward GEO signal dict
     for i, (site, url) in enumerate(zip(sites, urls)):
         if i > 0:
             time.sleep(REQUEST_DELAY)     # pace requests across columns
-        t = fetch_text(url)
-        if t is not None:
+        raw = fetch_raw(url)
+        if raw is not None:
             site["ok"], site["source"] = True, "live"
-            texts.append(t)
+            texts.append(normalize(raw))
+            raws.append(raw)
             continue
         # live blocked — gather both fallbacks, then pick the freshest by date
-        col, origin = prior_live_counts(entry, site["domain"], len(kw), date)
-        wb_text, crawl_date = wayback_fetch(url)
-        use_carry = col is not None and (wb_text is None or origin >= crawl_date)
+        col, origin, geo = prior_live_counts(entry, site["domain"], len(kw), date)
+        wb_raw, crawl_date = wayback_fetch(url)
+        use_carry = col is not None and (wb_raw is None or origin >= crawl_date)
         if use_carry:
             site["ok"], site["source"] = True, "carried"
             site["carried_from"] = origin
             override[i] = col
+            if geo is not None:
+                override_geo[i] = geo
             texts.append(None)
+            raws.append(None)
             print(f"    (carried forward: {site['domain']} from {origin})")
-        elif wb_text is not None:
+        elif wb_raw is not None:
             site["ok"], site["source"] = True, "wayback"
             site["archived"] = crawl_date         # served from archive, not live
-            texts.append(wb_text)
+            texts.append(normalize(wb_raw))
+            raws.append(wb_raw)
             print(f"    (archived fallback: {site['domain']} @ {crawl_date})")
         else:
             site["ok"], site["source"] = False, "none"
             texts.append(None)
+            raws.append(None)
 
     # counts[keyword_index][site_index]
     counts = []
@@ -674,7 +790,18 @@ def scan_page(target_url, cfg, report_item, date, entry):
                 row.append(sum(count(t, v) for v in variants) if t else 0)
         counts.append(row)
 
+    # geo[site_index] — GEO signal dict per column (None when no content available)
+    geo = []
+    for i, (t, raw) in enumerate(zip(texts, raws)):
+        if i in override:
+            geo.append(override_geo.get(i))      # carried (or None if not stored yet)
+        elif raw and t:
+            geo.append(geo_signals(raw, t))
+        else:
+            geo.append(None)
+
     return {
+        "geo": geo,
         "sites": sites,
         "counts": counts,
     }

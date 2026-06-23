@@ -218,6 +218,7 @@
       var tbody = el("tbody");
       keywords.forEach(function (kw, ki) {
         var row = counts[ki];
+        if (!row) return;     // this day predates this keyword (keyword set grew since)
         var gap = row[P.avanaIdx] === 0;
         var rowMax = Math.max.apply(null, row.filter(function (x) { return x != null; }).concat([1]));
 
@@ -245,7 +246,7 @@
           var dHtml = "";
           if (C) {
             var r = resolve(P, C, si);
-            if (r.status === "match" && C.counts[ki][r.cj] != null) dHtml = delta(v - C.counts[ki][r.cj]);
+            if (r.status === "match" && C.counts[ki] && C.counts[ki][r.cj] != null) dHtml = delta(v - C.counts[ki][r.cj]);
           }
           tr.appendChild(el("td",
             "padding:6px;text-align:center;font-variant-numeric:tabular-nums;background:" + bg + ";color:" + color + ";font-weight:" + weight + border,
