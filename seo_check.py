@@ -83,7 +83,7 @@ locations = [
 ]
 
 
-def check_ranking(keyword, target_url, lang, location):
+def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4):
     payload = {
         "q": keyword,
         "gl": "us",          # country = United States
@@ -93,20 +93,36 @@ def check_ranking(keyword, target_url, lang, location):
     if location:             # add city-level targeting when provided
         payload["location"] = location
 
-    try:
-        r = requests.post(
-            "https://google.serper.dev/search",
-            headers={"X-API-KEY": SERPER_KEY, "Content-Type": "application/json"},
-            json=payload,
-            timeout=30,
-        )
-        r.raise_for_status()
-        data = r.json()
-    except Exception as e:
-        return {"position": "error", "found_on_page_1": False,
-                "my_pages_ranking": [], "top_10_competitors": [], "error": str(e)}
+    # A populated "organic" list is the success condition. An empty or failed
+    # response is almost always a transient Serper hiccup (rate-limit, blank
+    # page), which otherwise gets recorded as "no competitors" for the day and
+    # blanks every downstream table. Retry a few times before accepting it.
+    results = None
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            r = requests.post(
+                "https://google.serper.dev/search",
+                headers={"X-API-KEY": SERPER_KEY, "Content-Type": "application/json"},
+                json=payload,
+                timeout=30,
+            )
+            r.raise_for_status()
+            results = r.json().get("organic", [])   # organic only — ignores ads
+        except Exception as e:
+            last_err = str(e)
+            results = None
 
-    results = data.get("organic", [])   # organic only — ignores ads
+        if results:
+            break
+        if attempt < retries:
+            print(f"    (empty/failed result for '{keyword}', "
+                  f"retry {attempt}/{retries - 1})")
+            time.sleep(retry_delay)
+
+    if results is None:
+        return {"position": "error", "found_on_page_1": False,
+                "my_pages_ranking": [], "top_10_competitors": [], "error": last_err}
 
     position = "not found"
     competitors = []
@@ -191,6 +207,18 @@ with open(csv_file, "a", encoding="utf-8") as f:
 
 print("Done! Reports saved.")
 
+# Completeness check — surface any keyword that did NOT come back with a full
+# top-10 competitor set, so an incomplete run is visible in the log (and the
+# CI output) instead of silently blanking that page's tables.
+incomplete = [r for r in reports if len(r.get("top_10_competitors", [])) < 10]
+if incomplete:
+    print(f"\nWARNING: {len(incomplete)} keyword(s) returned fewer than 10 competitors:")
+    for r in incomplete:
+        print(f"    - {r['keyword']}: {len(r['top_10_competitors'])} "
+              f"competitor(s), position={r['position']}")
+else:
+    print("\nAll keywords returned a full top-10 competitor set.")
+
 
 def generate_chart_data(reports_dir="reports"):
     """Scan all dated JSON files and write reports/chart-data.js."""
@@ -230,8 +258,13 @@ def generate_chart_data(reports_dir="reports"):
             for d, v in sorted_dates
         ]
 
-        # Top 5 competitors from the most recent date
-        latest_comps = sorted_dates[-1][1].get("competitors", [])[:10] if sorted_dates else []
+        # Competitors from the most recent date that actually HAS them, so a
+        # single empty-SERP day doesn't blank the chart's competitor lines.
+        latest_comps = []
+        for _, v in reversed(sorted_dates):
+            if v.get("competitors"):
+                latest_comps = v["competitors"][:10]
+                break
 
         competitors = []
         for comp in latest_comps:

@@ -1786,7 +1786,798 @@ window.SEO_POSITION_DATA = {
         "keyword": "breast implants miami"
       }
     ],
-    "competitors": []
+    "competitors": [
+      {
+        "url": "https://www.cgcosmetic.com/",
+        "title": "Miami Plastic Surgery Center, Top Plastic Surgeons",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 1
+          },
+          {
+            "date": "2026-06-07",
+            "position": 1
+          },
+          {
+            "date": "2026-06-08",
+            "position": 1
+          },
+          {
+            "date": "2026-06-09",
+            "position": 1
+          },
+          {
+            "date": "2026-06-10",
+            "position": 1
+          },
+          {
+            "date": "2026-06-11",
+            "position": 1
+          },
+          {
+            "date": "2026-06-12",
+            "position": 1
+          },
+          {
+            "date": "2026-06-13",
+            "position": 1
+          },
+          {
+            "date": "2026-06-14",
+            "position": 1
+          },
+          {
+            "date": "2026-06-15",
+            "position": 1
+          },
+          {
+            "date": "2026-06-16",
+            "position": 1
+          },
+          {
+            "date": "2026-06-17",
+            "position": 1
+          },
+          {
+            "date": "2026-06-18",
+            "position": 1
+          },
+          {
+            "date": "2026-06-19",
+            "position": 1
+          },
+          {
+            "date": "2026-06-20",
+            "position": 1
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": 1
+          },
+          {
+            "date": "2026-06-23",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Miami Breast Implants | Miami Plastic Surgery",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 2
+          },
+          {
+            "date": "2026-06-07",
+            "position": 2
+          },
+          {
+            "date": "2026-06-08",
+            "position": 2
+          },
+          {
+            "date": "2026-06-09",
+            "position": 2
+          },
+          {
+            "date": "2026-06-10",
+            "position": 2
+          },
+          {
+            "date": "2026-06-11",
+            "position": 2
+          },
+          {
+            "date": "2026-06-12",
+            "position": 2
+          },
+          {
+            "date": "2026-06-13",
+            "position": 2
+          },
+          {
+            "date": "2026-06-14",
+            "position": 2
+          },
+          {
+            "date": "2026-06-15",
+            "position": 2
+          },
+          {
+            "date": "2026-06-16",
+            "position": 2
+          },
+          {
+            "date": "2026-06-17",
+            "position": 2
+          },
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.lhochsteinmd.com/",
+        "title": "Miami Florida Plastic Surgeon | Leonard M. Hochstein M.D.",
+        "domain": "lhochsteinmd.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 3
+          },
+          {
+            "date": "2026-06-07",
+            "position": 3
+          },
+          {
+            "date": "2026-06-08",
+            "position": 3
+          },
+          {
+            "date": "2026-06-09",
+            "position": 3
+          },
+          {
+            "date": "2026-06-10",
+            "position": 3
+          },
+          {
+            "date": "2026-06-11",
+            "position": 3
+          },
+          {
+            "date": "2026-06-12",
+            "position": 3
+          },
+          {
+            "date": "2026-06-13",
+            "position": 3
+          },
+          {
+            "date": "2026-06-14",
+            "position": 3
+          },
+          {
+            "date": "2026-06-15",
+            "position": 3
+          },
+          {
+            "date": "2026-06-16",
+            "position": 3
+          },
+          {
+            "date": "2026-06-17",
+            "position": 3
+          },
+          {
+            "date": "2026-06-18",
+            "position": 3
+          },
+          {
+            "date": "2026-06-19",
+            "position": 3
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 3
+          },
+          {
+            "date": "2026-06-23",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 7
+          },
+          {
+            "date": "2026-06-07",
+            "position": 7
+          },
+          {
+            "date": "2026-06-08",
+            "position": 7
+          },
+          {
+            "date": "2026-06-09",
+            "position": 8
+          },
+          {
+            "date": "2026-06-10",
+            "position": 7
+          },
+          {
+            "date": "2026-06-11",
+            "position": 10
+          },
+          {
+            "date": "2026-06-12",
+            "position": 10
+          },
+          {
+            "date": "2026-06-13",
+            "position": 10
+          },
+          {
+            "date": "2026-06-14",
+            "position": 9
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": 9
+          },
+          {
+            "date": "2026-06-17",
+            "position": 10
+          },
+          {
+            "date": "2026-06-18",
+            "position": 9
+          },
+          {
+            "date": "2026-06-19",
+            "position": 9
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 4
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://drgcosmeticsurgery.com/gummy-bear-breast-implants/",
+        "title": "Gummy Bear Breast Implants - Miami - DRG Cosmetic Surgery",
+        "domain": "drgcosmeticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 5
+          },
+          {
+            "date": "2026-06-07",
+            "position": 5
+          },
+          {
+            "date": "2026-06-08",
+            "position": 5
+          },
+          {
+            "date": "2026-06-09",
+            "position": 5
+          },
+          {
+            "date": "2026-06-10",
+            "position": 5
+          },
+          {
+            "date": "2026-06-11",
+            "position": 5
+          },
+          {
+            "date": "2026-06-12",
+            "position": 5
+          },
+          {
+            "date": "2026-06-13",
+            "position": 5
+          },
+          {
+            "date": "2026-06-14",
+            "position": 5
+          },
+          {
+            "date": "2026-06-15",
+            "position": 5
+          },
+          {
+            "date": "2026-06-16",
+            "position": 5
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 5
+          },
+          {
+            "date": "2026-06-19",
+            "position": 5
+          },
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 7
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
+        "title": "Breast Augmentation Miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": 6
+          },
+          {
+            "date": "2026-06-12",
+            "position": 6
+          },
+          {
+            "date": "2026-06-13",
+            "position": 6
+          },
+          {
+            "date": "2026-06-14",
+            "position": 6
+          },
+          {
+            "date": "2026-06-15",
+            "position": 6
+          },
+          {
+            "date": "2026-06-16",
+            "position": 6
+          },
+          {
+            "date": "2026-06-17",
+            "position": 6
+          },
+          {
+            "date": "2026-06-18",
+            "position": 6
+          },
+          {
+            "date": "2026-06-19",
+            "position": 6
+          },
+          {
+            "date": "2026-06-20",
+            "position": 6
+          },
+          {
+            "date": "2026-06-21",
+            "position": 6
+          },
+          {
+            "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://4beauty.net/breast-implants/",
+        "title": "Breast Implants in Miami - 4Beauty Aesthetic Institute",
+        "domain": "4beauty.net",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 8
+          },
+          {
+            "date": "2026-06-07",
+            "position": 10
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": 7
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": 9
+          },
+          {
+            "date": "2026-06-12",
+            "position": 9
+          },
+          {
+            "date": "2026-06-13",
+            "position": 9
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": 8
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": 7
+          },
+          {
+            "date": "2026-06-18",
+            "position": 7
+          },
+          {
+            "date": "2026-06-19",
+            "position": 7
+          },
+          {
+            "date": "2026-06-20",
+            "position": 7
+          },
+          {
+            "date": "2026-06-21",
+            "position": 8
+          },
+          {
+            "date": "2026-06-22",
+            "position": 9
+          },
+          {
+            "date": "2026-06-23",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Best Breast Augmentation in Miami, FL | Gables Plastic Surgery",
+        "domain": "gablesplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": 10
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": 10
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": 10
+          },
+          {
+            "date": "2026-06-15",
+            "position": 7
+          },
+          {
+            "date": "2026-06-16",
+            "position": 10
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": 10
+          },
+          {
+            "date": "2026-06-19",
+            "position": 10
+          },
+          {
+            "date": "2026-06-20",
+            "position": 8
+          },
+          {
+            "date": "2026-06-21",
+            "position": 7
+          },
+          {
+            "date": "2026-06-22",
+            "position": 8
+          },
+          {
+            "date": "2026-06-23",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-augmentation-miami/",
+        "title": "Breast augmentation Miami - The Secret Plastic Surgery",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 6
+          },
+          {
+            "date": "2026-06-07",
+            "position": 6
+          },
+          {
+            "date": "2026-06-08",
+            "position": 6
+          },
+          {
+            "date": "2026-06-09",
+            "position": 6
+          },
+          {
+            "date": "2026-06-10",
+            "position": 6
+          },
+          {
+            "date": "2026-06-11",
+            "position": 7
+          },
+          {
+            "date": "2026-06-12",
+            "position": 7
+          },
+          {
+            "date": "2026-06-13",
+            "position": 7
+          },
+          {
+            "date": "2026-06-14",
+            "position": 7
+          },
+          {
+            "date": "2026-06-15",
+            "position": 10
+          },
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 9
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": 10
+          },
+          {
+            "date": "2026-06-21",
+            "position": 10
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
+        "title": "Top Breast Augmentation Doctors in Miami, FL - Realself",
+        "domain": "realself.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 9
+          },
+          {
+            "date": "2026-06-07",
+            "position": 8
+          },
+          {
+            "date": "2026-06-08",
+            "position": 8
+          },
+          {
+            "date": "2026-06-09",
+            "position": 9
+          },
+          {
+            "date": "2026-06-10",
+            "position": 9
+          },
+          {
+            "date": "2026-06-11",
+            "position": 8
+          },
+          {
+            "date": "2026-06-12",
+            "position": 8
+          },
+          {
+            "date": "2026-06-13",
+            "position": 8
+          },
+          {
+            "date": "2026-06-14",
+            "position": 8
+          },
+          {
+            "date": "2026-06-15",
+            "position": 9
+          },
+          {
+            "date": "2026-06-16",
+            "position": 7
+          },
+          {
+            "date": "2026-06-17",
+            "position": 8
+          },
+          {
+            "date": "2026-06-18",
+            "position": 8
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": 9
+          },
+          {
+            "date": "2026-06-21",
+            "position": 9
+          },
+          {
+            "date": "2026-06-22",
+            "position": 10
+          },
+          {
+            "date": "2026-06-23",
+            "position": 10
+          }
+        ]
+      }
+    ]
   },
   "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami": {
     "series": [

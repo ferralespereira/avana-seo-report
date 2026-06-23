@@ -122,12 +122,63 @@
     "position": "not found",
     "found_on_page_1": false,
     "my_pages_ranking": [],
-    "top_10_competitors": [],
+    "top_10_competitors": [
+      {
+        "position": 1,
+        "url": "https://www.cgcosmetic.com/",
+        "title": "Miami Plastic Surgery Center, Top Plastic Surgeons"
+      },
+      {
+        "position": 2,
+        "url": "https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Miami Breast Implants | Miami Plastic Surgery"
+      },
+      {
+        "position": 3,
+        "url": "https://www.lhochsteinmd.com/",
+        "title": "Miami Florida Plastic Surgeon | Leonard M. Hochstein M.D."
+      },
+      {
+        "position": 4,
+        "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami"
+      },
+      {
+        "position": 5,
+        "url": "https://drgcosmeticsurgery.com/gummy-bear-breast-implants/",
+        "title": "Gummy Bear Breast Implants - Miami - DRG Cosmetic Surgery"
+      },
+      {
+        "position": 6,
+        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
+        "title": "Breast Augmentation Miami - Icon Cosmetic Center"
+      },
+      {
+        "position": 7,
+        "url": "https://4beauty.net/breast-implants/",
+        "title": "Breast Implants in Miami - 4Beauty Aesthetic Institute"
+      },
+      {
+        "position": 8,
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Best Breast Augmentation in Miami, FL | Gables Plastic Surgery"
+      },
+      {
+        "position": 9,
+        "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-augmentation-miami/",
+        "title": "Breast augmentation Miami - The Secret Plastic Surgery"
+      },
+      {
+        "position": 10,
+        "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
+        "title": "Top Breast Augmentation Doctors in Miami, FL - Realself"
+      }
+    ],
     "keyword": "breast implants miami",
     "target_url": "https://avanaplasticsurgery.com/breast-implants-miami",
     "location": "Miami",
     "date": "2026-06-23",
-    "time": "08:02"
+    "time": "09:39"
   },
   {
     "position": "not found",
