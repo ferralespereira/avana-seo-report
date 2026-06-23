@@ -1,32 +1,71 @@
-@model ServicePageViewModel
-<title>Revisión de Implantes de Senos en Miami | @Settings.GetCenterName</title>
-<meta name="description" content="Revisión de implantes de Senos en Miami. Si necesita cambiar sus implantes o extraerlos, los cirujanos de Avana pueden ayudarle a lograr el tamaño y volumen que desea." />
-<meta property="og:locale" content="es_US" />
+================================================================================
+ SEO IMPROVEMENTS — REVISIÓN DE IMPLANTES DE SENOS EN MIAMI
+================================================================================
+ Page ....... https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami
+ Language ... Spanish (es_US)
+ Primary KW . revisión de implantes de senos en miami
+ Date ....... June 19, 2026
+ Scope ...... Meta tags / social-sharing markup
+================================================================================
 
-@* Added — en_US: signals there is an English version of this page *@
-<meta property="og:locale:alternate" content="en_US" />
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Revisión de Implantes de Senos en Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="Este procedimiento está diseñado para corregir cualquier problema o inquietud que pueda haber surgido desde el aumento mamario inicial." />
+--------------------------------------------------------------------------------
+ EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This round focused on the page's meta tags and social-sharing markup — the
+signals search engines and social platforms read first. Key outcomes:
 
-@* Adjusted og:url to absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami" />
+  • Converted og:url and og:image to absolute URLs so social platforms and
+    crawlers resolve them correctly (relative URLs can break link previews).
+  • Added og:locale:alternate = en_US so Google knows an English version of this
+    page exists (this is the Spanish version, og:locale = es_US).
+  • Added article:tag ("Revisión de Implantes de Senos") to reinforce the page topic.
+  • Completed the social image card: added og:image:alt, og:image:width (910)
+    and og:image:height (960) for rich, correctly-sized previews on Facebook,
+    LinkedIn and X/Twitter.
+  • Verified the full Open Graph, Twitter Card and canonical set is present and
+    consistent.
 
-@* Added — article:tag *@
-<meta property="article:tag" content="Revisión de Implantes de Senos" />
-<meta property="article:published_time" content="2023-10-31T15:49:11@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
-<meta property="og:site_name" content="@Settings.GetCenterName" />
 
-@* Adjusted og:image to absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg" />
-@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
-<meta property="og:image:alt" content="Modelo de Revisión de Implantes de Senos en Miami" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
+================================================================================
+ 1. META TAGS
+================================================================================
+File: espanol/revision-de-implantes-de-senos-en-miami / Es / articlemetas.cshtml
 
-<meta name="twitter:title" content="Revisión de Implantes de Senos en Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Este procedimiento está diseñado para corregir cualquier problema o inquietud que pueda haber surgido desde el aumento mamario inicial." />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/breast-implant-revision.jpg" />
-<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami" />  
+  • TITLE (in place)
+    <title>Revisión de Implantes de Senos en Miami | @Settings.GetCenterName</title>
+
+  • META DESCRIPTION (in place)
+    "Revisión de implantes de Senos en Miami. Si necesita cambiar sus implantes o
+     extraerlos, los cirujanos de Avana pueden ayudarle a lograr el tamaño y
+     volumen que desea."
+
+  • OPEN GRAPH / TWITTER (added or corrected)
+    - og:url   -> changed to absolute URL
+                  (https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami)
+    - og:image -> changed to absolute URL, plus added og:image:alt,
+                  og:image:width (910) and og:image:height (960)
+    - og:locale:alternate = en_US (added; signals an English version)
+    - article:tag = "Revisión de Implantes de Senos" (added)
+    - In place: og:locale = es_US, og:type = article, og:title, og:description,
+                og:site_name, article:published_time, article:modified_time,
+                twitter:title / twitter:description / twitter:image
+
+  • CANONICAL (in place)
+    <link rel="canonical"
+          href="https://avanaplasticsurgery.com/espanol/revision-de-implantes-de-senos-en-miami" />
+
+
+================================================================================
+ 2. VERIFICATION
+================================================================================
+  DONE
+    ✓ og:url and og:image converted to absolute URLs
+    ✓ og:locale:alternate = en_US added (English version signalled)
+    ✓ article:tag added
+    ✓ Social image card completed (alt / width / height)
+    ✓ Open Graph, Twitter Card and canonical set confirmed present
+
+================================================================================
+ END OF REPORT
+================================================================================
