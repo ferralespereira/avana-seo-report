@@ -443,6 +443,29 @@ LIPOSUCCION_ES = [
     ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# ── National / out-of-state reach (appended to every page below) ─────────────
+# A single combined row: does the page court patients beyond Florida? Excludes
+# all FL/Miami terms (already tracked by the "miami fl / florida" + neighborhood
+# rows) so this stays a pure out-of-state / national signal — USA-wide language,
+# OTHER states, and travel / fly-in intent (recovery house, medical tourism…).
+NATIONAL_EN = [
+    ("🇺🇸 national / out-of-state reach", [
+        "united states", "usa", "u.s.", "u.s.a", "america", "american", "nationwide",
+        "across the country", "out of state", "out-of-state", "out of town", "out-of-town",
+        "california", "texas", "new york", "new jersey", "georgia", "illinois",
+        "north carolina", "virginia", "pennsylvania", "massachusetts", "ohio", "michigan",
+        "fly in", "fly-in", "travel for surgery", "traveling patients", "medical tourism",
+        "recovery house", "recovery home",
+    ]),
+]
+NATIONAL_ES = [
+    ("🇺🇸 alcance nacional / otros estados", [
+        "estados unidos", "usa", "ee uu", "ee.uu", "america", "todo el pais",
+        "fuera del estado", "california", "texas", "nueva york", "nueva jersey", "georgia",
+        "viajar para cirugia", "turismo medico", "casa de recuperacion", "pacientes de otros estados",
+    ]),
+]
+
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":
@@ -486,6 +509,12 @@ PAGES = {
     "https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida":
         {"slug": "liposuccion-en-miami-florida", "lang": "es", "kw": LIPOSUCCION_ES},
 }
+
+# Append the national/out-of-state row to every page (by language). Concatenate
+# (not .extend) so shared sets like BREAST_EN/BREAST_ES — reused by two pages —
+# aren't appended to twice.
+for _cfg in PAGES.values():
+    _cfg["kw"] = _cfg["kw"] + (NATIONAL_EN if _cfg["lang"] == "en" else NATIONAL_ES)
 
 
 def strip_accents(s):
