@@ -22,6 +22,7 @@ import glob
 import time
 import html as htmllib
 import unicodedata
+from collections import Counter
 from datetime import datetime
 from urllib.parse import urlparse, quote
 from zoneinfo import ZoneInfo
@@ -466,6 +467,41 @@ NATIONAL_ES = [
     ]),
 ]
 
+# ── Structured data (schema.org) rows ────────────────────────────────────────
+# Tracked the same way as keywords: each row counts how many times that JSON-LD
+# @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
+# in the raw HTML — not text matching — so the word "FAQ" in body copy never
+# counts. Procedure-agnostic, so one shared list applies to every page. Labels
+# carry a ▣ prefix to group them visually in the keyword table.
+SCHEMA_TYPES = [
+    ("▣ FAQPage",          ["FAQPage"]),
+    ("▣ MedicalProcedure", ["MedicalProcedure", "MedicalWebPage"]),
+    ("▣ Physician/Clinic", ["Physician", "MedicalBusiness", "MedicalClinic", "LocalBusiness"]),
+    ("▣ Organization",     ["Organization"]),
+    ("▣ BreadcrumbList",   ["BreadcrumbList"]),
+    ("▣ Review/Rating",    ["Review", "AggregateRating"]),
+    ("▣ VideoObject",      ["VideoObject"]),
+    ("▣ Article",          ["Article", "BlogPosting"]),
+    ("▣ Person",           ["Person"]),
+    ("▣ ImageObject",      ["ImageObject"]),
+    # Catch-all: counts how many DISTINCT schema types a page has that the rows
+    # above don't cover (e.g. HowTo, Service, PriceRange, Offer, Event…), so no
+    # schema type goes unnoticed. Handled specially in scan_page via the sentinel.
+    ("▣ other schema types", ["__OTHER__"]),
+]
+
+# Type tokens already represented by an explicit row above (excludes the sentinel).
+_SCHEMA_KNOWN = {t for _, ts in SCHEMA_TYPES for t in ts if t != "__OTHER__"}
+# Structural / boilerplate sub-types that nest inside other schema or describe
+# page plumbing — not standalone rich-result schemas, so excluded from the
+# "other schema types" tally to keep it meaningful.
+_SCHEMA_IGNORE = {
+    "WebPage", "WebSite", "SearchAction", "ListItem", "Question", "Answer",
+    "PostalAddress", "ContactPoint", "GeoCoordinates", "OpeningHoursSpecification",
+    "Place", "Rating", "Comment", "EntryPoint", "Brand", "Country", "Language",
+    "SiteNavigationElement", "ImageGallery", "CollectionPage",
+}
+
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":
@@ -604,6 +640,70 @@ def wayback_fetch(url):
 
 def count(text, phrase):
     return len(re.findall(r"(?<!\w)" + re.escape(phrase) + r"(?!\w)", text))
+
+
+def schema_types(raw):
+    """Count structured-data @type occurrences on a page across ALL three schema
+    formats — JSON-LD, Microdata and RDFa — so a `0` means genuinely absent, not
+    just "no JSON-LD". Types are reduced to their last path segment so values like
+    "http://schema.org/FAQPage" or "schema:FAQPage" still count as "FAQPage".
+    Returns a Counter.
+
+      • JSON-LD  — parse each <script type="application/ld+json"> block, walking
+                   every nested object/@graph node (regex fallback if malformed).
+      • Microdata — itemtype="…/FAQPage" attributes.
+      • RDFa     — typeof="FAQPage" / "schema:FAQPage" attributes."""
+    found = Counter()
+
+    def add(t):
+        if isinstance(t, str):
+            found[t.split("/")[-1]] += 1
+        elif isinstance(t, list):
+            for x in t:
+                add(x)
+
+    def walk(obj):
+        if isinstance(obj, dict):
+            if "@type" in obj:
+                add(obj["@type"])
+            for v in obj.values():          # recurses into @graph and nested nodes
+                walk(v)
+        elif isinstance(obj, list):
+            for x in obj:
+                walk(x)
+
+    # 1. JSON-LD
+    for block in re.findall(r"(?is)<script[^>]*application/ld\+json[^>]*>(.*?)</script>", raw):
+        block = block.strip()
+        try:
+            walk(json.loads(block))
+        except Exception:
+            for t in re.findall(r'"@type"\s*:\s*"([^"]+)"', block):
+                found[t.split("/")[-1]] += 1
+
+    # 2. Microdata — itemtype="https://schema.org/FAQPage"
+    for t in re.findall(r'(?i)itemtype\s*=\s*["\'][^"\']*schema\.org/([A-Za-z]+)', raw):
+        found[t] += 1
+
+    # 3. RDFa — typeof="FAQPage" or "schema:FAQPage" (space-separated lists allowed)
+    for group in re.findall(r'(?i)\btypeof\s*=\s*["\']([^"\']+)["\']', raw):
+        for tok in group.split():
+            found[tok.split(":")[-1].split("/")[-1]] += 1
+
+    return found
+
+
+def schema_row_count(cache, type_variants):
+    """Total occurrences of any of the given @types in a page's schema Counter."""
+    return sum(cache.get(t, 0) for t in type_variants) if cache else 0
+
+
+def schema_other_count(cache):
+    """Number of DISTINCT schema types on a page that no explicit row covers and
+    that aren't structural boilerplate — the catch-all so nothing slips by."""
+    if not cache:
+        return 0
+    return sum(1 for t in cache if t not in _SCHEMA_KNOWN and t not in _SCHEMA_IGNORE)
 
 
 # ── GEO (Generative Engine Optimization) signals ─────────────────────────────
@@ -785,7 +885,8 @@ def scan_page(target_url, cfg, report_item, date, entry):
             raws.append(raw)
             continue
         # live blocked — gather both fallbacks, then pick the freshest by date
-        col, origin, geo = prior_live_counts(entry, site["domain"], len(kw), date)
+        # (ntotal = keyword rows + schema rows; the carried column spans both)
+        col, origin, geo = prior_live_counts(entry, site["domain"], len(kw) + len(SCHEMA_TYPES), date)
         wb_raw, crawl_date = wayback_fetch(url)
         use_carry = col is not None and (wb_raw is None or origin >= crawl_date)
         if use_carry:
@@ -808,7 +909,8 @@ def scan_page(target_url, cfg, report_item, date, entry):
             texts.append(None)
             raws.append(None)
 
-    # counts[keyword_index][site_index]
+    # counts[row_index][site_index] — keyword rows first, then schema rows.
+    nkw = len(kw)
     counts = []
     for r, (_, variants) in enumerate(kw):
         row = []
@@ -817,6 +919,20 @@ def scan_page(target_url, cfg, report_item, date, entry):
                 row.append(override[i][r])
             else:
                 row.append(sum(count(t, v) for v in variants) if t else 0)
+        counts.append(row)
+
+    # schema rows — parsed once per column from raw HTML (carried where blocked)
+    schema_cache = [schema_types(raw) if raw else None for raw in raws]
+    for s, (_, type_variants) in enumerate(SCHEMA_TYPES):
+        is_other = "__OTHER__" in type_variants
+        row = []
+        for i in range(len(sites)):
+            if i in override:
+                row.append(override[i][nkw + s])
+            elif is_other:
+                row.append(schema_other_count(schema_cache[i]))
+            else:
+                row.append(schema_row_count(schema_cache[i], type_variants))
         counts.append(row)
 
     # geo[site_index] — GEO signal dict per column (None when no content available)
@@ -879,7 +995,8 @@ def main():
         entry["keyword"] = item.get("keyword", "")
         entry["target_url"] = target_url
         entry["lang"] = cfg["lang"]
-        entry["keywords"] = [label for label, _ in cfg["kw"]]
+        entry["keywords"] = ([label for label, _ in cfg["kw"]] +
+                             [label for label, _ in SCHEMA_TYPES])
         scans = entry.get("scans", {})
         scans[date] = scan
         entry["scans"] = scans
