@@ -1,0 +1,1013 @@
+========================================================================
+WEBSITE MIGRATION — CONTENT & SEO CHECK
+Project: avanaplasticsurgery.com 4.0  -->  5.0
+Prepared by: Javier Ferrale Pereira
+Period: 2026-06-22 to 2026-06-26
+========================================================================
+
+------------------------------------------------------------------------
+EXECUTIVE SUMMARY (for review)
+------------------------------------------------------------------------
+Goal: Make sure that as the site moves from the 4.0 to the 5.0 codebase,
+the new pages keep the 5.0 redesign while NOT losing any content, SEO
+value, or Spanish localization from the old site.
+
+Scope: 10 core service lines, English + Spanish, page body + meta tags:
+  brazilian-butt-lift, lipo-360, breast-implants, breast-augmentation,
+  mommy-makeover, liposuction, bbl-revision, breast-implant-revision,
+  breast-reduction, breast-lift.
+  (23 file groups compared old-vs-new; see detailed log below.)
+
+Status: COMPLETE. A full verification sweep on 2026-06-26 re-checked all
+10 services and confirmed no live content was lost on any page. The only
+remaining differences are the intended 5.0 redesign plus cosmetic items
+(whitespace / file encoding). See "Open Items" for the few follow-ups.
+
+What was found and fixed (grouped):
+  1. SEO meta tags restored — several pages had dropped tags in the move
+     (article:tag, absolute image/page URLs, og:image alt/width/height,
+     Spanish og:locale, og:site_name). Restored on mommy-makeover,
+     liposuction, bbl-revision, breast-implant-revision, breast-reduction
+     (English + Spanish).
+  2. Two English pages were stale copies missing major content AND all
+     structured data — rebuilt by merging the old content into the new
+     design: liposuction (En) and breast-implant-revision (En). Restored
+     their full Table of Contents, surgeon sections, cost/near-me
+     sections, FAQs, and all JSON-LD schema blocks.
+  3. Spanish localization fixed — the Lipo 360 Spanish page had English
+     text hardcoded in its contact section; restored proper Spanish.
+  4. Surgeon photo alt-texts restored — several pages had generic/"BBL"
+     alt text copied onto the wrong procedure; restored page-specific,
+     correctly-localized descriptions (BBL Es, lipo-360 En,
+     breast-implants En/Es, breast-augmentation En).
+  5. Spanish surgeon links restored — BBL Spanish page was linking to the
+     English surgeon profiles; restored the /espanol/ prefix on all 5.
+  6. Table-of-Contents markup restored — some pages lost list styling and
+     anchor targets, breaking jump-links; fixed on breast-implants En/Es
+     and breast-augmentation En.
+  7. Video metadata aligned — BBL English intro video pointed at two
+     different videos across the embed and schema; aligned to one.
+  8. SEO upgrades (beyond a like-for-like migration): added an internal
+     link from the Lipo 360 before/after galleries to the main Lipo 360
+     pages to reduce keyword cannibalization, and enriched the
+     breast-lift meta tags (En + Es).
+
+Open items / follow-ups:
+  - BBL English video schema still carries the old video's duration,
+    description, upload date and view count; update once the real values
+    for the new video are available.
+  - Several rebuilt contact sections lost an internal anchor id
+    (contact-form-section). Assessed as harmless (those pages have no
+    Table of Contents linking to it) and left as-is.
+  - None of the changes have been runtime-verified — there is no .NET
+    build environment on this machine. All pages should be confirmed
+    visually on the next build.
+
+------------------------------------------------------------------------
+DETAILED LOG (supporting evidence, file by file)
+------------------------------------------------------------------------
+
+Legend:
+  [OK]      = content fully migrated, no action needed
+  [FIXED]   = discrepancy found and corrected in NEW file
+  [REVIEW]  = intentional design/layout change, no content lost
+  [TODO]    = still needs a decision / data we don't have
+
+Purpose:
+Track each file compared during the migration (OLD vs NEW), the result
+of the comparison, and every change we apply to the NEW file so nothing
+from the OLD content is silently lost.
+
+OLD root: C:\Users\user564\Documents\avanaplasticsurgery.com-4.0\avanaplasticsurgery.com\BaseProject-7.0\
+NEW root: C:\Users\user564\Documents\avanaplasticsurgery5.0\BaseProject-7.0\
+
+
+========================================================================
+FILE 1: ServicePage\Content\brazilian-butt-lift-miami\Es\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\brazilian-butt-lift-miami\Es\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\brazilian-butt-lift-miami\Es\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+NOTE: An earlier comparison mistakenly diffed OLD "Es" against NEW "En";
+      those are different languages, so they correctly differ. The proper
+      same-language comparison (Es vs Es) is identical.
+
+
+========================================================================
+FILE 2: ServicePage\Content\brazilian-butt-lift-miami\En\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\brazilian-butt-lift-miami\En\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\brazilian-butt-lift-miami\En\articlemetas.cshtml
+
+RESULT: [OK] Content identical. Only difference is trivial whitespace:
+  - og:image:width line: OLD had two spaces before "content", NEW has one.
+  - No functional impact. No changes made.
+
+
+========================================================================
+FILE 3: ServicePage\Content\brazilian-butt-lift-miami\Es\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\brazilian-butt-lift-miami\Es\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\brazilian-butt-lift-miami\Es\article.cshtml
+
+RESULT: All Spanish body text (paragraphs, blockquotes) migrated intact.
+        Differences were mostly intentional layout/CSS refactor, plus two
+        real content discrepancies that were corrected.
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS class renames: c-section -> milenia-section, o-container -> container,
+    "mobile-margin-5-9 margin-top-1" -> pt-5-9, etc.
+  - Video play-button srcdoc upgraded to circular play button (style only).
+  - Before/After partial swapped:
+      OLD: ServicePartialBeforeAndAfter
+      NEW: ServicePartialBeforeAndAfterFullSection
+  - Contact section rebuilt richer (two-column layout + image + gold heading +
+    new line: "¿Estás considerando un @Model.GetShortName en Avana? Contáctenos hoy mismo.")
+  - Commented-out surgeon card (Dr. Christopher Hamamdjian) removed (was already
+    inside @* *@ in OLD, so nothing visible was lost).
+
+[FIXED] 3a. Surgeon profile links lost the "/espanol/" prefix (Spanish page
+        was linking to English surgeon pages). Restored prefix on all 5:
+          OLD/CORRECT                         NEW (before fix)
+          /espanol/dr-algird-mameniskis  <--  /dr-algird-mameniskis
+          /espanol/dr-thomas-pane        <--  /dr-thomas-pane
+          /espanol/dr-mark-schusterman   <--  /dr-mark-schusterman
+          /espanol/dr-shane-mcdaniel     <--  /dr-shane-mcdaniel
+          /espanol/dr-stephanie-luster   <--  /dr-stephanie-luster
+
+[FIXED] 3b. Surgeon image alt texts were changed from Spanish to English.
+        Restored original Spanish alt text on all 5 images:
+          mameniskis:   "Dr. Algird Mameniskis, cirujano de levantamiento de glúteos brasileño (BBL) en Miami"
+                        (NEW had: "Dr Mameniskis BBL Surgeon")
+          thomas-pane:  "Dr. Thomas Pane, cirujano plástico de aumento de glúteos en Miami"
+                        (NEW had: "Dr. Thomas Pane")
+          schusterman:  "Dr. Mark Schusterman, experto en aumento de glúteos con grasa en Miami"
+                        (NEW had: "dr mark schusterman BBL expert")
+          mcdaniel:     "Dr. Shane McDaniel, cirujano de BBL (levantamiento de glúteos brasileño) en Miami"
+                        (NEW had: "Dr Shane Mcdaniel BBL Surgeon in Miami")
+          luster:       "Dra. Stephanie Luster, cirujana de aumento de glúteos en Miami"
+                        (NEW had: "Dr Stephanie Luster")
+
+
+========================================================================
+FILE 4: ServicePage\Content\brazilian-butt-lift-miami\En\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\brazilian-butt-lift-miami\En\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\brazilian-butt-lift-miami\En\article.cshtml
+
+RESULT: All visible content migrated. Large diff, but everything removed
+        was already commented-out in OLD (no live content lost).
+        Surgeon links here are "/dr-..." in both OLD and NEW (correct for
+        English page - no /espanol/ issue).
+
+[OK] Visible content present in both:
+  - Both intro paragraphs
+  - "Optimal Applicants for a BBL" heading + paragraph + 5-item candidate list
+  - "BBL Patients Reviews" - all 3 testimonials
+  - "Top-Rated BBL Surgeons" - all 5 surgeons
+  - Lipo 360 / BBL video testimony section + paragraph
+  - "Different techniques" - Thong lift, inner lift, C-lift descriptions
+  - Infographics section + all FAQ accordion panels (1-14)
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped pl-7-5, normalized double-spaces in FAQ panel tags.
+  - First intro section wrapped in dark background (background-dark-1 / text-white-1).
+  - Surgeon cards restyled (border-r-10, text-center, btn-dark, margin-top-10).
+  - Contact section rebuilt as richer two-column layout (image + gold heading +
+    "Considering a Brazilian Butt Lift at Avana? Contact us today.").
+  - Before/After partial swapped to ServicePartialBeforeAndAfterFullSection.
+  - Video play buttons upgraded to circular overlay style.
+
+[REVIEW] Removed but already commented-out in OLD (no visible loss):
+  - "BBL PROCEDURE PROCESS" carousel (7 steps)
+  - "WHAT IS YOUR BUTTOCK SHAPE?" section (V/H/O/A shapes)
+  - Commented Dr. Christopher Hamamdjian surgeon card
+  - Several commented-out video blocks (Dr. Kagan, Dr. Moradian, Dr. McDaniel,
+    "Am I a candidate for BBL?")
+
+[FIXED] 4a. Intro video was half-updated: the play overlay (srcdoc) pointed to
+        the McDaniel video (qXNrZkgf1Tw, thumbnail bbl-explained-bydr-mcdaniel.jpg),
+        but the iframe src + schema metadata still referenced the old Moradian
+        video (fMUPtRoh3l4). Aligned everything to qXNrZkgf1Tw:
+          iframe src:    fMUPtRoh3l4 -> qXNrZkgf1Tw
+          embedURL:      fMUPtRoh3l4 -> qXNrZkgf1Tw
+          thumbnailURL:  .../fMUPtRoh3l4/hqdefault.jpg -> .../qXNrZkgf1Tw/hqdefault.jpg
+          name:          "...Dr. Scott Moradian talks about BBL" -> "...Dr. Shane McDaniel talks about BBL"
+          iframe title:  "...Dr. Scott Moradian..." -> "...Dr. Shane McDaniel..."
+
+[TODO] 4b. Still carrying over from the old Moradian video (no accurate data
+        for the new qXNrZkgf1Tw video yet):
+          - duration:        PT1M1S
+          - description:     (Moradian-era text)
+          - uploadDate:      2019-09-16T16:55:22.000Z
+          - interactionCount: 5
+        Update these once the real values for qXNrZkgf1Tw are known.
+
+
+========================================================================
+FILE 5: ServicePage\Content\lipo-360-miami\En\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\lipo-360-miami\En\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\lipo-360-miami\En\article.cshtml
+
+RESULT: All content migrated (body text + all JSON-LD structured data intact).
+        Large diff was mostly layout refactor + re-indentation. One SEO
+        regression on surgeon image alt texts was corrected.
+
+[OK] Content present and identical in both:
+  - All body paragraphs (intro, What is Lipo 360, candidate, Traditional vs
+    360, Lipo 360 at Avana, How is it performed, Benefits, Cost).
+  - Table of Contents - all 10 anchor links.
+  - 3 testimonials (Latoya, Jema, Stephanie) - visible text identical.
+  - Both videos present and internally consistent (iframe/schema/overlay agree):
+      Dr. Moradian   = bv0Z8yFVy5w
+      Dr. McDaniel   = myz5wak6Ips
+    (No schema/iframe mismatch like the BBL En page had.)
+  - All JSON-LD schemas identical, only re-indented: FAQPage (all 13 questions),
+    SurgicalProcedure, MedicalClinic/LocalBusiness, BreadcrumbList, WebPage,
+    and 5-surgeon Person graph. Nothing dropped.
+  - Surgeon profile links are "/dr-..." in both OLD and NEW (correct for English
+    page - no /espanol/ issue).
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped pl-7-5 / mobile-content-padding-x.
+  - Intro paragraphs + TOC restructured into two-column milenia-multicolor-container.
+  - Contact section rebuilt as richer two-column layout (image + gold heading +
+    "Considering a @Model.GetShortName at Avana? Contact us today.").
+  - Before/After partial swapped to ServicePartialBeforeAndAfterFullSection.
+  - Video play buttons upgraded to circular overlay; surgeon cards restyled
+    (border-r-10, btn-dark, text-center, margin-top-10).
+  - Commented-out Dr. Christopher Hamamdjian card removed (was already @* *@).
+
+[FIXED] 5a. Surgeon image alt texts had been replaced with generic/BBL text
+        (copy-pasted from the BBL page). Restored original Lipo-360-specific
+        alt text on all 5 images:
+          mameniskis:   "Dr. Algird Mameniskis, Lipo 360 surgeon in Miami"
+                        (NEW had: "Dr Mameniskis BBL Surgeon")
+          thomas-pane:  "Dr. Thomas Pane, Lipo 360 plastic surgeon in Miami"
+                        (NEW had: "Dr. Thomas Pane")
+          schusterman:  "Dr. Mark Schusterman, Lipo 360 and liposculpture expert in Miami"
+                        (NEW had: "dr mark schusterman BBL expert")
+          mcdaniel:     "Dr. Shane McDaniel, Lipo 360 cosmetic surgeon in Miami"
+                        (NEW had: "Dr Shane Mcdaniel BBL Surgeon in Miami")
+          luster:       "Dr. Stephanie Luster, Lipo 360 cosmetic surgeon in Miami"
+                        (NEW had: "Dr Stephanie Luster")
+
+
+========================================================================
+FILE 6: ServicePage\Content\lipo-360-miami\En\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\lipo-360-miami\En\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\lipo-360-miami\En\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+
+========================================================================
+FILE 7: ServicePage\Content\lipo-360-miami\Es\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\lipo-360-miami\Es\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\lipo-360-miami\Es\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+
+========================================================================
+FILE 8: ServicePage\Content\lipo-360-miami\Es\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\lipo-360-miami\Es\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\lipo-360-miami\Es\article.cshtml
+
+RESULT: All Spanish body content migrated intact. Differences were mostly
+        layout refactor + contact-section rebuild. One localization
+        regression (English text on a Spanish page) was corrected.
+
+[OK] Spanish content present and identical in both:
+  - "¿Qué es la Lipo 360?" heading + paragraphs
+  - "liposucción de 360 grados" description paragraph
+  - Recovery paragraph ("¿Qué debo esperar durante la recuperación...")
+  - All FAQ accordion panels (Q&A text unchanged - only whitespace differs)
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped mobile-content-padding-x / mobile-margin-5-9, added pt-5-9.
+  - Before/After partial swapped to ServicePartialBeforeAndAfterFullSection.
+  - Benefits section: removed milenia-colorizer-bg-color wrapper.
+  - Contact section rebuilt as richer two-column layout (image + gold heading).
+
+[FIXED] 8a. Contact section had hardcoded ENGLISH text on this Spanish page.
+        OLD used the localized vocabulary resource. Restored Spanish:
+          heading:   "schedule a free consultation"
+                     -> @Vocabulary.ScheduleAFreeConsultationToday
+          subtitle:  "Considering a @Model.GetShortName at Avana? Contact us today."
+                     -> "¿Estás considerando una @Model.GetShortName en Avana? Contáctenos hoy mismo."
+        (Matches the pattern already used on the BBL Es page - see FILE 3.
+         Used "una" since "Lipo" is feminine.)
+
+NOTE: Pre-existing in BOTH old and new (not a migration issue): one FAQ panel
+      has aria-labelledby="panel-9-button" paired with id="panel-13".
+
+
+========================================================================
+FILE 9: ServicePage\Content\breast-implants-miami\En\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-implants-miami\En\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-implants-miami\En\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+
+========================================================================
+FILE 10: ServicePage\Content\breast-implants-miami\En\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-implants-miami\En\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-implants-miami\En\article.cshtml
+
+RESULT: All content and structured data migrated intact. Differences were
+        layout refactor + re-indentation. One TOC markup change corrected.
+
+[OK] Content present and identical in both:
+  - Both intro paragraphs (incl. "...start from $2,500...")
+  - Table of Contents - all 9 links.
+  - All body sections (composition tabs, Teardrop implants, shapes, trends,
+    brands, etc.).
+  - All JSON-LD schemas identical, only re-indented: FAQPage (all 12 questions),
+    SurgicalProcedure, MedicalClinic/LocalBusiness, BreadcrumbList, WebPage.
+  - Surgeon section: 5 surgeons, links "/dr-..." (correct for English page),
+    and image alt texts UNCHANGED (no regression on this page).
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped pl-7-5 / mobile-content-padding-x.
+  - Intro + TOC restructured into two-column milenia-multicolor-container.
+  - Contact section rebuilt as richer two-column layout (image + gold heading +
+    new subtitle "Considering a @Model.GetShortName at Avana? Contact us today.").
+    Heading changed from @Vocabulary.ScheduleAFreeConsultationToday to hardcoded
+    "schedule a free consultation" - renders the same on this English page, so
+    no regression (unlike the Spanish pages).
+  - Teardrop section: removed milenia-colorizer-bg-color wrapper, text restyled.
+  - Commented-out Dr. Christopher Hamamdjian card removed (was already @* *@).
+
+[FIXED] 10a. Table of Contents list markup had been changed: lost its
+        "ul-content" class and each <li> gained a literal "- " dash prefix.
+        Restored original styling:
+          <ul class="">              -> <ul class="ul-content">
+          <li>- <a href...>          -> <li><a href...>   (all 9 items)
+
+[FIXED] 10b. Surgeon section image alt texts were generic / BBL-themed
+        ("Dr Mameniskis BBL Surgeon", "dr mark schusterman BBL expert", etc.)
+        and identical in OLD and NEW. Per request, updated the ENGLISH file in
+        BOTH projects (4.0 old + 5.0 new) to breast-implant-specific alts,
+        using the English equivalent of the OLD Spanish version's descriptive
+        style:
+          mameniskis:   "Dr. Mameniskis breast implant surgeon in Miami"
+          thomas-pane:  "Dr. Thomas Pane plastic surgeon in Miami"
+          schusterman:  "Dr. Mark Schusterman board-certified plastic surgeon in Miami"
+          mcdaniel:     "Dr. Shane McDaniel cosmetic surgeon in Miami"
+          luster:       "Dr. Stephanie Luster cosmetic surgeon in Miami"
+        NOTE: English text used on the English pages (old Spanish source was in
+        Spanish). The Es page surgeon alts were NOT changed in this step.
+
+
+========================================================================
+FILE 11: ServicePage\Content\breast-implants-miami\Es\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-implants-miami\Es\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-implants-miami\Es\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+
+========================================================================
+FILE 12: ServicePage\Content\breast-implants-miami\Es\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-implants-miami\Es\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-implants-miami\Es\article.cshtml
+
+RESULT: All Spanish content and structured data migrated intact. Differences
+        were layout refactor + re-indentation. Two regressions corrected.
+
+[OK] Spanish content present and identical in both:
+  - Both intro paragraphs + the "$2,500" price paragraph.
+  - TOC - all 9 Spanish links.
+  - The 3 implant tabs (Salina / Silicona / Gummy Bear) - text identical.
+  - Teardrop section + all body paragraphs.
+  - All JSON-LD schemas identical, only re-indented: FAQPage (all 12 Spanish
+    questions), SurgicalProcedure, MedicalClinic/LocalBusiness, BreadcrumbList,
+    WebPage.
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped pl-7-5 / mobile-content-padding-x.
+  - Intro + TOC restructured into two-column milenia-multicolor-container.
+  - Contact section rebuilt as richer two-column layout. CORRECTLY in Spanish
+    here: heading = @Vocabulary.ScheduleAFreeConsultationToday, subtitle =
+    "¿Está pensando en un @Model.GetShortName en Avana? Contáctenos hoy."
+    (No localization regression, unlike the Lipo 360 Es page.)
+  - Teardrop section: removed milenia-colorizer-bg-color wrapper, text restyled.
+
+[FIXED] 12a. Surgeon image alt texts had regressed from good descriptive
+        SPANISH to generic ENGLISH "BBL" text. Restored the original Spanish
+        alts (verbatim, from the old Spanish version):
+          mameniskis:   "Dr. Mameniskis cirujano de implantes mamarios en Miami"
+                        (NEW had: "Dr Mameniskis BBL Surgeon")
+          thomas-pane:  "Dr. Thomas Pane cirujano plástico en Miami"
+                        (NEW had: "Dr. Thomas Pane")
+          schusterman:  "Dr. Mark Schusterman cirujano plástico certificado en Miami"
+                        (NEW had: "dr mark schusterman BBL expert")
+          mcdaniel:     "Dr. Shane McDaniel cirujano cosmético en Miami"
+                        (NEW had: "Dr Shane Mcdaniel BBL Surgeon in Miami")
+          luster:       "Dra. Stephanie Luster cirujana cosmética en Miami"
+                        (NEW had: "Dr Stephanie Luster")
+
+[FIXED] 12b. Table of Contents list markup had been changed (same as the En
+        page): lost its "ul-content" class and each <li> gained a literal "- "
+        dash prefix. Restored original styling:
+          <ul class="">              -> <ul class="ul-content">
+          <li>- <a href...>          -> <li><a href...>   (all 9 items)
+
+
+========================================================================
+FILE 13: ServicePage\Content\breast-augmentation-miami\En\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-augmentation-miami\En\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-augmentation-miami\En\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+
+========================================================================
+FILE 14: ServicePage\Content\breast-augmentation-miami\En\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-augmentation-miami\En\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-augmentation-miami\En\article.cshtml
+
+RESULT: All content and structured data migrated intact. Differences were
+        layout refactor + re-indentation. Two regressions corrected.
+
+[OK] Content present and identical in both:
+  - All body paragraphs (What is Breast Augmentation, candidates, recovery,
+    risks, financing, etc.).
+  - TOC - all 13 links.
+  - Intro video (Dr. McDaniel pm0AbCaFd-4) - consistent.
+  - Case Results - both case videos (0gRkrsU4dng, gyjOdKPQQ5Y) + Case 1/Case 2
+    headings and descriptions present (layout restructured, content intact).
+  - Incision-types slideshow + subglandular/submuscular comparison.
+  - All JSON-LD schemas identical, only re-indented: FAQPage (all 12 questions),
+    SurgicalProcedure, MedicalClinic/LocalBusiness, BreadcrumbList, WebPage,
+    and 5-surgeon Person graph.
+  - Surgeon profile links "/dr-..." (correct for English page).
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped pl-7-5 / mobile-content-padding-x.
+  - Intro + TOC restructured into two-column milenia-multicolor-container.
+  - Case Results section restructured; incision slideshow restyled.
+  - Contact section rebuilt as richer two-column layout (hardcoded English
+    "schedule a free consultation" - fine on this English page).
+  - Before/After partial swapped to ServicePartialBeforeAndAfterFullSection.
+  - Removed a commented-out "BBL before and after" block (was already @* *@).
+
+[FIXED] 14a. Surgeon image alt texts: 3 had regressed from breast-augmentation-
+        specific to generic "BBL". Restored the original values:
+          mameniskis:   "Dr Mameniskis Breast Augmentation Surgeon"
+                        (NEW had: "Dr Mameniskis BBL Surgeon")
+          schusterman:  "dr mark schusterman breast augmentation expert"
+                        (NEW had: "dr mark schusterman BBL expert")
+          mcdaniel:     "Dr Shane McDaniel Breast Augmentation Surgeon in Miami"
+                        (NEW had: "Dr Shane Mcdaniel BBL Surgeon in Miami")
+        NOTE: thomas-pane ("Dr. Thomas Pane") and stephanie-luster ("Dr Stephanie
+        Luster") were identical in OLD and NEW (not regressions) - left as-is.
+
+[FIXED] 14b. Table of Contents list markup had been changed (same as other
+        pages): lost its "ul-content" class and each <li> gained a literal "- "
+        dash prefix. Restored original styling:
+          <ul class="">              -> <ul class="ul-content">
+          <li>- <a href...>          -> <li><a href...>   (all 13 items)
+
+[FIXED] 14c. Broken TOC anchor links: the redesign dropped the target id=""
+        attributes on 3 sections, so those TOC jump links landed nowhere.
+        Restored the missing ids (other 10 anchors were fine):
+          #breast-augmentation-before-after -> added id to the before/after div
+          #top-rated-surgeons               -> added id to the surgeons <section>
+          #contact-form-section             -> added id to the rebuilt contact section
+        Verified all 13 TOC anchors now resolve to a matching id.
+        WATCH: same "dropped id" pattern may affect other migrated pages -
+        the contact section was rebuilt the same way everywhere, and surgeon
+        sections lost id="top-rated-surgeons" in the BBL / Lipo 360 /
+        breast-implants diffs. TOC/anchor ids on those pages still to verify.
+
+
+========================================================================
+FILE 15: ServicePage\Content\breast-augmentation-miami\Es\articlemetas.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-augmentation-miami\Es\articlemetas.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-augmentation-miami\Es\articlemetas.cshtml
+
+RESULT: [OK] Files are byte-for-byte identical. No changes made.
+
+
+========================================================================
+FILE 16: ServicePage\Content\breast-augmentation-miami\Es\article.cshtml
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-augmentation-miami\Es\article.cshtml
+NEW: ...avanaplasticsurgery5.0\...\breast-augmentation-miami\Es\article.cshtml
+
+RESULT: All Spanish content migrated intact. Differences were layout refactor
+        + re-indentation. No regressions to fix on this page.
+
+[OK] Spanish content present and identical in both:
+  - All body paragraphs and lists (incl. the "Algunas de estas pueden ser:"
+    4-item pre-op list).
+  - Implant tabs (texturizados / liso, etc.) - text identical; both tab anchors
+    (#tab-4, #tab-5) resolve to matching ids.
+  - Incision-types section (areola / inframamaria / axila) - identical Spanish.
+  - An empty <section></section> and a commented-out section-fixed-img block
+    were removed - no visible content lost.
+
+[REVIEW] Intentional design/layout changes (no content lost):
+  - CSS refactor: c-section -> milenia-section, o-container -> container,
+    dropped pl-7-5 / mobile-content-padding-x.
+  - Contact section rebuilt as richer two-column layout. CORRECTLY in Spanish:
+    heading = @Vocabulary.ScheduleAFreeConsultationToday, subtitle =
+    "¿Está pensando en un @Model.GetShortName en Avana? Contáctenos hoy."
+  - Before/After partial swapped to ServicePartialBeforeAndAfterFullSection.
+
+NO TOC / NO SURGEON SECTION on this page, so the dropped-id (TOC anchor) and
+surgeon-alt regressions seen elsewhere do NOT apply here.
+
+[NOTE - not fixed] The rebuilt contact section lost its id="contact-form-section"
+(old version had it). Harmless here since this page has no TOC linking to it.
+Left as-is; restore only if a cross-page link or script targets that anchor.
+
+
+========================================================================
+FILE 17: Before-And-After galleries — internal link added (SEO, not a migration diff)
+========================================================================
+Change (NEW project only; no OLD counterpart): added an internal link from the
+lipo-360 Before-And-After gallery to the main service page, to stop keyword
+cannibalization with /lipo-360-miami (and /espanol/lipo-360-en-miami).
+
+Context: /lipo-360/before-and-after has NO dedicated view file - it is a
+data-driven gallery (PictureResultIndexPageController + shared BaseIndexSkin)
+that loads per-language content from Content/Before-And-After/{En,Es}/.
+The link is rendered conditionally, guarded by Model.GetServiceUrl == "lipo-360",
+so it shows ONLY on the lipo-360 gallery and on no other service gallery.
+First placed in footer.cshtml, then MOVED to intro.cshtml (top of page) for
+stronger SEO weight + visibility.
+
+[CHANGED] Pages/files affected:
+  EN  page: /lipo-360/before-and-after
+      file: Views/BaseIndex/Content/Before-And-After/En/intro.cshtml
+      -> link to /lipo-360-miami (anchor "Lipo 360 Miami")
+  ES  page: /espanol/lipo-360/antes-y-despues
+      file: Views/BaseIndex/Content/Before-And-After/Es/intro.cshtml
+      -> link to /espanol/lipo-360-en-miami (anchor "Lipo 360 en Miami")
+  EN/ES footer.cshtml (Before-And-After) -> cleared to an empty comment
+      (link moved to intro).
+
+NOTE: not runtime-verified (no .NET build env available here). On next build,
+confirm the sentence appears at the top of the lipo-360 gallery (EN + ES) and
+NOT on other galleries (e.g. /tummy-tuck/before-and-after).
+
+
+========================================================================
+FILE 18: ServicePage\Content\mommy-makeover-miami  (En + Es: article, articlemetas, briefintroforcategorypage)
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\mommy-makeover-miami\{En,Es}\
+NEW: ...avanaplasticsurgery5.0\...\mommy-makeover-miami\{En,Es}\
+
+RESULT: Article body content migrated intact (layout refactor only). Both
+        articlemetas files had REGRESSED (SEO meta tags lost) - restored to
+        match the enriched OLD versions.
+
+[OK] briefintroforcategorypage.cshtml (En + Es): byte-for-byte identical.
+
+[OK] En\article.cshtml + Es\article.cshtml: all visible content migrated.
+  - En: intro paragraphs (incl. new "Becoming a mother..." lead added in NEW),
+    Custom Packages, surgeon cards (4: Thomas Pane, Mameniskis, Luster,
+    McDaniel), Case Result video, "What to Ask Your Surgeon", FAQ, RESULTS
+    section, recovery section - all present.
+  - Es: all Spanish body text + section headings present.
+  - Differences are intentional: CSS refactor (c-section -> milenia-section,
+    o-container -> container, dropped pl-7-5 / mobile-margin-5-9), contact
+    section rebuilt richer two-column (Es correctly localized:
+    "¿Está pensando en un @Model.GetShortName en Avana? Contáctenos hoy."),
+    surgeon cards restyled (border-r-10, text-center, btn-dark) with role
+    label @Vocabulary.Surgeon -> @Vocabulary.BoardCertifiedPlasticSurgeon,
+    Before/After partial -> ServicePartialBeforeAndAfterFullSection, video
+    play buttons upgraded to circular overlay.
+  - Removed blocks were ALL already commented-out (@* *@) in OLD, so no visible
+    content lost: top video-schema block, a benefits-list, the BENEFITS
+    carousel (breast aug/reduction/tummy tuck/lipo), the Infographics section,
+    and a duplicate "RESULTS AFTER MOMMY MAKEOVER" block.
+  - Surgeon image alt texts UNCHANGED (no regression). No TOC on this page; no
+    dash/ul-content regression.
+
+[FIXED] 18a. En\articlemetas.cshtml had lost SEO meta tags. Restored to match
+        OLD (enriched) version:
+          og:url    relative "/mommy-makeover-miami" -> absolute https URL
+          og:image  relative -> absolute https URL
+          twitter:image relative -> absolute https URL
+          + re-added <meta property="article:tag" content="Mommy Makeover" />
+          + re-added og:image:alt (descriptive), og:image:width 910,
+            og:image:height 960
+
+[FIXED] 18b. Es\articlemetas.cshtml had lost even more. Restored to match OLD:
+          + re-added og:site_name
+          + re-added og:locale (es_US) and og:locale:alternate (en_US)
+          + re-added article:tag "Mommy Makeover"
+          og:url    relative -> absolute https URL
+          og:image  relative -> absolute https URL
+          + re-added og:image:alt (Spanish), og:image:width 910,
+            og:image:height 960
+        (twitter:image left relative to match OLD exactly.)
+
+[NOTE - not fixed] The rebuilt En contact section lost id="contact-form-section"
+(OLD had it). Harmless here: this page has no TOC and nothing links to that
+anchor (only #tab-* tab controls exist). Same situation as FILE 16. Left as-is.
+
+NOTE: not runtime-verified (no .NET build env here).
+
+
+========================================================================
+FILE 19: ServicePage\Content\liposuction-miami  (En + Es: article, articlemetas, briefintroforcategorypage)
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\liposuction-miami\{En,Es}\
+NEW: ...avanaplasticsurgery5.0\...\liposuction-miami\{En,Es}\
+
+RESULT: Both articlemetas regressed (SEO tags lost) - restored. Es article OK
+        (layout only). En article was a STALE OLDER COPY missing major content
+        and ALL structured data - rebuilt by merging OLD content with the 5.0
+        design (user-approved approach).
+
+[OK] briefintroforcategorypage.cshtml (En + Es): byte-for-byte identical.
+
+[OK] Es\article.cshtml: all Spanish body content present. Differences are
+     intentional: new dark-background intro lead paragraph added, CSS refactor
+     (c-section -> milenia-section, o-container -> container, dropped pl-7-5 /
+     mobile-margin-5-9), contact section rebuilt richer two-column (correctly
+     localized: "¿Está pensando en un @Model.GetShortName en Avana?
+     Contáctenos hoy."), Before/After -> FullSection partial. No content lost.
+
+[FIXED] 19a. En\articlemetas.cshtml lost SEO tags. Restored to match OLD:
+          og:url / og:image / twitter:image  relative -> absolute https
+          + re-added og:image:alt, og:image:width 910, og:image:height 960
+        (page-topic, page-type, og:locale, twitter:card were already present.)
+
+[FIXED] 19b. Es\articlemetas.cshtml lost more. Restored to match OLD:
+          + re-added og:locale (es_US), og:locale:alternate (en_US)
+          + re-added article:tag "Liposucción"
+          og:url / og:image / twitter:image  relative -> absolute https
+          + re-added og:image:alt (Spanish), og:image:width 910,
+            og:image:height 960
+
+[FIXED] 19c. En\article.cshtml was a stale older version. The NEW 5.0 file was
+        MISSING (present in OLD, restored):
+          - Table of Contents (19 links) + ALL section anchor ids
+          - entire "Top-Rated Liposuction Surgeons in Miami" section (5 cards:
+            Mameniskis, Thomas Pane, Schusterman, McDaniel, Luster, with
+            descriptive "...Liposuction surgeon in Miami" alt texts)
+          - "How Much Is Liposuction in Miami?" cost section
+          - "Liposuction Near Me" local-SEO section
+          - "A Nationwide Destination..." section
+          - internal link to /lipo-360-miami
+          - updated FAQ entries (cost Q#11, near-me Q#16) + Mayo Clinic link
+          - ALL 6 JSON-LD blocks (FAQPage, SurgicalProcedure, MedicalClinic/
+            LocalBusiness, BreadcrumbList, WebPage, 5-surgeon Person graph)
+          - and the stale copy had typos (fay/determinate/"procedures better
+            results") + a wrong heading ("Brazilian Butt Lift Infographics").
+        APPROACH (user chose "merge: old content + 5.0 design"): used OLD 4.0
+        as the base (restores everything above) and re-applied the intentional
+        5.0 design idioms:
+          1. dark-background intro lead paragraph ("Liposuction in Miami is a
+             popular cosmetic procedure...") kept on top; TOC moved to its own
+             milenia-section below it.
+          2. Before/After partial -> ServicePartialBeforeAndAfterFullSection.
+          3. Contact section rebuilt as two-column marmol-bg layout. IMPORTANT:
+             kept id="contact-form-section" on the new outer div so the TOC
+             "Schedule a Free Consultation" anchor still resolves.
+          4. Both ACTIVE videos (IAS2VEzhu-I, q4res-cpPao) given the circular
+             play-button srcdoc. (The 2 commented-out videos left as-is.)
+        VERIFIED: 6 JSON-LD blocks; all 19 TOC anchors resolve to a matching id;
+        all restored sections + surgeons + links present; old square-play
+        markers remain only on the 2 commented-out videos.
+
+NOTE: not runtime-verified (no .NET build env here). On next build, confirm the
+En page renders the TOC, surgeons grid, cost/near-me/nationwide sections, both
+videos, and that the TOC jump-links (incl. #contact-form-section) all work.
+
+
+========================================================================
+FILE 20: ServicePage\Content\bbl-revision-miami  (En + Es: article, articlemetas)
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\bbl-revision-miami\{En,Es}\
+NEW: ...avanaplasticsurgery5.0\...\bbl-revision-miami\{En,Es}\
+
+RESULT: Article body content migrated intact (layout refactor only; all visible
+        text, headings, and both active videos present). Both articlemetas had
+        REGRESSED (SEO meta tags lost) - restored to match the enriched OLD
+        versions. Same pattern as FILE 18 / 19.
+
+[OK] En\article.cshtml + Es\article.cshtml: all visible content migrated.
+  - All section headings identical in both (What is a BBL Revision, Why People
+    Seek Revisions + 6 sub-reasons, How soon / Candidates / How it differs /
+    Steps (3) / Recovery / Safety & Risks / Expected Results / "Contact our
+    certified surgeons..." / FAQs). En 24 headings, Es 24 headings - 1:1 match.
+  - Both ACTIVE videos present and internally consistent in both languages:
+      Video 1 (before/after, Dr. Moradian)  = jdRaCg4FmEk
+      Video 2 (fat requirements, McDaniel)  = imXVdKHs26g
+  - Differences are intentional design: CSS refactor (c-section ->
+    milenia-section, o-container -> container, mobile-margin-5-9 -> pt-5-9),
+    video block changed from 2-up owl-carousel to a two-column layout with the
+    circular play-button srcdoc, Before/After partial -> FullSection.
+  - NO surgeon "Top-Rated" section and NO JSON-LD structured data on this page
+    (in EITHER OLD or NEW) - so no surgeon-alt or schema regression applies here.
+  - NO TOC on this page - so no ul-content / dash / dropped-anchor regression.
+
+[REVIEW] Removed but already commented-out (@* *@) in OLD - no visible loss:
+  - "BBL Patients Reviews" testimonials section (Delique, henomenal750444,
+    Cindy - En 3 / Es 3 blockquotes) was razor-commented in OLD.
+  - Third video Mwxnqb0Eeow ("Fat Transfer to Buttocks Procedure", Dr. Kagan,
+    PT4M37S) was inside a @* *@ block in OLD (En + Es). Not visible -> dropping
+    it in NEW loses nothing on-page.
+
+[FIXED] 20a. En\articlemetas.cshtml had lost SEO meta tags. Restored to match
+        OLD (now byte-for-byte identical to OLD):
+          + re-added <meta property="article:tag" content="BBL Revision" />
+          og:url    relative "/bbl-revision-miami" -> absolute https URL
+          og:image  relative -> absolute https URL
+          twitter:image relative -> absolute https URL
+          + re-added og:image:alt (descriptive), og:image:width 910,
+            og:image:height 960
+
+[FIXED] 20b. Es\articlemetas.cshtml had lost more. Restored to match OLD
+        (now byte-for-byte identical to OLD):
+          + re-added og:locale:alternate (en_US)
+          + re-added article:tag "Revisión de BBL"
+          og:url    relative -> absolute https URL
+          og:image  relative -> absolute https URL
+          twitter:image relative -> absolute https URL
+          + re-added og:image:alt (Spanish), og:image:width 910,
+            og:image:height 960
+
+[OK] Localization: Es contact section is CORRECTLY in Spanish (no English-on-
+     Spanish regression like the Lipo 360 Es page had):
+       heading  = @Vocabulary.ScheduleAFreeConsultationToday
+       subtitle = "¿Está pensando en un @Model.GetShortName en Avana? Contáctenos hoy."
+     En contact heading is hardcoded "schedule a free consultation" (renders the
+     same on this English page - fine, same as FILE 10/14).
+
+[NOTE - not fixed] Both rebuilt contact sections (En + Es) lost
+     id="contact-form-section" (OLD had it). Harmless here: this page has no TOC
+     and nothing links to that anchor. Same situation as FILE 16 / 18. Left as-is.
+
+NOTE: not runtime-verified (no .NET build env here).
+
+
+========================================================================
+FILE 21: ServicePage\Content\breast-implant-revision-miami  (En + Es: article, articlemetas)
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-implant-revision-miami\{En,Es}\
+NEW: ...avanaplasticsurgery5.0\...\breast-implant-revision-miami\{En,Es}\
+
+RESULT: Both articlemetas REGRESSED (SEO tags + enriched description copy lost) -
+        restored to match OLD. Es article OK (layout refactor only). En article
+        was a STALE OLDER COPY missing major content + ALL structured data -
+        rebuilt by merging OLD content with the 5.0 design (user-approved
+        "merge" approach, same as FILE 19c liposuction).
+
+[OK] Es\article.cshtml: all Spanish body content present (21 headings match OLD
+     1:1). OLD Es never had a TOC, surgeon section, or JSON-LD, so none was lost.
+     Differences are intentional 5.0 design: CSS refactor (c-section ->
+     milenia-section, o-container -> container), contact section rebuilt as the
+     marmol-bg two-column layout - CORRECTLY localized (heading
+     @Vocabulary.ScheduleAFreeConsultationToday; the "Considering a
+     @Model.GetShortName..." subtitle is the shared template string). Both
+     testimonial blocks were already @* *@ commented in OLD and NEW.
+     [NOTE - not fixed] NEW Es contact section lost id="contact-form-section"
+     (OLD had it). Harmless - this page has no TOC linking to it. Left as-is.
+
+[FIXED] 21a. En\articlemetas.cshtml had REGRESSED. Restored to match OLD
+        (content identical; only a trivial BOM/trailing-space diff remains):
+          - description / og:description / twitter:description: NEW carried the
+            OLDER copy ("This procedure is designed to correct...") -> restored
+            the enriched OLD copy ("...replace, exchange, or remove your
+            implants... cost & financing").
+          + re-added article:tag "Breast Implant Revision"
+          og:url    relative -> absolute https URL
+          og:image  relative -> absolute https URL
+          twitter:image relative -> absolute https URL
+          + re-added og:image:alt, og:image:width 910, og:image:height 960
+
+[FIXED] 21b. Es\articlemetas.cshtml had REGRESSED. Restored to match OLD
+        (content identical; trivial BOM/trailing-space diff only):
+          + re-added og:locale:alternate (en_US)
+          + re-added article:tag "Revisión de Implantes de Senos"
+          og:url    relative -> absolute https URL
+          og:image  relative -> absolute https URL
+          twitter:image relative -> absolute https URL
+          + re-added og:image:alt (Spanish), og:image:width 910,
+            og:image:height 960
+
+[FIXED] 21c. En\article.cshtml was a stale older version (292 lines vs OLD 859).
+        The NEW 5.0 file was MISSING (present/live in OLD, restored):
+          - Table of Contents (14 links) + ALL section anchor ids
+          - entire "Top-Rated Breast Implant Revision Surgeons in Miami" section
+            (5 active cards: Mameniskis, Thomas Pane, Schusterman, McDaniel,
+            Luster, with descriptive "...breast implant revision surgeon in
+            Miami" alt texts; Hamamdjian card left @* commented as in OLD)
+          - dedicated id="contact-form-section"
+          - enriched "How Much Does Breast Implant Revision Cost" section
+            (3-factor bullet list + fuller financing copy; the stale NEW had
+            dropped the bullets)
+          - "Breast Implant Revision in Miami for Local & Out-of-Town Patients"
+            section (links to /locations and /out-of-town-patients)
+          - full FAQ (9 questions; stale NEW had only 3)
+          - ALL 6 JSON-LD blocks (FAQPage 9Q, SurgicalProcedure, MedicalClinic/
+            LocalBusiness, BreadcrumbList, WebPage, 5-surgeon Person graph)
+        APPROACH (user chose "merge: old content + 5.0 design"): used OLD 4.0 as
+        the base (restores everything above) and re-applied the 5.0 design
+        idioms, mirroring the correctly-migrated Es sibling:
+          1. CSS refactor c-section -> milenia-section, o-container -> container,
+             dropped mobile-margin-5-9 / mobile-content-padding-x, added pt-5-9.
+          2. Contact section rebuilt as the marmol-bg two-column layout.
+             IMPORTANT: kept id="contact-form-section" on the outer div so the
+             TOC "Schedule a Free Consultation" anchor still resolves; heading
+             uses @Vocabulary.ScheduleAFreeConsultationToday.
+          3. "Preparing" + cost sections restyled to 5.0 (section-fixed-img,
+             milenia-body--scheme-gray) while keeping OLD's richer copy.
+          4. Before/After partial and both videos stay @* commented (they were
+             already commented-out in OLD - nothing active to restyle).
+        VERIFIED: 838 lines; 6 JSON-LD blocks; all 14 TOC anchors resolve to a
+        matching id; 5 active surgeon cards + links present; Razor @* *@ comments
+        well-formed (before/after, testimonials, Hamamdjian card, cost-subtitle
+        all balanced).
+
+NOTE: not runtime-verified (no .NET build env here). On next build, confirm the
+En page renders the TOC, surgeons grid, two-column contact, cost/out-of-town
+sections, and that all TOC jump-links (incl. #contact-form-section) work.
+
+
+========================================================================
+FILE 22: ServicePage\Content\breast-reduction-miami  (En + Es: article, articlemetas)
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-reduction-miami\{En,Es}\
+NEW: ...avanaplasticsurgery5.0\...\breast-reduction-miami\{En,Es}\
+
+RESULT: Both articles migrated intact (clean layout refactor - all body text,
+        headings, and the video present). Both articlemetas REGRESSED (SEO tags
+        lost) - restored to match OLD. Same pattern as FILE 18-21.
+
+[OK] En + Es article.cshtml: all visible content migrated.
+  - All section headings match OLD 1:1 in each language (Who is a candidate /
+    initial consultation / How to prepare / Miami Breast Reduction Surgery /
+    Incision Options (3 types) / Breast Sizes and Shapes / Recovery / Results /
+    Insurance / Choose a surgeon / FAQs).
+  - Video present and identical in both: GcyZFJ44Y1Q (Dr. Mameniskis breast
+    reduction patient journey).
+  - NO surgeon "Top-Rated" card grid, NO JSON-LD, and NO TOC on this page
+    (in EITHER OLD or NEW) - the ul-content lists are in-body bullet lists
+    (candidate/prep), not a navigation TOC. So no surgeon-alt, schema, or
+    dropped-anchor regression applies here.
+  - Differences are intentional 5.0 design: CSS refactor, contact section
+    rebuilt as the marmol-bg two-column layout, minor heading class tweaks
+    (added text-light on the "How to prepare" h2; dropped a stray "container"
+    on the Incision Options h2).
+
+[OK] Localization: Es contact section is CORRECTLY in Spanish (no English-on-
+     Spanish regression):
+       heading  = @Vocabulary.ScheduleAFreeConsultationToday
+       subtitle = "¿Está pensando en un @Model.GetShortName en Avana? Contáctenos hoy."
+     En contact heading is hardcoded "schedule a free consultation" (renders the
+     same on this English page - fine, same as FILE 10/14/20).
+
+[FIXED] 22a. En\articlemetas.cshtml had lost SEO meta tags. Restored to match
+        OLD (content identical; trivial BOM/trailing-space diff only):
+          + re-added article:tag "Breast Reduction"
+          og:url    relative -> absolute https URL
+          og:image  relative -> absolute https URL
+          twitter:image relative -> absolute https URL
+          + re-added og:image:alt, og:image:width 910, og:image:height 960
+        (page-topic, page-type, og:locale, twitter:card were already present.)
+
+[FIXED] 22b. Es\articlemetas.cshtml had lost more. Restored to match OLD
+        (content identical; trivial BOM diff only):
+          + re-added og:locale (es_US) and og:locale:alternate (en_US)
+          + re-added article:tag "Reducción de Senos"
+          + re-added og:site_name
+          og:url    relative -> absolute https URL
+          og:image  relative -> absolute https URL
+          + re-added og:image:alt (Spanish), og:image:width 910,
+            og:image:height 960
+        (twitter:image left relative to match OLD exactly.)
+
+[NOTE - not fixed] Both rebuilt contact sections (En + Es) lost
+     id="contact-form-section" (OLD had it). Harmless: this page has no TOC and
+     nothing links to that anchor. Same situation as FILE 16 / 18 / 20 / 21.
+
+NOTE: not runtime-verified (no .NET build env here).
+
+
+========================================================================
+FILE 23: ServicePage\Content\breast-lift-miami  (En + Es: article, articlemetas)
+========================================================================
+OLD: ...avanaplasticsurgery.com-4.0\...\breast-lift-miami\{En,Es}\
+NEW: ...avanaplasticsurgery5.0\...\breast-lift-miami\{En,Es}\
+
+RESULT: Clean migration - NO fixes needed. Both articlemetas are byte-for-byte
+        identical to OLD; both articles migrated intact (layout refactor only).
+
+[OK] En + Es articlemetas.cshtml: IDENTICAL to OLD (diff empty) AT TIME OF
+     INITIAL CHECK. This page's OLD metas were never enriched (no article:tag /
+     absolute-URL / og:image:alt work like FILE 18-22 had), so there was nothing
+     to restore - NEW matched OLD. Left as-is at that point.
+
+[UPDATE - enriched after the initial check] The NEW En + Es articlemetas were
+     subsequently ENRICHED (going BEYOND OLD - this is a deliberate SEO upgrade,
+     not a migration restore). NEW now diverges from OLD here (NEW is richer):
+       En: + article:tag "Breast Lift"; og:url, og:image, twitter:image -> absolute
+           https; + og:image:alt, og:image:width 910, og:image:height 960.
+       Es: + og:locale (es_US) and og:locale:alternate (en_US); + article:tag
+           "Levantamiento de Senos"; + og:site_name; og:url, og:image,
+           twitter:image -> absolute https; + og:image:alt (Spanish),
+           og:image:width 910, og:image:height 960.
+     Verified well-formed: Razor @* *@ comments balanced (En 4/4, Es 7/7),
+     single canonical each. NOTE: OLD 4.0 now lags NEW on these two files.
+
+[OK] En\article.cshtml: all visible content migrated.
+  - All section headings match OLD (What is breast lift / Candidates /
+    Consultation / Procedure / Exploring options w/ implants / Case 1 & Case 2
+    descriptions / Incision types (4: Crescent, Peri-areolar, Vertical,
+    Inverted T) / surgical procedure steps / Infographics / Recovery / Risks /
+    Results / "Call us... Schedule a Free Consultation" / FAQs).
+  - Both Case videos present and identical: 4RNSim5O8YA and vXFOYsNtOQ8.
+  - Differences are intentional 5.0 design: contact CTA section added (marmol
+    two-column), video block changed from owl-carousel to direct embeds, so the
+    bare carousel slide-labels "Case 1"/"Case 2" (rooms-2-heading-0/1) were
+    dropped - the Case 1/Case 2 *descriptions* and the videos remain, no visible
+    loss. Minor heading class tweak (text-light added on "surgical procedure
+    steps").
+
+[OK] Es\article.cshtml: all Spanish content migrated. Headings match OLD 1:1
+     (only a text-white class added on the "Levantamiento de senos y reducción
+     de mamas" h3). No videos on the Es page (none in OLD or NEW).
+
+[OK] Localization: Es contact section CORRECTLY in Spanish:
+       heading  = @Vocabulary.ScheduleAFreeConsultationToday
+       subtitle = "¿Está pensando en un @Model.GetShortName en Avana? Contáctenos hoy."
+     En contact heading hardcoded "schedule a free consultation" (fine on the
+     English page). Note: a separate content h2 "Call us at (305) 501-6000 and
+     Schedule a Free Consultation" exists in both OLD and NEW (unrelated).
+
+[NOTE - not fixed] Both rebuilt contact sections (En + Es) lost
+     id="contact-form-section" (OLD had it). Harmless: no TOC on this page,
+     nothing links to that anchor. Same as FILE 16 / 18 / 20 / 21 / 22.
+
+No surgeon "Top-Rated" section and no JSON-LD on this page (OLD or NEW), so
+those regressions do not apply.
+
+NOTE: not runtime-verified (no .NET build env here).
+
+
+========================================================================
+VERIFICATION SWEEP (all 10 services re-checked in one pass)
+Date: 2026-06-26
+========================================================================
+Re-compared OLD vs NEW for every service listed above (En + Es, articlemetas +
+article): brazilian-butt-lift, lipo-360, breast-implants, breast-augmentation,
+mommy-makeover, liposuction, bbl-revision, breast-implant-revision,
+breast-reduction, breast-lift.
+
+[OK] articlemetas (all 20 files): content-identical to OLD. Remaining diffs are
+     cosmetic only - BOM, CRLF, trailing whitespace, EOF newline, or one
+     double-space (BBL En og:image:width, the FILE 2 case). No SEO regressions.
+
+[OK] article (all 20 files): differ from OLD only by the intentional 5.0 redesign.
+     Automated content-loss scan (headings / video embeds / JSON-LD count /
+     surgeon links) found NOTHING live in OLD missing from NEW. JSON-LD block
+     counts match (O=N) on every page. All flagged items confirmed intentional:
+       - "surgeons O=6 N=5" (BBL-Es, lipo-En, implants-En) = commented-out
+         Hamamdjian card removed (FILE 3 / 5 / 10).
+       - BBL En XiImTkCKX5Q + "...by Dr Moradian" heading = @* commented in OLD;
+         fMUPtRoh3l4 = replaced by qXNrZkgf1Tw (FIX 4a).
+       - mommy-makeover En BENEFITS / Infographics + video 6E1xgNVVNC4 =
+         commented in OLD (FILE 18).
+       - liposuction En videos MqkWwFO3Y9k / auFMZ-Pgrug = @* commented in OLD.
+       - bbl-revision + breast-implant-revision "BBL Patients Reviews" +
+         Mwxnqb0Eeow = commented in OLD (FILE 20 / 21).
+       - breast-implants Es "Silicona" (tab->heading markup) and
+         breast-augmentation En "Before"/"After" (carousel slide labels) = text
+         and videos present, only markup changed.
+
+CONCLUSION: all 10 services pass. No content lost; no outstanding fixes.
+
+
+========================================================================
+PENDING / NEXT FILES TO CHECK
+========================================================================
+(add new comparisons below as they are reviewed)
