@@ -85,6 +85,27 @@ TUBA_EN = [
     ("cosmetic surgery", ["cosmetic surgery"]),
     ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
 ]
+TABA_EN = [
+    ("transabdominal breast augmentation", ["transabdominal breast augmentation", "trans abdominal breast augmentation", "transabdominal augmentation", "breast augmentation transabdominal"]),
+    ("transabdominal breast augmentation miami", ["transabdominal breast augmentation miami", "transabdominal breast augmentation in miami"]),
+    ("taba breast augmentation", ["taba breast augmentation", "taba breast", "taba breast implants", "taba implants", "taba procedure", "taba surgery", "taba miami"]),
+    ("transabdominoplasty breast augmentation", ["transabdominoplasty breast augmentation", "transabdominoplasty", "transabdominal mammaplasty"]),
+    ("breast augmentation with tummy tuck", ["breast augmentation with tummy tuck", "breast augmentation tummy tuck", "breast implants with tummy tuck", "breast augmentation abdominoplasty", "breast augmentation through abdominoplasty"]),
+    ("breast augmentation through abdomen", ["breast augmentation through abdomen", "breast implants through abdomen", "breast augmentation abdominal incision"]),
+    ("mommy makeover", ["mommy makeover", "mommy makeover miami"]),
+    ("tummy tuck miami", ["tummy tuck miami", "abdominoplasty miami", "tummy tuck"]),
+    ("transabdominal breast augmentation cost", ["transabdominal breast augmentation cost", "transabdominal breast augmentation cost in miami", "taba breast augmentation cost", "taba cost"]),
+    ("breast augmentation", ["breast augmentation"]),
+    ("breast implants", ["breast implants", "breast implant"]),
+    ("breast augmentation miami", ["breast augmentation miami", "miami breast augmentation", "breast augmentation in miami", "breast augmentation miami fl"]),
+    ("saline implants", ["saline implants", "saline breast implants"]),
+    ("silicone implants", ["silicone implants", "silicone breast implants", "silicone gel implants"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+]
 BIR_EN = [
     ("breast implant revision", ["breast implant revision", "implant revision"]),
     ("breast implant revision miami", ["breast implant revision miami", "miami breast implant revision"]),
@@ -563,6 +584,8 @@ PAGES = {
         {"slug": "breast-augmentation-miami", "lang": "en", "kw": BREAST_EN},
     "https://avanaplasticsurgery.com/transumbilical-breast-augmentation-miami":
         {"slug": "transumbilical-breast-augmentation-miami", "lang": "en", "kw": TUBA_EN},
+    "https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami":
+        {"slug": "transabdominal-breast-augmentation-miami", "lang": "en", "kw": TABA_EN},
     "https://avanaplasticsurgery.com/breast-implant-revision-miami":
         {"slug": "breast-implant-revision-miami", "lang": "en", "kw": BIR_EN},
     "https://avanaplasticsurgery.com/breast-reduction-miami":
