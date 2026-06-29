@@ -1,0 +1,36 @@
+@model ServicePageViewModel
+<title>Transabdominal Breast Augmentation Miami - TABA | @Settings.GetCenterName</title>
+<meta name="description" content="Transabdominal Breast Augmentation (TABA) Miami, combines breast implants with tummy tuck to achieve a sculpted midsection and enhanced breast look in one session." />
+<meta property="og:type" content="article" />
+
+@* og:title — updated to reflect Transabdominal Breast Augmentation, previously "Transumbilical" *@
+<meta property="og:title" content="Transabdominal Breast Augmentation Miami | @Settings.GetCenterName" />
+<meta property="og:description" content="Transabdominal Breast Augmentation (TABA) Miami, combines breast implants with tummy tuck to achieve a sculpted midsection and enhanced breast look in one session." />
+
+@* og:url — updated to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami" />
+
+
+<meta property="article:tag" content="Anthony Hasan" />
+<meta property="article:tag" content="Transabdominal Breast Augmentation (TABA)" />
+<meta property="article:tag" content="TABA" />
+<meta property="article:tag" content="@Settings.GetCenterName" />
+<meta property="article:published_time" content="2023-11-13T13:30:28@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+
+@* Added — og:locale *@
+<meta property="og:locale" content="en_US" />
+@* Added — og:site_name *@
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+@* og:image — updated to absolute URL *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/transabdominal-breast-augmentation.jpg" />
+@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image:alt" content="Transabdominal Breast Augmentation (TABA) Miami" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+<meta name="twitter:title" content="Transabdominal Breast Augmentation (TABA) | @Settings.GetCenterName" />
+<meta name="twitter:description" content="Transabdominal Breast Augmentation (TABA) Miami, combines breast implants with tummy tuck to achieve a sculpted midsection and enhanced breast look in one session." />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/transabdominal-breast-augmentation.jpg" />
+<link rel="canonical" href="https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami" />      
