@@ -39,10 +39,15 @@
       "Bash(python build_ttes.py)",
       "Bash(py build_ttes.py)",
       "Bash(python build_ttes2.py)",
-      "Bash(py build_ttes2.py)"
+      "Bash(py build_ttes2.py)",
+      "Bash(cd \"c:/Users/user564/Documents/avana-seo-report\" && cp transabdominal-breast-augmentation-miami-improvements.html tummy-tuck-miami-improvements.html && echo copied)",
+      "Bash(python build_ttm_imp.py)",
+      "Bash(py build_ttm_imp.py)",
+      "Bash(grep -oE 'Tummy Tuck Miami - \\\\$3500 Abdominoplasty' tummy-tuck-miami-improvements.html)"
     ],
     "additionalDirectories": [
-      "\\tmp"
+      "\\tmp",
+      "c:\\Users\\user564\\Documents\\avana-seo-report"
     ]
   }
 }
