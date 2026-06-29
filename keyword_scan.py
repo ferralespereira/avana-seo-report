@@ -63,6 +63,28 @@ BREAST_EN = [
     ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
+TUBA_EN = [
+    ("transumbilical breast augmentation", ["transumbilical breast augmentation", "trans umbilical breast augmentation", "transumbilical augmentation", "breast augmentation transumbilical"]),
+    ("transumbilical breast augmentation miami", ["transumbilical breast augmentation miami", "transumbilical breast augmentation in miami"]),
+    ("tuba breast augmentation", ["tuba breast augmentation", "tuba breast", "tuba breast implants", "tuba implants", "tuba procedure", "tuba surgery", "trans tuba", "breast implants tuba"]),
+    ("breast augmentation through belly button", ["breast augmentation through belly button", "breast augmentation through the belly button", "belly button breast augmentation", "belly button boob job", "boob job through belly button"]),
+    ("breast implants through belly button", ["breast implants through belly button", "breast implants through the belly button", "breast implants thru belly button", "breast implants through navel", "breast implants via belly button", "implants through belly button", "belly button breast implants", "breast navel"]),
+    ("scarless breast augmentation", ["scarless breast augmentation", "scarless breast implants", "no scar breast augmentation"]),
+    ("transumbilical augmentation mammaplasty", ["transumbilical augmentation mammaplasty", "umbilical breast augmentation", "transumbilical", "transumbilical incision", "transumbilical plane"]),
+    ("transaxillary breast augmentation miami", ["transaxillary breast augmentation miami", "transaxillary breast augmentation", "breast augmentation armpits miami"]),
+    ("transabdominal breast augmentation miami", ["transabdominal breast augmentation miami", "transabdominal breast augmentation", "transabdominoplasty breast augmentation"]),
+    ("transumbilical breast augmentation cost", ["transumbilical breast augmentation cost", "transumbilical breast augmentation cost in miami", "tuba breast augmentation cost"]),
+    ("breast augmentation", ["breast augmentation"]),
+    ("breast implants", ["breast implants", "breast implant"]),
+    ("breast augmentation miami", ["breast augmentation miami", "miami breast augmentation", "breast augmentation in miami", "breast augmentation miami fl"]),
+    ("saline implants", ["saline implants", "saline breast implants"]),
+    ("silicone implants", ["silicone implants", "silicone breast implants", "silicone gel implants"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+]
 BIR_EN = [
     ("breast implant revision", ["breast implant revision", "implant revision"]),
     ("breast implant revision miami", ["breast implant revision miami", "miami breast implant revision"]),
@@ -520,6 +542,8 @@ PAGES = {
         {"slug": "breast-implants-miami", "lang": "en", "kw": BREAST_EN},
     "https://avanaplasticsurgery.com/breast-augmentation-miami":
         {"slug": "breast-augmentation-miami", "lang": "en", "kw": BREAST_EN},
+    "https://avanaplasticsurgery.com/transumbilical-breast-augmentation-miami":
+        {"slug": "transumbilical-breast-augmentation-miami", "lang": "en", "kw": TUBA_EN},
     "https://avanaplasticsurgery.com/breast-implant-revision-miami":
         {"slug": "breast-implant-revision-miami", "lang": "en", "kw": BIR_EN},
     "https://avanaplasticsurgery.com/breast-reduction-miami":
