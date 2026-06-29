@@ -129,6 +129,25 @@ BREAST_ES = [
     ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
     ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
+TUBA_ES = [
+    ("aumento de senos transumbilical", ["aumento de senos transumbilical", "aumento mamario transumbilical", "implantes transumbilicales", "implantes de senos transumbilicales"]),
+    ("aumento de senos transumbilical miami", ["aumento de senos transumbilical en miami", "aumento de senos transumbilical miami"]),
+    ("senos por el ombligo", ["cirugia de senos por el ombligo", "aumento de senos por el ombligo", "implantes por el ombligo", "implantes de senos por el ombligo", "seno umbilical"]),
+    ("tuba / transumbilical", ["tuba", "transumbilical"]),
+    ("aumento de senos", ["aumento de senos", "aumento mamario", "mamoplastia de aumento", "aumento de busto"]),
+    ("aumento de senos miami", ["aumento de senos miami", "aumento de senos en miami", "aumento de senos south miami", "mejor aumento de senos en miami"]),
+    ("implantes mamarios miami", ["implantes mamarios miami", "implantes mamarios en miami", "implantes de senos miami", "implantes de senos en miami"]),
+    ("precio aumento de senos", ["precio aumento de senos miami", "cuanto cuesta un aumento de senos en miami", "cuanto cuesta una operacion de senos en miami", "implantes de mamas precio", "precio de implantes de senos en miami"]),
+    ("aumento de senos sin implantes", ["aumento de senos sin implantes", "levantamiento de senos sin implantes"]),
+    ("levantamiento de senos miami", ["levantamiento de senos miami", "aumento de senos con levantamiento miami", "elevacion de mama en miami"]),
+    ("incision transaxilar", ["aumento de senos transaxilar", "incision transaxilar", "aumento de senos por la axila"]),
+    ("implantes salinos / silicona", ["implantes salinos", "implantes de silicona", "implantes gummy bear", "implantes de solucion salina"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica", "cirugia cosmetica"]),
+    ("miami florida", ["miami", "miami fl", "miami florida", "sur de la florida", "south florida"]),
+]
 BIR_ES = [
     ("revision de implantes de senos", ["revision de implantes de senos", "revision de implantes mamarios", "revision de implantes"]),
     ("revision de implantes de senos en miami", ["revision de implantes de senos en miami", "revision de implantes mamarios miami", "revision de implantes de senos miami"]),
@@ -560,6 +579,8 @@ PAGES = {
         {"slug": "implantes-de-senos-en-miami", "lang": "es", "kw": BREAST_ES},
     "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami":
         {"slug": "aumento-de-senos-miami", "lang": "es", "kw": BREAST_ES},
+    "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami":
+        {"slug": "aumento-de-senos-transumbilical-en-miami", "lang": "es", "kw": TUBA_ES},
     "https://avanaplasticsurgery.com/mommy-makeover-miami":
         {"slug": "mommy-makeover-miami", "lang": "en", "kw": MMO_EN},
     "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami":

@@ -15,6 +15,9 @@ MY_DOMAIN = "avanaplasticsurgery.com"
 
 # Each keyword: its target URL and language ("en" or "es")
 keywords = [
+    {"keyword": "aumento de senos transumbilical en miami",
+     "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami",
+     "lang": "es"},
     {"keyword": "transumbilical breast augmentation miami",
      "url": "https://avanaplasticsurgery.com/transumbilical-breast-augmentation-miami",
      "lang": "en"},
