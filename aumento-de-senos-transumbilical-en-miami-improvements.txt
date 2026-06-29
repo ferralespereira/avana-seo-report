@@ -1,0 +1,40 @@
+@model ServicePageViewModel
+<title>Aumento de Senos Transumbilical Miami | @Settings.GetCenterName</title>
+<meta name="description" content="La cirugía plástica de Aumento de Senos Transumbilical en Miami (TUBA) es un procedimiento innovador a través del ombligo que @Settings.GetCenterName Miami realiza con éxito" />
+
+@* og:locale — set to Spanish (United States) *@
+<meta property="og:locale" content="es_US" />
+@* Added — en_US: signals there is an English version of this page *@
+<meta property="og:locale:alternate" content="en_US" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Aumento de Senos Transumbilical Miami | @Settings.GetCenterName" />
+<meta property="og:description" content="El aumento de senos transumbilical es muy popular en Miami, debido a que es mucho menos invasivo y no deja cicatrices visibles en el seno ni en las axilas." />
+<meta property="article:published_time" content="2022-05-17T13:30:28@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+
+@* Adjusted og:url to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami" />
+
+@* Added — article:tag *@
+<meta property="article:tag" content="Aumento de Senos Transumbilical" />
+@* Added — article:tag (to match english version) *@
+<meta property="article:tag" content="TUBA" />
+@* Added — article:tag (to match english version) *@
+<meta property="article:tag" content="@Settings.GetCenterName" />
+
+@* Adjusted og:image to absolute URL *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/transumbilical-breast-augmentation-miami.jpg" />
+@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image:alt" content="Aumento de Senos Transumbilical Miami | @Settings.GetCenterName" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+@* Added - og:site_name *@
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+<meta name="twitter:title" content="Aumento de Senos Transumbilical | @Settings.GetCenterName" />
+<meta name="twitter:description" content="El aumento de senos transumbilical es muy popular en Miami, debido a que es mucho menos invasivo y no deja cicatrices visibles en el seno ni en las axilas." />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/transumbilical-breast-augmentation-miami.jpg" />
+<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami" />
