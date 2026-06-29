@@ -411,6 +411,89 @@
   /* force text to lowercase for elements with this helper class */
   .lowercase { text-transform: lowercase; }
 
+  /* ── Keywords Report filter bar ── */
+  .kw-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 4px;
+  }
+  .kw-filter-field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border: 1.5px solid #d7dde3;
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+  .kw-filter-field:focus-within { border-color: var(--teal); }
+  .kw-filter-search { flex: 1 1 280px; min-width: 220px; }
+  .kw-filter-icon { font-size: 12px; opacity: 0.6; }
+  .kw-filter-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    color: var(--navy);
+    background: transparent;
+  }
+  .kw-filter-select {
+    border: 1.5px solid #d7dde3;
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: var(--navy);
+    background: #fff;
+    cursor: pointer;
+  }
+  .kw-filter-select:focus { outline: none; border-color: var(--teal); }
+  .kw-lang-pills {
+    display: inline-flex;
+    border: 1.5px solid #d7dde3;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .kw-lang-pill {
+    border: none;
+    background: #fff;
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-left: 1.5px solid #d7dde3;
+    transition: background 0.15s, color 0.15s;
+  }
+  .kw-lang-pill:first-child { border-left: none; }
+  .kw-lang-pill:hover { background: #f0fafa; }
+  .kw-lang-pill.active { background: var(--teal); color: #fff; }
+  .kw-filter-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6a737d;
+    margin-left: auto;
+  }
+  .kw-filter-clear {
+    border: 1.5px solid #d7dde3;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .kw-filter-clear:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .kw-filter-noresults td {
+    text-align: center;
+    padding: 18px;
+    color: #6a737d;
+    font-style: italic;
+  }
+
   /* ── Keyword Groups (note cards) ── */
   .kw-groups {
     display: flex;
@@ -1173,6 +1256,33 @@ function toggleGeoOverview(h) {
 
 <div class="page-links">
   <h3>Keywords Report</h3>
+
+  <!-- ── Keywords Report filter bar ── -->
+  <div class="kw-filter-bar">
+    <div class="kw-filter-field kw-filter-search">
+      <span class="kw-filter-icon">🔍</span>
+      <input type="text" id="kwFilterSearch" placeholder="Filter by keyword or URL…" autocomplete="off" />
+    </div>
+    <select id="kwFilterStatus" class="kw-filter-select" title="Filter by completion status">
+      <option value="all">All status</option>
+      <option value="done">Done</option>
+      <option value="pending">Not done</option>
+    </select>
+    <select id="kwFilterCtr" class="kw-filter-select" title="Filter by CTR band">
+      <option value="all">All CTR</option>
+      <option value="good">CTR good</option>
+      <option value="warn">CTR warning</option>
+      <option value="bad">CTR low</option>
+    </select>
+    <div class="kw-lang-pills" id="kwFilterLang" role="group" aria-label="Filter by language">
+      <button type="button" class="kw-lang-pill active" data-lang="all">All</button>
+      <button type="button" class="kw-lang-pill" data-lang="en">🇺🇸 EN</button>
+      <button type="button" class="kw-lang-pill" data-lang="es">🇪🇸 ES</button>
+    </div>
+    <span class="kw-filter-count" id="kwFilterCount"></span>
+    <button type="button" class="kw-filter-clear" id="kwFilterClear">Clear</button>
+  </div>
+
   <div class="kw-groups">
 
     <!-- ── Group: Most Impressions + CTR < 1% ── -->
@@ -1588,6 +1698,105 @@ function toggleGeoOverview(h) {
     // Insert before the Backlinks column (second td = after Keyword)
     row.insertBefore(td, row.children[1]);
   });
+})();
+</script>
+
+<!-- ===== Keywords Report — filter bar logic ===== -->
+<script>
+(function () {
+  const tbl = document.querySelector('.kw-group-table');
+  if (!tbl) return;
+
+  const searchEl = document.getElementById('kwFilterSearch');
+  const statusEl = document.getElementById('kwFilterStatus');
+  const ctrEl    = document.getElementById('kwFilterCtr');
+  const countEl  = document.getElementById('kwFilterCount');
+  const clearEl  = document.getElementById('kwFilterClear');
+  const langWrap = document.getElementById('kwFilterLang');
+  if (!searchEl || !statusEl || !ctrEl) return;
+
+  const langPills = langWrap ? Array.from(langWrap.querySelectorAll('.kw-lang-pill')) : [];
+  let langValue = 'all';
+
+  const rows = Array.from(tbl.querySelectorAll('tbody tr'));
+
+  // Pre-compute searchable metadata for each row
+  const meta = rows.map(row => {
+    const text = (row.textContent || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    const done = !!row.querySelector('a.done-btn');
+    const badge = row.querySelector('.ctr-badge');
+    let ctr = '';
+    if (badge) {
+      if (badge.classList.contains('good')) ctr = 'good';
+      else if (badge.classList.contains('warn')) ctr = 'warn';
+      else if (badge.classList.contains('bad')) ctr = 'bad';
+    }
+    // Language: Spanish pages live under /espanol/, everything else is English
+    const urlLink = row.querySelector('a.kw-url-link');
+    const url = urlLink ? urlLink.getAttribute('href') || '' : '';
+    const lang = /\/espanol\//i.test(url) ? 'es' : 'en';
+    return { row, text, done, ctr, lang, partner: null };
+  });
+
+  // Link translation pairs: an EN row and the ES row immediately following it
+  for (let i = 0; i < meta.length - 1; i++) {
+    if (meta[i].lang === 'en' && meta[i + 1].lang === 'es') {
+      meta[i].partner = meta[i + 1];
+      meta[i + 1].partner = meta[i];
+      i++; // both rows of this pair are now linked
+    }
+  }
+
+  // "No results" placeholder row
+  const colCount = tbl.querySelectorAll('thead th').length || 8;
+  const noRow = document.createElement('tr');
+  noRow.className = 'kw-filter-noresults';
+  noRow.style.display = 'none';
+  noRow.innerHTML = '<td colspan="' + colCount + '">No keywords match the current filters.</td>';
+  tbl.querySelector('tbody').appendChild(noRow);
+
+  function apply() {
+    const q = searchEl.value.toLowerCase().trim();
+    const status = statusEl.value;
+    const ctr = ctrEl.value;
+    let visible = 0;
+
+    meta.forEach(m => {
+      let show = true;
+      // Search matches if the row OR its translation partner contains the query,
+      // so typing a keyword surfaces both the English and Spanish version of the page.
+      if (q && m.text.indexOf(q) === -1 && !(m.partner && m.partner.text.indexOf(q) !== -1)) show = false;
+      if (show && status === 'done' && !m.done) show = false;
+      if (show && status === 'pending' && m.done) show = false;
+      if (show && ctr !== 'all' && m.ctr !== ctr) show = false;
+      if (show && langValue !== 'all' && m.lang !== langValue) show = false;
+      m.row.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noRow.style.display = visible === 0 ? '' : 'none';
+    if (countEl) countEl.textContent = visible + ' of ' + meta.length + ' shown';
+  }
+
+  searchEl.addEventListener('input', apply);
+  statusEl.addEventListener('change', apply);
+  ctrEl.addEventListener('change', apply);
+  langPills.forEach(pill => pill.addEventListener('click', function () {
+    langValue = pill.getAttribute('data-lang') || 'all';
+    langPills.forEach(p => p.classList.toggle('active', p === pill));
+    apply();
+  }));
+  if (clearEl) clearEl.addEventListener('click', function () {
+    searchEl.value = '';
+    statusEl.value = 'all';
+    ctrEl.value = 'all';
+    langValue = 'all';
+    langPills.forEach(p => p.classList.toggle('active', p.getAttribute('data-lang') === 'all'));
+    apply();
+    searchEl.focus();
+  });
+
+  apply();
 })();
 </script>
 
