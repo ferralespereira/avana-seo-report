@@ -13,7 +13,12 @@
       "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) Chrome/120.0 Safari/537.36\" --max-time 30 \"https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami\" -o /tmp/taba.html)",
       "Bash(grep -oiP '\\\\$[0-9][0-9,]{2,}' /tmp/taba.html)",
       "Bash(grep -oiP 'before.{0,3}after' /tmp/taba.html)",
-      "Bash(awk 'NR>=1290 && NR<=1340' index.html)"
+      "Bash(awk 'NR>=1290 && NR<=1340' index.html)",
+      "Bash(find \"sources/aumento-de-senos-transabdominal-en-miami\" -name \"*.csv\")",
+      "Bash(ls -la aumento-de-senos-transabdominal-en-miami.html)",
+      "Bash(ls img/aumento-de-senos-transabdominal-en-miami_*)",
+      "Bash(awk -F'pos:' '{print $0}')",
+      "PowerShell(& \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('PARSE OK'\\)\")"
     ],
     "additionalDirectories": [
       "\\tmp"

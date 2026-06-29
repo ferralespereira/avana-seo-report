@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana — Aumento de Senos Transabdominal en Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; aumento de senos transabdominal en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="aumento-de-senos-transabdominal-en-miami"></div>
+<div class="geo-history" data-slug="aumento-de-senos-transabdominal-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  aumento de senos transabdominal en miami
+  <button onclick="navigator.clipboard.writeText('aumento de senos transabdominal en miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+</div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:8px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">0</div>
+<div class="kpi-source">aumento de senos transabdominal en miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">0</div>
+<div class="kpi-source">aumento de senos transabdominal en miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">0%</div>
+<div class="kpi-source">aumento de senos transabdominal en miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">&mdash;</div>
+<div class="kpi-source">aumento de senos transabdominal en miami — primary query</div>
+</div>
+</div>
+<div class="insight info" style="margin-bottom:24px;"><span class="insight-icon">ℹ️</span><div>The exact phrase <strong>"aumento de senos transabdominal en miami"</strong> recorded <strong>0 impressions</strong> in GSC for this period — virtually no one searches that exact Spanish string, so the keyword-filtered KPI cards and device export are empty. The URL itself draws <strong>108 impressions</strong> and <strong>1 click</strong> (CTR <strong>0.93%</strong>) at an average position of <strong>31.64</strong>, ranking mainly for related queries — most notably <strong>"abdominoplastia mas aumento de senos"</strong> (position <strong>1</strong>), <strong>"tummy tuck breast augmentation"</strong> (pos 10) and <strong>"que significa transabdominal"</strong> (pos 11), plus a broader <em>aumento de senos</em> / <em>correccion de pezones</em> South-Miami cluster (see all-queries breakdown below).</div></div>
+
+<!-- ===== DEVICE BREAKDOWN ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for "aumento de senos transabdominal en miami" <span style="font-weight:600;color:#999;text-transform:none;letter-spacing:0;">(keyword-filtered)</span></div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="5" style="padding:18px 14px;text-align:center;color:#999;font-style:italic;">No device data &mdash; the keyword "aumento de senos transabdominal en miami" had 0 impressions in GSC for this period, so the keyword-filtered device export is empty. See the URL-level reach in the all-queries section below.</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="taba-es-url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el=document.getElementById('taba-es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami</span> — Last 3 months (Jun 29, 2026)</div>
+</a>
+<a href="#" onclick="var el=document.getElementById('taba-es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+</div>
+<div id="taba-es-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">1</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">108</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">0.93%</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">31.64</div>
+</div>
+</div>
+<!-- Zero-click queries -->
+<div style="margin-bottom:4px;">
+<div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">⚠️ ZERO-CLICK QUERIES — Top 10 by impressions (0 queries reach 100+ impressions)</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;"><thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+</tr>
+</thead><tbody>
+<tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos south miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">15</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">72.73</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">correccion de pezones south miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">9</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">78</td></tr>
+<tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">37.8</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos con injerto de grasa salt lake city</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">4</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">88</td></tr>
+<tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">correccion de pezones miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">51.5</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">correccion de pezones invertidos south miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">81.5</td></tr>
+<tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">abdominoplastia mas aumento de senos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">1</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">tummy tuck breast augmentation</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">10</td></tr>
+<tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">que significa transabdominal</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">11</td></tr>
+<tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de senos en miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">33</td></tr>
+</tbody></table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#555;font-style:italic;">Showing top 10 zero-click queries by impressions (0 reach 100+ impressions; the page's top query peaked at 15) · Source: GSC URL-filtered export 2026-06-29</div>
+</div>
+</div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Avana /transabdominal ✅ (ES) | Dr. Ary Krau ✅ (ES) | Avana /transumbilical ✅ (ES) | Miami Plastic Surgery ✅ (ES) confirmed from page source 2026-06-29</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+<th style="padding:10px 14px;text-align:left;background:#dc2626;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Avana 🔴 OUR PAGE (ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Dr. Ary Krau (ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://www.arykraumd.com/espanol/aumento-de-senos/" style="color:#fff;text-decoration:none;" target="_blank">arykraumd.com/espanol/aumento-de-senos</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Avana /transumbilical (TUBA, ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Miami Plastic Surgery (ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/" style="color:#fff;text-decoration:none;" target="_blank">miamiplasticsurgery.com/es/…/breast-augmentation</a></span></th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Match exacto + TABA</div>"Aumento de Senos Transabdominal en Miami - TABA | Avana Plastic Surgery"<div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin precio en el title</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Genérico + marca</div>"Cirujano plástico dedicado al aumento de senos en Miami, FL | Dr. Ary Krau"<div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No transabdominal · sin precio</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Nuestra página TUBA (canibalización)</div>"Aumento de Senos Transumbilical Miami | Avana Plastic Surgery"<div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Otro procedimiento (por el ombligo)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Genérico (implantes)</div>"Implantes mamarios en Miami | Cirugía Plástica Miami"<div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No transabdominal · sin precio</div></td></tr>
+<tr style="background:#fff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">"Aumento de Senos Transabdominal (TABA) en Miami"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ Match exacto ES + TABA + geo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">"AUMENTO DE SENOS: RESULTADOS NATURALES"<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Genérico · sin geo/TABA</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">"Aumento de Senos Transumbilical en Miami"<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ TUBA exacto (página hermana)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">"Aumento de senos en Miami y Coral Gables"<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Genérico · sin TABA</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos transabdominal / TABA / abdominoplastia</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos miami / implantes</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos transumbilical / ombligo</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">aumento de senos / implantes mamarios</span></td></tr>
+<tr style="background:#fff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(from H2/H3 headings)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="font-size:11px;">¿Qué es TABA? · beneficios · mejor especialista en Miami · candidatos (aumento a través de abdominoplastia) · cómo funciona · recuperación · seguridad · <strong>Costo de TABA en Miami</strong> · consulta gratuita</div><div style="color:#059669;font-size:11px;margin-top:3px;">✅ ~8 H2 — cobertura TABA enfocada</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="font-size:11px;">¿Soy candidata? · ¿necesito levantamiento? · elección de implantes · detalles del procedimiento · recuperación · riesgos · <strong>precio y financiamiento</strong></div><div style="color:#059669;font-size:11px;margin-top:3px;">✅ Buena guía general (no TABA)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="font-size:11px;">Procedimiento TUBA · ventajas · cómo funciona · incisión transumbilical · mejor cirujano · recuperación · <strong>Costo</strong> · financiación · FAQs (14+)</div><div style="color:#e67e22;font-size:11px;margin-top:3px;">⚠️ Profundo, pero TUBA (rival interno)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="font-size:11px;">Implantes mamarios · candidatas · tipos de implante · recuperación · galería · reseñas (muchas) · Preguntas frecuentes</div><div style="color:#059669;font-size:11px;margin-top:3px;">✅ Página enorme (genérica)</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count<br/><span style="font-size:11px;font-weight:400;color:#666;">(approx. — body)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;font-weight:700;">⚠️ ~1,400 words (ES)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;">✅ ~3,700 words (ES)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;">✅ ~2,700 words (ES)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;">✅ Muy extensa (reseñas/servicios)</div></td></tr>
+<tr style="background:#fff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Sección Costo, sin cifra</div><div>• Sección "Costo de TABA en Miami"<br/>• "Más rentable que por separado"<br/>• <strong>Sin número de precio</strong></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Precio y financiamiento, sin cifra</div><div>• Sección "Opciones de precio y financiamiento"<br/>• Sin número visible</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Con cifras</div><div>• Salina <strong>$4,700</strong> / Silicona <strong>$5,700</strong><br/>• Sección Costo + financiación</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin precio</div><div>• Consulta gratuita, sin cifras</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;margin-bottom:4px;">✅ ES + TABA + combo</div>"El aumento de senos transabdominal en Miami (TABA) combina implantes de senos y tummy tuck para lograr una sección media esculpida y senos mejorados en una sola sesión."</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;margin-bottom:4px;">✅ ES + experiencia</div>"Dr. Ary Krau es uno de los cirujanos con más experiencia en el aumento de senos… del área de Miami…"</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;margin-bottom:4px;">✅ ES + TUBA + ombligo</div>"La cirugía plástica de Aumento de Senos Transumbilical en Miami (TUBA)… a través del ombligo…"</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;margin-bottom:4px;">✅ ES + certificados</div>"Nuestros cirujanos certificados se especializan en aumento de senos en Miami, Florida…"</td></tr>
+<tr style="background:#fff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage<br/><span style="font-size:11px;font-weight:400;color:#666;">(targets PAA)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;">⚠️ "Preguntas Frecuentes" presente pero breve</div><div style="color:#e67e22;font-size:11px;margin-top:3px;">⚠️ Sin FAQPage JSON-LD</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;">✅ H3 tipo Q&amp;A (candidatura, levantamiento, riesgos, precio) en prosa</div><div style="color:#e67e22;font-size:11px;margin-top:3px;">⚠️ No es FAQ schema</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;">✅ "Preguntas frecuentes de Aumento de Senos Trans-Umbilical"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;">✅ "Preguntas Frecuentes" presente</div></td></tr>
+<tr style="background:#fff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals<br/><span style="font-size:11px;font-weight:400;color:#666;">(credentials, reviews)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="font-size:11px;color:#059669;">✅ Cirujanos certificados<br/>✅ "Mejor especialista en Miami para TABA"<br/>✅ Reseñas referidas<br/>✅ (305) 501-6000</div><div style="font-size:11px;color:#e67e22;">⚠️ Sin galería antes/después en la página</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="font-size:11px;color:#059669;">✅ Dr. Ary Krau (marca)<br/>✅ ASAPS<br/>✅ Galería antes/después<br/>✅ Reseñas de pacientes</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="font-size:11px;color:#059669;">✅ "Mayor cantidad de cirugías TUBA en la Florida"<br/>✅ Cirujanos certificados<br/>✅ 4 antes/después · reseñas</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="font-size:11px;color:#059669;">✅ Cirujanos certificados (Dr. Polo)<br/>✅ Muchas reseñas 5★<br/>✅ Galería · ubicación Coral Gables</div></td></tr>
+<tr style="background:#fff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA<br/><span style="font-size:11px;font-weight:400;color:#666;">(conversion)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;">✅ "Programe una consulta gratuita hoy" + (305) 501-6000</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;">✅ "Agende su consulta para un aumento de senos" + (305) 861-6881</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;">✅ "Programe una consulta gratuita hoy" + (305) 501-6000</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;">✅ "Programar consulta" + (305) 290-1707</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Schema markup<br/><span style="font-size:11px;font-weight:400;color:#666;">(JSON-LD)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Ninguno detectado</div><div style="color:#c0392b;">❌ Sin FAQPage / MedicalProcedure / PriceRange</div><div style="font-size:11px;color:#666;margin-top:4px;">Añadir MedicalProcedure + FAQPage (PriceRange) es la victoria de rich-result más rápida.</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Básico</div><div>BreadcrumbList · Organization · WebSite<div style="color:#c0392b;font-size:11px;">❌ Sin FAQPage / MedicalProcedure</div></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Ninguno detectado</div><div style="color:#c0392b;">❌ Sin FAQPage / MedicalProcedure pese a su FAQ</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Rico (local)</div><div>Service · OfferCatalog · Person · GeoCoordinates · Organization<div style="color:#e67e22;font-size:11px;">⚠️ Sin MedicalProcedure / FAQPage</div></div></td></tr>
+</tbody>
+</table>
+<!-- Key takeaway -->
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from competitor analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Competitive landscape for "aumento de senos transabdominal en miami":</strong><br/>
+1. <strong>Avana ES is the only true transabdominal-focused Spanish page</strong> — a dedicated TABA page (~1,400 words, exact title/H1/meta). The exact ES phrase has ~0 GSC volume; the URL still draws 108 impr / 1 click at pos 31.64 on a broader cluster.<br/>
+2. <strong>There is no direct ES transabdominal competitor</strong> — Dr. Ary Krau and Miami Plastic Surgery are general <em>aumento de senos / implantes</em> pages (0 transabdominal mentions); a genuine opportunity to own the term.<br/>
+3. <strong>The real rival is internal:</strong> Avana's own ES TUBA page is deeper (~2,700 words, published $4,700/$5,700 prices, full FAQ) and competes on the broader belly-button/aumento cluster.<br/>
+4. <strong>Competitors win on authority + schema:</strong> Miami Plastic Surgery ships rich Service/OfferCatalog/Person JSON-LD and dozens of 5★ reviews; Dr. Ary Krau (~3,700 words, ASAPS, named surgeon) leads on E-E-A-T.<br/>
+5. <strong>No one publishes a real price</strong> on these ES pages — the page that adds a clear cost figure + PriceRange schema gets a clear edge.
+</div>
+<div>
+<strong>What Avana must add to dominate "aumento de senos transabdominal en miami":</strong><br/>
+1. <strong>Publish an actual price in "Costo de TABA en Miami"</strong> (a real $ figure/range) — the section exists but shows no number; the ES TUBA page's $4,700/$5,700 transparency is a proven differentiator.<br/>
+2. <strong>Add MedicalProcedure + FAQPage + PriceRange JSON-LD</strong> — no schema is detected; Miami Plastic Surgery already serves rich local schema.<br/>
+3. <strong>Expand the body to ~2,500 words + a full FAQ block</strong> (costo, recuperación, TABA vs tummy-tuck-solo, seguridad) to out-depth the general ES pages.<br/>
+4. <strong>Separate TABA from the ES TUBA page</strong> — clearly distinguish "a través de la abdominoplastia" (TABA) from "por el ombligo" (TUBA) and interlink so each owns its term.<br/>
+5. <strong>Capture the real ranking cluster</strong> — "abdominoplastia mas aumento de senos" (pos 1), "tummy tuck breast augmentation" (pos 10), "que significa transabdominal" (pos 11) — add dedicated sections/FAQ entries to convert these impressions into clicks.
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel { position: relative; max-width: 100%; margin: auto; background: #fff; border: 1px solid #dce6f0; }
+.carousel-container { position: relative; padding: 16px 20px; display: flex; align-items: center; justify-content: center; min-height: 400px; }
+.carousel-slide { display: none; width: 100%; }
+.carousel-slide.active { display: block; }
+.carousel-slide img { max-width: 100%; height: auto; display: block; }
+.carousel-prev, .carousel-next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; background-color: rgba(0,0,0,0.5); font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 3px; user-select: none; }
+.carousel-next { right: 0; }
+.carousel-prev { left: 0; }
+.carousel-prev:hover, .carousel-next:hover { background-color: rgba(0,0,0,0.8); }
+.carousel-dots { text-align: center; padding: 12px 20px; background: #f9f9f9; border-top: 1px solid #dce6f0; }
+.carousel-dot { cursor: pointer; height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+.carousel-dot.active { background-color: #717171; }
+.carousel { max-width: 900px; margin: 30px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+.carousel-title { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 20px; font-size: 16px; font-weight: 600; text-align: center; letter-spacing: 0.5px; }
+.carousel-slide img { cursor: pointer; transition: transform 0.2s ease; }
+.carousel-slide img:hover { transform: scale(1.02); }
+.zoom-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); }
+.zoom-modal.active { display: flex; align-items: center; justify-content: center; }
+.zoom-modal-content { max-width: 90vw; max-height: 90vh; position: relative; }
+.zoom-modal-content img { width: 100%; height: auto; }
+.zoom-close { position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; user-select: none; }
+.zoom-close:hover { color: #bbb; }
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/aumento-de-senos-transabdominal-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/aumento-de-senos-transabdominal-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/aumento-de-senos-transabdominal-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) { showSlide(currentIndex += n); }
+function currentSlide(n) { showSlide(currentIndex = n); }
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
