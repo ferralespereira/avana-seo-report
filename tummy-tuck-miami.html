@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana Issues — Tummy Tuck Miami</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th.content-column {
+    background: var(--teal);
+    position: relative;
+  }
+  .data-table th.trust-column {
+    background: var(--gold);
+    color: var(--navy);
+    position: relative;
+  }
+  .data-table th.cta-column {
+    background: var(--orange);
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.schema-column {
+    background: #6366f1;
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.content-column::after {
+    content: "CONTENT";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.trust-column::after {
+    content: "TRUST SIGNAL";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(27, 58, 92, .15);
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.cta-column::after {
+    content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.schema-column::after {
+    content: "SCHEMA TYPE";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td.content-column {
+    background: #f4fbfb;
+  }
+  .data-table td.trust-column {
+    background: #fff8e8;
+  }
+  .data-table td.cta-column {
+    background: #fff3ec;
+  }
+  .data-table td.schema-column {
+    background: #f0f0ff;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .priority-high { background: var(--redBg) !important; color: var(--red); font-weight: 700; }
+  .priority-medium { background: var(--yellowBg) !important; color: #7d5a00; font-weight: 700; }
+  .priority-low { background: var(--greenBg) !important; color: var(--green); font-weight: 700; }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .subsection h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .lang-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--gold);
+    background: transparent;
+    transition: background .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .site-tabs,
+    .indicator-nav { padding: 0 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+    .site-header { padding: 16px; }
+    .site-header h1 { font-size: 18px; }
+  }
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; tummy tuck miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/tummy-tuck-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/tummy-tuck-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="tummy-tuck-miami"></div>
+<div class="geo-history" data-slug="tummy-tuck-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/tummy-tuck-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- Keyword header -->
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  tummy tuck miami
+  <button onclick="navigator.clipboard.writeText('tummy tuck miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left:12px;padding:6px 12px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">📋 Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/tummy-tuck-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/tummy-tuck-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/tummy-tuck-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left:8px;padding:4px 10px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">📋</button>
+</div>
+</div>
+
+<!-- KPI Cards (keyword-filtered) -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">102</div>
+<div class="kpi-source">tummy tuck miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">4,702</div>
+<div class="kpi-source">tummy tuck miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">2.17%</div>
+<div class="kpi-source">tummy tuck miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">10.71</div>
+<div class="kpi-source">tummy tuck miami &mdash; primary query</div>
+</div>
+</div>
+
+<!-- Device Breakdown (keyword-filtered) -->
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC &mdash; Device Breakdown for &ldquo;tummy tuck miami&rdquo; <span style="color:#999;font-weight:600;">(keyword-filtered)</span></div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Mobile</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">93</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">2,351</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">3.96%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#e67e22;">12.49</td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">🖥️ Desktop</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">9</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">2,348</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#c0392b;">0.38%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">8.93</td>
+</tr>
+<tr>
+<td style="padding:9px 14px;">📟 Tablet</td>
+<td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+<td style="padding:9px 14px;text-align:right;color:#7c3aed;">3</td>
+<td style="padding:9px 14px;text-align:right;color:#c0392b;">0%</td>
+<td style="padding:9px 14px;text-align:right;color:#059669;">2.33</td>
+</tr>
+</tbody>
+</table>
+
+<!-- All-queries collapsible -->
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el=document.getElementById('url-queries-content'); el.style.display=el.style.display==='none'?'block':'none'; return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div onmouseout="this.style.opacity='0.9'" onmouseover="this.style.opacity='1'" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;transition:opacity 0.2s ease;opacity:0.9;">GSC &mdash; All Queries for <span style="font-size:18px;font-weight:900;color:#fff;">https://avanaplasticsurgery.com/tummy-tuck-miami</span> &mdash; Last 3 months (Jun 29, 2026)</div>
+</a>
+<a href="#" onclick="var el=document.getElementById('url-queries-content'); el.style.display=el.style.display==='none'?'block':'none'; return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">&#9658; Show</a>
+</div>
+<div id="url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">708</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">56,026</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">1.26%</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">9.41</div>
+</div>
+</div>
+<div>
+<div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">🔴 0-CLICK QUERIES WITH HIGH IMPRESSIONS &mdash; Top 20 opportunities</div>
+<div style="font-size:11px;color:#666;margin-bottom:6px;font-style:italic;">These queries show the page is appearing in Google &mdash; but nobody clicks. Each is an immediate content opportunity.</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#6ec6ff;">Clicks</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#34d399;">CTR</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+<th style="padding:7px 10px;text-align:left;">Opportunity</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">what is lipeptonomia</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,552</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">10.87</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Misspelled/non-standard term at pos 11 — low intent, not content-actionable</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">abdominoplasty miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1,318</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.07</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 5 with 0 clicks — exact synonym; add “abdominoplasty” to title/H1/meta to win the click</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">avana plastic surgery dallas</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">461</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.09</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Brand + Dallas (navigational) at pos 1 — route intent to the Dallas location page</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">tummy tuck fort lauderdale</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">385</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">72.63</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Ft. Lauderdale geo at pos 73 — out of range; needs a dedicated geo section/page</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">price of tummy tuck in florida</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">267</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.72</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 6 cost query, 0 clicks — surface price ($3,500) in title/meta to earn the click</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">hourglass tummy tuck miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">207</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">25.64</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 207 impr at pos 26 — add an “hourglass tummy tuck” H2</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">abdominoplasty</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">205</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">11.56</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Broad synonym at pos 12 — strengthen on-page “abdominoplasty” usage</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">avana plastic surgery</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">184</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">18.26</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Brand query at pos 18 — should rank #1; check brand/homepage cannibalization</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">abdominoplasty fort lauderdale</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">165</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">70.83</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Abdominoplasty + Ft. Lauderdale at pos 71 — geo + synonym gap</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">tummy tuck miami beach</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">160</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.11</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 Pos 4 with 0 clicks — Miami Beach geo; add neighborhood copy + price hook</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">tummy tuck near me</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">160</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">9.85</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 “near me” at pos 10 — reinforce LocalBusiness schema + NAP</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">types of abdominoplasty</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">150</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">22.47</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🔴 150 impr at pos 22 — add a “types of tummy tuck” H2 (mini, full, extended, circumferential)</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how many abdominal implants were performed in south florida</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">147</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.56</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Misspelled/irrelevant query at pos 7 — not content-actionable</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">abdominoplasty price</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">124</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">30.82</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Pos 31 cost+synonym — add “abdominoplasty price” to the cost section</td></tr><tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">tummy tuck coral gables</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-size:12px;">0</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">115</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">34.41</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Coral Gables geo at pos 34 — add neighborhood geo copy</td></tr></tbody>
+</table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#999;font-style:italic;">Showing all 15 zero-click queries with 100+ impressions (45 queries total have 100+ impressions)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Competitor Analysis Table -->
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Jun 29, 2026 — all four pages fetched live</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+<th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:220px;">Avana<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/tummy-tuck-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/tummy-tuck-miami</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;">Spectrum Aesthetics<br/><span style="font-weight:400;font-size:11px;"><a href="https://spectrum-aesthetics.com/tummy-tuck-miami/" style="color:#fff;text-decoration:none;" target="_blank">spectrum-aesthetics.com</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;">Miami Life Cosmetic<br/><span style="font-weight:400;font-size:11px;"><a href="https://miamilifecosmetic.com/procedure/tummy-tuck/" style="color:#fff;text-decoration:none;" target="_blank">miamilifecosmetic.com</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;">Dr. Sean Simon<br/><span style="font-weight:400;font-size:11px;"><a href="https://www.drsimonplasticsurgery.com/procedures/tummy-tuck" style="color:#fff;text-decoration:none;" target="_blank">drsimonplasticsurgery.com</a></span></th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price + keyword anchor</div>&ldquo;Tummy Tuck Miami - $3500 Abdominoplasty | Avana Plastic Surgery&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; $3,500 + exact keyword + synonym + brand</div><div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; $3,500 anchor is above Spectrum&rsquo;s $3,000 headline price</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Aggressive price anchor</div>&ldquo;Tummy Tuck Miami - Cost $3000&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Lowest headline price of the set ($3,000) + keyword + geo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; No geo, no price</div>&ldquo;Tummy Tuck &ndash; Miami Life Cosmetic Surgery&rdquo;<div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No &ldquo;Miami&rdquo; geo modifier or cost signal in the title</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Clean but no price</div>&ldquo;Tummy Tuck (Abdominoplasty) Miami, FL | Dr. Sean Simon&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Keyword + synonym + geo</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No cost signal</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Exact-match keyword</div>&ldquo;Tummy Tuck Miami&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Exact primary keyword + geo in H1</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No price in H1 (Spectrum leads its H1 with $3,000)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price leads the H1</div>&ldquo;Tummy Tuck Miami - Cost $3000&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Cost-intent captured above the fold</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Keyword only</div>&ldquo;Tummy Tuck&rdquo;<div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No geo modifier in H1</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Keyword + synonym + geo</div>&ldquo;Tummy Tuck (Abdominoplasty) in Miami, FL&rdquo;<div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No price in H1</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">tummy tuck miami</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Exact-match in title + H1</div><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; GSC: keyword pos <strong>10.7</strong> &mdash; 4,702 impr, 102 clicks, <strong>2.17% CTR</strong> (page-level pos 9.4)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">tummy tuck miami cost</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Optimizes the cost variant &mdash; title/H1/body all price-led</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">tummy tuck</span><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No geo focus in title/H1 &mdash; weaker for the &ldquo;miami&rdquo; query</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">tummy tuck / abdominoplasty</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Captures the abdominoplasty synonym in title + H1</div><div style="font-size:11px;color:#666;margin-top:3px;">&#9432; &ldquo;Miami&rdquo; is secondary</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(H2 headings)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Deep structure (~17 H2s)</div><div>&#10003; What is a Tummy Tuck? / Candidates</div><div>&#10003; The Tummy Tuck Procedure / Who should avoid it</div><div>&#10003; Partial / Mini Tummy Tuck &middot; Circumferential Abdominoplasty</div><div>&#10003; Recovery / Risks / Case Results / Before &amp; After</div><div style="color:#059669;font-weight:700;">&#10003; Tummy Tuck Cost in Miami (pricing H2)</div><div>&#10003; Tummy Tuck FAQs</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No &ldquo;types of tummy tuck&rdquo; or &ldquo;hourglass&rdquo; H2 (zero-click clusters)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price-oriented (8 H2s)</div><div>&#10003; Why Tummy Tuck Miami? / Best Surgeon in Miami</div><div>&#10003; What is an Abdominoplasty? / Candidates</div><div>&#10003; What a tummy tuck won&rsquo;t do / Look &amp; Feel After</div><div style="color:#059669;font-weight:700;">&#10003; How Much Does a Tummy Tuck Cost in Miami? (pricing H2)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Technique-rich (11 H2s)</div><div>&#10003; The Drainless Tummy Tuck</div><div>&#10003; Mini / Regular / Extended Tuck</div><div>&#10003; Belt Lipectomy &middot; Fleur de Lis Belt Lipectomy</div><div>&#10003; Meet our Doctors / Why Choose our Clinic / FAQ</div><div style="color:#c0392b;margin-top:4px;">&#10060; No cost/pricing H2</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Thinner structure (10 H2s)</div><div>&#10003; Tummy Tuck Procedure / Surgical Experience</div><div>&#10003; Good Candidates / Incision Placement</div><div>&#10003; What to Expect / Restrictions / Risks</div><div>&#10003; Long Term Results / Patient Review</div><div style="color:#c0392b;margin-top:4px;">&#10060; No cost H2</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Comprehensive &mdash; ~3,270 words</div>~17 H2 sections + 10-question FAQ + technique breakdown &mdash; the deepest page of the set</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Moderate &mdash; ~1,800&ndash;2,000 words</div>8 H2s, tight and price-focused</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Solid &mdash; ~2,100 words</div>11 H2s covering every tummy-tuck technique + FAQ + doctor bios</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Thinnest &mdash; ~1,100&ndash;1,200 words</div>10 H2s; materially lighter than Avana/Miami Life</td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price surfaced &mdash; $3,500</div>$3,500 in title + meta, dedicated &ldquo;Tummy Tuck Cost in Miami&rdquo; H2, body range $3,500&ndash;$10,000 (cites RealSelf avg $8,150)<div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; $3,500 entry anchor is higher than Spectrum&rsquo;s $3,000</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Strongest &mdash; $3,000 everywhere</div>&ldquo;starting at just $3,000&rdquo; in title, H1, body + cost H2<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Lowest anchor of the set &mdash; maximum cost-intent pull</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No price shown</div>No dollar amount anywhere &mdash; defers to consultation</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No price shown</div>No cost information on the page</td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Price anchor present</div>&ldquo;Tummy Tuck Miami from $3,500. At Avana, our experienced board-certified surgeons help reshape your midsection by removing fat, tightening skin, and firming abdominal muscles&rdquo;<div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Price + keyword + value prop</div><div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; Soft CTA &mdash; no urgency/offer hook</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Not visible</div>Likely auto-generated; title already carries the $3,000 hook</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Not provided</div>Google will auto-generate from body content</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Not provided</div>Google will auto-generate from body content</td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Extensive FAQ (10 Q)</div><div style="font-size:11px;">Best age, issues addressed, exercise vs. skin, weight loss, stretch marks, loose skin, recurrence, mini-tuck/scar, return to work, risks</div><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Cost is covered in body copy</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No FAQPage schema &mdash; answers won&rsquo;t earn rich results</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; No dedicated FAQ</div><div style="font-size:11px;">Q&amp;A-style copy only: definition, candidates, what it won&rsquo;t do, scarring, healing, cost</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; No FAQPage schema</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; FAQ present</div><div style="font-size:11px;">What is a tummy tuck, hernia compatibility, drainless vs. traditional, recovery timeline</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; FAQPage schema unconfirmed</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No dedicated FAQ</div><div style="font-size:11px;">Only a site-wide /faq link in navigation &mdash; nothing procedure-specific on the page</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Solid</div><div>&#10003; 4 board-certified surgeons (Pane, Mameniskis, Schusterman, Golio), 20+ yrs</div><div>&#10003; Before &amp; After gallery + case-result videos</div><div>&#10003; Free consultation, surgeon-led copy</div><div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; No on-page review count / star rating (Miami Life leads with named 5-star reviews)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Solid</div><div>&#10003; Board-certified (Dr. Nidia De Jesus, APRN Sehuwerert)</div><div>&#10003; Before/after gallery</div><div>&#10003; Patient reviews</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Strongest credentials</div><div>&#10003; 7 named surgeons (MD / DO / FACS)</div><div>&#10003; 5-star Google reviews with patient names</div><div>&#10003; Accreditation + before/after galleries</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Solid</div><div>&#10003; Board-certified (Dr. Sean Simon)</div><div>&#10003; Before &amp; After gallery + patient reviews</div><div>&#10003; NAP / office address on page</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Clear booking CTAs</div><div>&#10003; &ldquo;Schedule A Free Consultation Today&rdquo;</div><div>&#10003; &ldquo;Send Message&rdquo; lead form</div><div style="font-size:11px;color:#059669;margin-top:3px;">&#10003; Free-consult hook repeated through the page</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f0fff4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Offer-driven</div><div>&#10003; &ldquo;Get Free Online Consultation&rdquo;</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Clear booking CTA</div><div>&#10003; &ldquo;Request a free consultation&rdquo;</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">&#10003; Clear booking CTA</div><div>&#10003; &ldquo;Schedule Consultation&rdquo;</div></td></tr>
+<tr><td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td><td style="padding:10px 14px;vertical-align:top;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Only VideoObject schema</div><div style="font-size:11px;color:#c0392b;">&#10060; No FAQPage / PriceRange / MedicalProcedure / LocalBusiness despite a 10-Q FAQ + pricing on the page<br/>&#9888;&#65039; Adding FAQPage + PriceRange + LocalBusiness = quick, low-effort edge (no rival has confirmed FAQPage)</div></td><td style="padding:10px 14px;vertical-align:top;background:#f0fff4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; None detected</div><div style="font-size:11px;color:#c0392b;">&#10060; No FAQPage / PriceRange despite pricing in title + body</div></td><td style="padding:10px 14px;vertical-align:top;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; None identifiable</div><div style="font-size:11px;color:#c0392b;">&#10060; No FAQPage despite an on-page FAQ section</div></td><td style="padding:10px 14px;vertical-align:top;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; None detected</div><div style="font-size:11px;color:#c0392b;">&#10060; No structured data on the procedure page</div></td></tr>
+</tbody>
+</table>
+<!-- Key takeaway -->
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from competitor analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Why competitors rank — what they do better:</strong><br/>
+1. <strong>Spectrum Aesthetics</strong> leads with a lower <strong>$3,000</strong> price anchor in the title AND H1 — undercutting Avana&rsquo;s $3,500 with the strongest cost-intent signal on the SERP<br/>
+2. <strong>Miami Life Cosmetic</strong> wins on trust depth: <strong>7 named board-certified surgeons</strong>, 5-star Google reviews with patient names, and accreditation badges on the page<br/>
+3. <strong>Dr. Sean Simon</strong> captures the synonym head-on with <strong>&ldquo;Tummy Tuck (Abdominoplasty)&rdquo;</strong> in both title and H1 — Avana only uses &ldquo;Abdominoplasty&rdquo; in the title<br/>
+4. <strong>Miami Life</strong> ships a dedicated H2 per technique (mini, regular, extended, belt lipectomy, fleur-de-lis) — broad procedure coverage<br/>
+5. Every competitor surfaces a single clear booking CTA above the fold
+</div>
+<div>
+<strong>What Avana must add to dominate “tummy tuck miami”:</strong><br/>
+1. Avana already ranks well (keyword pos <strong>10.7</strong>, page pos 9.4, <strong>2.17% CTR</strong>) — the biggest gap is the <strong>abdominoplasty synonym cluster</strong>: &ldquo;abdominoplasty miami&rdquo; (1,318 impr, pos 5, 0 clicks), &ldquo;abdominoplasty&rdquo; (205, pos 12), &ldquo;types of abdominoplasty&rdquo; (150, pos 22) — add &ldquo;Abdominoplasty&rdquo; to the H1 + a &ldquo;types of tummy tuck&rdquo; H2<br/>
+2. <strong>Test a sharper price anchor</strong> — Spectrum undercuts at $3,000 vs Avana&rsquo;s $3,500; cost queries (&ldquo;price of tummy tuck in florida&rdquo; pos 6, 0 clicks) still leak<br/>
+3. <strong>Add FAQPage + PriceRange + MedicalProcedure + LocalBusiness schema</strong> — the page ships only VideoObject today, yet already has a 10-Q FAQ + cost section (no competitor has confirmed FAQPage)<br/>
+4. <strong>Capture geo clusters</strong>: &ldquo;tummy tuck miami beach&rdquo; (160, pos 4), &ldquo;tummy tuck near me&rdquo; (160, pos 10), &ldquo;coral gables&rdquo; (115) &amp; &ldquo;fort lauderdale&rdquo; (385, pos 73) — add neighborhood copy + reinforce LocalBusiness / NAP<br/>
+5. Add an <strong>&ldquo;hourglass tummy tuck&rdquo;</strong> H2 (207 impr, pos 26) and surface <strong>aggregate star ratings</strong> on-page (Miami Life leads with named 5-star reviews)
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Carousel -->
+<div style="margin-top:20px;">
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/tummy-tuck-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">b
+      <img src="img/tummy-tuck-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/tummy-tuck-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) { showSlide(currentIndex += n); }
+function currentSlide(n) { showSlide(currentIndex = n); }
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>

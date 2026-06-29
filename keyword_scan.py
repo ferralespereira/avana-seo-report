@@ -501,6 +501,30 @@ LIPOSUCTION_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+TUMMYTUCK_EN = [
+    ("tummy tuck", ["tummy tuck", "tummy tucks"]),
+    ("tummy tuck miami", ["tummy tuck miami", "miami tummy tuck", "tummy tuck in miami", "tummy tuck miami fl", "tummy tuck miami florida"]),
+    ("abdominoplasty miami", ["abdominoplasty miami", "abdominoplasty in miami", "abdominoplasty"]),
+    ("tummy tuck cost", ["tummy tuck cost", "tummy tuck cost miami", "tummy tuck miami cost", "how much is a tummy tuck", "how much is a tummy tuck in miami", "cost of tummy tuck", "tummy tuck price", "tummy tuck price miami", "abdominoplasty price"]),
+    ("tummy tuck florida", ["tummy tuck florida", "tummy tuck in florida", "tummy tuck fl", "tummy tuck cost florida", "florida tummy tuck"]),
+    ("mini tummy tuck", ["mini tummy tuck", "partial tummy tuck", "mini tuck"]),
+    ("extended tummy tuck", ["extended tummy tuck", "full tummy tuck", "complete tummy tuck", "drainless tummy tuck"]),
+    ("hourglass tummy tuck", ["hourglass tummy tuck", "hourglass tummy tuck miami"]),
+    ("types of tummy tuck", ["types of tummy tuck", "types of abdominoplasty"]),
+    ("belt lipectomy", ["belt lipectomy", "circumferential abdominoplasty", "body lift", "fleur de lis"]),
+    ("tummy tuck with lipo", ["tummy tuck with lipo", "tummy tuck and liposuction", "lipo and tummy tuck", "tummy tuck with liposuction"]),
+    ("tummy tuck with bbl", ["tummy tuck with bbl", "tummy tuck and bbl", "bbl and tummy tuck", "tummy tuck bbl combo"]),
+    ("mommy makeover", ["mommy makeover", "mommy makeover miami"]),
+    ("tummy tuck surgeon", ["tummy tuck surgeon", "tummy tuck surgeons", "miami tummy tuck surgeons", "best tummy tuck surgeon miami"]),
+    ("tummy tuck near me", ["tummy tuck near me", "abdominoplasty near me", "tummy tuck surgeon near me"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 LIPOSUCCION_ES = [
     ("liposuccion", ["liposuccion"]),
     ("liposuccion en miami", ["liposuccion en miami", "liposuccion miami", "liposuccion en miami florida"]),
@@ -632,6 +656,8 @@ PAGES = {
         {"slug": "liposuction-miami", "lang": "en", "kw": LIPOSUCTION_EN},
     "https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida":
         {"slug": "liposuccion-en-miami-florida", "lang": "es", "kw": LIPOSUCCION_ES},
+    "https://avanaplasticsurgery.com/tummy-tuck-miami":
+        {"slug": "tummy-tuck-miami", "lang": "en", "kw": TUMMYTUCK_EN},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate

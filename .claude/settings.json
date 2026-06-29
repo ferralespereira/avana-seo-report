@@ -18,7 +18,18 @@
       "Bash(ls -la aumento-de-senos-transabdominal-en-miami.html)",
       "Bash(ls img/aumento-de-senos-transabdominal-en-miami_*)",
       "Bash(awk -F'pos:' '{print $0}')",
-      "PowerShell(& \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('PARSE OK'\\)\")"
+      "PowerShell(& \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('PARSE OK'\\)\")",
+      "WebFetch(domain:www.drsimonplasticsurgery.com)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0 Safari/537.36\" \"https://avanaplasticsurgery.com/tummy-tuck-miami\" -o ttm.html)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(grep -oiE '\\\\$[0-9][0-9,]*' ttm.html)",
+      "Bash(python -)",
+      "Bash(python build_ttm.py)",
+      "Bash(py build_ttm.py)",
+      "Bash(python build_ttm2.py)",
+      "Bash(py build_ttm2.py)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('OK both parse'\\)\")",
+      "Bash(py -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('OK both parse'\\)\")"
     ],
     "additionalDirectories": [
       "\\tmp"
