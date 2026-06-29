@@ -29,7 +29,17 @@
       "Bash(python build_ttm2.py)",
       "Bash(py build_ttm2.py)",
       "Bash(python -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('OK both parse'\\)\")",
-      "Bash(py -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('OK both parse'\\)\")"
+      "Bash(py -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('OK both parse'\\)\")",
+      "Bash(find sources/tummy-tuck-en-miami -name \"*.csv\")",
+      "Bash(ls tummy-tuck-en-miami.html)",
+      "Bash(PYTHONIOENCODING=utf-8 python - __TRACKED_VAR__/Queries.csv)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0 Safari/537.36\" \"https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami\" -o ttes.html)",
+      "Bash(grep -oiE '\\\\$[0-9][0-9,. ]*' ttes.html)",
+      "Bash(PYTHONIOENCODING=utf-8 python -)",
+      "Bash(python build_ttes.py)",
+      "Bash(py build_ttes.py)",
+      "Bash(python build_ttes2.py)",
+      "Bash(py build_ttes2.py)"
     ],
     "additionalDirectories": [
       "\\tmp"

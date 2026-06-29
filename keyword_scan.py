@@ -548,6 +548,27 @@ LIPOSUCCION_ES = [
     ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+TUMMYTUCK_ES = [
+    ("tummy tuck en miami", ["tummy tuck en miami", "tummy tuck miami", "tummy tuck", "tummy tuck en espanol"]),
+    ("abdominoplastia miami", ["abdominoplastia miami", "abdominoplastia en miami", "abdominoplastia"]),
+    ("abdominoplastia precio", ["abdominoplastia precio", "abdominoplastia precio miami", "precio de abdominoplastia en miami", "abdominoplastia valor", "cuanto cuesta una abdominoplastia", "cuanto cuesta una abdominoplastia en miami"]),
+    ("tommy top / tomito", ["tommy top", "tomy top", "tomi top", "tomito", "que es un tommy top", "que es un tomy top", "que es un tomito", "que es tomi top", "que es un tommy", "cirugia tommy top", "tomy top cirugia", "tomito operacion", "que es un tomito cirugia"]),
+    ("cuanto cuesta un tummy tuck", ["cuanto cuesta un tummy tuck", "tummy tuck precio", "cuanto cuesta un tommy top en estados unidos", "cuanto cuesta un tummy tuck en usa"]),
+    ("mini abdominoplastia", ["mini abdominoplastia", "mini tummy tuck", "abdominoplastia parcial"]),
+    ("abdominoplastia completa", ["abdominoplastia completa", "abdominoplastia extendida", "tummy tuck completo"]),
+    ("liposuccion", ["liposuccion", "lipoescultura"]),
+    ("mommy makeover", ["mommy makeover", "mommy makeover miami"]),
+    ("recuperacion abdominoplastia", ["recuperacion abdominoplastia", "recuperacion tummy tuck", "recuperacion de abdominoplastia"]),
+    ("cicatriz abdominoplastia", ["cicatriz abdominoplastia", "cicatriz tummy tuck"]),
+    ("financiamiento", ["financiamiento", "financiacion"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+    ("tummy tuck cerca de mi", ["tummy tuck cerca de mi", "abdominoplastia cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── National / out-of-state reach (appended to every page below) ─────────────
 # A single combined row: does the page court patients beyond Florida? Excludes
 # all FL/Miami terms (already tracked by the "miami fl / florida" + neighborhood
@@ -658,6 +679,8 @@ PAGES = {
         {"slug": "liposuccion-en-miami-florida", "lang": "es", "kw": LIPOSUCCION_ES},
     "https://avanaplasticsurgery.com/tummy-tuck-miami":
         {"slug": "tummy-tuck-miami", "lang": "en", "kw": TUMMYTUCK_EN},
+    "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami":
+        {"slug": "tummy-tuck-en-miami", "lang": "es", "kw": TUMMYTUCK_ES},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate

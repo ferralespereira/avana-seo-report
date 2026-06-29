@@ -90,6 +90,9 @@ keywords = [
     {"keyword": "tummy tuck miami",
      "url": "https://avanaplasticsurgery.com/tummy-tuck-miami",
      "lang": "en"},
+    {"keyword": "tummy tuck en miami",
+     "url": "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami",
+     "lang": "es"},
 ]
 
 # Locations to check each keyword from (Miami only)
