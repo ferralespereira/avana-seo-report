@@ -1,0 +1,1007 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana Issues</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th.content-column {
+    background: var(--teal);
+    position: relative;
+  }
+  .data-table th.trust-column {
+    background: var(--gold);
+    color: var(--navy);
+    position: relative;
+  }
+  .data-table th.cta-column {
+    background: var(--orange);
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.schema-column {
+    background: #6366f1;
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.content-column::after {
+    content: "CONTENT";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.trust-column::after {
+    content: "TRUST SIGNAL";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(27, 58, 92, .15);
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.cta-column::after {
+    content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.schema-column::after {
+    content: "SCHEMA TYPE";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td.content-column {
+    background: #f4fbfb;
+  }
+  .data-table td.trust-column {
+    background: #fff8e8;
+  }
+  .data-table td.cta-column {
+    background: #fff3ec;
+  }
+  .data-table td.schema-column {
+    background: #f0f0ff;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .priority-high { background: var(--redBg) !important; color: var(--red); font-weight: 700; }
+  .priority-medium { background: var(--yellowBg) !important; color: #7d5a00; font-weight: 700; }
+  .priority-low { background: var(--greenBg) !important; color: var(--green); font-weight: 700; }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .subsection h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .lang-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--gold);
+    background: transparent;
+    transition: background .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .site-tabs,
+    .indicator-nav { padding: 0 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+    .site-header { padding: 16px; }
+    .site-header h1 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;"><a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a><a href="buttock-reduction-miami-improvements.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">SEO Improvements ›</a></div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; buttock reduction in miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/buttock-reduction-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/buttock-reduction-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="buttock-reduction-miami"></div>
+<div class="geo-history" data-slug="buttock-reduction-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/buttock-reduction-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  buttock reduction in miami
+  <button onclick="navigator.clipboard.writeText('buttock reduction in miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/buttock-reduction-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/buttock-reduction-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/buttock-reduction-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+</div>
+</div>
+<div class="kpi-row cols-4" style="margin-bottom:8px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">0</div>
+<div class="kpi-source">buttock reduction in miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">0</div>
+<div class="kpi-source">buttock reduction in miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">—</div>
+<div class="kpi-source">buttock reduction in miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">—</div>
+<div class="kpi-source">buttock reduction in miami — primary query</div>
+</div>
+</div>
+<div class="insight warn" style="margin-bottom:24px;"><span class="insight-icon">⚠️</span><div>The exact query <strong>&ldquo;buttock reduction in miami&rdquo;</strong> recorded <strong>0 impressions</strong> in GSC over the last 3 months, so the keyword-filtered KPI cards above are empty. The page still ranks and earns traffic on closely-related queries — see the URL-level reach below: <strong>7,245</strong> impressions &middot; <strong>80</strong> clicks &middot; <strong>1.1%</strong> CTR &middot; avg position <strong>8.31</strong>.</div></div>
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for "buttock reduction in miami" (keyword-filtered)</div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="5" style="padding:18px 14px;text-align:center;color:#999;font-style:italic;">No device data &mdash; the keyword "buttock reduction in miami" had 0 impressions in GSC for this period, so the keyword-filtered device export is empty. URL-level reach is shown in the All Queries section below.</td></tr>
+</tbody>
+</table>
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+</div>
+</div>
+<div style="margin-top:32px;">
+</div>
+</div>
+<div id="bbl-url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el=document.getElementById('bbl-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/buttock-reduction-miami</span> — Last 3 months (Jun 30, 2026)</div>
+</a>
+<a href="#" onclick="var el=document.getElementById('bbl-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+</div>
+<div id="bbl-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">80</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">7,245</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">1.1%</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">8.31</div>
+</div>
+</div>
+<!-- Queries with clicks -->
+<div style="margin-bottom:16px;">
+<div style="background:#059669;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">✅ QUERIES WITH CLICKS — Top 25 by clicks</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;"><thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#6ec6ff;">Clicks</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#34d399;">CTR</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+<th style="padding:7px 10px;text-align:left;">Note</th>
+</tr>
+</thead><tbody><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">butt reduction surgery</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">14</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">490</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.86%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.09</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">🎯 Top click driver — 2.86% CTR</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">butt reduction surgery cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">8</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">419</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.91%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.93</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ Cost intent — pos 3.93</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">butt reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">4</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">317</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.26%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">4.64</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ 1.26% CTR — head term</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">but reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">171</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">1.17%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.13</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Misspelling variant</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl reduction miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">38</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2.63%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">19.18</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">⚠️ Pos 19 — page 2, local intent</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">butt reduction men</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">19</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.26%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.32</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ Male segment</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is butt reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">19</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.26%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.95</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ Cost question</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">bbl reduction cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">15</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.67%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.6</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ Pos 1.6 — strong</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">booty reduction surgery</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#2563eb;font-weight:700;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">10</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">10%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.6</td><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">✅ 10% CTR</td></tr></tbody></table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#555;font-style:italic;">Showing all 9 queries with clicks</div>
+<div style="margin-top:18px;">
+<div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">🚫 ZERO-CLICK QUERIES — 0 clicks, 100+ impressions (by impressions)</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;"><thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#34d399;">CTR</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+</tr>
+</thead><tbody><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">can you get a butt reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">272</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.12</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">ass reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">230</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.71</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">whats a butt reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">180</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.72</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">male butt reduction</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">112</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">6.25</td></tr></tbody></table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#555;font-style:italic;">Showing all 4 zero-click queries with 100+ impressions</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Avana ✅ | Revive ✅ | Imagos ✅ | ASPS ✅ confirmed from page source</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+<th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Avana 🔴 OUR PAGE<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/buttock-reduction-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/buttock-reduction-miami</a><button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/buttock-reduction-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th><th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Revive Surgical Institute ✅<br/><span style="font-weight:400;font-size:11px;"><a href="https://revivesurgery.com/body/brazilian-butt-lift-reversal/" style="color:#fff;text-decoration:none;" target="_blank">revivesurgery.com/body/brazilian-butt-lift-reversal/</a><button onclick="navigator.clipboard.writeText('https://revivesurgery.com/body/brazilian-butt-lift-reversal/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th><th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Imagos Plastic Surgery ✅<br/><span style="font-weight:400;font-size:11px;"><a href="https://imagosplasticsurgery.com/body/buttock-reshaping/" style="color:#fff;text-decoration:none;" target="_blank">imagosplasticsurgery.com/body/buttock-reshaping/</a><button onclick="navigator.clipboard.writeText('https://imagosplasticsurgery.com/body/buttock-reshaping/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th><th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">ASPS (plasticsurgery.org) ✅<br/><span style="font-weight:400;font-size:11px;"><a href="https://www.plasticsurgery.org/news/articles/an-alternative-to-the-brazilian-butt-lift-what-is-the-miami-thong-lift" style="color:#fff;text-decoration:none;" target="_blank">www.plasticsurgery.org/news/articles/an-alternative-to-the-brazilian-butt-lift-what-is-the-miami-thong-lift</a><button onclick="navigator.clipboard.writeText('https://www.plasticsurgery.org/news/articles/an-alternative-to-the-brazilian-butt-lift-what-is-the-miami-thong-lift')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">📋</button></span></th></tr>
+</thead>
+<tbody>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong cost signal</div>"Buttock Reduction in Miami - From $5500 | Avana Plastic Surgery"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "From $5500" price hook<br/>✅ "Buttock Reduction" + "Miami" geo<br/><span style="color:#c0392b;">❌ No "cost" keyword<br/>❌ No year 2026</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Targets "butt reduction surgery"</div>"BBL Reversal in Miami, FL | Butt Reduction Surgery"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Butt Reduction Surgery" in title — our top click query<br/>✅ Miami, FL geo<br/><span style="color:#c0392b;">❌ No price</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Different intent</div>"Best Buttock Reshaping Surgery Miami, FL"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Best" + geo<br/><span style="color:#c0392b;">❌ "Reshaping" not "reduction"<br/>❌ No price/cost</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ Informational only</div>"An alternative to the Brazilian butt lift: What is the Miami thong lift? | ASPS"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Huge domain authority (ASPS)<br/><span style="color:#c0392b;">❌ Article, not a service page</span></div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">"Buttock Reduction in Miami"<div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ No cost signal in H1</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">"BBL Reversal in Miami, FL"<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ "BBL Reversal" framing, not "reduction"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">"Buttock Reshaping"<div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ No Miami, no cost</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">"An alternative to the Brazilian butt lift: What is the Miami thong lift?"<div style="font-size:11px;color:#999;margin-top:3px;">Editorial headline</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">buttock reduction in miami</span><div style="font-size:11px;color:#059669;margin-top:3px;">✅ Exact-match slug + H1</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">bbl reversal / butt reduction surgery</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">buttock reshaping</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">miami thong lift</span></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(from H2 headings)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div>✅ What is Buttock Reduction?</div><div>✅ The Surgical Procedure</div><div>✅ Ideal candidates</div><div>✅ Advantages of Buttock Reduction</div><div>✅ The Recovery Process</div><div>✅ Buttock Reduction FAQs</div><div style="color:#c0392b;margin-top:4px;">❌ No "cost" H2<br/>❌ No technique names (lipo, excision, gluteoplasty)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div>✅ What is a BBL Reversal?</div><div>✅ BBL Reversal Technique</div><div>✅ BBL Revision Step by Step</div><div>✅ Recovery</div><div>✅ Ideal Candidates</div><div>✅ Benefits</div><div style="color:#059669;">✅ Cost of BBL Reversal in Miami (H2)</div><div>✅ Why Choose Revive</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div>✅ What is Vaser Liposuction?</div><div>✅ Enhancing your image</div><div>✅ Buttock Reshaping Recovery</div><div>✅ Miami Buttock Reshaping FAQ</div><div>✅ Let&rsquo;s Get Started!</div><div style="color:#e67e22;margin-top:4px;">⚠️ Vaser-lipo angle, thin on reduction</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div>✅ What is a Miami thong lift?</div><div>✅ How is it different from a BBL?</div><div>✅ Is it right for you?</div><div style="color:#999;margin-top:4px;">Q&amp;A-style editorial H2s</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count<br/><span style="font-size:11px;font-weight:400;color:#666;">(approx. — body text)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Moderate — ~1,300 words</div><div>• ~5–6 FAQs ✅</div><div style="color:#c0392b;margin-top:4px;">❌ Shortest of the service pages — thin vs Revive<br/>❌ No before/after, no technique depth</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Comprehensive — ~3,000 words</div><div>• Step-by-step technique ✅</div><div>• Dedicated cost section ✅</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~1,300 words</div><div>• 7-question FAQ ✅</div><div>• Vaser focus</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~1,700 words</div><div>• Authoritative editorial</div><div>• 3 named ASPS surgeons</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost keyword<br/><span style="font-size:11px;font-weight:400;color:#666;">signal strength</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong — best of the group</div><div>• "From $5500" in title + meta ✅</div><div>• $5,000–$7,500 range in body ✅</div><div>• "How Much Does a Butt Reduction Cost?" FAQ ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No "cost" word in title<br/>❌ No PriceRange schema</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Range only</div><div>• "Average cost $8,000–$15,000" (BBL reversal)</div><div style="color:#c0392b;margin-top:4px;">❌ No own starting price<br/>❌ Higher figure — different procedure</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ No pricing</div><div>• No price anywhere<br/>• Financing partners listed only</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ No pricing</div><div>• Editorial — no cost data</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;margin-bottom:4px;">✅ Price + benefit</div>"Buttock reduction in Miami starts at $5,500. ...safe gluteal reduction surgery with natural-looking results."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Price $5,500<br/>✅ "gluteal reduction" synonym<br/><span style="color:#c0392b;">❌ No "cost" keyword, no financing</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#999;margin-bottom:4px;">Not retrieved</div><div style="font-size:11px;color:#666;">Page targets BBL reversal / revision intent</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#999;margin-bottom:4px;">Not retrieved</div><div style="font-size:11px;color:#666;">Reshaping / Vaser-lipo intent</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#999;margin-bottom:4px;">Not retrieved</div><div style="font-size:11px;color:#666;">ASPS editorial article</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage<br/><span style="font-size:11px;font-weight:400;color:#666;">(targets PAA boxes)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="margin-bottom:3px;">~5–6 FAQs ✅</div><div style="color:#059669;">✅ How Much Does a Butt Reduction Cost?<br/>✅ How Can I Reduce the Size of My Buttocks?<br/>✅ How Long Does It Take?<br/>✅ Best Technique to Eliminate Fat?</div><div style="color:#c0392b;margin-top:4px;">❌ No FAQPage schema detected</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="margin-bottom:3px;color:#c0392b;">❌ No dedicated FAQ</div><div style="font-size:11px;color:#666;">Uses H2 sections instead of Q&amp;A</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="margin-bottom:3px;color:#059669;">✅ 7-question FAQ</div><div style="font-size:11px;">procedure, anesthesia, permanence, financing, Vaser benefits, candidates, skin tightening</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="margin-bottom:3px;color:#e67e22;">⚠️ Q&amp;A-style headers</div><div style="font-size:11px;color:#666;">No FAQ schema — editorial format</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals<br/><span style="font-size:11px;font-weight:400;color:#666;">(credentials, reviews, social proof)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Thin on-page</div><div>• Board-certified surgeons (Avana) ✅</div><div>• Free consultation ✅ — financing ✅</div><div>• Phone (305) 501-6000 ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No reviews/star ratings on page<br/>❌ No before/after gallery on this page<br/>❌ No named surgeon on this page</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong</div><div>• Dr. Morad Askari — board-certified ✅</div><div>• Newsweek "America&rsquo;s Best Plastic Surgeons 2025" ✅</div><div>• Quad A accreditation ✅</div><div>• Coral Gables address ✅ — before/after gallery ✅</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Good</div><div>• Dr. Onelio Garcia + Dr. Perez-Gurri ✅</div><div>• RealSelf profile ✅</div><div>• Before/after gallery ✅</div><div>• CareCredit / Alphaeon / PROSPER / United Medical Credit ✅</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Highest authority</div><div>• ASPS — American Society of Plastic Surgeons ✅</div><div>• ABPS board certification ✅</div><div>• 3 named surgeons (Mendieta, Hamilton, Rosenthal) ✅</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA (Call to Action)<br/><span style="font-size:11px;font-weight:400;color:#666;">(conversion elements on page)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Clear</div><div>• "Schedule a Free Consultation" ✅</div><div>• Phone click-to-call ✅</div><div>• Financing link ✅</div><div style="color:#c0392b;margin-top:4px;">❌ No live chat<br/>❌ No "Get a Quote" CTA</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strong</div><div>• "Book Your Consultation" (repeated) ✅</div><div>• Phone + contact form ✅</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Good</div><div>• "View Our Gallery" ✅</div><div>• Consultation buttons ✅</div><div>• Financing CTA ✅</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Referral only</div><div>• "Find a plastic surgeon" (ASPS surgeon finder)</div><div style="font-size:11px;color:#666;">Not a direct booking CTA</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Schema markup<br/><span style="font-size:11px;font-weight:400;color:#666;">(Rich Results Test)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">❌ None detected</div><div style="color:#c0392b;">❌ No FAQPage<br/>❌ No MedicalProcedure<br/>❌ No PriceRange<br/>❌ No BreadcrumbList</div><div style="font-size:11px;color:#666;margin-top:4px;">No JSON-LD @type found in page source</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#999;margin-bottom:4px;">⚠️ Unknown — verify</div><div style="font-size:11px;color:#666;">Run Rich Results Test on revivesurgery.com</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#999;margin-bottom:4px;">⚠️ Unknown — verify</div><div style="font-size:11px;color:#666;">Run Rich Results Test on imagosplasticsurgery.com</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;margin-bottom:4px;">✅ Article (likely)</div><div style="font-size:11px;color:#666;">ASPS news article — editorial schema</div></td></tr>
+</tbody>
+</table>
+<!-- Key takeaway -->
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from keyword analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Why competitors hold the SERP for buttock-reduction intent:</strong><br/>
+    1. Revive: ~3,000-word page with step-by-step technique, dedicated cost section, Newsweek 2025 award &amp; Quad A accreditation<br/>
+    2. ASPS (plasticsurgery.org): massive domain authority owns the "Miami thong lift" alternative narrative<br/>
+    3. Imagos: 7-question FAQ, before/after gallery, RealSelf profile + 4 named financing partners<br/>
+    4. Avana's page is the thinnest (~1,300 words) with no on-page reviews, before/after, or schema
+  </div>
+<div>
+<strong>What Avana must add to win "buttock reduction in miami":</strong><br/>
+    1. Add FAQPage + MedicalProcedure + PriceRange schema — page currently has none<br/>
+    2. Expand to 2,500+ words: name the techniques (liposuction, excisional gluteoplasty) &amp; add a step-by-step section<br/>
+    3. Add a before/after gallery + named board-certified surgeon &amp; reviews on-page<br/>
+    4. Target the real demand: "butt reduction surgery" (490 impr) &amp; "butt reduction surgery cost" (419 impr) — add matching H2s<br/>
+    5. Capture zero-click intent: "can you get a butt reduction", "what is a butt reduction", "male butt reduction" as FAQ answers
+  </div>
+</div>
+</div>
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/buttock-reduction-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/buttock-reduction-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/buttock-reduction-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+
+
+
+</div></main>
+</body>
+</html>

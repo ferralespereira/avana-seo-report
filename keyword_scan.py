@@ -552,6 +552,28 @@ HOURGLASS_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+BUTTOCK_REDUCTION_EN = [
+    ("buttock reduction", ["buttock reduction", "buttocks reduction", "butt reduction", "but reduction", "btt reduction", "booty reduction", "bum reduction"]),
+    ("buttock reduction miami", ["buttock reduction miami", "buttock reduction in miami", "butt reduction miami", "miami buttock surgery", "miami buttock injections", "buttock augmentation miami"]),
+    ("buttock reduction surgery", ["buttock reduction surgery", "butt reduction surgery", "buttocks reduction surgery", "booty reduction surgery", "ass reduction surgery", "gluteal reduction surgery", "glute reduction surgery", "is there a butt reduction surgery"]),
+    ("butt reduction cost", ["butt reduction cost", "butt reduction surgery cost", "buttock reduction surgery cost", "buttocks reduction surgery cost", "how much is butt reduction", "how much is a butt reduction", "how much does a butt reduction cost", "how much does buttock reduction cost", "how much is a booty reduction", "bbl reduction cost"]),
+    ("can you get a butt reduction", ["can you get a butt reduction", "can i get a butt reduction", "can u get a butt reduction", "is there such thing as a butt reduction", "is a butt reduction a thing"]),
+    ("what is a butt reduction", ["what is a butt reduction", "whats a butt reduction", "what is butt reduction", "what is a but reduction", "what is a ass reduction"]),
+    ("male butt reduction", ["male butt reduction", "men butt reduction", "butt reduction men", "butt reduction male", "butt reduction for men", "butt reduction surgery for men", "butt reduction surgery men"]),
+    ("ass reduction", ["ass reduction", "can you get an ass reduction", "what is a ass reduction"]),
+    ("gluteoplasty", ["gluteoplasty", "gluteoplasty cost", "gluteoplasty miami", "gluteal reduction"]),
+    ("reduce buttocks size", ["is it possible to reduce buttocks size", "surgery to reduce buttocks", "surgery to reduce buttocks size", "is it possible to reduce buttocks", "can i reduce my butt size", "how to reduce buttocks"]),
+    ("bbl reduction", ["bbl reduction", "bbl reduction miami", "bbl reversal", "brazilian butt lift reversal"]),
+    ("butt fat removal", ["butt fat removal", "fat removal from buttocks", "get rid of butt fat", "how to get rid of butt fat", "butt removal", "bum fat removal", "buttock liposuction", "buttock liposuction cost"]),
+    ("buttock reduction near me", ["buttock reduction near me", "butt reduction near me", "buttock reduction surgeon", "buttock reduction surgeon near me"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 ABDOMINOPLASTIA_CURVAS_ES = [
     ("abdominoplastia con curvas", ["abdominoplastia con curvas", "abdominoplastia con curvas en miami", "abdominoplastia con curvas miami"]),
     ("abdominoplastia miami", ["abdominoplastia miami", "abdominoplastia en miami", "abdominoplastia en miami fl", "abdominoplastia aventura"]),
@@ -679,6 +701,8 @@ _SCHEMA_IGNORE = {
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
+    "https://avanaplasticsurgery.com/buttock-reduction-miami":
+        {"slug": "buttock-reduction-miami", "lang": "en", "kw": BUTTOCK_REDUCTION_EN},
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":
         {"slug": "brazilian-butt-lift-miami", "lang": "en", "kw": BBL_EN},
     "https://avanaplasticsurgery.com/bbl-revision-miami":

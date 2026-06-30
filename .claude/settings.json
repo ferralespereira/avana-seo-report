@@ -61,7 +61,21 @@
       "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build_es2.py\")",
       "Bash(python -c \"import re;h=open\\('abdominoplastia-con-curvas-en-miami.html',encoding='utf-8'\\).read\\(\\);[print\\(t,len\\(re.findall\\(r'<%s[ >]'%t,h\\)\\),len\\(re.findall\\(r'</%s>'%t,h\\)\\)\\) for t in ['table','tbody','thead','tr']]\")",
       "Bash(rm -f scratch_avana.html scratch_avana2.html scratch_secret_es.html)",
-      "Bash(ls scratch_*.html)"
+      "Bash(ls scratch_*.html)",
+      "WebFetch(domain:imagosplasticsurgery.com)",
+      "WebFetch(domain:www.plasticsurgery.org)",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://avanaplasticsurgery.com/buttock-reduction-miami\" -o /tmp/avana_br.html -w \"HTTP %{http_code}\\\\n\" --max-time 40)",
+      "Bash(grep -oiP '\\\\$[0-9],?[0-9]{3}' avana_br.html)",
+      "Bash(grep -P '\\\\?\\\\s*$')",
+      "Bash(awk 'length>12 && length<90')",
+      "Bash(grep -oiP 'before.{0,4}after' avana_br.html)",
+      "Bash(python \"C:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/deab02b7-607c-4043-bdbb-7e5cc5abaae4/scratchpad/build_page.py\")",
+      "Bash(py \"C:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/deab02b7-607c-4043-bdbb-7e5cc5abaae4/scratchpad/build_page.py\")",
+      "Bash(python \"C:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/deab02b7-607c-4043-bdbb-7e5cc5abaae4/scratchpad/build_table.py\")",
+      "Bash(python -c \"import io; s=io.open\\('buttock-reduction-miami.html',encoding='utf-8'\\).read\\(\\); print\\('open',s.count\\('<div'\\),'close',s.count\\('</div>'\\)\\)\")",
+      "Bash(python -c \"import io; s=io.open\\('brazilian-butt-lift-miami.html',encoding='utf-8'\\).read\\(\\); print\\('open',s.count\\('<div'\\),'close',s.count\\('</div>'\\)\\)\")",
+      "Bash(ls img/buttock-reduction-miami_*)",
+      "Bash(ls buttock-reduction-miami-improvements.html)"
     ],
     "additionalDirectories": [
       "\\tmp",
