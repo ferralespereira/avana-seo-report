@@ -525,6 +525,33 @@ TUMMYTUCK_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+HOURGLASS_EN = [
+    ("hourglass tummy tuck", ["hourglass tummy tuck", "hour glass tummy tuck", "hourglass tuck", "tummy tuck hourglass"]),
+    ("hourglass tummy tuck miami", ["hourglass tummy tuck miami", "hourglass tummy tuck in miami", "miami hourglass tummy tuck", "hourglass tummy tuck near me"]),
+    ("hourglass tummy tuck cost", ["hourglass tummy tuck cost", "how much is an hourglass tummy tuck", "hourglass figure surgery cost", "hourglass mommy makeover cost"]),
+    ("hourglass tummy tuck before and after", ["hourglass tummy tuck before and after", "hourglass tummy tuck photos", "hourglass tummy tuck results", "hourglass surgery before and after"]),
+    ("4d hourglass tummy tuck", ["4d hourglass tummy tuck", "4d hourglass tummy tuck recovery time and results"]),
+    ("plus size hourglass tummy tuck", ["plus size hourglass tummy tuck", "curvy hourglass tummy tuck", "curvy tummy tuck"]),
+    ("hourglass tummy tuck vs full tummy tuck", ["hourglass tummy tuck vs full tummy tuck", "what is an hourglass tummy tuck"]),
+    ("bbl hourglass tummy tuck", ["bbl hourglass tummy tuck", "hourglass tummy tuck and bbl"]),
+    ("hourglass figure surgery", ["hourglass figure surgery", "surgery for hourglass figure", "hourglass shape surgery", "hourglass figure body plastic surgery"]),
+    ("hourglass body surgery", ["hourglass body surgery", "hourglass body plastic surgery", "hourglass body contouring", "hourglass body contouring surgery"]),
+    ("hourglass waist surgery", ["hourglass waist surgery", "hourglass waist liposuction"]),
+    ("hourglass liposuction", ["hourglass liposuction", "hourglass lipo", "liposuction hourglass figure"]),
+    ("hourglass mommy makeover", ["hourglass mommy makeover", "mommy makeover hourglass surgery"]),
+    ("tummy tuck", ["tummy tuck", "abdominoplasty"]),
+    ("tummy tuck miami", ["tummy tuck miami", "miami tummy tuck"]),
+    ("mommy makeover", ["mommy makeover", "mommy makeover miami"]),
+    ("liposuction", ["liposuction", "lipo 360"]),
+    ("fat transfer", ["fat transfer"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 LIPOSUCCION_ES = [
     ("liposuccion", ["liposuccion"]),
     ("liposuccion en miami", ["liposuccion en miami", "liposuccion miami", "liposuccion en miami florida"]),
@@ -681,6 +708,8 @@ PAGES = {
         {"slug": "tummy-tuck-miami", "lang": "en", "kw": TUMMYTUCK_EN},
     "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami":
         {"slug": "tummy-tuck-en-miami", "lang": "es", "kw": TUMMYTUCK_ES},
+    "https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami":
+        {"slug": "hourglass-tummy-tuck-in-miami", "lang": "en", "kw": HOURGLASS_EN},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate

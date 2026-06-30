@@ -43,7 +43,16 @@
       "Bash(cd \"c:/Users/user564/Documents/avana-seo-report\" && cp transabdominal-breast-augmentation-miami-improvements.html tummy-tuck-miami-improvements.html && echo copied)",
       "Bash(python build_ttm_imp.py)",
       "Bash(py build_ttm_imp.py)",
-      "Bash(grep -oE 'Tummy Tuck Miami - \\\\$3500 Abdominoplasty' tummy-tuck-miami-improvements.html)"
+      "Bash(grep -oE 'Tummy Tuck Miami - \\\\$3500 Abdominoplasty' tummy-tuck-miami-improvements.html)",
+      "Bash(ls -la breast-augmentation-miami.html tummy-tuck-miami.html)",
+      "Bash(wc -l breast-augmentation-miami.html)",
+      "Bash(wc -l tummy-tuck-miami.html)",
+      "WebFetch(domain:seductioncosmetic.com)",
+      "WebFetch(domain:revivesurgery.com)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami\" -o scratch_avana.html -w \"HTTP %{http_code} | size %{size_download}\\\\n\")",
+      "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build2.py\")",
+      "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build3.py\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('PY OK'\\)\")"
     ],
     "additionalDirectories": [
       "\\tmp",
