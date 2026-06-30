@@ -552,6 +552,29 @@ HOURGLASS_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+ABDOMINOPLASTIA_CURVAS_ES = [
+    ("abdominoplastia con curvas", ["abdominoplastia con curvas", "abdominoplastia con curvas en miami", "abdominoplastia con curvas miami"]),
+    ("abdominoplastia miami", ["abdominoplastia miami", "abdominoplastia en miami", "abdominoplastia en miami fl", "abdominoplastia aventura"]),
+    ("abdominoplastia", ["abdominoplastia", "abdominoplastia parcelada", "en una abdominoplastia"]),
+    ("abdominoplastia con lipoescultura", ["abdominoplastia con lipoescultura", "abdominoplastia con lipo", "lipoabdominoplastia"]),
+    ("hourglass tummy tuck", ["hourglass tummy tuck", "hourglass tummy tuck miami", "tummy tuck con curvas"]),
+    ("curvy plastic surgery miami", ["curvy plastic surgery miami", "curvy plastic surgery", "curvy plastic surgery miami reviews", "curvy plastic surgery reviews"]),
+    ("curvas marcadas", ["curvas marcadas", "curvas prominentes", "cuerpo con curvas", "figura con curvas"]),
+    ("contorno corporal miami", ["contorno corporal miami", "contorno corporal", "remodelacion corporal"]),
+    ("abdominoplastia precio", ["abdominoplastia precio", "precio de abdominoplastia", "abdominoplastia precio miami", "cuanto cuesta una abdominoplastia", "cuanto cuesta una abdominoplastia en miami"]),
+    ("lipoescultura miami", ["lipoescultura miami", "lipoescultura", "lipo 360 miami"]),
+    ("liposuccion", ["liposuccion", "liposuccion en miami"]),
+    ("mommy makeover", ["mommy makeover", "mommy makeover en miami"]),
+    ("tummy tuck", ["tummy tuck", "tummy tuck en miami"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados", "cirujano plastico certificado en miami"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+    ("abdominoplastia cerca de mi", ["abdominoplastia cerca de mi", "abdominoplastia con curvas cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 LIPOSUCCION_ES = [
     ("liposuccion", ["liposuccion"]),
     ("liposuccion en miami", ["liposuccion en miami", "liposuccion miami", "liposuccion en miami florida"]),
@@ -710,6 +733,8 @@ PAGES = {
         {"slug": "tummy-tuck-en-miami", "lang": "es", "kw": TUMMYTUCK_ES},
     "https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami":
         {"slug": "hourglass-tummy-tuck-in-miami", "lang": "en", "kw": HOURGLASS_EN},
+    "https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami":
+        {"slug": "abdominoplastia-con-curvas-en-miami", "lang": "es", "kw": ABDOMINOPLASTIA_CURVAS_ES},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate

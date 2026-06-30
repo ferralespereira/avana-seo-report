@@ -52,7 +52,16 @@
       "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami\" -o scratch_avana.html -w \"HTTP %{http_code} | size %{size_download}\\\\n\")",
       "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build2.py\")",
       "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build3.py\")",
-      "Bash(python -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('PY OK'\\)\")"
+      "Bash(python -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('PY OK'\\)\")",
+      "Bash(find sources/abdominoplastia-con-curvas-en-miami -name \"*.csv\")",
+      "Bash(ls abdominoplastia-con-curvas-en-miami.html)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami\" -o scratch_avana2.html -w \"HTTP %{http_code} | size %{size_download}\\\\n\")",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/abdominoplastia-con-curvas-en-miami/\" -o scratch_secret_es.html -w \"SECRET HTTP %{http_code} size %{size_download}\\\\n\")",
+      "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build_es.py\")",
+      "Bash(python \"c:/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/f9b4922b-38fd-45ff-8e36-c8ed53d5b918/scratchpad/build_es2.py\")",
+      "Bash(python -c \"import re;h=open\\('abdominoplastia-con-curvas-en-miami.html',encoding='utf-8'\\).read\\(\\);[print\\(t,len\\(re.findall\\(r'<%s[ >]'%t,h\\)\\),len\\(re.findall\\(r'</%s>'%t,h\\)\\)\\) for t in ['table','tbody','thead','tr']]\")",
+      "Bash(rm -f scratch_avana.html scratch_avana2.html scratch_secret_es.html)",
+      "Bash(ls scratch_*.html)"
     ],
     "additionalDirectories": [
       "\\tmp",
