@@ -574,6 +574,29 @@ BUTTOCK_REDUCTION_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+REDUCCION_GLUTEOS_ES = [
+    ("reduccion de gluteos", ["reduccion de gluteos", "reducir gluteos", "reduccion de gluteo", "reduccion gluteos", "reduccion de", "disminuir gluteos", "como disminuir gluteos", "como disminuir los gluteos"]),
+    ("reduccion de gluteos en miami", ["reduccion de gluteos en miami", "reduccion de gluteos miami", "reduccion de gluteos florida"]),
+    ("como reducir gluteos", ["como reducir gluteos", "como reducir los gluteos", "como bajar los gluteos", "como bajar gluteos", "como bajar el gluteo", "como sacar gluteos", "reducir gluteos en una semana", "como perder gluteos"]),
+    ("como adelgazar gluteos", ["como adelgazar gluteos", "como adelgazar los gluteos", "adelgazar culo", "como tener menos culo", "ejercicios para bajar gluteos", "ejercicios para bajar gluteos y piernas"]),
+    ("como bajar las nalgas", ["como bajar las nalgas", "como adelgazar las nalgas", "reducir nalgas", "reduccion de nalgas"]),
+    ("reduccion de gluteos precio", ["reduccion de gluteos precio", "reduccion de gluteos precios", "cuanto cuesta una reduccion de gluteos", "reduccion de gluteos con liposuccion"]),
+    ("cirugia de gluteos precio", ["cirugia de gluteos precio", "cirugia de gluteos precios", "cirugia gluteos precio", "operacion de gluteos precio", "operacion de nalgas precio"]),
+    ("cirugia de gluteos", ["cirugia de gluteos", "cirugia de gluteo", "operacion de gluteos", "operacion de nalgas", "cirugia de nalgas"]),
+    ("liposuccion de gluteos", ["liposuccion de gluteos", "lipoescultura de gluteos", "liposuccion en gluteos", "liposuccion de nalgas", "eliminar grasa de gluteos"]),
+    ("gluteoplastia", ["gluteoplastia", "gluteoplastia de reduccion", "gluteoplastia miami"]),
+    ("levantamiento de gluteos", ["levantamiento de gluteos", "levantamiento de gluteos brasileno", "levantamiento de gluteos brasileno miami", "lifting de gluteos", "lifting de gluteos precio", "levantamiento de gluteos precio"]),
+    ("aumento de gluteos", ["aumento de gluteos", "aumento de gluteos con grasa miami", "aumento de gluteos brasileno miami", "aumento de gluteos precio usa"]),
+    ("bbl / butt reduction", ["bbl", "bbl miami", "cuanto cuesta un bbl en miami", "butt reduction", "butt reduction surgery", "buttock reduction", "bbl reduction"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados", "cirujano plastico certificado en miami"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+    ("reduccion de gluteos cerca de mi", ["reduccion de gluteos cerca de mi", "cirugia de gluteos cerca de mi"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 ABDOMINOPLASTIA_CURVAS_ES = [
     ("abdominoplastia con curvas", ["abdominoplastia con curvas", "abdominoplastia con curvas en miami", "abdominoplastia con curvas miami"]),
     ("abdominoplastia miami", ["abdominoplastia miami", "abdominoplastia en miami", "abdominoplastia en miami fl", "abdominoplastia aventura"]),
@@ -711,6 +734,8 @@ PAGES = {
         {"slug": "revision-de-bbl-en-miami", "lang": "es", "kw": BBL_REVISION_ES},
     "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami":
         {"slug": "levantamiento-de-gluteos-en-miami", "lang": "es", "kw": BBL_ES},
+    "https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami":
+        {"slug": "reduccion-de-gluteos-en-miami", "lang": "es", "kw": REDUCCION_GLUTEOS_ES},
     "https://avanaplasticsurgery.com/lipo-360-miami":
         {"slug": "lipo-360-miami", "lang": "en", "kw": LIPO_EN},
     "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami":

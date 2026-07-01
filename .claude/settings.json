@@ -75,7 +75,16 @@
       "Bash(python -c \"import io; s=io.open\\('buttock-reduction-miami.html',encoding='utf-8'\\).read\\(\\); print\\('open',s.count\\('<div'\\),'close',s.count\\('</div>'\\)\\)\")",
       "Bash(python -c \"import io; s=io.open\\('brazilian-butt-lift-miami.html',encoding='utf-8'\\).read\\(\\); print\\('open',s.count\\('<div'\\),'close',s.count\\('</div>'\\)\\)\")",
       "Bash(ls img/buttock-reduction-miami_*)",
-      "Bash(ls buttock-reduction-miami-improvements.html)"
+      "Bash(ls buttock-reduction-miami-improvements.html)",
+      "Bash(echo \"EXIT: $?\")",
+      "WebFetch(domain:gallagherplasticsurgery.com)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami\" -o /tmp/avana_reduccion.html -w \"HTTP %{http_code}\\\\n\")",
+      "Bash(/c/Users/user564/.local/bin/python3.14.exe -c \"import ast; ast.parse\\(open\\('keyword_scan.py',encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('seo_check.py',encoding='utf-8'\\).read\\(\\)\\); print\\('OK - both parse'\\)\")",
+      "Bash(/c/Users/user564/.local/bin/python3.14.exe -c \"import keyword_scan as k; assert 'https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami' in k.PAGES; print\\('PAGES entry OK, kw rows:', len\\(k.REDUCCION_GLUTEOS_ES\\)\\)\")",
+      "Bash(\"/c/Users/user564/AppData/Local/Programs/Python/Python312/python.exe\" -c \"import keyword_scan as k; assert 'https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami' in k.PAGES; print\\('PAGES OK, REDUCCION rows:', len\\(k.REDUCCION_GLUTEOS_ES\\)\\); import seo_check as s; print\\('seo_check keywords:', len\\(s.keywords\\), '| reduccion tracked:', any\\('reduccion-de-gluteos' in x['url'] for x in s.keywords\\)\\)\")",
+      "Bash(taskkill //F //IM python.exe)",
+      "Bash(/c/Users/user564/.local/bin/python3.14.exe -c ' *)",
+      "Bash(\"/c/Users/user564/AppData/Local/Programs/Python/Python312/python.exe\" -c \"import keyword_scan as k; u='https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami'; print\\('PAGES entry:', u in k.PAGES\\); print\\('slug:', k.PAGES[u]['slug']\\); print\\('kw rows:', len\\(k.PAGES[u]['kw']\\)\\)\")"
     ],
     "additionalDirectories": [
       "\\tmp",

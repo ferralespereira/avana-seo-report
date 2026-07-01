@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana Issues &#8212; reducci&oacute;n de gl&uacute;teos en miami</title>
+<style>
+  :root{--navy:#1B3A5C;--teal:#0E7C7B;--gold:#C9A84C;--lightBlue:#D6E8F5;--lightGray:#F4F6F8;--midGray:#CCCCCC;--darkGray:#444444;--red:#C0392B;--green:#1E7E34;--orange:#E67E22;--redBg:#FDECEA;--greenBg:#EAF4EC;--yellowBg:#FEF9E7;--blueBg:#D6E8F5;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Arial,sans-serif;background:#f0f2f5;color:var(--darkGray);font-size:14px;}
+  .main{padding:24px;width:min(98vw,2200px);max-width:2200px;margin:0 auto;}
+  .kpi-row{display:grid;gap:12px;margin-bottom:20px;}
+  .kpi-row.cols-4{grid-template-columns:repeat(4,1fr);}
+  .kpi-card{background:var(--blueBg);border:1.5px solid var(--teal);border-radius:8px;padding:16px;text-align:center;}
+  .kpi-card.zero{background:#fef2f2;border-color:#dc2626;}
+  .kpi-label{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.4px;}
+  .kpi-value{font-size:24px;font-weight:700;color:var(--teal);margin:6px 0 4px;}
+  .kpi-card.zero .kpi-value{color:#dc2626;}
+  .kpi-source{font-size:11px;color:#999;}
+  .insight{display:flex;gap:10px;padding:10px 14px;border-radius:5px;border-left:4px solid;margin:8px 0;font-size:13px;line-height:1.5;}
+  .insight.good{background:var(--greenBg);border-color:var(--green);color:#155724;}
+  .insight.warn{background:var(--yellowBg);border-color:var(--orange);color:#7d5a00;}
+  .insight.bad{background:var(--redBg);border-color:var(--red);color:#7b1a14;}
+  .insight.info{background:var(--blueBg);border-color:var(--navy);color:var(--navy);}
+  .insight-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+  @media(max-width:900px){.main{padding:16px;}.kpi-row.cols-4{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.kpi-row.cols-4{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">&larr; Back to SEO Report</a>
+  <a href="reduccion-de-gluteos-en-miami-improvements.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">SEO Improvements &rarr;</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; reducci&oacute;n de gl&uacute;teos en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;"><canvas id="positionChart"></canvas></div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="reduccion-de-gluteos-en-miami"></div>
+<div class="geo-history" data-slug="reduccion-de-gluteos-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  const TARGET_URL='https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami';
+  const COMP_COLORS=['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+  function formatDate(d){const[,m,day]=d.split('-');const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return months[parseInt(m,10)-1]+' '+parseInt(day,10);}
+  function buildChart(){
+    const msgEl=document.getElementById('chartMessage');const wrapEl=document.getElementById('chartWrap');
+    const legendEl=document.getElementById('chartLegend');const statusEl=document.getElementById('chartStatus');const noteEl=document.getElementById('chartNote');
+    const urlData=window.SEO_POSITION_DATA&&window.SEO_POSITION_DATA[TARGET_URL];
+    const entries=(urlData&&urlData.series)||[];const competitors=(urlData&&urlData.competitors)||[];
+    if(!entries.length){msgEl.textContent='No tracking data found yet. Run seo_check.py to start collecting data.';return;}
+    let maxRanked=10;
+    entries.forEach(e=>{if(e.position!==null&&e.position>maxRanked)maxRanked=e.position;});
+    competitors.forEach(c=>c.series.forEach(e=>{if(e.position!==null&&e.position>maxRanked)maxRanked=e.position;}));
+    const NOT_FOUND_VAL=maxRanked+5;
+    const labels=entries.map(e=>formatDate(e.date));const rawVals=entries.map(e=>e.position);
+    const chartVals=rawVals.map(v=>v===null?NOT_FOUND_VAL:v);
+    const ptColors=rawVals.map(v=>v===null?'#e2e8f0':'#0E7C7B');const ptBorder=rawVals.map(v=>v===null?'#94a3b8':'#1B3A5C');
+    const latest=entries[entries.length-1];
+    statusEl.textContent=latest.position===null?`Latest (${formatDate(latest.date)}): Not ranked`:`Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent=`${entries.length} check${entries.length!==1?'s':''} recorded`;
+    competitors.forEach((comp,i)=>{
+      const isAvana=comp.url.includes('avanaplasticsurgery');const color=isAvana?'#C9A84C':(COMP_COLORS[i]||'#999');
+      const el=document.createElement('span');el.style.cssText='display:flex;align-items:center;gap:6px;';
+      el.innerHTML=(isAvana?`<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`:`<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`)+`<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;${isAvana?`font-weight:700;color:${color};`:''}">${comp.url.replace(/^https?:\/\//,'')}</span>`;
+      legendEl.insertBefore(el,noteEl);
+    });
+    msgEl.style.display='none';wrapEl.style.display='block';legendEl.style.display='flex';
+    const compDatasets=competitors.map((comp,i)=>{
+      const isAvana=comp.url.includes('avanaplasticsurgery');const color=isAvana?'#C9A84C':(COMP_COLORS[i]||'#999');
+      return{label:comp.url.replace(/^https?:\/\//,''),data:comp.series.map(e=>e.position===null?NOT_FOUND_VAL:e.position),borderColor:color,backgroundColor:'transparent',borderWidth:isAvana?2:1.5,borderDash:isAvana?[]:[5,3],tension:0.3,fill:false,pointRadius:isAvana?4:3,pointHoverRadius:isAvana?6:5,spanGaps:true,rawSeries:comp.series.map(e=>e.position)};
+    });
+    const ctx=document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx,{type:'line',data:{labels,datasets:[{label:TARGET_URL.replace(/^https?:\/\//,''),data:chartVals,borderColor:'#0E7C7B',backgroundColor:'rgba(14,124,123,0.08)',borderWidth:2.5,tension:0.3,fill:true,pointRadius:5,pointHoverRadius:7,pointBackgroundColor:ptColors,pointBorderColor:ptBorder,pointBorderWidth:1.5,spanGaps:true,rawSeries:rawVals},...compDatasets]},options:{responsive:true,maintainAspectRatio:true,aspectRatio:3.5,plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false,callbacks:{label(ctx){const raw=ctx.dataset.rawSeries?ctx.dataset.rawSeries[ctx.dataIndex]:undefined;const name=ctx.dataset.label||'';const val=(raw===null||raw===undefined)?'Not ranked':'#'+raw;return(name.includes('avanaplasticsurgery')?'★ ':'  ')+name+': '+val;}}}},scales:{x:{grid:{color:'#f0f0f0'},ticks:{font:{size:11},color:'#666'}},y:{reverse:true,min:1,max:NOT_FOUND_VAL+1,grid:{color:'#f0f0f0'},ticks:{font:{size:11},color:'#666',stepSize:1,callback(val){return val>=NOT_FOUND_VAL?'Not ranked':'#'+val;}},title:{display:true,text:'Position (1 = top result)',font:{size:11},color:'#888'}}}}});
+  }
+  buildChart();
+})();
+</script>
+
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    reducci&oacute;n de gl&uacute;teos en miami
+    <button onclick="navigator.clipboard.writeText('reducción de glúteos en miami');this.textContent='Copied!';setTimeout(()=>this.textContent='&#128203;',2000);" style="margin-left:12px;padding:6px 12px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">&#128203; Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami');this.textContent='Copied!';setTimeout(()=>this.textContent='&#128203;',2000);" style="margin-left:8px;padding:4px 10px;background:var(--teal);color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600;">&#128203;</button>
+  </div>
+</div>
+
+<div class="insight warn" style="margin-bottom:16px;">
+  <span class="insight-icon">&#9888;&#65039;</span>
+  <span><strong>Keyword exacto sin datos en GSC.</strong> El filtro por keyword &ldquo;reducci&oacute;n de gl&uacute;teos en miami&rdquo; registra <strong>0 clics, 0 impresiones y 0% CTR</strong> en los &uacute;ltimos 3 meses (confirmado en GSC &mdash; exportaci&oacute;n vac&iacute;a), por lo que las KPI cards muestran ceros. Para contexto: la variante m&aacute;s cercana <strong>&ldquo;reduccion de gluteos&rdquo;</strong> registra 32 impresiones, 1 clic y posici&oacute;n 10.03 (p&aacute;gina 1), y la URL <strong>/espanol/reduccion-de-gluteos-en-miami</strong> acumula <strong>18 clics y 977 impresiones</strong> de todas las variantes relacionadas (ver secci&oacute;n de consultas por URL). Dispositivos y consultas = datos filtrados por URL.</span>
+</div>
+
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card zero">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">reducci&oacute;n de gl&uacute;teos en miami &mdash; exact query</div>
+  </div>
+  <div class="kpi-card zero">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">reducci&oacute;n de gl&uacute;teos en miami &mdash; exact query</div>
+  </div>
+  <div class="kpi-card zero">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0%</div>
+    <div class="kpi-source">reducci&oacute;n de gl&uacute;teos en miami &mdash; exact query</div>
+  </div>
+  <div class="kpi-card zero">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">&mdash;</div>
+    <div class="kpi-source">reducci&oacute;n de gl&uacute;teos en miami &mdash; sin impresiones</div>
+  </div>
+</div>
+
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC &mdash; Device Breakdown for &ldquo;reducci&oacute;n de gl&uacute;teos en miami&rdquo; (keyword-filtered)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="5" style="padding:18px 14px;text-align:center;color:#999;font-style:italic;">Sin datos por dispositivo &mdash; el keyword &ldquo;reducci&oacute;n de gl&uacute;teos en miami&rdquo; registr&oacute; 0 impresiones en GSC para este periodo, por lo que la exportaci&oacute;n de dispositivos filtrada por keyword est&aacute; vac&iacute;a. El alcance a nivel de URL (18 clics / 977 impresiones / posici&oacute;n media 11.12) se muestra en la secci&oacute;n de consultas por URL m&aacute;s abajo.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div onmouseout="this.style.opacity='0.9'" onmouseover="this.style.opacity='1'" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;transition:opacity 0.2s ease;opacity:0.9;">GSC &mdash; All Queries for <span style="font-size:18px;font-weight:900;color:#fff;">https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami</span> &mdash; Last 3 months (Jul 1, 2026)</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">&#9658; Show</a>
+  </div>
+  <div id="url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">18</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">977</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">1.84%</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">11.12</div>
+      </div>
+    </div>
+    <div>
+      <div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">&#128308; 0-CLICK QUERIES &mdash; 50 consultas sin ning&uacute;n clic (m&aacute;x. 52 impresiones)</div>
+      <div style="font-size:11px;color:#666;margin-bottom:6px;font-style:italic;">Estas consultas muestran que la p&aacute;gina aparece en Google &mdash; pero nadie hace clic. Cada una es una oportunidad de contenido inmediata.</div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+              <th style="padding:7px 10px;text-align:left;">Query</th>
+              <th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+              <th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de gl&uacute;teos con grasa miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">52</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">59.13</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">levantamiento de gl&uacute;teos brasile&ntilde;o en miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">10</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">19.70</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">levantamiento de gluteos santa ana</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">10</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">49.10</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como reducir gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">7</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">cirug&iacute;a de gl&uacute;teos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">7</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">7.57</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">aumento de gl&uacute;teos precio usa</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">7</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">43.43</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como adelgazar los gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">6</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como bajar las nalgas</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">reducir gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">operaci&oacute;n de nalgas precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">5.80</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">operaci&oacute;n de gl&uacute;teos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">10.40</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">reducci&oacute;n de gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">10.80</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">levantamiento de gluteos brasileno miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">5</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">52.60</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">reducci&oacute;n de gl&uacute;teos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">4</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3.50</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">levantamiento de gl&uacute;teos precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">4</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">10.50</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como bajar los gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">3</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.33</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">cirugia de gluteos precios</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">3</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">36.00</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como adelgazar gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+            <tr style="background:#fff8f8;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como bajar el gluteo</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+            <tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">como disminuir gluteos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top:6px;font-size:11px;color:#999;font-style:italic;">Mostrando top 20 de 50 consultas con 0 clics (ninguna supera 100 impresiones)</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">&#128273; Primary &amp; Secondary Keywords &mdash; Page Analysis</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Avana vs Gallagher | Miami Plastic Surgery | Aeris &mdash; datos extra&iacute;dos de p&aacute;ginas en vivo</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;">Avana &#128308; (our page)<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami</a><button onclick="(function(b){navigator.clipboard.writeText('https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami').then(function(){var t=b.textContent;b.textContent='✓';setTimeout(function(){b.textContent=t;},1500);})})(this)" style="margin-left:6px;padding:1px 5px;font-size:10px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);color:#fff;border-radius:3px;cursor:pointer;vertical-align:middle;">⧉</button></span></th>
+          <th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;">Gallagher &#9989;<br/><span style="font-weight:400;font-size:11px;"><a href="https://gallagherplasticsurgery.com/body-procedures/brazilian-butt-lift-reduction/" style="color:#fff;text-decoration:none;" target="_blank">gallagherplasticsurgery.com/brazilian-butt-lift-reduction</a><button onclick="(function(b){navigator.clipboard.writeText('https://gallagherplasticsurgery.com/body-procedures/brazilian-butt-lift-reduction/').then(function(){var t=b.textContent;b.textContent='✓';setTimeout(function(){b.textContent=t;},1500);})})(this)" style="margin-left:6px;padding:1px 5px;font-size:10px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);color:#fff;border-radius:3px;cursor:pointer;vertical-align:middle;">⧉</button></span></th>
+          <th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;">Miami Plastic Surgery<br/><span style="font-weight:400;font-size:11px;"><a href="https://miamiplasticsurgery.com/es/surgical-services/body/buttock-augmentation/" style="color:#fff;text-decoration:none;" target="_blank">miamiplasticsurgery.com/es/buttock-augmentation</a><button onclick="(function(b){navigator.clipboard.writeText('https://miamiplasticsurgery.com/es/surgical-services/body/buttock-augmentation/').then(function(){var t=b.textContent;b.textContent='✓';setTimeout(function(){b.textContent=t;},1500);})})(this)" style="margin-left:6px;padding:1px 5px;font-size:10px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);color:#fff;border-radius:3px;cursor:pointer;vertical-align:middle;">⧉</button></span></th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;">Aeris<br/><span style="font-weight:400;font-size:11px;"><a href="https://aeris.co/es/procedimientos/cuerpo/levantamiento-de-gluteos-brasileno/" style="color:#fff;text-decoration:none;" target="_blank">aeris.co/es/levantamiento-de-gluteos-brasileno</a><button onclick="(function(b){navigator.clipboard.writeText('https://aeris.co/es/procedimientos/cuerpo/levantamiento-de-gluteos-brasileno/').then(function(){var t=b.textContent;b.textContent='✓';setTimeout(function(){b.textContent=t;},1500);})})(this)" style="margin-left:6px;padding:1px 5px;font-size:10px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);color:#fff;border-radius:3px;cursor:pointer;vertical-align:middle;">⧉</button></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; &Uacute;nico con precio + keyword exacto</div>
+            &ldquo;Reducci&oacute;n de Gl&uacute;teos en Miami - Desde $5500 | Avana Plastic Surgery&rdquo;
+            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; &ldquo;$5,500&rdquo; captura intent de costo<br/>&#9989; Keyword exacto en title con tildes correctas</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Mismo procedimiento &mdash; en ingl&eacute;s</div>
+            &ldquo;Brazilian Butt Lift Reduction In Miami, FL | Gallagher Plastic Surgery&rdquo;
+            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Reducci&oacute;n (mismo procedimiento) &bull; &#9989; Ciudad + estado</div>
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; En ingl&eacute;s &mdash; no compite por la query en espa&ntilde;ol &bull; &#10060; Sin precio</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Procedimiento opuesto (aumento)</div>
+            &ldquo;Levantamiento de gl&uacute;teos brasile&ntilde;o en Miami | Procedimientos BBL en Miami, FL&rdquo;
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; BBL/aumento &mdash; no reducci&oacute;n &bull; &#10060; Sin precio</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Procedimiento opuesto (aumento)</div>
+            &ldquo;Best Levantamiento de Gl&uacute;teos Brasile&ntilde;o Miami, FL | Aeris&rdquo;
+            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; BBL/aumento &mdash; no reducci&oacute;n &bull; &#10060; Sin precio &bull; &#9888;&#65039; Mezcla ingl&eacute;s/espa&ntilde;ol</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            &ldquo;Reducci&oacute;n de Gl&uacute;teos en Miami&rdquo;
+            <div style="font-size:11px;color:#059669;margin-top:3px;">&#9989; Keyword exacto con tildes correctas &mdash; mejor match posible</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            &ldquo;Brazilian Butt Lift Reduction With Dr. Gallagher In Miami&rdquo;
+            <div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; Reducci&oacute;n presente &mdash; &#10060; en ingl&eacute;s</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            &ldquo;Levantamiento de gl&uacute;teos brasile&ntilde;o en Miami, FL&rdquo;
+            <div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; Procedimiento opuesto (aumento)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            &ldquo;Los mejores cirujanos pl&aacute;sticos de Miami&rdquo;
+            <div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; H1 gen&eacute;rico &mdash; sin keyword de gl&uacute;teos</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">reducci&oacute;n de gl&uacute;teos en miami</span><div style="font-size:11px;color:#059669;margin-top:3px;">&#9989; Keyword exacto en title + H1 + meta</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">brazilian butt lift reduction</span><div style="font-size:11px;color:#e67e22;margin-top:3px;">&#9888;&#65039; Reducci&oacute;n en ingl&eacute;s &mdash; otro mercado de b&uacute;squeda</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">levantamiento de gl&uacute;teos brasile&ntilde;o</span><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; Aumento &mdash; intent opuesto a reducci&oacute;n</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">levantamiento de gl&uacute;teos brasile&ntilde;o</span><div style="font-size:11px;color:#c0392b;margin-top:3px;">&#10060; Aumento &mdash; intent opuesto a reducci&oacute;n</div></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords<br/><span style="font-size:11px;font-weight:400;color:#666;">(from H2 headings)</span></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&#9989; 8 H2s &mdash; enfocados en reducci&oacute;n</div>
+            <div>&#9989; &iquest;Qu&eacute; es / Procedimiento quir&uacute;rgico / Candidatos</div>
+            <div>&#9989; Ventajas / Proceso de recuperaci&oacute;n</div>
+            <div style="color:#059669;font-weight:700;">&#9989; FAQ con &ldquo;&iquest;Cu&aacute;nto Cuesta?&rdquo; dedicada</div>
+            <div>&#9989; 2 CTAs de consulta gratuita</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Sin FAQPage schema &mdash; FAQ sin marcar</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;">&#9989; 14 H2s &mdash; cobertura profunda de reducci&oacute;n</div>
+            <div>&#9989; What is / Benefits / Candidate / Procedure</div>
+            <div>&#9989; Liposuction reshaping / Recovery</div>
+            <div style="color:#059669;font-weight:700;">&#9989; &ldquo;How Much Does BBL Reduction Cost&rdquo; H2</div>
+            <div>&#9989; 7 FAQs + Patient Reviews</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Todo en ingl&eacute;s</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div>&#9989; 7 H2s &mdash; estructura clara</div>
+            <div>&#9989; &iquest;Qu&eacute; es / Antes&amp;Despu&eacute;s / Procedimiento</div>
+            <div>&#9889; Candidato / Consulta / Por qu&eacute; MPS</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; De aumento &bull; &#10060; Sin H2 de costo &bull; &#10060; Corto (~1,300 palabras)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;">&#9989; 14 H2s &mdash; cobertura amplia</div>
+            <div>&#9989; Tradicional vs BBL / BBL cuerpos delgados</div>
+            <div>&#9989; BBL H&iacute;brido (diferenciador)</div>
+            <div style="color:#059669;font-weight:700;">&#9989; &ldquo;Costo del BBL en Miami&rdquo; H2</div>
+            <div>&#9989; Preguntas Frecuentes (4)</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; De aumento &mdash; intent opuesto</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><div style="color:#059669;font-weight:700;">&#9989; S&oacute;lido &mdash; ~2,170 palabras</div><div>8 secciones enfocadas en reducci&oacute;n de gl&uacute;teos</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><div style="color:#e67e22;font-weight:700;">&#9888;&#65039; Comparable &mdash; ~2,100 palabras</div><div>14 H2s pero en ingl&eacute;s</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;">&#10060; Corto &mdash; ~1,300 palabras</div><div>7 secciones &mdash; contenido m&iacute;nimo</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;">&#9888;&#65039; El m&aacute;s extenso &mdash; ~2,400 palabras</div><div>14 H2s (pero de aumento)</div></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Se&ntilde;al de costo</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; &Uacute;nico con precio visible &mdash; ventaja exclusiva</div>
+            <div>&bull; Desde $5,500 en title tag</div>
+            <div>&bull; Rango hasta $7,000 en p&aacute;gina</div>
+            <div style="color:#059669;">&bull; Financiamiento disponible</div>
+            <div style="color:#059669;">&bull; FAQ &ldquo;&iquest;Cu&aacute;nto Cuesta una Reducci&oacute;n de Gl&uacute;teos?&rdquo;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin precio &mdash; consultar para costo</div>
+            <div>&bull; H2 de costo sin cifra espec&iacute;fica</div>
+            <div>&bull; Financiamiento en consulta</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin precio &mdash; consultar para costo</div>
+            <div>&bull; Ning&uacute;n precio en p&aacute;gina ni title</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin precio &mdash; estimaci&oacute;n en consulta</div>
+            <div>&bull; H2 &ldquo;Costo del BBL&rdquo; sin cifra</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;">&#9989; Meta description optimizada con precio</div>
+            <div style="font-size:11px;color:#059669;margin-top:4px;">&ldquo;Reducci&oacute;n de gl&uacute;teos en Miami desde $5,500. Si busca una silueta m&aacute;s equilibrada, ofrecemos cirug&iacute;a de reducci&oacute;n de gl&uacute;teos segura con resultados naturales.&rdquo;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;"><div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description detectada</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;"><div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description detectada</div></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;">&#10060; Sin meta description detectada</div></td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div><strong>FAQ &mdash; t&eacute;cnica, costo, tiempo, tama&ntilde;o</strong></div>
+            <div style="color:#059669;">&#9989; FAQ de costo (&ldquo;&iquest;Cu&aacute;nto Cuesta?&rdquo;) presente</div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; Sin FAQPage schema &mdash; rich results bloqueados</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div><strong>7 FAQs formales</strong></div>
+            <div>&#9989; Dolor / timeline / combinaciones / riesgos / cicatrices / permanencia</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div><strong>Sin FAQ formal</strong></div>
+            <div>&#9889; Contenido en formato Q&amp;A informal</div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; Sin secci&oacute;n FAQ dedicada</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div><strong>4 FAQs (Preguntas Frecuentes)</strong></div>
+            <div>&#9989; Actividad / riesgos / cicatrices / permanencia</div>
+            <div style="color:#c0392b;margin-top:3px;">&#10060; De aumento, no reducci&oacute;n</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&bull; Cirujanos certificados &#9989;</div>
+            <div>&bull; Galer&iacute;a antes/despu&eacute;s &#9989;</div>
+            <div>&bull; Financiamiento &#9989;</div>
+            <div>&bull; P&aacute;gina de rese&ntilde;as (/espanol/resenas) &#9989;</div>
+            <div style="color:#c0392b;margin-top:4px;">&#10060; Sin rese&ntilde;as/rating visible en la p&aacute;gina<br/>&#10060; Sin AggregateRating schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Autoridad m&eacute;dica fuerte</div>
+            <div>&bull; Dr. Sidhbh Gallagher &mdash; doble certificaci&oacute;n ABPS &#9989;</div>
+            <div>&bull; 5 testimonios con fotos &#9989;</div>
+            <div>&bull; Galer&iacute;a antes/despu&eacute;s &bull; financiamiento &#9989;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Presencia local fuerte</div>
+            <div>&bull; Dr. Carlos Wolf, Dr. Max Polo, Dr. Jason Altman &#9989;</div>
+            <div>&bull; 3 sedes (Kendall, South Miami, Coral Gables) &#9989;</div>
+            <div>&bull; Antes/despu&eacute;s &bull; testimonios &#9989;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Mejor prueba social del grupo</div>
+            <div style="color:#059669;">&bull; 5.0&#11088; con 14 rese&ntilde;as visibles &#9989;</div>
+            <div>&bull; Dr. Marcelo Ghersi, Dr. Liann Chin Casey, Dr. Jacob Carlson &#9989;</div>
+            <div>&bull; Antes/despu&eacute;s &#9989;</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div style="color:#059669;">&bull; &ldquo;Consulta Gratis&rdquo; &#9989;</div>
+            <div>&bull; &ldquo;Enviar Mensaje&rdquo; (formulario)</div>
+            <div style="color:#059669;margin-top:3px;">&#9989; Ofrece consulta gratuita &mdash; diferenciador</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;">
+            <div>&bull; &ldquo;Schedule a Consultation&rdquo;</div>
+            <div>&bull; &ldquo;Contact Us&rdquo;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#fff8f0;">
+            <div style="color:#059669;">&bull; &ldquo;RESERVAR UNA CITA&rdquo; &#9989;</div>
+            <div>&bull; &ldquo;&iexcl;Programe su consulta BBL hoy!&rdquo;</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;background:#f5f0ff;">
+            <div>&bull; &ldquo;Solicitar consulta&rdquo;</div>
+            <div style="color:#e67e22;margin-top:3px;">&#9888;&#65039; Neutro &bull; &#10060; Sin urgencia</div>
+          </td>
+        </tr>
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td>
+          <td style="padding:10px 14px;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin schema identificado</div>
+            <div style="color:#c0392b;">&#10060; FAQPage &mdash; FAQ sin marcar<br/>&#10060; MedicalProcedure/SurgicalProcedure &mdash; ausente<br/>&#10060; MedicalClinic/LocalBusiness &mdash; ausente<br/>&#10060; BreadcrumbList &mdash; ausente<br/>&#10060; AggregateRating &mdash; ausente</div>
+          </td>
+          <td style="padding:10px 14px;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; No confirmado</div>
+            <div style="color:#666;">Probable LocalBusiness/FAQPage (t&iacute;pico en pr&aacute;cticas m&eacute;dicas) &mdash; no verificado en el HTML</div>
+          </td>
+          <td style="padding:10px 14px;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin schema identificado</div>
+            <div style="color:#c0392b;">&#10060; FAQPage ausente &bull; &#10060; LocalBusiness ausente</div>
+          </td>
+          <td style="padding:10px 14px;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Sin schema identificado</div>
+            <div style="color:#c0392b;">&#10060; FAQPage ausente &bull; &#10060; SurgicalProcedure ausente</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">&#128273; Key takeaway del an&aacute;lisis de keywords:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Panorama competitivo de &ldquo;reducci&oacute;n de gl&uacute;teos en miami&rdquo;:</strong><br/>
+          1. Gallagher es el &uacute;nico competidor directo de <em>reducci&oacute;n</em> &mdash; misma cirug&iacute;a, doble certificaci&oacute;n ABPS, 14 H2s y 7 FAQs &mdash; pero SOLO en ingl&eacute;s, no compite por la query en espa&ntilde;ol<br/>
+          2. Miami Plastic Surgery y Aeris rankean por variantes de <em>aumento/BBL</em> &mdash; procedimiento OPUESTO &mdash; confirmando poca competencia directa en espa&ntilde;ol para reducci&oacute;n<br/>
+          3. Aeris gana en prueba social: 5.0&#11088; con 14 rese&ntilde;as visibles &mdash; algo que Avana no muestra en la p&aacute;gina<br/>
+          4. Gallagher y Aeris tienen ~14 H2s de cobertura profunda; Avana tiene 8 H2s &mdash; margen para ampliar contenido<br/>
+          5. Ning&uacute;n competidor muestra precio &mdash; la ventaja de precio de Avana ($5,500) es &uacute;nica en todo el set
+        </div>
+        <div>
+          <strong>Qu&eacute; debe agregar Avana para dominar &ldquo;reducci&oacute;n de gl&uacute;teos en miami&rdquo;:</strong><br/>
+          1. Agregar FAQPage schema &mdash; la FAQ (incluida &ldquo;&iquest;Cu&aacute;nto cuesta?&rdquo;) ya existe, solo marcarla con JSON-LD para activar rich results<br/>
+          2. Agregar MedicalProcedure/SurgicalProcedure + MedicalClinic/LocalBusiness + BreadcrumbList schema &mdash; Avana no tiene NING&Uacute;N schema<br/>
+          3. Mostrar rese&ntilde;as + AggregateRating en la p&aacute;gina &mdash; Aeris gana con 5.0&#11088; (14 rese&ntilde;as); Avana tiene /espanol/resenas pero no las muestra aqu&iacute;<br/>
+          4. Ampliar contenido a ~2,800&ndash;3,000 palabras con m&aacute;s H2s (t&eacute;cnicas de liposucci&oacute;n, riesgos, comparativa reducci&oacute;n vs aumento) para igualar la profundidad de Gallagher/Aeris<br/>
+          5. Capitalizar el vac&iacute;o competitivo: es la &Uacute;NICA p&aacute;gina en espa&ntilde;ol de reducci&oacute;n de gl&uacute;teos en Miami con keyword exacto + precio &mdash; reforzar con enlaces internos para consolidar el #1
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:20px;">
+<style>
+.carousel{position:relative;max-width:100%;margin:auto;background:#fff;border:1px solid #dce6f0;}
+.carousel-container{position:relative;padding:16px 20px;display:flex;align-items:center;justify-content:center;min-height:400px;}
+.carousel-slide{display:none;width:100%;}
+.carousel-slide.active{display:block;}
+.carousel-slide img{max-width:100%;height:auto;display:block;}
+.carousel-prev,.carousel-next{cursor:pointer;position:absolute;top:50%;width:auto;padding:16px;margin-top:-22px;color:white;background-color:rgba(0,0,0,0.5);font-weight:bold;font-size:18px;transition:0.6s ease;border-radius:3px;user-select:none;}
+.carousel-next{right:0;}.carousel-prev{left:0;}
+.carousel-prev:hover,.carousel-next:hover{background-color:rgba(0,0,0,0.8);}
+.carousel-dots{text-align:center;padding:12px 20px;background:#f9f9f9;border-top:1px solid #dce6f0;}
+.carousel-dot{cursor:pointer;height:12px;width:12px;margin:0 5px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color 0.6s ease;}
+.carousel-dot.active{background-color:#717171;}
+.carousel{max-width:900px;margin:30px auto;box-shadow:0 4px 8px rgba(0,0,0,0.1);border-radius:8px;overflow:hidden;}
+.carousel-title{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 20px;font-size:16px;font-weight:600;text-align:center;letter-spacing:0.5px;}
+.carousel-slide img{cursor:pointer;transition:transform 0.2s ease;}
+.carousel-slide img:hover{transform:scale(1.02);}
+.zoom-modal{display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.9);}
+.zoom-modal.active{display:flex;align-items:center;justify-content:center;}
+.zoom-modal-content{max-width:90vw;max-height:90vh;position:relative;}
+.zoom-modal-content img{width:100%;height:auto;}
+.zoom-close{position:absolute;top:20px;right:40px;color:white;font-size:40px;font-weight:bold;cursor:pointer;user-select:none;}
+.zoom-close:hover{color:#bbb;}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush, Google.com and Semrush Backlinks</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active"><img src="img/reduccion-de-gluteos-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/></div>
+    <div class="carousel-slide"><img src="img/reduccion-de-gluteos-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/></div>
+    <div class="carousel-slide"><img src="img/reduccion-de-gluteos-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/></div>
+    <div class="carousel-slide"><img src="img/reduccion-de-gluteos-en-miami_semrush_backlinks.png" alt="Semrush Backlinks Analysis" onclick="openZoom(this.src)"/></div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+    <span class="carousel-dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex=0;
+function changeSlide(n){showSlide(currentIndex+=n);}
+function currentSlide(n){showSlide(currentIndex=n);}
+function showSlide(n){
+  const slides=document.querySelectorAll('.carousel-slide');const dots=document.querySelectorAll('.carousel-dot');
+  if(n>=slides.length)currentIndex=0;if(n<0)currentIndex=slides.length-1;
+  slides.forEach(s=>s.classList.remove('active'));dots.forEach(d=>d.classList.remove('active'));
+  slides[currentIndex].classList.add('active');dots[currentIndex].classList.add('active');
+}
+function openZoom(src){document.getElementById('zoomImage').src=src;document.getElementById('zoomModal').classList.add('active');}
+function closeZoom(){document.getElementById('zoomModal').classList.remove('active');}
+document.getElementById('zoomModal').addEventListener('click',function(e){if(e.target===this)closeZoom();});
+</script>
+</div>
+
+</main></body>
+</html>
