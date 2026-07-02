@@ -1,30 +1,68 @@
-@model ServicePageViewModel
-<title>Hourglass Tummy Tuck in Miami | @Settings.GetCenterName</title>
+================================================================================
+ SEO IMPROVEMENTS — HOURGLASS TUMMY TUCK IN MIAMI
+================================================================================
+ Page ....... https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami
+ Language ... English (en_US)
+ Primary KW . hourglass tummy tuck in miami
+ Date ....... July 2, 2026
+ Scope ...... Meta tags / social-sharing markup
+================================================================================
 
-<meta name="description" content="Hourglass Tummy Tuck in Miami. Now you can combine liposuction, fat transfer, and abdominoplasty to achieve a contoured figure. Contact a surgeon today." />
-<link rel="canonical" href="https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami" />
-<meta property="article:published_time" content="2020-08-05T15:39:45@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Hourglass Tummy Tuck in Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="Hourglass Tummy Tuck in Miami. Now you can combine liposuction, fat transfer, and abdominoplasty to achieve a contoured figure. Contact a surgeon today. " />
 
-@* og:url — updated to absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami" />
-@* Added article tag *@
-<meta property="article:tag" content="Hourglass Tummy Tuck" />
+--------------------------------------------------------------------------------
+ EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This round focused on the page's meta tags and social-sharing markup — the
+signals search engines and social platforms read first. Key outcomes:
 
-<meta property="og:site_name" content="@Settings.GetCenterName" />
+  • Converted og:url and og:image to absolute URLs so social platforms and
+    crawlers resolve them correctly (relative URLs can break link previews).
+  • Added article:tag ("Hourglass Tummy Tuck") to reinforce the page topic.
+  • Completed the social image card: added og:image:alt, og:image:width (910)
+    and og:image:height (960) for rich, correctly-sized previews on Facebook,
+    LinkedIn and X/Twitter.
+  • Verified the full Open Graph, Twitter Card and canonical set is present and
+    consistent.
 
-@* og:image — updated to absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/hourglass-tummy-tuck.jpg" />
-@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
-<meta property="og:image:alt" content="Hourglass Tummy Tuck in Miami" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Hourglass Tummy Tuck in Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="Hourglass Tummy Tuck in Miami. Now you can combine liposuction, fat transfer, and abdominoplasty to achieve a contoured figure. Contact a surgeon today. " />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/hourglass-tummy-tuck.jpg" />      
+================================================================================
+ 1. META TAGS
+================================================================================
+File: hourglass-tummy-tuck-in-miami / En / articlemetas.cshtml
+
+  • TITLE (in place)
+    <title>Hourglass Tummy Tuck in Miami | @Settings.GetCenterName</title>
+
+  • META DESCRIPTION (in place)
+    "Hourglass Tummy Tuck in Miami. Now you can combine liposuction, fat
+     transfer, and abdominoplasty to achieve a contoured figure. Contact a
+     surgeon today."
+
+  • OPEN GRAPH / TWITTER (added or corrected)
+    - og:url   -> changed to absolute URL
+                  (https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami)
+    - og:image -> changed to absolute URL, plus added og:image:alt,
+                  og:image:width (910) and og:image:height (960)
+    - article:tag = "Hourglass Tummy Tuck" (added)
+    - In place: og:locale = en_US, og:type = article, og:title, og:description,
+                og:site_name, article:published_time, article:modified_time,
+                twitter:card = summary, twitter:title / twitter:description /
+                twitter:image
+
+  • CANONICAL (in place)
+    <link rel="canonical" href="https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami" />
+
+
+================================================================================
+ 2. VERIFICATION & PENDING ITEMS
+================================================================================
+  DONE
+    ✓ og:url and og:image converted to absolute URLs
+    ✓ article:tag added
+    ✓ Social image card completed (alt / width / height)
+    ✓ Open Graph, Twitter Card and canonical set confirmed present
+
+
+================================================================================
+ END OF REPORT
+================================================================================

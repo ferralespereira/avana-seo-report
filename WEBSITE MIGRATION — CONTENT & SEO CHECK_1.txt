@@ -1,0 +1,452 @@
+========================================================================
+WEBSITE MIGRATION — CONTENT & SEO CHECK  (FOLLOW-UP / PART 2)
+Project: avanaplasticsurgery.com 4.0  -->  5.0
+Prepared by: Javier Ferrale Pereira
+Period: 2026-06-27 to 2026-07-02
+Continues: "WEBSITE MIGRATION — CONTENT & SEO CHECK" (Part 1, through 2026-06-26)
+========================================================================
+
+------------------------------------------------------------------------
+EXECUTIVE SUMMARY (for review)
+------------------------------------------------------------------------
+This is the continuation of the 4.0 -> 5.0 migration check. Part 1 closed
+with the 2026-06-26 verification sweep of the first 10 core service lines
+(FILE 1-23). This part covers everything done AFTER that: 4 more service
+pages, several site-wide SEO audits (URLs, sitemaps, page parity, video
+sitemap), the home page, NAP consistency, and a new reviews widget.
+
+Goal (unchanged): keep the 5.0 redesign while NOT losing any content, SEO
+value, or Spanish localization from the 4.0 site — and fix SEO issues found
+along the way (including some that pre-dated the migration).
+
+Scope added this round:
+  - 4 more service lines (En + Es): transumbilical-breast-augmentation,
+    transabdominal-breast-augmentation, tummy-tuck, hourglass-tummy-tuck.
+  - Site-wide audits: URL sweep, sitemap sweep, page-parity audit, video
+    sitemap audit, home page (HomePageSkin + home metas).
+  - Local-SEO cleanup (clinic address normalization) and a broken-image fix
+    flagged by Semrush.
+  - A new Elfsight "Patient Reviews" widget rolled out across service pages.
+
+Status: All 14 logged service lines migrated with no content loss. New pages
+were clean layout-only migrations; the fixes below are SEO corrections and
+enrichments on top of a like-for-like migration.
+
+What was found and fixed (grouped):
+  1. 4 more service pages migrated clean (FILE 24-27) — no content lost;
+     differences are the intended 5.0 redesign (rebuilt two-column contact
+     section, CSS refactor, new intro lead paragraphs on tummy-tuck).
+  2. Pre-existing og:title bug fixed — the transabdominal (TABA) English page
+     had og:title = "Transumbilical Breast Augmentation" (wrong procedure);
+     corrected to "Transabdominal…". Bug pre-dated the migration (identical in
+     4.0 and 5.0); fixed in both projects.
+  3. Meta-tag SEO enrichment (beyond like-for-like) — absolute og:url/og:image/
+     twitter:image, article:tag, and the og:image:alt/width/height card added
+     on transumbilical, transabdominal, tummy-tuck and hourglass (En). Same
+     upgrade pattern used on breast-lift in Part 1.
+  4. Home page (FILE 28) audited as a full redesign — every 4.0 section is
+     preserved and several new sections added. Fixed the home JSON-LD:
+     restored the LocalBusiness address + geo (cleared a Semrush "address
+     required" error), restored business openingHours, and repointed a broken
+     logo path (and the Es head og:image) to the real logo file.
+  5. Sitemap cleanup — removed 2 smartlipo URLs from sitemap_images.xml (they
+     301-redirect, so they should not be advertised to Google). Page/URL set
+     otherwise byte-for-byte identical.
+  6. Video sitemap fixed — re-pointed 3 stale YouTube entries to the videos now
+     embedded on their pages, and collapsed 62 malformed doubled thumbnail URLs
+     (i.ytimg.com/vi/https:/…/.jpg.jpg) to the valid form.
+  7. Page-parity audit — confirmed no routable URL was added, removed, or
+     changed in the migration (394 canonical URLs, redirects, controllers and
+     views all identical). Only deltas are non-page (sitemap cleanup + 2 new
+     non-routable script/style partials).
+  8. Local-SEO / NAP normalization — unified 3 clinic street-address spellings
+     to one canonical form each across ~13 files (JSON-LD only).
+  9. Broken image fixed — a 404 image in the Miami (Flagler) location gallery
+     (flagged by Semrush) repointed to the real file.
+ 10. Internal link restored — the BBL English page had degraded its
+     /lipo-360-miami link to plain text; anchor restored.
+ 11. Elfsight "Patient Reviews" widget rolled out to 11 service pages (En + Es)
+     on 2026-07-02, above the existing static testimonials.
+
+Open items / follow-ups:
+  - Hourglass Tummy Tuck: the English metas were enriched but the SPANISH metas
+    were not — asymmetric. Es still needs absolute URLs, og:locale (es_US) +
+    alternate (en_US), og:site_name, and the og:image:alt/width/height card.
+  - Video sitemap: 2 YouTube entries were already stale in 4.0 (tummy-tuck,
+    breast-augmentation) — deferred for a separate decision; new migration-added
+    videos are not yet in the sitemap; the 62 /cdn/videos/*.mp4 files live only
+    on the production CDN and can only be verified on the live server.
+  - Home page schema: a few items were reviewed but left out of scope by
+    request — relative og:url/og:image/twitter:image, og:type="article" on the
+    homepage (should be "website"), and the Es head missing og:locale +
+    twitter card tags that En has.
+  - BBL English video schema still carries the old Moradian video's duration/
+    description/upload-date/view-count (carried over from Part 1); update once
+    the real values for the new video are available.
+  - None of the changes have been runtime-verified — there is no .NET build
+    environment on this machine. All pages should be confirmed visually and the
+    JSON-LD re-validated (Rich Results / Semrush) on the next build.
+
+------------------------------------------------------------------------
+DETAILED LOG (supporting evidence, file by file)
+------------------------------------------------------------------------
+
+Legend:
+  [OK]      = content fully migrated, no action needed
+  [FIXED]   = discrepancy found and corrected
+  [REVIEW]  = intentional design/layout change, no content lost
+  [TODO]    = still needs a decision / data we don't have
+
+OLD root: C:\Users\user564\Documents\avanaplasticsurgery.com-4.0\avanaplasticsurgery.com\BaseProject-7.0\
+NEW root: C:\Users\user564\Documents\avanaplasticsurgery5.0\BaseProject-7.0\
+
+
+========================================================================
+UPDATE TO FILE 4 (BBL English testimonials)  [2026-07-01]
+========================================================================
+brazilian-butt-lift-miami\En\article.cshtml
+
+[CHANGED] The 3 static testimonials (Delique, henomenal750444, Cindy) were first
+     replaced by a live Elfsight review widget (elfsightcdn.com/platform.js), then
+     — per request — the 3 static testimonials were RESTORED and now sit BELOW the
+     Elfsight widget. Widget kept for the live feed; static blockquotes back in the
+     HTML for crawlable content. No Review schema added (procedure page — not
+     eligible for review rich results). Current En state = Elfsight widget + 3
+     restored static testimonials (owl-carousel) under a single "BBL Patients
+     Reviews" h2. (This is the precursor to the site-wide rollout logged at the end
+     of this report.)
+
+
+========================================================================
+FILE 24: transumbilical-breast-augmentation-miami  (En + Es: article, articlemetas)
+========================================================================
+RESULT: Clean migration — NO fixes needed. Both articlemetas byte-for-byte
+        identical to OLD; both articles migrated intact (layout refactor only).
+
+[OK] En + Es articlemetas.cshtml: IDENTICAL to OLD (17/17 En, 13/13 Es lines).
+     Like breast-lift (FILE 23), this page's OLD metas were never enriched, so
+     there was nothing to restore.
+[OK] En + Es article.cshtml: all visible content migrated (NEW slightly larger —
+     rebuilt contact section, not new body). All section headings match OLD 1:1
+     (Understanding TUBA / Advantages / How it works / Case 1-4 / Anesthesia /
+     Incision / Consultation / Preparation / Best surgeon / Recovery / Financing /
+     FAQs). No videos, no surgeon grid, no JSON-LD, no TOC in either version.
+[OK] Localization: Es contact section correctly in Spanish. En contact heading
+     hardcoded "schedule a free consultation" (fine on the English page).
+[NOTE] Both rebuilt contact sections lost id="contact-form-section" — harmless
+     (no TOC/anchor targets it). Same as the Part 1 pages.
+[UPDATE] Metas later ENRICHED — see the URL SWEEP note below (absolute og:image).
+
+
+========================================================================
+FILE 25: transabdominal-breast-augmentation-miami  (En + Es: article, articlemetas)
+========================================================================
+RESULT: Clean migration — NO migration fixes needed. One PRE-EXISTING (not a
+        migration regression) English og:title bug found and fixed (25a).
+
+[OK] En + Es articlemetas.cshtml: byte-for-byte IDENTICAL to OLD. Never enriched,
+     so nothing to restore.
+[OK] En + Es article.cshtml: all visible content migrated. En/Es headings match
+     OLD 1:1 (the 5 Es headings that appear only in OLD were inside the @* *@
+     commented before/after gallery, so nothing visible was dropped). No videos,
+     surgeon grid, JSON-LD or TOC in either version.
+[OK] Localization: Es contact section correctly in Spanish; En hardcoded heading
+     fine on the English page.
+
+[FIXED] 25a. PRE-EXISTING bug (NOT a migration regression). En articlemetas
+     og:title read "Transumbilical Breast Augmentation Miami" on this
+     TRANSABDOMINAL (TABA) page — every other En tag correctly says
+     Transabdominal/TABA. The wrong value was identical in OLD and NEW (pre-dated
+     the migration). Corrected:
+       og:title  "Transumbilical Breast Augmentation Miami"
+              ->  "Transabdominal Breast Augmentation Miami"
+     Applied to the EN file in BOTH projects (4.0 + 5.0) so they stay identical.
+     Es metas were already correct — bug was En-only.
+[UPDATE] Metas later ENRICHED — see the URL SWEEP note below (absolute og:image).
+
+
+========================================================================
+FILE 26: tummy-tuck-miami  (En + Es: article, articlemetas)
+========================================================================
+RESULT: Clean migration — NO fixes needed. Articles migrated intact (5.0 layout
+        refactor, plus a new intro lead paragraph and a restructured Case Results
+        section — all videos preserved).
+
+[OK] En + Es articlemetas.cshtml: byte-for-byte IDENTICAL to OLD (20/20 En,
+     14/14 Es). Never enriched (og:url + og:image stay relative). (Optional future
+     SEO upgrade — later partially done, see URL SWEEP note.)
+[OK] En\article.cshtml (OLD 656 -> NEW 772): all content migrated (growth = new
+     intro lead + rebuilt contact + restructured Case Results). All 4 video IDs
+     present in both (QCfY4pLXPPI intro, CRsG9WwSHj0 + jI_IjCkR5TY case results,
+     V4Zd4dT4EbY post-op). Surgeon images are CSS background-image divs, not
+     <img alt> — no surgeon-alt regression possible. FAQ 12 panels, text identical.
+[OK] Es\article.cshtml (OLD 291 -> NEW 323): all body text, ASPS blockquotes, the
+     $5,798 cost blockquote and the 6-item cost-factors list preserved.
+[REVIEW] Intentional 5.0 design: new dark-background intro lead paragraph added on
+     top (En ~170,110 tummy tucks in 2023; Es "…también conocido como
+     abdominoplastia…"), original intro kept below; CSS refactor; contact section
+     rebuilt (Es correctly localized); En Case Results = OLD 2-video block wrapped
+     @* *@ and REPLACED by a new live section carrying the SAME two videos PLUS new
+     Case 1/Case 2 descriptions (videos preserved, content enriched).
+[NOTE] Contact sections lost id="contact-form-section" — harmless (no TOC/anchors).
+[NOTE - minor, NEW-only artifact] In the new En Case Results section both case
+     sub-labels render "Case 2" and share id="rooms-2-heading-0" (leftover carousel
+     slide-labels; the correct Case 1/Case 2 descriptive headings sit just above).
+     Not misleading on-page; not in OLD. Fix only if the duplicate label matters.
+
+
+========================================================================
+URL SWEEP (all 13 logged services, En + Es, article + articlemetas)  [2026-06-30]
+========================================================================
+Extracted every href / src / og:* / twitter:* URL from OLD vs NEW for the 13
+services and diffed them.
+
+[OK] Almost all URL diffs are intentional / already documented (rebuilt contact
+     section images, commented-out YouTube URLs, templated tel: link, etc.).
+
+[FIXED] URL-1. brazilian-butt-lift-miami/En/article.cshtml lost an internal link:
+     OLD had <a href="/lipo-360-miami">Lipo 360</a> in the "Lipo 360 and BBL"
+     video paragraph; NEW had degraded it to plain text. Restored the anchor.
+     (Es sibling kept its /espanol/lipo-360-en-miami link — En-only regression.)
+
+[NOTE - metas enriched] articlemetas for transumbilical, transabdominal and
+     tummy-tuck were ENRICHED after their FILE 24/25/26 entries: NEW now adds an
+     absolute og:image URL (…/themes/avana/images/services/910x960/<service>.jpg).
+     SEO upgrade beyond OLD, not a migration loss (same pattern as breast-lift).
+
+
+========================================================================
+FILE 27: hourglass-tummy-tuck-in-miami  (En + Es: article, articlemetas, briefintro)  [2026-06-30]
+========================================================================
+RESULT: Clean migration — NO fixes needed on the articles (5.0 contact-section
+        rebuild only). Meta enrichment is asymmetric (see below).
+
+[OK] En + Es briefintroforcategorypage.cshtml: byte-for-byte identical.
+[OK] En\article.cshtml (158 -> 189) + Es\article.cshtml (215 -> 242): all content
+     migrated; growth = rebuilt contact section. Headings match OLD 1:1. No videos,
+     surgeon grid, JSON-LD or TOC in either version.
+[OK] Localization: Es contact section correctly in Spanish; En heading fine.
+
+[CORRECTION / ASYMMETRY] articlemetas state:
+     - En (29 lines): ENRICHED beyond OLD (17) — og:url/og:image/twitter:image ->
+       absolute https; + article:tag "Hourglass Tummy Tuck"; + og:image:alt,
+       width 910, height 960. og:title correct; og:image file exists. Well-formed.
+     - Es (15 lines): NOT enriched — still OLD form (relative URLs; no og:locale /
+       alternate; no og:site_name; no og:image:alt/width/height; has a stray second
+       article:tag = @Settings.GetCenterName).
+     Every other enriched service upgraded BOTH languages together. To match, the
+     Es file still needs: absolute og:url/og:image/twitter:image; og:locale (es_US)
+     + og:locale:alternate (en_US); og:site_name; og:image:alt (Spanish) + width/
+     height. NOT yet applied — see Open Items.
+
+
+========================================================================
+SITEMAP SWEEP (sitemap.xml, sitemap_images.xml, sitemap_video.xml)  [2026-06-30]
+========================================================================
+Compared all 3 sitemaps OLD vs NEW (byte diff + sorted <loc> URL-set diff).
+
+[OK] sitemap.xml: byte-for-byte IDENTICAL (394 URLs).
+[OK] sitemap_video.xml: byte-for-byte IDENTICAL (72 entries) at this stage
+     (audited/fixed separately below).
+[REVIEW] sitemap_images.xml: NEW had one extra image block (133 -> 134) for
+     /smartlipo-miami (4 images).
+
+[INVESTIGATION] smartlipo-miami is NOT a live page in either version:
+     ServiceEntity id="smartlipo" is active="false" in BOTH 4.0 and 5.0, and
+     UrlRedirects.cs (identical in both) 301-redirects ^smartlipo-miami$ ->
+     liposuction-miami (and ^espanol/miami-smartlipo$ -> liposuccion-en-miami-
+     florida). So the page has always redirected; the only change was this new
+     sitemap entry advertising a redirecting URL to Google.
+
+[FIXED] Removed both redirecting smartlipo URLs from sitemap_images.xml:
+       - /smartlipo-miami (EN, the NEW-only migration regression)
+       - /espanol/miami-smartlipo (ES, pre-existing in both, same issue)
+     Result: <loc> 134 -> 132; url tags balanced (132/132); valid XML; no smartlipo
+     references remain. Decision: keep the long-standing redirect (smartlipo stays
+     folded into liposuction), so dropping the sitemap entries is correct.
+
+
+========================================================================
+PAGE-PARITY AUDIT (full URL / page-set comparison, OLD vs NEW)  [2026-06-30]
+========================================================================
+GOAL: confirm the migration kept the SAME pages. Checked every authoritative
+source that defines a routable URL, not just sitemaps.
+
+[OK] sitemap.xml (394 URLs), sitemap_video.xml (72) — URL sets identical.
+[OK] sitemap_images.xml — host-page set identical except the intentionally-removed
+     espanol/miami-smartlipo redirect (above).
+[OK] ServiceEntities.xml — same services, urls, active flags (En+Es).
+[OK] UrlRedirects.cs — full file identical.
+[OK] ServicePage Content folders, Controllers, Views tree, static .html pages,
+     robots.txt — all identical sets.
+[REVIEW] Only 2 NEW-only .cshtml files: Views\Shared\GlobalHomeScripts.cshtml and
+     GlobalHomeStyles.cshtml — confirmed NON-ROUTABLE partials (script/style
+     includes), add ZERO URLs.
+
+CONCLUSION: Page parity confirmed — no routable URL added, removed, or changed in
+the 4.0 -> 5.0 migration. The only deltas are non-page (smartlipo sitemap cleanup
++ 2 new shared script/style partials).
+
+
+========================================================================
+VIDEO SITEMAP AUDIT + FIX (wwwroot\sitemap_video.xml)  [2026-06-30]
+========================================================================
+CONTEXT: the file was byte-for-byte identical to OLD (never updated in the
+migration), so it had drifted out of sync with the rebuilt 5.0 pages. 72 entries =
+10 YouTube (player_loc) + 62 self-hosted MP4. Checked each YouTube id against the
+video actually embedded on its page in 5.0.
+
+[OK] 5 of 10 YouTube entries already matched their live page (j-plasma, lipo-360,
+     abdominal-etching, breast-lift, miami-fl-location).
+
+[FIXED] V-1. Three entries pointed at videos the migration moved/removed —
+     re-pointed each to the video now embedded on that page (using the page's own
+     VideoObject schema for title/duration/description/date):
+       brazilian-butt-lift: fMUPtRoh3l4 (Moradian) -> qXNrZkgf1Tw (McDaniel).
+       mommy-makeover:       6E1xgNVVNC4 (removed)  -> jE_wSUzRy6Y (Dr. Luster).
+       liposuction:          auFMZ-Pgrug (commented) -> IAS2VEzhu-I (McDaniel HD).
+     VERIFIED: XML valid; url 72/72 and video 72/72 balanced; old ids gone from
+     their service-page entries.
+[NOTE] 2 of those old ids still appear once each on SEPARATE dedicated /video/…
+     gallery pages that legitimately host them — correct to keep.
+
+[FIXED] V-2. Pre-existing thumbnail bug (NOT migration-caused; identical 62 in both
+     4.0 and 5.0). All 62 /video/… entries had a malformed doubled thumbnail_loc:
+       https://i.ytimg.com/vi/https:/i.ytimg.com/vi/<ID>/mqdefault.jpg.jpg
+     Google rejects these. Collapsed all 62 to the valid form:
+       https://i.ytimg.com/vi/<ID>/mqdefault.jpg
+     VERIFIED: 0 malformed remaining; 0 ".jpg.jpg"; XML valid; 72/72 balanced.
+
+[TODO] 2 YouTube entries were ALREADY stale in 4.0 (embedded on the page in
+     neither version) — tummy-tuck (I1RF3BFzEBc) and breast-augmentation
+     (fJfT7GX7stU) — deferred for a separate decision. Also: the 62 /cdn/videos/
+     *.mp4 files exist in neither repo (production CDN only); and new
+     migration-added videos are not yet in the sitemap.
+
+
+========================================================================
+FILE 28: Views\HomePage\HomePageSkin.cshtml (+ home content metas)  [2026-07-01]
+========================================================================
+RESULT: FULL REDESIGN (not just a CSS refactor). OLD 1309 -> NEW 1624 lines. Every
+        OLD section is present in NEW (reworked/reworded), NEW adds several new
+        sections, all content preserved. Home page is a single bilingual view
+        driven by @Vocabulary + @Model (no separate En/Es files).
+
+[OK] Every OLD section maps to a NEW section (none dropped): header (now rendered
+     globally by the Menu ViewComponent instead of @section headerTop), hero,
+     intro/welcome, locations, financing, out-of-town, surgeons, testimonials,
+     contact form, Instagram/social.
+[REVIEW] NEW-only additions (enrichment): 5 YouTube video testimonials; tabbed
+     cosmetic-procedures carousel with live prices; "Popular Combos" selector;
+     "Top-rated center" stats band; the 2 non-routable GlobalHome script/style
+     partials.
+[OK] Data bindings resolve (Model.IsEnglish -> Model.CurrentLanguage refactor +
+     new FinancingOptionsIndexablePage). All 72 new @Vocabulary keys exist in BOTH
+     En and Es resx with non-empty Spanish values (no English-on-Spanish risk).
+
+--- HOME METAS / JSON-LD ---
+
+[REVIEW] 28a. priceRange "$$" -> "$$$" (En x2, Es x2). Intentional pricing-tier edit.
+
+[FIXED] 28f. Semrush Site Audit (Jul 1) reported "a value for the address field is
+     required" as an ERROR on both / and /espanol (Local Business). Root cause: the
+     migration dropped the address from the live "#organization" node (@type
+     PlasticSurgery = a LocalBusiness subtype; Google validates the TOP node, not
+     the subOrganizations). Restored "address" (8700 W Flagler St Suite 250, Miami,
+     FL 33174, US) + "geo" (25.7685486, -80.337497) on the #organization node in
+     BOTH En and Es. VERIFIED: live JSON-LD parses valid; org now has address=True,
+     geo=True, subOrganization=4. Re-run the audit to clear the 2 errors.
+
+[FIXED] 28c. openingHours + openingHoursSpecification (Mo-Fr 08:00-18:00,
+     Sa 08:00-14:00) had been dropped from the Miami-clinic node (live data; En
+     2 -> 0; Es never had it). Restored on the #miami-fl-location-clinic node in
+     BOTH languages. VERIFIED: live JSON-LD valid in both; openingHours present.
+
+[FIXED] 28d. Broken logo in the JSON-LD (same wrong path in OLD too). The
+     #organization "logo" pointed to /images/logo.png (does not exist in wwwroot).
+     Repointed to the real file (verified present):
+       -> /themes/avana/images/logos/logo-horizontal-gold.png  (En + Es, live +
+          commented occurrences).
+
+[FIXED] 28e. Es only — head og:image pointed to the same missing /images/logo.png.
+     Repointed to the real logo (kept relative to match surrounding Es tags).
+     VERIFIED: 0 residual "images/logo.png" references; JSON-LD valid in both.
+
+[NOTE - reviewed, left out of scope by request] relative og:url/og:image/
+     twitter:image on both languages; og:type="article" on the homepage (should be
+     "website"); Es head lacks og:locale (es_US + alternate) and the twitter card
+     tags En has.
+
+
+========================================================================
+NAP ADDRESS NORMALIZATION (cross-view streetAddress consistency)  [2026-07-01]
+========================================================================
+Trigger: while fixing the home LocalBusiness schema (28f), a review found the 4
+clinic addresses spelled several inconsistent ways (a local-SEO NAP smell —
+Google prefers identical address strings across all mentions). Normalized every
+occurrence to one canonical form per clinic (JSON-LD "streetAddress" values only;
+pure substring swaps, structure unchanged).
+
+Canonical forms:
+  Miami (Flagler) : 8700 W Flagler St Suite 250
+  West Miami      : 1645 SW 107th Ave Suite 114 C
+  Hialeah Gardens : 7802 NW 103rd St Suite 106
+  Dallas          : 7150 Greenville Ave   (already uniform — untouched)
+
+[FIXED] N-1. Flagler comma variant "…St, Suite 250" -> "…St Suite 250" (7 files:
+     home metas En/Es, HomePageSkin commented JSON-LD, about En/Es, contact En/Es).
+[FIXED] N-2. Hialeah Gardens "103 St" -> "103rd St" (5 files, incl. the
+     authoritative LocationPage En/Es and Dr. Luster En/Es). Chose the postally-
+     correct "103rd" and updated the LocationPage itself so nothing lags.
+[FIXED] N-3. West Miami all-caps "…107th AVE SUITE 114 C" -> "…107th Ave Suite
+     114 C" (1 file: west-miami Es).
+VERIFIED: 0 residual variant strings; only one "103" spelling now exists site-wide.
+NOT a migration diff — these pre-dated the migration; this is a consistency cleanup.
+
+
+========================================================================
+BROKEN IMAGE FIX (Semrush Site Audit, Jul 1)  [2026-07-01]
+LocationPage\Content\miami-fl-location\En\article.cshtml
+========================================================================
+Semrush reported "1 internal image is broken" (404) on /miami-fl-location:
+  …/locations/1285x857/flagler/avana-front-desk-miami.jpg
+
+ROOT CAUSE (redesign regression): the Flagler gallery was restructured in 5.0 to a
+/flagler/ subfolder with renamed images. On the "clinic hallway" item only the
+thumbnail + caption were updated to the new name; the full-size <a href> kept the
+old-style name that was never created in the new folder.
+
+[FIXED] Repointed the href to the real full-size file (matches thumbnail + caption):
+  avana-front-desk-miami.jpg -> avana-flagler-clinic-hallway.jpg
+VERIFIED: swept every live gallery image on this page (En + Es) against wwwroot —
+all 13 paths per language now resolve. Es file was already correct. Re-run the
+Site Audit to clear the error.
+
+
+========================================================================
+REVIEW WIDGET ROLLOUT (Elfsight "Patient Reviews" on service pages)  [2026-07-02]
+========================================================================
+NOT a migration diff — a NEW SEO/social-proof feature added to the 5.0 project
+only. A live Elfsight reviews widget was added to the service pages so each shows
+the real Google/review feed ABOVE the existing static testimonials.
+
+WHAT WAS ADDED (identical block on every page, En + Es): a new "Patient Reviews" /
+"Reseñas de Pacientes" section with <script src="…elfsightcdn.com/platform.js">
+and the shared Elfsight app id 23a79f68-4e7f-476c-ab4f-4b49c62f02b1 (lazy-loaded).
+Where a page already had a static owl-carousel testimonials block, its H2 was
+renamed to disambiguate (e.g. "Lipo 360 Patients Reviews" -> "Lipo 360 Patient
+Testimonials"); the static blockquotes stay below the widget for crawlable content.
+
+[CHANGED] 11 service pages received the widget (En + Es article.cshtml each = 22
+     files), committed 2026-07-02:
+       brazilian-butt-lift, lipo-360, breast-implants, breast-augmentation,
+       mommy-makeover, liposuction, bbl-revision, breast-implant-revision,
+       breast-reduction, breast-lift, transumbilical-breast-augmentation.
+[REVIEW] Margin adjustment (commit "adjusting margin in review sections"): moved
+     "mobile-margin-5-9" off the review section and onto the following section so
+     the widget sits flush on mobile (touched 5 files: BBL Es, breast-implants
+     En+Es, lipo-360 En+Es; pages added later already carry the corrected spacing).
+[NOTE] BBL En already had the widget from the 2026-07-01 restore (Update to FILE 4).
+     No Review JSON-LD was added (procedure pages aren't eligible for review rich
+     results) — the widget is presentational/live-feed only.
+
