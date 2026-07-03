@@ -136,6 +136,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "lipo 360 miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "lipo 360 miami"
       }
     ],
     "competitors": [
@@ -250,6 +255,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -366,6 +375,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -480,6 +493,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -596,6 +613,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -711,236 +732,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://vixenplasticsurgery.com/",
-        "title": "Vixen Plastic Surgery: Cosmetic Surgery in Miami",
-        "domain": "vixenplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
           },
           {
-            "date": "2026-06-07",
-            "position": 4
-          },
-          {
-            "date": "2026-06-08",
-            "position": 4
-          },
-          {
-            "date": "2026-06-09",
+            "date": "2026-07-03",
             "position": 5
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://www.drwilliammiami.com/",
-        "title": "Dr. William Miami | Board Certified Plastic Surgeon in Florida | Ogee ...",
-        "domain": "drwilliammiami.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
           }
         ]
       },
@@ -1056,6 +851,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -1170,6 +969,248 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.instagram.com/reel/DWEtpyXj9R0/",
+        "title": "Lipo 360 + BBL with Dr. Lipo New curves, more confidence! (954 ...",
+        "domain": "instagram.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": 8
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://revivesurgery.com/body/lipo-360/",
+        "title": "Lipo 360 in Miami, FL | Revive Plastic Surgery",
+        "domain": "revivesurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": 9
+          },
+          {
+            "date": "2026-06-11",
+            "position": 8
+          },
+          {
+            "date": "2026-06-12",
+            "position": 7
+          },
+          {
+            "date": "2026-06-13",
+            "position": 8
+          },
+          {
+            "date": "2026-06-14",
+            "position": 9
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 9
+          },
+          {
+            "date": "2026-06-18",
+            "position": 10
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": 8
+          },
+          {
+            "date": "2026-06-21",
+            "position": 8
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": 8
+          },
+          {
+            "date": "2026-06-24",
+            "position": 6
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
           }
         ]
@@ -1312,6 +1353,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "liposucción 360 en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "liposucción 360 en miami"
       }
     ],
     "competitors": [
@@ -1426,6 +1472,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -1542,6 +1592,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -1656,6 +1710,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -1772,121 +1830,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
-        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción?",
-        "domain": "daviddelgadocirujano.com",
-        "series": [
+          },
           {
-            "date": "2026-06-06",
+            "date": "2026-07-03",
             "position": 4
-          },
-          {
-            "date": "2026-06-07",
-            "position": 4
-          },
-          {
-            "date": "2026-06-08",
-            "position": 4
-          },
-          {
-            "date": "2026-06-09",
-            "position": 3
-          },
-          {
-            "date": "2026-06-10",
-            "position": 5
-          },
-          {
-            "date": "2026-06-11",
-            "position": 8
-          },
-          {
-            "date": "2026-06-12",
-            "position": 4
-          },
-          {
-            "date": "2026-06-13",
-            "position": 4
-          },
-          {
-            "date": "2026-06-14",
-            "position": 4
-          },
-          {
-            "date": "2026-06-15",
-            "position": 4
-          },
-          {
-            "date": "2026-06-16",
-            "position": 8
-          },
-          {
-            "date": "2026-06-17",
-            "position": 5
-          },
-          {
-            "date": "2026-06-18",
-            "position": 5
-          },
-          {
-            "date": "2026-06-19",
-            "position": 8
-          },
-          {
-            "date": "2026-06-20",
-            "position": 4
-          },
-          {
-            "date": "2026-06-21",
-            "position": 4
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 4
-          },
-          {
-            "date": "2026-06-27",
-            "position": 4
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
           }
         ]
       },
@@ -2002,121 +1949,129 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360",
-        "domain": "miaaesthetics.com",
+        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
+        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción?",
+        "domain": "daviddelgadocirujano.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 7
+            "position": 4
           },
           {
             "date": "2026-06-07",
-            "position": 6
+            "position": 4
           },
           {
             "date": "2026-06-08",
-            "position": 10
+            "position": 4
           },
           {
             "date": "2026-06-09",
-            "position": 6
-          },
-          {
-            "date": "2026-06-10",
-            "position": 10
-          },
-          {
-            "date": "2026-06-11",
-            "position": 7
-          },
-          {
-            "date": "2026-06-12",
-            "position": 6
-          },
-          {
-            "date": "2026-06-13",
-            "position": 6
-          },
-          {
-            "date": "2026-06-14",
-            "position": 8
-          },
-          {
-            "date": "2026-06-15",
-            "position": 10
-          },
-          {
-            "date": "2026-06-16",
-            "position": 7
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": 9
-          },
-          {
-            "date": "2026-06-20",
-            "position": 9
-          },
-          {
-            "date": "2026-06-21",
-            "position": 8
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 8
-          },
-          {
-            "date": "2026-07-01",
             "position": 3
           },
           {
-            "date": "2026-07-02",
+            "date": "2026-06-10",
+            "position": 5
+          },
+          {
+            "date": "2026-06-11",
+            "position": 8
+          },
+          {
+            "date": "2026-06-12",
+            "position": 4
+          },
+          {
+            "date": "2026-06-13",
+            "position": 4
+          },
+          {
+            "date": "2026-06-14",
+            "position": 4
+          },
+          {
+            "date": "2026-06-15",
+            "position": 4
+          },
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 5
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": 4
+          },
+          {
+            "date": "2026-06-21",
+            "position": 4
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
             "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -2232,6 +2187,248 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
+        "title": "Lipo 360",
+        "domain": "miaaesthetics.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 7
+          },
+          {
+            "date": "2026-06-07",
+            "position": 6
+          },
+          {
+            "date": "2026-06-08",
+            "position": 10
+          },
+          {
+            "date": "2026-06-09",
+            "position": 6
+          },
+          {
+            "date": "2026-06-10",
+            "position": 10
+          },
+          {
+            "date": "2026-06-11",
+            "position": 7
+          },
+          {
+            "date": "2026-06-12",
+            "position": 6
+          },
+          {
+            "date": "2026-06-13",
+            "position": 6
+          },
+          {
+            "date": "2026-06-14",
+            "position": 8
+          },
+          {
+            "date": "2026-06-15",
+            "position": 10
+          },
+          {
+            "date": "2026-06-16",
+            "position": 7
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": 9
+          },
+          {
+            "date": "2026-06-20",
+            "position": 9
+          },
+          {
+            "date": "2026-06-21",
+            "position": 8
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": 9
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://revivesurgery.com/body/lipo-360/",
+        "title": "Lipo 360 in Miami, FL",
+        "domain": "revivesurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 10
+          },
+          {
+            "date": "2026-06-07",
+            "position": 10
+          },
+          {
+            "date": "2026-06-08",
+            "position": 9
+          },
+          {
+            "date": "2026-06-09",
+            "position": 9
+          },
+          {
+            "date": "2026-06-10",
+            "position": 9
+          },
+          {
+            "date": "2026-06-11",
+            "position": 10
+          },
+          {
+            "date": "2026-06-12",
+            "position": 9
+          },
+          {
+            "date": "2026-06-13",
+            "position": 9
+          },
+          {
+            "date": "2026-06-14",
+            "position": 10
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": 9
+          },
+          {
+            "date": "2026-06-17",
+            "position": 10
+          },
+          {
+            "date": "2026-06-18",
+            "position": 10
+          },
+          {
+            "date": "2026-06-19",
+            "position": 10
+          },
+          {
+            "date": "2026-06-20",
+            "position": 10
+          },
+          {
+            "date": "2026-06-21",
+            "position": 9
+          },
+          {
+            "date": "2026-06-22",
+            "position": 9
+          },
+          {
+            "date": "2026-06-23",
+            "position": 9
+          },
+          {
+            "date": "2026-06-24",
+            "position": 7
+          },
+          {
+            "date": "2026-06-25",
+            "position": 7
+          },
+          {
+            "date": "2026-06-26",
+            "position": 7
+          },
+          {
+            "date": "2026-06-27",
+            "position": 8
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       }
@@ -2373,6 +2570,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "breast implants miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "breast implants miami"
       }
     ],
     "competitors": [
@@ -2488,6 +2690,129 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Miami Breast Implants | Miami Plastic Surgery",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 2
+          },
+          {
+            "date": "2026-06-07",
+            "position": 2
+          },
+          {
+            "date": "2026-06-08",
+            "position": 2
+          },
+          {
+            "date": "2026-06-09",
+            "position": 2
+          },
+          {
+            "date": "2026-06-10",
+            "position": 2
+          },
+          {
+            "date": "2026-06-11",
+            "position": 2
+          },
+          {
+            "date": "2026-06-12",
+            "position": 2
+          },
+          {
+            "date": "2026-06-13",
+            "position": 2
+          },
+          {
+            "date": "2026-06-14",
+            "position": 2
+          },
+          {
+            "date": "2026-06-15",
+            "position": 2
+          },
+          {
+            "date": "2026-06-16",
+            "position": 2
+          },
+          {
+            "date": "2026-06-17",
+            "position": 2
+          },
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 2
+          },
+          {
+            "date": "2026-06-28",
+            "position": 2
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -2603,127 +2928,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-augmentation/",
-        "title": "Miami Breast Implants",
-        "domain": "miamiplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 2
           },
           {
-            "date": "2026-06-07",
-            "position": 2
-          },
-          {
-            "date": "2026-06-08",
-            "position": 2
-          },
-          {
-            "date": "2026-06-09",
-            "position": 2
-          },
-          {
-            "date": "2026-06-10",
-            "position": 2
-          },
-          {
-            "date": "2026-06-11",
-            "position": 2
-          },
-          {
-            "date": "2026-06-12",
-            "position": 2
-          },
-          {
-            "date": "2026-06-13",
-            "position": 2
-          },
-          {
-            "date": "2026-06-14",
-            "position": 2
-          },
-          {
-            "date": "2026-06-15",
-            "position": 2
-          },
-          {
-            "date": "2026-06-16",
-            "position": 2
-          },
-          {
-            "date": "2026-06-17",
-            "position": 2
-          },
-          {
-            "date": "2026-06-18",
-            "position": 2
-          },
-          {
-            "date": "2026-06-19",
-            "position": 2
-          },
-          {
-            "date": "2026-06-20",
-            "position": 2
-          },
-          {
-            "date": "2026-06-21",
-            "position": 2
-          },
-          {
-            "date": "2026-06-22",
-            "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 2
-          },
-          {
-            "date": "2026-06-24",
-            "position": 2
-          },
-          {
-            "date": "2026-06-25",
-            "position": 2
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 2
-          },
-          {
-            "date": "2026-06-28",
-            "position": 2
-          },
-          {
-            "date": "2026-06-29",
-            "position": 2
-          },
-          {
-            "date": "2026-06-30",
-            "position": 2
-          },
-          {
-            "date": "2026-07-01",
-            "position": 3
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 3
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
-        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon ...",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -2833,12 +3047,135 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
+        "title": "Breast Augmentation Miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": 6
+          },
+          {
+            "date": "2026-06-12",
+            "position": 6
+          },
+          {
+            "date": "2026-06-13",
+            "position": 6
+          },
+          {
+            "date": "2026-06-14",
+            "position": 6
+          },
+          {
+            "date": "2026-06-15",
+            "position": 6
+          },
+          {
+            "date": "2026-06-16",
+            "position": 6
+          },
+          {
+            "date": "2026-06-17",
+            "position": 6
+          },
+          {
+            "date": "2026-06-18",
+            "position": 6
+          },
+          {
+            "date": "2026-06-19",
+            "position": 6
+          },
+          {
+            "date": "2026-06-20",
+            "position": 6
+          },
+          {
+            "date": "2026-06-21",
+            "position": 6
+          },
+          {
+            "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 5
+          },
+          {
+            "date": "2026-06-26",
+            "position": 6
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 6
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
         "url": "https://drgcosmeticsurgery.com/gummy-bear-breast-implants/",
-        "title": "Gummy Bear Breast Implants - Miami",
+        "title": "Gummy Bear Breast Implants - Miami - DRG Cosmetic Surgery",
         "domain": "drgcosmeticsurgery.com",
         "series": [
           {
@@ -2948,13 +3285,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
-        "title": "Best Breast Augmentation in Miami, FL",
-        "domain": "gablesplasticsurgery.com",
+        "url": "https://www.talroudnerplasticsurgery.com/breast-surgery/",
+        "title": "Dr. Tal T Roudner, Miami Breast Surgery Specialist",
+        "domain": "talroudnerplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
@@ -2966,7 +3307,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-08",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-09",
@@ -2974,7 +3315,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-10",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-11",
@@ -2990,15 +3331,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-14",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-15",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-16",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-17",
@@ -3006,39 +3347,158 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-18",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 8
+            "position": 5
           },
           {
             "date": "2026-06-23",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 9
+            "position": 7
           },
           {
             "date": "2026-06-25",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-26",
-            "position": 10
+            "position": 9
+          },
+          {
+            "date": "2026-06-27",
+            "position": 8
+          },
+          {
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://imagosplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Best Breast Augmentation Miami, FL | Imagos Plastic Surgery",
+        "domain": "imagosplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
           },
           {
             "date": "2026-06-27",
@@ -3050,25 +3510,148 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": 10
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
             "position": null
           },
           {
+            "date": "2026-06-30",
+            "position": 7
+          },
+          {
+            "date": "2026-07-01",
+            "position": 10
+          },
+          {
             "date": "2026-07-02",
-            "position": 6
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://4beauty.net/breast-implants/",
+        "title": "Breast Implants in Miami - 4Beauty Aesthetic Institute",
+        "domain": "4beauty.net",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 8
+          },
+          {
+            "date": "2026-06-07",
+            "position": 10
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": 7
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": 9
+          },
+          {
+            "date": "2026-06-12",
+            "position": 9
+          },
+          {
+            "date": "2026-06-13",
+            "position": 9
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": 8
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": 7
+          },
+          {
+            "date": "2026-06-18",
+            "position": 7
+          },
+          {
+            "date": "2026-06-19",
+            "position": 7
+          },
+          {
+            "date": "2026-06-20",
+            "position": 7
+          },
+          {
+            "date": "2026-06-21",
+            "position": 8
+          },
+          {
+            "date": "2026-06-22",
+            "position": 9
+          },
+          {
+            "date": "2026-06-23",
+            "position": 7
+          },
+          {
+            "date": "2026-06-24",
+            "position": 8
+          },
+          {
+            "date": "2026-06-25",
+            "position": 7
+          },
+          {
+            "date": "2026-06-26",
+            "position": 8
+          },
+          {
+            "date": "2026-06-27",
+            "position": 7
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": 7
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
       {
         "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
-        "title": "Top Breast Augmentation Doctors in Miami, FL",
+        "title": "Top Breast Augmentation Doctors in Miami, FL - Realself",
         "domain": "realself.com",
         "series": [
           {
@@ -3178,236 +3761,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami - Starts at $3000",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
           },
           {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/breast/augmentation-implants/",
-        "title": "Breast Augmentation & Breast Implants",
-        "domain": "miaaesthetics.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
+            "date": "2026-07-03",
+            "position": 10
           }
         ]
       }
@@ -3549,6 +3906,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "implantes de senos en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "implantes de senos en miami"
       }
     ],
     "competitors": [
@@ -3663,6 +4025,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -3779,6 +4145,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -3893,6 +4263,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -4009,6 +4383,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -4123,6 +4501,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -4239,121 +4621,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://aeris.co/es/procedimientos/senos/aumento-de-senos/",
-        "title": "Best Aumento de Senos Miami, FL | Aeris",
-        "domain": "aeris.co",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 8
           },
           {
-            "date": "2026-06-07",
-            "position": 8
-          },
-          {
-            "date": "2026-06-08",
-            "position": 8
-          },
-          {
-            "date": "2026-06-09",
-            "position": 8
-          },
-          {
-            "date": "2026-06-10",
-            "position": 8
-          },
-          {
-            "date": "2026-06-11",
-            "position": 8
-          },
-          {
-            "date": "2026-06-12",
-            "position": 5
-          },
-          {
-            "date": "2026-06-13",
-            "position": 8
-          },
-          {
-            "date": "2026-06-14",
-            "position": 5
-          },
-          {
-            "date": "2026-06-15",
-            "position": 8
-          },
-          {
-            "date": "2026-06-16",
-            "position": 8
-          },
-          {
-            "date": "2026-06-17",
-            "position": 9
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": 8
-          },
-          {
-            "date": "2026-06-22",
-            "position": 8
-          },
-          {
-            "date": "2026-06-23",
-            "position": 8
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 7
-          },
-          {
-            "date": "2026-06-28",
-            "position": 8
-          },
-          {
-            "date": "2026-06-29",
-            "position": 8
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -4469,6 +4740,129 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://aeris.co/es/procedimientos/senos/aumento-de-senos/",
+        "title": "Best Aumento de Senos Miami, FL | Aeris",
+        "domain": "aeris.co",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 8
+          },
+          {
+            "date": "2026-06-07",
+            "position": 8
+          },
+          {
+            "date": "2026-06-08",
+            "position": 8
+          },
+          {
+            "date": "2026-06-09",
+            "position": 8
+          },
+          {
+            "date": "2026-06-10",
+            "position": 8
+          },
+          {
+            "date": "2026-06-11",
+            "position": 8
+          },
+          {
+            "date": "2026-06-12",
+            "position": 5
+          },
+          {
+            "date": "2026-06-13",
+            "position": 8
+          },
+          {
+            "date": "2026-06-14",
+            "position": 5
+          },
+          {
+            "date": "2026-06-15",
+            "position": 8
+          },
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 9
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 8
+          },
+          {
+            "date": "2026-06-22",
+            "position": 8
+          },
+          {
+            "date": "2026-06-23",
+            "position": 8
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": 8
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": 7
+          },
+          {
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -4583,6 +4977,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
           }
         ]
@@ -4720,6 +5118,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "brazilian butt lift miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "brazilian butt lift miami"
       }
     ],
     "competitors": [
@@ -4831,12 +5234,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
         "url": "https://www.cgcosmetic.com/brazilian-butt-lift-miami-fat-transfer/",
-        "title": "Brazilian Butt Lift Miami, BBL From $3,500 - CG Cosmetic Surgery",
+        "title": "Brazilian Butt Lift Miami, BBL From ...",
         "domain": "cgcosmetic.com",
         "series": [
           {
@@ -4941,6 +5348,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
             "position": 2
           }
         ]
@@ -5053,123 +5464,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/men/body/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift Miami, FL | The Maercks Institute",
-        "domain": "themaercksinstitute.com",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": 7
           },
           {
-            "date": "2026-06-08",
-            "position": 4
-          },
-          {
-            "date": "2026-06-09",
-            "position": 4
-          },
-          {
-            "date": "2026-06-10",
-            "position": 8
-          },
-          {
-            "date": "2026-06-11",
-            "position": 4
-          },
-          {
-            "date": "2026-06-12",
+            "date": "2026-07-03",
             "position": 3
-          },
-          {
-            "date": "2026-06-13",
-            "position": 3
-          },
-          {
-            "date": "2026-06-14",
-            "position": 5
-          },
-          {
-            "date": "2026-06-15",
-            "position": 8
-          },
-          {
-            "date": "2026-06-16",
-            "position": 3
-          },
-          {
-            "date": "2026-06-17",
-            "position": 3
-          },
-          {
-            "date": "2026-06-18",
-            "position": 4
-          },
-          {
-            "date": "2026-06-19",
-            "position": 3
-          },
-          {
-            "date": "2026-06-20",
-            "position": 4
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 3
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 9
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 4
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 4
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/brazilian-butt-lift-miami",
-        "title": "Best Brazilian Butt Lift Miami | Icon Cosmetic Center",
+        "title": "Best Brazilian Butt Lift Miami",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -5275,12 +5579,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/brazilian-butt-lift-miami/",
-        "title": "Brazilian Butt Lift Miami - The Secret Plastic Surgery",
+        "title": "Brazilian Butt Lift Miami",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -5386,12 +5694,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://4beauty.net/buttocks/reverse-brazilian-butt-lift-in-miami-fl/",
-        "title": "Reverse Brazilian Butt Lift in Miami, FL | 4Beauty Aesthetic Institute",
+        "url": "https://4beauty.net/buttocks/brazilian-butt-lift/",
+        "title": "Brazilian Butt Lift in Miami, FL",
         "domain": "4beauty.net",
         "series": [
           {
@@ -5424,289 +5736,67 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 7
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 8
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.americanboardcosmeticsurgery.org/cosmetic-procedures/body/brazilian-butt-lift-surgery/",
-        "title": "Brazilian Butt Lift | Buttock Enhancement",
-        "domain": "americanboardcosmeticsurgery.org",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
             "position": 9
           },
           {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://miamilifecosmetic.com/procedure/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift – Miami Life Cosmetic Surgery",
-        "domain": "miamilifecosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": 8
-          },
-          {
-            "date": "2026-06-08",
-            "position": 9
-          },
-          {
-            "date": "2026-06-09",
-            "position": 8
-          },
-          {
-            "date": "2026-06-10",
-            "position": 7
-          },
-          {
-            "date": "2026-06-11",
-            "position": 8
-          },
-          {
-            "date": "2026-06-12",
+            "date": "2026-06-15",
             "position": 10
           },
           {
-            "date": "2026-06-13",
-            "position": 9
-          },
-          {
-            "date": "2026-06-14",
-            "position": 8
-          },
-          {
-            "date": "2026-06-15",
-            "position": 7
-          },
-          {
             "date": "2026-06-16",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-17",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-18",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 8
+            "position": 10
           },
           {
             "date": "2026-06-21",
-            "position": 7
+            "position": 8
           },
           {
             "date": "2026-06-22",
-            "position": 7
+            "position": 8
           },
           {
             "date": "2026-06-23",
-            "position": 7
+            "position": 8
           },
           {
             "date": "2026-06-24",
-            "position": 7
-          },
-          {
-            "date": "2026-06-25",
             "position": 9
           },
           {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
             "date": "2026-06-26",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-28",
-            "position": 7
+            "position": 8
           },
           {
             "date": "2026-06-29",
-            "position": 8
+            "position": 9
           },
           {
             "date": "2026-06-30",
@@ -5718,7 +5808,471 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://revivesurgery.com/body/brazilian-butt-lift/",
+        "title": "Brazilian Butt Lift | BBL in Miami, FL",
+        "domain": "revivesurgery.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": 10
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 10
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://drbernabevazquez.com/best-brazilian-butt-lift-in-miami/",
+        "title": "Best Brazilian Butt Lift in Miami",
+        "domain": "drbernabevazquez.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Nqdk37pKByE",
+        "title": "BBL Results 5 Years Later",
+        "domain": "youtube.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://dollsplasticsurgery.com/procedures/bbl-surgery-miami/",
+        "title": "Brazilian Butt Lift Miami - BBL Surgery From $33.99/Week",
+        "domain": "dollsplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 10
           }
         ]
       }
@@ -5855,120 +6409,14 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "breast augmentation miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "breast augmentation miami"
       }
     ],
     "competitors": [
-      {
-        "url": "https://www.cgcosmetic.com/",
-        "title": "Miami Plastic Surgery Center, Top Plastic Surgeons",
-        "domain": "cgcosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": 1
-          },
-          {
-            "date": "2026-06-08",
-            "position": 1
-          },
-          {
-            "date": "2026-06-09",
-            "position": 1
-          },
-          {
-            "date": "2026-06-10",
-            "position": 1
-          },
-          {
-            "date": "2026-06-11",
-            "position": 1
-          },
-          {
-            "date": "2026-06-12",
-            "position": 1
-          },
-          {
-            "date": "2026-06-13",
-            "position": 1
-          },
-          {
-            "date": "2026-06-14",
-            "position": 1
-          },
-          {
-            "date": "2026-06-15",
-            "position": 1
-          },
-          {
-            "date": "2026-06-16",
-            "position": 1
-          },
-          {
-            "date": "2026-06-17",
-            "position": 1
-          },
-          {
-            "date": "2026-06-18",
-            "position": 1
-          },
-          {
-            "date": "2026-06-19",
-            "position": 1
-          },
-          {
-            "date": "2026-06-20",
-            "position": 1
-          },
-          {
-            "date": "2026-06-21",
-            "position": 1
-          },
-          {
-            "date": "2026-06-22",
-            "position": 1
-          },
-          {
-            "date": "2026-06-23",
-            "position": 1
-          },
-          {
-            "date": "2026-06-24",
-            "position": 1
-          },
-          {
-            "date": "2026-06-25",
-            "position": 1
-          },
-          {
-            "date": "2026-06-26",
-            "position": 1
-          },
-          {
-            "date": "2026-06-27",
-            "position": 1
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 1
-          },
-          {
-            "date": "2026-06-30",
-            "position": 1
-          },
-          {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          }
-        ]
-      },
       {
         "url": "https://www.lhochsteinmd.com/",
         "title": "Miami Florida Plastic Surgeon | Leonard M. Hochstein M.D.",
@@ -6077,12 +6525,131 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://www.cgcosmetic.com/",
+        "title": "Miami Plastic Surgery Center, Top Plastic Surgeons",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": 1
+          },
+          {
+            "date": "2026-06-08",
+            "position": 1
+          },
+          {
+            "date": "2026-06-09",
+            "position": 1
+          },
+          {
+            "date": "2026-06-10",
+            "position": 1
+          },
+          {
+            "date": "2026-06-11",
+            "position": 1
+          },
+          {
+            "date": "2026-06-12",
+            "position": 1
+          },
+          {
+            "date": "2026-06-13",
+            "position": 1
+          },
+          {
+            "date": "2026-06-14",
+            "position": 1
+          },
+          {
+            "date": "2026-06-15",
+            "position": 1
+          },
+          {
+            "date": "2026-06-16",
+            "position": 1
+          },
+          {
+            "date": "2026-06-17",
+            "position": 1
+          },
+          {
+            "date": "2026-06-18",
+            "position": 1
+          },
+          {
+            "date": "2026-06-19",
+            "position": 1
+          },
+          {
+            "date": "2026-06-20",
+            "position": 1
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": 1
+          },
+          {
+            "date": "2026-06-23",
+            "position": 1
+          },
+          {
+            "date": "2026-06-24",
+            "position": 1
+          },
+          {
+            "date": "2026-06-25",
+            "position": 1
+          },
+          {
+            "date": "2026-06-26",
+            "position": 1
+          },
+          {
+            "date": "2026-06-27",
+            "position": 1
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 1
+          },
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": 1
+          },
+          {
+            "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
-        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon ...",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -6188,6 +6755,240 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1qyphrt/breast_augmentation_ogee_plastic_surgery_dr/",
+        "title": "Breast Augmentation | Ogee plastic Surgery | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1ui0fro/breast_augmentation_dr_william_miami/",
+        "title": "Breast Augmentation | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
@@ -6299,6 +7100,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -6410,12 +7215,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami - Icon Cosmetic Center",
+        "title": "Breast Augmentation Miami with Implants ...",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -6521,12 +7330,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
       {
         "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
-        "title": "Best Breast Augmentation in Miami, FL | Gables Plastic Surgery",
+        "title": "Best Breast Augmentation in Miami, FL",
         "domain": "gablesplasticsurgery.com",
         "series": [
           {
@@ -6632,12 +7445,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-augmentation-miami/",
-        "title": "Breast augmentation Miami - The Secret Plastic Surgery",
+        "title": "Breast augmentation Miami",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -6743,117 +7560,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
-        "title": "Top Breast Augmentation Doctors in Miami, FL - Realself",
-        "domain": "realself.com",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": 9
           },
           {
-            "date": "2026-06-08",
-            "position": 8
-          },
-          {
-            "date": "2026-06-09",
-            "position": 9
-          },
-          {
-            "date": "2026-06-10",
-            "position": 8
-          },
-          {
-            "date": "2026-06-11",
-            "position": 9
-          },
-          {
-            "date": "2026-06-12",
-            "position": 9
-          },
-          {
-            "date": "2026-06-13",
+            "date": "2026-07-03",
             "position": 10
-          },
-          {
-            "date": "2026-06-14",
-            "position": 10
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": 10
-          },
-          {
-            "date": "2026-06-17",
-            "position": 10
-          },
-          {
-            "date": "2026-06-18",
-            "position": 9
-          },
-          {
-            "date": "2026-06-19",
-            "position": 9
-          },
-          {
-            "date": "2026-06-20",
-            "position": 10
-          },
-          {
-            "date": "2026-06-21",
-            "position": 9
-          },
-          {
-            "date": "2026-06-22",
-            "position": 9
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 10
-          },
-          {
-            "date": "2026-06-26",
-            "position": 10
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": 9
-          },
-          {
-            "date": "2026-06-30",
-            "position": 8
-          },
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
           }
         ]
       }
@@ -6980,833 +7690,14 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 2,
         "keyword": "aumento de senos en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 2,
+        "keyword": "aumento de senos en miami"
       }
     ],
     "competitors": [
-      {
-        "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
-        "title": "Aumento de Senos - Miami, FL",
-        "domain": "careagaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 2
-          },
-          {
-            "date": "2026-06-10",
-            "position": 2
-          },
-          {
-            "date": "2026-06-11",
-            "position": 2
-          },
-          {
-            "date": "2026-06-12",
-            "position": 2
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": 2
-          },
-          {
-            "date": "2026-06-15",
-            "position": 2
-          },
-          {
-            "date": "2026-06-16",
-            "position": 2
-          },
-          {
-            "date": "2026-06-17",
-            "position": 2
-          },
-          {
-            "date": "2026-06-18",
-            "position": 2
-          },
-          {
-            "date": "2026-06-19",
-            "position": 2
-          },
-          {
-            "date": "2026-06-20",
-            "position": 2
-          },
-          {
-            "date": "2026-06-21",
-            "position": 2
-          },
-          {
-            "date": "2026-06-22",
-            "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 2
-          },
-          {
-            "date": "2026-06-24",
-            "position": 2
-          },
-          {
-            "date": "2026-06-25",
-            "position": 1
-          },
-          {
-            "date": "2026-06-26",
-            "position": 1
-          },
-          {
-            "date": "2026-06-27",
-            "position": 1
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 1
-          },
-          {
-            "date": "2026-06-30",
-            "position": 1
-          },
-          {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami $2799 - Fl",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 4
-          },
-          {
-            "date": "2026-06-10",
-            "position": 4
-          },
-          {
-            "date": "2026-06-11",
-            "position": 4
-          },
-          {
-            "date": "2026-06-12",
-            "position": 4
-          },
-          {
-            "date": "2026-06-13",
-            "position": 2
-          },
-          {
-            "date": "2026-06-14",
-            "position": 4
-          },
-          {
-            "date": "2026-06-15",
-            "position": 4
-          },
-          {
-            "date": "2026-06-16",
-            "position": 4
-          },
-          {
-            "date": "2026-06-17",
-            "position": 4
-          },
-          {
-            "date": "2026-06-18",
-            "position": 4
-          },
-          {
-            "date": "2026-06-19",
-            "position": 4
-          },
-          {
-            "date": "2026-06-20",
-            "position": 4
-          },
-          {
-            "date": "2026-06-21",
-            "position": 4
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 3
-          },
-          {
-            "date": "2026-06-24",
-            "position": 3
-          },
-          {
-            "date": "2026-06-25",
-            "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 2
-          },
-          {
-            "date": "2026-06-28",
-            "position": 2
-          },
-          {
-            "date": "2026-06-29",
-            "position": 2
-          },
-          {
-            "date": "2026-06-30",
-            "position": 2
-          },
-          {
-            "date": "2026-07-01",
-            "position": 2
-          },
-          {
-            "date": "2026-07-02",
-            "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami, ...",
-        "domain": "arykraumd.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 3
-          },
-          {
-            "date": "2026-06-10",
-            "position": 3
-          },
-          {
-            "date": "2026-06-11",
-            "position": 3
-          },
-          {
-            "date": "2026-06-12",
-            "position": 3
-          },
-          {
-            "date": "2026-06-13",
-            "position": 4
-          },
-          {
-            "date": "2026-06-14",
-            "position": 3
-          },
-          {
-            "date": "2026-06-15",
-            "position": 3
-          },
-          {
-            "date": "2026-06-16",
-            "position": 3
-          },
-          {
-            "date": "2026-06-17",
-            "position": 3
-          },
-          {
-            "date": "2026-06-18",
-            "position": 3
-          },
-          {
-            "date": "2026-06-19",
-            "position": 3
-          },
-          {
-            "date": "2026-06-20",
-            "position": 3
-          },
-          {
-            "date": "2026-06-21",
-            "position": 3
-          },
-          {
-            "date": "2026-06-22",
-            "position": 3
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 4
-          },
-          {
-            "date": "2026-06-27",
-            "position": 4
-          },
-          {
-            "date": "2026-06-28",
-            "position": 4
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 4
-          },
-          {
-            "date": "2026-07-01",
-            "position": 3
-          },
-          {
-            "date": "2026-07-02",
-            "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
-        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami",
-        "domain": "miamiplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 1
-          },
-          {
-            "date": "2026-06-10",
-            "position": 1
-          },
-          {
-            "date": "2026-06-11",
-            "position": 1
-          },
-          {
-            "date": "2026-06-12",
-            "position": 1
-          },
-          {
-            "date": "2026-06-13",
-            "position": 3
-          },
-          {
-            "date": "2026-06-14",
-            "position": 1
-          },
-          {
-            "date": "2026-06-15",
-            "position": 1
-          },
-          {
-            "date": "2026-06-16",
-            "position": 1
-          },
-          {
-            "date": "2026-06-17",
-            "position": 1
-          },
-          {
-            "date": "2026-06-18",
-            "position": 1
-          },
-          {
-            "date": "2026-06-19",
-            "position": 1
-          },
-          {
-            "date": "2026-06-20",
-            "position": 1
-          },
-          {
-            "date": "2026-06-21",
-            "position": 1
-          },
-          {
-            "date": "2026-06-22",
-            "position": 1
-          },
-          {
-            "date": "2026-06-23",
-            "position": 1
-          },
-          {
-            "date": "2026-06-24",
-            "position": 1
-          },
-          {
-            "date": "2026-06-25",
-            "position": 2
-          },
-          {
-            "date": "2026-06-26",
-            "position": 3
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 3
-          },
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami con Implantes ...",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 6
-          },
-          {
-            "date": "2026-06-10",
-            "position": 6
-          },
-          {
-            "date": "2026-06-11",
-            "position": 6
-          },
-          {
-            "date": "2026-06-12",
-            "position": 6
-          },
-          {
-            "date": "2026-06-13",
-            "position": 5
-          },
-          {
-            "date": "2026-06-14",
-            "position": 6
-          },
-          {
-            "date": "2026-06-15",
-            "position": 6
-          },
-          {
-            "date": "2026-06-16",
-            "position": 6
-          },
-          {
-            "date": "2026-06-17",
-            "position": 6
-          },
-          {
-            "date": "2026-06-18",
-            "position": 5
-          },
-          {
-            "date": "2026-06-19",
-            "position": 6
-          },
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 6
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": 6
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 6
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/aumento-de-senos-en-miami/",
-        "title": "Aumento de Senos en Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": 10
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": 6
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://aeris.co/es/procedimientos/senos/aumento-de-senos/",
-        "title": "Best Aumento de Senos Miami, FL | Aeris",
-        "domain": "aeris.co",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 8
-          },
-          {
-            "date": "2026-06-10",
-            "position": 7
-          },
-          {
-            "date": "2026-06-11",
-            "position": 7
-          },
-          {
-            "date": "2026-06-12",
-            "position": 7
-          },
-          {
-            "date": "2026-06-13",
-            "position": 8
-          },
-          {
-            "date": "2026-06-14",
-            "position": 7
-          },
-          {
-            "date": "2026-06-15",
-            "position": 7
-          },
-          {
-            "date": "2026-06-16",
-            "position": 7
-          },
-          {
-            "date": "2026-06-17",
-            "position": 7
-          },
-          {
-            "date": "2026-06-18",
-            "position": 8
-          },
-          {
-            "date": "2026-06-19",
-            "position": 7
-          },
-          {
-            "date": "2026-06-20",
-            "position": 7
-          },
-          {
-            "date": "2026-06-21",
-            "position": 9
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": 7
-          },
-          {
-            "date": "2026-06-27",
-            "position": 7
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": 7
-          },
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://epicplasticsurgery.com/sp/senos/aumento-de-senos/",
-        "title": "Aumento de Senos en Miami | Epic Cirugía Plástica",
-        "domain": "epicplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 7
-          },
-          {
-            "date": "2026-06-10",
-            "position": 8
-          },
-          {
-            "date": "2026-06-11",
-            "position": 8
-          },
-          {
-            "date": "2026-06-12",
-            "position": 9
-          },
-          {
-            "date": "2026-06-13",
-            "position": 7
-          },
-          {
-            "date": "2026-06-14",
-            "position": 9
-          },
-          {
-            "date": "2026-06-15",
-            "position": 9
-          },
-          {
-            "date": "2026-06-16",
-            "position": 9
-          },
-          {
-            "date": "2026-06-17",
-            "position": 9
-          },
-          {
-            "date": "2026-06-18",
-            "position": 9
-          },
-          {
-            "date": "2026-06-19",
-            "position": 9
-          },
-          {
-            "date": "2026-06-20",
-            "position": 9
-          },
-          {
-            "date": "2026-06-21",
-            "position": 8
-          },
-          {
-            "date": "2026-06-22",
-            "position": 10
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 10
-          },
-          {
-            "date": "2026-06-25",
-            "position": 10
-          },
-          {
-            "date": "2026-06-26",
-            "position": 9
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
-            "position": 9
-          },
-          {
-            "date": "2026-06-29",
-            "position": 9
-          },
-          {
-            "date": "2026-06-30",
-            "position": 9
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 8
-          }
-        ]
-      },
       {
         "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
         "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
@@ -7907,12 +7798,551 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "title": "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 4
+          },
+          {
+            "date": "2026-06-10",
+            "position": 4
+          },
+          {
+            "date": "2026-06-11",
+            "position": 4
+          },
+          {
+            "date": "2026-06-12",
+            "position": 4
+          },
+          {
+            "date": "2026-06-13",
+            "position": 2
+          },
+          {
+            "date": "2026-06-14",
+            "position": 4
+          },
+          {
+            "date": "2026-06-15",
+            "position": 4
+          },
+          {
+            "date": "2026-06-16",
+            "position": 4
+          },
+          {
+            "date": "2026-06-17",
+            "position": 4
+          },
+          {
+            "date": "2026-06-18",
+            "position": 4
+          },
+          {
+            "date": "2026-06-19",
+            "position": 4
+          },
+          {
+            "date": "2026-06-20",
+            "position": 4
+          },
+          {
+            "date": "2026-06-21",
+            "position": 4
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 3
+          },
+          {
+            "date": "2026-06-24",
+            "position": 3
+          },
+          {
+            "date": "2026-06-25",
+            "position": 3
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 2
+          },
+          {
+            "date": "2026-06-28",
+            "position": 2
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/fat-transfer-miami-breast-enhancement/",
+        "title": "Aumento de Senos, Transferencia de Grasa - Miami Plastic Surgery",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": 8
+          },
+          {
+            "date": "2026-06-13",
+            "position": 10
+          },
+          {
+            "date": "2026-06-14",
+            "position": 8
+          },
+          {
+            "date": "2026-06-15",
+            "position": 8
+          },
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 8
+          },
+          {
+            "date": "2026-06-18",
+            "position": 7
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": 8
+          },
+          {
+            "date": "2026-06-21",
+            "position": 7
+          },
+          {
+            "date": "2026-06-22",
+            "position": 8
+          },
+          {
+            "date": "2026-06-23",
+            "position": 8
+          },
+          {
+            "date": "2026-06-24",
+            "position": 9
+          },
+          {
+            "date": "2026-06-25",
+            "position": 9
+          },
+          {
+            "date": "2026-06-26",
+            "position": 8
+          },
+          {
+            "date": "2026-06-27",
+            "position": 8
+          },
+          {
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 3
+          },
+          {
+            "date": "2026-06-10",
+            "position": 3
+          },
+          {
+            "date": "2026-06-11",
+            "position": 3
+          },
+          {
+            "date": "2026-06-12",
+            "position": 3
+          },
+          {
+            "date": "2026-06-13",
+            "position": 4
+          },
+          {
+            "date": "2026-06-14",
+            "position": 3
+          },
+          {
+            "date": "2026-06-15",
+            "position": 3
+          },
+          {
+            "date": "2026-06-16",
+            "position": 3
+          },
+          {
+            "date": "2026-06-17",
+            "position": 3
+          },
+          {
+            "date": "2026-06-18",
+            "position": 3
+          },
+          {
+            "date": "2026-06-19",
+            "position": 3
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 3
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 4
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/levantamiento-de-senos-en-miami/",
+        "title": "Levantamiento de senos Miami - The Secret Plastic Surgery",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 5
+          },
+          {
+            "date": "2026-06-10",
+            "position": 5
+          },
+          {
+            "date": "2026-06-11",
+            "position": 5
+          },
+          {
+            "date": "2026-06-12",
+            "position": 5
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": 5
+          },
+          {
+            "date": "2026-06-15",
+            "position": 5
+          },
+          {
+            "date": "2026-06-16",
+            "position": 5
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 6
+          },
+          {
+            "date": "2026-06-19",
+            "position": 5
+          },
+          {
+            "date": "2026-06-20",
+            "position": 6
+          },
+          {
+            "date": "2026-06-21",
+            "position": 6
+          },
+          {
+            "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 5
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://aeplasticsurgerymiami.com/es/procedimiento/aumento-de-senos/",
+        "title": "El mejor aumento de senos en Miami - A&E Plastic Surgery",
+        "domain": "aeplasticsurgerymiami.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
       {
         "url": "https://www.zuriplasticsurgery.com/es/senos/aumento-de-senos/",
-        "title": "Aumento de Senos Miami | Los mejores Implantes Mamarios",
+        "title": "Aumento de Senos Miami | Los mejores Implantes Mamarios | Dr. Zuri",
         "domain": "zuriplasticsurgery.com",
         "series": [
           {
@@ -8009,6 +8439,331 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 10
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.tiktok.com/@themiamiaesthetichannel/video/7555990174354640158",
+        "title": "Costo de un levantamiento de senos en Miami - TikTok",
+        "domain": "tiktok.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.miamibreastcenter.com/sp",
+        "title": "Reconstrucción y Aumento de Senos con Transferencia de Grasa ...",
+        "domain": "miamibreastcenter.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 10
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": 9
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
+        "title": "Aumento de Senos en miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 6
+          },
+          {
+            "date": "2026-06-10",
+            "position": 6
+          },
+          {
+            "date": "2026-06-11",
+            "position": 6
+          },
+          {
+            "date": "2026-06-12",
+            "position": 6
+          },
+          {
+            "date": "2026-06-13",
+            "position": 5
+          },
+          {
+            "date": "2026-06-14",
+            "position": 6
+          },
+          {
+            "date": "2026-06-15",
+            "position": 6
+          },
+          {
+            "date": "2026-06-16",
+            "position": 6
+          },
+          {
+            "date": "2026-06-17",
+            "position": 6
+          },
+          {
+            "date": "2026-06-18",
+            "position": 5
+          },
+          {
+            "date": "2026-06-19",
+            "position": 6
+          },
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 6
+          },
+          {
+            "date": "2026-06-25",
+            "position": 7
+          },
+          {
+            "date": "2026-06-26",
+            "position": 6
+          },
+          {
+            "date": "2026-06-27",
+            "position": 6
+          },
+          {
+            "date": "2026-06-28",
+            "position": 6
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -8136,12 +8891,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "levantamiento de gluteos brasileño en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "levantamiento de gluteos brasileño en miami"
       }
     ],
     "competitors": [
       {
         "url": "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami",
-        "title": "Levantamiento de Glúteos Brasileño en Miami - Avana Plastic Surgery",
+        "title": "Levantamiento de Glúteos Brasileño en Miami - $3800",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -8239,109 +8999,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/body/buttock-augmentation/",
-        "title": "Levantamiento de glúteos brasileño en Miami, FL",
-        "domain": "miamiplasticsurgery.com",
-        "series": [
+          },
           {
-            "date": "2026-06-09",
+            "date": "2026-07-03",
             "position": 1
-          },
-          {
-            "date": "2026-06-10",
-            "position": 1
-          },
-          {
-            "date": "2026-06-11",
-            "position": 1
-          },
-          {
-            "date": "2026-06-12",
-            "position": 3
-          },
-          {
-            "date": "2026-06-13",
-            "position": 3
-          },
-          {
-            "date": "2026-06-14",
-            "position": 2
-          },
-          {
-            "date": "2026-06-15",
-            "position": 2
-          },
-          {
-            "date": "2026-06-16",
-            "position": 1
-          },
-          {
-            "date": "2026-06-17",
-            "position": 1
-          },
-          {
-            "date": "2026-06-18",
-            "position": 1
-          },
-          {
-            "date": "2026-06-19",
-            "position": 1
-          },
-          {
-            "date": "2026-06-20",
-            "position": 2
-          },
-          {
-            "date": "2026-06-21",
-            "position": 1
-          },
-          {
-            "date": "2026-06-22",
-            "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 2
-          },
-          {
-            "date": "2026-06-24",
-            "position": 2
-          },
-          {
-            "date": "2026-06-25",
-            "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 2
-          },
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
-            "position": 2
           }
         ]
       },
@@ -8445,12 +9106,123 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/surgical-services/body/buttock-augmentation/",
+        "title": "Levantamiento de glúteos brasileño en Miami, FL",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 1
+          },
+          {
+            "date": "2026-06-10",
+            "position": 1
+          },
+          {
+            "date": "2026-06-11",
+            "position": 1
+          },
+          {
+            "date": "2026-06-12",
+            "position": 3
+          },
+          {
+            "date": "2026-06-13",
+            "position": 3
+          },
+          {
+            "date": "2026-06-14",
+            "position": 2
+          },
+          {
+            "date": "2026-06-15",
+            "position": 2
+          },
+          {
+            "date": "2026-06-16",
+            "position": 1
+          },
+          {
+            "date": "2026-06-17",
+            "position": 1
+          },
+          {
+            "date": "2026-06-18",
+            "position": 1
+          },
+          {
+            "date": "2026-06-19",
+            "position": 1
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 3
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": 3
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 3
+          },
+          {
+            "date": "2026-07-01",
+            "position": 1
+          },
+          {
+            "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
         "url": "https://www.careagaplasticsurgery.com/es/levantamiento-de-gluteos-brasileno/",
-        "title": "Levantamiento de glúteos brasileño - Miami, FL - Careaga Plastic ...",
+        "title": "Levantamiento de glúteos brasileño - Miami, FL",
         "domain": "careagaplasticsurgery.com",
         "series": [
           {
@@ -8548,172 +9320,73 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/aumento-de-gluteos-en-miami/",
-        "title": "Aumento de glúteos en Miami - The Secret Plastic Surgery",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 3
-          },
-          {
-            "date": "2026-06-10",
-            "position": 3
-          },
-          {
-            "date": "2026-06-11",
-            "position": 3
-          },
-          {
-            "date": "2026-06-12",
-            "position": 4
-          },
-          {
-            "date": "2026-06-13",
-            "position": 4
-          },
-          {
-            "date": "2026-06-14",
-            "position": 4
-          },
-          {
-            "date": "2026-06-15",
-            "position": 4
-          },
-          {
-            "date": "2026-06-16",
-            "position": 4
-          },
-          {
-            "date": "2026-06-17",
-            "position": 4
-          },
-          {
-            "date": "2026-06-18",
-            "position": 4
-          },
-          {
-            "date": "2026-06-19",
-            "position": 5
-          },
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 6
-          },
-          {
-            "date": "2026-06-24",
-            "position": 6
-          },
-          {
-            "date": "2026-06-25",
-            "position": 6
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/revision-de-levantamiento-de-gluteos-en-miami",
-        "title": "Revisión de Aumento de Glúteos en Miami | Icon Cosmetic Center",
+        "url": "https://iconcosmeticcenter.com/es/levantamiento-de-gluteos-brasileno",
+        "title": "Levantamiento de Gluteos Brasileño en Miami",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
             "date": "2026-06-09",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-10",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-11",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-12",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-13",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-14",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-15",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-16",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-17",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-18",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-23",
@@ -8721,7 +9394,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-24",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-25",
@@ -8729,7 +9402,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-26",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-27",
@@ -8741,7 +9414,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-30",
@@ -8749,120 +9422,21 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
             "position": null
           },
           {
-            "date": "2026-07-02",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://elpais.com/us/2025-10-27/miami-se-afianza-como-capital-del-lifting-brasileno-de-gluteos.html",
-        "title": "BBL: Miami se afianza como capital del 'lifting' brasileño de glúteos",
-        "domain": "elpais.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 8
-          },
-          {
-            "date": "2026-06-10",
-            "position": 10
-          },
-          {
-            "date": "2026-06-11",
-            "position": 8
-          },
-          {
-            "date": "2026-06-12",
-            "position": 9
-          },
-          {
-            "date": "2026-06-13",
-            "position": 9
-          },
-          {
-            "date": "2026-06-14",
-            "position": 10
-          },
-          {
-            "date": "2026-06-15",
-            "position": 10
-          },
-          {
-            "date": "2026-06-16",
-            "position": 7
-          },
-          {
-            "date": "2026-06-17",
-            "position": 7
-          },
-          {
-            "date": "2026-06-18",
-            "position": 7
-          },
-          {
-            "date": "2026-06-19",
-            "position": 7
-          },
-          {
-            "date": "2026-06-20",
-            "position": 8
-          },
-          {
-            "date": "2026-06-21",
-            "position": 9
-          },
-          {
-            "date": "2026-06-22",
-            "position": 8
-          },
-          {
-            "date": "2026-06-23",
+            "date": "2026-07-03",
             "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 5
-          },
-          {
-            "date": "2026-06-25",
-            "position": 5
-          },
-          {
-            "date": "2026-06-26",
-            "position": 8
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 6
-          },
-          {
-            "date": "2026-06-29",
-            "position": 7
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
           }
         ]
       },
       {
         "url": "https://www.youtube.com/watch?v=SCqS5OHCIfY",
-        "title": "Testimonio de BBL: Levantamiento de Glúteos Brasileño - YouTube",
+        "title": "Testimonio de BBL: Levantamiento de Glúteos Brasileño",
         "domain": "youtube.com",
         "series": [
           {
@@ -8960,6 +9534,117 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://xiluetaestheticsurgery.com/es/brazilian-butt-lift/",
+        "title": "Brazilian Butt Lift Miami | 10+ Años de Experiencia",
+        "domain": "xiluetaestheticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -9063,13 +9748,124 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://cnnespanol.cnn.com/2023/02/25/levantamiento-de-gluteos-brasileno-cirujano-instagram-vive-con-dolor-trax",
-        "title": "Se hizo un levantamiento de glúteos brasileño con un cirujano que ...",
-        "domain": "cnnespanol.cnn.com",
+        "url": "https://squlptbody.com/es/services/awake-bbl/",
+        "title": "Awake Brazilian Butt Lift (BBL) Miami y California",
+        "domain": "squlptbody.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": 9
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://zionmiami.com/es/procedimientos/levantamiento-brasileno-de-gluteos/",
+        "title": "Levantamiento de Glúteos Brasileño",
+        "domain": "zionmiami.com",
         "series": [
           {
             "date": "2026-06-09",
@@ -9137,7 +9933,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-25",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-26",
@@ -9149,7 +9945,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-28",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-29",
@@ -9157,14 +9953,18 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-30",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -9262,6 +10062,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "mommy makeover miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "mommy makeover miami"
       }
     ],
     "competitors": [
@@ -9340,6 +10145,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -9420,6 +10229,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -9498,6 +10311,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -9578,6 +10395,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -9656,6 +10477,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -9736,6 +10561,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -9814,6 +10643,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -9894,6 +10727,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -9973,6 +10810,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
@@ -10051,6 +10892,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 10
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -10148,85 +10993,177 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "mommy makeover en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "mommy makeover en miami"
       }
     ],
     "competitors": [
       {
-        "url": "https://avanaplasticsurgery.com/mommy-makeover-miami",
-        "title": "Best Mommy Makeover Miami - $5675 Cost | Avana Plastic Surgery",
+        "url": "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami",
+        "title": "Mommy Makeover en Miami - $5675 Mejor Precio",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-16",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-24",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 1
           },
           {
             "date": "2026-07-01",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/surgical-services/body/mommy-makeover/",
+        "title": "Mommy Makeover Miami",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": 3
+          },
+          {
+            "date": "2026-06-16",
+            "position": 3
+          },
+          {
+            "date": "2026-06-17",
+            "position": 3
+          },
+          {
+            "date": "2026-06-18",
+            "position": 3
+          },
+          {
+            "date": "2026-06-19",
+            "position": 3
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 3
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 3
+          },
+          {
+            "date": "2026-06-27",
+            "position": 2
+          },
+          {
+            "date": "2026-06-28",
+            "position": 2
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -10306,91 +11243,99 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
-        "url": "https://miamiplasticsurgery.com/surgical-services/body/mommy-makeover/",
-        "title": "Mommy Makeover Miami | Miami Plastic Surgery",
-        "domain": "miamiplasticsurgery.com",
+        "url": "https://www.talroudnerplasticsurgery.com/body-procedures/mommy-makeover/",
+        "title": "Mommy Makeover Near Me in Miami Florida",
+        "domain": "talroudnerplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": 3
-          },
-          {
-            "date": "2026-06-16",
-            "position": 3
-          },
-          {
-            "date": "2026-06-17",
-            "position": 3
-          },
-          {
-            "date": "2026-06-18",
-            "position": 3
-          },
-          {
-            "date": "2026-06-19",
-            "position": 3
-          },
-          {
-            "date": "2026-06-20",
-            "position": 3
-          },
-          {
-            "date": "2026-06-21",
-            "position": 3
-          },
-          {
-            "date": "2026-06-22",
-            "position": 3
-          },
-          {
-            "date": "2026-06-23",
-            "position": 2
-          },
-          {
-            "date": "2026-06-24",
             "position": null
           },
           {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 5
+          },
+          {
+            "date": "2026-06-19",
+            "position": 5
+          },
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 10
+          },
+          {
             "date": "2026-06-25",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-26",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-28",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-06-29",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-30",
-            "position": 2
+            "position": 4
           },
           {
             "date": "2026-07-01",
-            "position": 3
+            "position": 4
           },
           {
             "date": "2026-07-02",
-            "position": 3
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
         "url": "https://revivesurgery.com/body/mommy-makeover/",
-        "title": "Mommy Makeover in Miami, FL | Revive Surgical Institute",
+        "title": "Mommy Makeover in Miami, FL",
         "domain": "revivesurgery.com",
         "series": [
           {
@@ -10464,249 +11409,99 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/mommy-makeover-miami/",
-        "title": "Mommy Makeover Miami - The Secret Plastic Surgery",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": null
           },
           {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 5
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/mommy-makeover-miami",
-        "title": "Mommy Makeover Miami - Icon Cosmetic Center",
-        "domain": "iconcosmeticcenter.com",
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/mommy-makeover-en-miami/",
+        "title": "Mommy Makeover en Miami",
+        "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-16",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-24",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
             "position": 7
           },
           {
+            "date": "2026-06-29",
+            "position": 7
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 6
           }
         ]
       },
       {
-        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/mommy-makeover/",
-        "title": "Mommy Makeover Miami, FL | The Maercks Institute",
-        "domain": "themaercksinstitute.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": 5
-          },
-          {
-            "date": "2026-06-16",
-            "position": 5
-          },
-          {
-            "date": "2026-06-17",
-            "position": 9
-          },
-          {
-            "date": "2026-06-18",
-            "position": 10
-          },
-          {
-            "date": "2026-06-19",
-            "position": 10
-          },
-          {
-            "date": "2026-06-20",
-            "position": 10
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": 10
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": 10
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 10
-          },
-          {
-            "date": "2026-06-28",
-            "position": 4
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          }
-        ]
-      },
-      {
         "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/mommy-makeover/",
-        "title": "Mommy Makeover | Mia Aesthetics",
+        "title": "Mommy Makeover",
         "domain": "miaaesthetics.com",
         "series": [
           {
@@ -10780,92 +11575,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
       {
-        "url": "https://miamilifecosmetic.com/what-is-a-mommy-makeover-explained-by-dr-miller-body-contouring-expert/",
-        "title": "What is a Mommy Makeover? Explained by Dr. Miller",
-        "domain": "miamilifecosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 9
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": 10
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 10
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://surgicalarts.miami/body-surgery/mommy-makeover/",
-        "title": "Mommy Makeover In Miami - Grace Surgical Arts",
-        "domain": "surgicalarts.miami",
+        "url": "https://epicplasticsurgery.com/sp/cuerpo/mommy-makeover/",
+        "title": "Mommy Makeover en Miami, SL | Epic Cirugía Plástica",
+        "domain": "epicplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-15",
@@ -10937,7 +11657,94 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.lampertmd.com/body/mommy-makeover/",
+        "title": "Mommy Makeover Miami",
+        "domain": "lampertmd.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": 3
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       }
@@ -11029,12 +11836,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "liposuction miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "liposuction miami"
       }
     ],
     "competitors": [
       {
         "url": "https://avanaplasticsurgery.com/liposuction-miami",
-        "title": "Liposuction Miami - $3000 Lipo cost",
+        "title": "Liposuction Miami - $3000 Lipo cost | Avana Plastic Surgery",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -11103,6 +11915,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -11179,12 +11995,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/360-lipo-miami",
-        "title": "Lipo 360 Miami - Best Price $3000",
+        "title": "Lipo 360 Miami - Best Price $3000 - Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -11254,12 +12074,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
         "url": "https://www.themaercksinstitute.com/medical-spa-miami-fl/laser-treatments/laser-liposuction/",
-        "title": "Laser Liposuction Miami, FL",
+        "title": "Laser Liposuction Miami, FL | The Maercks Institute",
         "domain": "themaercksinstitute.com",
         "series": [
           {
@@ -11329,12 +12153,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
         "url": "https://www.cgcosmetic.com/liposuction-miami/",
-        "title": "Superior Liposuction Miami $99/Month",
+        "title": "Superior Liposuction Miami $99/Month - CG Cosmetic Surgery",
         "domain": "cgcosmetic.com",
         "series": [
           {
@@ -11403,6 +12231,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -11479,6 +12311,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -11554,12 +12390,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
       {
         "url": "https://prestigeplasticsurgery.com/liposuction/",
-        "title": "Liposuction Surgery in Miami",
+        "title": "Liposuction – Miami, FL - Prestige Plastic Surgery",
         "domain": "prestigeplasticsurgery.com",
         "series": [
           {
@@ -11629,12 +12469,95 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
+        "title": "Lipo 360 | Mia Aesthetics",
+        "domain": "miaaesthetics.com",
+        "series": [
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 10
+          },
+          {
+            "date": "2026-06-18",
+            "position": 8
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": 9
+          },
+          {
+            "date": "2026-06-21",
+            "position": 9
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": 10
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": 9
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": 9
+          },
+          {
+            "date": "2026-06-28",
+            "position": 10
+          },
+          {
+            "date": "2026-06-29",
+            "position": 9
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/lipo-360-miami/",
-        "title": "Lipo 360 Miami",
+        "title": "Lipo 360 Miami - The Secret Plastic Surgery",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -11704,6 +12627,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 10
           }
         ]
       }
@@ -11795,6 +12722,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "liposucción en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "liposucción en miami"
       }
     ],
     "competitors": [
@@ -11869,6 +12801,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -11945,6 +12881,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -12019,6 +12959,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -12095,6 +13039,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -12169,6 +13117,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -12245,6 +13197,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -12319,6 +13275,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -12395,6 +13355,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -12470,6 +13434,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
@@ -12544,6 +13512,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 10
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -12626,6 +13598,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "bbl revision miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "bbl revision miami"
       }
     ],
     "competitors": [
@@ -12692,6 +13669,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -12760,6 +13741,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -12826,6 +13811,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -12894,6 +13883,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -12960,6 +13953,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -13028,6 +14025,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -13094,6 +14095,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -13162,6 +14167,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -13229,6 +14238,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
@@ -13295,6 +14308,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 10
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -13377,6 +14394,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "revisión de bbl en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "revisión de bbl en miami"
       }
     ],
     "competitors": [
@@ -13444,72 +14466,80 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/brazilian-butt-lift-revision-miami",
-        "title": "Brazilian Butt Lift Revision Miami - Icon Cosmetic Center",
+        "url": "https://iconcosmeticcenter.com/es/revision-de-levantamiento-de-gluteos-en-miami",
+        "title": "Revisión de Aumento de Glúteos en Miami | Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 2
           }
         ]
@@ -13578,6 +14608,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
@@ -13644,6 +14678,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
             "position": 4
           }
         ]
@@ -13712,6 +14750,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
@@ -13779,73 +14821,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=wbZu8kYh-Zs",
-        "title": "Not Happy with your BBL? - Brazilian Butt Lift Revision - YouTube",
-        "domain": "youtube.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": 7
           },
           {
-            "date": "2026-06-19",
-            "position": 7
-          },
-          {
-            "date": "2026-06-20",
-            "position": 7
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": 8
-          },
-          {
-            "date": "2026-06-24",
-            "position": 7
-          },
-          {
-            "date": "2026-06-25",
+            "date": "2026-07-03",
             "position": 6
-          },
-          {
-            "date": "2026-06-26",
-            "position": 7
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
           }
         ]
       },
@@ -13913,6 +14892,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -13979,6 +14962,81 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=-XuDr5egs9c",
+        "title": "BBL Correction & Fat Maldistribution - BTM 4 Dr. William - YouTube",
+        "domain": "youtube.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
           }
         ]
@@ -14061,6 +15119,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "breast implant revision miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "breast implant revision miami"
       }
     ],
     "competitors": [
@@ -14128,6 +15191,81 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://www.talroudnerplasticsurgery.com/breast-surgery/implant-revision/",
+        "title": "Breast Implant Revision - Miami - Tal Roudner Plastic Surgery",
+        "domain": "talroudnerplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 3
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 3
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 3
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 2
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -14195,72 +15333,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.talroudnerplasticsurgery.com/breast-surgery/implant-revision/",
-        "title": "Breast Implant Revision - Miami - Tal Roudner Plastic Surgery",
-        "domain": "talroudnerplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": 3
           },
           {
-            "date": "2026-06-19",
-            "position": 2
-          },
-          {
-            "date": "2026-06-20",
-            "position": 3
-          },
-          {
-            "date": "2026-06-21",
-            "position": 3
-          },
-          {
-            "date": "2026-06-22",
-            "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 3
-          },
-          {
-            "date": "2026-06-24",
-            "position": 2
-          },
-          {
-            "date": "2026-06-25",
-            "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 2
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 2
-          },
-          {
-            "date": "2026-06-30",
-            "position": 2
-          },
-          {
-            "date": "2026-07-01",
-            "position": 2
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -14329,6 +15404,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -14395,6 +15474,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -14463,6 +15546,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -14530,72 +15617,80 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
       {
-        "url": "https://4beauty.net/procedure/breast/breast-revision/",
-        "title": "Breast Revision in Miami, FL | 4Beauty Aesthetic Institute",
-        "domain": "4beauty.net",
+        "url": "https://www.lhochsteinmd.com/",
+        "title": "Miami Florida Plastic Surgeon | Leonard M. Hochstein M.D.",
+        "domain": "lhochsteinmd.com",
         "series": [
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": 10
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 10
-          },
-          {
-            "date": "2026-06-26",
-            "position": 9
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
             "position": 8
           },
           {
+            "date": "2026-06-21",
+            "position": 9
+          },
+          {
+            "date": "2026-06-22",
+            "position": 8
+          },
+          {
+            "date": "2026-06-23",
+            "position": 9
+          },
+          {
+            "date": "2026-06-24",
+            "position": 8
+          },
+          {
+            "date": "2026-06-25",
+            "position": 8
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
             "date": "2026-06-29",
-            "position": 10
+            "position": 8
           },
           {
             "date": "2026-06-30",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 8
           }
         ]
@@ -14664,13 +15759,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
       {
-        "url": "https://www.drsimonplasticsurgery.com/procedures/revision-cases",
-        "title": "Revision Cases in Miami | Dr. Sean Simon Plastic Surgery",
-        "domain": "drsimonplasticsurgery.com",
+        "url": "https://4beauty.net/procedure/breast/breast-revision/",
+        "title": "Breast Revision in Miami, FL | 4Beauty Aesthetic Institute",
+        "domain": "4beauty.net",
         "series": [
           {
             "date": "2026-06-18",
@@ -14678,7 +15777,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-19",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-20",
@@ -14690,7 +15789,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-23",
@@ -14702,34 +15801,38 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
             "position": 9
           },
           {
+            "date": "2026-06-27",
+            "position": 9
+          },
+          {
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
             "date": "2026-06-29",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-30",
-            "position": 10
+            "position": 9
           },
           {
             "date": "2026-07-01",
-            "position": 10
+            "position": 9
           },
           {
             "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -14802,6 +15905,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "breast reduction miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "breast reduction miami"
       }
     ],
     "competitors": [
@@ -14860,6 +15968,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -14920,6 +16032,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -14978,6 +16094,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -15038,64 +16158,72 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://www.talroudnerplasticsurgery.com/breast-surgery/breast-reduction/",
-        "title": "Breast Reduction Surgery in Miami by Dr. Tal T Roudner MD",
-        "domain": "talroudnerplasticsurgery.com",
+        "url": "https://aeris.co/plastic-surgeons-miami-fl/breast/breast-reduction/",
+        "title": "Best Breast Reduction Miami, FL | Aeris",
+        "domain": "aeris.co",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-21",
-            "position": 8
+            "position": 5
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -15156,6 +16284,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -15214,6 +16346,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -15274,65 +16410,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://aeris.co/plastic-surgeons-miami-fl/breast/breast-reduction/",
-        "title": "Best Breast Reduction Miami, FL | Aeris",
-        "domain": "aeris.co",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": 5
           },
           {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 5
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 5
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 9
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -15391,6 +16472,73 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 10
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/breast-reduction-miami",
+        "title": "Breast Reduction Miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 6
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          },
+          {
+            "date": "2026-06-24",
+            "position": 6
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 6
+          },
+          {
+            "date": "2026-06-27",
+            "position": 6
+          },
+          {
+            "date": "2026-06-28",
+            "position": 6
+          },
+          {
+            "date": "2026-06-29",
+            "position": 7
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -15463,6 +16611,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 2,
         "keyword": "reducción de senos en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "reducción de senos en miami"
       }
     ],
     "competitors": [
@@ -15522,64 +16675,72 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
-        "url": "https://avanaplasticsurgery.com/espanol/reduccion-de-senos-miami",
-        "title": "Reducción de Senos Miami $4500 - FLorida",
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "title": "Aumento de Senos Miami $2799 - Fl",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
             "position": 2
           },
           {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
             "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
             "position": 2
           }
         ]
@@ -15640,124 +16801,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami $2799 - Fl",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": 4
           },
           {
-            "date": "2026-06-21",
-            "position": 4
-          },
-          {
-            "date": "2026-06-22",
+            "date": "2026-07-03",
             "position": 3
-          },
-          {
-            "date": "2026-06-23",
-            "position": 3
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 3
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 3
-          },
-          {
-            "date": "2026-06-30",
-            "position": 2
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/reduccion-de-senos-miami",
-        "title": "Reducción de Senos en Miami",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": 6
-          },
-          {
-            "date": "2026-06-21",
-            "position": 9
-          },
-          {
-            "date": "2026-06-22",
-            "position": 6
-          },
-          {
-            "date": "2026-06-23",
-            "position": 6
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
           }
         ]
       },
@@ -15817,100 +16864,171 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-reduction/",
-        "title": "Cirugía de Reducción de Senos en Miami",
+        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, ...",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 6
+          },
+          {
+            "date": "2026-06-28",
+            "position": 6
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://aeris.co/es/procedimientos/senos/reduccion-de-senos/",
+        "title": "Best Reducción de Senos Miami, FL | Aeris",
+        "domain": "aeris.co",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 8
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami",
         "domain": "miamiplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 8
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
-        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
-        "domain": "cgcosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-27",
@@ -15922,129 +17040,137 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-01",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": 8
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
       {
-        "url": "https://drhanabergh.com/es/reduccion-de-senos/",
-        "title": "Reducción de Senos",
-        "domain": "drhanabergh.com",
+        "url": "https://iconcosmeticcenter.com/es/reduccion-de-senos-miami",
+        "title": "Reducción de Senos en Miami",
+        "domain": "iconcosmeticcenter.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          },
+          {
+            "date": "2026-06-24",
+            "position": 8
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
             "position": 10
           },
           {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
             "date": "2026-07-01",
-            "position": 9
+            "position": 5
           },
           {
             "date": "2026-07-02",
-            "position": 9
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.zuriplasticsurgery.com/es/senos/reduccion-de-senos/",
-        "title": "Reducción de Senos Miami | Zuri Cirugía Plástica",
+        "url": "https://www.zuriplasticsurgery.com/es/senos/revision-de-senos/",
+        "title": "Mejor Revisión de Senos Miami | Zuri Cirugía Plástica",
         "domain": "zuriplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-01",
@@ -16052,7 +17178,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       }
@@ -16124,12 +17254,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "revisión de implantes de senos en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "revisión de implantes de senos en miami"
       }
     ],
     "competitors": [
       {
         "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami $2799 - Fl",
+        "title": "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -16182,6 +17317,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -16242,12 +17381,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami, ...",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -16300,6 +17443,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -16360,12 +17507,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami con Implantes ...",
+        "title": "Aumento de Senos en miami - Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -16419,12 +17570,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/levantamiento-de-senos-en-miami/",
-        "title": "Levantamiento de senos Miami",
+        "title": "Levantamiento de senos Miami - The Secret Plastic Surgery",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -16478,64 +17633,72 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://www.zuriplasticsurgery.com/es/senos/revision-de-senos/",
-        "title": "Mejor Revisión de Senos Miami | Zuri Cirugía Plástica",
-        "domain": "zuriplasticsurgery.com",
+        "url": "https://www.arcplasticsurgeons.com/es/senos/revision-mamaria/",
+        "title": "Revisión de senos Miami | Cirugía Plástica ARCO",
+        "domain": "arcplasticsurgeons.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": 9
+            "position": 8
           },
           {
             "date": "2026-06-21",
-            "position": 8
+            "position": 9
           },
           {
             "date": "2026-06-22",
-            "position": 8
+            "position": 9
           },
           {
             "date": "2026-06-23",
-            "position": 9
+            "position": 8
           },
           {
             "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 10
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
             "position": 9
           },
           {
+            "date": "2026-06-25",
+            "position": 9
+          },
+          {
+            "date": "2026-06-26",
+            "position": 9
+          },
+          {
+            "date": "2026-06-27",
+            "position": 8
+          },
+          {
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -16596,88 +17759,33 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.aserureplasticsurgery.com/es/procedimientos-de-cirugia-plastica-en-miami/procedimiento-de-senos/aumento-de-senos/",
-        "title": "Breast Implants Miami FL | Coral Gables",
-        "domain": "aserureplasticsurgery.com",
+        "url": "https://www.zuriplasticsurgery.com/es/senos/revision-de-senos/",
+        "title": "Mejor Revisión de Senos Miami | Zuri Cirugía Plástica",
+        "domain": "zuriplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": 10
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": 8
-          },
-          {
-            "date": "2026-06-27",
             "position": 9
           },
           {
-            "date": "2026-06-28",
-            "position": 10
-          },
-          {
-            "date": "2026-06-29",
-            "position": 10
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.arcplasticsurgeons.com/es/senos/aumento-de-senos/",
-        "title": "Aumento de senos en Miami - ARC Plastic Surgery",
-        "domain": "arcplasticsurgeons.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
             "date": "2026-06-21",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-24",
@@ -16685,7 +17793,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-26",
@@ -16709,10 +17817,77 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
+        "title": "Aumento de Senos - Miami, FL - Careaga Plastic Surgery",
+        "domain": "careagaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": 10
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
             "position": null
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -16770,6 +17945,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "breast lift miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "breast lift miami"
       }
     ],
     "competitors": [
@@ -16816,6 +17996,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -16864,6 +18048,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -16910,6 +18098,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -16958,6 +18150,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -17004,6 +18200,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -17052,6 +18252,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
@@ -17098,6 +18302,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -17146,6 +18354,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -17193,37 +18405,41 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
       {
-        "url": "https://www.reddit.com/r/Miami/comments/1b6qpex/any_good_breast_lift_surgeon_recommendations_in/",
-        "title": "any good breast lift surgeon recommendations in miami? - Reddit",
-        "domain": "reddit.com",
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-lift/",
+        "title": "Best Breast Lift Miami, FL | Gables Plastic Surgery",
+        "domain": "gablesplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-24",
-            "position": 9
+            "position": 8
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-26",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-28",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-29",
@@ -17231,7 +18447,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-01",
@@ -17239,6 +18455,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -17296,6 +18516,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "levantamiento de senos en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "levantamiento de senos en miami"
       }
     ],
     "competitors": [
@@ -17342,6 +18567,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -17390,6 +18619,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -17436,6 +18669,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -17484,6 +18721,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -17530,6 +18771,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
@@ -17578,6 +18823,61 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://epicplasticsurgery.com/sp/senos/aumento-de-senos/",
+        "title": "Aumento de Senos en Miami | Epic Cirugía Plástica",
+        "domain": "epicplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-23",
+            "position": 9
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": 9
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -17625,52 +18925,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://epicplasticsurgery.com/sp/senos/aumento-de-senos/",
-        "title": "Aumento de Senos en Miami | Epic Cirugía Plástica",
-        "domain": "epicplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-23",
-            "position": 9
           },
           {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": 9
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": 8
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 8
           }
         ]
@@ -17719,6 +18976,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       }
@@ -17740,28 +19001,14 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 2,
         "keyword": "aumento de senos transumbilical en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "aumento de senos transumbilical en miami"
       }
     ],
     "competitors": [
-      {
-        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
-        "title": "Aumento de Senos en miami - Icon Cosmetic Center",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": 1
-          },
-          {
-            "date": "2026-07-01",
-            "position": 2
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          }
-        ]
-      },
       {
         "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami",
         "title": "Aumento de Senos Transumbilical Miami | Avana Plastic Surgery",
@@ -17778,6 +19025,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
@@ -17796,6 +19047,33 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
+        "title": "Aumento de Senos en miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -17816,6 +19094,33 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "title": "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 1
+          },
+          {
+            "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
@@ -17835,24 +19140,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": 2
           },
           {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 6
           }
         ]
@@ -17873,6 +19163,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -17891,6 +19185,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
             "position": 8
           }
         ]
@@ -17911,6 +19209,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
@@ -17929,6 +19231,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 10
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -17951,12 +19257,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "aumento de senos transabdominal en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": null,
+        "keyword": "aumento de senos transabdominal en miami"
       }
     ],
     "competitors": [
       {
         "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami $2799 - Fl | Avana Plastic Surgery",
+        "title": "Aumento de Senos Miami $2799 - Fl",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -17970,12 +19281,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
         "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
-        "title": "Aumento de Senos - Miami, FL - Careaga Plastic Surgery",
+        "title": "Aumento de Senos - Miami, FL",
         "domain": "careagaplasticsurgery.com",
         "series": [
           {
@@ -17988,6 +19303,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
             "position": 2
           }
         ]
@@ -18008,12 +19327,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
-        "title": "Aumento de Senos en miami - Icon Cosmetic Center",
+        "title": "Aumento de Senos Miami con Implantes ...",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -18027,12 +19350,39 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/levantamiento-de-senos-en-miami/",
+        "title": "Levantamiento de senos Miami",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
+            "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, ...",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -18046,24 +19396,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/levantamiento-de-senos-en-miami/",
-        "title": "Levantamiento de senos Miami - The Secret Plastic Surgery",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 6
           }
         ]
@@ -18084,6 +19419,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -18103,12 +19442,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
       {
         "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami",
-        "title": "Aumento de Senos Transumbilical Miami | Avana Plastic Surgery",
+        "title": "Aumento de Senos Transumbilical Miami",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -18122,25 +19465,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.miamibreastcenter.com/sp",
-        "title": "Reconstrucción y Aumento de Senos con Transferencia de Grasa ...",
-        "domain": "miamibreastcenter.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 10
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       }
@@ -18162,12 +19490,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 2,
         "keyword": "transumbilical breast augmentation miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 2,
+        "keyword": "transumbilical breast augmentation miami"
       }
     ],
     "competitors": [
       {
         "url": "https://www.westonsurgery.com/transumbilical-breast-augmentation",
-        "title": "Miami area Transumbilical Breast Augmentation (TUBA)",
+        "title": "Miami area Transumbilical Breast Augmentation (TUBA) | Dr Harrell",
         "domain": "westonsurgery.com",
         "series": [
           {
@@ -18181,12 +19514,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
         "url": "https://avanaplasticsurgery.com/transumbilical-breast-augmentation-miami",
-        "title": "Transumbilical Breast Augmentation Miami (TUBA)",
+        "title": "Transumbilical Breast Augmentation Miami - Avana Plastic Surgery",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -18200,12 +19537,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami with Implants ...",
+        "title": "Breast Augmentation Miami - Icon Cosmetic Center",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -18219,12 +19560,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
         "url": "https://www.carlosspera.com/transumbilical-breast-augmentation-in-miami-scarless-enhancement-for-natural-results/",
-        "title": "Transumbilical Breast Augmentation in Miami | Scarless & ...",
+        "title": "Transumbilical Breast Augmentation in Miami | Scarless & Natural ...",
         "domain": "carlosspera.com",
         "series": [
           {
@@ -18237,6 +19582,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
             "position": 4
           }
         ]
@@ -18257,12 +19606,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
-        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon ...",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -18275,6 +19628,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
             "position": 6
           }
         ]
@@ -18295,51 +19652,63 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
       {
-        "url": "https://www.cgcosmetic.com/breast-augmentation-miami/",
-        "title": "Breast Augmentation in Miami Starting at $2500",
-        "domain": "cgcosmetic.com",
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Best Breast Augmentation in Miami, FL | Gables Plastic Surgery",
+        "domain": "gablesplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-01",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://boriscosmetic.com/dr-boris-does-tuba/",
-        "title": "Dr. Boris Does Transumbilical Breast Augmentation (TUBA)",
-        "domain": "boriscosmetic.com",
+        "url": "https://en.wikipedia.org/wiki/Trans-umbilical_breast_augmentation",
+        "title": "Trans-umbilical breast augmentation - Wikipedia",
+        "domain": "en.wikipedia.org",
         "series": [
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-01",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
           }
         ]
       },
       {
-        "url": "https://www.baroneplasticsurgery.com/video/58771-transumbilical-breast-augmentation-tuba-part-1/",
-        "title": "Transumbilical Breast Augmentation (TUBA) Part 1",
-        "domain": "baroneplasticsurgery.com",
+        "url": "https://www.josefhadeedmd.com/miami/plastic-surgery-procedures/gender-affirmation/male-to-female-mtf-top-surgery/",
+        "title": "Male to Female (MTF) Top Surgery | Miami, FL | Dr. Josef Hadeed",
+        "domain": "josefhadeedmd.com",
         "series": [
           {
             "date": "2026-06-30",
@@ -18351,6 +19720,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -18373,6 +19746,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "transabdominal breast augmentation miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "transabdominal breast augmentation miami"
       }
     ],
     "competitors": [
@@ -18391,6 +19769,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -18411,12 +19793,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami - Icon Cosmetic Center",
+        "title": "Breast Augmentation Miami with Implants ...",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -18430,12 +19816,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-augmentation-miami/",
-        "title": "Breast augmentation Miami - The Secret Plastic Surgery",
+        "title": "Breast augmentation Miami",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -18449,12 +19839,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
         "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
-        "title": "Best Breast Augmentation in Miami, FL | Gables Plastic Surgery",
+        "title": "Best Breast Augmentation in Miami, FL",
         "domain": "gablesplasticsurgery.com",
         "series": [
           {
@@ -18468,12 +19862,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
         "url": "https://umiamihealth.org/en/treatments-and-services/plastic-surgery/breast-reconstruction",
-        "title": "Breast Reconstruction | University of Miami Health System",
+        "title": "Breast Reconstruction",
         "domain": "umiamihealth.org",
         "series": [
           {
@@ -18487,12 +19885,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
-        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon ...",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -18505,6 +19907,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
@@ -18525,12 +19931,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
       {
         "url": "https://bodybycraft.com/breast-augmentation-miami/the-newest-implants-create-natural-looking-breast-augmentations-in-miami/",
-        "title": "Implants Create Natural-Looking Breast Augmentations In Miami",
+        "title": "Implants Create Natural-Looking Breast Augmentations In ...",
         "domain": "bodybycraft.com",
         "series": [
           {
@@ -18544,13 +19954,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
           }
         ]
       },
       {
-        "url": "https://www.dr-rubinstein.com/",
-        "title": "Dr. Rubinstein | Aventura Plastic Surgeon: Miami Plastic Surgeon",
-        "domain": "dr-rubinstein.com",
+        "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
+        "title": "Top Breast Augmentation Doctors in Miami, FL",
+        "domain": "realself.com",
         "series": [
           {
             "date": "2026-06-30",
@@ -18562,6 +19976,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -18584,12 +20002,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "tummy tuck miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "tummy tuck miami"
       }
     ],
     "competitors": [
       {
         "url": "https://avanaplasticsurgery.com/tummy-tuck-miami",
-        "title": "Tummy Tuck Miami - $3500 Abdominoplasty | Avana Plastic Surgery",
+        "title": "Tummy Tuck Miami - $3500 Abdominoplasty",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
@@ -18602,6 +20025,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -18622,31 +20049,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://spectrum-aesthetics.com/tummy-tuck-miami/",
-        "title": "Tummy Tuck Miami - Cost $3000 - Spectrum Aesthetics",
-        "domain": "spectrum-aesthetics.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": 3
           },
           {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 3
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://www.drsimonplasticsurgery.com/procedures/tummy-tuck",
-        "title": "Tummy Tuck (Abdominoplasty) Miami, FL | Dr. Sean Simon",
+        "title": "Tummy Tuck (Abdominoplasty) Miami, FL",
         "domain": "drsimonplasticsurgery.com",
         "series": [
           {
@@ -18660,44 +20072,33 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
-        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/tummy-tuck/revision-tummy-tuck/",
-        "title": "Revision Tummy Tuck Miami, FL - The Maercks Institute",
-        "domain": "themaercksinstitute.com",
+        "url": "https://spectrum-aesthetics.com/tummy-tuck-miami/",
+        "title": "Tummy Tuck Miami - Cost $3000",
+        "domain": "spectrum-aesthetics.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
             "position": 3
           },
           {
-            "date": "2026-07-02",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://www.dr-rubinstein.com/mini-tummy-tuck-miami/",
-        "title": "Mini Tummy Tuck Miami, FL",
-        "domain": "dr-rubinstein.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
             "date": "2026-07-01",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-02",
-            "position": 6
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -18717,17 +20118,67 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://aeris.co/best-tummy-tuck-in-miami/",
-        "title": "5 Things You Need To Know About Getting The Best Tummy Tuck in ...",
-        "domain": "aeris.co",
+        "url": "https://www.thesecretplasticsurgery.com/",
+        "title": "The Secret Plastic Surgery: Miami Plastic Surgery Center",
+        "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/tummy-tuck-miami",
+        "title": "Tummy Tuck Miami",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/tummy-tuck/",
+        "title": "Tummy Tuck Miami, FL",
+        "domain": "themaercksinstitute.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
           },
           {
             "date": "2026-07-01",
@@ -18735,18 +20186,22 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/hourglass-tummy-tuck-miami/",
-        "title": "Hourglass Tummy Tuck Miami - The Secret Plastic Surgery",
-        "domain": "thesecretplasticsurgery.com",
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/tummy-tuck/",
+        "title": "Tummy Tuck (Abdominoplasty)",
+        "domain": "miaaesthetics.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 5
+            "position": 7
           },
           {
             "date": "2026-07-01",
@@ -18754,26 +20209,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://theplasticsurgeonmiami.com/why-morales-plastic-surgery-in-miami-is-a-top-choice-for-tummy-tuck-surgery/",
-        "title": "Top Tummy Tuck in Miami | Morales Plastic Surgery | Dr. Ramiro ...",
-        "domain": "theplasticsurgeonmiami.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 10
           }
         ]
       }
@@ -18795,6 +20235,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "tummy tuck en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "tummy tuck en miami"
       }
     ],
     "competitors": [
@@ -18813,6 +20258,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -18833,6 +20282,33 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.drsimonplasticsurgery.com/procedures/tummy-tuck",
+        "title": "Tummy Tuck (Abdominoplasty) Miami, FL",
+        "domain": "drsimonplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
@@ -18852,6 +20328,79 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.dr-rubinstein.com/mini-tummy-tuck-miami/",
+        "title": "Mini Tummy Tuck Miami, FL",
+        "domain": "dr-rubinstein.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/abdominoplastia-en-miami",
+        "title": "Abdominoplastia en Miami",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/abdominoplastia-con-curvas-en-miami/",
+        "title": "Hourglass Tummy Tuck Miami",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 7
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -18871,93 +20420,21 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.arykraumd.com/body-contouring/tummy-tuck-miami/",
-        "title": "Tummy Tuck Miami FL - Board Certified Abdominoplasty ...",
-        "domain": "arykraumd.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": 9
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/tummy-tuck-miami",
-        "title": "Tummy Tuck Miami",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://imagosplasticsurgery.com/body/tummy-tuck/",
-        "title": "Tummy Tuck Surgery Miami, FL",
-        "domain": "imagosplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://therealdrmiami.com/",
-        "title": "Dr. Miami | Plastic Surgery Miami | Dr. Michael Salzhauer",
-        "domain": "therealdrmiami.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://bodybycraft.com/full-tummy-tuck-miami/miami-tummy-tuck-surgery-cost-explained/",
-        "title": "Miami Tummy Tuck Surgery Cost Explained",
-        "domain": "bodybycraft.com",
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/tummy-tuck/",
+        "title": "Tummy Tuck Miami, FL",
+        "domain": "themaercksinstitute.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-01",
@@ -18965,6 +20442,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
           }
         ]
@@ -18982,6 +20463,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "buttock reduction in miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 1,
+        "keyword": "buttock reduction in miami"
       }
     ],
     "competitors": [
@@ -18997,12 +20483,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
         "url": "https://imagosplasticsurgery.com/body/buttock-reshaping/",
-        "title": "Best Buttock Reshaping Surgery Miami, FL",
+        "title": "Buttock Reshaping Miami, FL - Imagos Institute of Plastic Surgery",
         "domain": "imagosplasticsurgery.com",
         "series": [
           {
@@ -19011,6 +20501,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
             "position": 2
           }
         ]
@@ -19027,6 +20521,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
@@ -19041,6 +20539,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
             "position": 4
           }
         ]
@@ -19057,6 +20559,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
@@ -19071,6 +20577,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
             "position": 6
           }
         ]
@@ -19087,6 +20597,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
           }
         ]
       },
@@ -19102,6 +20616,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
           }
         ]
       },
@@ -19116,6 +20634,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
             "position": 9
           }
         ]
@@ -19133,24 +20655,14 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 1,
         "keyword": "abdominoplastia con curvas en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 2,
+        "keyword": "abdominoplastia con curvas en miami"
       }
     ],
     "competitors": [
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami",
-        "title": "Abdominoplastia con Curvas en Miami - Avana Plastic Surgery",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          }
-        ]
-      },
       {
         "url": "https://miamiplasticsurgery.com/es/surgical-services/body/abdominoplasty/",
         "title": "Procedimiento de abdominoplastia en Miami, FL",
@@ -19163,27 +20675,35 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/es/",
-        "title": "Centro de Cirugía Plástica de Miami - The Secret Plastic Surgery",
-        "domain": "thesecretplasticsurgery.com",
+        "url": "https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami",
+        "title": "Abdominoplastia con Curvas en Miami",
+        "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-01",
-            "position": 3
+            "position": 1
           },
           {
             "date": "2026-07-02",
-            "position": 3
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/abdominoplastia-en-miami/",
-        "title": "Abdominoplastia en Miami - The Secret Plastic Surgery",
+        "title": "Abdominoplastia en Miami",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
@@ -19193,57 +20713,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://aeris.co/es/procedimientos/cuerpo/abdominoplastia/",
-        "title": "Best Abdominoplastia Miami, FL | Aeris",
-        "domain": "aeris.co",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 5
           },
           {
-            "date": "2026-07-02",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://mycosmeticsurgerymiami.com/es/most-popular-cosmetic-surgeries-miami/",
-        "title": "Most Popular Cosmetic Surgeries in Miami",
-        "domain": "mycosmeticsurgerymiami.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://drhanabergh.com/es/abdominoplastia/",
-        "title": "Abdominoplastia - Dr. Enrique Hanabergh, MD",
-        "domain": "drhanabergh.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
+            "date": "2026-07-03",
+            "position": 3
           }
         ]
       },
       {
         "url": "https://iconcosmeticcenter.com/es/abdominoplastia-en-miami",
-        "title": "Abdominoplastia en Miami - Icon Cosmetic Center",
+        "title": "Abdominoplastia en Miami",
         "domain": "iconcosmeticcenter.com",
         "series": [
           {
@@ -19253,13 +20732,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
-        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción? - Dr David Delgado",
-        "domain": "daviddelgadocirujano.com",
+        "url": "https://xiluetaestheticsurgery.com/es/tummy-tuck/",
+        "title": "Abdominoplastia Miami | 10+ Años de Experiencia",
+        "domain": "xiluetaestheticsurgery.com",
         "series": [
           {
             "date": "2026-07-01",
@@ -19267,13 +20750,74 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
-            "position": 9
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://www.arcplasticsurgeons.com/es/blog/cirugia-de-abdominoplastia-abdominoplastia-miami/",
-        "title": "Cirugía de Abdominoplastia Miami - ARC Plastic Surgery",
+        "url": "https://drhanabergh.com/es/abdominoplastia/",
+        "title": "Abdominoplastia",
+        "domain": "drhanabergh.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://aeris.co/es/la-abdominoplastia-en-miami-ayuda-con-la-piel-flacida/",
+        "title": "La Abdominoplastia en Miami Ayuda con la Piel Flácida",
+        "domain": "aeris.co",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.careagaplasticsurgery.com/es/reduccion-de-abdomen-abdominoplastia/",
+        "title": "Reducción de Abdomen - Abdominoplastia - Miami, FL",
+        "domain": "careagaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.arcplasticsurgeons.com/es/cuerpo/abdominoplastia/",
+        "title": "Abdominoplastia Aventura - Miami - ARC Plastic Surgery",
         "domain": "arcplasticsurgeons.com",
         "series": [
           {
@@ -19282,6 +20826,29 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/abdominoplastia-con-curvas-en-miami/",
+        "title": "Hourglass Tummy Tuck Miami",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -19299,6 +20866,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": 2,
         "keyword": "hourglass tummy tuck miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 2,
+        "keyword": "hourglass tummy tuck miami"
       }
     ],
     "competitors": [
@@ -19313,6 +20885,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
             "position": 1
           }
         ]
@@ -19329,6 +20905,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
           }
         ]
       },
@@ -19343,6 +20923,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -19359,66 +20943,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/",
-        "title": "The Secret Plastic Surgery: Miami Plastic Surgery Center",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": null
           },
           {
-            "date": "2026-07-02",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://www.brandonplasticsurgery.com/hourglass-tummy-tuck-landing-page/",
-        "title": "Hourglass Tummy Tuck Landing Page Tampa FL",
-        "domain": "brandonplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://www.careagaplasticsurgery.com/",
-        "title": "Top Miami Plastic Surgeons | Careaga Plastic Surgery ...",
-        "domain": "careagaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://hourglasstummytuck.com/",
-        "title": "Hourglass Tummy Tuck Abdominoplasty houston Dr Cortes",
-        "domain": "hourglasstummytuck.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 8
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
@@ -19434,13 +20962,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://sveltaplasticsurgery.com/",
-        "title": "Svelta Plastic Surgery: Leading Plastic Surgery Miami",
-        "domain": "sveltaplasticsurgery.com",
+        "url": "https://www.drwilliammiami.com/",
+        "title": "Dr. William Miami | Board Certified Plastic Surgeon in Florida ...",
+        "domain": "drwilliammiami.com",
         "series": [
           {
             "date": "2026-07-01",
@@ -19448,6 +20980,86 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.brandonplasticsurgery.com/brandon-gallery/hourglass-tummy-tuck-miami-fl/",
+        "title": "Hourglass Tummy Tuck # 148",
+        "domain": "brandonplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.fusionmdcosmeticsurgery.com/body/tummy-tuck-liposuction-miami-combo/",
+        "title": "Curvy Tuck in Miami | Miami Combo at FusionMD",
+        "domain": "fusionmdcosmeticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://highbmi.org/hourglass-tummy-tuck-miami-for-a-curvy-figure/",
+        "title": "Your Plus Size Hourglass Tummy Tuck in Miami, FL",
+        "domain": "highbmi.org",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/blog-post/the-hourglass-tummy-tuck",
+        "title": "The Hourglass Tummy Tuck",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 10
           }
         ]
@@ -19460,38 +21072,55 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-02",
         "position": null,
         "keyword": "reducción de glúteos en miami"
+      },
+      {
+        "date": "2026-07-03",
+        "position": 7,
+        "keyword": "reducción de glúteos en miami"
       }
     ],
     "competitors": [
       {
         "url": "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami",
-        "title": "Implantes de glúteos en Miami",
+        "title": "Implantes de glúteos en Miami (Gluteoplatia) - Avana Plastic Surgery",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-02",
             "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/body/buttock-augmentation/",
-        "title": "Levantamiento de glúteos brasileño en Miami, FL",
-        "domain": "miamiplasticsurgery.com",
-        "series": [
+          },
           {
-            "date": "2026-07-02",
-            "position": 2
+            "date": "2026-07-03",
+            "position": 1
           }
         ]
       },
       {
         "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/implantes-de-gluteos-en-miami/",
-        "title": "Implantes de glúteos en Miami",
+        "title": "Implantes de glúteos en Miami - The Secret Plastic Surgery",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/levantamiento-de-gluteos-brasileno",
+        "title": "Levantamiento de Gluteos Brasileño en Miami - Icon Cosmetic Center",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
             "position": 3
           }
         ]
@@ -19504,61 +21133,100 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-02",
             "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/es/levantamiento-de-gluteos-brasileno",
-        "title": "Levantamiento de Gluteos Brasileño en Miami",
-        "domain": "iconcosmeticcenter.com",
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/aumento-de-gluteos-en-miami/",
+        "title": "Aumento de glúteos en Miami - The Secret Plastic Surgery",
+        "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 5
           }
         ]
       },
       {
-        "url": "https://zoeplasticsurgery.com/es/levantamiento-de-gluteos/",
-        "title": "Lifting de glúteos brasileño en Miami | Especialistas en BBL",
-        "domain": "zoeplasticsurgery.com",
+        "url": "https://miamiplasticsurgery.com/es/butt-implants-miami-candidate/",
+        "title": "¿Es usted un buen candidato para los implantes de glúteos en Miami?",
+        "domain": "miamiplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
             "position": 6
           }
         ]
       },
       {
-        "url": "https://hdesthetique.com/es/aumento/",
-        "title": "Aumento De Gluteos Con Implantes",
-        "domain": "hdesthetique.com",
+        "url": "https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami",
+        "title": "Reducción de Glúteos en Miami - Avana Plastic Surgery",
+        "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
             "position": 7
           }
         ]
       },
       {
-        "url": "https://miamiplasticsurgery.com/es/butt-implants-miami-candidate/",
-        "title": "¿Soy el candidato perfecto para los implantes de glúteos?",
-        "domain": "miamiplasticsurgery.com",
+        "url": "https://hdesthetique.com/es/aumento/",
+        "title": "Aumento De Gluteos Con Implantes | HD Esthetique",
+        "domain": "hdesthetique.com",
         "series": [
           {
             "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
             "position": 8
           }
         ]
       },
       {
         "url": "https://www.pureplasticsurgery.com/es/news-and-press/miami-plastic-surgeon-touts-new-method-for-a-less-invasive-butt-lift",
-        "title": "El cirujano plástico de Miami destaca un nuevo método ...",
+        "title": "El cirujano plástico de Miami destaca un nuevo método para un ...",
         "domain": "pureplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-02",
             "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/",
+        "title": "Centro de Cirugía Plástica de Miami - The Secret Plastic Surgery",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 10
           }
         ]
       }
