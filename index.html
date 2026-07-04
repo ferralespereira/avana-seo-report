@@ -550,8 +550,17 @@
     color: #c0530a;
   }
   /* Keyword group table */
+  /* Horizontal-scroll wrapper so the wide table stays readable on phones
+     instead of overflowing the page or crushing its columns. */
+  .kw-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .kw-scroll-hint { display: none; }
   .kw-group-table {
     width: 100%;
+    min-width: 900px;
     border-collapse: collapse;
     font-size: 12px;
   }
@@ -724,6 +733,22 @@
     .kpi-row.cols-4, .kpi-row.cols-3, .kpi-row.cols-2 { grid-template-columns: 1fr; }
     .site-header { padding: 16px; }
     .site-header h1 { font-size: 18px; }
+  }
+  /* ── Keywords Report on phones ── */
+  @media (max-width: 760px) {
+    .kw-group { min-width: 0; padding: 10px 10px 12px; }
+    .kw-scroll-hint {
+      display: block;
+      font-size: 11px; font-weight: 700; color: #6a737d;
+      margin: 2px 0 6px; text-align: right;
+    }
+    .kw-group-table { font-size: 12px; }
+    .kw-group-table th { padding: 8px 8px; }
+    .kw-group-table td { padding: 8px 8px; }
+    .kw-group-table td.note-cell { min-width: 130px; max-width: 190px; }
+    .kw-pos-cell .kw-pos-url { max-width: 190px; }
+    .kw-filter-search { flex: 1 1 100%; min-width: 0; }
+    .kw-filter-count { margin-left: 0; }
   }
 </style>
 </head>
@@ -1254,7 +1279,7 @@ function toggleGeoOverview(h) {
 })();
 </script>
 
-<div class="page-links">
+<div class="page-links" style="max-width:none;">
   <h3>Keywords Report</h3>
 
   <!-- ── Keywords Report filter bar ── -->
@@ -1291,6 +1316,8 @@ function toggleGeoOverview(h) {
         <span class="kw-group-label impressions-label">📊 Most Impressions</span>
         <span class="kw-group-label ctr-low-label">⚠️ CTR &lt; 1%</span>
       </div>
+      <div class="kw-scroll-hint">↔ Swipe to see all columns</div>
+      <div class="kw-table-scroll">
       <table class="kw-group-table">
         <thead>
             <tr>
@@ -1702,6 +1729,7 @@ function toggleGeoOverview(h) {
 
         </tbody>
       </table>
+      </div>
     </div>
 
   </div>
@@ -1711,6 +1739,54 @@ function toggleGeoOverview(h) {
 (function () {
   const tbl = document.querySelector('.kw-group-table');
   if (!tbl) return;
+
+  // ── Styles for the Position column (rank badges + ranking-page list) ──
+  const css = `
+    .kw-group-table td.kw-pos-cell { text-align:left; vertical-align:middle; padding:8px 12px; }
+    .kw-pos-list { display:flex; flex-direction:column; gap:0; }
+    .kw-pos-item { display:flex; align-items:center; gap:7px; padding:5px 0; }
+    .kw-pos-item + .kw-pos-item { border-top:1px dashed #e4e9ef; }
+    .kw-pos-badge {
+      flex:0 0 auto; min-width:34px; text-align:center;
+      padding:3px 8px; border-radius:7px;
+      font-size:11px; font-weight:800; letter-spacing:.2px;
+      font-variant-numeric:tabular-nums; border:1px solid transparent;
+    }
+    .kw-pos-badge.tier-top   { background:#EAF4EC; color:#1E7E34; border-color:#c2e3c9; }
+    .kw-pos-badge.tier-page1 { background:#FEF7E3; color:#b7791f; border-color:#eedda4; }
+    .kw-pos-badge.tier-page2 { background:#FDECEA; color:#C0392B; border-color:#f2c9c3; }
+    .kw-pos-badge.tier-none  { background:#eef1f4; color:#8a94a0; border-color:#dbe1e8; font-weight:700; }
+    .kw-pos-sub { flex:0 0 auto; color:#c3ccd6; font-size:13px; line-height:1; width:12px; text-align:center; }
+    .kw-pos-trend {
+      flex:0 0 auto; font-size:10px; font-weight:800; padding:2px 6px; border-radius:999px;
+      display:inline-flex; align-items:center; gap:2px;
+    }
+    .kw-pos-trend.up   { background:#EAF4EC; color:#1E7E34; }
+    .kw-pos-trend.down { background:#FDECEA; color:#C0392B; }
+    /* Reset the inherited .page-links pill/arrow/hover styling so these read
+       as plain monospace URLs, not teal buttons. */
+    .kw-pos-cell .kw-pos-url {
+      display:inline-block; padding:0; margin:0; border:none;
+      background:none; border-radius:0; vertical-align:middle;
+      font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+      font-size:11px; font-weight:600; text-decoration:none; color:#5b6b7b;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px;
+    }
+    .kw-pos-cell .kw-pos-url::before { content:none; }
+    .kw-pos-cell .kw-pos-url:hover { background:none; color:#3a4756; text-decoration:underline; }
+    .kw-pos-cell .kw-pos-item.is-target .kw-pos-url { color:var(--teal); font-weight:700; }
+    .kw-pos-cell .kw-pos-item.is-target .kw-pos-url:hover { color:var(--teal); background:none; }
+    .kw-pos-tag {
+      flex:0 0 auto; font-size:8.5px; font-weight:800; letter-spacing:.6px;
+      text-transform:uppercase; color:var(--teal);
+      background:rgba(14,124,123,.10); border:1px solid rgba(14,124,123,.22);
+      padding:1px 5px; border-radius:4px;
+    }
+    .kw-pos-empty { color:#c3ccd6; font-size:15px; }
+  `;
+  const styleEl = document.createElement('style');
+  styleEl.textContent = css;
+  document.head.appendChild(styleEl);
 
   // Inject "Position" header after the Keyword column
   const headerRow = tbl.querySelector('thead tr');
@@ -1723,36 +1799,70 @@ function toggleGeoOverview(h) {
 
   const data = window.SEO_POSITION_DATA || {};
 
+  // Turn a full URL into a short "/path" for compact display in the cell.
+  function shortPath(u) {
+    try { return new URL(u).pathname || '/'; }
+    catch (e) { return (u || '').replace(/^https?:\/\/[^/]+/, '') || '/'; }
+  }
+  // SERP tier → badge colour. 1–3 strong, 4–10 page one, 11+ page two.
+  function tier(pos) {
+    if (pos == null) return 'tier-none';
+    if (pos <= 3)  return 'tier-top';
+    if (pos <= 10) return 'tier-page1';
+    return 'tier-page2';
+  }
+  function pageRow(pos, url, opts) {
+    opts = opts || {};
+    const badge = pos == null
+      ? `<span class="kw-pos-badge tier-none" title="Not ranked in top 10">NR</span>`
+      : `<span class="kw-pos-badge ${tier(pos)}">#${pos}</span>`;
+    const sub   = opts.sub ? `<span class="kw-pos-sub" title="Also ranking for this keyword">&#8627;</span>` : '';
+    const tag   = opts.target ? `<span class="kw-pos-tag" title="Target page for this keyword">target</span>` : '';
+    const trend = opts.trend || '';
+    return `<div class="kw-pos-item${opts.target ? ' is-target' : ''}">${sub}${badge}${trend}`
+      + `<a class="kw-pos-url" href="${url}" target="_blank" title="${url}">${shortPath(url)}</a>${tag}</div>`;
+  }
+
   tbl.querySelectorAll('tbody tr').forEach(row => {
     const urlLink = row.querySelector('a.kw-url-link');
     const url = urlLink ? urlLink.href : null;
     const td = document.createElement('td');
-    td.style.cssText = 'white-space:nowrap;font-size:13px;text-align:center;vertical-align:middle;';
+    td.className = 'kw-pos-cell';
 
     const urlData = url ? data[url] : null;
-    if (!urlData || !urlData.series || !urlData.series.length) {
-      td.innerHTML = '<span style="color:#bbb;">—</span>';
-    } else {
-      const series = urlData.series;
+    const series  = (urlData && urlData.series) ? urlData.series : null;
+    const pages   = (urlData && Array.isArray(urlData.pages)) ? urlData.pages : [];
+
+    // The target page's own current position + movement, from its history.
+    let curPos = null, trendHtml = '';
+    if (series && series.length) {
       const latest = series[series.length - 1];
       const first  = series[0];
-      const cur    = latest.position;
-      const start  = first.position;
-
-      if (cur === null) {
-        td.innerHTML = '<span style="color:#999;font-size:12px;">Not ranked</span>';
-      } else {
-        let html = `<strong>#${cur}</strong>`;
-        if (start !== null && series.length > 1) {
-          const diff = start - cur; // positive = moved up (improved)
-          if (diff > 0) {
-            html += ` <span style="color:#1E7E34;font-size:11px;">&#9650;${diff}</span>`;
-          } else if (diff < 0) {
-            html += ` <span style="color:#C0392B;font-size:11px;">&#9660;${Math.abs(diff)}</span>`;
-          }
+      curPos = latest.position;
+      if (curPos !== null && first.position !== null && series.length > 1) {
+        const diff = first.position - curPos; // positive = moved up (improved)
+        if (diff > 0) {
+          trendHtml = `<span class="kw-pos-trend up" title="Up ${diff} since tracking began">&#9650;${diff}</span>`;
+        } else if (diff < 0) {
+          trendHtml = `<span class="kw-pos-trend down" title="Down ${Math.abs(diff)} since tracking began">&#9660;${Math.abs(diff)}</span>`;
         }
-        td.innerHTML = html;
       }
+    }
+
+    // Build the list: target URL first, then every other page of the domain
+    // that ranks for this keyword, each with its SERP position.
+    const lines = [];
+    if (url && (curPos !== null || (series && series.length))) {
+      lines.push(pageRow(curPos, url, { target: true, trend: trendHtml }));
+    }
+    pages.filter(p => !p.is_target && p.position != null).forEach(p => {
+      lines.push(pageRow(p.position, p.url, { sub: true }));
+    });
+
+    if (!lines.length) {
+      td.innerHTML = '<span class="kw-pos-empty">&mdash;</span>';
+    } else {
+      td.innerHTML = `<div class="kw-pos-list">${lines.join('')}</div>`;
     }
 
     // Insert before the Backlinks column (second td = after Keyword)

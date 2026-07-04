@@ -1215,6 +1215,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 3,
+        "url": "https://avanaplasticsurgery.com/lipo-360/before-and-after",
+        "is_target": false
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami": {
@@ -2431,6 +2438,13 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami",
+        "is_target": true
       }
     ]
   },
@@ -3768,7 +3782,8 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
-    ]
+    ],
+    "pages": []
   },
   "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami": {
     "series": [
@@ -4984,6 +4999,13 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": false
       }
     ]
   },
@@ -6276,6 +6298,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/brazilian-butt-lift-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/breast-augmentation-miami": {
@@ -7567,7 +7596,8 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
-    ]
+    ],
+    "pages": []
   },
   "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami": {
     "series": [
@@ -8767,6 +8797,13 @@ window.SEO_POSITION_DATA = {
             "position": 10
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": true
       }
     ]
   },
@@ -9969,6 +10006,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/mommy-makeover-miami": {
@@ -10900,6 +10944,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/mommy-makeover-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami": {
@@ -11747,6 +11798,13 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami",
+        "is_target": true
       }
     ]
   },
@@ -12634,6 +12692,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/liposuction-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida": {
@@ -13520,6 +13585,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami",
+        "is_target": false
+      }
     ]
   },
   "https://avanaplasticsurgery.com/bbl-revision-miami": {
@@ -14316,6 +14388,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/bbl-revision-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/revision-de-bbl-en-miami": {
@@ -15041,7 +15120,8 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
-    ]
+    ],
+    "pages": []
   },
   "https://avanaplasticsurgery.com/breast-implant-revision-miami": {
     "series": [
@@ -15837,7 +15917,8 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
-    ]
+    ],
+    "pages": []
   },
   "https://avanaplasticsurgery.com/breast-reduction-miami": {
     "series": [
@@ -16543,6 +16624,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/breast-reduction-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/reduccion-de-senos-miami": {
@@ -17185,6 +17273,13 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": false
       }
     ]
   },
@@ -17892,6 +17987,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": false
+      }
     ]
   },
   "https://avanaplasticsurgery.com/breast-lift-miami": {
@@ -18463,6 +18565,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/breast-lift-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/levantamiento-de-senos-en-miami": {
@@ -18983,6 +19092,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": false
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami": {
@@ -19239,6 +19355,18 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami",
+        "is_target": true
+      },
+      {
+        "position": 5,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": false
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transabdominal-en-miami": {
@@ -19471,6 +19599,18 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-miami",
+        "is_target": false
+      },
+      {
+        "position": 9,
+        "url": "https://avanaplasticsurgery.com/espanol/aumento-de-senos-transumbilical-en-miami",
+        "is_target": false
       }
     ]
   },
@@ -19728,6 +19868,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/transumbilical-breast-augmentation-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami": {
@@ -19984,6 +20131,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/tummy-tuck-miami": {
@@ -20216,6 +20370,13 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/tummy-tuck-miami",
+        "is_target": true
       }
     ]
   },
@@ -20450,6 +20611,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/buttock-reduction-miami": {
@@ -20641,6 +20809,13 @@ window.SEO_POSITION_DATA = {
             "position": 9
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/buttock-reduction-miami",
+        "is_target": true
       }
     ]
   },
@@ -20853,6 +21028,13 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami",
+        "is_target": true
+      }
     ]
   },
   "https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami": {
@@ -21064,6 +21246,18 @@ window.SEO_POSITION_DATA = {
           }
         ]
       }
+    ],
+    "pages": [
+      {
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/hourglass-tummy-tuck-in-miami",
+        "is_target": true
+      },
+      {
+        "position": 10,
+        "url": "https://avanaplasticsurgery.com/blog-post/the-hourglass-tummy-tuck",
+        "is_target": false
+      }
     ]
   },
   "https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami": {
@@ -21229,6 +21423,18 @@ window.SEO_POSITION_DATA = {
             "position": 10
           }
         ]
+      }
+    ],
+    "pages": [
+      {
+        "position": 7,
+        "url": "https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami",
+        "is_target": true
+      },
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami",
+        "is_target": false
       }
     ]
   }

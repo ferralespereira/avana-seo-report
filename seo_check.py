@@ -181,73 +181,74 @@ def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4)
     }
 
 
-print("Starting SEO checks via Serper...")
-reports = []
+def run_daily_check():
+    print("Starting SEO checks via Serper...")
+    reports = []
 
-for item in keywords:
-    for loc in locations:
-        print(f"Checking '{item['keyword']}' from {loc['name']}...")
-        result = check_ranking(
-            item["keyword"], item["url"], item["lang"], loc["location"]
-        )
-        result.update({
-            "keyword": item["keyword"],
-            "target_url": item["url"],
-            "location": loc["name"],
-            "date": datetime.now(MIAMI).strftime("%Y-%m-%d"),
-            "time": datetime.now(MIAMI).strftime("%H:%M"),
-        })
-        reports.append(result)
-        print(f"  -> Target position: {result['position']}")
-        if result.get("my_pages_ranking"):
-            for p in result["my_pages_ranking"]:
-                print(f"     (your page at #{p['position']}: {p['url']})")
-        time.sleep(1)
+    for item in keywords:
+        for loc in locations:
+            print(f"Checking '{item['keyword']}' from {loc['name']}...")
+            result = check_ranking(
+                item["keyword"], item["url"], item["lang"], loc["location"]
+            )
+            result.update({
+                "keyword": item["keyword"],
+                "target_url": item["url"],
+                "location": loc["name"],
+                "date": datetime.now(MIAMI).strftime("%Y-%m-%d"),
+                "time": datetime.now(MIAMI).strftime("%H:%M"),
+            })
+            reports.append(result)
+            print(f"  -> Target position: {result['position']}")
+            if result.get("my_pages_ranking"):
+                for p in result["my_pages_ranking"]:
+                    print(f"     (your page at #{p['position']}: {p['url']})")
+            time.sleep(1)
 
-# Save reports
-os.makedirs("reports", exist_ok=True)
-date = datetime.now(MIAMI).strftime("%Y-%m-%d")
+    # Save reports
+    os.makedirs("reports", exist_ok=True)
+    date = datetime.now(MIAMI).strftime("%Y-%m-%d")
 
-with open(f"reports/{date}.json", "w", encoding="utf-8") as f:
-    json.dump(reports, f, indent=2, ensure_ascii=False)
+    with open(f"reports/{date}.json", "w", encoding="utf-8") as f:
+        json.dump(reports, f, indent=2, ensure_ascii=False)
 
-with open("reports/latest.json", "w", encoding="utf-8") as f:
-    json.dump(reports, f, indent=2, ensure_ascii=False)
+    with open("reports/latest.json", "w", encoding="utf-8") as f:
+        json.dump(reports, f, indent=2, ensure_ascii=False)
 
-# Append to history CSV
-csv_file = "reports/history.csv"
-if not os.path.exists(csv_file):
-    with open(csv_file, "w", encoding="utf-8") as f:
-        f.write("date,location,keyword,target_url,target_position,"
-                "top_ranking_own_page,top_own_position\n")
+    # Append to history CSV
+    csv_file = "reports/history.csv"
+    if not os.path.exists(csv_file):
+        with open(csv_file, "w", encoding="utf-8") as f:
+            f.write("date,location,keyword,target_url,target_position,"
+                    "top_ranking_own_page,top_own_position\n")
 
-with open(csv_file, "a", encoding="utf-8") as f:
-    for r in reports:
-        # find the best-ranking page of yours (lowest position number)
-        if r.get("my_pages_ranking"):
-            best = min(r["my_pages_ranking"], key=lambda x: x["position"])
-            top_own_url = best["url"]
-            top_own_pos = best["position"]
-        else:
-            top_own_url = "none"
-            top_own_pos = "none"
-        f.write(f"{r['date']},{r['location']},{r['keyword']},"
-                f"{r['target_url']},{r['position']},"
-                f"{top_own_url},{top_own_pos}\n")
+    with open(csv_file, "a", encoding="utf-8") as f:
+        for r in reports:
+            # find the best-ranking page of yours (lowest position number)
+            if r.get("my_pages_ranking"):
+                best = min(r["my_pages_ranking"], key=lambda x: x["position"])
+                top_own_url = best["url"]
+                top_own_pos = best["position"]
+            else:
+                top_own_url = "none"
+                top_own_pos = "none"
+            f.write(f"{r['date']},{r['location']},{r['keyword']},"
+                    f"{r['target_url']},{r['position']},"
+                    f"{top_own_url},{top_own_pos}\n")
 
-print("Done! Reports saved.")
+    print("Done! Reports saved.")
 
-# Completeness check — surface any keyword that did NOT come back with a full
-# top-10 competitor set, so an incomplete run is visible in the log (and the
-# CI output) instead of silently blanking that page's tables.
-incomplete = [r for r in reports if len(r.get("top_10_competitors", [])) < 10]
-if incomplete:
-    print(f"\nWARNING: {len(incomplete)} keyword(s) returned fewer than 10 competitors:")
-    for r in incomplete:
-        print(f"    - {r['keyword']}: {len(r['top_10_competitors'])} "
-              f"competitor(s), position={r['position']}")
-else:
-    print("\nAll keywords returned a full top-10 competitor set.")
+    # Completeness check — surface any keyword that did NOT come back with a full
+    # top-10 competitor set, so an incomplete run is visible in the log (and the
+    # CI output) instead of silently blanking that page's tables.
+    incomplete = [r for r in reports if len(r.get("top_10_competitors", [])) < 10]
+    if incomplete:
+        print(f"\nWARNING: {len(incomplete)} keyword(s) returned fewer than 10 competitors:")
+        for r in incomplete:
+            print(f"    - {r['keyword']}: {len(r['top_10_competitors'])} "
+                  f"competitor(s), position={r['position']}")
+    else:
+        print("\nAll keywords returned a full top-10 competitor set.")
 
 
 def generate_chart_data(reports_dir="reports"):
@@ -267,6 +268,7 @@ def generate_chart_data(reports_dir="reports"):
                 d     = item.get("date", "")
                 kw    = item.get("keyword", "")
                 comps = item.get("top_10_competitors", [])
+                pages = item.get("my_pages_ranking", [])
                 if not url or not d:
                     continue
                 if url not in data:
@@ -275,6 +277,7 @@ def generate_chart_data(reports_dir="reports"):
                     "position": None if pos == "not found" else (int(pos) if isinstance(pos, int) else None),
                     "keyword": kw,
                     "competitors": comps,
+                    "pages": pages,
                 }
         except Exception:
             pass
@@ -290,11 +293,28 @@ def generate_chart_data(reports_dir="reports"):
 
         # Competitors from the most recent date that actually HAS them, so a
         # single empty-SERP day doesn't blank the chart's competitor lines.
+        # The domain's own ranking pages ("pages") are taken from that same
+        # valid-SERP date, so a Serper hiccup doesn't wrongly blank them either.
         latest_comps = []
+        latest_pages = []
         for _, v in reversed(sorted_dates):
             if v.get("competitors"):
                 latest_comps = v["competitors"][:10]
+                latest_pages = v.get("pages", [])
                 break
+
+        # Every page of the domain ranking for this keyword, target URL first,
+        # then the rest by ascending SERP position.
+        pages = []
+        for p in latest_pages:
+            p_url = p.get("url", "")
+            pages.append({
+                "position": p.get("position"),
+                "url": p_url,
+                "is_target": p_url == url or p_url.rstrip("/") == url.rstrip("/"),
+            })
+        pages.sort(key=lambda p: (not p["is_target"],
+                                  p["position"] if p["position"] is not None else 999))
 
         competitors = []
         for comp in latest_comps:
@@ -322,7 +342,7 @@ def generate_chart_data(reports_dir="reports"):
                 "series": comp_series,
             })
 
-        output[url] = {"series": series, "competitors": competitors}
+        output[url] = {"series": series, "competitors": competitors, "pages": pages}
 
     js = "// Auto-generated by seo_check.py — do not edit manually\n"
     js += "window.SEO_POSITION_DATA = " + json.dumps(output, indent=2, ensure_ascii=False) + ";\n"
@@ -333,4 +353,6 @@ def generate_chart_data(reports_dir="reports"):
     print(f"chart-data.js written ({len(output)} URL(s))")
 
 
-generate_chart_data()
+if __name__ == "__main__":
+    run_daily_check()
+    generate_chart_data()
