@@ -574,6 +574,26 @@ BUTTOCK_REDUCTION_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+BOTOX_EN = [
+    ("botox", ["botox", "botox cosmetic", "botox injections", "botox injection", "botox treatment", "botox shots", "what is botox", "how does botox work", "botox in face"]),
+    ("botox injections miami", ["botox injections miami", "botox injection miami", "botox miami", "miami botox", "botox miami fl", "botox miami florida", "botox in miami", "botox north miami", "masseter botox miami", "botox florida", "florida botox"]),
+    ("botox cost / price", ["botox cost", "botox cost miami", "botox miami cost", "botox price", "botox miami price", "botox price miami", "how much is botox", "how much does botox cost", "botox cost per unit", "cost of botox", "botox units cost", "botox per unit", "price per unit botox"]),
+    ("botox near me", ["botox near me", "botox clinic near me", "best botox near me", "botox places near me", "where to get botox near me", "botox clinics near me", "botox specials near me"]),
+    ("botox clinic", ["botox clinic", "botox clinics", "botox clinic miami", "best botox clinic miami", "botox medspa miami", "medical spa botox miami", "where to get botox in miami"]),
+    ("botox for wrinkles", ["botox for wrinkles", "botox forehead", "forehead botox", "botox for forehead wrinkles", "glabella botox", "botox frown lines", "botox crows feet", "botox for 11 lines", "botox eyebrow lift"]),
+    ("masseter / jaw botox", ["masseter botox", "masseter botox miami", "jaw botox", "botox for jaw", "botox for teeth grinding", "botox for tmj", "botox slim face"]),
+    ("botox areas", ["botox lip flip", "lip flip miami", "botox lips", "botox around mouth", "botox chin", "botox neck", "botox smile lines", "botox bunny lines", "botox gummy smile"]),
+    ("neuromodulators / alternatives", ["dysport", "dysport miami", "xeomin", "xeomin miami", "jeuveau", "daxxify", "neuromodulator", "wrinkle relaxer", "anti wrinkle injections"]),
+    ("botox how long / units", ["how long does botox last", "botox units", "how many units of botox", "botox units forehead", "botox recovery", "botox aftercare", "botox side effects"]),
+    ("botox cosmetic injector", ["botox injector miami", "best botox injector miami", "botox provider miami", "who can administer botox", "botox nurse injector"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery", "medical spa", "med spa"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 BUTT_IMPLANTS_EN = [
     ("butt implants", ["butt implants", "butt implant", "but implants", "buttimplants", "butt inplants", "butt implanta", "booty implants", "booty implant", "ass implants", "ass implant", "bum implants", "bum implant", "bottom implants", "fake bum implants", "butt fake"]),
     ("butt implants in miami", ["butt implants in miami", "butt implants miami", "miami butt implants", "butt implants miami fl", "butt implants florida", "butt augmentation in miami", "butt augmnettaion in miami", "miami butt surgery", "miami butt", "butty miami"]),
@@ -790,6 +810,8 @@ _SCHEMA_IGNORE = {
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
+    "https://avanaplasticsurgery.com/botox-injections-miami":
+        {"slug": "botox-injections-miami", "lang": "en", "kw": BOTOX_EN},
     "https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami":
         {"slug": "inyecciones-de-botox-en-miami", "lang": "es", "kw": BOTOX_ES},
     "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami":

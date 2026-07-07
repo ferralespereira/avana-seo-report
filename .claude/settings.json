@@ -96,7 +96,9 @@
       "Bash(python -c ' *)",
       "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_ig.py\")",
       "WebFetch(domain:www.certifiedcosmeticsmiami.com)",
-      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_botox.py\")"
+      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_botox.py\")",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\add_track.py\")"
     ],
     "additionalDirectories": [
       "\\tmp",
