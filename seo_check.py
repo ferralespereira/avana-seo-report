@@ -15,6 +15,9 @@ MY_DOMAIN = "avanaplasticsurgery.com"
 
 # Each keyword: its target URL and language ("en" or "es")
 keywords = [
+    {"keyword": "body contouring miami",
+     "url": "https://avanaplasticsurgery.com/body-contouring-miami",
+     "lang": "en"},
     {"keyword": "implantes de glúteos en miami",
      "url": "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami",
      "lang": "es"},
