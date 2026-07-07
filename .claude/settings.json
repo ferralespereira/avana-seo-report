@@ -94,12 +94,7 @@
       "Bash(py \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_bi.py\")",
       "Bash(python)",
       "Bash(python -c ' *)",
-      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_ig.py\")",
-      "WebFetch(domain:www.bodycontouringco.com)",
-      "WebFetch(domain:umiamihealth.org)",
-      "WebFetch(domain:www.dr-rubinstein.com)",
-      "WebFetch(domain:airsculpt.com)",
-      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_bc2.py\")"
+      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_ig.py\")"
     ],
     "additionalDirectories": [
       "\\tmp",

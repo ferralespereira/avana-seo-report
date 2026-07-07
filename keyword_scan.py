@@ -574,28 +574,6 @@ BUTTOCK_REDUCTION_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
-BODY_CONTOURING_EN = [
-    ("body contouring", ["body contouring", "body contour", "body contours", "full body contouring", "cosmetic body contouring", "body contouring procedures", "types of body contouring", "types of body contouring procedures", "body contouring techniques", "body contouring process", "body contouring services"]),
-    ("body contouring miami", ["body contouring miami", "body contouring in miami", "miami body contouring", "body contouring miami fl", "body contouring miami florida", "body contour miami", "body procedures miami", "cosmetic body contouring miami", "body contouring & skin tightening miami fl"]),
-    ("what is body contouring", ["what is body contouring", "whats body contouring", "what's body contouring", "what is body conturing", "what is body countouring", "what is body contoring", "what is body contour", "define body contouring", "body contouring meaning", "body contouring means", "body contouring definition", "body contour meaning", "body contour definition", "meaning of body contouring", "what does body contouring mean"]),
-    ("body sculpting miami", ["body sculpting miami", "body sculpting in miami", "miami body sculpting", "body sculpting miami fl", "body sculpting miami florida", "body sculpting liposuction miami", "post pregnancy body sculpting miami"]),
-    ("body sculpting", ["body sculpting", "whats body sculpting", "body sculpting meaning", "meaning of body sculpting", "types of body sculpting", "body sculpting techniques", "body sculpting tips", "body sculpting pros and cons"]),
-    ("body contouring cost", ["body contouring cost miami", "body contouring cost", "body contouring price in miami", "body contouring miami cost", "body contouring cost premium centers miami florida", "cost of body contouring", "how much is body contouring surgery", "body contour package"]),
-    ("body contouring after weight loss", ["body contouring after weight loss", "body contouring after weight loss miami", "miami body contouring after weight loss", "miami body contouring after major weight loss", "body contouring after major weight loss miami", "surgery after weight loss miami", "plastic surgery after weight loss miami"]),
-    ("excess skin removal", ["excess skin removal miami", "excess skin removal", "reliable surgeons for excess skin removal body contouring", "body skin tightening miami", "body contouring skin tightening"]),
-    ("body contouring surgeon miami", ["body contouring surgeon miami", "best body contouring surgeon miami", "best body contouring surgeon in miami", "choosing a body contouring surgeon miami", "male body contouring miami", "body contouring for men miami", "miami body contouring specialist", "body contouring specialists with high patient satisfaction"]),
-    ("body lift miami", ["body lift miami", "body lift in miami", "lower body lift miami", "posterior body lift miami", "circumferential body lift miami", "body lift surgery miami beach", "body lift miami beach fl", "posterior body lift"]),
-    ("body contouring before and after", ["body contouring before and after miami", "body contouring photos", "body contouring miami before and after", "revision body contouring miami"]),
-    ("body contouring miami neighborhoods", ["body contouring miami beach", "body contouring miami springs", "body contouring south miami", "body contouring cutler bay", "body contouring miami shores", "body contouring bay harbor islands", "body contouring key biscayne", "body contouring hialeah", "body contouring pinecrest"]),
-    ("lipoabdominoplasty / panniculectomy", ["lipoabdominoplasty", "lipoabdominoplasty cost", "panniculectomy miami", "abdominoplasty"]),
-    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
-    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
-    ("plastic surgery", ["plastic surgery"]),
-    ("cosmetic surgery", ["cosmetic surgery"]),
-    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
-    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
-]
-
 BUTT_IMPLANTS_EN = [
     ("butt implants", ["butt implants", "butt implant", "but implants", "buttimplants", "butt inplants", "butt implanta", "booty implants", "booty implant", "ass implants", "ass implant", "bum implants", "bum implant", "bottom implants", "fake bum implants", "butt fake"]),
     ("butt implants in miami", ["butt implants in miami", "butt implants miami", "miami butt implants", "butt implants miami fl", "butt implants florida", "butt augmentation in miami", "butt augmnettaion in miami", "miami butt surgery", "miami butt", "butty miami"]),
@@ -793,8 +771,6 @@ _SCHEMA_IGNORE = {
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
-    "https://avanaplasticsurgery.com/body-contouring-miami":
-        {"slug": "body-contouring-miami", "lang": "en", "kw": BODY_CONTOURING_EN},
     "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami":
         {"slug": "implantes-de-gluteos-miami", "lang": "es", "kw": IMPLANTES_GLUTEOS_ES},
     "https://avanaplasticsurgery.com/butt-implants-in-miami":
