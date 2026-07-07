@@ -597,6 +597,30 @@ BUTT_IMPLANTS_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+IMPLANTES_GLUTEOS_ES = [
+    ("implantes de gluteos", ["implantes de gluteos", "implante de gluteos", "implante de gluteo", "implantes de gluteo", "implantes gluteos", "implante gluteos", "implante gluteo", "gluteos implantes", "implantes gluteos precio", "implantes de gluteos precio", "implantes de gluteos precios", "precio de implantes de gluteos", "costo de implantes de gluteos", "cuanto cuestan los implantes de gluteos"]),
+    ("implantes de gluteos en miami", ["implantes de gluteos en miami", "implantes de gluteos miami", "implantes de gluteos florida", "cirugia de implantes de gluteos", "cirugia de gluteos con implantes", "gluteoplastia con implantes", "gluteoplastia con protesis", "operacion de gluteos con implantes"]),
+    ("implantes de nalgas", ["implantes de nalgas", "implantes de nalga", "implante de nalgas", "implante de nalga", "implantes nalgas", "implante nalgas", "nalgas con implantes", "nalgas operadas con implantes", "silicona en las nalgas"]),
+    ("protesis de gluteos", ["protesis de gluteos", "protesis de gluteo", "protesis gluteos", "protesis gluteo", "protesis en los gluteos", "protesis en gluteos", "prótesis de glúteos", "gluteos con protesis", "aumento de gluteos con protesis", "aumento de glúteos con prótesis precio"]),
+    ("aumento de gluteos", ["aumento de gluteos", "aumento de gluteo", "cirugia aumento de gluteos", "cirugia de aumento de gluteos", "operacion de aumento de gluteos", "operacion aumento de gluteos", "cirugia para aumento de gluteos", "clinica aumento de gluteos"]),
+    ("aumento de gluteos con implantes", ["aumento de gluteos con implantes", "aumento de gluteos con silicona", "gluteos con silicona", "implante silicona gluteos", "implantes de silicona para gluteos", "aumento de glúteos con prótesis"]),
+    ("aumento de gluteos precio", ["aumento de gluteos precio", "aumento de glúteos precio", "precio aumento de gluteos", "precio de aumento de gluteos", "costo de aumento de gluteos", "aumento de gluteos costo", "cuanto cuesta aumento de gluteos", "cuanto cuesta el aumento de gluteos", "cuanto cuesta un aumento de gluteos", "cuanto vale un aumento de gluteos", "cuanto cuesta una operacion de aumento de gluteos", "aumento de glúteos precio usa", "aumento de glúteos hombres precio"]),
+    ("operacion de gluteos", ["operacion de gluteos", "operacion de gluteo", "operaciones de gluteos", "operacion gluteos", "cirugia de gluteos", "cirugia de gluteo", "cirugias de gluteos", "cirugia gluteos", "cirugia plastica de gluteos", "cirugia estetica de gluteos", "cirugía de glúteos"]),
+    ("operacion de gluteos precio", ["operacion de gluteos precio", "operación de glúteos precio", "cirugia de gluteos precio", "cirugía de glúteos precio", "cirugia de gluteos precios", "cirugia de gluteos costo", "costo de cirugia de gluteos", "cuanto cuesta la operacion de gluteos", "cuanto cuesta una operacion de gluteos", "cuanto cuesta una cirugia de gluteos", "cuanto cuesta operarse los gluteos", "cuanto vale una operacion de gluteos", "cuanto cuesta ponerse gluteos", "cuanto sale ponerse gluteos"]),
+    ("operacion de nalgas", ["operacion de nalgas", "operacion de nalga", "operaciones de nalgas", "cirugia de nalgas", "cirugias de nalgas", "cirugia plastica de nalgas", "cirugia nalgas", "nalgas operadas", "nalgas hechas", "cuanto cuesta operarse las nalgas", "cuanto cuesta ponerse nalgas", "operación de nalgas precio"]),
+    ("cuanto duran los implantes de gluteos", ["cuanto duran los implantes de gluteos", "cuánto duran los implantes de glúteos", "como son los implantes de gluteos", "como se ven los implantes de gluteos", "como se ponen los implantes de gluteos", "se notan los implantes de glúteos", "implantes de gluteos cicatriz", "implantes de glúteos consecuencias"]),
+    ("tamaños de implantes de gluteos", ["tamaños de implantes de gluteos", "tamaños implantes de gluteos", "implantes de gluteos tamaños", "implantes de glúteos tamaños fotos", "implantes de gluteos 500cc", "implantes de gluteos 800cc", "implantes de gluteos 450cc", "implantes de gluteos 300cc", "implantes de gluteos grandes", "implantes de glúteos antes y después", "implantes de gluteo antes y despues"]),
+    ("implantes de gluteos hombres", ["implantes de gluteos hombres", "implantes de gluteos para hombres", "implante gluteos hombre", "implante gluteos mujer", "mujeres con implantes de gluteos"]),
+    ("gluteoplastia", ["gluteoplastia", "gluteoplastia precio", "gluteoplastia precios", "gluteoplastia de aumento", "gluteoplasty cost", "gluteus implant", "gluteal implants", "glutes implants", "ass implant", "implants for buttocks"]),
+    ("levantamiento / trasplante de gluteos", ["levantamiento de gluteos", "levantamiento de gluteos brasileno", "levantamiento de glúteos sin cirugía precios", "trasplante de gluteos", "reconstrucción de gluteos", "aumento de glúteos brasileño miami"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados", "cirujano plastico certificado en miami"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos", "cirujano plástico"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 REDUCCION_GLUTEOS_ES = [
     ("reduccion de gluteos", ["reduccion de gluteos", "reducir gluteos", "reduccion de gluteo", "reduccion gluteos", "reduccion de", "disminuir gluteos", "como disminuir gluteos", "como disminuir los gluteos"]),
     ("reduccion de gluteos en miami", ["reduccion de gluteos en miami", "reduccion de gluteos miami", "reduccion de gluteos florida"]),
@@ -747,6 +771,8 @@ _SCHEMA_IGNORE = {
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
+    "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami":
+        {"slug": "implantes-de-gluteos-miami", "lang": "es", "kw": IMPLANTES_GLUTEOS_ES},
     "https://avanaplasticsurgery.com/butt-implants-in-miami":
         {"slug": "butt-implants-in-miami", "lang": "en", "kw": BUTT_IMPLANTS_EN},
     "https://avanaplasticsurgery.com/buttock-reduction-miami":

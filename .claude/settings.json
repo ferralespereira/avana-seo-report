@@ -93,7 +93,8 @@
       "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_bi.py\")",
       "Bash(py \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_bi.py\")",
       "Bash(python)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_ig.py\")"
     ],
     "additionalDirectories": [
       "\\tmp",
