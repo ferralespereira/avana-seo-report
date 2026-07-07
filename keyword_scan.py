@@ -574,6 +574,29 @@ BUTTOCK_REDUCTION_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+BUTT_IMPLANTS_EN = [
+    ("butt implants", ["butt implants", "butt implant", "but implants", "buttimplants", "butt inplants", "butt implanta", "booty implants", "booty implant", "ass implants", "ass implant", "bum implants", "bum implant", "bottom implants", "fake bum implants", "butt fake"]),
+    ("butt implants in miami", ["butt implants in miami", "butt implants miami", "miami butt implants", "butt implants miami fl", "butt implants florida", "butt augmentation in miami", "butt augmnettaion in miami", "miami butt surgery", "miami butt", "butty miami"]),
+    ("buttock implants miami", ["buttock implants miami", "buttocks implants miami", "buttock implants", "buttocks implants", "silicone buttock implant", "silicone buttock implants", "silicone buttocks implants", "buttock implant", "implants buttocks", "implants for buttocks", "buttock implants near me", "miami buttock implants", "miami buttock augmentation", "miami plastic surgery buttock"]),
+    ("gluteal implants miami", ["gluteal implants miami", "gluteal implant miami", "gluteal implants", "gluteal implant", "glute implants", "glutes implants", "gluteal implants near me", "gluteal implants sizes", "gluteal implant sizes"]),
+    ("gluteoplasty miami", ["gluteoplasty miami", "gluteoplasty", "top gluteoplasty doctors miami", "gluteal augmentation", "gluteal augmentation surgery", "gluteal augmentation cost", "male gluteal augmentation cost", "leading providers for buttock augmentation"]),
+    ("butt implants cost", ["butt implants cost", "butt implant cost", "butt implant cost in miami", "butt implant surgery cost", "butt implants price", "butt implant price", "gluteal implants cost", "buttock implants cost", "buttock implant cost", "average cost of buttocks implants", "average cost for buttock implants", "how much are butt implants", "how much do butt implants cost", "how much does butt implants cost", "how much does it cost to get butt implants", "how much is a butt implant", "how much is butt implants", "cost of butt implant", "booty implants cost", "bum implant cost", "bottom implants cost", "how much are bottom implants", "how much is it to get buttock implants", "how much does it cost for buttocks implants"]),
+    ("butt augmentation miami", ["butt augmentation miami", "buttock augmentation miami", "buttocks augmentation miami", "butt augmentation miami fl", "buttock augmentation miami fl", "butt augmentation with fat transfer miami", "butt augmentation florida", "buttock augmentation in florida", "buttock augmentation with implants", "buttock augmentation implants", "buttocks augmentation", "buttocks augmentation near me", "butt augmentation near me", "buttock augmentation fort lauderdale"]),
+    ("butt implant surgery", ["butt implant surgery", "butt implant surgery near me", "buttock implant surgery", "buttock implant surgery miami", "implant buttock surgery", "buttocks implants surgery", "butt implants surgery", "booty implant surgery", "miami buttock surgery"]),
+    ("butt implant doctors", ["butt implant doctor", "butt implants doctors", "butt implants surgeon", "buttock implant surgeons", "butt doctor", "butt doctors", "butt docotr", "is there a butt doctor", "doctor for butt", "which doctor to see for buttocks", "big ass doctors"]),
+    ("silicone butt implants", ["silicone butt implants", "silicone butt implant", "butt silicone implant", "silicone booty implants", "what are butt implants made of", "how do butt implants work", "what do butt implants look like", "can you get butt implants"]),
+    ("butt implant sizes", ["butt implant sizes", "buttock implant sizes", "large butt implants", "large buttock implants", "huge butt implants", "huge butt implant", "big butt implants", "big butt implant", "massive butt implants", "giant butt implants", "biggest butt implants", "largest butt implants", "butt implants huge", "sexy butt implants", "best butt implants", "butt cheek implants"]),
+    ("butt implants longevity / removal", ["how long do butt implants last", "how long do buttock implants last", "butt implant removal", "buttock implant recovery time", "buttock implants recovery", "butt implant incisions", "how common are buttock implants", "can you get intramuscular injection with buttock implants"]),
+    ("butt injections miami", ["butt injections miami", "butt injections in miami", "buttock injections miami", "buttock injections miami fl", "miami buttock injections", "miami booty injections", "miami butt injections", "butt shots miami", "butt shots in miami", "booty shots for women"]),
+    ("hip / male implants", ["hip implants miami", "hip and butt implants", "butt and hip implants", "male butt implant", "plastic surgery butts", "plastic surgery butt implants"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 REDUCCION_GLUTEOS_ES = [
     ("reduccion de gluteos", ["reduccion de gluteos", "reducir gluteos", "reduccion de gluteo", "reduccion gluteos", "reduccion de", "disminuir gluteos", "como disminuir gluteos", "como disminuir los gluteos"]),
     ("reduccion de gluteos en miami", ["reduccion de gluteos en miami", "reduccion de gluteos miami", "reduccion de gluteos florida"]),
@@ -724,6 +747,8 @@ _SCHEMA_IGNORE = {
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
+    "https://avanaplasticsurgery.com/butt-implants-in-miami":
+        {"slug": "butt-implants-in-miami", "lang": "en", "kw": BUTT_IMPLANTS_EN},
     "https://avanaplasticsurgery.com/buttock-reduction-miami":
         {"slug": "buttock-reduction-miami", "lang": "en", "kw": BUTTOCK_REDUCTION_EN},
     "https://avanaplasticsurgery.com/brazilian-butt-lift-miami":

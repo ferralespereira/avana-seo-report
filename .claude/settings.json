@@ -84,7 +84,16 @@
       "Bash(\"/c/Users/user564/AppData/Local/Programs/Python/Python312/python.exe\" -c \"import keyword_scan as k; assert 'https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami' in k.PAGES; print\\('PAGES OK, REDUCCION rows:', len\\(k.REDUCCION_GLUTEOS_ES\\)\\); import seo_check as s; print\\('seo_check keywords:', len\\(s.keywords\\), '| reduccion tracked:', any\\('reduccion-de-gluteos' in x['url'] for x in s.keywords\\)\\)\")",
       "Bash(taskkill //F //IM python.exe)",
       "Bash(/c/Users/user564/.local/bin/python3.14.exe -c ' *)",
-      "Bash(\"/c/Users/user564/AppData/Local/Programs/Python/Python312/python.exe\" -c \"import keyword_scan as k; u='https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami'; print\\('PAGES entry:', u in k.PAGES\\); print\\('slug:', k.PAGES[u]['slug']\\); print\\('kw rows:', len\\(k.PAGES[u]['kw']\\)\\)\")"
+      "Bash(\"/c/Users/user564/AppData/Local/Programs/Python/Python312/python.exe\" -c \"import keyword_scan as k; u='https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami'; print\\('PAGES entry:', u in k.PAGES\\); print\\('slug:', k.PAGES[u]['slug']\\); print\\('kw rows:', len\\(k.PAGES[u]['kw']\\)\\)\")",
+      "WebFetch(domain:constructivesurgery.org)",
+      "WebFetch(domain:drgcosmeticsurgery.com)",
+      "WebFetch(domain:r.jina.ai)",
+      "WebFetch(domain:web.archive.org)",
+      "Bash(curl -sL -A 'Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0 Safari/537.36' https://avanaplasticsurgery.com/butt-implants-in-miami -o __TRACKED_VAR__/avana.html)",
+      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_bi.py\")",
+      "Bash(py \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_bi.py\")",
+      "Bash(python)",
+      "Bash(python -c ' *)"
     ],
     "additionalDirectories": [
       "\\tmp",
