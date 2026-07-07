@@ -597,6 +597,25 @@ BUTT_IMPLANTS_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+BOTOX_ES = [
+    ("inyecciones de botox en miami", ["inyecciones de botox en miami", "inyecciones de botox miami", "botox en miami", "botox miami", "miami botox", "botox miami florida", "botox north miami", "masseter botox miami", "botox florida", "florida botox", "botox en miami precios"]),
+    ("botox", ["botox", "botox en español", "botox español", "que es botox en la cara", "que es ponerse botox", "botox cara", "botox cara mujer", "botox en mujeres", "botox estetica facial", "botox en el rostro", "botox para la cara", "botox en la cara", "botox en toda la cara", "unidad de botox", "unidades de botox", "sesion de botox"]),
+    ("clinica de botox", ["clinica de botox", "clínica de botox", "clinicas de botox", "clínicas de botox", "clinica botox", "clinica para botox", "clinicas para botox", "clinicas para aplicar botox", "clinica de botox y relleno facial"]),
+    ("clinica de botox cerca de mi", ["clinica de botox cerca de mi", "clínica de botox cerca de mi", "clinicas de botox cerca de mi", "clínicas de botox cerca de mi", "clinica botox cerca de mi", "clinica para botox cerca de mi", "clinica de botox cerca de mi ubicacion"]),
+    ("botox cerca de mi", ["botox cerca de mi", "botox cerca de mí", "botox cerca de mi ubicacion", "donde aplican botox cerca de mi", "donde ponen botox cerca de mi", "lugares donde ponen botox cerca de mi", "donde ponerme botox cerca de mi", "donde ponerse botox cerca de mi", "donde hacen botox cerca de mi", "aplicacion de botox cerca de mi", "botox near me", "botox en la cara cerca de mi", "botox para la cara cerca de mi"]),
+    ("donde se aplica el botox", ["donde se inyecta el botox", "donde se aplica botox", "botox donde se aplica", "donde se puede poner botox", "donde se puede poner botox en la cara", "donde se puede aplicar botox", "donde se pone el botox", "donde poner botox en la cara", "donde ponen botox en la cara", "lugares donde ponen botox", "inyectar botox en la cara", "inyectarse botox en la cara"]),
+    ("cuanto cuesta el botox", ["cuanto cuesta el botox", "cuanto cuesta el botox en la cara", "cuanto cuesta ponerse botox", "cuanto cuesta ponerse botox en la cara", "cuanto cuesta una aplicacion de botox", "cuanto vale ponerse botox en la cara", "cuanto cuesta el botox en el entrecejo", "botox en la cara precio", "botox en el entrecejo precio", "botox en entrecejo precio", "botox en frente precio"]),
+    ("cuanto dura el botox", ["cuanto dura el botox", "botox alrededor de la boca", "unidad de botox precio"]),
+    ("botox facial areas", ["botox en el entrecejo", "botox entrecejo", "botox en la frente", "masseter botox near me", "botox full face near me"]),
+    ("relleno / rejuvenecimiento facial", ["relleno facial", "rejuvenecimiento facial", "inyecciones cosmeticas miami", "inyecciones cosméticas miami", "estetica facial"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados", "cirujano plastico certificado en miami"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos", "cirujano plástico"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica", "medicina estetica"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 IMPLANTES_GLUTEOS_ES = [
     ("implantes de gluteos", ["implantes de gluteos", "implante de gluteos", "implante de gluteo", "implantes de gluteo", "implantes gluteos", "implante gluteos", "implante gluteo", "gluteos implantes", "implantes gluteos precio", "implantes de gluteos precio", "implantes de gluteos precios", "precio de implantes de gluteos", "costo de implantes de gluteos", "cuanto cuestan los implantes de gluteos"]),
     ("implantes de gluteos en miami", ["implantes de gluteos en miami", "implantes de gluteos miami", "implantes de gluteos florida", "cirugia de implantes de gluteos", "cirugia de gluteos con implantes", "gluteoplastia con implantes", "gluteoplastia con protesis", "operacion de gluteos con implantes"]),
@@ -771,6 +790,8 @@ _SCHEMA_IGNORE = {
 
 # target_url -> {slug (improvements page), lang, keyword set}
 PAGES = {
+    "https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami":
+        {"slug": "inyecciones-de-botox-en-miami", "lang": "es", "kw": BOTOX_ES},
     "https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami":
         {"slug": "implantes-de-gluteos-miami", "lang": "es", "kw": IMPLANTES_GLUTEOS_ES},
     "https://avanaplasticsurgery.com/butt-implants-in-miami":
