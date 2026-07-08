@@ -1,0 +1,37 @@
+@model ServicePageViewModel
+<title>Implantes de glúteos en Miami (Gluteoplastia) | @Settings.GetCenterName</title>
+<meta name="description" content="Implantes de glúteos en Miami. @Settings.GetCenterName le ofrece el procedimiento quirúrgico para aumentar sus glúteos y embellecer su figura. Contáctenos." />
+
+@* Added og:locale — set to Spanish (United States) *@
+<meta property="og:locale" content="es_US" />
+@* Added — en_US: signals there is an English version of this page *@
+<meta property="og:locale:alternate" content="en_US" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Implantes de glúteos en Miami | @Settings.GetCenterName" />
+<meta property="og:description" content="La gluteoplastia debe ser realizada por cirujanos plásticos con experiencia, debido a que los implantes deben soportar el peso de las personas, por eso están compuestos por silicona de alta densidad." />
+
+@* Adjusted og:url to absolute URL *@
+<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami" />
+@* Added article tag *@
+<meta property="article:tag" content="Implantes de Glúteos" />
+
+
+<meta property="article:published_time" content="2022-07-15T17:33:17@(Model.GetTimeZone)" />
+<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+
+@* Adjusted og:image to absolute URL *@
+<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/butt-implants.jpg" />
+@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
+<meta property="og:image:alt" content="Implantes de glúteos en Miami" />
+<meta property="og:image:width" content="910" />
+<meta property="og:image:height" content="960" />
+
+@* Added - og:site_name *@
+<meta property="og:site_name" content="@Settings.GetCenterName" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Implantes de glúteos | @Settings.GetCenterName" />
+<meta name="twitter:description" content="Aumento de glúteos con Implantes en @Settings.GetCenterName es el procedimiento quirúrgico que le permite embellecer su figura. Contáctenos." />
+<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/butt-implants.jpg" />
+<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/implantes-de-gluteos-miami" />
