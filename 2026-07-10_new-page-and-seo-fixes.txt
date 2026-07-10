@@ -1,0 +1,137 @@
+========================================================================
+WEEKLY WORK REPORT
+Project: avanaplasticsurgery5.0 (avanaplasticsurgery.com)
+Week of: Monday 2026-07-06 — Friday 2026-07-10
+Prepared: 2026-07-10
+========================================================================
+
+EXECUTIVE SUMMARY
+-----------------
+Two main tracks this week:
+
+  1. Built a brand-new bilingual service page for a new procedure, the
+     DEEP PLANE FACELIFT (English + Spanish), from content and metadata
+     through structured data — and added a dedicated surgeon section for
+     Dr. Rudolph J. Triana.
+
+  2. Shipped a batch of technical SEO fixes and one production bug fix
+     flagged by the SEMrush site audit and by internal QA — internal-link
+     authority, content-freshness dates, a broken sitemap, enriched page
+     metadata, and a blank Spanish page restored to service.
+
+All work is committed and pushed to origin/main. A few items are queued
+for the next build/deploy to verify live (the site serves compiled code;
+templates go live on deployment). Those are listed under "PENDING."
+
+
+========================================================================
+TRACK 1 — NEW PAGE: DEEP PLANE FACELIFT (EN + ES)
+========================================================================
+The largest deliverable of the week. A new procedure page created from
+scratch in both languages, following the site's SEO and schema conventions.
+
+URLs / keywords
+  - EN: /deep-plane-facelift-miami            (kw: "Deep plane facelift Miami")
+  - ES: /espanol/lifting-facial-plano-profundo-en-miami
+  Deliberately differentiated from the existing /miami-facelift page to
+  avoid keyword cannibalization (this page owns the TECHNIQUE; the generic
+  "facelift" head terms stay on the existing page).
+
+Content
+  - Full original article copy in both languages, grounded in medical
+    sources (ASPS, AAFPRS, PubMed/PMC) with source URLs kept in
+    non-rendered comments for fact-checking.
+  - Sections: intro, table of contents, key-takeaways box, deep plane vs.
+    SMAS comparison table, benefits, candidacy, how it's performed,
+    recovery, results/longevity, cost + financing, local & out-of-town
+    patients, consultation CTA, and a 13-question FAQ.
+  - Spanish version written as natural Spanish (not a literal translation),
+    with correct medical terminology.
+
+Metadata & structured data
+  - Full meta set per page: title, description, canonical, Open Graph,
+    Twitter, article tags.
+  - Six JSON-LD schema blocks per page (MedicalClinic/LocalBusiness,
+    FAQPage, SurgicalProcedure, BreadcrumbList, WebPage, and a surgeon
+    Person entity). All validated as parsing correctly.
+
+Surgeon section — Dr. Rudolph J. Triana (added 2026-07-10)
+  - Added a visible "surgeon" section to both language pages featuring
+    Dr. Triana, modeled on the existing BBL page layout but as a single
+    focused card.
+  - Corrected the structured data: the page had inherited a leftover list
+    of five BBL surgeons who do not appear on this page — replaced with a
+    single Triana entity, cross-linked (same schema @id) to his existing
+    profile page so search engines resolve both pages to one surgeon.
+  - Named Dr. Triana as a performer on the SurgicalProcedure schema.
+  - Added a new localized label, "Board-Certified Facial Plastic Surgeon"
+    (EN) / "Cirujano Plastico Facial Certificado" (ES), to the shared
+    vocabulary resource files — his accurate credential (ABFPRS), stronger
+    on a facelift page than the generic "plastic surgeon" label.
+
+Cost figures
+  - Verified the external benchmark figures in the cost section. The ASPS
+    surgeon's-fee figure ($11,395) checks out exactly against the source.
+    The RealSelf average (~$23,700) is consistent with published figures
+    but not directly verifiable (RealSelf blocks crawlers). All benchmark
+    numbers are flagged to be replaced with Avana's confirmed pricing
+    before publishing.
+
+Relevant commits: creating deep-plane-facelift-miami EN Page (07-08),
+  Adjusting metas x2 (07-09), Es View (07-09), View / surgeon section
+  (07-10), plus a merge to integrate teammates' work on the same page.
+
+
+========================================================================
+TRACK 2 — SEO FIXES & BUG FIX
+========================================================================
+
+1. Removed rel="nofollow" from internal links (2026-07-07)
+   - SEMrush flagged 40 internal links carrying nofollow, which blocks our
+     own link authority from reaching before-and-after and specials pages.
+   - Fixed 4 spots across 3 shared template files (service-page photo &
+     specials buttons, the before/after partial, and specials breadcrumbs).
+   - Left legitimate nofollow uses (external links, form pages) untouched.
+
+2. Refreshed stale "last modified" dates on 30 pages (2026-07-07)
+   - 30 pages hardcoded a static article:modified_time, some dated
+     2017–2018, advertising stale content to Google.
+   - Set all 30 to 2026-07-01, leaving published_time untouched. Verified
+     zero pre-2026 modified dates remain.
+
+3. Fixed a blank Spanish page — Accessibility Statement (2026-07-07)
+   - /espanol/declaracion-de-accesibilidad returned HTTP 200 but an empty
+     body (blank white page).
+   - Root cause: a malformed closing tag ("</</li>") broke the Razor
+     render. Fixed with an encoding-safe edit that preserved the file's
+     accented characters.
+
+4. Fixed two broken URLs in sitemap.xml (2026-07-08)
+   - Corrected a percent-encoded accent in a Spanish liposuction-related
+     URL and a "bostox" -> "botox" typo in a before/after gallery URL.
+     Both were advertising 404s to Google and wasting crawl budget.
+
+5. Enriched page metadata for two more service pages (2026-07-07)
+   - butt-implants-in-miami and buttock-reduction-miami (EN + ES):
+     restored/enriched Open Graph, Twitter, article-tag and image meta
+     tags, consistent with the ongoing metadata-quality pass.
+
+
+========================================================================
+PENDING / TO VERIFY ON NEXT DEPLOY
+========================================================================
+  - Deep plane facelift: replace benchmark COST figures with Avana's
+    confirmed pricing (both languages); optionally add an "offers" node
+    with a starting price to the schema.
+  - Deep plane facelift: add the EN + ES URLs to sitemap.xml.
+  - Deep plane facelift: swap the reused facelift image for the dedicated
+    deep-plane image in the social/schema tags.
+  - Surgeon review of the deep plane clinical claims (anesthesia, pain,
+    scars FAQs) before publishing.
+  - Confirm the ServiceEntities.xml change that activates the deep plane
+    page (currently staged locally) is committed when ready to go live.
+  - Re-run the SEMrush crawl after deploy to confirm the nofollow (40) and
+    broken-URL (2) warnings clear to zero.
+  - The SEO template fixes go live on the next build; verify on deploy.
+
+========================================================================

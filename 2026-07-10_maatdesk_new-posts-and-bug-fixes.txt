@@ -1,0 +1,202 @@
+========================================================================
+MAATDESK 3.0 - WEEKLY WORK REPORT
+Period:   Monday July 6 - Friday July 10, 2026
+Project:  maatdesk3.0 (ASP.NET marketing site)
+Author:   Javier Ferrales
+Prepared: 2026-07-10
+========================================================================
+
+
+------------------------------------------------------------------------
+EXECUTIVE SUMMARY
+------------------------------------------------------------------------
+Work this week spanned three areas:
+
+  1. CONTENT - Two new SEO blog posts were written, styled and shipped,
+     taking the active post count from 11 to 13. Both were converted from
+     .docx source documents with full schema.org markup.
+
+  2. BUG FIXES - Thirteen defects were diagnosed and resolved. Several
+     were long-standing and user-visible: an invisible blog post,
+     white-on-white buttons, raw CSS printing as text on a live page,
+     mobile horizontal scroll, and duplicate H1 tags hurting SEO.
+
+  3. COMPANY DATA - The corporate address was updated everywhere it is
+     stored or rendered, following a full trace through config, meta
+     tags, and hardcoded markup.
+
+The single most valuable outcome was not a fix but a discovery: Tailwind
+is pre-compiled outside this project, so a large set of utility classes
+used across the site are DEAD (present in the HTML, no CSS behind them).
+This was the hidden root cause behind several of the visual bugs and it
+changes how all future markup must be written. See "Key Discoveries".
+
+
+------------------------------------------------------------------------
+1. NEW CONTENT (2 posts, 11 -> 13 active)
+------------------------------------------------------------------------
+
+POST 1 - "How Much Does Legal Practice Management Software Cost in 2026?"
+   Slug:   /blog-post/how-much-does-legal-practice-management-software-cost
+   Built:  full body converted to theme classes, 9 cost-factor sections,
+           12 questions, FAQ, sources; two pricing tables; BlogPosting +
+           FAQPage JSON-LD.
+   Quality: all 26 hyperlinks from the source .docx reconciled by anchor
+           text, target and placement (26/26 match); body verified
+           paragraph-for-paragraph (194/194 present).
+   Placement: promoted into the /blog featured band, slot 2.
+
+POST 2 - "AI Legal Software for Law Firms: 12 Questions to Ask Before
+          You Buy in 2026"
+   Slug:   /blog-post/ai-legal-software-for-law-firms
+   Built:  12 question sections each with a "What to Ask Vendors"
+           sub-section, Quick Checklist table, 5-question FAQ, CTA;
+           BlogPosting + FAQPage JSON-LD.
+   Quality: 12 links reconciled to the source; one duplicate link
+           corrected. Built from the pricing post as a template so every
+           styling lesson from the bug fixes was applied up front -
+           verified clean on first pass (1 H1, 0 mobile overflow,
+           18 sections).
+   Images: real cover image shipped in all three required sizes
+           (450x240, 630x360, 845x440), replacing placeholders.
+
+Both posts were verified with dotnet build (0 errors) and a headless
+Chrome pass: HTTP 200, correct single H1, schema present, cover image
+200, and 0 horizontal overflow at 320/360/390/414px.
+
+
+------------------------------------------------------------------------
+2. BUG FIXES (13 resolved)
+------------------------------------------------------------------------
+
+USER-VISIBLE DEFECTS RESOLVED
+
+  - Invisible blog post. "how-to-become-a-better-lawyer" was active and
+    its direct URL worked, but it appeared nowhere on /blog. Cause: it
+    carried header="true", pushing it into the featured band, which
+    renders exactly three posts - the fourth silently disappeared.
+    Fixed by clearing the flag.
+
+  - White-on-white UI. The "Why Law Firms Choose Maatdesk" panel and the
+    "Schedule Your Demo" button on the switching post used dead
+    "maat-green" classes with white text, rendering invisible. Rewritten
+    against the real palette.
+
+  - Raw CSS printing as visible text at the top of the switching post.
+    A duplicate media query sat outside any <style> tag; Razor emitted it
+    as plain text. Deleted the unwrapped copy.
+
+  - Mobile hero image cropped on every blog post. The shared skin used
+    aspect-ratio 500/240 against a 630x360 image, slicing it below
+    1024px. Corrected the ratio.
+
+  - Mobile horizontal scroll on the pricing post (~33px at 360px).
+    Diagnosed with headless-Chrome measurement; the tables' min-content
+    inflated the section past phone width because the overflow wrapper
+    was a dead class. Fixed with table-layout:fixed and inline styles.
+
+  - Hardcoded "localhost:7156" in live SEO markup. A JSON-LD FAQPage url
+    on the personal-injury-law service page pointed at the dev server.
+    Repointed to maatdesk.com; full sweep confirms no others.
+
+SEO DEFECTS RESOLVED
+
+  - Duplicate <h1> on both new posts - the shared skin already emits one
+    and each article added a second. Removed the article-level H1 on
+    both. The switching post's title was also shortened to
+    "Switching Legal Practice Management Software", cleaning up the
+    breadcrumb and card.
+
+  - Invisible prose links - classless <a> tags inherited body color with
+    no underline under the Tailwind reset. Added scoped link styling that
+    excludes the CTA button.
+
+AUDITS / NON-ISSUES CONFIRMED
+
+  - Audited all 12 articlemetas files for the unwrapped-CSS leak; the bug
+    was isolated to one post.
+  - Featured-band ordering set deliberately, with google-ads demoted to
+    keep the band at exactly three.
+
+
+------------------------------------------------------------------------
+3. COMPANY ADDRESS UPDATE
+------------------------------------------------------------------------
+Old: 100 SE 2nd Street, Suite 2000, Miami, FL 33131 (Miami Tower)
+New: 1645 SW 107th Ave, Suite 142C, Miami, FL 33165-7344
+Email unchanged (info@maatdesk.com), by decision.
+
+The address was traced to five locations before any edit was made. Only
+one is actually visible to users, and it was hardcoded rather than
+config-driven - so changing config alone would have silently left the
+wrong address on the site.
+
+  appsettings.json  center address, full address, zipcode, latitude and
+                    longitude updated. Feeds the geo meta tags in the
+                    <head> of every page.
+  /company page     the "Headquarters" block - hardcoded plain text, the
+                    only place the street address is rendered. Updated,
+                    and the "Miami Tower" building-name line removed.
+  /company image    the Miami Tower photograph was replaced; it showed a
+                    building the company no longer occupies.
+
+A sweep of all views and JSON for the old address parts confirms no
+source file still hardcodes it.
+
+
+------------------------------------------------------------------------
+4. KEY DISCOVERIES (carry these forward)
+------------------------------------------------------------------------
+
+TAILWIND IS PRE-COMPILED OUTSIDE THIS PROJECT. The CSS is built by a
+separate Astro project and copied into wwwroot/themes/maatdesk/. A
+utility class only works if the Astro build already emitted it; any other
+class is dead - it appears in the HTML and does nothing.
+
+  Confirmed dead:  overflow-x-auto, border-collapse, list-decimal, pr-4,
+                   my-4, my-8, space-y-1, bg-maat-green/5, border-l-4, and
+                   the entire "maat-green" color (text/bg/border).
+  Confirmed live:  maat-dark (brand green ~#3ED79F), maat-light (light
+                   tint), maat-text (dark navy body/heading), maat-gray.
+
+  Rule going forward: use bundle-backed classes or inline styles. Note
+  the trap: "maat-green" reads like a valid brand class and is not.
+
+THE FEATURED BAND HOLDS EXACTLY THREE POSTS. header="true" moves a post
+into the band; the template renders nothing unless there are exactly
+three. Fewer or more, and posts silently disappear from /blog. Any future
+header="true" edit must keep the count at exactly three.
+
+BLOG SORTING is by "datecreated", not "datepublished". Setting a sort
+position therefore changes the date shown on the card.
+
+SOURCE OF TRUTH for posts is App_Data\BlogPostEntities.xml.
+
+
+------------------------------------------------------------------------
+5. STATUS & OUTSTANDING ITEMS
+------------------------------------------------------------------------
+The AI post is complete and verified but intentionally not yet published;
+by convention it goes live next week. No action needed before then.
+
+SCHEDULED (not blocking)
+  [ ] Publish the AI post next week.
+
+CONTENT
+  [ ] Decide whether the AI post goes in the /blog featured band. If so,
+      demote one of the current three header posts in the same edit.
+  [ ] Verify the pricing post's external source links (Clio, MyCase, ABA)
+      are still current.
+
+DATA QUALITY
+  [ ] appsettings.json lat/long for the new address are approximate.
+      Replace with exact Google Maps coordinates if local-SEO map pins
+      matter.
+  [ ] center_address_link is empty, so the address is not a clickable
+      Google Maps link anywhere.
+  [ ] The /company address is hardcoded rather than reading @Settings.*.
+      Wiring it to config would give a single source of truth.
+
+========================================================================
+END OF REPORT
+========================================================================

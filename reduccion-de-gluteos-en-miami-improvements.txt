@@ -1,37 +1,86 @@
-@model ServicePageViewModel
-<title>Reducción de Glúteos en Miami - Desde $5,500 | @Settings.GetCenterName</title>
-<meta name="description" content="Reducción de glúteos en Miami desde $5,500. Si busca una silueta más equilibrada, ofrecemos cirugía de reducción de glúteos segura con resultados naturales." />
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SEO IMPROVEMENTS REPORT
+  Reducción de Glúteos en Miami  (Spanish page)
+  avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami
+  Updated: July 7, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-@* Added og:locale — set to Spanish (United States) *@
-<meta property="og:locale" content="es_US" />
-@* Added — en_US: signals there is an English version of this page *@
-<meta property="og:locale:alternate" content="en_US" />
+  SUMMARY
+  ├─ 7 meta / social tags fixed or added
+  ├─ 2 hreflang-style locale signals added (es_US + en_US)
+  ├─ 2 URLs converted to absolute (canonical alignment)
+  ├─ 1 article:tag added (topical signal)
+  └─ 3 Open Graph image attributes added (rich social cards)
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Reducción de Glúteos en Miami | @Settings.GetCenterName" />
-<meta property="og:description" content="La reducción de glúteos puede ser el procedimiento quirúrgico ideal para ti si al mirarte al espejo imaginas una silueta proporcionada, equilibrada y armónica" />
+  Scope: This pass covers the technical meta-tag and Open Graph
+  optimization of the Spanish page. On-page content, keyword
+  targeting, and schema markup are handled in a separate phase.
 
-@* Adjusted og:url to absolute URL *@
-<meta property="og:url" content="https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami" />
 
-@* Added article tag *@
-<meta property="article:tag" content="Reducción de Glúteos" />
+─────────────────────────────────────────────────────────────
+  1.  META TAGS
+─────────────────────────────────────────────────────────────
 
-<meta property="article:published_time" content="2025-02-26T17:33:17@(Model.GetTimeZone)" />
-<meta property="article:modified_time" content="@Model.GetLastModifiedDate" />
+  FILE: reduccion-de-gluteos-en-miami / Es / articlemetas.cshtml
 
-@* Adjusted og:image to absolute URL *@
-<meta property="og:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/buttock-reduction.jpg" />
-@* Added og:image:alt, og:image:width, og:image:height — enables rich image display on social cards *@
-<meta property="og:image:alt" content="Reducción de Glúteos en Miami | @Settings.GetCenterName" />
-<meta property="og:image:width" content="910" />
-<meta property="og:image:height" content="960" />
+  [NEW] og:locale added
+    og:locale = "es_US"
+    Why: Explicitly declares the page language/region as
+         Spanish (United States)
 
-@* Added - og:site_name *@
-<meta property="og:site_name" content="@Settings.GetCenterName" />
+  [NEW] og:locale:alternate added
+    og:locale:alternate = "en_US"
+    Why: Signals that an English version of this page exists,
+         linking the ES/EN pair for crawlers and social platforms
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Reducción de Glúteos en Miami | @Settings.GetCenterName" />
-<meta name="twitter:description" content="La reducción de glúteos puede ser el procedimiento quirúrgico ideal para ti si al mirarte al espejo imaginas una silueta proporcionada, equilibrada y armónica" />
-<meta name="twitter:image" content="https://avanaplasticsurgery.com/themes/avana/images/services/910x960/buttock-reduction.jpg" />
-<link rel="canonical" href="https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami" />
+  [FIXED] og:url → updated to absolute URL
+    https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami
+    Why: Matches the canonical exactly so Google and social
+         crawlers resolve a single, consistent URL
+
+  [NEW] article:tag added
+    article:tag = "Reducción de Glúteos"
+    Why: Reinforces the page's primary topic for Open Graph
+         and content classification
+
+  [FIXED] og:image → updated to absolute URL
+    https://avanaplasticsurgery.com/themes/avana/images/
+    services/910x960/buttock-reduction.jpg
+    Why: Relative image paths often fail to render on social
+         platforms; absolute URL guarantees the preview image
+
+  [NEW] Open Graph image attributes added
+    og:image:alt    = "Reducción de Glúteos en Miami"
+    og:image:width  = 910
+    og:image:height = 960
+    Why: Enables rich image display and correct aspect ratio
+         when the page is shared on social media
+
+  [NEW] og:site_name added
+    og:site_name = @Settings.GetCenterName
+    Why: Displays the brand name on social cards; reinforces
+         brand consistency across shares
+
+
+─────────────────────────────────────────────────────────────
+  2.  TAGS VERIFIED / KEPT
+─────────────────────────────────────────────────────────────
+
+  [OK] Title tag
+    "Reducción de Glúteos en Miami - Desde $5,500"
+    Leads with the primary keyword and surfaces the starting price
+
+  [OK] Meta description
+    "Reducción de glúteos en Miami desde $5,500. Si busca una
+     silueta más equilibrada, ofrecemos cirugía de reducción de
+     glúteos segura con resultados naturales."
+    Includes primary keyword and the starting price
+
+  [OK] Canonical
+    https://avanaplasticsurgery.com/espanol/reduccion-de-gluteos-en-miami
+    Present and absolute
+
+  [OK] Twitter Card
+    summary_large_image with title, description, and image set
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
