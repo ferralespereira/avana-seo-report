@@ -98,7 +98,12 @@
       "WebFetch(domain:www.certifiedcosmeticsmiami.com)",
       "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\build_botox.py\")",
       "Bash(awk '{print $5, $9}')",
-      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\add_track.py\")"
+      "Bash(python \"C:\\\\Users\\\\user564\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user564-Documents-avana-seo-report\\\\0b94f064-28da-4954-8c41-898234b47e42\\\\scratchpad\\\\add_track.py\")",
+      "Bash(grep -ciE \"injection sites|per unit|\\\\\\\\\\\\$20|neighborhood|coral gables|miami beach\" botox-injections-miami.html)",
+      "Bash(curl -sk \"https://localhost:7155/botox-injections-miami\" -o /c/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/03c81ac0-e176-4eba-8560-4e15fb2bdb55/scratchpad/botox-live.html -w \"HTTP %{http_code}  size=%{size_download}\\\\n\")",
+      "Read(//c/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/03c81ac0-e176-4eba-8560-4e15fb2bdb55/scratchpad/**)",
+      "Bash(sed -E 's/<[^>]+>//g')",
+      "Bash(sed -E 's/^[[:space:]]+//')"
     ],
     "additionalDirectories": [
       "\\tmp",
