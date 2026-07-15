@@ -1,0 +1,252 @@
+================================================================================
+ SEO IMPROVEMENTS — BOTOX INJECTIONS MIAMI
+================================================================================
+ Page ....... https://avanaplasticsurgery.com/botox-injections-miami
+ Language ... English
+ Primary KW . botox injections miami
+ Date ....... July 14, 2026
+================================================================================
+
+
+--------------------------------------------------------------------------------
+ EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This page was optimized across four areas: meta tags, on-page content, structured
+data, and local geo-targeting, in two passes (2026-07-13 cost rewrite; 2026-07-14
+content + TOC + schema pass). Key outcomes:
+
+  • Added 5 JSON-LD schema blocks — replaced 3 ad-hoc blocks with the house-standard
+    set; FAQPage coverage went 4 Q&As -> all 12.
+  • Added a full cost section + pricing table ($20/unit, FDA doses), closing the
+    "declared but never used" gap ("botox injection cost" 0 -> 6).
+  • Promoted injection sites to an H2 over the two infographics, and opened
+    "What is Botox cosmetic?" with a one-sentence definition — the two cheapest
+    winnable keywords on the page (GSC pos 22 and 35).
+  • Added a neighborhood service-area section (Miami Beach, Coral Gables, Kendall,
+    South Miami, Doral, Hialeah, West Miami), a "best Botox" comparison checklist,
+    a Patient Reviews block, and a 16-item Table of Contents.
+  • Copy-edit pass (20 fixes); 2 unsourced off-label pricing rows removed; the
+    "beware of cheap Botox" claim re-sourced to FDA/CDC with an outbound link.
+  • Visible length: 2,029 -> 2,724 words (+695). article.cshtml +232 / -12 lines.
+
+  >> THE RANKING PROBLEM IS OFF-PAGE, NOT COVERAGE. Before the rewrite the page had
+     5,603 GSC impressions and 0 clicks (0% CTR) — every query sat on page 3-6
+     (positions 22-57). The primary keyword "botox injections miami" is stuck at pos
+     47 despite being in the title, an H2 and 13x in the body. MORE mentions will not
+     move it; the lever is authority / backlinks / internal competition. The content
+     work below targets the WINNABLE keywords (pos 22-35) and the geo gap.
+
+
+================================================================================
+ 1. META TAGS
+================================================================================
+File: botox-injections-miami / En / articlemetas.cshtml
+
+  • TITLE (46 chars, primary keyword first)
+    <title>Botox Injections Miami | @Settings.GetCenterName</title>
+
+  • META DESCRIPTION (~148 chars, no price)
+    "Botox injections in Miami for frown lines, forehead lines and crow's feet —
+     natural results, no downtime. Book a free consultation, no obligation."
+
+  • OPEN GRAPH / TWITTER (added or corrected)
+    - og:locale = en_US, og:type = article, og:title, og:description, og:site_name
+    - og:url  -> absolute /botox-injections-miami
+    - og:image -> absolute URL, plus og:image:alt / width (910) / height (960)
+    - article:tag = "Botox Injections"; article:published_time; article:modified_time
+    - twitter:card = summary_large_image; twitter:title / description / image
+    - canonical -> absolute /botox-injections-miami
+
+  • NO PRICE IN TITLE OR DESCRIPTION — DELIBERATE
+    Botox is billed per UNIT ($20/u), so "$20" in a SERP is 20x lower than a real
+    ~$400 treatment: a CTR trap, not a feature. (Opposite of deep-plane's "Desde
+    $5,800", a real per-procedure floor.) The $20/unit lives in the visible copy, the
+    cost table, and the schema "offers" node.
+
+  • META KEYWORDS HAVE NO RANKING VALUE. There is no meta name="keywords"; the legacy
+    page-topic / page-type metas are ignored by Google. Note "botox treatment in
+    miami" and "define botox injection" pull real impressions while being in NO meta,
+    and "botox injection cost" is in the meta and pulls nothing. Body/headings rank.
+
+
+================================================================================
+ 2. ON-PAGE CONTENT
+================================================================================
+Two distinct problems in the GSC data: a RANKING problem (positions 47-57, off-page)
+and CONTENT GAPS (positions 22-35, the winnable ones). The content work targets the
+gaps and the neighborhood/geo cluster the page never covered.
+
+--------------------------------------------------------------------------------
+ 2.1  Keyword coverage — GSC-measured rows (live rendered page)
+--------------------------------------------------------------------------------
+Case-insensitive substring matches on visible text only (title + body); schema, HTML,
+meta and image-alt excluded. Substrings nest — DO NOT SUM. GSC = our position /
+impressions. Counts are a 2026-07-13 snapshot; the 07-14 pass (section 2.3-2.4) is
+NOT yet recomputed, so the geo, "best botox", injection-sites and definition rows are
+UNDERSTATED here.
+
+  Keyword                        GSC pos  Impr   Bef  Aft   D
+  -----------------------------  -------  -----  ---  ---  ----
+  botox injections                 51.4   4,093   25   28   +3   (H2)
+  botox miami                      56.5     420    7    7    =   (FAQ; the head term)
+  botox injection sites            22.0     411    1    1    =   (cheapest win)
+  botox injections miami           47.1     325   13   13    =   (primary — off-page)
+  botox treatment in miami         27.5     133    0    2   +2   (ranked for unsaid phrase)
+  botox cosmetic injections        50.9     113    1    1    =
+  define botox injection           35.4     108    0    0    =   (informational intent)
+  botox injection cost               -      n/a    0    6   +6   (COST REWRITE)
+  botox cost                         -      n/a    0    2   +2
+  free consultation                  -      n/a    1    4   +3
+  botox (bare)                       -       -    78  104  +26   (density 3.8% -> 3.8%)
+
+  Impr "n/a" = no GSC data (not "no searches"); "-" = Semrush-only or not measured.
+  Bare "botox" density did NOT improve — the page needs FEWER generic repetitions,
+  not more, given the off-page problem.
+
+--------------------------------------------------------------------------------
+ 2.2  The winnable-keyword fixes (highest leverage)
+--------------------------------------------------------------------------------
+  • INJECTION SITES -> H2 (GSC pos 22, 411 impr — cheapest win). Demoted H3 "Botox
+    Infographics" became H2 "Botox Injection Sites on the Face" (id=botox-injection-
+    sites) + intro paragraph. Both infographics captioned distinctly and each alt
+    rewritten to describe its own image.
+  • DEFINITION OPENER (GSC pos 35, 108 impr). "What is Botox cosmetic?" now opens with
+    a bolded one-sentence definition ("A Botox injection is a small dose of purified
+    botulinum toxin type A…") + mechanism/duration line.
+  • "BOTOX TREATMENT IN MIAMI" (GSC pos 27, 133 impr). New H3 "Botox Treatment in
+    Miami: Neighborhoods We Serve" — finally forms the phrase the page ranked for but
+    never said; links /locations, states the same $20/unit at all offices.
+
+--------------------------------------------------------------------------------
+ 2.3  New sections added
+--------------------------------------------------------------------------------
+  • H2 "How Much Does a Botox Injection Cost in Miami?" (id=how-much-does-botox-cost-
+    in-miami) + cost CTA banner rewritten to lead with the answer ("$20 per unit").
+  • Pricing table (3 rows): Frown lines 20u/$400, Forehead 20u/$400, Crow's feet
+    24u/$480 — FDA doses from the Botox Cosmetic prescribing information. Footnote:
+    only 3 FDA-approved areas, units vary, figures are planning estimates only.
+  • H3 "What Affects Your Botox Injection Cost" — 5 bullets.
+  • H3 "Paying for Botox in Miami" — free consult + third-party lenders (Alphaeon,
+    Med Loan Finance, United Credit); links /financing-options.
+  • Geo / neighborhoods block: H4 "Botox Miami Beach", H4 "Botox Coral Gables"
+    (surgical practice vs. medspa), H4 "Botox in Kendall, South Miami, Doral, Hialeah,
+    West Miami" — all were ZERO mentions before.
+  • H3 "Looking for the Best Botox in Miami? Here Is What to Compare" — 5-point
+    provider checklist, no self-award claim.
+  • H2 "Patient Reviews" — Elfsight carousel (same app id as deep-plane, liposuction,
+    tummy-tuck, breast-aug). The page had NO reviews block before.
+  • H2 "Botox Injections If You Live Outside Miami" — 3 sub-blocks: patients flying in
+    for surgery (/out-of-town-patients), the Dallas TX office (/dallas-texas), and a
+    4-point "straight answers" list.
+  • Table of Contents — 16 anchor links, 2 columns; required adding 10 heading ids
+    (the other 6 already existed); all verified to resolve.
+
+--------------------------------------------------------------------------------
+ 2.4  Fixes, removals & copy-edit
+--------------------------------------------------------------------------------
+  • Counterfeit-Botox safety bullet re-sourced — the old unsourced "beware of cheap
+    Botox" claim now cites FDA/CDC and links the CDC botulinum-toxin safety page
+    (rel="noopener"). E-E-A-T / YMYL.
+  • Two off-label pricing rows removed (bunny lines, lipstick/chin) — no FDA-approved
+    dose exists for those areas, so the figures were unsourceable.
+  • FAQ panel-10 markup bug fixed — the hidden spacer <dd> had id="panel-13",
+    colliding with the new panel 13; corrected to id="panel-10". 4 cost Q&As merged
+    into the ONE existing FAQ accordion (panels 11-14).
+  • Copy-edit pass — 20 typo/grammar fixes (e.g. "crow feet" -> "crow's feet", "the
+    90's" -> "the 1990s", "FDA approved" -> "FDA-approved"; UK -> US spellings).
+    Text-only; no markup touched.
+
+--------------------------------------------------------------------------------
+ 2.5  The competitor & neighborhood gap (Semrush)
+--------------------------------------------------------------------------------
+51 keywords, 7,680/mo; we ranked for only 9, all deep (positions 14-53).
+
+  • MIAMI PLASTIC SURGERY IS EATING THIS CATEGORY. They hold #1 for "botox miami"
+    (1,900/mo, KD 23 — the head term) plus nearly every commercial variant. They are
+    the page to beat, not UMiami. We say "botox miami" 7x and rank nowhere.
+  • NO NEIGHBORHOOD COVERAGE was the clearest pattern: Miami Beach (~1,270/mo), Coral
+    Gables (~780/mo), South Miami (40), Kendall (40) = ~2,130/mo, KD 5-15 (easy), in
+    queries the page did not contain a single instance of. Addressed in 2.3.
+  • "BEST BOTOX" (670/mo, KD 5-19) was a blind spot — addressed by the checklist +
+    reviews block in 2.3.
+  • Ignore: "botox of doom" (KD 86, a video-game reference), "botox rx", "botox
+    medical", "my botox", "avon botox" — junk/navigational, UMiami on domain authority.
+
+--------------------------------------------------------------------------------
+ 2.6  Links added
+--------------------------------------------------------------------------------
+  Internal: /financing-options, /locations (x2), /freeconsultation,
+            /out-of-town-patients, /dallas-texas, #where-are-botox-injections-applied
+  External: cdc.gov botulinum-toxin safety page (rel="noopener")
+  On-page:  16 Table-of-Contents anchors
+
+
+================================================================================
+ 3. STRUCTURED DATA (JSON-LD) — 5 SCHEMA BLOCKS
+================================================================================
+Replaced 3 ad-hoc blocks with the house-standard 5-block set, in the same order as
+deep-plane-facelift, liposuction, breast-augmentation, lipo-360 and breast-implants.
+All live in article.cshtml at the end of the file (nothing inherited).
+
+  Block 1 — MedicalClinic + LocalBusiness
+    @id .../#organization (shared org entity); NAP, geo, phone; sameAs (5 socials);
+    openingHours, priceRange; areaServed x11 (incl. the geo cluster: Miami Beach,
+    Coral Gables, Kendall, South Miami, Doral, Hialeah, West Miami).
+
+  Block 2 — FAQPage
+    ALL 12 visible accordion Q&As (was 4 cost-only). Mirrors the accordion verbatim
+    (one paraphrase was caught and reverted during the pass).
+
+  Block 3 — MedicalProcedure
+    procedureType NoninvasiveProcedure (Botox is NOT surgery — this block is
+    "SurgicalProcedure" on the other pages; deviation recorded in a Razor comment);
+    howPerformed w/ FDA unit doses, preparation, followup, risks, bodyLocation,
+    performer (ORGANIZATION only), Offer $20/unit.
+
+  Block 4 — BreadcrumbList
+    Home > Non Surgical (/non-surgical) > Botox Injections Miami.
+
+  Block 5 — WebPage + SpeakableSpecification
+    speakable cssSelector [.milenia-entity-title, .milenia-panels-definition].
+
+  NO performer Person node — on purpose. Nothing in ServiceEntities.xml links Botox to
+  a professional, and the injector may be Cary Gallardo, APRN rather than a surgeon.
+  Naming a surgeon who does not inject would be a fabricated claim. Add it (5 -> 6
+  blocks) only once the practice confirms who injects.
+
+  Verified: all 5 blocks parse as VALID JSON after stripping the "@@" Razor escapes.
+
+
+================================================================================
+ 4. VERIFICATION & PENDING ITEMS
+================================================================================
+  DONE (in the 07-13 + 07-14 passes)
+    ✓ Meta tags, Open Graph, Twitter, canonical
+    ✓ 5 JSON-LD blocks (replaced 3 ad-hoc); FAQPage covers all 12 Q&As
+    ✓ Cost section + pricing table (FDA unit doses, $20/unit)
+    ✓ Injection sites promoted to H2; definition opener added
+    ✓ Neighborhood service-area section; "best botox" checklist + Patient Reviews
+    ✓ Table of Contents + 16 heading anchors
+    ✓ CDC/FDA authority link on the counterfeit-toxin warning
+    ✓ Copy-edit pass — 20 typo / grammar fixes; 2 off-label pricing rows removed
+
+  PENDING
+    ⚠ OFF-PAGE RANKING PROBLEM (positions 47-57): authority / backlinks / internal
+      competition, NOT content. The core issue — unaddressed by any copy change.
+    ⚠ WHO INJECTS? Still unanswered; blocks the "administered by a physician" line,
+      the best-botox wording, and the performer Person node. One answer from the
+      practice unblocks all three.
+    ⚠ Confirm /non-surgical resolves — the breadcrumb points there but it was not
+      verified.
+    ⚠ THE EMPTY "Botox Treatment" H2 (no content under it) — delete or convert to the
+      geo heading; it is excluded from the TOC because a link would dead-end.
+    ⚠ DURATION / ONSET NUMBERS CONTRADICT each other (3-6 vs 3-9 vs 3-5 months; 4-7 vs
+      3-5 days vs 24-48h) — now inconsistent with the schema's "3 to 6 months" too.
+      Pick one and make the page agree with itself. (The ES page is already consistent
+      at 3-6 months — fix EN to match it.)
+    ⚠ Re-run the keyword counts against the 2026-07-14 pass — the geo, "best botox",
+      injection-sites and definition rows in section 2.1 are understated.
+
+================================================================================
+ END OF REPORT
+================================================================================

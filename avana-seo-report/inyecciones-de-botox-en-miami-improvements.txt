@@ -1,0 +1,294 @@
+================================================================================
+ SEO IMPROVEMENTS — INYECCIONES DE BOTOX EN MIAMI
+================================================================================
+ Page ....... https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami
+ Language ... Spanish (es_US)
+ Primary KW . inyecciones de botox en miami
+ Date ....... July 14, 2026
+================================================================================
+
+
+--------------------------------------------------------------------------------
+ EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This page was optimized across four areas: meta tags, on-page content, structured
+data, and local/national geo-targeting. It closes the last open item in the English
+botox report ("the ES page has received none of this — no TOC, no schema, no
+copy-edit, no reviews block"). Key outcomes:
+
+  • Added 5 JSON-LD schema blocks — the page previously had ZERO structured data.
+  • Fixed a title-tag bug that shipped a dangling hyphen ("Botox en Miami - Florida
+    -  | Avana Plastic Surgery") because @Model.GetPrice returns null for Botox.
+  • Corrected 3 FACTUAL ERRORS in the 2022 Spanish copy (not style issues — wrong
+    facts): a mismatched FAQ answer, "inyecciones" quoted where "unidades" was meant,
+    and the drug name "Xiomen" -> "Xeomin".
+  • Added a full cost section + pricing table ($20/unit, FDA doses), a neighborhood
+    service-area section, a "mejor Botox" checklist, a Patient Reviews block, and a
+    15-item Table of Contents.
+  • Copy-edit pass: 13 fixes (4 grammar, 3 anglicisms, 2 numeric contradictions,
+    4 style), proofread against the rendered text.
+  • Visible length: 2,591 -> 3,965 words (+1,374). article.cshtml +636 / -146 lines.
+
+  >> NO SPANISH KEYWORD DATA EXISTS. There is no Spanish GSC export and no Spanish
+     Semrush gap file, so all counts below are COVERAGE, not measured demand. Only two
+     ES keywords have known volume (both leaked from the US-English gap file):
+     "botox en miami" 90/mo (KD 8, MiamiPS #1) and "tratamientos de botox en miami"
+     40/mo (KD 0). Pull a GSC export filtered to this page before trusting any number
+     as a forecast.
+
+
+================================================================================
+ 1. META TAGS
+================================================================================
+File: espanol/inyecciones-de-botox-en-miami / Es / articlemetas.cshtml (14 -> 27 lines)
+
+  • TITLE — bug fixed
+    Old: <title>Botox en Miami - Florida - @Model.GetPrice | @Settings.GetCenterName</title>
+    GetPrice returns null unless the ServiceEntity has a price="" attribute. Botox has
+    none (it is billed per UNIT, not per procedure), so the title rendered as
+    "Botox en Miami - Florida -  | Avana Plastic Surgery" — a dangling hyphen. It
+    shipped like that.
+    New: <title>Inyecciones de Botox en Miami | @Settings.GetCenterName</title>
+    Puts the exact-match phrase AND "botox en miami" (90/mo) in the title, no price.
+
+  • META DESCRIPTION (one shared string, no price)
+    "Inyecciones de Botox en Miami para líneas del entrecejo, frente y patas de gallo
+     — resultados naturales, sin reposo. Agende su consulta gratuita, sin compromiso."
+
+  • OPEN GRAPH / TWITTER (added or corrected)
+    - og:locale = es_US  +  og:locale:alternate = en_US (signals an English version)
+    - og:type = article, og:title, og:description (= meta description), og:site_name
+    - og:url  -> absolute /espanol/inyecciones-de-botox-en-miami
+    - og:image -> absolute URL, plus og:image:alt / width (910) / height (960)
+    - article:tag = "Inyecciones de Botox en Miami"; published_time; modified_time
+    - twitter:card = summary_large_image; twitter:title / description / image
+    - canonical -> absolute /espanol/inyecciones-de-botox-en-miami
+
+  • NO PRICE IN TITLE OR DESCRIPTION — DELIBERATE, MATCHES THE EN PAGE
+    A draft used "... - $20 por unidad" and was pulled. Botox is billed per UNIT, so
+    "$20" in a SERP is 20x lower than a real ~$400 treatment: a CTR trap, not a
+    feature. The $20/unit lives in the visible copy, the cost table, and the schema
+    "offers" node. (Opposite of deep-plane's "Desde $5,800", a real per-procedure floor.)
+
+  • page-topic / page-type kept (legacy metas Google ignores — harmless, left as-is).
+
+
+================================================================================
+ 2. ON-PAGE CONTENT
+================================================================================
+Purpose: give the Spanish page the cost, geo, "best", units, definition and E-E-A-T
+clusters the EN report proved, translated to ES — without weakening the exact-match
+phrase the page is named for.
+
+--------------------------------------------------------------------------------
+ 2.1  Regression found & fixed — read before the next rewrite
+--------------------------------------------------------------------------------
+The first ES draft made the page WORSE on its own primary keyword. Counting caught it;
+reading it would not have.
+
+    inyecciones de botox            15 -> 4    (-11)   BEFORE the fix
+    inyecciones de botox en miami    1 -> 0     (-1)   BEFORE the fix
+
+The draft leaned on bare "Botox" everywhere ("el Botox cuesta", "después del Botox"),
+which reads more naturally in Spanish but strips the exact phrase the page is NAMED
+for (ServiceEntities.xml namespanish = "Inyecciones de Botox en Miami").
+
+Fixed with 9 targeted swaps in headings + section leads (not body stuffing) + the
+title tag now leads with the exact phrase. Final: inyecciones de botox 15 -> 21,
+inyecciones de botox en miami 1 -> 4.
+
+  >> RULE FOR THE NEXT PASS: bare "botox" is NOT the ES target phrase. Adding length
+     can LOWER exact-match coverage. Re-run counts against git HEAD after any rewrite.
+
+--------------------------------------------------------------------------------
+ 2.2  Keyword coverage — exact-phrase count (live rendered page)
+--------------------------------------------------------------------------------
+Accent-insensitive AND case-insensitive, on visible text only (Razor resolved first).
+Substrings nest — DO NOT SUM. Bef from git HEAD (commit 5f31521).
+
+  Keyword                          Vol   Bef  Aft   D    Head
+  -------------------------------  ----  ---  ---  ----  ----
+  botox en miami                    90    10   20  +10   H2    (MiamiPS #1; now in title)
+  tratamientos de botox en miami    40     0    1   +1   no    (was ZERO)
+  inyecciones de botox en miami      -     1    4   +3   H2    (page name + URL slug)
+  inyecciones de botox               -    15   21   +6   H2    (see 2.1 regression)
+  toxina botulínica                  -     1    8   +7   no
+  por unidad                         -     2   16  +14   H3    (the pricing model)
+  cuánto cuesta el botox             -     1    4   +3   H2
+  consulta gratuita                  -     1    8   +7   H2    (conversion phrase)
+  mejor botox en miami               -     0    2   +2   H3    (ES "best botox")
+  botox en miami beach               -     0    2   +2   H4    (was ZERO)
+  botox en coral gables              -     0    1   +1   H4    (was ZERO)
+  kendall / south miami / doral      -     0  2-5   NEW   H4    (geo cluster, all ZERO)
+  líneas del entrecejo               -     0    7   +7   tbl   (FDA-dosed area, ZERO)
+  aprobado por la fda                -     0    5   +5   no    (YMYL signal, ZERO)
+  fda                                -     0   10  +10   no    (was ZERO)
+  opiniones de pacientes             -     0    2   +2   H2    (new reviews block)
+  arrugas                            -    18   11   -7   no    (DOWN — displaced; left)
+  tratamiento de botox               -     7    4   -3   no    (DOWN — better phrase won)
+  botox (bare)                       -    83  106  +23   -     (density 3.20% -> 2.67%)
+
+  Head: H2/H3/H4 = heading | tbl = pricing table | FAQ = FAQ question | no = body only
+
+--------------------------------------------------------------------------------
+ 2.3  New sections added
+--------------------------------------------------------------------------------
+  • Table of Contents — 15 anchor links, 2 columns; 15 heading ids added, all resolve.
+  • H2 "¿Cuánto cuesta el Botox en Miami?" — full cost section
+    (id=cuanto-cuesta-el-botox-en-miami).
+  • Pricing table (3 rows): Entrecejo 20u/$400, Frente 20u/$400, Patas de gallo
+    24u/$480 — same FDA doses as the EN table. Footnote: 3 FDA-approved areas, units
+    vary, figures are planning estimates only.
+  • H3 "Qué influye en el costo" — 5 bullets (zonas, unidades, quién inyecta,
+    frecuencia, procedencia del producto).
+  • H3 "Cómo pagar su tratamiento" — consulta gratuita + Alphaeon / Med Loan / United
+    Credit; links /espanol/opciones-de-financiamiento.
+  • H2 "Zonas donde se aplica el Botox" — 3-column carousel (TERCIO SUPERIOR / OJOS /
+    TERCIO INFERIOR): the EN injection-sites content, translated.
+  • H3 "Botox en Miami: zonas que atendemos" — service-area intro; links
+    /espanol/locaciones; same $20/unit at every office.
+  • H4 "Botox en Miami Beach", H4 "Botox en Coral Gables" (surgical practice vs.
+    medspa), H4 "Botox en Kendall, South Miami, Doral, Hialeah y West Miami" — all
+    were ZERO mentions before.
+  • H3 "¿Busca el mejor Botox en Miami?" — 5-point provider checklist, no self-award
+    claim (absorbed the old "ELIJA UN ESPECIALISTA EN BOTOX DE AVANA" section).
+  • H2 "Opiniones de pacientes" — Elfsight carousel (same app id as EN + deep-plane
+    ES). The page had NO reviews block before.
+  • H2 "Si vive fuera de Miami" — 3 sub-blocks: patients flying in for surgery
+    (/espanol/paciente-fuera-cuidad), the Dallas TX office (/espanol/dallas-texas),
+    and a 4-point "respuesta directa" list.
+  • H2 "¿Qué es el Botox?" now opens with a bolded one-sentence definition.
+  • Counterfeit-toxin safety bullet now cites FDA/CDC + outbound link to the CDC
+    botulinum-toxin safety page (rel="noopener").
+  • FAQ accordion rebuilt: 12 -> 15 Q&As (4 cost Q&As added, matching the EN set).
+
+--------------------------------------------------------------------------------
+ 2.4  Three factual errors found in the 2022 ES copy — all fixed
+--------------------------------------------------------------------------------
+These are not style issues. They were wrong.
+
+  1. FAQ #1 ANSWERED A DIFFERENT QUESTION THAN IT ASKED. Q asked about TIMING
+     ("¿Cuánto tiempo debo esperar para ver mis resultados?"); the answer talked about
+     antibodies and unlimited lifetime dosing. Now answers the actual question
+     (24-48h onset / 7-10 días visible / ~30 días full), matching EN.
+
+  2. FAQ #2 CONFUSED "INYECCIONES" WITH "UNIDADES" — AND CONTRADICTED THE EN PAGE.
+     Old copy quoted "20 a 25 INYECCIONES". Botox is dosed in UNITS; the EN page
+     publishes the FDA doses (20/20/24 units), which the new ES cost table is built on.
+     Rewritten to units, sourced to the Botox Cosmetic prescribing information.
+     >> The cost table and this FAQ must never drift apart again.
+
+  3. "Xiomen" -> "Xeomin" (the drug's actual name), in the alternatives FAQ.
+
+  Also: "¿Cómo funciona el Botox?" was an H3 under no H2 (broken hierarchy) -> H2.
+
+--------------------------------------------------------------------------------
+ 2.5  Copy-edit pass — 13 fixes (proofread against rendered text)
+--------------------------------------------------------------------------------
+  GRAMMAR / SPANISH ERRORS (4)
+    "le ordena a los músculos" -> "les ordena..." (plural indirect object)
+    "Aunque se conoce sobre todo..." -> "Aunque se la conoce..." (missing pronoun)
+    inverted "...es este artículo" rewritten; "Código de barras – Las líneas finas..."
+    sentence fragment given a main verb.
+
+  ANGLICISMS — TRANSLATED-ENGLISH TELLS (3)
+    "el mismo precio APLICAN..." -> "en todas ellas RIGE el mismo precio y ATIENDE el
+    mismo equipo" ("aplicar" != to be in effect); "imágenes de banco" -> "fotos de
+    archivo" (calque of "stock images"); "Aquí LO atiende..." -> "Aquí la atención
+    está a cargo de..." (masculine clitic assumed a male patient — de-gendered).
+
+  INTERNAL NUMERIC CONTRADICTIONS (2)
+    Session length "20 minutos" x2 vs "quince minutos" x1 -> aligned to 20 minutos.
+    Exercise wait "24 horas" / "24 a 48 horas" / schema "uno o dos días" -> aligned to
+    "de 24 a 48 horas" everywhere (matches schema).
+
+  STYLE / CONSISTENCY (4)
+    "mejoría en 4 a 7 días" -> aligned to the 7-10 día timeline; "un rango amplio" ->
+    "una gama amplia"; aftercare list made all-infinitive; "equivale aproximadamente a
+    entre $400 y $480" -> "cuesta aproximadamente entre $400 y $480".
+
+  >> Two of these fixes live inside FAQ answers, which exist TWICE (visible accordion
+     + FAQPage schema). Both copies were edited in lockstep and script-verified
+     identical. NEVER edit an FAQ answer without editing its schema twin.
+
+--------------------------------------------------------------------------------
+ 2.6  Links added
+--------------------------------------------------------------------------------
+  Internal: /espanol/opciones-de-financiamiento, /espanol/locaciones,
+            /espanol/paciente-fuera-cuidad, /espanol/dallas-texas
+  External: cdc.gov botulinum-toxin safety page (rel="noopener") — E-E-A-T / YMYL
+
+
+================================================================================
+ 3. STRUCTURED DATA (JSON-LD) — 5 SCHEMA BLOCKS ADDED
+================================================================================
+The page had ZERO. Same 5 blocks, same order, same house pattern as the EN page and
+deep-plane ES. All live in article.cshtml at the end of the file (nothing inherited).
+
+  Block 1 — MedicalClinic + LocalBusiness
+    @id .../#organization (shared org entity); url = HOMEPAGE (a shared @id must not
+    claim a service page as the org URL); NAP, geo, sameAs (5 socials), opening hours,
+    priceRange, areaServed x11 (incl. Miami Beach, Coral Gables, Kendall, South Miami,
+    Doral, Hialeah, West Miami).
+
+  Block 2 — FAQPage
+    inLanguage "es". ALL 15 visible accordion Q&As, mirrored VERBATIM.
+
+  Block 3 — MedicalProcedure + Service
+    Co-type ["MedicalProcedure","Service"] — "offers" is defined on Service, not on
+    MedicalEntity, so without the co-type the $20/unit price is parsed and DISCARDED.
+    procedureType NoninvasiveProcedure (Botox is not surgery); FDA unit doses in
+    howPerformed; Offer $20/unit + UnitPriceSpecification. Both deviations recorded in
+    Razor comments so nobody "fixes" them back.
+
+  Block 4 — BreadcrumbList
+    Inicio > No Quirúrgico (/espanol/no-quirugico) > Inyecciones de Botox en Miami.
+
+  Block 5 — WebPage + SpeakableSpecification
+    inLanguage "es"; speakable cssSelector [.milenia-entity-title,
+    .milenia-panels-definition].
+
+  NO performer Person node — on purpose. Nothing links Botox to a named professional
+  and the injector may be an APRN; naming a surgeon who does not inject would be a
+  fabricated claim in structured data. Add it (5 -> 6 blocks) only once the practice
+  confirms who injects.
+
+  Verified: all 5 blocks parse as VALID JSON after stripping "@@" Razor escapes; the
+  FAQPage mirrors the visible accordion verbatim (15/15, script-checked); all 17
+  on-page anchors resolve.
+
+
+================================================================================
+ 4. VERIFICATION & PENDING ITEMS
+================================================================================
+  DONE (verified on the rendered page)
+    ✓ Meta tags, Open Graph, Twitter, canonical; title-tag bug fixed
+    ✓ Keyword coverage lifted; primary-phrase regression caught and reversed
+    ✓ Cost section + pricing table ($20/unit, FDA doses); "Qué influye en el costo"
+    ✓ Zonas carousel, neighborhood service-area section, "mejor Botox" checklist
+    ✓ Patient Reviews block; Table of Contents (15 links) + 15 heading anchors
+    ✓ 3 factual errors in the 2022 copy corrected; 13-fix copy-edit pass
+    ✓ CDC/FDA authority link on the counterfeit-toxin warning
+    ✓ 5 JSON-LD schema blocks render and parse as valid JSON
+    ✓ Duration set internally consistent at 3-6 months (matches schema)
+    ✓ Hreflang audited (2026-07-15): reciprocal en/es pair, correct, no action needed
+
+  PENDING
+    ⚠ NO SPANISH KEYWORD DATA. Pull a GSC export filtered to
+      /espanol/inyecciones-de-botox-en-miami — the single most useful next step, and
+      it costs nothing.
+    ⚠ THE TWO INFOGRAPHICS ARE ENGLISH-ONLY (labels baked into the artwork) and were
+      omitted. The ES page got the CONTENT (carousel) but not the IMAGES. Produce
+      Spanish versions for full parity — the ONLY EN block the ES page is now missing.
+    ⚠ WHO INJECTS? Unanswered. Blocks the "personal médico" wording, the best-botox
+      checklist, and the performer Person node. One answer from the practice unblocks
+      all three.
+    ⚠ Confirm /espanol/no-quirugico resolves (the breadcrumb points there; not verified).
+    ⚠ Clinical review — the new clinical copy is translated from EN and carries the same
+      "should be surgeon-reviewed" caveat.
+    ⚠ DURATION DISAGREES ACROSS LANGUAGES. ES is consistent at 3-6 months; the EN page
+      still contradicts itself (3-6 vs 3-9 vs 3-5 months). Fix EN to match ES.
+
+================================================================================
+ END OF REPORT
+================================================================================

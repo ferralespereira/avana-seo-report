@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inyecciones de Botox en Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        /* ── Section headers ── */
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card (meta tags) ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item  { font-size: 1.1rem; }
+
+        /* ── Info cards ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* sections list */
+        .sections-list {
+            list-style: none; display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
+        }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* cannibalization / note card */
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .removed {
+            text-decoration: line-through; color: #f38ba8;
+            background: #fff0f0; border-radius: 3px; padding: 0 3px;
+        }
+        .cannibal-block .added {
+            color: #065f46; background: #e6f4ea; border-radius: 3px; padding: 0 3px; font-weight: 600;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        /* keyword count table */
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .kw-table th, .kw-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eef0f2; }
+        .kw-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b8ba7; }
+        .kw-table td.num { text-align: center; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; }
+        .kw-table .up   { color: #065f46; font-weight: 700; }
+        .kw-table .down { color: #c0392b; font-weight: 700; }
+        .kw-table tr:last-child td { border-bottom: none; }
+
+        /* link change block */
+        .link-change {
+            background: #f4f5f7; border-radius: 8px; padding: 12px 16px;
+            font-size: 0.82rem; display: flex; flex-direction: column; gap: 5px;
+        }
+        .link-arrow { color: #89b4fa; font-weight: 700; font-size: 0.78rem; }
+
+        /* ── Schema cards ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .schema-divider { height: 1px; background: #e8eaed; }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .fixed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #dbeafe; color: #1e40af; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .removed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fee2e2; color: #991b1b; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── Stat tiles ── */
+        .stat-row { display: flex; flex-wrap: wrap; gap: 14px; max-width: 900px; margin-bottom: 18px; }
+        .stat-tile {
+            flex: 1 1 150px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 16px 18px;
+        }
+        .stat-value { font-size: 1.35rem; font-weight: 700; color: #24292e; font-variant-numeric: tabular-nums; }
+        .stat-value .from { color: #f38ba8; }
+        .stat-value .to { color: #28c840; }
+        .stat-label { font-size: 0.72rem; color: #6a737d; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+
+        /* ── Callout ── */
+        .callout {
+            max-width: 900px; border-radius: 8px; padding: 14px 18px;
+            font-size: 0.84rem; line-height: 1.6; margin-bottom: 18px;
+        }
+        .callout-warn { background: #fff8f0; border-left: 4px solid #febc2e; color: #24292e; }
+        .callout-info { background: #eef6ff; border-left: 4px solid #0070c9; color: #24292e; }
+        .callout strong { font-weight: 700; }
+
+        /* ── GEO Status section ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;flex-wrap:wrap;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="inyecciones-de-botox-en-miami.html" style="font-size:13px;font-weight:600;color:#0E7C7B;text-decoration:none;">← Inyecciones de Botox en Miami Rankings</a>
+    </div>
+    <h1>Inyecciones de Botox en Miami — SEO Improvements</h1>
+    <p class="subtitle">espanol/inyecciones-de-botox-en-miami &nbsp;·&nbsp; Updated 2026-07-15 &nbsp;·&nbsp; Es / article.cshtml + articlemetas.cshtml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami" target="_blank" rel="noopener">https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Primary Keyword</span>
+            <span class="page-info-keyword">inyecciones de botox en miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('inyecciones de botox en miami', this)">copy</button>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         1. META TAGS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Meta Tags &amp; Title-Tag Bug Fix</div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">espanol/inyecciones-de-botox-en-miami / Es / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+<span class="c-comment fix-item">@* TITLE BUG FIXED — was: &lt;title&gt;Botox en Miami - Florida - @Model.GetPrice | {CenterName}&lt;/title&gt; *@</span>
+<span class="c-comment">@* GetPrice returns null (botox has NO price attribute — it is billed per UNIT), so it rendered *@</span>
+<span class="c-comment">@* as "Botox en Miami - Florida -  | Avana Plastic Surgery" — a dangling hyphen. It shipped like that. *@</span>
+<span class="c-tag">&lt;title&gt;</span>Inyecciones de Botox en Miami | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"page-topic"</span> <span class="c-attr">content</span>=<span class="c-val">"Botox en Miami, inyecciones de Botox, botox miami precio, costo del botox, tratamiento de botox, toxina botulínica, botox para arrugas"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"page-type"</span> <span class="c-attr">content</span>=<span class="c-val">"Tratamiento estético no quirúrgico de Botox en Miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami para líneas del entrecejo, frente y patas de gallo &amp;mdash; resultados naturales, sin reposo. Agende su consulta gratuita, sin compromiso."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2022-07-14T19:31:53<span class="c-razor">@(Model.GetTimeZone)</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Added og:locale es_US *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"es_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Added en_US — signals there is an English version of this page *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale:alternate"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami para líneas del entrecejo, frente y patas de gallo &amp;mdash; resultados naturales, sin reposo. Agende su consulta gratuita, sin compromiso."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Adjusted og:url to absolute URL *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:tag"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Adjusted og:image to absolute URL + added alt/width/height for rich social cards *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/botox-injections-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"910"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"960"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary_large_image"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Inyecciones de Botox en Miami para líneas del entrecejo, frente y patas de gallo &amp;mdash; resultados naturales, sin reposo. Agende su consulta gratuita, sin compromiso."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://avanaplasticsurgery.com/themes/avana/images/services/910x960/botox-injections-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         2. KEYWORD COVERAGE
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keyword Coverage — Before / After (Es)</div>
+
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Visible-text occurrences (schema excluded) &nbsp;·&nbsp; accent-insensitive</span>
+            </div>
+            <div class="info-card-body">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Keyword</th><th>Vol</th><th>Bef</th><th>Aft</th><th>Δ</th><th>Head</th><th>Note</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>botox en miami</td><td class="num">90</td><td class="num">10</td><td class="num">20</td><td class="num up">+10</td><td>H2</td><td>MiamiPS #1 — the one ES keyword with proven volume; now in the title</td></tr>
+                        <tr><td>tratamientos de botox en miami</td><td class="num">40</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>—</td><td>was ZERO. MiamiPS #13</td></tr>
+                        <tr><td>inyecciones de botox en miami</td><td class="num">—</td><td class="num">1</td><td class="num">4</td><td class="num up">+3</td><td>H2</td><td>the page's own name + URL slug</td></tr>
+                        <tr><td>inyecciones de botox</td><td class="num">—</td><td class="num">15</td><td class="num">21</td><td class="num up">+6</td><td>H2</td><td>exact-match phrase — see Regression</td></tr>
+                        <tr><td>toxina botulínica</td><td class="num">—</td><td class="num">1</td><td class="num">8</td><td class="num up">+7</td><td>—</td><td>the generic term; was near-zero</td></tr>
+                        <tr><td>por unidad</td><td class="num">—</td><td class="num">2</td><td class="num">16</td><td class="num up">+14</td><td>H3</td><td>the whole pricing model</td></tr>
+                        <tr><td>cuánto cuesta el botox</td><td class="num">—</td><td class="num">1</td><td class="num">4</td><td class="num up">+3</td><td>H2</td><td>now an H2 + an FAQ</td></tr>
+                        <tr><td>consulta gratuita</td><td class="num">—</td><td class="num">1</td><td class="num">8</td><td class="num up">+7</td><td>H2</td><td>conversion phrase</td></tr>
+                        <tr><td>mejor botox en miami</td><td class="num">—</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>H3</td><td>the ES "best botox" cluster</td></tr>
+                        <tr><td>botox en miami beach</td><td class="num">—</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>H4</td><td>was ZERO</td></tr>
+                        <tr><td>botox en coral gables</td><td class="num">—</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>H4</td><td>was ZERO</td></tr>
+                        <tr><td>kendall / south miami / doral / hialeah / west miami</td><td class="num">—</td><td class="num">0</td><td class="num">2–5</td><td class="num up">NEW</td><td>H4</td><td>all were ZERO — geo cluster</td></tr>
+                        <tr><td>líneas del entrecejo</td><td class="num">—</td><td class="num">0</td><td class="num">7</td><td class="num up">+7</td><td>tbl</td><td>FDA-dosed area, was ZERO</td></tr>
+                        <tr><td>aprobado por la fda</td><td class="num">—</td><td class="num">0</td><td class="num">5</td><td class="num up">+5</td><td>—</td><td>was ZERO — YMYL signal</td></tr>
+                        <tr><td>fda</td><td class="num">—</td><td class="num">0</td><td class="num">10</td><td class="num up">+10</td><td>—</td><td>was ZERO</td></tr>
+                        <tr><td>opiniones de pacientes</td><td class="num">—</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>H2</td><td>new reviews block</td></tr>
+                        <tr><td>arrugas</td><td class="num">—</td><td class="num">18</td><td class="num">11</td><td class="num down">−7</td><td>—</td><td>DOWN — displaced; not a tracked keyword, left as-is</td></tr>
+                        <tr><td>tratamiento de botox</td><td class="num">—</td><td class="num">7</td><td class="num">4</td><td class="num down">−3</td><td>—</td><td>DOWN — displaced by "inyecciones de Botox", the better phrase</td></tr>
+                        <tr><td>botox (bare)</td><td class="num">—</td><td class="num">83</td><td class="num">106</td><td class="num up">+23</td><td>—</td><td>density 3.20% → 2.67% — IMPROVED (page grew faster than mentions)</td></tr>
+                    </tbody>
+                </table>
+                <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:10px;">
+                    Src: <strong>botox en miami / tratamientos de botox en miami</strong> come from the EN Semrush gap file; everything else is a cluster the EN report proved (cost, geo, "best", units, definition, E-E-A-T), translated to ES. Head: H2/H3/H4 = in a heading · tbl = in the pricing table · — = body copy only.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         3. CONTENT CHANGES
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Changes <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— article.cshtml: +636 / −146 lines (353 → 843)</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Content &nbsp;·&nbsp; New Sections, Rewrites, Factual Fixes &amp; Copy-Edit</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:24px;">
+
+                <!-- Regression -->
+                <div>
+                    <div class="schema-subsection-label">Regression Found &amp; Fixed During The Pass — Read Before The Next Rewrite</div>
+                    <div class="cannibal-block">
+                        The first ES draft made the page <strong>worse</strong> on its own primary keyword. The draft leaned on bare <em>"Botox"</em> everywhere (<em>"el Botox cuesta", "después del Botox"</em>) — more natural Spanish, but it strips the exact phrase the page is <strong>named</strong> for.
+                        <div style="margin:10px 0;font-family:'Cascadia Code','Courier New',monospace;font-size:0.78rem;">
+                            inyecciones de botox &nbsp;&nbsp;<span class="removed">15 → 4</span> &nbsp;(−11)&nbsp; then fixed to <span class="added">21</span><br>
+                            inyecciones de botox en miami &nbsp;&nbsp;<span class="removed">1 → 0</span> &nbsp;(−1)&nbsp; then fixed to <span class="added">4</span>
+                        </div>
+                        Fixed with <strong>9 targeted swaps</strong> in headings + section leads (not body stuffing) + the title tag now leads with the exact phrase.
+                        <span class="reason">RULE FOR THE NEXT PASS: bare "botox" is NOT the ES target phrase. Adding length can LOWER exact-match coverage — always re-run counts against git HEAD after a rewrite.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Three factual errors -->
+                <div>
+                    <div class="schema-subsection-label">Three Factual Errors In The 2022 ES Copy — All Fixed <span class="fixed-badge">FIXED</span></div>
+                    <div style="display:flex;flex-direction:column;gap:10px;">
+                        <div class="cannibal-block">
+                            <strong>1 · FAQ #1 answered a different question than it asked.</strong> Q asked about <em>timing</em> (<em>"¿Cuánto tiempo debo esperar para ver mis resultados?"</em>); the answer talked about antibodies and unlimited lifetime dosing. Now answers the actual question (24–48 h onset / 7–10 días visible / ~30 días full), matching EN.
+                        </div>
+                        <div class="cannibal-block">
+                            <strong>2 · FAQ #2 confused "inyecciones" with "unidades" — and contradicted the EN page.</strong> Old copy quoted <em>"20 a 25 INYECCIONES"</em>. Botox is dosed in <strong>units</strong>, not injections; the EN page publishes the FDA doses (20 / 20 / 24 units), which the new ES cost table is built on. Rewritten to units, sourced to the Botox Cosmetic prescribing information. <span style="font-style:italic;color:#6a737d;">The cost table and this FAQ must never drift apart again.</span>
+                        </div>
+                        <div class="cannibal-block">
+                            <strong>3 · "Xiomen" → "Xeomin"</strong> (the drug's actual name), in the alternatives FAQ. Also: the <em>"¿Cómo funciona el Botox?"</em> heading was an H3 under no H2 (broken hierarchy) — promoted to H2.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- New sections -->
+                <div>
+                    <div class="schema-subsection-label">New Sections Added <span class="new-badge">NEW</span></div>
+                    <ul class="sections-list">
+                        <li>Table of Contents — 15 anchor links, 2 columns (same pattern as EN + deep-plane ES); 15 heading ids added, all verified to resolve</li>
+                        <li>H2 "¿Cuánto cuesta el Botox en Miami?" — full cost section (id=cuanto-cuesta-el-botox-en-miami)</li>
+                        <li>Pricing table (3 rows): Entrecejo 20u/$400, Frente 20u/$400, Patas de gallo 24u/$480 — same FDA doses as EN</li>
+                        <li>H3 "Qué influye en el costo" — 5 bullets (zonas, unidades, quién inyecta, frecuencia, procedencia del producto)</li>
+                        <li>H3 "Cómo pagar su tratamiento" — consulta gratuita + Alphaeon / Med Loan / United Credit, links /espanol/opciones-de-financiamiento</li>
+                        <li>H2 "Zonas donde se aplica el Botox" — 3-column carousel (TERCIO SUPERIOR / OJOS / TERCIO INFERIOR), the EN injection-sites content translated</li>
+                        <li>H3 "Botox en Miami: zonas que atendemos" — service-area intro, links /espanol/locaciones, same $20/unit at every office</li>
+                        <li>H4 "Botox en Miami Beach" — was ZERO mentions</li>
+                        <li>H4 "Botox en Coral Gables" — surgical practice vs. medspa positioning; was ZERO</li>
+                        <li>H4 "Botox en Kendall, South Miami, Doral, Hialeah y West Miami" — was ZERO</li>
+                        <li>H3 "¿Busca el mejor Botox en Miami?" — 5-point provider checklist, no self-award claim (absorbed the old "ELIJA UN ESPECIALISTA" section)</li>
+                        <li>H2 "Opiniones de pacientes" — Elfsight carousel (same app id as EN + deep-plane ES); page had NO reviews block</li>
+                        <li class="full-row">H2 "Si vive fuera de Miami" — 3 sub-blocks: patients flying in for surgery (links /espanol/paciente-fuera-cuidad), the Dallas TX office (links /espanol/dallas-texas), and a 4-point "respuesta directa" list</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Improved / removed -->
+                <div>
+                    <div class="schema-subsection-label">Improvements &amp; Guardrails</div>
+                    <ul class="sections-list">
+                        <li>H2 "¿Qué es el Botox?" now opens with a bolded one-sentence definition (mirrors the EN "define botox injection" fix)</li>
+                        <li>Cost CTA banner leads with the answer: "En {CenterName} el Botox cuesta $20 por unidad."</li>
+                        <li>FAQ accordion rebuilt: 12 → 15 Q&amp;As (4 cost Q&amp;As added, matching the EN set)</li>
+                        <li>Counterfeit-toxin safety bullet now cites FDA/CDC + outbound link to the CDC botulinum-toxin safety page (rel="noopener")</li>
+                        <li>Pricing-table footnote: the 3 areas are the FDA-approved ones; units vary; figures are planning estimates only</li>
+                        <li class="full-row">Duration set made internally consistent: 20-min session · 24–48 h before exercise · 4–5 h before lying down · results 7–10 días · effect 3–6 meses (matches the schema)</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Copy-edit -->
+                <div>
+                    <div class="schema-subsection-label">Copy-Edit Pass — 13 Fixes (proofread against rendered text)</div>
+                    <div style="display:flex;flex-direction:column;gap:8px;">
+                        <div class="cannibal-block" style="border-color:#0070c9;background:#eef6ff;">
+                            <strong>Grammar / Spanish errors (4):</strong> <span class="removed">"le ordena a los músculos"</span> → "les ordena…" (plural indirect object) · <span class="removed">"Aunque se conoce sobre todo…"</span> → "Aunque se la conoce…" · inverted "…es este artículo" rewritten · "Código de barras – Las líneas finas…" sentence fragment given a main verb.
+                        </div>
+                        <div class="cannibal-block" style="border-color:#febc2e;background:#fff8f0;">
+                            <strong>Anglicisms — translated-English tells (3):</strong> <span class="removed">"el mismo precio APLICAN en todas ellas"</span> → "en todas ellas RIGE el mismo precio y ATIENDE el mismo equipo" ("aplicar" ≠ to be in effect) · <span class="removed">"imágenes de banco"</span> → "fotos de archivo" (calque of "stock images") · <span class="removed">"Aquí LO atiende…"</span> → "Aquí la atención está a cargo de…" (masculine clitic assumed a male patient on a mostly-female page — de-gendered).
+                        </div>
+                        <div class="cannibal-block" style="border-color:#f38ba8;background:#fff8f8;">
+                            <strong>Internal numeric contradictions (2):</strong> session length said "20 minutos" twice and "quince minutos" once → aligned to 20 minutos · exercise wait said "24 horas" / "24 a 48 horas" / schema "uno o dos días" → aligned to "24 a 48 horas" everywhere (matches schema). <span style="font-style:italic;color:#6a737d;">Two of these fixes live inside FAQ answers, so they exist twice — visible accordion + FAQPage schema. Both copies were edited in lockstep and script-verified byte-for-byte identical.</span>
+                        </div>
+                        <div class="cannibal-block" style="border-color:#8b8ba7;background:#f4f5f7;">
+                            <strong>Style / consistency (4):</strong> "mejoría en 4 a 7 días" → aligned to the 7–10 día timeline · <span class="removed">"un rango amplio de pacientes"</span> → "una gama amplia…" · aftercare list mixed infinitives → all five now infinitive · "equivale aproximadamente a entre $400 y $480" → "cuesta aproximadamente entre $400 y $480".
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Internal links -->
+                <div>
+                    <div class="schema-subsection-label">Internal &amp; Outbound Links Added</div>
+                    <div class="link-change">
+                        <span class="link-arrow">/espanol/opciones-de-financiamiento &nbsp;·&nbsp; /espanol/locaciones &nbsp;·&nbsp; /espanol/paciente-fuera-cuidad &nbsp;·&nbsp; /espanol/dallas-texas</span>
+                        <span class="link-arrow">External: cdc.gov botulinum-toxin safety page (rel="noopener") — E-E-A-T / YMYL</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         4. GOOGLE MARKUP SCHEMAS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Five JSON-LD Schemas Added <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— the page previously had ZERO</span></div>
+
+        <div class="callout callout-info">
+            <strong>Same 5 blocks, same order, same house pattern as the EN page and deep-plane ES.</strong> All 5 live in article.cshtml at the end of the file (nothing inherited). All parse as valid JSON after stripping the Razor <code style="font-size:0.78rem">@@</code> escapes; the FAQPage mirrors the visible accordion <strong>verbatim</strong> (15 questions, script-checked, not eyeballed).
+        </div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">MedicalClinic + LocalBusiness</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@id</span><span class="sf-val">.../#organization (shared org entity)</span></div>
+                            <div class="schema-field"><span class="sf-key">url</span><span class="sf-val">HOMEPAGE (not this page — shared @id must not claim a service page as the org URL)</span></div>
+                            <div class="schema-field"><span class="sf-key">NAP + geo</span><span class="sf-val">address, coordinates, phone</span></div>
+                            <div class="schema-field"><span class="sf-key">areaServed</span><span class="sf-val">×11 incl. Miami Beach, Coral Gables, Kendall, South Miami, Doral, Hialeah, West Miami</span></div>
+                            <div class="schema-field"><span class="sf-key">sameAs / hours</span><span class="sf-val">5 socials, openingHours, priceRange</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>One org entity resolves site-wide; feeds local pack + Maps for the new geo section</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">FAQPage</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Coverage</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">15</span>ALL 15 visible accordion Q&amp;As, <code style="font-size:0.75rem">inLanguage "es"</code></div>
+                            <div class="faq-q-item"><span class="q-num">✓</span>Mirrors the accordion verbatim; hidden empty spacer panel excluded</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Eligible for FAQ rich results; cost answers are AI-citable in Spanish</li>
+                            <li>Never edit an FAQ answer without editing its schema twin — a mismatch is the one thing here that could earn a manual action</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">MedicalProcedure + Service</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields &nbsp;·&nbsp; deliberate deviations</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">["MedicalProcedure", "Service"] — co-type so "offers" is valid (offers is defined on Service, not MedicalEntity)</span></div>
+                            <div class="schema-field"><span class="sf-key">procedureType</span><span class="sf-val">NoninvasiveProcedure (Botox is NOT surgery)</span></div>
+                            <div class="schema-field"><span class="sf-key">howPerformed</span><span class="sf-val">FDA unit doses</span></div>
+                            <div class="schema-field"><span class="sf-key">offers</span><span class="sf-val">$20 / unit + UnitPriceSpecification</span></div>
+                            <div class="schema-field"><span class="sf-key">performer</span><span class="sf-val">ORGANIZATION only — no Person node (see note)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Without the co-type the $20/unit price is parsed and DISCARDED; both deviations recorded in Razor comments so nobody "fixes" them back</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Items (en Español)</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Inicio</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">No Quirúrgico (/espanol/no-quirugico)</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Inyecciones de Botox en Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Breadcrumb trail in snippets, improving CTR; Spanish labels match page language</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 5</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">inLanguage</span><span class="sf-val">es</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">.milenia-entity-title, .milenia-panels-definition</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks sections for voice search / AI assistant responses in Spanish</li>
+                            <li>Increases generative-AI citation eligibility (GEO)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note card -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">No Person node</div>
+                    <div class="schema-card-title">On purpose — ¿quién inyecta?</div>
+                </div>
+                <div class="schema-card-body">
+                    <div class="schema-advantages" style="list-style:none;">
+                        <li>Same reason as EN: nothing links Botox to a named professional and the injector may be an APRN.</li>
+                        <li>Naming a surgeon who does not inject would be a fabricated claim in structured data.</li>
+                        <li style="color:#92400e;">Add the Person node (5 → 6 blocks) ONLY once the practice confirms who injects.</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════════
+         5. GEO STATUS
+    ═══════════════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">GEO Status</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">AI-Citation Readiness &nbsp;·&nbsp; inyecciones-de-botox-en-miami (Es)</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> 5 JSON-LD blocks (page had ZERO)</li>
+                            <li><em class="geo-icon">✓</em> FAQPage covers ALL 15 Q&amp;As, inLanguage es, mirroring the accordion</li>
+                            <li><em class="geo-icon">✓</em> Cost section + pricing table with FDA unit doses ($20/unidad)</li>
+                            <li><em class="geo-icon">✓</em> "Zonas donde se aplica" carousel (injection-sites content)</li>
+                            <li><em class="geo-icon">✓</em> Neighborhood service-area section (Miami Beach, Coral Gables, Kendall, South Miami…)</li>
+                            <li><em class="geo-icon">✓</em> "Mejor botox" comparison checklist + Opiniones de pacientes block</li>
+                            <li><em class="geo-icon">✓</em> Table of Contents + 15 heading anchors (all resolve)</li>
+                            <li><em class="geo-icon">✓</em> CDC/FDA authority link on the counterfeit-toxin warning</li>
+                            <li><em class="geo-icon">✓</em> Copy-edit (13 fixes) + 3 factual errors in the 2022 copy corrected</li>
+                            <li><em class="geo-icon">✓</em> Title-tag bug fixed (dangling hyphen from null @@Model.GetPrice)</li>
+                            <li><em class="geo-icon">✓</em> Duration set internally consistent at 3–6 meses (matches schema)</li>
+                            <li><em class="geo-icon">✓</em> Hreflang audited — reciprocal en/es pair, correct, no action needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
