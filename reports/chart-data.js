@@ -201,6 +201,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "lipo 360 miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "lipo 360 miami"
       }
     ],
     "competitors": [
@@ -367,6 +372,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -535,6 +544,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -702,173 +715,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://prestigeplasticsurgery.com/blog/what-is-lipo-360-and-how-much/",
-        "title": "Understanding Lipo 360: Costs and Results in Miami",
-        "domain": "prestigeplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
           },
           {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": 6
-          },
-          {
-            "date": "2026-06-09",
-            "position": 6
-          },
-          {
-            "date": "2026-06-10",
-            "position": 5
-          },
-          {
-            "date": "2026-06-11",
-            "position": 4
-          },
-          {
-            "date": "2026-06-12",
-            "position": 5
-          },
-          {
-            "date": "2026-06-13",
-            "position": 4
-          },
-          {
-            "date": "2026-06-14",
-            "position": 5
-          },
-          {
-            "date": "2026-06-15",
-            "position": 4
-          },
-          {
-            "date": "2026-06-16",
-            "position": 5
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": 6
-          },
-          {
-            "date": "2026-06-19",
-            "position": 5
-          },
-          {
-            "date": "2026-06-20",
-            "position": 4
-          },
-          {
-            "date": "2026-06-21",
-            "position": 4
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 4
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 4
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 4
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          },
-          {
-            "date": "2026-07-03",
-            "position": 4
-          },
-          {
-            "date": "2026-07-04",
-            "position": 9
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
-            "position": 6
-          },
-          {
-            "date": "2026-07-07",
-            "position": 5
-          },
-          {
-            "date": "2026-07-08",
-            "position": 8
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": 4
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 4
-          },
-          {
-            "date": "2026-07-14",
-            "position": 4
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -1036,6 +886,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -1203,12 +1057,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://www.facebook.com/groups/2038671846493827/posts/2824297297931274/",
-        "title": "Lipo 360 prices in Miami?",
+        "url": "https://www.facebook.com/groups/2038671846493827/posts/2467198396974501/",
+        "title": "Who does the best lipo 360 in Miami for love handles?",
         "domain": "facebook.com",
         "series": [
           {
@@ -1345,7 +1203,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-10",
@@ -1369,6 +1227,181 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://prestigeplasticsurgery.com/blog/what-is-lipo-360-and-how-much/",
+        "title": "Understanding Lipo 360: Costs and Results in Miami",
+        "domain": "prestigeplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": 6
+          },
+          {
+            "date": "2026-06-09",
+            "position": 6
+          },
+          {
+            "date": "2026-06-10",
+            "position": 5
+          },
+          {
+            "date": "2026-06-11",
+            "position": 4
+          },
+          {
+            "date": "2026-06-12",
+            "position": 5
+          },
+          {
+            "date": "2026-06-13",
+            "position": 4
+          },
+          {
+            "date": "2026-06-14",
+            "position": 5
+          },
+          {
+            "date": "2026-06-15",
+            "position": 4
+          },
+          {
+            "date": "2026-06-16",
+            "position": 5
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": 6
+          },
+          {
+            "date": "2026-06-19",
+            "position": 5
+          },
+          {
+            "date": "2026-06-20",
+            "position": 4
+          },
+          {
+            "date": "2026-06-21",
+            "position": 4
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 4
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          },
+          {
+            "date": "2026-07-04",
+            "position": 9
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": 6
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": 8
+          },
+          {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 4
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 4
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -1537,340 +1570,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360",
-        "domain": "miaaesthetics.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 3
           },
           {
-            "date": "2026-06-07",
-            "position": 3
-          },
-          {
-            "date": "2026-06-08",
-            "position": 3
-          },
-          {
-            "date": "2026-06-09",
-            "position": 3
-          },
-          {
-            "date": "2026-06-10",
-            "position": 2
-          },
-          {
-            "date": "2026-06-11",
-            "position": 3
-          },
-          {
-            "date": "2026-06-12",
-            "position": 3
-          },
-          {
-            "date": "2026-06-13",
-            "position": 3
-          },
-          {
-            "date": "2026-06-14",
-            "position": 3
-          },
-          {
-            "date": "2026-06-15",
-            "position": 3
-          },
-          {
-            "date": "2026-06-16",
-            "position": 3
-          },
-          {
-            "date": "2026-06-17",
-            "position": 3
-          },
-          {
-            "date": "2026-06-18",
-            "position": 5
-          },
-          {
-            "date": "2026-06-19",
-            "position": 3
-          },
-          {
-            "date": "2026-06-20",
-            "position": 3
-          },
-          {
-            "date": "2026-06-21",
-            "position": 3
-          },
-          {
-            "date": "2026-06-22",
-            "position": 3
-          },
-          {
-            "date": "2026-06-23",
-            "position": 3
-          },
-          {
-            "date": "2026-06-24",
-            "position": 3
-          },
-          {
-            "date": "2026-06-25",
-            "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 3
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 3
-          },
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
+            "date": "2026-07-16",
             "position": 8
-          },
-          {
-            "date": "2026-07-03",
-            "position": 6
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 4
-          },
-          {
-            "date": "2026-07-06",
-            "position": 8
-          },
-          {
-            "date": "2026-07-07",
-            "position": 4
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 10
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 6
-          },
-          {
-            "date": "2026-07-12",
-            "position": 6
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": 6
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://juventuscosmeticsurgery.com/lipo-360-miami-prices-recovery-results/",
-        "title": "Lipo 360 in Miami: real prices, recovery, and results (2025 guide)",
-        "domain": "juventuscosmeticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 6
-          },
-          {
-            "date": "2026-06-07",
-            "position": 6
-          },
-          {
-            "date": "2026-06-08",
-            "position": 7
-          },
-          {
-            "date": "2026-06-09",
-            "position": 8
-          },
-          {
-            "date": "2026-06-10",
-            "position": 7
-          },
-          {
-            "date": "2026-06-11",
-            "position": 6
-          },
-          {
-            "date": "2026-06-12",
-            "position": 6
-          },
-          {
-            "date": "2026-06-13",
-            "position": 7
-          },
-          {
-            "date": "2026-06-14",
-            "position": 6
-          },
-          {
-            "date": "2026-06-15",
-            "position": 7
-          },
-          {
-            "date": "2026-06-16",
-            "position": 7
-          },
-          {
-            "date": "2026-06-17",
-            "position": 6
-          },
-          {
-            "date": "2026-06-18",
-            "position": 7
-          },
-          {
-            "date": "2026-06-19",
-            "position": 7
-          },
-          {
-            "date": "2026-06-20",
-            "position": 6
-          },
-          {
-            "date": "2026-06-21",
-            "position": 6
-          },
-          {
-            "date": "2026-06-22",
-            "position": 7
-          },
-          {
-            "date": "2026-06-23",
-            "position": 7
-          },
-          {
-            "date": "2026-06-24",
-            "position": 7
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": 8
-          },
-          {
-            "date": "2026-06-27",
-            "position": 7
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": 7
-          },
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
-          },
-          {
-            "date": "2026-07-03",
-            "position": 7
-          },
-          {
-            "date": "2026-07-04",
-            "position": 10
-          },
-          {
-            "date": "2026-07-05",
-            "position": 8
-          },
-          {
-            "date": "2026-07-06",
-            "position": 7
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 9
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
-            "position": 10
-          },
-          {
-            "date": "2026-07-15",
-            "position": 10
           }
         ]
       }
@@ -2084,9 +1787,185 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "liposucción 360 en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "liposucción 360 en miami"
       }
     ],
     "competitors": [
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami",
+        "title": "Lipo 360 Miami - $3000 Mejor Precio",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 1
+          },
+          {
+            "date": "2026-06-07",
+            "position": 1
+          },
+          {
+            "date": "2026-06-08",
+            "position": 1
+          },
+          {
+            "date": "2026-06-09",
+            "position": 1
+          },
+          {
+            "date": "2026-06-10",
+            "position": 1
+          },
+          {
+            "date": "2026-06-11",
+            "position": 1
+          },
+          {
+            "date": "2026-06-12",
+            "position": 1
+          },
+          {
+            "date": "2026-06-13",
+            "position": 1
+          },
+          {
+            "date": "2026-06-14",
+            "position": 1
+          },
+          {
+            "date": "2026-06-15",
+            "position": 1
+          },
+          {
+            "date": "2026-06-16",
+            "position": 1
+          },
+          {
+            "date": "2026-06-17",
+            "position": 1
+          },
+          {
+            "date": "2026-06-18",
+            "position": 1
+          },
+          {
+            "date": "2026-06-19",
+            "position": 1
+          },
+          {
+            "date": "2026-06-20",
+            "position": 1
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 1
+          },
+          {
+            "date": "2026-07-10",
+            "position": 1
+          },
+          {
+            "date": "2026-07-11",
+            "position": 1
+          },
+          {
+            "date": "2026-07-12",
+            "position": 1
+          },
+          {
+            "date": "2026-07-13",
+            "position": 1
+          },
+          {
+            "date": "2026-07-14",
+            "position": 1
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
       {
         "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/lipoescultura-360-miami/",
         "title": "Lipoescultura 360 en Miami",
@@ -2251,6 +2130,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -2418,6 +2301,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -2585,173 +2472,181 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
-        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción?",
-        "domain": "daviddelgadocirujano.com",
+        "url": "https://juventuscosmeticsurgery.com/es/lipo-360-miami-precios-recuperacion-resultados/",
+        "title": "Lipo 360 en Miami: precios reales, recuperación y resultados (guía 2025)",
+        "domain": "juventuscosmeticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
-            "position": 4
-          },
-          {
-            "date": "2026-06-07",
-            "position": 4
-          },
-          {
-            "date": "2026-06-08",
-            "position": 4
-          },
-          {
-            "date": "2026-06-09",
-            "position": 3
-          },
-          {
-            "date": "2026-06-10",
-            "position": 5
-          },
-          {
-            "date": "2026-06-11",
-            "position": 8
-          },
-          {
-            "date": "2026-06-12",
-            "position": 4
-          },
-          {
-            "date": "2026-06-13",
-            "position": 4
-          },
-          {
-            "date": "2026-06-14",
-            "position": 4
-          },
-          {
-            "date": "2026-06-15",
-            "position": 4
-          },
-          {
-            "date": "2026-06-16",
-            "position": 8
-          },
-          {
-            "date": "2026-06-17",
-            "position": 5
-          },
-          {
-            "date": "2026-06-18",
-            "position": 5
-          },
-          {
-            "date": "2026-06-19",
-            "position": 8
-          },
-          {
-            "date": "2026-06-20",
-            "position": 4
-          },
-          {
-            "date": "2026-06-21",
-            "position": 4
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 4
-          },
-          {
-            "date": "2026-06-27",
-            "position": 4
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          },
-          {
-            "date": "2026-07-03",
             "position": 6
           },
           {
-            "date": "2026-07-04",
+            "date": "2026-06-07",
+            "position": 8
+          },
+          {
+            "date": "2026-06-08",
+            "position": 6
+          },
+          {
+            "date": "2026-06-09",
+            "position": 8
+          },
+          {
+            "date": "2026-06-10",
+            "position": 6
+          },
+          {
+            "date": "2026-06-11",
+            "position": 6
+          },
+          {
+            "date": "2026-06-12",
             "position": 7
+          },
+          {
+            "date": "2026-06-13",
+            "position": 7
+          },
+          {
+            "date": "2026-06-14",
+            "position": 7
+          },
+          {
+            "date": "2026-06-15",
+            "position": 7
+          },
+          {
+            "date": "2026-06-16",
+            "position": 6
+          },
+          {
+            "date": "2026-06-17",
+            "position": 7
+          },
+          {
+            "date": "2026-06-18",
+            "position": 7
+          },
+          {
+            "date": "2026-06-19",
+            "position": 6
+          },
+          {
+            "date": "2026-06-20",
+            "position": 7
+          },
+          {
+            "date": "2026-06-21",
+            "position": 7
+          },
+          {
+            "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 5
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          },
+          {
+            "date": "2026-07-04",
+            "position": 5
           },
           {
             "date": "2026-07-05",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-06",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-07-07",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 4
+            "position": 5
           },
           {
             "date": "2026-07-09",
-            "position": 5
+            "position": 6
           },
           {
             "date": "2026-07-10",
-            "position": 5
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 5
-          },
-          {
-            "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
             "position": 7
           },
           {
+            "date": "2026-07-11",
+            "position": 6
+          },
+          {
+            "date": "2026-07-12",
+            "position": 6
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
             "date": "2026-07-15",
-            "position": 4
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -2919,6 +2814,181 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
+        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción? - Dr David Delgado",
+        "domain": "daviddelgadocirujano.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 4
+          },
+          {
+            "date": "2026-06-07",
+            "position": 4
+          },
+          {
+            "date": "2026-06-08",
+            "position": 4
+          },
+          {
+            "date": "2026-06-09",
+            "position": 3
+          },
+          {
+            "date": "2026-06-10",
+            "position": 5
+          },
+          {
+            "date": "2026-06-11",
+            "position": 8
+          },
+          {
+            "date": "2026-06-12",
+            "position": 4
+          },
+          {
+            "date": "2026-06-13",
+            "position": 4
+          },
+          {
+            "date": "2026-06-14",
+            "position": 4
+          },
+          {
+            "date": "2026-06-15",
+            "position": 4
+          },
+          {
+            "date": "2026-06-16",
+            "position": 8
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 5
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": 4
+          },
+          {
+            "date": "2026-06-21",
+            "position": 4
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          },
+          {
+            "date": "2026-07-04",
+            "position": 7
+          },
+          {
+            "date": "2026-07-05",
+            "position": 4
+          },
+          {
+            "date": "2026-07-06",
+            "position": 2
+          },
+          {
+            "date": "2026-07-07",
+            "position": 4
+          },
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": 5
+          },
+          {
+            "date": "2026-07-10",
+            "position": 5
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 5
+          },
+          {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
+            "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -3086,12 +3156,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
         "url": "https://www.instagram.com/p/DQxQ1d1EYN6/",
-        "title": "La Lipo 360 va más allá de una simple liposucción. Es un ...",
+        "title": "La Lipo 360 va más allá de una simple liposucción. Es un procedimiento ...",
         "domain": "instagram.com",
         "series": [
           {
@@ -3253,349 +3327,190 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://drnathan.com/plastic-surgery/body/360-liposuction/",
-        "title": "Lipo 360 Miami & Miramar, FL",
-        "domain": "drnathan.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": 5
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": 5
-          },
-          {
-            "date": "2026-06-15",
-            "position": 5
-          },
-          {
-            "date": "2026-06-16",
-            "position": 4
-          },
-          {
-            "date": "2026-06-17",
-            "position": 4
-          },
-          {
-            "date": "2026-06-18",
-            "position": 4
-          },
-          {
-            "date": "2026-06-19",
-            "position": 4
-          },
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 3
-          },
-          {
-            "date": "2026-06-23",
-            "position": 3
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/video/lipo360-by-dr-mameniskis-2-months-post-op",
-        "title": "Videos - Video testimonio: Lipo 360 realizada por Dr ...",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
           },
           {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://sveltaplasticsurgery.com/lipo-360/",
+        "title": "Lipo 360 Miami | 360° Liposuction",
+        "domain": "sveltaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 10
           }
         ]
       }
     ],
     "pages": [
       {
-        "position": 9,
-        "url": "https://avanaplasticsurgery.com/espanol/video/lipo360-by-dr-mameniskis-2-months-post-op",
-        "is_target": false
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami",
+        "is_target": true
       }
     ]
   },
@@ -3800,6 +3715,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "breast implants miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "breast implants miami"
       }
     ],
     "competitors": [
@@ -3966,6 +3886,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -4134,6 +4058,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -4301,340 +4229,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://www.reddit.com/r/drwilliammiami/comments/1ui0fro/breast_augmentation_dr_william_miami/",
-        "title": "Breast Augmentation | Dr. William Miami",
-        "domain": "reddit.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 5
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 7
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.reddit.com/r/drwilliammiami/comments/1qyphrt/breast_augmentation_ogee_plastic_surgery_dr/",
-        "title": "Breast Augmentation | Ogee plastic Surgery | Dr. William Miami",
-        "domain": "reddit.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
-          },
-          {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 6
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": 5
-          },
-          {
-            "date": "2026-07-08",
-            "position": 6
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
           },
           {
-            "date": "2026-07-15",
-            "position": 5
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -4802,13 +4400,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami with Implants ...",
-        "domain": "iconcosmeticcenter.com",
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Best Breast Augmentation in Miami, FL",
+        "domain": "gablesplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
@@ -4820,7 +4422,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-08",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-09",
@@ -4828,321 +4430,158 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-10",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-11",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-12",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-13",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-14",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-06-15",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-06-16",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-06-17",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-18",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-06-19",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-06-20",
-            "position": 6
+            "position": 8
           },
           {
             "date": "2026-06-21",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-06-22",
-            "position": 6
+            "position": 8
           },
           {
             "date": "2026-06-23",
-            "position": 6
+            "position": 8
           },
           {
             "date": "2026-06-24",
-            "position": 5
+            "position": 9
           },
           {
             "date": "2026-06-25",
-            "position": 5
+            "position": 8
           },
           {
             "date": "2026-06-26",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-06-27",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-28",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-29",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-06-30",
-            "position": 6
+            "position": 10
           },
           {
             "date": "2026-07-01",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": 5
-          },
-          {
-            "date": "2026-07-04",
-            "position": 7
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
             "position": 6
           },
           {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
+            "date": "2026-07-03",
             "position": null
           },
           {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
             "date": "2026-07-09",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 5
+            "position": 10
           },
           {
             "date": "2026-07-13",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-15",
-            "position": 7
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://drgcosmeticsurgery.com/gummy-bear-breast-implants/",
-        "title": "Gummy Bear Breast Implants - Miami",
-        "domain": "drgcosmeticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 5
-          },
-          {
-            "date": "2026-06-07",
-            "position": 5
-          },
-          {
-            "date": "2026-06-08",
-            "position": 5
-          },
-          {
-            "date": "2026-06-09",
-            "position": 5
-          },
-          {
-            "date": "2026-06-10",
-            "position": 5
-          },
-          {
-            "date": "2026-06-11",
-            "position": 5
-          },
-          {
-            "date": "2026-06-12",
-            "position": 5
-          },
-          {
-            "date": "2026-06-13",
-            "position": 5
-          },
-          {
-            "date": "2026-06-14",
-            "position": 5
-          },
-          {
-            "date": "2026-06-15",
-            "position": 5
-          },
-          {
-            "date": "2026-06-16",
-            "position": 5
-          },
-          {
-            "date": "2026-06-17",
-            "position": 5
-          },
-          {
-            "date": "2026-06-18",
-            "position": 5
-          },
-          {
-            "date": "2026-06-19",
-            "position": 5
-          },
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 7
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 6
-          },
-          {
-            "date": "2026-06-25",
-            "position": 6
-          },
-          {
-            "date": "2026-06-26",
-            "position": 7
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 5
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          },
-          {
-            "date": "2026-07-03",
-            "position": 6
-          },
-          {
-            "date": "2026-07-04",
-            "position": 8
-          },
-          {
-            "date": "2026-07-05",
-            "position": 6
-          },
-          {
-            "date": "2026-07-06",
-            "position": 10
-          },
-          {
-            "date": "2026-07-07",
-            "position": 8
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
-            "position": 6
-          },
-          {
-            "date": "2026-07-11",
-            "position": 6
-          },
-          {
-            "date": "2026-07-12",
-            "position": 6
-          },
-          {
-            "date": "2026-07-13",
-            "position": 8
-          },
-          {
-            "date": "2026-07-14",
-            "position": 10
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://imagosplasticsurgery.com/breast/breast-augmentation/",
-        "title": "Best Breast Augmentation Miami, FL",
-        "domain": "imagosplasticsurgery.com",
+        "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
+        "title": "Breast Augmentation Miami - Starts at $3000",
+        "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
@@ -5242,11 +4681,182 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-30",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": 7
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
             "position": 10
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1ui0fro/breast_augmentation_dr_william_miami/",
+        "title": "Breast Augmentation | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
           },
           {
             "date": "2026-07-02",
@@ -5254,15 +4864,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 9
+            "position": 5
           },
           {
             "date": "2026-07-05",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-06",
@@ -5270,7 +4880,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-08",
@@ -5278,31 +4888,206 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-07-15",
-            "position": 9
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1qyphrt/breast_augmentation_ogee_plastic_surgery_dr/",
+        "title": "Breast Augmentation | Ogee plastic Surgery | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": 6
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 6
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -5470,11 +5255,192 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 10
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/breast/augmentation-implants/",
+        "title": "Breast Augmentation & Breast Implants",
+        "domain": "miaaesthetics.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": null
+          },
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 10
           }
         ]
       }
     ],
-    "pages": []
+    "pages": [
+      {
+        "position": 6,
+        "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
+        "is_target": false
+      }
+    ]
   },
   "https://avanaplasticsurgery.com/espanol/implantes-de-senos-en-miami": {
     "series": [
@@ -5677,6 +5643,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "implantes de senos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "implantes de senos en miami"
       }
     ],
     "competitors": [
@@ -5843,6 +5814,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -6011,173 +5986,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
-        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
-        "domain": "cgcosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": 9
           },
           {
-            "date": "2026-06-07",
-            "position": 9
-          },
-          {
-            "date": "2026-06-08",
-            "position": 9
-          },
-          {
-            "date": "2026-06-09",
-            "position": 9
-          },
-          {
-            "date": "2026-06-10",
-            "position": 5
-          },
-          {
-            "date": "2026-06-11",
-            "position": 5
-          },
-          {
-            "date": "2026-06-12",
-            "position": 9
-          },
-          {
-            "date": "2026-06-13",
-            "position": 5
-          },
-          {
-            "date": "2026-06-14",
-            "position": 9
-          },
-          {
-            "date": "2026-06-15",
-            "position": 5
-          },
-          {
-            "date": "2026-06-16",
-            "position": 5
-          },
-          {
-            "date": "2026-06-17",
-            "position": 5
-          },
-          {
-            "date": "2026-06-18",
-            "position": 9
-          },
-          {
-            "date": "2026-06-19",
-            "position": 9
-          },
-          {
-            "date": "2026-06-20",
-            "position": 9
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 9
-          },
-          {
-            "date": "2026-06-25",
-            "position": 5
-          },
-          {
-            "date": "2026-06-26",
-            "position": 9
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
-            "position": 9
-          },
-          {
-            "date": "2026-06-29",
-            "position": 9
-          },
-          {
-            "date": "2026-06-30",
-            "position": 9
-          },
-          {
-            "date": "2026-07-01",
-            "position": 8
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
-          },
-          {
-            "date": "2026-07-03",
-            "position": 9
-          },
-          {
-            "date": "2026-07-04",
-            "position": 9
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
-            "position": 9
-          },
-          {
-            "date": "2026-07-07",
-            "position": 5
-          },
-          {
-            "date": "2026-07-08",
-            "position": 9
-          },
-          {
-            "date": "2026-07-09",
-            "position": 5
-          },
-          {
-            "date": "2026-07-10",
-            "position": 5
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
-            "position": 3
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -6345,6 +6157,352 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 4
+          },
+          {
+            "date": "2026-06-07",
+            "position": 4
+          },
+          {
+            "date": "2026-06-08",
+            "position": 4
+          },
+          {
+            "date": "2026-06-09",
+            "position": 4
+          },
+          {
+            "date": "2026-06-10",
+            "position": 4
+          },
+          {
+            "date": "2026-06-11",
+            "position": 4
+          },
+          {
+            "date": "2026-06-12",
+            "position": 4
+          },
+          {
+            "date": "2026-06-13",
+            "position": 4
+          },
+          {
+            "date": "2026-06-14",
+            "position": 4
+          },
+          {
+            "date": "2026-06-15",
+            "position": 4
+          },
+          {
+            "date": "2026-06-16",
+            "position": 4
+          },
+          {
+            "date": "2026-06-17",
+            "position": 3
+          },
+          {
+            "date": "2026-06-18",
+            "position": 4
+          },
+          {
+            "date": "2026-06-19",
+            "position": 4
+          },
+          {
+            "date": "2026-06-20",
+            "position": 4
+          },
+          {
+            "date": "2026-06-21",
+            "position": 4
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 4
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 3
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": 3
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 3
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 4
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
+        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-06",
+            "position": 9
+          },
+          {
+            "date": "2026-06-07",
+            "position": 9
+          },
+          {
+            "date": "2026-06-08",
+            "position": 9
+          },
+          {
+            "date": "2026-06-09",
+            "position": 9
+          },
+          {
+            "date": "2026-06-10",
+            "position": 5
+          },
+          {
+            "date": "2026-06-11",
+            "position": 5
+          },
+          {
+            "date": "2026-06-12",
+            "position": 9
+          },
+          {
+            "date": "2026-06-13",
+            "position": 5
+          },
+          {
+            "date": "2026-06-14",
+            "position": 9
+          },
+          {
+            "date": "2026-06-15",
+            "position": 5
+          },
+          {
+            "date": "2026-06-16",
+            "position": 5
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 9
+          },
+          {
+            "date": "2026-06-19",
+            "position": 9
+          },
+          {
+            "date": "2026-06-20",
+            "position": 9
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 9
+          },
+          {
+            "date": "2026-06-25",
+            "position": 5
+          },
+          {
+            "date": "2026-06-26",
+            "position": 9
+          },
+          {
+            "date": "2026-06-27",
+            "position": 9
+          },
+          {
+            "date": "2026-06-28",
+            "position": 9
+          },
+          {
+            "date": "2026-06-29",
+            "position": 9
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          },
+          {
+            "date": "2026-07-04",
+            "position": 9
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": 9
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 9
+          },
+          {
+            "date": "2026-07-09",
+            "position": 5
+          },
+          {
+            "date": "2026-07-10",
+            "position": 5
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -6512,6 +6670,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -6679,6 +6841,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -6846,172 +7012,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.zuriplasticsurgery.com/es/senos/aumento-de-senos/",
-        "title": "Aumento de Senos Miami | Los mejores Implantes Mamarios",
-        "domain": "zuriplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-06",
-            "position": null
           },
           {
-            "date": "2026-06-07",
-            "position": null
-          },
-          {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 10
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 8
           }
         ]
@@ -7180,13 +7183,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       },
       {
-        "url": "https://www.arcplasticsurgeons.com/es/senos/aumento-de-senos/",
-        "title": "Aumento de senos en Miami - ARC Plastic Surgery",
-        "domain": "arcplasticsurgeons.com",
+        "url": "https://www.zuriplasticsurgery.com/es/senos/revision-de-senos/",
+        "title": "Mejor Revisión de Senos Miami | Zuri Cirugía Plástica",
+        "domain": "zuriplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-06",
@@ -7242,7 +7249,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-19",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-20",
@@ -7338,14 +7345,18 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -7555,6 +7566,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "brazilian butt lift miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "brazilian butt lift miami"
       }
     ],
     "competitors": [
@@ -7717,6 +7733,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -7881,6 +7901,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -8044,443 +8068,288 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://www.plasticsurgery.org/news/articles/an-alternative-to-the-brazilian-butt-lift-what-is-the-miami-thong-lift",
-        "title": "An alternative to the Brazilian butt lift: What is the Miami ...",
-        "domain": "plasticsurgery.org",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": null
           },
           {
-            "date": "2026-06-08",
-            "position": null
-          },
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
+            "date": "2026-07-16",
             "position": 3
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 4
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
           }
         ]
       },
       {
-        "url": "https://aeris.co/plastic-surgeons-miami-fl/body/brazilian-butt-lift/skinny-bbl/",
-        "title": "Best Skinny BBL Miami, FL | Aeris",
+        "url": "https://aeris.co/plastic-surgeons-miami-fl/body/brazilian-butt-lift/",
+        "title": "Best Brazilian Butt Lift Miami, FL | Aeris",
         "domain": "aeris.co",
         "series": [
           {
             "date": "2026-06-07",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-08",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-09",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-10",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-11",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-12",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-13",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-14",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-15",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-16",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-14",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-15",
-            "position": 5
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://prestigeplasticsurgery.com/blog/how-much-does-a-bbl-cost/",
-        "title": "What You Need to Know About BBL Costs in Miami",
-        "domain": "prestigeplasticsurgery.com",
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/men/body/brazilian-butt-lift/",
+        "title": "Brazilian Butt Lift Miami, FL",
+        "domain": "themaercksinstitute.com",
         "series": [
           {
             "date": "2026-06-07",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-08",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-09",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-10",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-11",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-12",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-13",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-14",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-15",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-16",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-03",
@@ -8488,51 +8357,55 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-14",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-15",
-            "position": 6
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -8696,161 +8569,332 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/brazilian-butt-lift-miami/",
-        "title": "Brazilian Butt Lift Miami",
-        "domain": "thesecretplasticsurgery.com",
+        "url": "https://prestigeplasticsurgery.com/blog/how-much-does-a-bbl-cost/",
+        "title": "What You Need to Know About BBL Costs in Miami",
+        "domain": "prestigeplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-07",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-08",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-09",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-10",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-11",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-12",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-13",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-14",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-15",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-16",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-17",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-18",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-23",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-26",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-28",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-29",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-30",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-03",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-05",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-06",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-07",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
+            "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1qs8gib/bbl_transformation_ogee_plastic_surgery_dr/",
+        "title": "BBL Transformation | Ogee Plastic Surgery | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
           },
           {
             "date": "2026-07-14",
@@ -8858,13 +8902,184 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://4beauty.net/buttocks/brazilian-butt-lift/",
-        "title": "Brazilian Butt Lift in Miami, FL",
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1fkix3o/brazilian_butt_lift_ogee_bbl_dr_william_miami/",
+        "title": "Brazilian Butt Lift | Ogee BBL | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://4beauty.net/buttocks/reverse-brazilian-butt-lift-in-miami-fl/",
+        "title": "Reverse Brazilian Butt Lift in Miami, FL",
         "domain": "4beauty.net",
         "series": [
           {
@@ -8897,11 +9112,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-14",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-15",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-16",
@@ -8921,27 +9136,27 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-20",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-23",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-26",
@@ -8949,19 +9164,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-28",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-29",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-01",
@@ -8969,39 +9184,39 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": 6
-          },
-          {
-            "date": "2026-07-04",
-            "position": 9
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
             "position": 7
           },
           {
-            "date": "2026-07-07",
+            "date": "2026-07-03",
             "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 7
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 7
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-11",
@@ -9009,19 +9224,23 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-15",
-            "position": 9
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 10
           }
         ]
       }
@@ -9230,6 +9449,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 6,
         "keyword": "breast augmentation miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 6,
+        "keyword": "breast augmentation miami"
       }
     ],
     "competitors": [
@@ -9393,169 +9617,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://www.cgcosmetic.com/",
-        "title": "Miami Plastic Surgery Center, Top Plastic Surgeons",
-        "domain": "cgcosmetic.com",
-        "series": [
+          },
           {
-            "date": "2026-06-07",
+            "date": "2026-07-16",
             "position": 1
-          },
-          {
-            "date": "2026-06-08",
-            "position": 1
-          },
-          {
-            "date": "2026-06-09",
-            "position": 1
-          },
-          {
-            "date": "2026-06-10",
-            "position": 1
-          },
-          {
-            "date": "2026-06-11",
-            "position": 1
-          },
-          {
-            "date": "2026-06-12",
-            "position": 1
-          },
-          {
-            "date": "2026-06-13",
-            "position": 1
-          },
-          {
-            "date": "2026-06-14",
-            "position": 1
-          },
-          {
-            "date": "2026-06-15",
-            "position": 1
-          },
-          {
-            "date": "2026-06-16",
-            "position": 1
-          },
-          {
-            "date": "2026-06-17",
-            "position": 1
-          },
-          {
-            "date": "2026-06-18",
-            "position": 1
-          },
-          {
-            "date": "2026-06-19",
-            "position": 1
-          },
-          {
-            "date": "2026-06-20",
-            "position": 1
-          },
-          {
-            "date": "2026-06-21",
-            "position": 1
-          },
-          {
-            "date": "2026-06-22",
-            "position": 1
-          },
-          {
-            "date": "2026-06-23",
-            "position": 1
-          },
-          {
-            "date": "2026-06-24",
-            "position": 1
-          },
-          {
-            "date": "2026-06-25",
-            "position": 1
-          },
-          {
-            "date": "2026-06-26",
-            "position": 1
-          },
-          {
-            "date": "2026-06-27",
-            "position": 1
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 1
-          },
-          {
-            "date": "2026-06-30",
-            "position": 1
-          },
-          {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          },
-          {
-            "date": "2026-07-03",
-            "position": 2
-          },
-          {
-            "date": "2026-07-04",
-            "position": 2
-          },
-          {
-            "date": "2026-07-05",
-            "position": 1
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 2
-          },
-          {
-            "date": "2026-07-10",
-            "position": 2
-          },
-          {
-            "date": "2026-07-11",
-            "position": 1
-          },
-          {
-            "date": "2026-07-12",
-            "position": 2
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 1
-          },
-          {
-            "date": "2026-07-15",
-            "position": 2
           }
         ]
       },
@@ -9718,6 +9783,177 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.cgcosmetic.com/breast-augmentation-miami/",
+        "title": "Breast Augmentation in Miami Starting at $2500",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": null
+          },
+          {
+            "date": "2026-06-08",
+            "position": null
+          },
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": null
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": null
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": null
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -9882,6 +10118,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -10044,6 +10284,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -10208,129 +10452,133 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami with Implants ...",
-        "domain": "iconcosmeticcenter.com",
+        "url": "https://miamiplasticsurgery.com/",
+        "title": "Miami Plastic Surgery: Expert Plastic Surgery in Miami, FL",
+        "domain": "miamiplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-07",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-08",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-09",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-10",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-06-11",
-            "position": 6
+            "position": 4
           },
           {
             "date": "2026-06-12",
-            "position": 7
+            "position": 4
           },
           {
             "date": "2026-06-13",
-            "position": 6
+            "position": 4
           },
           {
             "date": "2026-06-14",
-            "position": 6
+            "position": 4
           },
           {
             "date": "2026-06-15",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-16",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-19",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-21",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-22",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-23",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-24",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-25",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-26",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-28",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-29",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-06-30",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-07-01",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-07-02",
-            "position": 6
+            "position": 5
           },
           {
             "date": "2026-07-03",
-            "position": 8
+            "position": 7
           },
           {
             "date": "2026-07-04",
-            "position": 8
+            "position": 7
           },
           {
             "date": "2026-07-05",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-06",
@@ -10338,38 +10586,42 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": 4
-          },
-          {
-            "date": "2026-07-12",
-            "position": 6
-          },
-          {
-            "date": "2026-07-13",
             "position": null
           },
           {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
             "date": "2026-07-14",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -10534,176 +10786,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://drgcosmeticsurgery.com/",
-        "title": "Plastic Surgery Miami FL - Cosmetic Surgery",
-        "domain": "drgcosmeticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-07",
-            "position": 6
-          },
-          {
-            "date": "2026-06-08",
-            "position": 6
-          },
-          {
-            "date": "2026-06-09",
-            "position": 7
-          },
-          {
-            "date": "2026-06-10",
-            "position": 6
-          },
-          {
-            "date": "2026-06-11",
-            "position": 7
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": 8
-          },
-          {
-            "date": "2026-06-14",
-            "position": 8
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": 8
-          },
-          {
-            "date": "2026-06-17",
-            "position": 7
-          },
-          {
-            "date": "2026-06-18",
-            "position": 7
-          },
-          {
-            "date": "2026-06-19",
-            "position": 8
-          },
-          {
-            "date": "2026-06-20",
-            "position": 7
-          },
-          {
-            "date": "2026-06-21",
-            "position": 8
-          },
-          {
-            "date": "2026-06-22",
-            "position": 8
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 9
-          },
-          {
-            "date": "2026-06-25",
-            "position": 9
-          },
-          {
-            "date": "2026-06-26",
-            "position": 9
-          },
-          {
-            "date": "2026-06-27",
-            "position": 10
-          },
-          {
-            "date": "2026-06-28",
-            "position": 9
-          },
-          {
-            "date": "2026-06-29",
-            "position": 10
-          },
-          {
-            "date": "2026-06-30",
-            "position": 9
-          },
-          {
-            "date": "2026-07-01",
-            "position": 9
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 9
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": 6
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 8
-          },
-          {
-            "date": "2026-07-11",
-            "position": 6
-          },
-          {
-            "date": "2026-07-12",
-            "position": 8
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 7
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://prestigeplasticsurgery.com/breast-augmentation/",
-        "title": "Breast Augmentation in Miami, FL",
-        "domain": "prestigeplasticsurgery.com",
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/breast/augmentation-implants/",
+        "title": "Breast Augmentation & Breast Implants",
+        "domain": "miaaesthetics.com",
         "series": [
           {
             "date": "2026-06-07",
@@ -10791,7 +10884,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-28",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-29",
@@ -10819,11 +10912,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-05",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-07",
@@ -10831,11 +10924,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-09",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -10843,15 +10936,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-14",
@@ -10859,6 +10952,177 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.realself.com/find/Florida/Miami/Breast-Augmentation",
+        "title": "Top Breast Augmentation Doctors in Miami, FL",
+        "domain": "realself.com",
+        "series": [
+          {
+            "date": "2026-06-07",
+            "position": 9
+          },
+          {
+            "date": "2026-06-08",
+            "position": 8
+          },
+          {
+            "date": "2026-06-09",
+            "position": 9
+          },
+          {
+            "date": "2026-06-10",
+            "position": 8
+          },
+          {
+            "date": "2026-06-11",
+            "position": 9
+          },
+          {
+            "date": "2026-06-12",
+            "position": 9
+          },
+          {
+            "date": "2026-06-13",
+            "position": 10
+          },
+          {
+            "date": "2026-06-14",
+            "position": 10
+          },
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": 10
+          },
+          {
+            "date": "2026-06-17",
+            "position": 10
+          },
+          {
+            "date": "2026-06-18",
+            "position": 9
+          },
+          {
+            "date": "2026-06-19",
+            "position": 9
+          },
+          {
+            "date": "2026-06-20",
+            "position": 10
+          },
+          {
+            "date": "2026-06-21",
+            "position": 9
+          },
+          {
+            "date": "2026-06-22",
+            "position": 9
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": 10
+          },
+          {
+            "date": "2026-06-26",
+            "position": 10
+          },
+          {
+            "date": "2026-06-27",
+            "position": 9
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": 9
+          },
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 9
+          },
+          {
+            "date": "2026-07-06",
+            "position": 9
+          },
+          {
+            "date": "2026-07-07",
+            "position": 7
+          },
+          {
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 9
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 10
+          },
+          {
+            "date": "2026-07-14",
+            "position": 9
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -11058,6 +11322,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "aumento de senos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "aumento de senos en miami"
       }
     ],
     "competitors": [
@@ -11213,160 +11482,168 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
           }
         ]
       },
       {
-        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
-        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
-        "domain": "cgcosmetic.com",
+        "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
+        "title": "Aumento de Senos - Miami, FL",
+        "domain": "careagaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-09",
-            "position": 9
-          },
-          {
-            "date": "2026-06-10",
-            "position": 9
-          },
-          {
-            "date": "2026-06-11",
-            "position": 9
-          },
-          {
-            "date": "2026-06-12",
-            "position": 10
-          },
-          {
-            "date": "2026-06-13",
-            "position": 1
-          },
-          {
-            "date": "2026-06-14",
-            "position": 10
-          },
-          {
-            "date": "2026-06-15",
-            "position": 10
-          },
-          {
-            "date": "2026-06-16",
-            "position": 10
-          },
-          {
-            "date": "2026-06-17",
-            "position": 10
-          },
-          {
-            "date": "2026-06-18",
-            "position": 10
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": 10
-          },
-          {
-            "date": "2026-06-21",
-            "position": 10
-          },
-          {
-            "date": "2026-06-22",
-            "position": 9
-          },
-          {
-            "date": "2026-06-23",
-            "position": 9
-          },
-          {
-            "date": "2026-06-24",
-            "position": 7
-          },
-          {
-            "date": "2026-06-25",
-            "position": 5
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 10
-          },
-          {
-            "date": "2026-06-28",
-            "position": 10
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 8
-          },
-          {
-            "date": "2026-07-01",
-            "position": 9
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
-          },
-          {
-            "date": "2026-07-03",
-            "position": 1
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 8
-          },
-          {
-            "date": "2026-07-06",
-            "position": 9
-          },
-          {
-            "date": "2026-07-07",
-            "position": 9
-          },
-          {
-            "date": "2026-07-08",
-            "position": 1
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 9
-          },
-          {
-            "date": "2026-07-11",
             "position": 2
           },
           {
-            "date": "2026-07-12",
-            "position": 5
+            "date": "2026-06-10",
+            "position": 2
           },
           {
-            "date": "2026-07-13",
+            "date": "2026-06-11",
+            "position": 2
+          },
+          {
+            "date": "2026-06-12",
+            "position": 2
+          },
+          {
+            "date": "2026-06-13",
+            "position": null
+          },
+          {
+            "date": "2026-06-14",
+            "position": 2
+          },
+          {
+            "date": "2026-06-15",
+            "position": 2
+          },
+          {
+            "date": "2026-06-16",
+            "position": 2
+          },
+          {
+            "date": "2026-06-17",
+            "position": 2
+          },
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 1
+          },
+          {
+            "date": "2026-06-26",
+            "position": 1
+          },
+          {
+            "date": "2026-06-27",
+            "position": 1
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 1
+          },
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": 1
+          },
+          {
+            "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": 2
+          },
+          {
+            "date": "2026-07-05",
+            "position": 2
+          },
+          {
+            "date": "2026-07-06",
+            "position": 2
+          },
+          {
+            "date": "2026-07-07",
+            "position": 2
+          },
+          {
+            "date": "2026-07-08",
             "position": 7
           },
           {
+            "date": "2026-07-09",
+            "position": 2
+          },
+          {
+            "date": "2026-07-10",
+            "position": 2
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": 2
+          },
+          {
+            "date": "2026-07-13",
+            "position": 2
+          },
+          {
             "date": "2026-07-14",
-            "position": 5
+            "position": 2
           },
           {
             "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
             "position": 2
           }
         ]
@@ -11523,316 +11800,169 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
       {
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
-        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami",
-        "domain": "miamiplasticsurgery.com",
+        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
+        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
+        "domain": "cgcosmetic.com",
         "series": [
           {
             "date": "2026-06-09",
-            "position": 1
+            "position": 9
           },
           {
             "date": "2026-06-10",
-            "position": 1
+            "position": 9
           },
           {
             "date": "2026-06-11",
-            "position": 1
+            "position": 9
           },
           {
             "date": "2026-06-12",
-            "position": 1
-          },
-          {
-            "date": "2026-06-13",
-            "position": 3
-          },
-          {
-            "date": "2026-06-14",
-            "position": 1
-          },
-          {
-            "date": "2026-06-15",
-            "position": 1
-          },
-          {
-            "date": "2026-06-16",
-            "position": 1
-          },
-          {
-            "date": "2026-06-17",
-            "position": 1
-          },
-          {
-            "date": "2026-06-18",
-            "position": 1
-          },
-          {
-            "date": "2026-06-19",
-            "position": 1
-          },
-          {
-            "date": "2026-06-20",
-            "position": 1
-          },
-          {
-            "date": "2026-06-21",
-            "position": 1
-          },
-          {
-            "date": "2026-06-22",
-            "position": 1
-          },
-          {
-            "date": "2026-06-23",
-            "position": 1
-          },
-          {
-            "date": "2026-06-24",
-            "position": 1
-          },
-          {
-            "date": "2026-06-25",
-            "position": 2
-          },
-          {
-            "date": "2026-06-26",
-            "position": 3
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 3
-          },
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 4
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
-            "position": 4
-          },
-          {
-            "date": "2026-07-07",
-            "position": 4
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 5
-          },
-          {
-            "date": "2026-07-10",
-            "position": 4
-          },
-          {
-            "date": "2026-07-11",
-            "position": 4
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 3
-          },
-          {
-            "date": "2026-07-14",
-            "position": 4
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
-        "title": "Aumento de Senos Miami con Implantes ...",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": 6
-          },
-          {
-            "date": "2026-06-10",
-            "position": 6
-          },
-          {
-            "date": "2026-06-11",
-            "position": 6
-          },
-          {
-            "date": "2026-06-12",
-            "position": 6
-          },
-          {
-            "date": "2026-06-13",
-            "position": 5
-          },
-          {
-            "date": "2026-06-14",
-            "position": 6
-          },
-          {
-            "date": "2026-06-15",
-            "position": 6
-          },
-          {
-            "date": "2026-06-16",
-            "position": 6
-          },
-          {
-            "date": "2026-06-17",
-            "position": 6
-          },
-          {
-            "date": "2026-06-18",
-            "position": 5
-          },
-          {
-            "date": "2026-06-19",
-            "position": 6
-          },
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 6
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": 6
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 6
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          },
-          {
-            "date": "2026-07-03",
             "position": 10
           },
           {
-            "date": "2026-07-04",
-            "position": 6
+            "date": "2026-06-13",
+            "position": 1
           },
           {
-            "date": "2026-07-05",
-            "position": 6
+            "date": "2026-06-14",
+            "position": 10
           },
           {
-            "date": "2026-07-06",
-            "position": 6
+            "date": "2026-06-15",
+            "position": 10
           },
           {
-            "date": "2026-07-07",
-            "position": 6
+            "date": "2026-06-16",
+            "position": 10
           },
           {
-            "date": "2026-07-08",
+            "date": "2026-06-17",
+            "position": 10
+          },
+          {
+            "date": "2026-06-18",
+            "position": 10
+          },
+          {
+            "date": "2026-06-19",
             "position": null
           },
           {
+            "date": "2026-06-20",
+            "position": 10
+          },
+          {
+            "date": "2026-06-21",
+            "position": 10
+          },
+          {
+            "date": "2026-06-22",
+            "position": 9
+          },
+          {
+            "date": "2026-06-23",
+            "position": 9
+          },
+          {
+            "date": "2026-06-24",
+            "position": 7
+          },
+          {
+            "date": "2026-06-25",
+            "position": 5
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": 10
+          },
+          {
+            "date": "2026-06-28",
+            "position": 10
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 8
+          },
+          {
+            "date": "2026-07-06",
+            "position": 9
+          },
+          {
+            "date": "2026-07-07",
+            "position": 9
+          },
+          {
+            "date": "2026-07-08",
+            "position": 1
+          },
+          {
             "date": "2026-07-09",
-            "position": 6
+            "position": 8
           },
           {
             "date": "2026-07-10",
-            "position": 6
+            "position": 9
           },
           {
             "date": "2026-07-11",
-            "position": 7
+            "position": 2
           },
           {
             "date": "2026-07-12",
-            "position": 7
+            "position": 5
           },
           {
             "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
             "position": 7
           },
           {
-            "date": "2026-07-15",
+            "date": "2026-07-14",
             "position": 5
+          },
+          {
+            "date": "2026-07-15",
+            "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -11988,109 +12118,272 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://www.careagaplasticsurgery.com/es/aumento-de-senos/",
-        "title": "Aumento de Senos - Miami, FL",
-        "domain": "careagaplasticsurgery.com",
+        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
+        "title": "Aumento de Senos Miami con Implantes ...",
+        "domain": "iconcosmeticcenter.com",
         "series": [
           {
             "date": "2026-06-09",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-10",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-11",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-12",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-13",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-14",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-15",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-16",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-17",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-18",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-19",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-20",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-21",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-22",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-23",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-06-24",
-            "position": 2
+            "position": 6
           },
           {
             "date": "2026-06-25",
-            "position": 1
+            "position": 7
           },
           {
             "date": "2026-06-26",
-            "position": 1
+            "position": 6
           },
           {
             "date": "2026-06-27",
-            "position": 1
+            "position": 6
           },
           {
             "date": "2026-06-28",
-            "position": 1
+            "position": 6
           },
           {
             "date": "2026-06-29",
-            "position": 1
+            "position": 6
           },
           {
             "date": "2026-06-30",
-            "position": 1
+            "position": 5
           },
           {
             "date": "2026-07-01",
-            "position": 1
+            "position": 6
           },
           {
             "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 10
+          },
+          {
+            "date": "2026-07-04",
+            "position": 6
+          },
+          {
+            "date": "2026-07-05",
+            "position": 6
+          },
+          {
+            "date": "2026-07-06",
+            "position": 6
+          },
+          {
+            "date": "2026-07-07",
+            "position": 6
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 6
+          },
+          {
+            "date": "2026-07-10",
+            "position": 6
+          },
+          {
+            "date": "2026-07-11",
+            "position": 7
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
             "position": 1
+          },
+          {
+            "date": "2026-06-10",
+            "position": 1
+          },
+          {
+            "date": "2026-06-11",
+            "position": 1
+          },
+          {
+            "date": "2026-06-12",
+            "position": 1
+          },
+          {
+            "date": "2026-06-13",
+            "position": 3
+          },
+          {
+            "date": "2026-06-14",
+            "position": 1
+          },
+          {
+            "date": "2026-06-15",
+            "position": 1
+          },
+          {
+            "date": "2026-06-16",
+            "position": 1
+          },
+          {
+            "date": "2026-06-17",
+            "position": 1
+          },
+          {
+            "date": "2026-06-18",
+            "position": 1
+          },
+          {
+            "date": "2026-06-19",
+            "position": 1
+          },
+          {
+            "date": "2026-06-20",
+            "position": 1
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": 1
+          },
+          {
+            "date": "2026-06-23",
+            "position": 1
+          },
+          {
+            "date": "2026-06-24",
+            "position": 1
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 3
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": 3
+          },
+          {
+            "date": "2026-06-29",
+            "position": 3
+          },
+          {
+            "date": "2026-06-30",
+            "position": 3
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": 4
           },
           {
             "date": "2026-07-03",
@@ -12098,50 +12391,54 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": 2
+            "position": 4
           },
           {
             "date": "2026-07-05",
-            "position": 2
+            "position": 5
           },
           {
             "date": "2026-07-06",
-            "position": 2
+            "position": 4
           },
           {
             "date": "2026-07-07",
-            "position": 2
+            "position": 4
           },
           {
             "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 2
-          },
-          {
-            "date": "2026-07-10",
-            "position": 2
-          },
-          {
-            "date": "2026-07-11",
             "position": null
           },
           {
+            "date": "2026-07-09",
+            "position": 5
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": 4
+          },
+          {
             "date": "2026-07-12",
-            "position": 2
+            "position": 4
           },
           {
             "date": "2026-07-13",
-            "position": 2
+            "position": 3
           },
           {
             "date": "2026-07-14",
-            "position": 2
+            "position": 4
           },
           {
             "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -12298,6 +12595,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -12453,161 +12754,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.zuriplasticsurgery.com/es/senos/aumento-de-senos/",
-        "title": "Aumento de Senos Miami | Los mejores Implantes Mamarios",
-        "domain": "zuriplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": null
           },
           {
-            "date": "2026-06-10",
-            "position": null
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": null
-          },
-          {
-            "date": "2026-06-13",
-            "position": null
-          },
-          {
-            "date": "2026-06-14",
-            "position": null
-          },
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 10
-          },
-          {
-            "date": "2026-07-03",
-            "position": 7
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 6
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 8
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 10
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
@@ -12806,164 +12956,14 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "levantamiento de gluteos brasileño en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 5,
+        "keyword": "levantamiento de gluteos brasileño en miami"
       }
     ],
     "competitors": [
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami",
-        "title": "Levantamiento de Glúteos Brasileño en Miami - $3800",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-09",
-            "position": null
-          },
-          {
-            "date": "2026-06-10",
-            "position": 9
-          },
-          {
-            "date": "2026-06-11",
-            "position": null
-          },
-          {
-            "date": "2026-06-12",
-            "position": 1
-          },
-          {
-            "date": "2026-06-13",
-            "position": 1
-          },
-          {
-            "date": "2026-06-14",
-            "position": 1
-          },
-          {
-            "date": "2026-06-15",
-            "position": 1
-          },
-          {
-            "date": "2026-06-16",
-            "position": 2
-          },
-          {
-            "date": "2026-06-17",
-            "position": 2
-          },
-          {
-            "date": "2026-06-18",
-            "position": 2
-          },
-          {
-            "date": "2026-06-19",
-            "position": 2
-          },
-          {
-            "date": "2026-06-20",
-            "position": 1
-          },
-          {
-            "date": "2026-06-21",
-            "position": 2
-          },
-          {
-            "date": "2026-06-22",
-            "position": 1
-          },
-          {
-            "date": "2026-06-23",
-            "position": 1
-          },
-          {
-            "date": "2026-06-24",
-            "position": 1
-          },
-          {
-            "date": "2026-06-25",
-            "position": 1
-          },
-          {
-            "date": "2026-06-26",
-            "position": 1
-          },
-          {
-            "date": "2026-06-27",
-            "position": 1
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 1
-          },
-          {
-            "date": "2026-06-30",
-            "position": 1
-          },
-          {
-            "date": "2026-07-01",
-            "position": 2
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          },
-          {
-            "date": "2026-07-03",
-            "position": 1
-          },
-          {
-            "date": "2026-07-04",
-            "position": 1
-          },
-          {
-            "date": "2026-07-05",
-            "position": 1
-          },
-          {
-            "date": "2026-07-06",
-            "position": 1
-          },
-          {
-            "date": "2026-07-07",
-            "position": 1
-          },
-          {
-            "date": "2026-07-08",
-            "position": 1
-          },
-          {
-            "date": "2026-07-09",
-            "position": 1
-          },
-          {
-            "date": "2026-07-10",
-            "position": 1
-          },
-          {
-            "date": "2026-07-11",
-            "position": 1
-          },
-          {
-            "date": "2026-07-12",
-            "position": 6
-          },
-          {
-            "date": "2026-07-13",
-            "position": 1
-          },
-          {
-            "date": "2026-07-14",
-            "position": 1
-          },
-          {
-            "date": "2026-07-15",
-            "position": 1
-          }
-        ]
-      },
       {
         "url": "https://miamiplasticsurgery.com/es/surgical-services/body/buttock-augmentation/",
         "title": "Levantamiento de glúteos brasileño en Miami, FL",
@@ -13116,6 +13116,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
           }
         ]
       },
@@ -13271,6 +13275,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -13426,6 +13434,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -13580,6 +13592,169 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami",
+        "title": "Levantamiento de Glúteos Brasileño en Miami - $3800",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-09",
+            "position": null
+          },
+          {
+            "date": "2026-06-10",
+            "position": 9
+          },
+          {
+            "date": "2026-06-11",
+            "position": null
+          },
+          {
+            "date": "2026-06-12",
+            "position": 1
+          },
+          {
+            "date": "2026-06-13",
+            "position": 1
+          },
+          {
+            "date": "2026-06-14",
+            "position": 1
+          },
+          {
+            "date": "2026-06-15",
+            "position": 1
+          },
+          {
+            "date": "2026-06-16",
+            "position": 2
+          },
+          {
+            "date": "2026-06-17",
+            "position": 2
+          },
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 1
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 1
+          },
+          {
+            "date": "2026-06-23",
+            "position": 1
+          },
+          {
+            "date": "2026-06-24",
+            "position": 1
+          },
+          {
+            "date": "2026-06-25",
+            "position": 1
+          },
+          {
+            "date": "2026-06-26",
+            "position": 1
+          },
+          {
+            "date": "2026-06-27",
+            "position": 1
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 1
+          },
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          },
+          {
+            "date": "2026-07-04",
+            "position": 1
+          },
+          {
+            "date": "2026-07-05",
+            "position": 1
+          },
+          {
+            "date": "2026-07-06",
+            "position": 1
+          },
+          {
+            "date": "2026-07-07",
+            "position": 1
+          },
+          {
+            "date": "2026-07-08",
+            "position": 1
+          },
+          {
+            "date": "2026-07-09",
+            "position": 1
+          },
+          {
+            "date": "2026-07-10",
+            "position": 1
+          },
+          {
+            "date": "2026-07-11",
+            "position": 1
+          },
+          {
+            "date": "2026-07-12",
+            "position": 6
+          },
+          {
+            "date": "2026-07-13",
+            "position": 1
+          },
+          {
+            "date": "2026-07-14",
+            "position": 1
+          },
+          {
+            "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -13736,6 +13911,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -13890,6 +14069,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -14046,6 +14229,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -14201,13 +14388,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
     ],
     "pages": [
       {
-        "position": 1,
+        "position": 5,
         "url": "https://avanaplasticsurgery.com/espanol/levantamiento-de-gluteos-en-miami",
         "is_target": true
       },
@@ -14374,6 +14565,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "mommy makeover miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "mommy makeover miami"
       }
     ],
     "competitors": [
@@ -14504,6 +14700,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -14636,136 +14836,144 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
       {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/mommy-makeover/",
-        "title": "Mommy Makeover",
-        "domain": "miaaesthetics.com",
+        "url": "https://www.cgcosmetic.com/",
+        "title": "Miami Plastic Surgery Center, Top Plastic Surgeons",
+        "domain": "cgcosmetic.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-06-16",
-            "position": 4
+            "position": 3
           },
           {
             "date": "2026-06-17",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-18",
-            "position": 4
+            "position": 3
           },
           {
             "date": "2026-06-19",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 7
+            "position": 3
           },
           {
             "date": "2026-06-21",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-06-23",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-24",
-            "position": 6
+            "position": 3
           },
           {
             "date": "2026-06-25",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-26",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-27",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-28",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-29",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-06-30",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-07-01",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-07-03",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-07-04",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-07-05",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-07-06",
-            "position": 5
+            "position": 3
           },
           {
             "date": "2026-07-07",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 5
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
             "position": 3
           },
           {
-            "date": "2026-07-12",
-            "position": 7
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
+            "date": "2026-07-10",
             "position": 5
           },
           {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 3
+          },
+          {
+            "date": "2026-07-14",
+            "position": 2
+          },
+          {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -14898,21 +15106,25 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/mommy-makeover-miami/",
-        "title": "Mommy Makeover Miami",
-        "domain": "thesecretplasticsurgery.com",
+        "url": "https://www.facebook.com/groups/2038671846493827/posts/2693495204344818/",
+        "title": "Recommendations for mommy makeover in Miami, FL?",
+        "domain": "facebook.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-16",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-17",
@@ -14932,11 +15144,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-21",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-23",
@@ -14948,15 +15160,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-25",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-26",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-28",
@@ -14964,7 +15176,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-30",
@@ -14972,19 +15184,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-01",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-03",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-05",
@@ -15000,7 +15212,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-08",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-09",
@@ -15008,19 +15220,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-10",
-            "position": 9
+            "position": 3
           },
           {
             "date": "2026-07-11",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": 5
           },
           {
             "date": "2026-07-14",
@@ -15028,7 +15240,416 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://www.facebook.com/groups/3622675077799331/posts/24013980234908849/",
+        "title": "What are good clinics in Miami for Mommy Makeover?",
+        "domain": "facebook.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": 6
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/mommy-makeover/",
+        "title": "Mommy Makeover",
+        "domain": "miaaesthetics.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": 3
+          },
+          {
+            "date": "2026-06-16",
+            "position": 4
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": 4
+          },
+          {
+            "date": "2026-06-19",
+            "position": 4
+          },
+          {
+            "date": "2026-06-20",
+            "position": 7
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 3
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 6
+          },
+          {
+            "date": "2026-06-25",
+            "position": 5
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 5
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          },
+          {
+            "date": "2026-07-04",
+            "position": 5
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": 5
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 3
+          },
+          {
+            "date": "2026-07-09",
+            "position": 5
+          },
+          {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": 7
+          },
+          {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
+            "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://imagosplasticsurgery.com/body/mommy-makeover/",
+        "title": "Best Mommy Makeover Miami, FL",
+        "domain": "imagosplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": 6
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 9
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 9
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -15160,6 +15781,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       },
@@ -15291,398 +15916,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.talroudnerplasticsurgery.com/body-procedures/mommy-makeover/",
-        "title": "Mommy Makeover Near Me in Miami Florida",
-        "domain": "talroudnerplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": 9
-          },
-          {
-            "date": "2026-06-18",
-            "position": 8
-          },
-          {
-            "date": "2026-06-19",
-            "position": 9
-          },
-          {
-            "date": "2026-06-20",
-            "position": 10
-          },
-          {
-            "date": "2026-06-21",
-            "position": 8
-          },
-          {
-            "date": "2026-06-22",
-            "position": 8
-          },
-          {
-            "date": "2026-06-23",
-            "position": 10
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 10
-          },
-          {
-            "date": "2026-07-06",
-            "position": 10
-          },
-          {
-            "date": "2026-07-07",
-            "position": 4
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 10
-          },
-          {
-            "date": "2026-07-11",
-            "position": 8
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 10
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://www.realself.com/find/Florida/Miami/Mommy-Makeover",
-        "title": "Top Mommy Makeover Doctors in Miami, FL",
-        "domain": "realself.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": 10
-          },
-          {
-            "date": "2026-06-19",
-            "position": 10
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": 9
-          },
-          {
-            "date": "2026-06-22",
-            "position": 9
-          },
-          {
-            "date": "2026-06-23",
-            "position": 9
-          },
-          {
-            "date": "2026-06-24",
-            "position": 10
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 10
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.gablesplasticsurgery.com/body/mommy-makeover/",
-        "title": "Mommy Makeover in Miami, FL",
-        "domain": "gablesplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": null
-          },
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 9
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
           },
           {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -15852,9 +16088,149 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "mommy makeover en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "mommy makeover en miami"
       }
     ],
     "competitors": [
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami",
+        "title": "Mommy Makeover en Miami - $5675 Mejor Precio",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": 1
+          },
+          {
+            "date": "2026-06-16",
+            "position": 1
+          },
+          {
+            "date": "2026-06-17",
+            "position": 1
+          },
+          {
+            "date": "2026-06-18",
+            "position": 1
+          },
+          {
+            "date": "2026-06-19",
+            "position": 1
+          },
+          {
+            "date": "2026-06-20",
+            "position": 1
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": 1
+          },
+          {
+            "date": "2026-06-23",
+            "position": 1
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": 1
+          },
+          {
+            "date": "2026-06-26",
+            "position": 1
+          },
+          {
+            "date": "2026-06-27",
+            "position": 1
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 1
+          },
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 1
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 1
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 1
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
       {
         "url": "https://miamiplasticsurgery.com/surgical-services/body/mommy-makeover/",
         "title": "Mommy Makeover Miami",
@@ -15983,6 +16359,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -16114,399 +16494,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://therealdrmiami.com/",
-        "title": "Dr. Miami | Plastic Surgery Miami | Dr. Michael Salzhauer",
-        "domain": "therealdrmiami.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": 2
           },
           {
-            "date": "2026-06-16",
-            "position": 2
-          },
-          {
-            "date": "2026-06-17",
-            "position": 2
-          },
-          {
-            "date": "2026-06-18",
-            "position": 2
-          },
-          {
-            "date": "2026-06-19",
-            "position": 2
-          },
-          {
-            "date": "2026-06-20",
-            "position": 2
-          },
-          {
-            "date": "2026-06-21",
-            "position": 2
-          },
-          {
-            "date": "2026-06-22",
-            "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 2
-          },
-          {
-            "date": "2026-06-25",
+            "date": "2026-07-16",
             "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": 2
-          },
-          {
-            "date": "2026-07-02",
-            "position": 2
-          },
-          {
-            "date": "2026-07-03",
-            "position": 3
-          },
-          {
-            "date": "2026-07-04",
-            "position": 2
-          },
-          {
-            "date": "2026-07-05",
-            "position": 2
-          },
-          {
-            "date": "2026-07-06",
-            "position": 2
-          },
-          {
-            "date": "2026-07-07",
-            "position": 2
-          },
-          {
-            "date": "2026-07-08",
-            "position": 2
-          },
-          {
-            "date": "2026-07-09",
-            "position": 2
-          },
-          {
-            "date": "2026-07-10",
-            "position": 2
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 2
-          },
-          {
-            "date": "2026-07-13",
-            "position": 2
-          },
-          {
-            "date": "2026-07-14",
-            "position": 4
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/mommy-makeover/",
-        "title": "Mommy Makeover Miami, FL",
-        "domain": "themaercksinstitute.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": 5
-          },
-          {
-            "date": "2026-06-16",
-            "position": 5
-          },
-          {
-            "date": "2026-06-17",
-            "position": 9
-          },
-          {
-            "date": "2026-06-18",
-            "position": 10
-          },
-          {
-            "date": "2026-06-19",
-            "position": 10
-          },
-          {
-            "date": "2026-06-20",
-            "position": 10
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": 10
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": 10
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 10
-          },
-          {
-            "date": "2026-06-28",
-            "position": 4
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 7
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": 4
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": 6
-          },
-          {
-            "date": "2026-07-12",
-            "position": 9
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
-            "position": 9
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/mommy-makeover-en-miami/",
-        "title": "Mommy Makeover en Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-15",
-            "position": 6
-          },
-          {
-            "date": "2026-06-16",
-            "position": 6
-          },
-          {
-            "date": "2026-06-17",
-            "position": 6
-          },
-          {
-            "date": "2026-06-18",
-            "position": 6
-          },
-          {
-            "date": "2026-06-19",
-            "position": 6
-          },
-          {
-            "date": "2026-06-20",
-            "position": 6
-          },
-          {
-            "date": "2026-06-21",
-            "position": 6
-          },
-          {
-            "date": "2026-06-22",
-            "position": 6
-          },
-          {
-            "date": "2026-06-23",
-            "position": 6
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 6
-          },
-          {
-            "date": "2026-06-26",
-            "position": 6
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": 7
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": 6
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 2
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 5
-          },
-          {
-            "date": "2026-07-15",
-            "position": 5
           }
         ]
       },
@@ -16638,49 +16629,188 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/es/mommy-makeover-en-miami",
+        "url": "https://spectrum-aesthetics.com/mommy-makeover/",
+        "title": "Mommy Makeover Miami Cost $5300",
+        "domain": "spectrum-aesthetics.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": null
+          },
+          {
+            "date": "2026-06-16",
+            "position": null
+          },
+          {
+            "date": "2026-06-17",
+            "position": null
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/mommy-makeover-en-miami/",
         "title": "Mommy Makeover en Miami",
-        "domain": "iconcosmeticcenter.com",
+        "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": 10
+            "position": 6
           },
           {
             "date": "2026-06-16",
-            "position": 10
+            "position": 6
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-18",
-            "position": 7
+            "position": 6
           },
           {
             "date": "2026-06-19",
-            "position": 8
+            "position": 6
           },
           {
             "date": "2026-06-20",
-            "position": 7
+            "position": 6
           },
           {
             "date": "2026-06-21",
-            "position": 8
+            "position": 6
           },
           {
             "date": "2026-06-22",
-            "position": 8
+            "position": 6
           },
           {
             "date": "2026-06-23",
-            "position": 8
+            "position": 6
           },
           {
             "date": "2026-06-24",
@@ -16688,27 +16818,27 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-25",
-            "position": 7
+            "position": 6
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-29",
-            "position": 9
+            "position": 7
           },
           {
             "date": "2026-06-30",
-            "position": 7
+            "position": 6
           },
           {
             "date": "2026-07-01",
@@ -16720,7 +16850,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-04",
@@ -16744,7 +16874,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-10",
@@ -16752,7 +16882,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-12",
@@ -16764,18 +16894,157 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": 7
+            "position": 5
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://therealdrmiami.com/",
+        "title": "Dr. Miami | Plastic Surgery Miami | Dr. Michael Salzhauer",
+        "domain": "therealdrmiami.com",
+        "series": [
+          {
+            "date": "2026-06-15",
+            "position": 2
+          },
+          {
+            "date": "2026-06-16",
+            "position": 2
+          },
+          {
+            "date": "2026-06-17",
+            "position": 2
+          },
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 4
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 3
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": 3
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 3
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 2
+          },
+          {
+            "date": "2026-07-05",
+            "position": 2
+          },
+          {
+            "date": "2026-07-06",
+            "position": 2
+          },
+          {
+            "date": "2026-07-07",
+            "position": 2
+          },
+          {
+            "date": "2026-07-08",
+            "position": 2
+          },
+          {
+            "date": "2026-07-09",
+            "position": 2
+          },
+          {
+            "date": "2026-07-10",
+            "position": 2
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": 2
+          },
+          {
+            "date": "2026-07-13",
+            "position": 2
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
       },
       {
-        "url": "https://www.talroudnerplasticsurgery.com/body-procedures/mommy-makeover/",
-        "title": "Mommy Makeover Near Me in Miami Florida",
-        "domain": "talroudnerplasticsurgery.com",
+        "url": "https://epicplasticsurgery.com/sp/cuerpo/mommy-makeover/",
+        "title": "Mommy Makeover en Miami, SL | Epic Cirugía Plástica",
+        "domain": "epicplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-15",
@@ -16787,39 +17056,39 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-17",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-18",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-23",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-26",
@@ -16827,7 +17096,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-27",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-28",
@@ -16835,15 +17104,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-30",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-02",
@@ -16851,11 +17120,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": 4
+            "position": 8
           },
           {
             "date": "2026-07-04",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-05",
@@ -16863,19 +17132,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-06",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-07",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -16883,7 +17152,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-12",
@@ -16891,34 +17160,38 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://imagosplasticsurgery.com/body/mommy-makeover/",
-        "title": "Best Mommy Makeover Miami, FL",
-        "domain": "imagosplasticsurgery.com",
+        "url": "https://www.lampertmd.com/body/mommy-makeover/",
+        "title": "Mommy Makeover Miami",
+        "domain": "lampertmd.com",
         "series": [
           {
             "date": "2026-06-15",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-16",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-17",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-18",
@@ -16926,7 +17199,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-19",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-20",
@@ -16954,19 +17227,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-26",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-27",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-28",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 3
           },
           {
             "date": "2026-06-30",
@@ -16974,7 +17247,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-02",
@@ -16982,7 +17255,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-04",
@@ -16998,19 +17271,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-11",
@@ -17018,7 +17291,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-12",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-13",
@@ -17030,12 +17303,22 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 9
           }
         ]
       }
     ],
-    "pages": []
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/mommy-makeover-en-miami",
+        "is_target": true
+      }
+    ]
   },
   "https://avanaplasticsurgery.com/liposuction-miami": {
     "series": [
@@ -17188,6 +17471,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "liposuction miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "liposuction miami"
       }
     ],
     "competitors": [
@@ -17315,133 +17603,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://www.cgcosmetic.com/liposuction-miami/",
-        "title": "Superior Liposuction Miami $99/Month",
-        "domain": "cgcosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-16",
-            "position": 5
           },
           {
-            "date": "2026-06-17",
-            "position": 5
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 5
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 5
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          },
-          {
-            "date": "2026-07-03",
-            "position": 5
-          },
-          {
-            "date": "2026-07-04",
-            "position": 5
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": 5
-          },
-          {
-            "date": "2026-07-07",
-            "position": 5
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 4
-          },
-          {
-            "date": "2026-07-10",
-            "position": 8
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 8
-          },
-          {
-            "date": "2026-07-13",
-            "position": 3
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 2
+            "date": "2026-07-16",
+            "position": 1
           }
         ]
       },
@@ -17569,260 +17734,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/360-lipo-miami",
-        "title": "Lipo 360 Miami - Best Price $3000",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-16",
-            "position": 3
           },
           {
-            "date": "2026-06-17",
-            "position": 3
-          },
-          {
-            "date": "2026-06-18",
-            "position": 3
-          },
-          {
-            "date": "2026-06-19",
-            "position": 3
-          },
-          {
-            "date": "2026-06-20",
-            "position": 3
-          },
-          {
-            "date": "2026-06-21",
-            "position": 1
-          },
-          {
-            "date": "2026-06-22",
+            "date": "2026-07-16",
             "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 1
-          },
-          {
-            "date": "2026-06-24",
-            "position": 1
-          },
-          {
-            "date": "2026-06-25",
-            "position": 2
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 1
-          },
-          {
-            "date": "2026-06-28",
-            "position": 1
-          },
-          {
-            "date": "2026-06-29",
-            "position": 3
-          },
-          {
-            "date": "2026-06-30",
-            "position": 4
-          },
-          {
-            "date": "2026-07-01",
-            "position": 4
-          },
-          {
-            "date": "2026-07-02",
-            "position": 3
-          },
-          {
-            "date": "2026-07-03",
-            "position": 3
-          },
-          {
-            "date": "2026-07-04",
-            "position": 4
-          },
-          {
-            "date": "2026-07-05",
-            "position": 3
-          },
-          {
-            "date": "2026-07-06",
-            "position": 3
-          },
-          {
-            "date": "2026-07-07",
-            "position": 3
-          },
-          {
-            "date": "2026-07-08",
-            "position": 4
-          },
-          {
-            "date": "2026-07-09",
-            "position": 3
-          },
-          {
-            "date": "2026-07-10",
-            "position": 3
-          },
-          {
-            "date": "2026-07-11",
-            "position": 3
-          },
-          {
-            "date": "2026-07-12",
-            "position": 7
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
-            "position": 3
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.themaercksinstitute.com/medical-spa-miami-fl/laser-treatments/laser-liposuction/",
-        "title": "Laser Liposuction Miami, FL",
-        "domain": "themaercksinstitute.com",
-        "series": [
-          {
-            "date": "2026-06-16",
-            "position": 4
-          },
-          {
-            "date": "2026-06-17",
-            "position": 4
-          },
-          {
-            "date": "2026-06-18",
-            "position": 4
-          },
-          {
-            "date": "2026-06-19",
-            "position": 4
-          },
-          {
-            "date": "2026-06-20",
-            "position": 4
-          },
-          {
-            "date": "2026-06-21",
-            "position": 4
-          },
-          {
-            "date": "2026-06-22",
-            "position": 4
-          },
-          {
-            "date": "2026-06-23",
-            "position": 4
-          },
-          {
-            "date": "2026-06-24",
-            "position": 5
-          },
-          {
-            "date": "2026-06-25",
-            "position": 3
-          },
-          {
-            "date": "2026-06-26",
-            "position": 4
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 4
-          },
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": 3
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          },
-          {
-            "date": "2026-07-03",
-            "position": 4
-          },
-          {
-            "date": "2026-07-04",
-            "position": 3
-          },
-          {
-            "date": "2026-07-05",
-            "position": 4
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 4
-          },
-          {
-            "date": "2026-07-14",
-            "position": 6
-          },
-          {
-            "date": "2026-07-15",
-            "position": 5
           }
         ]
       },
@@ -17950,101 +17865,105 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
       {
-        "url": "https://prestigeplasticsurgery.com/liposuction/",
-        "title": "Liposuction in Miami, FL | Lipo 360",
-        "domain": "prestigeplasticsurgery.com",
+        "url": "https://www.themaercksinstitute.com/medical-spa-miami-fl/laser-treatments/laser-liposuction/",
+        "title": "Laser Liposuction Miami, FL",
+        "domain": "themaercksinstitute.com",
         "series": [
           {
             "date": "2026-06-16",
-            "position": 10
+            "position": 4
           },
           {
             "date": "2026-06-17",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-06-18",
-            "position": 9
+            "position": 4
           },
           {
             "date": "2026-06-19",
-            "position": 9
+            "position": 4
           },
           {
             "date": "2026-06-20",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-06-21",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-23",
-            "position": 9
+            "position": 4
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-25",
-            "position": 8
+            "position": 3
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-27",
-            "position": 7
+            "position": 3
           },
           {
             "date": "2026-06-28",
-            "position": 8
+            "position": 3
           },
           {
             "date": "2026-06-29",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-06-30",
-            "position": 8
+            "position": 3
           },
           {
             "date": "2026-07-01",
-            "position": 8
+            "position": 3
           },
           {
             "date": "2026-07-02",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-07-03",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-07-04",
-            "position": 8
+            "position": 3
           },
           {
             "date": "2026-07-05",
-            "position": 7
+            "position": 4
           },
           {
             "date": "2026-07-06",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-07",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-08",
@@ -18052,7 +17971,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -18064,19 +17983,154 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-12",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/360-lipo-miami",
+        "title": "Lipo 360 Miami - Best Price $3000",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-16",
+            "position": 3
+          },
+          {
+            "date": "2026-06-17",
+            "position": 3
+          },
+          {
+            "date": "2026-06-18",
+            "position": 3
+          },
+          {
+            "date": "2026-06-19",
+            "position": 3
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 1
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 1
+          },
+          {
+            "date": "2026-06-24",
+            "position": 1
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 1
+          },
+          {
+            "date": "2026-06-28",
+            "position": 1
+          },
+          {
+            "date": "2026-06-29",
+            "position": 3
+          },
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 4
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": 3
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": 3
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
             "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": 7
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -18204,37 +18258,41 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://miaaesthetics.com/cosmetic-plastic-surgery/body/lipo-360/",
-        "title": "Lipo 360",
-        "domain": "miaaesthetics.com",
+        "url": "https://prestigeplasticsurgery.com/blog/what-is-lipo-360-and-how-much/",
+        "title": "Understanding Lipo 360: Costs and Results in Miami",
+        "domain": "prestigeplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-16",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-17",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-18",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-22",
@@ -18242,7 +18300,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-23",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-24",
@@ -18250,7 +18308,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-25",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-26",
@@ -18258,23 +18316,23 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-27",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-28",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-29",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-30",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-02",
@@ -18282,11 +18340,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-05",
@@ -18298,23 +18356,23 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
             "position": 8
           },
           {
-            "date": "2026-07-10",
+            "date": "2026-07-09",
             "position": null
           },
           {
+            "date": "2026-07-10",
+            "position": 9
+          },
+          {
             "date": "2026-07-11",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-12",
@@ -18322,15 +18380,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": 6
           },
           {
             "date": "2026-07-14",
-            "position": 10
+            "position": 8
           },
           {
             "date": "2026-07-15",
-            "position": 9
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -18457,6 +18519,272 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 10
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.realself.com/find/Florida/Miami/Liposuction",
+        "title": "Top Liposuction Doctors in Miami, FL",
+        "domain": "realself.com",
+        "series": [
+          {
+            "date": "2026-06-16",
+            "position": 9
+          },
+          {
+            "date": "2026-06-17",
+            "position": 9
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": 10
+          },
+          {
+            "date": "2026-06-20",
+            "position": 10
+          },
+          {
+            "date": "2026-06-21",
+            "position": 10
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 9
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 10
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 9
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.cgcosmetic.com/liposuction-miami/",
+        "title": "Superior Liposuction Miami $99/Month",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-16",
+            "position": 5
+          },
+          {
+            "date": "2026-06-17",
+            "position": 5
+          },
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 5
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 5
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          },
+          {
+            "date": "2026-07-04",
+            "position": 5
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": 5
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
+            "position": 4
+          },
+          {
+            "date": "2026-07-10",
+            "position": 8
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 8
+          },
+          {
+            "date": "2026-07-13",
+            "position": 3
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": 2
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -18621,6 +18949,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 5,
         "keyword": "liposucción en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "liposucción en miami"
       }
     ],
     "competitors": [
@@ -18748,6 +19081,272 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/surgical-services/body/liposuction/",
+        "title": "Cirugía de liposucción en Miami, FL",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-16",
+            "position": 2
+          },
+          {
+            "date": "2026-06-17",
+            "position": 2
+          },
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 2
+          },
+          {
+            "date": "2026-06-29",
+            "position": 1
+          },
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          },
+          {
+            "date": "2026-07-04",
+            "position": 2
+          },
+          {
+            "date": "2026-07-05",
+            "position": 2
+          },
+          {
+            "date": "2026-07-06",
+            "position": 2
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 2
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 2
+          },
+          {
+            "date": "2026-07-11",
+            "position": 2
+          },
+          {
+            "date": "2026-07-12",
+            "position": 2
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 2
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/",
+        "title": "Centro de Cirugía Plástica de Miami",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-16",
+            "position": 3
+          },
+          {
+            "date": "2026-06-17",
+            "position": 3
+          },
+          {
+            "date": "2026-06-18",
+            "position": 3
+          },
+          {
+            "date": "2026-06-19",
+            "position": 3
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 3
+          },
+          {
+            "date": "2026-06-23",
+            "position": 3
+          },
+          {
+            "date": "2026-06-24",
+            "position": 3
+          },
+          {
+            "date": "2026-06-25",
+            "position": 3
+          },
+          {
+            "date": "2026-06-26",
+            "position": 3
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": 3
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 3
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 3
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": 3
+          },
+          {
+            "date": "2026-07-07",
+            "position": 4
+          },
+          {
+            "date": "2026-07-08",
+            "position": 3
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 3
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": 3
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -18875,394 +19474,148 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/lipoescultura-360-miami/",
-        "title": "Lipoescultura 360 en Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-16",
-            "position": null
           },
           {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 9
-          },
-          {
-            "date": "2026-07-09",
-            "position": 3
-          },
-          {
-            "date": "2026-07-10",
-            "position": 9
-          },
-          {
-            "date": "2026-07-11",
-            "position": 9
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 3
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://www.instagram.com/p/DXE6nZzDjQc/",
-        "title": "My Cosmetic Surgery Miami | Plastic Surgeon",
-        "domain": "instagram.com",
-        "series": [
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 10
-          },
-          {
-            "date": "2026-07-02",
-            "position": 10
-          },
-          {
-            "date": "2026-07-03",
-            "position": 10
-          },
-          {
-            "date": "2026-07-04",
-            "position": 9
-          },
-          {
-            "date": "2026-07-05",
-            "position": 9
-          },
-          {
-            "date": "2026-07-06",
-            "position": 9
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 9
-          },
-          {
-            "date": "2026-07-13",
-            "position": 4
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 4
           }
         ]
       },
       {
-        "url": "https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida",
-        "title": "Liposucción en Miami desde $3499 - Florida",
-        "domain": "avanaplasticsurgery.com",
+        "url": "https://daviddelgadocirujano.com/lipo-360-miami/",
+        "title": "Lipo 360 Miami : ¿Es realmente la mejor opción?",
+        "domain": "daviddelgadocirujano.com",
         "series": [
           {
             "date": "2026-06-16",
-            "position": 10
+            "position": 6
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-18",
-            "position": 10
+            "position": 7
           },
           {
             "date": "2026-06-19",
-            "position": 10
+            "position": 7
           },
           {
             "date": "2026-06-20",
-            "position": 10
+            "position": 5
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-30",
-            "position": 10
+            "position": 6
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-09",
-            "position": 5
+            "position": 4
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
             "position": null
           },
           {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
       },
       {
-        "url": "https://miamilifecosmetic.com/procedure/lipo-360/",
-        "title": "Lipo 360 – Miami Life Cosmetic Surgery",
-        "domain": "miamilifecosmetic.com",
+        "url": "https://squlptbody.com/es/locations/miami-florida/",
+        "title": "Miami Awake Lipo & Body Sculpting",
+        "domain": "squlptbody.com",
         "series": [
           {
             "date": "2026-06-16",
@@ -19298,7 +19651,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-24",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-25",
@@ -19358,7 +19711,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -19374,149 +19727,157 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": 8
-          },
-          {
-            "date": "2026-07-14",
             "position": null
           },
           {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 6
           }
         ]
       },
       {
-        "url": "https://www.cgcosmetic.com/liposuction-miami/",
-        "title": "Superior Liposuction Miami $99/Month",
-        "domain": "cgcosmetic.com",
+        "url": "https://www.careagaplasticsurgery.com/es/liposuccion/",
+        "title": "Liposucción - Miami, FL",
+        "domain": "careagaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-16",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-17",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-19",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
             "position": 6
           },
           {
-            "date": "2026-07-14",
+            "date": "2026-06-27",
+            "position": 6
+          },
+          {
+            "date": "2026-06-28",
+            "position": 4
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": 7
+          },
+          {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
+            "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          },
+          {
+            "date": "2026-07-04",
+            "position": 7
+          },
+          {
+            "date": "2026-07-05",
+            "position": 6
+          },
+          {
+            "date": "2026-07-06",
+            "position": 6
+          },
+          {
+            "date": "2026-07-07",
+            "position": 10
+          },
+          {
+            "date": "2026-07-08",
+            "position": 5
+          },
+          {
+            "date": "2026-07-09",
             "position": null
           },
           {
+            "date": "2026-07-10",
+            "position": 5
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
       },
       {
-        "url": "https://www.instagram.com/reel/DUWMXtKkgL1/?hl=es",
-        "title": "Miami tiene muchas opciones… Pero solo una clínica #1 ...",
-        "domain": "instagram.com",
+        "url": "https://www.zuriplasticsurgery.com/es/cuerpo/liposuccion/",
+        "title": "Liposucción Miami | Elimine la grasa rebelde en ...",
+        "domain": "zuriplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-16",
@@ -19572,7 +19933,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-30",
@@ -19592,58 +19953,62 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 7
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
             "position": 9
           },
           {
-            "date": "2026-07-14",
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
             "position": null
           },
           {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 7
+          },
+          {
+            "date": "2026-07-12",
+            "position": 8
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 8
+          },
+          {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://seductioncosmetic.com/es/liposucci%C3%B3n/",
-        "title": "Liposucción Miami - Cosmética De Seducción",
-        "domain": "seductioncosmetic.com",
+        "url": "https://renovaaestheticinstitute.com/es/liposuccion-miami/",
+        "title": "Sculpt Your Silhouette With Liposuction In Miami",
+        "domain": "renovaaestheticinstitute.com",
         "series": [
           {
             "date": "2026-06-16",
@@ -19739,133 +20104,6 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": 10
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 10
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=6ziNwvBnmyE",
-        "title": "🚨¡ME HICE UNA LIPOSUCCIÓN EN MIAMI Y LO GRABÉ ...",
-        "domain": "youtube.com",
-        "series": [
-          {
-            "date": "2026-06-16",
-            "position": null
-          },
-          {
-            "date": "2026-06-17",
-            "position": null
-          },
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": 9
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
             "position": null
           },
           {
@@ -19886,21 +20124,20 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-15",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
     ],
     "pages": [
-      {
-        "position": 5,
-        "url": "https://avanaplasticsurgery.com/espanol/liposuccion-en-miami-florida",
-        "is_target": true
-      },
       {
         "position": 1,
         "url": "https://avanaplasticsurgery.com/espanol/lipo-360-en-miami",
@@ -20049,6 +20286,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "bbl revision miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "bbl revision miami"
       }
     ],
     "competitors": [
@@ -20167,6 +20409,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -20287,6 +20533,133 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.realself.com/find/Florida/Miami/Brazilian-Butt-Lift-Revision",
+        "title": "Top Brazilian Butt Lift Revision Doctors in Miami, FL",
+        "domain": "realself.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 4
+          },
+          {
+            "date": "2026-06-19",
+            "position": 5
+          },
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 5
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          },
+          {
+            "date": "2026-07-04",
+            "position": 3
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": 4
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 3
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -20406,6 +20779,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -20525,124 +20902,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.realself.com/find/Florida/Miami/Brazilian-Butt-Lift-Revision",
-        "title": "Top Brazilian Butt Lift Revision Doctors in Miami, FL",
-        "domain": "realself.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": 4
           },
           {
-            "date": "2026-06-19",
-            "position": 5
-          },
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 5
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 5
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 5
-          },
-          {
-            "date": "2026-07-03",
-            "position": 5
-          },
-          {
-            "date": "2026-07-04",
-            "position": 3
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
-            "position": 4
-          },
-          {
-            "date": "2026-07-07",
-            "position": 3
-          },
-          {
-            "date": "2026-07-08",
-            "position": 3
-          },
-          {
-            "date": "2026-07-09",
-            "position": 3
-          },
-          {
-            "date": "2026-07-10",
-            "position": 4
-          },
-          {
-            "date": "2026-07-11",
-            "position": 3
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
-            "position": 3
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -20763,125 +21025,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=wbZu8kYh-Zs",
-        "title": "Not Happy with your BBL? - Brazilian Butt Lift Revision",
-        "domain": "youtube.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": 8
           },
           {
-            "date": "2026-06-19",
-            "position": 7
-          },
-          {
-            "date": "2026-06-20",
-            "position": 7
-          },
-          {
-            "date": "2026-06-21",
-            "position": 7
-          },
-          {
-            "date": "2026-06-22",
-            "position": 7
-          },
-          {
-            "date": "2026-06-23",
-            "position": 7
-          },
-          {
-            "date": "2026-06-24",
-            "position": 7
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": 7
-          },
-          {
-            "date": "2026-06-27",
-            "position": 7
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": 7
-          },
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          },
-          {
-            "date": "2026-07-03",
-            "position": 7
-          },
-          {
-            "date": "2026-07-04",
-            "position": 7
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": 7
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": 7
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 8
-          },
-          {
-            "date": "2026-07-15",
-            "position": 7
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -21001,6 +21148,133 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=wbZu8kYh-Zs",
+        "title": "Not Happy with your BBL? - Brazilian Butt Lift Revision",
+        "domain": "youtube.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 8
+          },
+          {
+            "date": "2026-06-19",
+            "position": 7
+          },
+          {
+            "date": "2026-06-20",
+            "position": 7
+          },
+          {
+            "date": "2026-06-21",
+            "position": 7
+          },
+          {
+            "date": "2026-06-22",
+            "position": 7
+          },
+          {
+            "date": "2026-06-23",
+            "position": 7
+          },
+          {
+            "date": "2026-06-24",
+            "position": 7
+          },
+          {
+            "date": "2026-06-25",
+            "position": 7
+          },
+          {
+            "date": "2026-06-26",
+            "position": 7
+          },
+          {
+            "date": "2026-06-27",
+            "position": 7
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": 7
+          },
+          {
+            "date": "2026-06-30",
+            "position": 7
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          },
+          {
+            "date": "2026-07-04",
+            "position": 7
+          },
+          {
+            "date": "2026-07-05",
+            "position": 7
+          },
+          {
+            "date": "2026-07-06",
+            "position": 7
+          },
+          {
+            "date": "2026-07-07",
+            "position": 7
+          },
+          {
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
+            "position": 8
+          },
+          {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 7
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 8
+          },
+          {
+            "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -21119,6 +21393,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 9
+          },
+          {
+            "date": "2026-07-16",
             "position": 9
           }
         ]
@@ -21273,128 +21551,14 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "revisión de bbl en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "revisión de bbl en miami"
       }
     ],
     "competitors": [
-      {
-        "url": "https://avanaplasticsurgery.com/espanol/revision-de-bbl-en-miami",
-        "title": "Revisión de BBL en Miami - $4000",
-        "domain": "avanaplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 1
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 1
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 1
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 1
-          },
-          {
-            "date": "2026-07-13",
-            "position": 1
-          },
-          {
-            "date": "2026-07-14",
-            "position": 1
-          },
-          {
-            "date": "2026-07-15",
-            "position": 1
-          }
-        ]
-      },
       {
         "url": "https://miamiaesthetic.com/revision/bbl/",
         "title": "BBL Revision in Miami, FL",
@@ -21510,6 +21674,133 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/revision-de-levantamiento-de-gluteos-en-miami",
+        "title": "Revisión de Levantamiento de Gluteos en Miami",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": 2
+          },
+          {
+            "date": "2026-06-20",
+            "position": 3
+          },
+          {
+            "date": "2026-06-21",
+            "position": 3
+          },
+          {
+            "date": "2026-06-22",
+            "position": 2
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": 2
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 2
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": 3
+          },
+          {
+            "date": "2026-06-29",
+            "position": 2
+          },
+          {
+            "date": "2026-06-30",
+            "position": 2
+          },
+          {
+            "date": "2026-07-01",
+            "position": 2
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 2
+          },
+          {
+            "date": "2026-07-04",
+            "position": 2
+          },
+          {
+            "date": "2026-07-05",
+            "position": 4
+          },
+          {
+            "date": "2026-07-06",
+            "position": 2
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": 2
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 3
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
             "position": 2
           }
         ]
@@ -21630,125 +21921,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/revision-de-levantamiento-de-gluteos-en-miami",
-        "title": "Revisión de Levantamiento de Gluteos en Miami",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": 2
           },
           {
-            "date": "2026-06-19",
-            "position": 2
-          },
-          {
-            "date": "2026-06-20",
+            "date": "2026-07-16",
             "position": 3
-          },
-          {
-            "date": "2026-06-21",
-            "position": 3
-          },
-          {
-            "date": "2026-06-22",
-            "position": 2
-          },
-          {
-            "date": "2026-06-23",
-            "position": 2
-          },
-          {
-            "date": "2026-06-24",
-            "position": 2
-          },
-          {
-            "date": "2026-06-25",
-            "position": 2
-          },
-          {
-            "date": "2026-06-26",
-            "position": 2
-          },
-          {
-            "date": "2026-06-27",
-            "position": 3
-          },
-          {
-            "date": "2026-06-28",
-            "position": 3
-          },
-          {
-            "date": "2026-06-29",
-            "position": 2
-          },
-          {
-            "date": "2026-06-30",
-            "position": 2
-          },
-          {
-            "date": "2026-07-01",
-            "position": 2
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": 2
-          },
-          {
-            "date": "2026-07-04",
-            "position": 2
-          },
-          {
-            "date": "2026-07-05",
-            "position": 4
-          },
-          {
-            "date": "2026-07-06",
-            "position": 2
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 4
-          },
-          {
-            "date": "2026-07-09",
-            "position": 3
-          },
-          {
-            "date": "2026-07-10",
-            "position": 4
-          },
-          {
-            "date": "2026-07-11",
-            "position": 2
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 3
-          },
-          {
-            "date": "2026-07-14",
-            "position": 3
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
           }
         ]
       },
@@ -21868,6 +22044,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -21986,6 +22166,133 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=wbZu8kYh-Zs",
+        "title": "Not Happy with your BBL? - Brazilian Butt Lift Revision",
+        "domain": "youtube.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 7
+          },
+          {
+            "date": "2026-06-19",
+            "position": 7
+          },
+          {
+            "date": "2026-06-20",
+            "position": 7
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": 8
+          },
+          {
+            "date": "2026-06-24",
+            "position": 7
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 7
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 7
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 6
           }
         ]
@@ -22106,13 +22413,140 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/brazilian-butt-lift-miami/",
-        "title": "Brazilian Butt Lift Miami",
-        "domain": "thesecretplasticsurgery.com",
+        "url": "https://sveltaplasticsurgery.com/bbl-revision-miami/",
+        "title": "BBL Revision Miami | Brazilian Butt Lift",
+        "domain": "sveltaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 8
+          },
+          {
+            "date": "2026-06-19",
+            "position": 8
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 7
+          },
+          {
+            "date": "2026-06-22",
+            "position": 7
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": 8
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": 7
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": 9
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          },
+          {
+            "date": "2026-07-04",
+            "position": 7
+          },
+          {
+            "date": "2026-07-05",
+            "position": 8
+          },
+          {
+            "date": "2026-07-06",
+            "position": 7
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 6
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": 7
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://darrylblinskimd.com/plastic-surgery/revision/brazilian-butt-lift/",
+        "title": "Revision Brazilian Butt Lift in Miami, FL",
+        "domain": "darrylblinskimd.com",
         "series": [
           {
             "date": "2026-06-18",
@@ -22128,11 +22562,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-23",
@@ -22140,7 +22574,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-25",
@@ -22152,19 +22586,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
             "position": 8
           },
           {
-            "date": "2026-06-30",
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
+            "date": "2026-06-29",
             "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
           },
           {
             "date": "2026-07-01",
@@ -22180,15 +22614,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-07",
@@ -22196,7 +22630,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-09",
@@ -22208,153 +22642,32 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-14",
-            "position": 8
+            "position": 10
           },
           {
             "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://dollsplasticsurgery.com/bbl-surgery/best-bbl-doctors/",
-        "title": "Top 10 Best BBL Surgeons in Miami & USA",
-        "domain": "dollsplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-18",
             "position": null
           },
           {
-            "date": "2026-06-19",
-            "position": null
-          },
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 9
           }
         ]
       }
     ],
-    "pages": [
-      {
-        "position": 1,
-        "url": "https://avanaplasticsurgery.com/espanol/revision-de-bbl-en-miami",
-        "is_target": true
-      }
-    ]
+    "pages": []
   },
   "https://avanaplasticsurgery.com/breast-implant-revision-miami": {
     "series": [
@@ -22497,6 +22810,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "breast implant revision miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "breast implant revision miami"
       }
     ],
     "competitors": [
@@ -22615,6 +22933,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -22735,6 +23057,133 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/breast/breast-revision/",
+        "title": "Breast Revision Miami, FL",
+        "domain": "themaercksinstitute.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": 2
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": 2
+          },
+          {
+            "date": "2026-06-21",
+            "position": 2
+          },
+          {
+            "date": "2026-06-22",
+            "position": 4
+          },
+          {
+            "date": "2026-06-23",
+            "position": 2
+          },
+          {
+            "date": "2026-06-24",
+            "position": 1
+          },
+          {
+            "date": "2026-06-25",
+            "position": 2
+          },
+          {
+            "date": "2026-06-26",
+            "position": 3
+          },
+          {
+            "date": "2026-06-27",
+            "position": 3
+          },
+          {
+            "date": "2026-06-28",
+            "position": 2
+          },
+          {
+            "date": "2026-06-29",
+            "position": 3
+          },
+          {
+            "date": "2026-06-30",
+            "position": 3
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": 2
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 2
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": 4
+          },
+          {
+            "date": "2026-07-07",
+            "position": 4
+          },
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": 4
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 2
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -22854,132 +23303,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://aeris.co/plastic-surgeons-miami-fl/breast/breast-revision/",
-        "title": "Best Breast Revision Miami, FL | Aeris",
-        "domain": "aeris.co",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": 8
           },
           {
-            "date": "2026-06-19",
-            "position": 4
-          },
-          {
-            "date": "2026-06-20",
-            "position": 7
-          },
-          {
-            "date": "2026-06-21",
-            "position": 8
-          },
-          {
-            "date": "2026-06-22",
-            "position": 6
-          },
-          {
-            "date": "2026-06-23",
-            "position": 8
-          },
-          {
-            "date": "2026-06-24",
-            "position": 7
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": 7
-          },
-          {
-            "date": "2026-06-27",
-            "position": 7
-          },
-          {
-            "date": "2026-06-28",
-            "position": 6
-          },
-          {
-            "date": "2026-06-29",
-            "position": 7
-          },
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          },
-          {
-            "date": "2026-07-03",
-            "position": 7
-          },
-          {
-            "date": "2026-07-04",
-            "position": 7
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": 7
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 9
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": 7
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 7
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 4
           }
         ]
       },
       {
-        "url": "https://www.rotembergmd.com/miami-plastic-surgery/breast/breast-revision/",
-        "title": "Best Breast Revision Miami | Rotemberg Plastic Surgery",
-        "domain": "rotembergmd.com",
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1qj3k12/breast_lift_9_month_followup_dr_william_miami/",
+        "title": "Breast Lift | 9 month FollowUp | Dr. William Miami",
+        "domain": "reddit.com",
         "series": [
           {
             "date": "2026-06-18",
@@ -22987,7 +23321,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-19",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-20",
@@ -23003,11 +23337,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-23",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-06-25",
@@ -23067,7 +23401,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-10",
@@ -23091,46 +23425,50 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
       },
       {
-        "url": "https://www.lhochsteinmd.com/",
-        "title": "Miami Florida Plastic Surgeon | Leonard M. Hochstein M.D.",
-        "domain": "lhochsteinmd.com",
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1rq32mw/breast_augmentation_before_after_dr_william_miami/",
+        "title": "Breast Augmentation | Before & After | Dr. William Miami",
+        "domain": "reddit.com",
         "series": [
           {
             "date": "2026-06-18",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-06-19",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-23",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-26",
@@ -23146,7 +23484,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-06-30",
@@ -23162,7 +23500,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-04",
@@ -23170,7 +23508,130 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-05",
-            "position": 8
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 9
+          },
+          {
+            "date": "2026-07-08",
+            "position": 10
+          },
+          {
+            "date": "2026-07-09",
+            "position": 6
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 10
+          },
+          {
+            "date": "2026-07-12",
+            "position": 10
+          },
+          {
+            "date": "2026-07-13",
+            "position": 7
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.realself.com/question/miami-florida-breast-lift-revision-again",
+        "title": "Do I need a breast lift again or can I just exchange the implants and get a bigger ...",
+        "domain": "realself.com",
+        "series": [
+          {
+            "date": "2026-06-18",
+            "position": null
+          },
+          {
+            "date": "2026-06-19",
+            "position": null
+          },
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
           },
           {
             "date": "2026-07-06",
@@ -23186,7 +23647,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -23202,7 +23663,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": 10
+            "position": 8
           },
           {
             "date": "2026-07-14",
@@ -23210,7 +23671,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
-            "position": 6
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -23330,232 +23795,117 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.drsimonplasticsurgery.com/procedures/revision-cases",
-        "title": "Revision Cases in Miami | Dr. Sean Simon Plastic Surgery",
-        "domain": "drsimonplasticsurgery.com",
+        "url": "https://aeris.co/plastic-surgeons-miami-fl/breast/breast-revision/",
+        "title": "Best Breast Revision Miami, FL | Aeris",
+        "domain": "aeris.co",
         "series": [
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-19",
-            "position": 8
+            "position": 4
           },
           {
             "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": 9
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": 10
-          },
-          {
-            "date": "2026-07-02",
-            "position": 10
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 10
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://www.chriscraftplasticsurgery.com/breast-revision/",
-        "title": "Breast Implant Revision - Miami - Christopher Craft Cosmetic Surgery",
-        "domain": "chriscraftplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-18",
-            "position": null
-          },
-          {
-            "date": "2026-06-19",
             "position": 7
           },
           {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
             "date": "2026-06-21",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-13",
@@ -23563,129 +23913,137 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
             "position": 9
           }
         ]
       },
       {
-        "url": "https://wperrymd.com/procedures/revised/revision-surgery-for-the-breast/",
-        "title": "Revision Breast Surgery Miami | Near Me",
-        "domain": "wperrymd.com",
+        "url": "https://iconcosmeticcenter.com/breast-implant-revision-miami",
+        "title": "Miami Breast Implant Revision, Exchange or Removal",
+        "domain": "iconcosmeticcenter.com",
         "series": [
           {
             "date": "2026-06-18",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-19",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -23824,6 +24182,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "breast reduction miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "breast reduction miami"
       }
     ],
     "competitors": [
@@ -23934,6 +24297,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -24046,6 +24413,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -24156,6 +24527,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -24268,339 +24643,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.reddit.com/r/drwilliammiami/comments/1g9gmo9/breast_reduction_dr_william_miami/",
-        "title": "Breast Reduction | Dr. William Miami",
-        "domain": "reddit.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
           },
           {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
+            "date": "2026-07-16",
             "position": 4
-          },
-          {
-            "date": "2026-07-14",
-            "position": 3
-          },
-          {
-            "date": "2026-07-15",
-            "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://www.reddit.com/r/Miami/comments/1b6qpex/any_good_breast_lift_surgeon_recommendations_in/",
-        "title": "any good breast lift surgeon recommendations in miami?",
-        "domain": "reddit.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://www.realself.com/question/miami-fl-breast-reduction-small-dense-breasts",
-        "title": "Breast reduction- how small can you go for dense breasts?",
-        "domain": "realself.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 7
           }
         ]
       },
@@ -24712,6 +24758,240 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1g9gmo9/breast_reduction_dr_william_miami/",
+        "title": "Breast Reduction | Dr. William Miami",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 4
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.reddit.com/r/drwilliammiami/comments/1t1uvy3/breast_lift_testimonial_ogee_plastic_surgery/",
+        "title": "Breast Lift Testimonial | Ogee Plastic Surgery",
+        "domain": "reddit.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": null
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -24823,81 +25103,85 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://xiluetaestheticsurgery.com/breast-reduction/",
-        "title": "Top-Rated Breast Reduction Miami | 10+ Years Experience",
-        "domain": "xiluetaestheticsurgery.com",
+        "url": "https://doctors.umiamihealth.org/specialty/Breast%20Surgery?page=1",
+        "title": "Breast Surgery - Find a Doctor",
+        "domain": "doctors.umiamihealth.org",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-07",
@@ -24905,23 +25189,23 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 4
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-13",
@@ -24929,10 +25213,129 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-reduction/",
+        "title": "Best Breast Reduction in Miami, FL",
+        "domain": "gablesplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 8
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": 7
+          },
+          {
+            "date": "2026-06-23",
+            "position": 8
+          },
+          {
+            "date": "2026-06-24",
+            "position": 8
+          },
+          {
+            "date": "2026-06-25",
+            "position": 9
+          },
+          {
+            "date": "2026-06-26",
+            "position": 9
+          },
+          {
+            "date": "2026-06-27",
+            "position": 7
+          },
+          {
+            "date": "2026-06-28",
+            "position": 9
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          },
+          {
+            "date": "2026-07-04",
+            "position": 7
+          },
+          {
+            "date": "2026-07-05",
+            "position": 7
+          },
+          {
+            "date": "2026-07-06",
+            "position": 8
+          },
+          {
+            "date": "2026-07-07",
+            "position": 7
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": 5
+          },
+          {
+            "date": "2026-07-10",
+            "position": 5
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 5
+          },
+          {
+            "date": "2026-07-13",
+            "position": 10
+          },
+          {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -25077,6 +25480,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "reducción de senos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "reducción de senos en miami"
       }
     ],
     "competitors": [
@@ -25187,6 +25595,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -25299,41 +25711,45 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
       {
-        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-augmentation/",
-        "title": "Implantes mamarios en Miami | Cirugía Plástica Miami",
+        "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-lift/",
+        "title": "Levantamiento de senos con aumento Miami | Cirugía Plástica Miami",
         "domain": "miamiplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-06-21",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-06-22",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-06-23",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 2
+            "position": null
           },
           {
             "date": "2026-06-25",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-26",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-27",
@@ -25345,11 +25761,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-29",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-06-30",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-01",
@@ -25361,7 +25777,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-04",
@@ -25369,7 +25785,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-06",
@@ -25377,15 +25793,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-08",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -25393,22 +25809,26 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -25521,6 +25941,125 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": 5
+          },
+          {
+            "date": "2026-06-22",
+            "position": 5
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 5
+          },
+          {
+            "date": "2026-06-27",
+            "position": 6
+          },
+          {
+            "date": "2026-06-28",
+            "position": 6
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          },
+          {
+            "date": "2026-07-04",
+            "position": 3
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 5
+          },
+          {
+            "date": "2026-07-09",
+            "position": 5
+          },
+          {
+            "date": "2026-07-10",
+            "position": 3
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 5
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
+            "date": "2026-07-15",
+            "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -25632,116 +26171,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
-          }
-        ]
-      },
-      {
-        "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami ...",
-        "domain": "arykraumd.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": 5
           },
           {
-            "date": "2026-06-21",
-            "position": 5
-          },
-          {
-            "date": "2026-06-22",
-            "position": 5
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 5
-          },
-          {
-            "date": "2026-06-25",
-            "position": 6
-          },
-          {
-            "date": "2026-06-26",
-            "position": 5
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 6
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": 5
-          },
-          {
-            "date": "2026-07-04",
-            "position": 3
-          },
-          {
-            "date": "2026-07-05",
-            "position": 3
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": 3
-          },
-          {
-            "date": "2026-07-08",
-            "position": 5
-          },
-          {
-            "date": "2026-07-09",
-            "position": 5
-          },
-          {
-            "date": "2026-07-10",
-            "position": 3
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 5
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": 6
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 6
           }
         ]
@@ -25854,6 +26286,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -25964,6 +26400,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 8
+          },
+          {
+            "date": "2026-07-16",
             "position": 8
           }
         ]
@@ -26076,6 +26516,125 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.zuriplasticsurgery.com/es/senos/revision-de-senos/",
+        "title": "Mejor Revisión de Senos Miami | Zuri Cirugía Plástica",
+        "domain": "zuriplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 9
+          },
+          {
+            "date": "2026-06-21",
+            "position": 10
+          },
+          {
+            "date": "2026-06-22",
+            "position": 8
+          },
+          {
+            "date": "2026-06-23",
+            "position": 9
+          },
+          {
+            "date": "2026-06-24",
+            "position": 9
+          },
+          {
+            "date": "2026-06-25",
+            "position": 8
+          },
+          {
+            "date": "2026-06-26",
+            "position": 8
+          },
+          {
+            "date": "2026-06-27",
+            "position": 10
+          },
+          {
+            "date": "2026-06-28",
+            "position": 8
+          },
+          {
+            "date": "2026-06-29",
+            "position": 8
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          },
+          {
+            "date": "2026-07-04",
+            "position": 9
+          },
+          {
+            "date": "2026-07-05",
+            "position": 9
+          },
+          {
+            "date": "2026-07-06",
+            "position": 7
+          },
+          {
+            "date": "2026-07-07",
+            "position": 9
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": 8
+          },
+          {
+            "date": "2026-07-10",
+            "position": 8
+          },
+          {
+            "date": "2026-07-11",
+            "position": 8
+          },
+          {
+            "date": "2026-07-12",
+            "position": 8
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 10
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 10
           }
         ]
       }
@@ -26219,6 +26778,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "revisión de implantes de senos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "revisión de implantes de senos en miami"
       }
     ],
     "competitors": [
@@ -26329,6 +26893,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -26441,339 +27009,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
-        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
-        "domain": "cgcosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": 5
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": 10
-          },
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 4
-          },
-          {
-            "date": "2026-06-25",
-            "position": 7
-          },
-          {
-            "date": "2026-06-26",
-            "position": 7
-          },
-          {
-            "date": "2026-06-27",
-            "position": 10
-          },
-          {
-            "date": "2026-06-28",
-            "position": 9
-          },
-          {
-            "date": "2026-06-29",
-            "position": 9
-          },
-          {
-            "date": "2026-06-30",
-            "position": 9
-          },
-          {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": 8
-          },
-          {
-            "date": "2026-07-03",
-            "position": 8
-          },
-          {
-            "date": "2026-07-04",
-            "position": 5
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
-            "position": 5
-          },
-          {
-            "date": "2026-07-07",
-            "position": 5
-          },
-          {
-            "date": "2026-07-08",
-            "position": 5
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 10
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 5
-          },
-          {
-            "date": "2026-07-13",
-            "position": 9
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/revision-de-implantes-de-senos-en-miami",
-        "title": "Revisión de implantes de Senos en Miami",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": null
-          },
-          {
-            "date": "2026-06-28",
-            "position": null
-          },
-          {
-            "date": "2026-06-29",
-            "position": null
-          },
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": 10
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 6
-          },
-          {
-            "date": "2026-07-05",
-            "position": 6
-          },
-          {
-            "date": "2026-07-06",
-            "position": 6
-          },
-          {
-            "date": "2026-07-07",
-            "position": 6
-          },
-          {
-            "date": "2026-07-08",
-            "position": 6
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 3
-          },
-          {
-            "date": "2026-07-11",
-            "position": 6
-          },
-          {
-            "date": "2026-07-12",
-            "position": 6
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/levantamiento-de-senos-en-miami/",
-        "title": "Levantamiento de senos Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": 6
-          },
-          {
-            "date": "2026-06-22",
-            "position": 6
-          },
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 6
-          },
-          {
-            "date": "2026-06-26",
-            "position": 6
-          },
-          {
-            "date": "2026-06-27",
-            "position": 5
-          },
-          {
-            "date": "2026-06-28",
-            "position": 7
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": 6
-          },
-          {
-            "date": "2026-07-02",
-            "position": 6
-          },
-          {
-            "date": "2026-07-03",
-            "position": 6
-          },
-          {
-            "date": "2026-07-04",
-            "position": 9
-          },
-          {
-            "date": "2026-07-05",
-            "position": 9
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": 7
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 7
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": 5
           },
           {
-            "date": "2026-07-15",
-            "position": 5
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -26885,6 +27124,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -26995,6 +27238,355 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
+        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
+        "domain": "cgcosmetic.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 5
+          },
+          {
+            "date": "2026-06-21",
+            "position": null
+          },
+          {
+            "date": "2026-06-22",
+            "position": 10
+          },
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 4
+          },
+          {
+            "date": "2026-06-25",
+            "position": 7
+          },
+          {
+            "date": "2026-06-26",
+            "position": 7
+          },
+          {
+            "date": "2026-06-27",
+            "position": 10
+          },
+          {
+            "date": "2026-06-28",
+            "position": 9
+          },
+          {
+            "date": "2026-06-29",
+            "position": 9
+          },
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          },
+          {
+            "date": "2026-07-04",
+            "position": 5
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": 5
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 5
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 10
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 5
+          },
+          {
+            "date": "2026-07-13",
+            "position": 9
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/aumento-de-senos-miami",
+        "title": "Aumento de Senos Miami con Implantes ...",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": 6
+          },
+          {
+            "date": "2026-06-21",
+            "position": 7
+          },
+          {
+            "date": "2026-06-22",
+            "position": 7
+          },
+          {
+            "date": "2026-06-23",
+            "position": 6
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 3
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 4
+          },
+          {
+            "date": "2026-06-29",
+            "position": 4
+          },
+          {
+            "date": "2026-06-30",
+            "position": 4
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": 5
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 6
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-de-senos/levantamiento-de-senos-en-miami/",
+        "title": "Levantamiento de senos Miami",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-20",
+            "position": null
+          },
+          {
+            "date": "2026-06-21",
+            "position": 6
+          },
+          {
+            "date": "2026-06-22",
+            "position": 6
+          },
+          {
+            "date": "2026-06-23",
+            "position": null
+          },
+          {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 6
+          },
+          {
+            "date": "2026-06-27",
+            "position": 5
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": 6
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
+            "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          },
+          {
+            "date": "2026-07-04",
+            "position": 9
+          },
+          {
+            "date": "2026-07-05",
+            "position": 9
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 7
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 7
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -27107,61 +27699,65 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.imagoscirugiaplastica.com/revision-implantes-senos",
-        "title": "Revisión de Implantes | Imagos Cirugia Plastica | Miami",
-        "domain": "imagoscirugiaplastica.com",
+        "url": "https://www.arcplasticsurgeons.com/es/senos/revision-mamaria/",
+        "title": "Revisión de senos Miami | Cirugía Plástica ARCO",
+        "domain": "arcplasticsurgeons.com",
         "series": [
           {
             "date": "2026-06-20",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-21",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-22",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-02",
@@ -27169,138 +27765,27 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-07",
-            "position": 10
+            "position": 9
           },
           {
             "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 4
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": 10
-          },
-          {
-            "date": "2026-07-13",
-            "position": 10
-          },
-          {
-            "date": "2026-07-14",
-            "position": 7
-          },
-          {
-            "date": "2026-07-15",
             "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.aserureplasticsurgery.com/es/procedimientos-de-cirugia-plastica-en-miami/procedimiento-de-senos/aumento-de-senos/",
-        "title": "Breast Implants Miami FL | Coral Gables",
-        "domain": "aserureplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-20",
-            "position": null
-          },
-          {
-            "date": "2026-06-21",
-            "position": null
-          },
-          {
-            "date": "2026-06-22",
-            "position": null
-          },
-          {
-            "date": "2026-06-23",
-            "position": 10
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": 8
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
-            "position": 10
-          },
-          {
-            "date": "2026-06-29",
-            "position": 10
-          },
-          {
-            "date": "2026-06-30",
-            "position": 10
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 9
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
           },
           {
             "date": "2026-07-09",
@@ -27308,15 +27793,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-13",
@@ -27328,7 +27813,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
@@ -27457,6 +27946,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "breast lift miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "breast lift miami"
       }
     ],
     "competitors": [
@@ -27555,6 +28049,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -27655,77 +28153,81 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
       {
-        "url": "https://www.lhochsteinmd.com/",
-        "title": "Miami Florida Plastic Surgeon | Leonard M. Hochstein M.D.",
-        "domain": "lhochsteinmd.com",
+        "url": "https://www.reddit.com/r/Miami/comments/1b6qpex/any_good_breast_lift_surgeon_recommendations_in/",
+        "title": "any good breast lift surgeon recommendations in miami?",
+        "domain": "reddit.com",
         "series": [
           {
             "date": "2026-06-23",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-06-24",
-            "position": 3
+            "position": 9
           },
           {
             "date": "2026-06-25",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-06-26",
-            "position": 5
+            "position": 9
           },
           {
             "date": "2026-06-27",
-            "position": 3
+            "position": 10
           },
           {
             "date": "2026-06-28",
-            "position": 3
+            "position": 10
           },
           {
             "date": "2026-06-29",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-06-30",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": 3
+            "position": 10
           },
           {
             "date": "2026-07-03",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 3
+            "position": 4
           },
           {
             "date": "2026-07-05",
-            "position": 4
+            "position": 1
           },
           {
             "date": "2026-07-06",
-            "position": 4
+            "position": 10
           },
           {
             "date": "2026-07-07",
-            "position": 5
+            "position": 1
           },
           {
             "date": "2026-07-08",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-09",
@@ -27733,126 +28235,31 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-10",
-            "position": 5
+            "position": 1
           },
           {
             "date": "2026-07-11",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 4
+            "position": 10
           },
           {
             "date": "2026-07-13",
-            "position": 3
+            "position": 4
           },
           {
             "date": "2026-07-14",
-            "position": 5
-          },
-          {
-            "date": "2026-07-15",
             "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-lift-miami/",
-        "title": "Breast lift Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-23",
-            "position": 5
-          },
-          {
-            "date": "2026-06-24",
-            "position": 5
-          },
-          {
-            "date": "2026-06-25",
-            "position": 4
-          },
-          {
-            "date": "2026-06-26",
-            "position": 4
-          },
-          {
-            "date": "2026-06-27",
-            "position": 4
-          },
-          {
-            "date": "2026-06-28",
-            "position": 5
-          },
-          {
-            "date": "2026-06-29",
-            "position": 5
-          },
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
-            "position": 9
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          },
-          {
-            "date": "2026-07-03",
-            "position": 4
-          },
-          {
-            "date": "2026-07-04",
-            "position": 6
-          },
-          {
-            "date": "2026-07-05",
-            "position": 6
-          },
-          {
-            "date": "2026-07-06",
-            "position": 5
-          },
-          {
-            "date": "2026-07-07",
-            "position": 6
-          },
-          {
-            "date": "2026-07-08",
-            "position": 5
-          },
-          {
-            "date": "2026-07-09",
-            "position": 7
-          },
-          {
-            "date": "2026-07-10",
-            "position": 6
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 5
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": 6
           },
           {
             "date": "2026-07-15",
-            "position": 4
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -27952,13 +28359,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://www.reddit.com/r/drwilliammiami/comments/1t1uvy3/breast_lift_testimonial_ogee_plastic_surgery/",
-        "title": "Breast Lift Testimonial | Ogee Plastic Surgery",
-        "domain": "reddit.com",
+        "url": "https://www.realself.com/question/miami-florida-breast-lift-now",
+        "title": "Breast augmentation in 2014 - do I need a lift now? (Photos)",
+        "domain": "realself.com",
         "series": [
           {
             "date": "2026-06-23",
@@ -28006,11 +28417,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-05",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-06",
@@ -28018,7 +28429,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-08",
@@ -28026,11 +28437,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-11",
@@ -28042,113 +28453,224 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-15",
-            "position": 6
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://iconcosmeticcenter.com/breast-lift-miami",
-        "title": "Breast Lift Miami $4700",
-        "domain": "iconcosmeticcenter.com",
+        "url": "https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-lift/",
+        "title": "Breast Lift With Augmentation Miami",
+        "domain": "miamiplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": null
-          },
-          {
-            "date": "2026-06-26",
-            "position": null
-          },
-          {
-            "date": "2026-06-27",
-            "position": 6
-          },
-          {
-            "date": "2026-06-28",
-            "position": 6
-          },
-          {
-            "date": "2026-06-29",
-            "position": 6
-          },
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
             "position": 8
           },
           {
+            "date": "2026-06-24",
+            "position": null
+          },
+          {
+            "date": "2026-06-25",
+            "position": null
+          },
+          {
+            "date": "2026-06-26",
+            "position": null
+          },
+          {
+            "date": "2026-06-27",
+            "position": null
+          },
+          {
+            "date": "2026-06-28",
+            "position": null
+          },
+          {
+            "date": "2026-06-29",
+            "position": null
+          },
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
             "date": "2026-07-02",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-03",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-05",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-06",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-07",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 6
+            "position": 4
           },
           {
             "date": "2026-07-10",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-lift-miami/",
+        "title": "Breast lift Miami",
+        "domain": "thesecretplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-23",
+            "position": 5
+          },
+          {
+            "date": "2026-06-24",
+            "position": 5
+          },
+          {
+            "date": "2026-06-25",
+            "position": 4
+          },
+          {
+            "date": "2026-06-26",
+            "position": 4
+          },
+          {
+            "date": "2026-06-27",
+            "position": 4
+          },
+          {
+            "date": "2026-06-28",
+            "position": 5
+          },
+          {
+            "date": "2026-06-29",
+            "position": 5
+          },
+          {
+            "date": "2026-06-30",
+            "position": 7
+          },
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          },
+          {
+            "date": "2026-07-04",
+            "position": 6
+          },
+          {
+            "date": "2026-07-05",
+            "position": 6
+          },
+          {
+            "date": "2026-07-06",
+            "position": 5
+          },
+          {
+            "date": "2026-07-07",
+            "position": 6
+          },
+          {
+            "date": "2026-07-08",
+            "position": 5
+          },
+          {
+            "date": "2026-07-09",
+            "position": 7
+          },
+          {
+            "date": "2026-07-10",
+            "position": 6
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 5
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
+            "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -28249,112 +28771,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.realself.com/find/Florida/Miami/Breast-Lift",
-        "title": "Top Breast Lift Doctors in Miami, FL",
-        "domain": "realself.com",
-        "series": [
-          {
-            "date": "2026-06-23",
-            "position": null
-          },
-          {
-            "date": "2026-06-24",
-            "position": null
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": 10
-          },
-          {
-            "date": "2026-06-27",
-            "position": 8
-          },
-          {
-            "date": "2026-06-28",
-            "position": 8
-          },
-          {
-            "date": "2026-06-29",
-            "position": 9
-          },
-          {
-            "date": "2026-06-30",
-            "position": 8
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": 8
-          },
-          {
-            "date": "2026-07-03",
-            "position": 8
-          },
-          {
-            "date": "2026-07-04",
-            "position": 10
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": 8
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 9
-          },
-          {
-            "date": "2026-07-09",
-            "position": 9
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 9
-          },
-          {
-            "date": "2026-07-12",
-            "position": 8
-          },
-          {
-            "date": "2026-07-13",
-            "position": 10
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.drbaker.com/breast/breast-lift/",
-        "title": "Breast Lift Miami | Miami Mastopexy | Dr. Stephan Baker",
-        "domain": "drbaker.com",
+        "url": "https://iconcosmeticcenter.com/breast-lift-miami",
+        "title": "Breast Lift Miami $4700",
+        "domain": "iconcosmeticcenter.com",
         "series": [
           {
             "date": "2026-06-23",
@@ -28374,78 +28801,185 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-09",
-            "position": 10
+            "position": 6
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/breast/breast-lift/",
+        "title": "Breast Lift Miami, FL",
+        "domain": "themaercksinstitute.com",
+        "series": [
+          {
+            "date": "2026-06-23",
+            "position": 3
+          },
+          {
+            "date": "2026-06-24",
+            "position": 6
+          },
+          {
+            "date": "2026-06-25",
+            "position": 6
+          },
+          {
+            "date": "2026-06-26",
+            "position": 3
+          },
+          {
+            "date": "2026-06-27",
+            "position": 7
+          },
+          {
+            "date": "2026-06-28",
+            "position": 7
+          },
+          {
+            "date": "2026-06-29",
+            "position": 7
+          },
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          },
+          {
+            "date": "2026-07-04",
+            "position": 8
+          },
+          {
+            "date": "2026-07-05",
+            "position": 8
+          },
+          {
+            "date": "2026-07-06",
+            "position": 3
+          },
+          {
+            "date": "2026-07-07",
+            "position": 8
+          },
+          {
+            "date": "2026-07-08",
+            "position": 3
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 9
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": 3
+          },
+          {
+            "date": "2026-07-13",
+            "position": 8
+          },
+          {
+            "date": "2026-07-14",
+            "position": 8
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -28575,12 +29109,17 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "levantamiento de senos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "levantamiento de senos en miami"
       }
     ],
     "competitors": [
       {
         "url": "https://miamiplasticsurgery.com/es/surgical-services/breast-chest/breast-lift/",
-        "title": "Levantamiento de senos con aumento Miami | Cirugía Plástica Miami",
+        "title": "Levantamiento de senos con aumento Miami | Cirugía ...",
         "domain": "miamiplasticsurgery.com",
         "series": [
           {
@@ -28673,6 +29212,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -28773,12 +29316,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami ...",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -28871,6 +29418,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -28970,6 +29521,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
             "position": 4
           }
         ]
@@ -29070,6 +29625,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -29169,6 +29728,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -29268,180 +29831,85 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
       {
-        "url": "https://aeris.co/es/procedimientos/senos/revision-de-senos/",
-        "title": "Best Revisión de Senos Miami, FL | Aeris",
+        "url": "https://aeris.co/es/procedimientos/senos/levantamiento-de-senos/",
+        "title": "Best Levantamiento de Senos Miami, FL | Aeris",
         "domain": "aeris.co",
         "series": [
           {
             "date": "2026-06-23",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-24",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-25",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-26",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-27",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-28",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-29",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-06",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
             "position": 8
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 8
-          },
-          {
-            "date": "2026-07-14",
-            "position": 8
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
-        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
-        "domain": "cgcosmetic.com",
-        "series": [
-          {
-            "date": "2026-06-23",
-            "position": 10
-          },
-          {
-            "date": "2026-06-24",
-            "position": 8
-          },
-          {
-            "date": "2026-06-25",
-            "position": 8
-          },
-          {
-            "date": "2026-06-26",
-            "position": 10
-          },
-          {
-            "date": "2026-06-27",
-            "position": 9
-          },
-          {
-            "date": "2026-06-28",
-            "position": 9
-          },
-          {
-            "date": "2026-06-29",
-            "position": 10
-          },
-          {
-            "date": "2026-06-30",
-            "position": 6
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 10
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 8
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
           },
           {
             "date": "2026-07-10",
@@ -29449,11 +29917,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-13",
@@ -29465,7 +29933,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
-            "position": 9
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -29565,6 +30037,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 10
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
@@ -29658,6 +30134,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 4,
         "keyword": "aumento de senos transumbilical en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 4,
+        "keyword": "aumento de senos transumbilical en miami"
       }
     ],
     "competitors": [
@@ -29728,6 +30209,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -29800,6 +30285,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -29870,6 +30359,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -29942,6 +30435,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -30012,6 +30509,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -30084,6 +30585,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -30154,6 +30659,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -30226,6 +30735,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -30297,77 +30810,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.miamibreastcenter.com/sp",
-        "title": "Reconstrucción y Aumento de Senos con Transferencia de Grasa Corporal",
-        "domain": "miamibreastcenter.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": 10
-          },
-          {
-            "date": "2026-07-02",
-            "position": 10
-          },
-          {
-            "date": "2026-07-03",
-            "position": 10
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 10
-          },
-          {
-            "date": "2026-07-06",
-            "position": 10
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 10
-          },
-          {
-            "date": "2026-07-09",
+            "date": "2026-07-16",
             "position": 9
-          },
-          {
-            "date": "2026-07-10",
-            "position": 10
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 8
-          },
-          {
-            "date": "2026-07-13",
-            "position": 10
-          },
-          {
-            "date": "2026-07-14",
-            "position": 10
-          },
-          {
-            "date": "2026-07-15",
-            "position": 10
           }
         ]
       }
@@ -30466,6 +30912,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "aumento de senos transabdominal en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "aumento de senos transabdominal en miami"
       }
     ],
     "competitors": [
@@ -30536,6 +30987,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -30608,6 +31063,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -30678,6 +31137,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -30750,6 +31213,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -30821,12 +31288,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
       {
         "url": "https://www.arykraumd.com/espanol/aumento-de-senos/",
-        "title": "Cirujano plástico dedicado al aumento de senos en Miami, FL",
+        "title": "Cirujano plástico dedicado al aumento de senos en Miami ...",
         "domain": "arykraumd.com",
         "series": [
           {
@@ -30891,6 +31362,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 6
+          },
+          {
+            "date": "2026-07-16",
             "position": 6
           }
         ]
@@ -30963,6 +31438,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -31034,21 +31513,25 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.aserureplasticsurgery.com/es/procedimientos-de-cirugia-plastica-en-miami/procedimiento-de-senos/aumento-de-senos/",
-        "title": "Breast Implants Miami FL | Coral Gables",
-        "domain": "aserureplasticsurgery.com",
+        "url": "https://www.cgcosmetic.com/aumento-de-senos-miami/",
+        "title": "Miami Cirugia Plastica, Aumento de Senos $2500",
+        "domain": "cgcosmetic.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-02",
@@ -31060,78 +31543,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 9
-          },
-          {
-            "date": "2026-07-06",
             "position": 10
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 9
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.arcplasticsurgeons.com/es/senos/levantamiento-de-senos/",
-        "title": "Levantamiento de Senos Miami | Mastopexia Aventura",
-        "domain": "arcplasticsurgeons.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
           },
           {
             "date": "2026-07-05",
@@ -31143,7 +31555,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-08",
@@ -31151,7 +31563,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-10",
@@ -31159,11 +31571,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-13",
@@ -31175,7 +31587,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
@@ -31274,6 +31690,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 2,
         "keyword": "transumbilical breast augmentation miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 2,
+        "keyword": "transumbilical breast augmentation miami"
       }
     ],
     "competitors": [
@@ -31344,6 +31765,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -31416,77 +31841,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.drhamawy.com/breast/transumblical-augmentation/",
-        "title": "Transumbilical Breast Augmentation | Princeton Plastic Surgeons",
-        "domain": "drhamawy.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": 4
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 4
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -31558,6 +31916,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
@@ -31629,6 +31991,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -31700,148 +32066,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://4beauty.net/breast/breast-augmentation/",
-        "title": "Breast Augmentation in Miami, FL",
-        "domain": "4beauty.net",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.talroudnerplasticsurgery.com/breast-surgery/",
-        "title": "Dr. Tal T Roudner, Miami Breast Surgery Specialist",
-        "domain": "talroudnerplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": 7
-          },
-          {
-            "date": "2026-07-01",
+            "date": "2026-07-16",
             "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 7
-          },
-          {
-            "date": "2026-07-03",
-            "position": 7
-          },
-          {
-            "date": "2026-07-04",
-            "position": 6
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": 9
-          },
-          {
-            "date": "2026-07-07",
-            "position": 8
-          },
-          {
-            "date": "2026-07-08",
-            "position": 8
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": 9
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
-            "position": 8
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
           }
         ]
       },
@@ -31913,13 +32141,242 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://www.instagram.com/p/DTy00WrGD_i/",
-        "title": "Before & After: Transumbilical Breast Augmentation This lovely patient ...",
-        "domain": "instagram.com",
+        "url": "https://www.talroudnerplasticsurgery.com/breast-surgery/",
+        "title": "Dr. Tal T Roudner, Miami Breast Surgery Specialist",
+        "domain": "talroudnerplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 7
+          },
+          {
+            "date": "2026-07-01",
+            "position": 5
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 7
+          },
+          {
+            "date": "2026-07-04",
+            "position": 6
+          },
+          {
+            "date": "2026-07-05",
+            "position": 7
+          },
+          {
+            "date": "2026-07-06",
+            "position": 9
+          },
+          {
+            "date": "2026-07-07",
+            "position": 8
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": 8
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 7
+          },
+          {
+            "date": "2026-07-12",
+            "position": 9
+          },
+          {
+            "date": "2026-07-13",
+            "position": 7
+          },
+          {
+            "date": "2026-07-14",
+            "position": 8
+          },
+          {
+            "date": "2026-07-15",
+            "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
+        "title": "Best Breast Augmentation in Miami, FL",
+        "domain": "gablesplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 8
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 9
+          },
+          {
+            "date": "2026-07-08",
+            "position": 10
+          },
+          {
+            "date": "2026-07-09",
+            "position": 9
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 8
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 8
+          },
+          {
+            "date": "2026-07-14",
+            "position": 9
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.josefhadeedmd.com/miami/plastic-surgery-procedures/gender-affirmation/male-to-female-mtf-top-surgery/",
+        "title": "Male to Female (MTF) Top Surgery | Miami, FL",
+        "domain": "josefhadeedmd.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 10
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 5
+          },
+          {
+            "date": "2026-07-09",
+            "position": 6
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 9
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 9
+          },
+          {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/video/new-scarless-tuba-breast-augmentation-option",
+        "title": "New scarless TUBA Breast Augmentation option!",
+        "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-30",
@@ -31983,6 +32440,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -31993,6 +32454,11 @@ window.SEO_POSITION_DATA = {
         "position": 2,
         "url": "https://avanaplasticsurgery.com/transumbilical-breast-augmentation-miami",
         "is_target": true
+      },
+      {
+        "position": 10,
+        "url": "https://avanaplasticsurgery.com/video/new-scarless-tuba-breast-augmentation-option",
+        "is_target": false
       }
     ]
   },
@@ -32077,87 +32543,96 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "transabdominal breast augmentation miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "transabdominal breast augmentation miami"
       }
     ],
     "competitors": [
       {
-        "url": "https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami",
-        "title": "Transabdominal Breast Augmentation (TABA) Miami",
+        "url": "https://miamiplasticsurgery.com/surgical-services/breast-chest/breast-augmentation/",
+        "title": "Miami Breast Implants",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": 1
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 1
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
+      {
+        "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
+        "title": "Breast Augmentation Miami - Starts at $3000",
         "domain": "avanaplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 1
-          },
-          {
-            "date": "2026-07-01",
-            "position": 1
-          },
-          {
-            "date": "2026-07-02",
-            "position": 1
-          },
-          {
-            "date": "2026-07-03",
-            "position": 1
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 1
-          },
-          {
-            "date": "2026-07-06",
-            "position": 1
-          },
-          {
-            "date": "2026-07-07",
-            "position": 1
-          },
-          {
-            "date": "2026-07-08",
-            "position": 1
-          },
-          {
-            "date": "2026-07-09",
-            "position": 1
-          },
-          {
-            "date": "2026-07-10",
-            "position": 1
-          },
-          {
-            "date": "2026-07-11",
-            "position": 1
-          },
-          {
-            "date": "2026-07-12",
-            "position": 1
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": 1
-          },
-          {
-            "date": "2026-07-15",
-            "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/breast/breast-augmentation/",
-        "title": "Breast Augmentation Miami, FL",
-        "domain": "themaercksinstitute.com",
-        "series": [
-          {
-            "date": "2026-06-30",
             "position": null
           },
           {
@@ -32178,7 +32653,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-05",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-06",
@@ -32186,7 +32661,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-08",
@@ -32202,11 +32677,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": 3
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-13",
@@ -32218,149 +32693,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
-            "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://drlenny.com/",
-        "title": "Miami's Top Plastic Surgeon & Breast Specialist - Dr. Leonard A. Roudner",
-        "domain": "drlenny.com",
-        "series": [
-          {
-            "date": "2026-06-30",
             "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": 7
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 7
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
+            "date": "2026-07-16",
             "position": 2
-          },
-          {
-            "date": "2026-07-08",
-            "position": 2
-          },
-          {
-            "date": "2026-07-09",
-            "position": 2
-          },
-          {
-            "date": "2026-07-10",
-            "position": 2
-          },
-          {
-            "date": "2026-07-11",
-            "position": 2
-          },
-          {
-            "date": "2026-07-12",
-            "position": 2
-          },
-          {
-            "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
-            "position": 2
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
-        "title": "Breast Augmentation Miami with Implants ...",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": 3
-          },
-          {
-            "date": "2026-07-01",
-            "position": 3
-          },
-          {
-            "date": "2026-07-02",
-            "position": 3
-          },
-          {
-            "date": "2026-07-03",
-            "position": 3
-          },
-          {
-            "date": "2026-07-04",
-            "position": 4
-          },
-          {
-            "date": "2026-07-05",
-            "position": 3
-          },
-          {
-            "date": "2026-07-06",
-            "position": 3
-          },
-          {
-            "date": "2026-07-07",
-            "position": 3
-          },
-          {
-            "date": "2026-07-08",
-            "position": 4
-          },
-          {
-            "date": "2026-07-09",
-            "position": 4
-          },
-          {
-            "date": "2026-07-10",
-            "position": 4
-          },
-          {
-            "date": "2026-07-11",
-            "position": 4
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 3
-          },
-          {
-            "date": "2026-07-14",
-            "position": 4
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
           }
         ]
       },
@@ -32432,84 +32769,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/breast-plastic-surgery/breast-augmentation-miami/",
-        "title": "Breast augmentation Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": 5
-          },
-          {
-            "date": "2026-07-01",
-            "position": 5
-          },
-          {
-            "date": "2026-07-02",
-            "position": 4
-          },
-          {
-            "date": "2026-07-03",
-            "position": 4
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": 4
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": 6
-          },
-          {
-            "date": "2026-07-08",
-            "position": 6
-          },
-          {
-            "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
-            "position": 6
-          },
-          {
-            "date": "2026-07-11",
-            "position": 6
-          },
-          {
-            "date": "2026-07-12",
-            "position": 5
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 5
-          },
-          {
-            "date": "2026-07-15",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://4beauty.net/breast-implants/",
-        "title": "Breast Implant in Miami with Dr. Mendieta in Miami, FL",
-        "domain": "4beauty.net",
+        "url": "https://drlenny.com/",
+        "title": "Miami's Top Plastic Surgeon & Breast Specialist - Dr. Leonard A. Roudner",
+        "domain": "drlenny.com",
         "series": [
           {
             "date": "2026-06-30",
@@ -32517,7 +32787,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-02",
@@ -32529,7 +32799,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-05",
@@ -32541,110 +32811,118 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 2
           },
           {
             "date": "2026-07-15",
-            "position": 7
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
       {
-        "url": "https://umiamihealth.org/en/treatments-and-services/plastic-surgery/breast-reconstruction",
-        "title": "Breast Reconstruction",
-        "domain": "umiamihealth.org",
+        "url": "https://www.arykraumd.com/breast-surgery/miami-breast-augmentation/",
+        "title": "Breast Augmentation Miami FL - Breast Implant Surgeon Miami",
+        "domain": "arykraumd.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-07-01",
-            "position": 6
+            "position": 8
           },
           {
             "date": "2026-07-02",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-07-03",
-            "position": 6
+            "position": 7
           },
           {
             "date": "2026-07-04",
-            "position": 8
+            "position": 3
           },
           {
             "date": "2026-07-05",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-06",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-07",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 7
+            "position": 10
           },
           {
             "date": "2026-07-09",
-            "position": 7
+            "position": 8
           },
           {
             "date": "2026-07-10",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": 8
           },
           {
             "date": "2026-07-14",
-            "position": 7
+            "position": 8
           },
           {
             "date": "2026-07-15",
-            "position": 8
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -32716,37 +32994,41 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://www.gablesplasticsurgery.com/breast/breast-augmentation/",
-        "title": "Best Breast Augmentation in Miami, FL",
-        "domain": "gablesplasticsurgery.com",
+        "url": "https://www.cgcosmetic.com/breast-augmentation-miami/",
+        "title": "Breast Augmentation in Miami Starting at $2500",
+        "domain": "cgcosmetic.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-01",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-02",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-03",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-05",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-06",
@@ -32754,38 +33036,267 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 4
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://drnathan.com/plastic-surgery/breast/breast-augmentation-with-fat-transfer/",
+        "title": "Fat Transfer Breast Augmentation in Miami & Miramar, FL",
+        "domain": "drnathan.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/breast-augmentation-miami",
+        "title": "Breast Augmentation Miami with Implants ...",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 3
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 3
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 4
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": 3
+          },
+          {
+            "date": "2026-07-07",
+            "position": 3
+          },
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": 4
+          },
+          {
+            "date": "2026-07-10",
+            "position": 4
+          },
+          {
+            "date": "2026-07-11",
+            "position": 4
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 3
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://umiamihealth.org/en/treatments-and-services/plastic-surgery/breast-reconstruction",
+        "title": "Breast Reconstruction",
+        "domain": "umiamihealth.org",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": 6
+          },
+          {
+            "date": "2026-07-02",
+            "position": 6
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          },
+          {
+            "date": "2026-07-04",
+            "position": 8
+          },
+          {
+            "date": "2026-07-05",
+            "position": 6
+          },
+          {
+            "date": "2026-07-06",
+            "position": 6
+          },
+          {
+            "date": "2026-07-07",
+            "position": 7
+          },
+          {
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
+            "position": 7
+          },
+          {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 8
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": 9
+          },
+          {
+            "date": "2026-07-14",
+            "position": 7
+          },
+          {
+            "date": "2026-07-15",
+            "position": 8
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -32793,9 +33304,9 @@ window.SEO_POSITION_DATA = {
     ],
     "pages": [
       {
-        "position": 1,
-        "url": "https://avanaplasticsurgery.com/transabdominal-breast-augmentation-miami",
-        "is_target": true
+        "position": 2,
+        "url": "https://avanaplasticsurgery.com/breast-augmentation-miami",
+        "is_target": false
       }
     ]
   },
@@ -32880,6 +33391,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "tummy tuck miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "tummy tuck miami"
       }
     ],
     "competitors": [
@@ -32950,6 +33466,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -33022,6 +33542,160 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "url": "https://www.drsimonplasticsurgery.com/procedures/tummy-tuck",
+        "title": "Tummy Tuck (Abdominoplasty) Miami, FL",
+        "domain": "drsimonplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 8
+          },
+          {
+            "date": "2026-07-01",
+            "position": 4
+          },
+          {
+            "date": "2026-07-02",
+            "position": 4
+          },
+          {
+            "date": "2026-07-03",
+            "position": 3
+          },
+          {
+            "date": "2026-07-04",
+            "position": 4
+          },
+          {
+            "date": "2026-07-05",
+            "position": 3
+          },
+          {
+            "date": "2026-07-06",
+            "position": 3
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": 3
+          },
+          {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/tummy-tuck/revision-tummy-tuck/",
+        "title": "Revision Tummy Tuck Miami, FL",
+        "domain": "themaercksinstitute.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 6
+          },
+          {
+            "date": "2026-07-01",
+            "position": 3
+          },
+          {
+            "date": "2026-07-02",
+            "position": 5
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": 3
+          },
+          {
+            "date": "2026-07-05",
+            "position": 4
+          },
+          {
+            "date": "2026-07-06",
+            "position": 8
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": 4
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": 8
+          },
+          {
+            "date": "2026-07-12",
+            "position": 8
+          },
+          {
+            "date": "2026-07-13",
+            "position": 10
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -33093,6 +33767,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -33164,6 +33842,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -33235,6 +33917,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -33306,17 +33992,21 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://aeris.co/best-tummy-tuck-in-miami/",
-        "title": "5 Things You Need To Know About Getting The Best ...",
-        "domain": "aeris.co",
+        "url": "https://prestigeplasticsurgery.com/mini-tummy-tuck/",
+        "title": "Mini Tummy Tuck in Miami, FL",
+        "domain": "prestigeplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": 10
+            "position": 9
           },
           {
             "date": "2026-07-01",
@@ -33324,7 +34014,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-03",
@@ -33344,232 +34034,19 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": 8
-          },
-          {
-            "date": "2026-07-08",
-            "position": 9
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://imagosplasticsurgery.com/body/tummy-tuck/",
-        "title": "Tummy Tuck Surgery Miami, FL",
-        "domain": "imagosplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": 10
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://www.drbaker.com/body/tummy-tuck/",
-        "title": "Tummy Tuck Miami | Abdominoplasty | Dr. Stephan Baker",
-        "domain": "drbaker.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
             "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://bodybycraft.com/full-tummy-tuck-miami/miami-tummy-tuck-surgery-cost-explained/",
-        "title": "Miami Tummy Tuck Surgery Cost Explained",
-        "domain": "bodybycraft.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-11",
@@ -33577,7 +34054,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-13",
@@ -33585,11 +34062,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-15",
-            "position": 10
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       }
@@ -33683,9 +34164,89 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "tummy tuck en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "tummy tuck en miami"
       }
     ],
     "competitors": [
+      {
+        "url": "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami",
+        "title": "Tummy Tuck en Miami Florida Desde $4000",
+        "domain": "avanaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 1
+          },
+          {
+            "date": "2026-07-01",
+            "position": 1
+          },
+          {
+            "date": "2026-07-02",
+            "position": 1
+          },
+          {
+            "date": "2026-07-03",
+            "position": 1
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 1
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 1
+          },
+          {
+            "date": "2026-07-11",
+            "position": 1
+          },
+          {
+            "date": "2026-07-12",
+            "position": 1
+          },
+          {
+            "date": "2026-07-13",
+            "position": 1
+          },
+          {
+            "date": "2026-07-14",
+            "position": 1
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
       {
         "url": "https://spectrum-aesthetics.com/tummy-tuck-miami/",
         "title": "Tummy Tuck Miami - Cost $3000",
@@ -33754,6 +34315,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -33825,76 +34390,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/tummy-tuck/revision-tummy-tuck/",
-        "title": "Revision Tummy Tuck Miami, FL",
-        "domain": "themaercksinstitute.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
           },
           {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": 7
-          },
-          {
-            "date": "2026-07-07",
-            "position": 7
-          },
-          {
-            "date": "2026-07-08",
-            "position": 7
-          },
-          {
-            "date": "2026-07-09",
-            "position": 7
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 4
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -33967,6 +34465,85 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://www.themaercksinstitute.com/plastic-surgery-miami-fl/body/tummy-tuck/",
+        "title": "Tummy Tuck Miami, FL",
+        "domain": "themaercksinstitute.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 5
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": 9
+          },
+          {
+            "date": "2026-07-04",
+            "position": 8
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 9
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -34038,17 +34615,21 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
       {
-        "url": "https://www.thesecretplasticsurgery.com/body-plastic-surgery-miami/hourglass-tummy-tuck-miami/",
+        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/abdominoplastia-con-curvas-en-miami/",
         "title": "Hourglass Tummy Tuck Miami",
         "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-06-30",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-01",
@@ -34060,11 +34641,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-04",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-05",
@@ -34072,78 +34653,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-06",
-            "position": 6
-          },
-          {
-            "date": "2026-07-07",
-            "position": 6
-          },
-          {
-            "date": "2026-07-08",
-            "position": 6
-          },
-          {
-            "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
             "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://revivesurgery.com/body/tummy-tuck/",
-        "title": "Tummy Tuck in Miami, FL",
-        "domain": "revivesurgery.com",
-        "series": [
-          {
-            "date": "2026-06-30",
-            "position": null
-          },
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 10
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": 10
           },
           {
             "date": "2026-07-07",
@@ -34159,7 +34669,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-11",
@@ -34171,14 +34681,18 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-14",
-            "position": 10
+            "position": 4
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -34251,11 +34765,171 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://revivesurgery.com/body/tummy-tuck/",
+        "title": "Tummy Tuck in Miami, FL",
+        "domain": "revivesurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": null
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": 10
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": 10
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 10
+          },
+          {
+            "date": "2026-07-15",
+            "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
+          }
+        ]
+      },
+      {
+        "url": "https://prestigeplasticsurgery.com/mini-tummy-tuck/",
+        "title": "Mini Tummy Tuck in Miami, FL",
+        "domain": "prestigeplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-06-30",
+            "position": 9
+          },
+          {
+            "date": "2026-07-01",
+            "position": null
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": 9
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": 9
+          },
+          {
+            "date": "2026-07-07",
+            "position": 9
+          },
+          {
+            "date": "2026-07-08",
+            "position": 9
+          },
+          {
+            "date": "2026-07-09",
+            "position": 9
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 9
+          },
+          {
+            "date": "2026-07-14",
+            "position": 9
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 10
           }
         ]
       }
     ],
-    "pages": []
+    "pages": [
+      {
+        "position": 1,
+        "url": "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami",
+        "is_target": true
+      }
+    ]
   },
   "https://avanaplasticsurgery.com/buttock-reduction-miami": {
     "series": [
@@ -34333,6 +35007,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 2,
         "keyword": "buttock reduction in miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 2,
+        "keyword": "buttock reduction in miami"
       }
     ],
     "competitors": [
@@ -34399,6 +35078,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -34467,12 +35150,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
       {
         "url": "https://www.plasticsurgery.org/news/articles/an-alternative-to-the-brazilian-butt-lift-what-is-the-miami-thong-lift",
-        "title": "An alternative to the Brazilian butt lift: What is the Miami thong lift?",
+        "title": "An alternative to the Brazilian butt lift: What is the Miami ...",
         "domain": "plasticsurgery.org",
         "series": [
           {
@@ -34533,6 +35220,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -34601,6 +35292,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -34667,6 +35362,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -34735,6 +35434,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -34802,12 +35505,16 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
       {
         "url": "https://wtriggsmd.com/brazilian-buttlift-liposuction-with-fat-transfer-to-buttocks-hips/",
-        "title": "Brazilian Buttlift (Liposuction With Fat Transfer To Buttocks & Hips)",
+        "title": "Brazilian Buttlift (Liposuction With Fat Transfer To Buttocks ...",
         "domain": "wtriggsmd.com",
         "series": [
           {
@@ -34869,17 +35576,21 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://4beauty.net/buttocks/butt-injections/",
+        "url": "https://4beauty.net/procedure/buttocks/butt-injections/",
         "title": "Butt Injections in Miami, FL",
         "domain": "4beauty.net",
         "series": [
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-02",
@@ -34931,38 +35642,42 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 9
           }
         ]
       },
       {
-        "url": "https://www.instagram.com/reel/DNWz_lHSPWi/?hl=en",
-        "title": "Mini Miami butt lift helps re-contour your booty and Dr. Struck's hides ...",
-        "domain": "instagram.com",
+        "url": "https://www.youtube.com/shorts/QBrUUEa9_LI",
+        "title": "Buttock Reduction with Dr. Zuri in Miami | Zuri Plastic Surgery",
+        "domain": "youtube.com",
         "series": [
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-03",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-06",
@@ -34970,38 +35685,42 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-14",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -35091,6 +35810,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "abdominoplastia con curvas en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "abdominoplastia con curvas en miami"
       }
     ],
     "competitors": [
@@ -35157,6 +35881,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -35225,6 +35953,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -35291,6 +36023,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -35359,73 +36095,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://iconcosmeticcenter.com/es/abdominoplastia-en-miami",
-        "title": "Abdominoplastia en Miami",
-        "domain": "iconcosmeticcenter.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": 10
           },
           {
-            "date": "2026-07-02",
-            "position": 8
-          },
-          {
-            "date": "2026-07-03",
+            "date": "2026-07-16",
             "position": 4
-          },
-          {
-            "date": "2026-07-04",
-            "position": 8
-          },
-          {
-            "date": "2026-07-05",
-            "position": 7
-          },
-          {
-            "date": "2026-07-06",
-            "position": 9
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 10
-          },
-          {
-            "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
-            "position": 9
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": 6
-          },
-          {
-            "date": "2026-07-14",
-            "position": 5
-          },
-          {
-            "date": "2026-07-15",
-            "position": 5
           }
         ]
       },
@@ -35493,6 +36166,223 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://iconcosmeticcenter.com/es/abdominoplastia-en-miami",
+        "title": "Abdominoplastia en Miami",
+        "domain": "iconcosmeticcenter.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": 10
+          },
+          {
+            "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 4
+          },
+          {
+            "date": "2026-07-04",
+            "position": 8
+          },
+          {
+            "date": "2026-07-05",
+            "position": 7
+          },
+          {
+            "date": "2026-07-06",
+            "position": 9
+          },
+          {
+            "date": "2026-07-07",
+            "position": null
+          },
+          {
+            "date": "2026-07-08",
+            "position": 10
+          },
+          {
+            "date": "2026-07-09",
+            "position": 6
+          },
+          {
+            "date": "2026-07-10",
+            "position": 9
+          },
+          {
+            "date": "2026-07-11",
+            "position": 7
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": 6
+          },
+          {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://drhanabergh.com/es/abdominoplastia/",
+        "title": "Abdominoplastia",
+        "domain": "drhanabergh.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": 8
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          },
+          {
+            "date": "2026-07-04",
+            "position": 7
+          },
+          {
+            "date": "2026-07-05",
+            "position": 6
+          },
+          {
+            "date": "2026-07-06",
+            "position": 7
+          },
+          {
+            "date": "2026-07-07",
+            "position": 8
+          },
+          {
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
+            "position": 7
+          },
+          {
+            "date": "2026-07-10",
+            "position": 7
+          },
+          {
+            "date": "2026-07-11",
+            "position": 6
+          },
+          {
+            "date": "2026-07-12",
+            "position": 8
+          },
+          {
+            "date": "2026-07-13",
+            "position": 7
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
+          }
+        ]
+      },
+      {
+        "url": "https://seductioncosmetic.com/es/abdominoplastia-con-curvas-en-miami/",
+        "title": "Abdominoplastia con efecto reloj de arena en Miami",
+        "domain": "seductioncosmetic.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": 9
+          },
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": 9
+          },
+          {
+            "date": "2026-07-06",
+            "position": 8
+          },
+          {
+            "date": "2026-07-07",
+            "position": 2
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": 8
+          },
+          {
+            "date": "2026-07-11",
+            "position": 9
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 8
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -35560,207 +36450,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.arcplasticsurgeons.com/es/blog/cirugia-de-abdominoplastia-abdominoplastia-miami/",
-        "title": "Cirugía de Abdominoplastia Miami - ARC Plastic Surgery",
-        "domain": "arcplasticsurgeons.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": null
           },
           {
-            "date": "2026-07-02",
-            "position": 10
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 10
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 8
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://www.thesecretplasticsurgery.com/es/cirugia-plastica-corporal-miami/abdominoplastia-con-curvas-en-miami/",
-        "title": "Hourglass Tummy Tuck Miami",
-        "domain": "thesecretplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": 10
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": 2
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
+            "date": "2026-07-16",
             "position": 9
-          },
-          {
-            "date": "2026-07-15",
-            "position": 9
-          }
-        ]
-      },
-      {
-        "url": "https://www.zuriplasticsurgery.com/es/cuerpo/abdominoplastia/",
-        "title": "Abdominoplastia Miami | La mejor con Zuri Cirugía Plástica",
-        "domain": "zuriplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": null
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 10
-          },
-          {
-            "date": "2026-07-15",
-            "position": 10
           }
         ]
       }
@@ -35849,6 +36542,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 2,
         "keyword": "hourglass tummy tuck miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 2,
+        "keyword": "hourglass tummy tuck miami"
       }
     ],
     "competitors": [
@@ -35915,6 +36613,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -35983,6 +36685,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -36049,6 +36755,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -36117,6 +36827,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -36184,13 +36898,17 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
       {
-        "url": "https://miamilifecosmetic.com/surgeon/camille-chavez-m-d/",
-        "title": "Dr. Camille Chávez, M.D. – Miami Life Cosmetic Surgery",
-        "domain": "miamilifecosmetic.com",
+        "url": "https://www.thesecretplasticsurgery.com/",
+        "title": "The Secret Plastic Surgery: Miami Plastic Surgery Center",
+        "domain": "thesecretplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-01",
@@ -36198,7 +36916,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-03",
@@ -36206,11 +36924,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-06",
@@ -36218,86 +36936,90 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-08",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-10",
-            "position": 6
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 6
-          },
-          {
-            "date": "2026-07-15",
-            "position": 6
-          }
-        ]
-      },
-      {
-        "url": "https://boutinicaesthetics.com/tummy-tuck-miami/",
-        "title": "Tummy Tuck Miami - $4000 Best Price",
-        "domain": "boutinicaesthetics.com",
-        "series": [
-          {
-            "date": "2026-07-01",
-            "position": null
-          },
-          {
-            "date": "2026-07-02",
-            "position": null
-          },
-          {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 6
-          },
-          {
-            "date": "2026-07-05",
-            "position": null
-          },
-          {
-            "date": "2026-07-06",
-            "position": null
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
             "position": 8
           },
           {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.careagaplasticsurgery.com/",
+        "title": "Top Miami Plastic Surgeons | Careaga Plastic Surgery ...",
+        "domain": "careagaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-01",
+            "position": 7
+          },
+          {
+            "date": "2026-07-02",
+            "position": 7
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": null
+          },
+          {
+            "date": "2026-07-07",
+            "position": 10
+          },
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
             "date": "2026-07-09",
             "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-11",
@@ -36309,14 +37031,18 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-14",
-            "position": 7
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
@@ -36385,21 +37111,25 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://www.atilimvinc.com/shop/manufacturer-site?&transition=top35096953041170",
-        "title": "Hourglass Tummy Tuck Get Rid Of Hourglass Figure Male ...",
-        "domain": "atilimvinc.com",
+        "url": "https://www.brandonplasticsurgery.com/hourglass-tummy-tuck-landing-page/",
+        "title": "Hourglass Tummy Tuck Landing Page Tampa FL",
+        "domain": "brandonplasticsurgery.com",
         "series": [
           {
             "date": "2026-07-01",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-02",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-03",
@@ -36407,11 +37137,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-04",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-05",
-            "position": null
+            "position": 5
           },
           {
             "date": "2026-07-06",
@@ -36419,31 +37149,31 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-07",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-12",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 6
           },
           {
             "date": "2026-07-14",
@@ -36451,14 +37181,18 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 9
           }
         ]
       },
       {
-        "url": "https://www.fusionmdcosmeticsurgery.com/body/tummy-tuck-liposuction-miami-combo/",
-        "title": "Curvy Tuck in Miami | Miami Combo at FusionMD",
-        "domain": "fusionmdcosmeticsurgery.com",
+        "url": "https://www.instagram.com/reel/DZfvtoNslv7/",
+        "title": "It's gone",
+        "domain": "instagram.com",
         "series": [
           {
             "date": "2026-07-01",
@@ -36470,11 +37204,11 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-03",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-04",
-            "position": 10
+            "position": null
           },
           {
             "date": "2026-07-05",
@@ -36482,7 +37216,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-06",
-            "position": 5
+            "position": null
           },
           {
             "date": "2026-07-07",
@@ -36502,7 +37236,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 9
           },
           {
             "date": "2026-07-12",
@@ -36510,7 +37244,7 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-13",
-            "position": null
+            "position": 10
           },
           {
             "date": "2026-07-14",
@@ -36518,6 +37252,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -36602,6 +37340,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "reducción de glúteos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "reducción de glúteos en miami"
       }
     ],
     "competitors": [
@@ -36664,6 +37407,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -36728,6 +37475,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -36790,6 +37541,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -36854,69 +37609,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
-          }
-        ]
-      },
-      {
-        "url": "https://miamiplasticsurgery.com/es/butt-implants-miami-candidate/",
-        "title": "¿Es usted un buen candidato para los implantes de glúteos en Miami?",
-        "domain": "miamiplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-02",
-            "position": 8
           },
           {
-            "date": "2026-07-03",
-            "position": 6
-          },
-          {
-            "date": "2026-07-04",
-            "position": 5
-          },
-          {
-            "date": "2026-07-05",
-            "position": 5
-          },
-          {
-            "date": "2026-07-06",
-            "position": 5
-          },
-          {
-            "date": "2026-07-07",
-            "position": 5
-          },
-          {
-            "date": "2026-07-08",
-            "position": 8
-          },
-          {
-            "date": "2026-07-09",
-            "position": 8
-          },
-          {
-            "date": "2026-07-10",
-            "position": 6
-          },
-          {
-            "date": "2026-07-11",
+            "date": "2026-07-16",
             "position": 4
-          },
-          {
-            "date": "2026-07-12",
-            "position": 6
-          },
-          {
-            "date": "2026-07-13",
-            "position": 5
-          },
-          {
-            "date": "2026-07-14",
-            "position": 5
-          },
-          {
-            "date": "2026-07-15",
-            "position": 5
           }
         ]
       },
@@ -36980,6 +37676,144 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/butt-implants-miami-candidate/",
+        "title": "¿Es usted un buen candidato para los implantes de glúteos en Miami?",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-02",
+            "position": 8
+          },
+          {
+            "date": "2026-07-03",
+            "position": 6
+          },
+          {
+            "date": "2026-07-04",
+            "position": 5
+          },
+          {
+            "date": "2026-07-05",
+            "position": 5
+          },
+          {
+            "date": "2026-07-06",
+            "position": 5
+          },
+          {
+            "date": "2026-07-07",
+            "position": 5
+          },
+          {
+            "date": "2026-07-08",
+            "position": 8
+          },
+          {
+            "date": "2026-07-09",
+            "position": 8
+          },
+          {
+            "date": "2026-07-10",
+            "position": 6
+          },
+          {
+            "date": "2026-07-11",
+            "position": 4
+          },
+          {
+            "date": "2026-07-12",
+            "position": 6
+          },
+          {
+            "date": "2026-07-13",
+            "position": 5
+          },
+          {
+            "date": "2026-07-14",
+            "position": 5
+          },
+          {
+            "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.careagaplasticsurgery.com/es/levantamiento-de-gluteos-brasileno/",
+        "title": "Levantamiento de glúteos brasileño - Miami, FL",
+        "domain": "careagaplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-02",
+            "position": null
+          },
+          {
+            "date": "2026-07-03",
+            "position": null
+          },
+          {
+            "date": "2026-07-04",
+            "position": null
+          },
+          {
+            "date": "2026-07-05",
+            "position": null
+          },
+          {
+            "date": "2026-07-06",
+            "position": 10
+          },
+          {
+            "date": "2026-07-07",
+            "position": 10
+          },
+          {
+            "date": "2026-07-08",
+            "position": 7
+          },
+          {
+            "date": "2026-07-09",
+            "position": 7
+          },
+          {
+            "date": "2026-07-10",
+            "position": 8
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 7
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -37043,6 +37877,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
@@ -37106,68 +37944,9 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://es.buttsbymendieta.com/blog/cirujano-plastico-de-miami-especializado-en-gluteos/",
-        "title": "Cirujano Plástico de Miami Especializado en Glúteos*",
-        "domain": "es.buttsbymendieta.com",
-        "series": [
-          {
-            "date": "2026-07-02",
-            "position": null
           },
           {
-            "date": "2026-07-03",
-            "position": null
-          },
-          {
-            "date": "2026-07-04",
-            "position": 10
-          },
-          {
-            "date": "2026-07-05",
-            "position": 9
-          },
-          {
-            "date": "2026-07-06",
-            "position": 9
-          },
-          {
-            "date": "2026-07-07",
-            "position": null
-          },
-          {
-            "date": "2026-07-08",
-            "position": 6
-          },
-          {
-            "date": "2026-07-09",
-            "position": 6
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": 8
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 9
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 9
           }
         ]
@@ -37180,7 +37959,7 @@ window.SEO_POSITION_DATA = {
         "is_target": false
       },
       {
-        "position": 8,
+        "position": 9,
         "url": "https://avanaplasticsurgery.com/espanol/video/aumento-de-gluteos-brasilero-con-la-dra-luster",
         "is_target": false
       }
@@ -37227,9 +38006,57 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "botox injections miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "botox injections miami"
       }
     ],
     "competitors": [
+      {
+        "url": "https://www.arykraumd.com/skin-rejuvenation-procedures/botox/",
+        "title": "Botox Miami FL - Voted Best Botox Injections",
+        "domain": "arykraumd.com",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": 1
+          },
+          {
+            "date": "2026-07-09",
+            "position": 1
+          },
+          {
+            "date": "2026-07-10",
+            "position": 1
+          },
+          {
+            "date": "2026-07-11",
+            "position": 1
+          },
+          {
+            "date": "2026-07-12",
+            "position": 1
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 1
+          }
+        ]
+      },
       {
         "url": "https://www.miamiskinandvein.com/injectables-fillers/botox-cosmetic/",
         "title": "BOTOX Cosmetic in Coral Gables & South Miami, FL",
@@ -37266,123 +38093,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 1
-          }
-        ]
-      },
-      {
-        "url": "https://aeris.co/get-best-botox-injections-miami/",
-        "title": "Where to Get the Best Botox Injections in Miami | Aeris",
-        "domain": "aeris.co",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": null
           },
           {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://miamicenterfordermatology.com/botox-in-miami/",
-        "title": "Botox in Miami",
-        "domain": "miamicenterfordermatology.com",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": 3
-          },
-          {
-            "date": "2026-07-09",
-            "position": 3
-          },
-          {
-            "date": "2026-07-10",
-            "position": 3
-          },
-          {
-            "date": "2026-07-11",
-            "position": 3
-          },
-          {
-            "date": "2026-07-12",
-            "position": 3
-          },
-          {
-            "date": "2026-07-13",
-            "position": 2
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
-          }
-        ]
-      },
-      {
-        "url": "https://charettecosmetics.com/treatments/miami-fl-botox-cosmetic-injections/",
-        "title": "#1 Rated Best Miami, FL BOTOX® Injections Near Me",
-        "domain": "charettecosmetics.com",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": null
-          },
-          {
-            "date": "2026-07-09",
-            "position": null
-          },
-          {
-            "date": "2026-07-10",
-            "position": null
-          },
-          {
-            "date": "2026-07-11",
-            "position": null
-          },
-          {
-            "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": null
-          },
-          {
-            "date": "2026-07-15",
-            "position": 4
           }
         ]
       },
@@ -37422,52 +38136,146 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
           }
         ]
       },
       {
-        "url": "https://www.certifiedcosmeticsmiami.com/bestbotoxinmiami/",
+        "url": "https://miamicenterfordermatology.com/botox-in-miami/",
+        "title": "Botox in Miami",
+        "domain": "miamicenterfordermatology.com",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": 3
+          },
+          {
+            "date": "2026-07-09",
+            "position": 3
+          },
+          {
+            "date": "2026-07-10",
+            "position": 3
+          },
+          {
+            "date": "2026-07-11",
+            "position": 3
+          },
+          {
+            "date": "2026-07-12",
+            "position": 3
+          },
+          {
+            "date": "2026-07-13",
+            "position": 2
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://imagosplasticsurgery.com/med-spa/botox/",
+        "title": "Botox injections in Miami",
+        "domain": "imagosplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": 5
+          },
+          {
+            "date": "2026-07-09",
+            "position": 6
+          },
+          {
+            "date": "2026-07-10",
+            "position": 6
+          },
+          {
+            "date": "2026-07-11",
+            "position": 6
+          },
+          {
+            "date": "2026-07-12",
+            "position": 5
+          },
+          {
+            "date": "2026-07-13",
+            "position": 4
+          },
+          {
+            "date": "2026-07-14",
+            "position": 4
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
+          }
+        ]
+      },
+      {
+        "url": "https://www.certifiedcosmeticsmiami.com/bestbotoxinmiami",
         "title": "Best Botox in Miami, Fl | Certified Cosmetics and Skin Care",
         "domain": "certifiedcosmeticsmiami.com",
         "series": [
           {
             "date": "2026-07-08",
-            "position": null
+            "position": 8
           },
           {
             "date": "2026-07-09",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-10",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-11",
-            "position": null
+            "position": 7
           },
           {
             "date": "2026-07-12",
-            "position": null
-          },
-          {
-            "date": "2026-07-13",
             "position": 6
           },
           {
-            "date": "2026-07-14",
+            "date": "2026-07-13",
             "position": null
           },
           {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 6
           }
         ]
       },
       {
-        "url": "https://lovethenuyou.com/",
-        "title": "Medical Aesthetics in Miami | NuYou Medical Aesthetics Botox ...",
-        "domain": "lovethenuyou.com",
+        "url": "https://www.reddit.com/r/PlasticSurgery/comments/1jzq1xu/best_place_for_fillersbotox_in_miami/",
+        "title": "Best place for fillers/botox in miami?",
+        "domain": "reddit.com",
         "series": [
           {
             "date": "2026-07-08",
@@ -37499,73 +38307,81 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 7
           }
         ]
       },
       {
-        "url": "https://www.themaercksinstitute.com/medical-spa-miami-fl/injectables/botox/",
-        "title": "Botox® Miami, FL",
-        "domain": "themaercksinstitute.com",
+        "url": "https://www.reddit.com/r/Miami/comments/1qmayhy/botox_injector_near_me/",
+        "title": "Botox injector near me.",
+        "domain": "reddit.com",
         "series": [
           {
             "date": "2026-07-08",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-14",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 8
           }
         ]
       },
       {
-        "url": "https://www.arykraumd.com/skin-rejuvenation-procedures/botox/",
-        "title": "Botox Miami FL - Voted Best Botox Injections",
-        "domain": "arykraumd.com",
+        "url": "https://brickellcosmetic.com/botox",
+        "title": "Botox Treatment Specialist in Miami, FL",
+        "domain": "brickellcosmetic.com",
         "series": [
           {
             "date": "2026-07-08",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-07-10",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-07-11",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 1
+            "position": null
           },
           {
             "date": "2026-07-13",
@@ -37573,18 +38389,22 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-14",
-            "position": 3
+            "position": 10
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 9
           }
         ]
       },
       {
-        "url": "https://www.rotembergmd.com/botox/",
-        "title": "Best Botox Miami | Rotemberg Plastic Surgery",
-        "domain": "rotembergmd.com",
+        "url": "https://aeris.co/get-best-botox-injections-miami/amp/",
+        "title": "Where to Get the Best Botox Injections in Miami | Aeris",
+        "domain": "aeris.co",
         "series": [
           {
             "date": "2026-07-08",
@@ -37616,6 +38436,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -37664,11 +38488,16 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": null,
         "keyword": "inyecciones de botox en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": null,
+        "keyword": "inyecciones de botox en miami"
       }
     ],
     "competitors": [
       {
-        "url": "https://sobeautybycarmela.com/products/botox?srsltid=AfmBOoq9mjIund9k6aneBtNIgmJ9aO4mEaUqFL7x4W7NWeIFcuWS7-ki",
+        "url": "https://sobeautybycarmela.com/products/botox?srsltid=AfmBOoohoAf8EeKa6T8kd2s-o-VJemYFSlTgUs2dRH5_4WmlHQGZ9p4y",
         "title": "ᐅ Tratamientos con Botox en Miami",
         "domain": "sobeautybycarmela.com",
         "series": [
@@ -37702,6 +38531,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -37742,6 +38575,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -37780,6 +38617,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -37820,6 +38661,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -37858,6 +38703,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -37898,6 +38747,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -37937,45 +38790,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.instagram.com/reel/DNbxSrDPif7/",
-        "title": "BOTOX Y FILLERS EN MIAMi SURGICAL MED SPA ...",
-        "domain": "instagram.com",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": 6
           },
           {
-            "date": "2026-07-09",
+            "date": "2026-07-16",
             "position": 7
-          },
-          {
-            "date": "2026-07-10",
-            "position": 8
-          },
-          {
-            "date": "2026-07-11",
-            "position": 5
-          },
-          {
-            "date": "2026-07-12",
-            "position": 8
-          },
-          {
-            "date": "2026-07-13",
-            "position": null
-          },
-          {
-            "date": "2026-07-14",
-            "position": 6
-          },
-          {
-            "date": "2026-07-15",
-            "position": 8
           }
         ]
       },
@@ -38015,6 +38833,53 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 9
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
+          }
+        ]
+      },
+      {
+        "url": "https://www.instagram.com/reel/DNbxSrDPif7/",
+        "title": "(305)515-5009 #miami #antiwrinkle #Botox #fillers",
+        "domain": "instagram.com",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": 6
+          },
+          {
+            "date": "2026-07-09",
+            "position": 7
+          },
+          {
+            "date": "2026-07-10",
+            "position": 8
+          },
+          {
+            "date": "2026-07-11",
+            "position": 5
+          },
+          {
+            "date": "2026-07-12",
+            "position": 8
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": 6
+          },
+          {
+            "date": "2026-07-15",
+            "position": 8
+          },
+          {
+            "date": "2026-07-16",
+            "position": 9
           }
         ]
       },
@@ -38053,6 +38918,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 10
+          },
+          {
+            "date": "2026-07-16",
             "position": 10
           }
         ]
@@ -38101,6 +38970,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "implantes de glúteos en miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "implantes de glúteos en miami"
       }
     ],
     "competitors": [
@@ -38139,6 +39013,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -38179,45 +39057,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
-          }
-        ]
-      },
-      {
-        "url": "https://miamiplasticsurgery.com/es/butt-implants-miami-candidate/",
-        "title": "¿Es usted un buen candidato para los implantes de glúteos en Miami?",
-        "domain": "miamiplasticsurgery.com",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": 4
           },
           {
-            "date": "2026-07-09",
-            "position": 4
-          },
-          {
-            "date": "2026-07-10",
-            "position": 3
-          },
-          {
-            "date": "2026-07-11",
-            "position": 4
-          },
-          {
-            "date": "2026-07-12",
-            "position": 4
-          },
-          {
-            "date": "2026-07-13",
-            "position": 4
-          },
-          {
-            "date": "2026-07-14",
-            "position": 3
-          },
-          {
-            "date": "2026-07-15",
-            "position": 3
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -38257,6 +39100,96 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "url": "https://miamiplasticsurgery.com/es/butt-implants-miami-candidate/",
+        "title": "¿Soy el candidato perfecto para los implantes de glúteos?",
+        "domain": "miamiplasticsurgery.com",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": 4
+          },
+          {
+            "date": "2026-07-09",
+            "position": 4
+          },
+          {
+            "date": "2026-07-10",
+            "position": 3
+          },
+          {
+            "date": "2026-07-11",
+            "position": 4
+          },
+          {
+            "date": "2026-07-12",
+            "position": 4
+          },
+          {
+            "date": "2026-07-13",
+            "position": 4
+          },
+          {
+            "date": "2026-07-14",
+            "position": 3
+          },
+          {
+            "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
+          }
+        ]
+      },
+      {
+        "url": "https://aeris.co/es/procedimientos/cuerpo/levantamiento-de-gluteos-brasileno/",
+        "title": "Best Levantamiento de Glúteos Brasileño Miami, FL | Aeris",
+        "domain": "aeris.co",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 5
           }
         ]
       },
@@ -38296,6 +39229,53 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 5
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
+          }
+        ]
+      },
+      {
+        "url": "https://www.plasticsurgery.org/news/articles/an-alternative-to-the-brazilian-butt-lift-what-is-the-miami-thong-lift",
+        "title": "¿Qué es el levantamiento de glúteos tipo tanga de Miami?",
+        "domain": "plasticsurgery.org",
+        "series": [
+          {
+            "date": "2026-07-08",
+            "position": null
+          },
+          {
+            "date": "2026-07-09",
+            "position": null
+          },
+          {
+            "date": "2026-07-10",
+            "position": null
+          },
+          {
+            "date": "2026-07-11",
+            "position": null
+          },
+          {
+            "date": "2026-07-12",
+            "position": null
+          },
+          {
+            "date": "2026-07-13",
+            "position": null
+          },
+          {
+            "date": "2026-07-14",
+            "position": null
+          },
+          {
+            "date": "2026-07-15",
+            "position": null
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -38335,21 +39315,25 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 8
           }
         ]
       },
       {
-        "url": "https://es.buttsbymendieta.com/blog/cirujano-plastico-de-miami-especializado-en-gluteos/",
-        "title": "Cirujano Plástico de Miami Especializado en Glúteos*",
-        "domain": "es.buttsbymendieta.com",
+        "url": "https://www.carecredit.com/well-u/health-wellness/butt-implants-cost/",
+        "title": "Guía de costos, financiamiento y procedimiento para ...",
+        "domain": "carecredit.com",
         "series": [
           {
             "date": "2026-07-08",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-09",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-10",
@@ -38357,54 +39341,15 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-11",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-12",
-            "position": 8
+            "position": null
           },
           {
             "date": "2026-07-13",
-            "position": 8
-          },
-          {
-            "date": "2026-07-14",
-            "position": 8
-          },
-          {
-            "date": "2026-07-15",
-            "position": 7
-          }
-        ]
-      },
-      {
-        "url": "https://www.imagoscirugiaplastica.com/cirugia-gluteos",
-        "title": "Cirugía de Glúteos - Imagos Cirugia Plastica Miami",
-        "domain": "imagoscirugiaplastica.com",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": 9
-          },
-          {
-            "date": "2026-07-09",
-            "position": 10
-          },
-          {
-            "date": "2026-07-10",
-            "position": 8
-          },
-          {
-            "date": "2026-07-11",
-            "position": 9
-          },
-          {
-            "date": "2026-07-12",
-            "position": 9
-          },
-          {
-            "date": "2026-07-13",
-            "position": 9
+            "position": null
           },
           {
             "date": "2026-07-14",
@@ -38412,45 +39357,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
-            "position": 8
-          }
-        ]
-      },
-      {
-        "url": "https://seductioncosmetic.com/es/implantes-de-gl%C3%BAteos-miami/",
-        "title": "Implantes de glúteos transformadores en Miami",
-        "domain": "seductioncosmetic.com",
-        "series": [
-          {
-            "date": "2026-07-08",
-            "position": 7
+            "position": null
           },
           {
-            "date": "2026-07-09",
-            "position": 7
-          },
-          {
-            "date": "2026-07-10",
-            "position": 7
-          },
-          {
-            "date": "2026-07-11",
-            "position": 7
-          },
-          {
-            "date": "2026-07-12",
-            "position": 7
-          },
-          {
-            "date": "2026-07-13",
-            "position": 7
-          },
-          {
-            "date": "2026-07-14",
-            "position": 7
-          },
-          {
-            "date": "2026-07-15",
+            "date": "2026-07-16",
             "position": 9
           }
         ]
@@ -38505,6 +39415,11 @@ window.SEO_POSITION_DATA = {
         "date": "2026-07-15",
         "position": 1,
         "keyword": "butt implants in miami"
+      },
+      {
+        "date": "2026-07-16",
+        "position": 1,
+        "keyword": "butt implants in miami"
       }
     ],
     "competitors": [
@@ -38543,6 +39458,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 1
+          },
+          {
+            "date": "2026-07-16",
             "position": 1
           }
         ]
@@ -38583,6 +39502,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 2
+          },
+          {
+            "date": "2026-07-16",
+            "position": 2
           }
         ]
       },
@@ -38621,6 +39544,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 3
+          },
+          {
+            "date": "2026-07-16",
             "position": 3
           }
         ]
@@ -38661,6 +39588,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 4
+          },
+          {
+            "date": "2026-07-16",
+            "position": 4
           }
         ]
       },
@@ -38699,6 +39630,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 5
+          },
+          {
+            "date": "2026-07-16",
             "position": 5
           }
         ]
@@ -38739,6 +39674,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 6
+          },
+          {
+            "date": "2026-07-16",
+            "position": 6
           }
         ]
       },
@@ -38778,6 +39717,10 @@ window.SEO_POSITION_DATA = {
           {
             "date": "2026-07-15",
             "position": 7
+          },
+          {
+            "date": "2026-07-16",
+            "position": 7
           }
         ]
       },
@@ -38816,6 +39759,10 @@ window.SEO_POSITION_DATA = {
           },
           {
             "date": "2026-07-15",
+            "position": 8
+          },
+          {
+            "date": "2026-07-16",
             "position": 8
           }
         ]
