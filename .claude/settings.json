@@ -103,7 +103,16 @@
       "Bash(curl -sk \"https://localhost:7155/botox-injections-miami\" -o /c/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/03c81ac0-e176-4eba-8560-4e15fb2bdb55/scratchpad/botox-live.html -w \"HTTP %{http_code}  size=%{size_download}\\\\n\")",
       "Read(//c/Users/user564/AppData/Local/Temp/claude/c--Users-user564-Documents-avana-seo-report/03c81ac0-e176-4eba-8560-4e15fb2bdb55/scratchpad/**)",
       "Bash(sed -E 's/<[^>]+>//g')",
-      "Bash(sed -E 's/^[[:space:]]+//')"
+      "Bash(sed -E 's/^[[:space:]]+//')",
+      "WebFetch(domain:gallardolawyers.com)",
+      "WebFetch(domain:www.stfblaw.com)",
+      "WebFetch(domain:www.floridainjurylawyer.pro)",
+      "Bash(grep -oiP '\\(\\\\d+\\\\+?\\\\s*\\(years|años\\)[^<]{0,30}|million[^<]{0,25}|verdict[^<]{0,30}|settlement[^<]{0,30}|award[^<]{0,25}|free \\(consultation|case\\)[^<]{0,20}|no fee[^<]{0,30}|board certified[^<]{0,25}|review[s]?[^<]{0,20}\\)' gallardo.html)",
+      "Bash(sed 's/^[ \\\\t]*//')",
+      "Bash(sed 's/<[^>]*>//g')",
+      "Bash(grep -oiP '<h3[^>]*class=\"[^\"]*\"[^>]*>Speak with Our Attorneys</h3>.{0,300}' gallardo.html)",
+      "Bash(grep -oP '\"@type\":\"LegalService\".{0,300}' gallardo.html)",
+      "Bash(sed 's/\\\\$$//')"
     ],
     "additionalDirectories": [
       "\\tmp",

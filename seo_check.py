@@ -117,6 +117,12 @@ keywords = [
     {"keyword": "tummy tuck en miami",
      "url": "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami",
      "lang": "es"},
+    # gallardolawyers.com — separate client property. Position tracking works
+    # (it matches on target_url), but MY_DOMAIN above is Avana-only, so the
+    # "my_pages_ranking" field stays empty for this keyword.
+    {"keyword": "product liability attorney miami",
+     "url": "https://gallardolawyers.com/injury-law/product-liability-attorney-miami",
+     "lang": "en"},
 ]
 
 # Locations to check each keyword from (Miami only)

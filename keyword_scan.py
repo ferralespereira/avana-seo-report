@@ -773,6 +773,30 @@ NATIONAL_ES = [
     ]),
 ]
 
+# Product liability (gallardolawyers.com — separate client property, not Avana).
+PRODLIAB_EN = [
+    ("product liability", ["product liability"]),
+    ("product liability attorney miami", ["product liability attorney miami", "miami product liability attorney"]),
+    ("product liability lawyer miami", ["product liability lawyer miami", "miami product liability lawyer"]),
+    ("defective product lawyer miami", ["defective product lawyer miami", "miami defective product lawyer", "defective products lawyer miami"]),
+    ("defective product attorney miami", ["defective product attorney miami", "defective products attorney miami", "miami defective product attorney"]),
+    ("defective products", ["defective product", "defective products"]),
+    ("manufacturing defect", ["manufacturing defect", "manufacturing defects"]),
+    ("design defect", ["design defect", "design defects"]),
+    ("failure to warn", ["failure to warn", "inadequate warning", "inadequate warnings"]),
+    ("dangerous products", ["dangerous product", "dangerous products", "unreasonably dangerous"]),
+    ("defective medical devices", ["defective medical device", "defective medical devices"]),
+    ("class action lawsuit", ["class action", "class action lawsuit"]),
+    ("statute of limitations", ["statute of limitations", "how long do you have to file", "time limit to file"]),
+    ("product liability cost / fees", ["no win no fee", "no fee unless", "contingency fee", "free consultation", "free case evaluation"]),
+    ("product recall", ["product recall", "recalled product", "recalled products"]),
+    ("personal injury attorney", ["personal injury attorney", "personal injury lawyer"]),
+    ("injury attorney miami", ["injury attorney miami", "miami injury attorney", "injury lawyer miami", "miami injury lawyer"]),
+    ("product liability near me", ["product liability attorney near me", "product liability lawyer near me", "defective product lawyer near me"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── Structured data (schema.org) rows ────────────────────────────────────────
 # Tracked the same way as keywords: each row counts how many times that JSON-LD
 # @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
@@ -878,6 +902,8 @@ PAGES = {
         {"slug": "hourglass-tummy-tuck-in-miami", "lang": "en", "kw": HOURGLASS_EN},
     "https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami":
         {"slug": "abdominoplastia-con-curvas-en-miami", "lang": "es", "kw": ABDOMINOPLASTIA_CURVAS_ES},
+    "https://gallardolawyers.com/injury-law/product-liability-attorney-miami":
+        {"slug": "product-liability-attorney-miami", "lang": "en", "kw": PRODLIAB_EN},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate

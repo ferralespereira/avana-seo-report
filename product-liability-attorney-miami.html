@@ -1,0 +1,1113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallardo — Product Liability Attorney Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; product liability attorney miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">gallardolawyers.com/injury-law/product-liability-attorney-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>gallardolawyers.com/injury-law/product-liability-attorney-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="product-liability-attorney-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://gallardolawyers.com/injury-law/product-liability-attorney-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isOwn) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isOwn ? 2 : 1.5,
+        borderDash: isOwn ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isOwn ? 4 : 3,
+        pointHoverRadius: isOwn ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('gallardolawyers') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    product liability attorney miami
+    <button onclick="navigator.clipboard.writeText('product liability attorney miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://gallardolawyers.com/injury-law/product-liability-attorney-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://gallardolawyers.com/injury-law/product-liability-attorney-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/injury-law/product-liability-attorney-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Keyword: "product liability attorney miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">228</div>
+    <div class="kpi-source">Keyword: "product liability attorney miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0%</div>
+    <div class="kpi-source">Keyword: "product liability attorney miami" — all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">9.67</div>
+    <div class="kpi-source">Keyword: "product liability attorney miami" — primary query</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN (keyword-filtered) ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for keyword "product liability attorney miami" (keyword-filtered)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">🖥️ Desktop</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">130</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">10.07</td>
+      </tr>
+      <tr style="background:#f8fbff;">
+        <td style="padding:9px 14px;">📱 Mobile</td>
+        <td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;text-align:right;color:#7c3aed;">113</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;text-align:right;color:#d97706;">9.65</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">No tablet row — the keyword-filtered GSC export contains Desktop and Mobile only. Device impressions (130 + 113 = 243) exceed the query-level total (228); this is a known GSC rounding/anonymization artifact between the query and device tables under the same filter.</div>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="product-liability-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('product-liability-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://gallardolawyers.com/injury-law/product-liability-attorney-miami</span> — Last 3 months</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('product-liability-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+  </div>
+  <div id="product-liability-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">2</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">5,591</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">0.04%</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">13.5</div>
+      </div>
+    </div>
+    <!-- Zero-click queries table -->
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Zero-Click Queries with 100+ Impressions</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Query</th>
+            <th style="padding:7px 10px;text-align:right;">Impressions</th>
+            <th style="padding:7px 10px;text-align:right;">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami product liability lawyer</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">1,020</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">12.76</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">product liability lawyer miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">623</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13.53</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">defective product lawyer miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">354</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">7.92</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami product liability attorney</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">284</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">10.16</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">defective product attorney miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">262</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">7.26</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">product liability attorney miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">243</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">9.87</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">defective products attorney miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">238</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">6.71</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami defective product lawyer</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">184</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">7.59</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">product liability lawyer</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">177</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">11.24</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">product liability attorney</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">139</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">11.05</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">product liability attorney miami fl</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">127</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">14.04</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;">defective products attorney</td><td style="padding:6px 10px;text-align:right;">104</td><td style="padding:6px 10px;text-align:right;">10.06</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Showing all 12 zero-click queries with 100+ impressions · Every query with 100+ impressions on this URL has zero clicks · Source: GSC URL-filtered export 2026-07-16</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page source — Gallardo ✅ | STFB ✅ | Goldberg &amp; Rosen ✅ | Friedman Rodman ✅ &middot; Fetched 2026-07-16</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Gallardo 🔴 OUR PAGE<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://gallardolawyers.com/injury-law/product-liability-attorney-miami" style="color:#fff;text-decoration:none;" target="_blank">gallardolawyers.com/injury-law/product-liability-attorney-miami</a>
+              <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/injury-law/product-liability-attorney-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            STFB ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.stfblaw.com/personal-injury/defective-products/" style="color:#fff;text-decoration:none;" target="_blank">stfblaw.com/personal-injury/defective-products/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.stfblaw.com/personal-injury/defective-products/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Goldberg &amp; Rosen ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.goldbergandrosen.com/product-liability/" style="color:#fff;text-decoration:none;" target="_blank">goldbergandrosen.com/product-liability/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.goldbergandrosen.com/product-liability/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Friedman Rodman ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.floridainjurylawyer.pro/product-liability.html" style="color:#fff;text-decoration:none;" target="_blank">floridainjurylawyer.pro/product-liability.html</a>
+              <button onclick="navigator.clipboard.writeText('https://www.floridainjurylawyer.pro/product-liability.html')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">📋</button>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Exact-match title — best keyword targeting</div>
+            "Product Liability Attorney Miami | Gallardo Law Firm"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Product Liability Attorney Miami" exact match, front-loaded<br/>✅ Brand suffix<br/>✅ 52 chars — no truncation</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ No "defective product" variant — that cluster is 1,038 impressions</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Dual-cluster title — covers both keyword families</div>
+            "Miami Defective Product Lawyer | Product Liability Attorneys in Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Captures "defective product lawyer" AND "product liability attorney"<br/>✅ Geo twice</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ 69 chars — borderline truncation</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ "Defective products" only — no "product liability"</div>
+            "Defective Products Attorney in Miami, FL | Goldberg &amp; Rosen"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Geo "Miami, FL"<br/>✅ Brand recognition</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No "product liability" phrase in title</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Bare category + long firm name</div>
+            "Product Liability | Miami Defective Product Lawyers Friedman Rodman Frank &amp; Estrada, P.A."            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Both keyword clusters present</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ 94 chars — truncates in SERP<br/>❌ Firm name eats the visible half</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Product Liability Attorney Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Exact keyword match<br/>✅ Matches title — strong topical alignment</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ No value/outcome signal (no fee, no result)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Miami Product Liability Lawyers"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Clean geo + keyword<br/>✅ Plural "Lawyers" = team scale</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Defective Products Lawyer in Miami, FL"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Geo-explicit</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Misses "product liability" in H1 too</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Knowledgeable Miami Injury Lawyers Pursuing Claims for Compensation on Behalf of Clients Injured by Dangerous and Defective Products"            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ 20 words — keyword buried at the end<br/>❌ Reads as a sentence, not a heading</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ product liability attorney miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Consistent across title, H1, meta, URL slug and schema — the tightest targeting of the four</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ miami product liability lawyer</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Targets the exact 1,020-impression head term Gallardo loses</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ defective products attorney miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Committed to the defect cluster only</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ product liability (ungeo'd)</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Geo signal only via firm name and body copy</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords (H2s)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div>• What is Product Liability?<br/>• Types of Product Defects leading to Injuries<br/>• Claims that our Product Liability Attorneys handle<br/>• Elements involved in a product liability claim<br/>• When Is a Class Action Lawsuit Appropriate?<br/>• What Damages Can a Product Liability Attorney Miami Help Me Recover?<br/>• Contact Gallardo Law Firm in Defective Products Cases</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ 7 H2s — no statute of limitations, no liability-party, no case-value section</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div>• Understanding Product Liability: What Makes a Product &quot;Defective?&quot;<br/>• Common Types of Product Defects in Miami Cases<br/>• Examples of Defective Product Cases in Miami<br/>• Who Can Be Held Liable for a Defective Product in Miami?<br/>• What Damages Are Available in a Product Liability Claim?<br/>• Economic / Non-Economic / Punitive Damages<br/>• How Long Do You Have to File a Product Liability Lawsuit in Miami?<br/>• Our Notable Product Liability Cases · Hundreds of Millions Won<br/>• Why Choose Us?</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ 19 H2s — covers liability parties, SOL, damages tiers, and proof</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div>• Defective Products Overview<br/>• Do You Have a Defective Product Lawsuit?<br/>• Types of Defective Products We Handle in Miami<br/>• Specific Defective Products Cases<br/>• What Are the Different Types of Product Liability Lawsuits?<br/>• Why Trust Goldberg &amp; Rosen With Your Case?<br/>• Client Testimonials — 5 Stars from Over 1000 Reviews<br/>• Free &amp; Confidential Case Evaluation</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ 10 H2s, heavy on qualification + social proof</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div>• Types of Florida Product Liability Claims<br/>• Manufacturing Defects / Design Defects / Failure to Warn<br/>• Who Is Liable in a Miami Product Liability Lawsuit?<br/>• What Makes a Product Unreasonably Dangerous under Florida Law?<br/>• How Long Do You Have to File a Florida Product Liability Lawsuit?<br/>• Practice Areas · Client Reviews</div>            <div style="margin-top:4px;font-size:11px;color:#666;">⚠️ 11 H2s but thin bodies under each</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ~1,590 words — thinnest of the four</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ 2.6× less than STFB<br/>❌ 2.2× less than Goldberg<br/>❌ Depth is the clearest content gap on this page</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~4,200 words — deepest</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Long-form depth signals E-E-A-T on a YMYL legal topic</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~3,500 words</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Depth plus heavy testimonial volume</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~1,200 words — thinnest overall</div>            <div style="margin-top:4px;font-size:11px;color:#666;">But props up rankings via a large sitewide practice-area network</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Price is in schema only — invisible to searchers</div>            <div>• <code>priceRange: "$1500-$10000"</code> in LegalService JSON-LD<br/>• "No Win, No Fee" in the header bar<br/>• "We Only Get Paid If You Win" near the contact CTA</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ A $1,500–$10,000 range on a contingency-fee page is actively confusing — it implies the client pays</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#666;font-weight:700;margin-bottom:4px;">— No fee language found on page</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Relies on verdict size rather than fee framing</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Free consultation + free case evaluation</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Repeated as a section heading, not buried</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "No Fee Unless You Win" + free 24/7 consult</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Clearest risk-reversal of the four</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Present and keyword-led — only Gallardo and Goldberg have one</div>            "Product Liability Attorney in Miami. If you were injured because of a defective product or lack of warning by the manufacturer, you are entitled to compensation."            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Exact keyword first<br/>✅ Names the injury trigger</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No CTA, no phone, no free-consult hook<br/>❌ Ends on a passive claim — nothing to click for</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ABSENT</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Google writes its own snippet — no CTR control</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Present — experience + outcome framing</div>            "At Goldberg &amp; Rosen in Miami, our firm is very experienced taking on large corporations and winning substantial settlements for product liability cases."            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Brand-first rather than keyword-first</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ABSENT</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No snippet control</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No on-page FAQ section</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Only a sitewide nav link to /faqs<br/>❌ H2s are phrased as questions but aren't marked up as an FAQ<br/>❌ Zero FAQ rich-result eligibility</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 None</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Question-shaped H2s, no FAQ block</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 None</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Question-shaped H2s, no FAQ block</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 None</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Question-shaped H2s, no FAQ block</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Weakest trust stack — nothing quantified</div>            <div>• Google review badge image (no count, no rating shown)<br/>• "24/7 Available"<br/>• "HABLAMOS TU IDIOMA" / bilingual<br/>• Offices in Florida + Texas</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No verdict or settlement amounts<br/>❌ No review count<br/>❌ No years in practice<br/>❌ No attorney bio on the page<br/>❌ No awards or bar certifications</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest authority stack</div>            <div>• "Winning hundreds of millions since 1984"<br/>• 150+ years combined experience<br/>• U.S. News Best Law Firms® for Product Liability<br/>• Verdicts: $650M · $17.3M · $16.5M · $12M<br/>• Litigated against Ford, GM, Chrysler, Toyota, Mercedes-Benz</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Named-defendant proof is the single most persuasive element across all four pages</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Strongest social proof</div>            <div>• 4.9★ from 998 reviews (in AggregateRating schema)<br/>• Testimonials embedded mid-page<br/>• "Taking on large corporations"</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Review count is both visible AND marked up</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Experience + verdicts</div>            <div>• 45+ years<br/>• Verdicts: $16.6M · $11.5M · $6.5M · $6M · $5.45M<br/>• Five-star client reviews section</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Soft CTA — no risk reversal at the ask</div>            <div>• "Speak with Our Attorneys"<br/>• "Contact us 24/7 for immediate assistance"<br/>• "HABLAMOS ESPAÑOL | VIRTUAL CONSULTATION"<br/>• (305) 261-7000</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Never says "free" at the point of conversion</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Phone + free case evaluation</div>            <div>"Call (305) 770-6335 or contact our Miami product liability attorneys online to schedule a free case evaluation today."</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Free & Confidential Case Evaluation</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Confidential" lowers friction</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Free Consultation — Call 24/7</div>            <div>(877) 448-8585</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Free + 24/7 + toll-free in one line</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Best schema of the four — and it isn't close</div>            <div style="color:#059669;">✅ LegalService (name, phone, priceRange, address)<br/>✅ Service — "Product Liability"<br/>✅ OfferCatalog + Offer<br/>✅ PostalAddress<br/>✅ AdministrativeArea</div>            <div style="color:#c0392b;margin-top:4px;">❌ No FAQPage<br/>❌ No AggregateRating <em>on this page</em><br/>❌ No BreadcrumbList<br/>❌ No Attorney / Person</div>
+            <div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #e67e22;font-size:11px;line-height:1.5;">
+              <strong style="color:#e67e22;">⚠️ Stars are inherited, and they're the wrong number.</strong><br/>
+              The 7/16 SERP capture shows this result rendering <strong>4.2 ★ (2,032)</strong> — but that rating is <em>not</em> on this page. Google pulls it from the homepage's <code>AggregateRating</code> (<code>ratingValue 4.2</code> / <code>reviewCount 1991</code>). So Gallardo already has stars; the problem is it displays <strong>4.2</strong> directly beneath Goldberg's <strong>4.9</strong>.
+            </div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No JSON-LD detected</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Zero rich-result eligibility — ranks on content and links alone</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Rich-result eligible via ratings</div>            <div style="color:#059669;">✅ Organization (×8)<br/>✅ AggregateRating — 4.9 / 998<br/>✅ BreadcrumbList<br/>✅ WebPage · Product · City · State</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ No FAQPage · no LegalService</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 No JSON-LD detected</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No rich-result eligibility</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from keyword analysis:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Why STFB &amp; Goldberg outrank Gallardo for "product liability attorney miami":</strong><br/>
+          1. <strong>Proof beats claims:</strong> STFB names the defendants it beat (Ford, GM, Toyota) and the amounts ($650M, $17.3M); Gallardo's page contains no verdict, no settlement, and no review count — nothing a searcher can verify<br/>
+          2. <strong>2–3× the content depth:</strong> STFB ~4,200 and Goldberg ~3,500 words vs Gallardo's ~1,590 — on a YMYL legal query, depth is a direct E-E-A-T signal<br/>
+          3. <strong>Goldberg owns the stars:</strong> 4.9 from 998 reviews in AggregateRating schema means Goldberg can render review stars in the SERP — Gallardo has a review badge image that Google cannot read<br/>
+          4. <strong>They cover the questions Gallardo skips:</strong> both answer "who can be held liable" and "how long do you have to file" (statute of limitations) — high-intent sections Gallardo has no H2 for<br/>
+          5. <strong>Risk reversal at the ask:</strong> every competitor says "free" at the CTA; Gallardo's converting CTA is "Speak with Our Attorneys" and never repeats the No-Win-No-Fee promise sitting up in the header
+        </div>
+        <div>
+          <strong>What Gallardo must add to dominate "product liability attorney miami" (pos 9.87 → target top 3):</strong><br/>
+          1. <strong>Fix the meta description CTA:</strong> the page ranks 9.87 with 243 impressions and <em>zero</em> clicks — the snippet is the bottleneck, not the ranking. Rewrite to: "Injured by a defective product in Miami? No win, no fee. Free 24/7 consultation with a product liability attorney — call (305) 261-7000."<br/>
+          2. <strong>Fix the rating, then add FAQPage schema:</strong> Gallardo already renders stars (4.2 from the homepage's AggregateRating) — but 4.2 sits right under Goldberg's 4.9 in the same SERP, so the stars are currently <em>losing</em> the click. Raising the review average is a business fix, not an SEO one; the SEO win is <strong>FAQPage schema, which no competitor has</strong> — an uncontested rich-result slot on a page whose H2s are already phrased as questions<br/>
+          3. <strong>Delete or fix <code>priceRange: "$1500-$10000"</code>:</strong> a contingency firm advertising a price range in schema contradicts "We Only Get Paid If You Win" and undermines the strongest offer on the page<br/>
+          4. <strong>Put proof on the page:</strong> add verdict/settlement figures, the Google review count and rating as crawlable text, years in practice, and an attorney bio — this is the single largest gap vs STFB<br/>
+          5. <strong>Target the "defective product" cluster:</strong> 1,038 impressions sit in defective-product* queries where the page already ranks 6.71–7.92 — closer to page one than the primary keyword. Add a dedicated H2 block and internal anchors for "defective products attorney miami"
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/product-liability-attorney-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/product-liability-attorney-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/product-liability-attorney-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
