@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Liability Attorney Miami – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-del     { color: #f38ba8; text-decoration: line-through; opacity: 0.75; }
+        .fix-item  { font-size: 1.05rem; }
+
+        /* ── Info card ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* ── Keyword table ── */
+        .kw-table-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; max-width: 900px;
+        }
+        .kw-table-wrap { overflow-x: auto; }
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        .kw-table th {
+            background: #2a2a3d; color: #8b8ba7; font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            padding: 10px 12px; text-align: left; white-space: nowrap;
+        }
+        .kw-table th.num { text-align: right; }
+        .kw-table td { padding: 9px 12px; border-bottom: 1px solid #e8eaed; color: #24292e; vertical-align: middle; }
+        .kw-table tr:last-child td { border-bottom: none; }
+        .kw-table tbody tr:hover td { background: #f8f9fa; }
+        .kw-before { text-align: right; color: #f38ba8; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-after  { text-align: right; color: #28c840; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-change { text-align: right; color: #0070c9; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-flat   { text-align: right; color: #8b8ba7; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-down   { color: #d97706; }
+        .kw-num    { text-align: right; color: #6a737d; font-variant-numeric: tabular-nums; }
+        .kw-cpc    { text-align: right; color: #b8892b; font-weight: 600; font-variant-numeric: tabular-nums; }
+        .kw-pos    { text-align: right; color: #24292e; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+        /* ── Sections list ── */
+        .sections-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* ── Subsection group label ── */
+        .group-label {
+            font-size: 0.75rem; color: #444d56; font-weight: 700;
+            margin-bottom: 14px; border-bottom: 1px solid #e8eaed;
+            padding-bottom: 6px;
+        }
+
+        /* ── Sub-section label ── */
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+
+        /* ── Before / After blocks ── */
+        .ba-before {
+            background: #fff8f8; border-left: 3px solid #f38ba8;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-after {
+            background: #f0fdf4; border-left: 3px solid #28c840;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-note { font-size: 0.79rem; color: #6a737d; font-style: italic; }
+
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        .schema-divider { height: 1px; background: #e8eaed; }
+
+        /* ── Callout / warning banner ── */
+        .callout {
+            max-width: 900px; border-radius: 8px; padding: 14px 18px;
+            font-size: 0.84rem; line-height: 1.6; margin-bottom: 18px;
+        }
+        .callout-warn { background: #fff8f0; border-left: 4px solid #febc2e; color: #24292e; }
+        .callout-info { background: #eef6ff; border-left: 4px solid #0070c9; color: #24292e; }
+        .callout-legal { background: #fdf6ec; border-left: 4px solid #b8892b; color: #24292e; }
+        .callout strong { font-weight: 700; }
+
+        /* ── Schema grid ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+
+        /* ── Badge ── */
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .fixed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #dbeafe; color: #1e40af; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .removed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fee2e2; color: #991b1b; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .pending-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fef3c7; color: #92400e; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── GEO Status ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+
+        /* ── Stat tiles ── */
+        .stat-row { display: flex; flex-wrap: wrap; gap: 14px; max-width: 900px; margin-bottom: 18px; }
+        .stat-tile {
+            flex: 1 1 150px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 16px 18px;
+        }
+        .stat-value { font-size: 1.35rem; font-weight: 700; color: #24292e; font-variant-numeric: tabular-nums; }
+        .stat-value .from { color: #f38ba8; }
+        .stat-value .to { color: #28c840; }
+        .stat-label { font-size: 0.72rem; color: #6a737d; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="product-liability-attorney-miami.html" style="font-size:13px;font-weight:600;color:#b8892b;text-decoration:none;">← Product Liability Attorney Miami Analysis</a>
+    </div>
+    <h1>Product Liability Attorney Miami — SEO Improvements</h1>
+    <p class="subtitle">product-liability-attorney-miami &nbsp;·&nbsp; Gallardo Law Firm &nbsp;·&nbsp; Updated 2026-07-20 &nbsp;·&nbsp; En / article.cshtml + articlemetas.cshtml + FaqEntities.xml + ServiceEntities.xml + ServicePageSkin.cshtml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://gallardolawyers.com/injury-law/product-liability-attorney-miami" target="_blank" rel="noopener">https://gallardolawyers.com/injury-law/product-liability-attorney-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://gallardolawyers.com/injury-law/product-liability-attorney-miami', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Target Keyword</span>
+            <span class="page-info-keyword">product liability attorney miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('product liability attorney miami', this)">copy</button>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         HEADLINE STAT TILES
+    ════════════════════════════════════ -->
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">1,091</span> → <span class="to">3,388</span></div>
+            <div class="stat-label">Crawlable EN words (+210%)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value">40</div>
+            <div class="stat-label">Fixes applied (07-16 → 07-20)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">6</span></div>
+            <div class="stat-label">Inbound internal links</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value">5,591 → <span class="from">0</span></div>
+            <div class="stat-label">GSC impressions → clicks (unresolved)</div>
+        </div>
+    </div>
+
+    <div class="callout callout-legal">
+        <strong>This is a legal (YMYL) page — every content fix is PENDING ATTORNEY REVIEW.</strong> All edits below are applied to the working tree but must not be published until Gallardo signs off. Statutes and Bar rules were verified as cited, but this is not legal advice. Fee / "free consultation" lines and the priceRange schema are firm decisions, flagged inline.
+    </div>
+
+
+
+    <!-- ════════════════════════════════════
+         1. TITLE / META TAGS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Fixes in Meta Tags <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— Fix #17 &amp; #37</span></div>
+
+        <div class="callout callout-info">
+            The EN meta file was an older/thinner version than its siblings, and two of its tags were <strong>broken for social sharing</strong>: <code style="font-size:0.78rem">og:url</code> / <code style="font-size:0.78rem">og:image</code> / <code style="font-size:0.78rem">twitter:image</code> were relative paths (nothing for a crawler to resolve → shared links rendered with no image), the EN page had <strong>no Twitter Card tags at all</strong>, and an earlier <code style="font-size:0.78rem">og:image</code> was <strong>duplicated</strong> and pointed at an <strong>extensionless</strong> path that could 404 the preview.
+        </div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">product-liability-attorney-miami / En / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+<span class="c-tag">&lt;title&gt;</span>Product Liability Attorney Miami | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/injury-law/product-liability-attorney-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Fix #37 — meta description rewritten with a CTA + "Free consultation" (was passive, no CTA) *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"Injured by a defective product in Miami? Our product liability attorneys fight to recover your compensation. Free consultation with Gallardo Law Firm."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Product Liability Attorney Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Injured by a defective product in Miami? Our product liability attorneys fight to recover your compensation. Free consultation with Gallardo Law Firm."</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Fix #37 — relative → absolute URL (social crawlers need absolute https) *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/injury-law/product-liability-attorney-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Fix #17 removed a DUPLICATE og:image + added the .jpg extension; Fix #37 upgraded 375x211 → 903x530 for a large card *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/themes/gallardo/images/services/903x530/product-liability-attorney-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Product Liability Attorney Miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"903"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"530"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Fix #17 / #37 — Twitter Card tags ADDED (the EN page had NONE); summary_large_image *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary_large_image"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Product Liability Attorney Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"Injured by a defective product in Miami? Free consultation with Gallardo Law Firm."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/themes/gallardo/images/services/903x530/product-liability-attorney-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Product Liability Attorney Miami"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+        <p style="max-width:900px;margin-top:12px;font-size:0.79rem;color:#6a737d;font-style:italic;line-height:1.5;">
+            "Free consultation" is a fee/offer statement — same PENDING FIRM REVIEW caveat as the on-page free-consultation mentions. <code style="font-size:0.75rem">@Model.GetLastModifiedDate</code> is the only dynamic value kept; description ~149 chars (safe under the ~155–160 truncation).
+        </p>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. KEYWORD TARGETS (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keywords On The Page — Before → After</div>
+
+        <div class="kw-table-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">On (2026-07-16 baseline) → Now (recounted 2026-07-20) &nbsp;·&nbsp; VOL/CPC = SEMrush US &nbsp;·&nbsp; POS/Impr = GSC 3-mo</span>
+            </div>
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th class="num">Vol/mo</th>
+                            <th class="num">CPC</th>
+                            <th class="num">GSC pos</th>
+                            <th class="num">Impr</th>
+                            <th class="num">On</th>
+                            <th class="num">Now</th>
+                            <th class="num">Δ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>product liability lawyer <span style="font-style:italic;color:#6a737d;">(head term — biggest gap)</span></td><td class="kw-num">18,100</td><td class="kw-cpc">$18.57</td><td class="kw-pos">11.24</td><td class="kw-num">177</td><td class="kw-before">1</td><td class="kw-after">13</td><td class="kw-change">+12</td></tr>
+                        <tr><td>product liability attorney</td><td class="kw-num">12,100</td><td class="kw-cpc">$21.07</td><td class="kw-pos">11.05</td><td class="kw-num">139</td><td class="kw-before">8</td><td class="kw-after">9</td><td class="kw-change">+1</td></tr>
+                        <tr><td>product liability lawyers</td><td class="kw-num">4,400</td><td class="kw-cpc">$18.57</td><td class="kw-pos">8.65</td><td class="kw-num">23</td><td class="kw-before">1</td><td class="kw-after">3</td><td class="kw-change">+2</td></tr>
+                        <tr><td>product liability attorneys</td><td class="kw-num">3,600</td><td class="kw-cpc">$21.07</td><td class="kw-pos">7.29</td><td class="kw-num">35</td><td class="kw-before">2</td><td class="kw-after">5</td><td class="kw-change">+3</td></tr>
+                        <tr><td>defective product lawyer <span class="new-badge">MONEY CLUSTER</span></td><td class="kw-num">3,600</td><td class="kw-cpc">$46.32</td><td class="kw-pos">8.70</td><td class="kw-num">10</td><td class="kw-before">0</td><td class="kw-after">5</td><td class="kw-change">+5</td></tr>
+                        <tr><td>defective product attorney</td><td class="kw-num">2,400</td><td class="kw-cpc">$18.28</td><td class="kw-pos">9.67</td><td class="kw-num">12</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>defective products attorney <span style="font-style:italic;color:#6a737d;">(highest CPC on the page)</span></td><td class="kw-num">1,300</td><td class="kw-cpc">$58.36</td><td class="kw-pos">10.06</td><td class="kw-num">104</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>defective products lawyer</td><td class="kw-num">1,300</td><td class="kw-cpc">$46.32</td><td class="kw-pos">9.74</td><td class="kw-num">88</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>product liability attorney near me</td><td class="kw-num">1,300</td><td class="kw-cpc">$15.19</td><td class="kw-pos">10.58</td><td class="kw-num">62</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>product liability lawyer near me</td><td class="kw-num">1,300</td><td class="kw-cpc">$13.62</td><td class="kw-pos">11.89</td><td class="kw-num">35</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>product defect lawyer</td><td class="kw-num">480</td><td class="kw-cpc">$16.97</td><td class="kw-pos">7.77</td><td class="kw-num">13</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>miami product liability lawyer <span style="font-style:italic;color:#6a737d;">(most impressions on the page)</span></td><td class="kw-num">210</td><td class="kw-cpc">—</td><td class="kw-pos">12.76</td><td class="kw-num">1,020</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>product liability attorney miami <span style="font-style:italic;color:#6a737d;">(the named target — 110/mo, a rounding error)</span></td><td class="kw-num">110</td><td class="kw-cpc">—</td><td class="kw-pos">9.87</td><td class="kw-num">243</td><td class="kw-before">4</td><td class="kw-after">3</td><td class="kw-change kw-down">−1</td></tr>
+                        <tr><td>defective medical devices lawyer miami <span style="font-style:italic;color:#6a737d;">(covered via components)</span></td><td class="kw-num">30</td><td class="kw-cpc">—</td><td class="kw-pos">40.76</td><td class="kw-num">74</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="padding:12px 16px;font-size:0.78rem;color:#6a737d;font-style:italic;line-height:1.5;border-top:1px solid #e8eaed;">
+                "Now" counts describe on-page presence only, not rankings. Google reads singular/plural + word-order variants (defective product / products / product defect) as one intent, so the SEO value is in covering the <strong>cluster once</strong>, which the exact-string 1s do. VOL = size of the national market (what to name things); Impr = what this page can reach today (what to prioritise) — never compare them directly.
+            </div>
+        </div>
+
+        <div class="schema-subsection-label" style="margin-top:22px;">Bare-stem density (PAGE rows — reinforcement, not a keyphrase)</div>
+        <div class="kw-table-card">
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Stem</th><th class="num">On</th><th class="num">Now</th><th class="num">Δ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>product liability</td><td class="kw-before">16</td><td class="kw-after">68</td><td class="kw-change">+52</td></tr>
+                        <tr><td>claim</td><td class="kw-before">5</td><td class="kw-after">53</td><td class="kw-change">+48</td></tr>
+                        <tr><td>miami</td><td class="kw-before">7</td><td class="kw-after">35</td><td class="kw-change">+28</td></tr>
+                        <tr><td>defective product</td><td class="kw-before">9</td><td class="kw-after">31</td><td class="kw-change">+22</td></tr>
+                        <tr><td>injury</td><td class="kw-before">7</td><td class="kw-after">25</td><td class="kw-change">+18</td></tr>
+                        <tr><td>lawyer <span style="font-style:italic;color:#6a737d;">(the deliberate re-weighting worked)</span></td><td class="kw-before">3</td><td class="kw-after">22</td><td class="kw-change">+19</td></tr>
+                        <tr><td>recall <span style="font-style:italic;color:#6a737d;">(new cluster)</span></td><td class="kw-before">0</td><td class="kw-after">11</td><td class="kw-change">+11</td></tr>
+                        <tr><td>attorney <span style="font-style:italic;color:#6a737d;">(held flat by design — growth routed to "lawyer")</span></td><td class="kw-before">9</td><td class="kw-after">13</td><td class="kw-change">+4</td></tr>
+                        <tr><td>near me <span style="font-style:italic;color:#6a737d;">(now present, in the near-me FAQ)</span></td><td class="kw-before">0</td><td class="kw-after">4</td><td class="kw-change">+4</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. THE STRATEGY / GAP
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">The Keyword Strategy — Where the Demand Actually Is</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">SEMrush US bulk export (130 kw) + GSC 112 queries &nbsp;·&nbsp; 5,591 impressions · 0 clicks</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block">
+                    <strong>The page is named after a rounding error.</strong> "product liability <em>attorney</em> miami" is 110/mo — the phrase the page is titled, H1'd, URL'd and schema'd around. The ungeo'd "product liability <em>lawyer</em>" is <strong>18,100/mo — 165× larger</strong> — and the page said it once. "lawyer" appeared 3× on the page; "attorney" 9×. GSC agrees independently: "lawyer" queries earn 3,039 impressions vs 2,115 for "attorney". The re-weighting toward "lawyer" (3 → 22) is the single biggest keyword move in this batch.
+                    <span class="reason">These are US-wide figures — market shape, not reachable traffic. But the shape is unambiguous.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">The money is in "defective", not "product liability" — 670–3,600/mo, CPC 2–3× higher, and the page's BEST ranks</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Cluster</th><th class="num">Vol/mo</th><th class="num">CPC</th><th class="num">Best GSC pos</th><th>Before</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>defective products attorney</td><td class="kw-num">1,300</td><td class="kw-cpc">$58.36</td><td class="kw-pos">10.06</td><td><span class="removed-badge">0× on page</span></td></tr>
+                                <tr><td>defective product lawyer</td><td class="kw-num">3,600</td><td class="kw-cpc">$46.32</td><td class="kw-pos">8.70</td><td><span class="removed-badge">0× on page</span></td></tr>
+                                <tr><td>miami defective products attorney</td><td class="kw-num">0*</td><td class="kw-cpc">—</td><td class="kw-pos">5.50</td><td><span class="removed-badge">0× on page</span></td></tr>
+                                <tr><td>product liability attorney <span style="font-style:italic;color:#6a737d;">(for contrast)</span></td><td class="kw-num">12,100</td><td class="kw-cpc">$21.07</td><td class="kw-pos">9.87</td><td>8× on page</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">Higher commercial value, better existing rank, zero content. That convergence is the clearest signal in the file. Fix #22 wove the 10 highest-CPC "defective / near me / law firm" phrases in once each (distributed, not stuffed). *VOL 0 ≠ no demand — SEMrush does not track thin local long-tail; GSC proves the searches happen.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">The "near me" cluster is 4,460/mo and 100% Transactional (ready-to-hire intent)</div>
+                    <div class="ba-after">Seven near-me variants, every one SEMrush's highest-purchase-intent label. The literal token "near me" was 0× on the page. Body prose reads awkwardly with it, so it lives in the <strong>near-me FAQ</strong> (Fix #16 / #22) — question + answer quote the three main variants as real searches — while the body uses "near you" (Fix #13). Now 0 → 4.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div class="cannibal-block" style="border-left-color:#febc2e;background:#fffbeb;">
+                    <strong>What has NOT changed: 5,591 impressions → 0 clicks.</strong> The page ranks 5.50–7.92 across the entire defective-product cluster and converts none of it. Volume data tells you what to <em>write</em>; it does not fix why nobody <em>clicks</em>. The remaining click levers — no CTA at conversion, "free" absent at the offer, priceRange "$1500–$10000" on a no-win-no-fee firm, 4.2 inherited stars beneath a competitor's 4.9 — are the open items below.
+                    <span class="reason">Sequence: fix the snippet &amp; offer first → rename toward "lawyer"/"defective" → build near-me / neighborhood coverage.</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. CONTENT CHANGES (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Changes <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— 40 fixes · body 1,091 → 3,388 words (+210%)</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">article.cshtml &nbsp;·&nbsp; Accuracy · Authority · New Sections · Coverage · Structure</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:26px;">
+
+                <!-- A: Legal accuracy -->
+                <div>
+                    <div class="group-label">A — Legal-Accuracy Corrections (Fix #1–#10) — the page stated the law more restrictively than it is</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; Warranty section rewritten to real Florida law <span class="fixed-badge">FIXED</span></div>
+                            <div style="display:flex;flex-direction:column;gap:7px;">
+                                <div class="ba-before">"Product Warranty Violations" was defined as a <em>failure to warn</em> — the page's own separate defect type, listed twice, and warranty never explained at all.</div>
+                                <div class="ba-after">Now defines <strong>express</strong> (Fla. Stat. 672.313) and <strong>implied</strong> warranties — merchantability &amp; fitness (672.314–672.315) — and breach as a claim that can sit alongside negligence and strict liability.</div>
+                            </div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Causation section — added the 50% comparative-fault bar <span class="fixed-badge">FIXED</span></div>
+                            <div class="ba-before">Old copy required the product be "used as directed" and that the victim "wasn't aware of its hazard" — neither is the test; a reader slightly off-label would conclude they had no case.</div>
+                            <div class="ba-after">Now states but-for + foreseeable-use causation, that foreseeable misuse does not end a claim, and the material fact the page missed entirely: HB 837 / <strong>Fla. Stat. 768.81(6)</strong> — more than 50% at fault = no recovery, and 768.81(1)(c) extends the bar to strict liability, products liability and breach of warranty.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; "Who can sue" untied from who BOUGHT the product <span class="fixed-badge">FIXED</span></div>
+                            <div class="ba-before">"You can sue … if you or anyone you know bought it" — wrong in both directions (an acquaintance's purchase is no claim; an injured non-purchaser was told they had nothing).</div>
+                            <div class="ba-after">The right to claim comes from being <strong>injured</strong>, not from buying — Florida abolished privity for strict liability and protects foreseeable users and bystanders (<em>West v. Caterpillar Tractor Co.</em>, 336 So. 2d 80, Fla. 1976).</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">4–10 &middot; Remaining accuracy pass <span class="fixed-badge">FIXED</span></div>
+                            <ul class="sections-list">
+                                <li>#4 Duty section aligned to foreseeable use (was contradicting #2)</li>
+                                <li>#5 Three "it's" → "its" possessive typos</li>
+                                <li>#6 4th "warning label" defect merged into Failure-to-Warn (doctrine recognises 3)</li>
+                                <li>#7 Privity tension closed (warranty runs against the seller, not any maker)</li>
+                                <li>#8 Removed "only PL lawyers can secure fair compensation" (Bar Rule 4-7.13)</li>
+                                <li>#9 Class-action sentence reworded (certification ≠ "you have no case")</li>
+                                <li class="full-row">#10 <strong>NEW deadline section</strong> — 4-yr (95.11(3)(d)) vs 2-yr negligence (95.11(4)(a)) stated as unresolved, plus the 12-yr statute of repose (95.031(2)(b)). The one block that needs counsel most — it is a position, not a correction.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- B: Authority / GEO -->
+                <div>
+                    <div class="group-label">B — Authority &amp; GEO (Fix #11, #15, #24, #25) — cited, government-sourced, AI-quotable</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">11 &middot; Cited external statistic <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">"Only about <strong>627</strong> product liability cases were filed statewide in 2024–25" — with a visible link to the source OSCA .gov PDF (verified: 12 monthly cells sum to 627). The stat + citation pattern generative engines reward most, and it frames the practice as specialized.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">15 &middot; Buried statute/case citations surfaced into the visible body <span class="new-badge">GEO</span></div>
+                            <div class="ba-after">Every authority from Fix #1–#4 &amp; #10 lived only in Razor comments (stripped server-side) — the rendered body contained <strong>zero</strong> law. Now visible: <em>West v. Caterpillar</em>, 672.313–672.315, 768.81, 95.11(3)(d), 95.11(4)(a), 95.031(2)(b). No new claim — a rendering change, so no new attorney decision.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">24 &amp; 25 &middot; Two cited data tables + honest "win rate" / "how much" answers <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>Multi-year Florida filings: FY21-22 <strong>1,034</strong> → FY24-25 <strong>627</strong> (OSCA, every figure re-verified)</li>
+                                <li>Case-duration targets: non-jury 12mo / jury 18mo / complex 30mo (Fla. R. Gen. Prac. 2.250)</li>
+                                <li class="full-row"><strong>No win % and no dollar figures on purpose</strong> — no public dataset measures either; publishing one would be unsourced AND a Bar Rule 4-7.13/4-7.14 risk. The sections answer the query intent honestly instead. Good E-E-A-T, Bar-safe.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- C: New sections -->
+                <div>
+                    <div class="group-label">C — New Content Sections (Fix #12, #13, #23, #27)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">12 &middot; Federal regulators + federal warranty law <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">Two H2s: CPSC / NHTSA (49 U.S.C. 30118) / FDA (21 CFR 7.3) recall systems, and the Magnuson-Moss Warranty Act (15 U.S.C. 2301). All primary sources, linked inline. Added the "recall" cluster (0 → 7) and medical-device / vehicle demand the body under-served.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">13 &middot; Miami neighborhoods / local GEO section <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">"Serving Miami and Nearby Communities" — Hialeah (already page-one), Coral Gables, Doral, Miami Lakes and more, framed as <strong>service area, never branch offices</strong> (only 2 offices are real). miami 7 → 35; hialeah 1 → 6.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">23 &amp; 27 &middot; How-to steps + product categories + theory-comparison table <span class="new-badge">NEW</span></div>
+                            <ul class="sections-list">
+                                <li>#23 "Steps to Take After a Defective Product Injury" — 7-step <code style="font-size:0.78rem">&lt;ol&gt;</code> (no HowTo schema — Google retired it in 2023)</li>
+                                <li>#27 "Types of Defective Products Our Miami Attorneys Handle" — 6 categories mapped to their FDA/NHTSA/CPSC regulator</li>
+                                <li>#27 "The Three Product Liability Theories at a Glance" — Negligence / Strict liability / Breach of warranty comparison table (reuses existing content)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- D: Coverage / structure -->
+                <div>
+                    <div class="group-label">D — Keyword Coverage, FAQ &amp; Structure (Fix #16, #19, #20–22, #26, #35–39)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">16 &amp; 26 &middot; English FAQ records created <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">The FAQ accordion + FAQPage microdata were already built but the EN page had <strong>0 English FAQ records</strong> (5 Spanish only) → empty region, no schema. Added 10 EN <code style="font-size:0.78rem">FAQEntity</code> records (the skin renders <code style="font-size:0.78rem">Take(10)</code>), each mapped to real search demand: SOL, defect types, strict liability, the 50% bar, recall-vs-lawsuit, medical devices, near-me, cost/free-consult, case duration.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">19 &middot; Table of Contents (jump-links to 11+ H2s) <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">An <code style="font-size:0.78rem">&lt;ol&gt;</code> of anchor links (site's <code style="font-size:0.78rem">#heading-N</code> convention) → eligible for Google "jump-to" sitelinks, a structural signal for engines, keyword-bearing anchor text. Styled in a gold-accent box, inline on this page only (shared CSS untouched).</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">35–39 &middot; Copy-edit, heading case, list styling &amp; bugfixes <span class="fixed-badge">POLISH</span></div>
+                            <ul class="sections-list">
+                                <li>#35 9 typo/grammar fixes (no legal-substance change)</li>
+                                <li>#36 3 H2 headings aligned to their Title-Case TOC labels</li>
+                                <li>#38 4 bullet lists → Bootstrap <code style="font-size:0.78rem">list-group</code> (parity with the PI page)</li>
+                                <li>#18 mobile horizontal-scroll bug fixed (a nowrap span in the stat block)</li>
+                                <li class="full-row">#39 BreadcrumbList position-2 repointed off the dead <code style="font-size:0.78rem">/injury-law</code> (404) to the live Personal Injury hub page</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. INTERNAL LINKING
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Internal Linking &amp; Cannibalization <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— Fix #14 · #14b · #28 · #34 · #40</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">The page was editorially ORPHANED (nav-only) despite ranking 5–8</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block" style="border-left-color:#28c840;background:#f0fdf4;">
+                    <strong>Cannibalization audit (re-run twice): NO harmful cannibalization.</strong> The decisive test — H1 <code style="font-size:0.78rem">targeredkeyword</code> in ServiceEntities.xml — shows <em>only this page</em> targets "Product Liability Attorney Miami". Every overlapping page targets a different money intent (employment class action, provider malpractice, B2B litigation) and most point <em>into</em> this page.
+                    <span class="reason">The real finding was the opposite of cannibalization: no page linked TO this one.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">6 inbound contextual links added, with deliberately varied anchor text</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Source page</th><th>Anchor text</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>personal-injury-lawyer-in-florida (hub)</td><td>"Product liability" <span style="color:#6a737d;font-style:italic;">(head term)</span></td></tr>
+                                <tr><td>commercial-litigation-attorney-miami</td><td>"Miami product liability attorneys" <span style="color:#6a737d;font-style:italic;">(only exact-match money anchor)</span></td></tr>
+                                <tr><td>miami-wrongful-death-lawyer</td><td>"defective products" / "product liability claim"</td></tr>
+                                <tr><td>miami-amputation-lawyer</td><td>"defective products"</td></tr>
+                                <tr><td>miami-pharmacy-malpractice-lawyer</td><td>"defective products" <span style="color:#6a737d;font-style:italic;">(defective DRUGS — strongest topical match)</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">Over-optimization risk comes from repeated exact-match <em>money</em> anchors — so only ONE uses the geo-money phrase; the rest reuse each source page's own wording. Every anchor was already text on the source page.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">#34 Related-services block + #40 menu placement</div>
+                    <ul class="sections-list">
+                        <li>#34 "We Also Represent Clients in the Following Cases" — data-driven <code style="font-size:0.78rem">ServicesRelated</code> partial, 6 sibling injury areas (mirrors the PI page)</li>
+                        <li>#40 moved product-liability directly below Hit-and-Run in the Personal Injury → Accidents flyout (XML document order)</li>
+                        <li class="full-row" style="font-style:italic;color:#6a737d;">Both edit ServiceEntities.xml (a data file) — synced to bin; needs an app restart if the running instance cached it at startup.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         6. SCHEMAS (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Structured Data Rebuilt <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— Fix #29–#33</span></div>
+
+        <div class="callout callout-info">
+            <strong>The entity graph now connects.</strong> The article emits three page-specific JSON-LD blocks (BreadcrumbList, WebPage+Speakable, Service); the shared skin's LegalService declares <code style="font-size:0.78rem">parentOrganization → #organization</code>, tying every service page to the one real brand node on the homepage (which already carries the correct <code style="font-size:0.78rem">sameAs</code>). Fix #32 first added a colliding <code style="font-size:0.78rem">@id</code> — Fix #33 corrected it to <code style="font-size:0.78rem">parentOrganization</code>, the exact pattern the homepage's 3 location nodes use.
+        </div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Items</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Home</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Personal Injury → the live PI hub (repointed off the /injury-law 404, Fix #39)</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Product Liability Attorney Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Breadcrumb rich result; explicit site-hierarchy signal. The only structured-data type the whole site was missing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">#pl-intro, #pl-definition (ids added)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks the concise passages a voice assistant / generative engine should read aloud</li>
+                            <li>Voice / GEO signal (rich result limited to news publishers — honest)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">Service</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">serviceType</span><span class="sf-val">Product Liability Law</span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">defective product lawyer / products liability attorney / product defect lawyer</span></div>
+                            <div class="schema-field"><span class="sf-key">provider</span><span class="sf-val">@id .../#organization (reference — merges with LegalService)</span></div>
+                            <div class="schema-field"><span class="sf-key">hasOfferCatalog</span><span class="sf-val">6 defective-product categories (Fix #27)</span></div>
+                            <div class="schema-field"><span class="sf-key">offers</span><span class="sf-val">NONE — deliberate (priceRange/Bar concern)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Entity/GEO signal (precise scope, provider, area). Not a SERP rich result — told the user honestly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">LegalService <span style="font-size:0.62rem;color:#8b8ba7;">(shared skin)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">parentOrganization</span><span class="sf-val">@id .../#organization (Fix #33 — was a colliding @id in #32)</span></div>
+                            <div class="schema-field"><span class="sf-key">NAP + hours</span><span class="sf-val">name / phone / address / serviceArea / OfferCatalog</span></div>
+                            <div class="schema-field"><span class="sf-key">priceRange</span><span class="sf-val" style="color:#b45309;">"$1500-$10000" — item I, STILL OPEN</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Now BELONGS TO the one brand node instead of pretending to be it — no address/price pollution of the parent</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 5</div>
+                    <div class="schema-card-title">FAQPage <span style="font-size:0.62rem;color:#8b8ba7;">(skin microdata)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Coverage</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">10</span>10 EN Q&amp;As (was 0 English — Fix #16 + #26)</div>
+                            <div class="faq-q-item"><span class="q-num">✓</span>Plain text — answers are HTML-encoded on render</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>The Q&amp;A format generative engines quote back most readily; carries "lawyer", "near me", medical-device demand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note card -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">No author node</div>
+                    <div class="schema-card-title">On purpose — needs an attorney name</div>
+                </div>
+                <div class="schema-card-body">
+                    <div class="schema-advantages" style="list-style:none;">
+                        <li>author / reviewedBy (E-E-A-T byline) is NOT added — the firm must name the reviewing attorney first.</li>
+                        <li>No price/Offer on the Service node — adding one would compound the wrong priceRange (item I) and raise a Bar Rule 4-7 fee issue.</li>
+                        <li style="color:#92400e;">Organization / WebSite schema remains a sitewide gap (separate ticket).</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p style="max-width:900px;margin-top:14px;font-size:0.79rem;color:#6a737d;font-style:italic;line-height:1.5;">
+            Count-refresh tooling strips <code style="font-size:0.75rem">&lt;script&gt;</code>/<code style="font-size:0.75rem">&lt;style&gt;</code> before counting, so JSON-LD text does not pollute the keyword table (verified: adding the blocks moved 0 rows). No duplicate entities — each block is a distinct <code style="font-size:0.75rem">@type</code>.
+        </p>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         7. GEO / STILL OPEN
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Status — Done vs Still Open</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">product-liability-attorney-miami (En) &nbsp;·&nbsp; every content item PENDING ATTORNEY REVIEW</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done (applied to working tree)</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> 10 EN legal-accuracy corrections, cited to statute (Fix #1–#10, #15)</li>
+                            <li><em class="geo-icon">✓</em> Body 1,091 → 3,388 words; cited filings + duration tables</li>
+                            <li><em class="geo-icon">✓</em> "lawyer" re-weighted 3 → 22; defective + near-me clusters covered</li>
+                            <li><em class="geo-icon">✓</em> Federal-regulator &amp; federal-warranty sections; product-category list</li>
+                            <li><em class="geo-icon">✓</em> Miami neighborhood service-area section (service area, not offices)</li>
+                            <li><em class="geo-icon">✓</em> 10 EN FAQ records → FAQPage schema (was 0)</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList + WebPage/Speakable + Service JSON-LD; entity graph connected</li>
+                            <li><em class="geo-icon">✓</em> 6 inbound internal links (was 0); related-services block; menu placement</li>
+                            <li><em class="geo-icon">✓</em> Social meta repaired (absolute URLs, large card, CTA description, Twitter tags)</li>
+                            <li><em class="geo-icon">✓</em> Table of Contents; heading-case, list-group styling, mobile-scroll &amp; breadcrumb-404 fixes</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="geo-col-title geo-needed-title">⚠ Still Open</div>
+                        <ul class="geo-list needed">
+                            <li><em class="geo-icon">✕</em> <strong>The click problem</strong> — 5,591 impressions → 0 clicks; "free" absent at conversion, thin vs competitors' 3,500–4,200 words, no verdicts/reviews</li>
+                            <li><em class="geo-icon">✕</em> <strong>Schema item I</strong> — priceRange "$1500-$10000" → "$$" (firm confirmed "$$"; HOLD until contingency-fee sign-off; 3 spots)</li>
+                            <li><em class="geo-icon">✕</em> <strong>Schema item J</strong> — homepage AggregateRating 4.2/1991 vs 4.7/355; the 4.2 renders in the SERP</li>
+                            <li><em class="geo-icon">✕</em> E-E-A-T author/reviewer byline — needs the firm to name the attorney</li>
+                            <li><em class="geo-icon">✕</em> <strong>Spanish page untouched</strong> — accuracy items A, B, D, E, F, G, K still live (SOL caveat, statute-of-repose framed as a benefit, second-hand goods, 4-way defect split, Bar "prácticamente ganado", stale ANSI 2002)</li>
+                            <li><em class="geo-icon">✕</em> Organization / WebSite schema sitewide; hreflang / meta-entity description conflict</li>
+                            <li><em class="geo-icon">✕</em> All content edits require Gallardo sign-off before publishing (YMYL)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>

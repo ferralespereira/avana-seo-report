@@ -1,0 +1,2079 @@
+================================================================================
+KEYWORD TABLE - /injury-law/product-liability-attorney-miami
+https://gallardolawyers.com/injury-law/product-liability-attorney-miami
+Date: 2026-07-16  |  Target keyword: "Product Liability Attorney Miami"
+VOL/CPC updated 2026-07-16 from the SEMrush US bulk exports (130 keywords).
+CONTENT CHANGELOG below - one accuracy fix applied 2026-07-16, PENDING REVIEW.
+================================================================================
+
+================================================================================
+CONTENT ACCURACY CHANGELOG
+================================================================================
+
+[2026-07-16] FIX #1 - "Product Warranty Violations" definition was legally wrong
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED TO WORKING TREE - NOT YET REVIEWED BY AN ATTORNEY
+                      Do not publish until Gallardo signs off. See RISK below.
+
+  WHAT WAS WRONG
+    The English page defined a warranty violation as a failure to warn:
+      "These violations represent the inability of a company to provide a
+       proper warning of the dangers of a product through normal or future
+       misuse. It can also represent unclear or inaccurate instructions for
+       the product."
+    That is not warranty law. It describes failure-to-warn, which the page
+    already covers as its own separate defect type two sections earlier. The
+    page therefore listed the same concept twice and never explained warranty
+    at all. A reader with a genuine breach-of-warranty claim would not have
+    recognised it from this page.
+
+  WHY IT MATTERED BEYOND ACCURACY
+    Breach of warranty is a distinct cause of action from negligence and strict
+    liability. Omitting it narrows the theories a reader thinks they have.
+
+  WHAT IT SAYS NOW
+    Defines the two warranties Florida actually recognises:
+      - Express warranty: a specific claim the manufacturer or seller makes
+        (advertising, packaging, manual, written guarantee) that becomes part
+        of the basis of the sale.
+      - Implied warranty: imposed automatically by law with no promise made -
+        merchantability (fit for the ordinary purpose sold for) and fitness for
+        a particular purpose (seller knows your use, you rely on their
+        judgment).
+      - Breach: product fails the promise or is not fit for ordinary use, and
+        that failure causes injury or loss - a claim that can sit alongside
+        negligence and strict liability.
+
+  STATUTORY BASIS (for the reviewing attorney to confirm)
+    Fla. Stat. 672.313 - express warranty: affirmation of fact or promise,
+      description, or sample/model made part of the basis of the bargain. No
+      formal words needed. Mere opinion or commendation does not create one.
+    Fla. Stat. 672.314 - implied warranty of merchantability: implied where the
+      seller is a merchant in goods of that kind; goods must pass without
+      objection in the trade and be fit for ordinary purposes.
+    Fla. Stat. 672.315 - implied warranty of fitness for a particular purpose:
+      seller has reason to know the purpose and that the buyer relies on the
+      seller's skill or judgment.
+
+  RISK / OPEN QUESTIONS FOR THE ATTORNEY - two things I deliberately did NOT
+  write into the page because they are judgment calls, not facts:
+    1. PRIVITY. Florida requires privity of contract for implied warranty
+       claims. A consumer who bought from a retailer generally cannot bring an
+       implied warranty claim against the manufacturer. The new text says "you
+       may have a breach of warranty claim" and does not mention this. That
+       hedge may be too soft - Gallardo should decide whether to state the
+       privity limit outright or drop the implied-warranty discussion for
+       consumers entirely.
+    2. MERCHANT LIMITATION. Merchantability is implied only when the seller is
+       a merchant in goods of that kind. The new text omits this. A private
+       one-off seller does not carry it.
+
+  CORRECTION TO MY OWN EARLIER ADVICE
+    When I reported this finding I said the Spanish page "correctly explains"
+    Garantia Expresa and Garantia Implicita and that English should be ported
+    from it. That was overstated. Spanish correctly IDENTIFIES the two
+    categories but defines both loosely:
+      - It calls express warranty "todas las etiquetas de advertencia o
+        senalizaciones puestas en el producto" - warning labels are not an
+        express warranty.
+      - It calls implied warranty "toda promesa del fabricante... de que, si se
+        usa segun lo previsto, no causara danos" - implied warranty is
+        precisely the warranty that exists when NO promise is made; it is
+        imposed by law, not promised by anyone.
+    So the English fix above was written against the statute, NOT ported from
+    the Spanish. THE SPANISH SECTION STILL NEEDS THE SAME FIX - it is wrong in
+    a different, subtler way, and it is still live. Not yet actioned.
+
+  EFFECT ON THE KEYWORD TABLE BELOW
+    Crawlable EN word count: 1,091 -> 1,223 (+132).
+    The ON column and the 1,091-word basis in the COLUMNS note are now stale
+    for these rows. Recount before relying on them:
+      warranty              1 -> 7      warning        7 -> 6
+      product              53 -> 55     negligence     3 -> 4
+      strict liability      0 -> 1      merchantability      0 -> 1
+      express warranty      0 -> 1      implied warranty     0 -> 3
+      breach of warranty    0 -> 1
+    Unchanged: product liability 16, attorney 9, lawyer 3, miami 7,
+    product warranty 1. The fix moved no target keyword - it was an accuracy
+    change, not an SEO change.
+
+--------------------------------------------------------------------------------
+
+[2026-07-16] FIX #2 - causation section stated the law far too restrictively
+             (audit item D)
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+                      H3 "Proving that a defective product caused your injury"
+             Status : APPLIED TO WORKING TREE - NOT YET REVIEWED BY AN ATTORNEY
+                      Do not publish until Gallardo signs off.
+
+  WHAT WAS WRONG
+      "You can prove that you were injured as a result of a defective product
+       by proving that the product was used as directed on the label and that
+       the victim wasn't aware of its hazard before using it. This places
+       responsibility on the manufacturer instead of the person who used it."
+    Three problems, each of which narrows the reader's claim:
+      1. "used as directed on the label" is not the test. Florida asks whether
+         the product performed as safely as an ordinary consumer would expect
+         when used as intended OR in a reasonably foreseeable manner. A
+         foreseeable misuse still supports a claim.
+      2. "wasn't aware of its hazard" is not a requirement. Awareness of risk
+         does not bar recovery. The real defense is much narrower: unreasonable
+         continued use AFTER discovering the actual defect and the danger.
+      3. It omitted the actual causation elements entirely - but-for cause,
+         proximate cause, and that the defect existed when the product left the
+         defendant's control.
+    Net effect: a reader who used a product slightly off-label, or who knew it
+    carried some risk, would conclude they had no case. On an intake page that
+    is the most expensive kind of error.
+
+  WHAT IT SAYS NOW - three paragraphs:
+    - Causation: but-for + foreseeable result, and the defect must have existed
+      when the product left the manufacturer's control (not from a later
+      modification or repair).
+    - Intended vs foreseeable use: no need to have followed the label to the
+      letter; foreseeable misuse does not end the claim; awareness of risk does
+      not either; states the narrow real defense.
+    - Comparative fault: damages reduced by the claimant's share, and the
+      50%-bar (below).
+
+  THE MATERIAL FACT THE PAGE WAS MISSING ALTOGETHER
+    Florida is no longer a pure comparative negligence state. HB 837 created
+    Fla. Stat. 768.81(6) on 24 Mar 2023: a party found MORE THAN 50% at fault
+    for their own harm recovers NOTHING. And 768.81(1)(c) defines "negligence
+    action" to expressly include strict liability, products liability and
+    breach of warranty - so the 51% bar DOES reach every theory this page
+    discusses. This is probably the single most important thing an injured
+    Floridian needs to know in 2026, and the page did not mention it in either
+    language. It is now in the EN page only.
+
+  STATUTORY / CASE BASIS (for the reviewing attorney to confirm)
+    Fla. Stat. 768.81(6)   - >50% at fault = no recovery (eff. 24 Mar 2023).
+    Fla. Stat. 768.81(1)(c)- "negligence action" includes strict liability,
+                             products liability, breach of warranty.
+                             (Medical negligence under ch. 766 is excepted.)
+    West v. Caterpillar Tractor Co., 336 So. 2d 80 (Fla. 1976) - Florida
+                             adopted strict product liability.
+    Elements: defect; defect existed when it left the defendant's control;
+              defect was the actual and proximate cause of injury.
+    Defenses: post-sale modification; unforeseeable misuse as the SOLE cause;
+              unreasonable use after discovery of the defect and danger.
+
+  RISK / OPEN QUESTIONS FOR THE ATTORNEY
+    1. The new text says fault "usually" affects how much you recover rather
+       than whether you can claim - then gives the 50% bar as the exception.
+       Gallardo may prefer to lead with the bar rather than soften it.
+    2. I did not address whether comparative fault principles apply identically
+       to a pure strict-liability count as to a negligence count. 768.81(1)(c)
+       says the section covers both, but the apportionment mechanics in a
+       strict liability case are worth a lawyer's eye.
+    3. The closing line advises speaking to a lawyer before giving a recorded
+       statement to an insurer. True and useful, but it is advice - confirm it
+       is the guidance the firm wants to give.
+
+  EFFECT ON THE KEYWORD TABLE BELOW
+    Crawlable EN word count: 1,223 -> 1,384 (+161). Cumulative: 1,091 -> 1,384.
+    The 1,091-word basis in the COLUMNS note and every ON figure are now stale.
+      product liability lawyer  1 -> 2     lawyer            3 -> 4
+      product liability        16 -> 17    foreseeable       0 -> 2
+      defective product         9 -> 8
+    Unchanged: attorney 9, miami 7.
+    Incidental and worth noting: "lawyer" is now 4 vs "attorney" 9. The gap the
+    table calls the biggest keyword-level problem (N2 / F3) narrowed slightly,
+    but this was an accuracy fix and the wording was chosen for correctness,
+    not for the count. "defective product" dropped by 1 because the old
+    sentence used the phrase twice in a construction that was wrong.
+
+--------------------------------------------------------------------------------
+
+[2026-07-16] FIX #3 - opening section tied the right to sue to who BOUGHT the
+             product (audit item C)
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+                      H2 "What is Product Liability?"
+             Status : APPLIED TO WORKING TREE - NOT YET REVIEWED BY AN ATTORNEY
+                      Do not publish until Gallardo signs off. See RISK below.
+
+  WHAT WAS WRONG
+      "You can sue companies or manufacturers for this product if you or
+       anyone you know bought it."
+    The trigger for an injury claim is being INJURED, not purchasing. The
+    sentence was wrong in both directions at once:
+      - TOO BROAD: an acquaintance buying a product creates no claim for you.
+        Read literally, a neighbour's purchase of a defective heater that never
+        touched you would let you sue. It would not.
+      - TOO NARROW: by framing the question around who bought it, it tells an
+        injured non-purchaser they have nothing. Florida abolished privity for
+        strict liability - a person hurt by a product they were given,
+        borrowed, or merely stood near can bring a claim.
+    Probable origin: a garbled version of the standard "you or a loved one
+    [was injured]" formulation. It reads as a drafting accident, not a
+    misunderstanding of the law.
+
+  WHAT IT SAYS NOW
+    States that the right to claim comes from being injured rather than from
+    paying for the product; that you need not have bought it yourself to sue
+    over an injury it caused; and that Florida protects anyone the manufacturer
+    should reasonably have expected to be using the product or to be near it.
+    Also replaced the opening clause "the act of holding a seller liable" with
+    language covering the companies that make AND sell the product, since the
+    rest of the paragraph already extends liability up the whole chain.
+
+  BASIS (for the reviewing attorney to confirm)
+    West v. Caterpillar Tractor Co., 336 So. 2d 80 (Fla. 1976) - adopted
+      Restatement (2d) Torts 402A; abolished the privity requirement; extended
+      protection beyond users and consumers to foreseeable bystanders within
+      the danger zone of the product's use.
+    Recovery elements per West: the product was in a defective condition
+      unreasonably dangerous to foreseeable users OR BYSTANDERS at the time of
+      sale, and that condition proximately caused the damages.
+
+  RISK / OPEN QUESTION FOR THE ATTORNEY - ONE I INTRODUCED
+    This fix and FIX #1 are in tension and a reader could combine them wrongly.
+    Privity is abolished for STRICT LIABILITY and negligence (this section now
+    says so), but Florida still REQUIRES privity for IMPLIED WARRANTY claims
+    (flagged under FIX #1). A reader who takes "you do not need to have bought
+    it" from this section and carries it into the warranty section could
+    conclude they have an implied warranty claim against a manufacturer they
+    never dealt with. They would not.
+    I scoped the wording to "to sue over an injury it caused" - true of the
+    tort theories - rather than stating it as a universal rule, but the two
+    sections should be read together and reconciled by counsel. This is the
+    cost of fixing accuracy issues one at a time; it is worth one pass over the
+    whole page once the individual fixes are settled.
+
+  EFFECT ON THE KEYWORD TABLE BELOW
+    Crawlable EN word count: 1,384 -> 1,450 (+66). Cumulative: 1,091 -> 1,450,
+    a 33% increase across the three fixes. Every ON figure and the 1,091-word
+    basis in the COLUMNS note are stale.
+      manufacturer  9 -> 11    defective  13 -> 11    product liability 16 -> 17
+      lawyer        3 ->  4    attorney    9 ->  9    miami              7 ->  7
+    "defective" dropped 2 because the old sentence leaned on "defective or
+    hazardous product" phrasing that the rewrite states more plainly.
+
+--------------------------------------------------------------------------------
+
+[2026-07-16] FIX #4 - "Seller or manufacturer's duty" limited the duty to
+             directed use, contradicting FIX #2 two paragraphs above it
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+                      H3 "Seller or manufacturer's duty"
+             Status : APPLIED TO WORKING TREE - NOT YET REVIEWED BY AN ATTORNEY
+                      Do not publish until Gallardo signs off.
+
+  WHY THIS ONE EXISTED AT ALL - I CREATED HALF OF IT
+    This is the same error as audit item D, sitting in the sibling H3. FIX #2
+    corrected the causation paragraph to say foreseeable misuse does not defeat
+    a claim. This paragraph, three lines below it, still said the duty covered
+    use "in the way that is directed". Before FIX #2 the page was consistently
+    wrong; after FIX #2 it contradicted itself in adjacent paragraphs. Fixing a
+    page in pieces creates these seams - this is the second one (the first is
+    the privity tension logged under FIX #3).
+
+  WHAT WAS WRONG
+      "It is the sellers and manufacturers duty to ensure that the product they
+       are distributing is safe to use in the way that is directed. It extends
+       to all parties involved in it its sale."
+      - "in the way that is directed" - the duty is not limited to instructed
+        use. A maker is expected to foresee the ordinary ways a product
+        actually gets used. Same too-restrictive framing as item D.
+      - Two drafting errors in one sentence: "sellers and manufacturers duty"
+        missing both apostrophes, and "in it its sale" is garbled.
+
+  WHAT IT SAYS NOW
+    Duty covers the use the product is sold for AND any use the maker could
+    reasonably have anticipated; states explicitly that the duty is not limited
+    to people who follow instructions exactly; keeps the chain-of-sale point
+    and names its endpoints (component maker through to retailer).
+
+  BASIS - none new. Same ground already verified for FIX #2: a product is
+    unreasonably dangerous if it fails to perform as safely as an ordinary
+    consumer would expect when used as intended OR in a reasonably foreseeable
+    manner. The defense is unforeseeable misuse as the SOLE cause, not any
+    departure from the instructions.
+
+  EFFECT ON THE KEYWORD TABLE BELOW
+    Crawlable EN word count: 1,450 -> 1,505 (+55). Cumulative: 1,091 -> 1,505,
+    +38% across four fixes. Every ON figure and the 1,091-word basis in the
+    COLUMNS note are stale.
+      manufacturer 9 -> 11   foreseeable 0 -> 2   product liability 16 -> 17
+      lawyer       3 ->  4   attorney    9 -> 9   miami              7 ->  7
+
+  THE ENGLISH PAGE IS NOW CLEAN OF THIS CLASS OF ERROR
+    Grepped for the remaining "as directed / as instructed / wasn't aware"
+    framing: no hits outside the two paragraphs above, both now correct.
+    Items C, D and the warranty error are closed on EN. What remains on EN is
+    F, H, the schema items, and the missing deadline section - none of which
+    are the same "page states the law more restrictively than it is" pattern.
+
+--------------------------------------------------------------------------------
+
+[2026-07-16] FIXES #5-#10 - remaining EN content issues cleared in one pass
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - ALL PENDING ATTORNEY REVIEW.
+                      FIX #10 (deadline section) needs counsel MORE than any
+                      other block on this page. See below.
+
+  #5  THREE "it's" TYPOS, not the one reported. Lines 11, 34, 54 in the
+      pre-edit file: "instructions on it's labels", "parties involved in it's
+      distribution", "such as it's assembly instructions". All are possessive
+      "its". I originally flagged only the first. Fixed all three.
+
+  #6  FOURTH DEFECT TYPE MERGED (audit item F).
+      "Warning Labels- is when a product has unclear or missing warning labels
+      ..." was listed as a peer of Manufacturing / Design / Failure to Warn.
+      Doctrine recognises three; the warning label IS the failure-to-warn
+      mechanism, not a separate category. Merged into the Failure to Warn
+      bullet, which now covers missing, unclear, incomplete or badly placed
+      labels and unsafe instructions. The stray hyphen went with it.
+      Source: Restatement (2d) Torts 402A per West v. Caterpillar (Fla. 1976).
+
+  #7  PRIVITY TENSION CLOSED - the seam I opened in FIX #3.
+      FIX #3 told readers they need not have bought the product to sue. True
+      for strict liability and negligence; NOT true for implied warranty, where
+      Florida still requires privity. A reader could carry the rule across.
+      The warranty bullet now states that a warranty comes out of the sale, so
+      an implied warranty claim generally runs against the party you bought
+      from rather than a manufacturer you never dealt with, and says explicitly
+      that negligence and strict liability are not limited that way.
+      This is a scoping sentence, not a full privity explanation - counsel to
+      confirm it is accurate and sufficient.
+
+  #8  "ONLY PRODUCT LIABILITY LAWYERS CAN SECURE FAIR COMPENSATION" REMOVED
+      (audit item H). Factually untrue - claimants settle without counsel - and
+      self-serving. Replaced with what a lawyer actually does (choice of cause
+      of action, identifying every responsible party, valuing the loss before
+      an offer lands), an explicit statement that you may pursue a claim
+      without one, and the real reason most people hire one: the other side
+      has counsel and offer size tracks how well the claim was built.
+      Source: Fla. Bar Rule 4-7.13(a), deceptive and inherently misleading
+      advertisements.
+
+  #9  CLASS ACTION SENTENCE REWORDED. "A class action lawsuit typically does
+      not proceed if the consumers have suffered serious injuries or if these
+      injuries differ from one another" was stated as a rule. It is not one.
+      Serious and differing injuries cut against CERTIFICATION because
+      individual questions predominate - but those cases proceed as individual
+      suits or mass torts, they do not fail to proceed. The old wording could
+      read to a seriously injured person as "you have no case". Now explains
+      why certification is unlikely and says the case belongs on its own or in
+      a mass tort. Source: Fed. R. Civ. P. 23(a)-(b)(3) / Fla. R. Civ. P. 1.220
+      (commonality, typicality, predominance). COUNSEL TO CONFIRM.
+
+  #10 NEW SECTION - "How Long Do You Have to File a Product Liability Claim in
+      Florida?" placed between the Elements and Class Action sections.
+      This is the only NEW content on the page; #5-#9 edited what was there.
+      The page previously stated no filing deadline in either language - the ES
+      FAQ mentions one, the EN page said nothing at all.
+      Sources: Fla. Stat. 95.11(3)(d) - 4-yr for actions founded on design,
+        manufacture, distribution or sale of personal property. HB 837
+        renumbered but did not shorten it.
+        Fla. Stat. 95.11(4)(a) - 2-yr negligence, causes accruing on/after
+        24 Mar 2023.
+        Fla. Stat. 95.031(2)(b) - 12-yr statute of REPOSE from delivery to the
+        first purchaser; narrow tolling for concealed defects and
+        late-manifesting injury; longer where useful life exceeds 10 years.
+
+      WHY THIS ONE IS DIFFERENT AND WHAT I REFUSED TO DO
+        No Florida court has decided whether a negligence-based product claim
+        takes the 2-year or the 4-year period. I did not pick one. Writing "you
+        have four years" on a law firm page, when a court may hold it is two,
+        could cost a reader their claim - and writing "two" when it may be four
+        would understate their rights. The copy therefore states both periods,
+        says plainly that the interaction is unresolved, and tells the reader to
+        plan on the shorter one. It also corrects, preemptively, the error the
+        ES FAQ makes: the 12-year figure is presented as an outside limit that
+        can bar a claim before injury, NOT as extra time.
+        GALLARDO MUST DECIDE whether "we cannot promise you the longer period,
+        assume the shorter" is the firm's public position, or whether to state
+        a single figure and own it. Everything else on this page is a
+        correction; this is a position.
+      NOT ADDRESSED: wrongful death limitations period. Not verified, not
+        written. Confirm separately if the firm wants it here.
+
+  EFFECT ON THE KEYWORD TABLE BELOW - THE TABLE IS NOW SUBSTANTIALLY STALE
+    Crawlable EN word count: 1,505 -> 1,905. Cumulative: 1,091 -> 1,905, +75%
+    across ten fixes. The COLUMNS note still says the ON column is measured
+    against 1,091 words - that basis is gone. Every ON figure and every DENS%
+    in the original analysis predates all ten fixes.
+    RECOMMEND: re-run the full count before using the table to make any content
+    decision. The keyword conclusions (lawyer vs attorney, the defective
+    cluster, near-me) were drawn from GSC impressions and SEMrush volume, NOT
+    from the ON column, so those still hold. Only the ON column is affected.
+
+  THE ENGLISH PAGE CONTENT AUDIT IS NOW CLOSED
+    Items C, D, F, H, the warranty error, the class action wording, the typos
+    and the missing deadline section are all addressed. What remains on EN is
+    NOT article copy: the schema items (I, J), the og:image duplication, the
+    missing hreflang, the meta/entity description conflict, and the absence of
+    any English FAQEntity records. The Spanish page is untouched and every ES
+    item below is still live.
+
+--------------------------------------------------------------------------------
+
+[2026-07-17] FIX #11 - added a cited external stat (GEO / E-E-A-T)
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+                      New paragraph after the intro, before "What is Product Liability?"
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+
+  WHAT WAS ADDED
+    "Product liability is a specialized field. Across all of Florida, only about
+     627 product liability cases were filed in the 2024-25 court year - a
+     fraction of routine injury claims - and they turn on evidence and legal
+     theories that general personal-injury practice rarely touches."
+    Followed by a VISIBLE external link to the source .gov PDF.
+  SOURCE: Florida OSCA, FY 2024-25 Statistical Reference Guide, Ch. 4 Circuit
+    Civil Statistics. Products Liability FILINGS statewide = 627 (verified: the
+    12 monthly cells 68/79/76/53/44/38/27/37/58/50/43/54 sum to 627). This is a
+    FILING count, not an outcome or verdict.
+    https://flcourts-media.flcourts.gov/content/download/2472279/file/2024-25-chapter-4-circuit-civil-ada-20251030.pdf
+  WHY: two purposes.
+    - GEO: a cited statistic with an external authoritative source is the
+      stat + citation pattern generative engines reward most. The number and
+      the source are in the VISIBLE body (unlike the statute cites, which are
+      still trapped in Razor comments - see the GEO gap note below).
+    - Positioning: frames the practice as specialized, arguing for a specialist.
+  DOUBLE-EDGE - FIRM TO DECIDE: the same "only 627" can read as "my case is
+    rare / maybe I have no case". It is a marketing judgment, not a fact. The
+    627 is objective; the "general PI rarely touches this" line is the firm's
+    positioning and needs firm sign-off.
+  LINK MAINTENANCE: flcourts-media download URLs carry a numeric ID (2472279)
+    that can rotate when the guide is reissued. Re-verify the link periodically;
+    if it 404s, the current guide is at flcourts.gov -> Publications/Statistics.
+  DELIBERATELY NOT USED: the 2,667 dispositions figure (mixing filings and
+    dispositions on a public page invites confusion); raw "627" with no framing.
+
+  GEO GAP STILL OPEN (surfaced while doing this) - HIGH VALUE, LOW EFFORT:
+    Every statute/case citation added in FIXES #1-#4 and #10 lives ONLY in Razor
+    comments, which are stripped server-side. The rendered body contains ZERO of
+    "95.11", "768.81", "672.313", "HB 837" or "West v. Caterpillar" - a
+    generative engine never sees the authority behind the claims. Surfacing the
+    bare citations into the visible sentences they already support (e.g. "Under
+    Florida Statute 95.11(3)(d), Florida allows four years...") is the single
+    highest-value GEO move left on the page: the research is already done, the
+    citations back claims already published, and no new attorney decision is
+    needed. Not yet applied.
+
+--------------------------------------------------------------------------------
+
+[2026-07-17] FIX #12 - two new sourced sections to reinforce high-volume keywords
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Purpose: user asked for more content reinforcing the highest-volume
+                      keywords, sourced only from reliable/government sources,
+                      with each source linked in the code.
+
+  ADDED - two H2 sections after the deadline section, before Class Action:
+    1. "Federal Agencies That Regulate Defective and Dangerous Products"
+       - CPSC: jurisdiction over 15,000+ consumer product types.
+       - NHTSA: 49 U.S.C. 30118; 2023 = ~1,000 recalls / 39M+ vehicles & equip.
+       - FDA: Class I/II/III recall system (21 CFR 7.3); defective medical
+         devices.
+    2. "Your Rights Under Federal Warranty Law"
+       - Magnuson-Moss Warranty Act, 15 U.S.C. 2301 et seq. (1975), FTC.
+       - Federalises the state warranty discussion already on the page.
+
+  SOURCES - all primary, linked BOTH inline (visible <a>) and in Razor comments:
+    https://www.cpsc.gov/
+    https://www.nhtsa.gov/recalls  (+ 49 USC ch.301 uscode.house.gov)
+    https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts  (21 CFR 7.3)
+    https://www.ftc.gov/business-guidance/resources/businesspersons-guide-federal-warranty-law
+    https://www.law.cornell.edu/uscode/text/15/2301
+
+  METHOD/HONESTY NOTES:
+    - CPSC, NHTSA, Magnuson-Moss facts fetched cleanly from primary sources.
+    - FDA and eCFR BLOCKED automated fetch (403/redirect). The Class I/II/III
+      wording is PARAPHRASED from the standard 21 CFR 7.3 definitions, not a
+      verbatim quote. Flagged in the code comment; verify exact text pre-publish.
+    - NHTSA "1,000 recalls / 39M vehicles" is 2023 (latest processed figure
+      found); refresh when a newer NHTSA figure is available.
+    - All figures are agency recall/oversight counts, NOT verdicts or firm
+      results. They are educational/authority signals, not proof of outcomes.
+
+  KEYWORD REINFORCEMENT (rendered-body counts, whole page, after this fix):
+    product liability lawyer   1 -> 5   (this is the 18,100/mo head term - the
+                                         table's single biggest keyword gap, N2)
+    product liability          ~17 -> 22
+    defective product          9 -> 12
+    defective products         3 -> 4
+    recall                     0 -> 7   (new cluster; matches no prior coverage)
+    medical device             0 -> 2   (matches GSC "defective medical devices
+                                         lawyer miami", 74 impr, previously 0x)
+    vehicle                    ~1 -> 6   (matches "miami defective auto parts
+                                         lawyer" and the motor-vehicle queries)
+    warranty                   7 -> 17
+    These are natural-prose gains, not stuffing - each sits in a sourced factual
+    sentence. The "lawyer" reinforcement is the SEO-relevant one: the page was
+    over-indexed on "attorney" (9) vs "lawyer" (was 1-3) while GSC/SEMrush both
+    show "lawyer" carries the larger demand.
+
+  EFFECT ON THE KEYWORD TABLE BELOW - NOW HEAVILY STALE
+    Rendered word count: ~1,963 -> 2,376. Cumulative from original: 1,091 ->
+    2,376, +118%. The competitor depth gap (was ~1,590 vs 3,500-4,200) is now
+    roughly halved. Every ON figure and DENS% in the table predates all twelve
+    fixes and must be recounted before use. The VOL/IMPR-based conclusions are
+    unaffected (they never depended on the ON column).
+
+--------------------------------------------------------------------------------
+
+[2026-07-17] FIX #13 - local / GEO section for Miami neighborhoods
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+                      New H2 "Product Liability Lawyers Serving Miami and Nearby
+                      Communities", placed before the Contact section.
+             Status : APPLIED - PENDING FIRM REVIEW of the service-area list.
+
+  WHY: the page had ZERO neighborhood coverage while GSC shows real local demand:
+       Hialeah ~133 impr at pos 9-10 (already page one), Coral Gables ~185 impr,
+       plus Doral, Miami Lakes, Miami Springs, Opa-locka, Miami Shores, South
+       Miami, Miami Beach, downtown/Brickell (33131/33137 = 67 impr). SEMrush
+       "product liability attorney/lawyer near me" cluster = ~4,460/mo, all
+       Transactional intent.
+  ACCURACY GUARDRAILS (important):
+       - Two offices are REAL (LocationPage entities): Miami 8492 SW 8th St 33144,
+         Hialeah 7802 NW 103rd St #113 33016.
+       - Neighborhoods framed as SERVICE AREA, never as branch offices. A guard
+         note in the code comment says not to rewrite into "our Coral Gables
+         office" etc. Verified 0 fake-office phrases in rendered copy.
+       - Fort Lauderdale / Broward and out-of-state queries DELIBERATELY EXCLUDED
+         (different market; team agreed not to target on this page).
+       - Phone via @@Settings.GetPhoneFormated, not hardcoded.
+       - FIRM TO CONFIRM the service-area list is one it wants to publish.
+  KEYWORD/GEO REINFORCEMENT (rendered body, whole page):
+       product liability lawyer   5 -> 8   (18,100/mo head term)
+       miami                     ~7 -> 18
+       hialeah                    1 -> 4   (page-one query, was 1x in last para)
+       coral gables / doral /     0 -> 1 each  (each an unserved GSC query)
+         miami lakes
+       miami-dade                 0 -> 2
+       defective product         12 -> 16
+  JUDGMENT CALL YOU SHOULD KNOW ABOUT - "near me":
+       The literal string "near me" is 0x in the new copy. I wrote "a product
+       liability lawyer near YOU", which reads naturally; "near me" in
+       third-person body prose reads awkwardly. Google treats near-me as
+       location-intent (proximity + Google Business Profile drive it far more
+       than exact text), so the literal string is low-value and I chose natural
+       phrasing. If the firm wants the exact token anyway, it can go in an H2 or
+       FAQ question ("Where can I find a product liability lawyer near me?").
+       Flagging rather than deciding silently.
+  EFFECT ON TABLE: rendered words 2,376 -> 2,542. Cumulative 1,091 -> 2,542,
+       +133%. ON column fully stale; recount before use.
+
+--------------------------------------------------------------------------------
+
+[2026-07-17] FIX #14 - internal links added TO this page (cannibalization check)
+             Files edited (NOT the product-liability page itself):
+               Views/ServicePage/Content/injury-law/personal-injury-lawyer-in-florida/En/article.cshtml
+               Views/ServicePage/Content/civil/commercial-litigation-attorney-miami/En/article.cshtml
+             Status : APPLIED - low risk, but part of the same pending-review batch.
+
+  CANNIBALIZATION AUDIT RESULT (the question that prompted this):
+    NO harmful cannibalization exists.
+    - Only ONE service page targets "product liability" - this one. No lemon-law,
+      warranty, or recall page competes. Spanish twin is hreflang, not a rival.
+    - The FIX #11-#13 additions (CPSC/NHTSA/FDA, Magnuson-Moss, Miami
+      neighborhoods) are NOT duplicated elsewhere. The Hialeah service pages
+      (car-accident, PI, slip-and-fall, truck, wrongful-death) contain ZERO
+      "product liability" mentions, so the new local section does not collide.
+    - Mild topical overlap only: commercial-litigation-attorney-miami used
+      "product liability" 4x in a BUSINESS/class-action frame (different intent).
+    REAL finding was the opposite: NO other page linked to this one - it was
+    editorially orphaned (nav/menu only, no contextual in-body links).
+
+  WHAT WAS ADDED - two contextual internal links pointing here:
+    1. personal-injury-lawyer-in-florida (the PI hub): the practice-area list
+       item "Product liability involving defective or dangerous goods" now links
+       "Product liability" -> /injury-law/product-liability-attorney-miami.
+       Textbook hub -> spoke; passes topical + link equity to the spoke.
+    2. commercial-litigation-attorney-miami: added a sentence distinguishing
+       consumer product-liability from the business framing, linking "Miami
+       product liability attorneys" -> the page. This consolidates the
+       "product liability" signal AND resolves the mild overlap by making the
+       consumer page the clear canonical target for consumer intent.
+    Anchor text is descriptive/keyword-bearing ("Product liability", "Miami
+    product liability attorneys"), not "click here".
+
+  WHY IT HELPS THE 0-CLICK PROBLEM: the page ranks 6-8 with no internal links
+    feeding it. Contextual links from two topically-relevant pages pass equity
+    and reinforce relevance - a standard lever for a page stuck just off the top.
+
+  [2026-07-17 UPDATE - broader pass done, see FIX #14b below.]
+
+--------------------------------------------------------------------------------
+
+[2026-07-17] FIX #14b - broader internal-link pass (3 more inbound links)
+             Files edited:
+               injury-law/miami-wrongful-death-lawyer/En/article.cshtml
+               injury-law/miami-amputation-lawyer/En/article.cshtml
+               injury-law/miami-pharmacy-malpractice-lawyer/En/article.cshtml
+             Status : APPLIED.
+
+  The page now has 5 inbound contextual internal links (was 0 before FIX #14).
+  ANCHOR-TEXT DISTRIBUTION (deliberately varied to avoid over-optimization):
+    personal-injury-lawyer-in-florida    -> "Product liability"      (head term)
+    commercial-litigation-attorney-miami -> "Miami product liability attorneys"
+                                            (the only exact-match money anchor)
+    miami-wrongful-death-lawyer          -> "defective products"     (topical)
+    miami-amputation-lawyer              -> "defective products"     (topical)
+    miami-pharmacy-malpractice-lawyer    -> "defective products"     (topical)
+  Rationale: over-optimization risk comes from repeated exact-match MONEY
+  anchors, not from a natural descriptive phrase. So only ONE link uses the
+  geo-money anchor; the rest use the pages' own existing wording. Each anchor is
+  text already present on the source page - nothing was contorted to force a
+  keyword.
+  BONUS RELEVANCE: the pharmacy-malpractice page is about defective DRUGS, which
+  maps to the GSC "defective medical devices lawyer miami" / pharmaceutical
+  queries - topically the strongest of the three inbound links.
+  NOT LINKED (deliberately): further pages would push identical-anchor repetition
+  into risky territory. 5 well-distributed links is a healthy stopping point for
+  a page of this size. Revisit only if new topically-relevant pages are added.
+
+  STILL OPEN FROM THE ACCURACY AUDIT (not fixed, in rough severity order)
+    A. Statute of limitations. ES FAQ states 4 years flatly. Products SOL is
+       still 4 yrs under Fla. Stat. 95.11(3)(d), but HB 837 (24 Mar 2023) cut
+       NEGLIGENCE to 2 yrs under 95.11(4)(a), and no Florida case yet resolves
+       which applies to negligence-based product claims. Practitioners advise
+       assuming 2. Page gives no caveat. EN page gives no deadline at all.
+    B. ES FAQ frames the 12-year figure as an extension. It is a statute of
+       REPOSE (Fla. Stat. 95.031(2)(b)) - an absolute cutoff from delivery to
+       the first purchaser that bars claims regardless of injury date. The page
+       describes a bar as a benefit.
+    C. [FIXED 2026-07-16 - see FIX #3 above. EN only. The ES page does not
+       contain this error; its opening section never ties the claim to
+       purchase, so nothing to port back.]
+    D. [FIXED 2026-07-16 - see FIX #2 above. EN only; the ES causation section
+       "Demostrar que un producto defectuoso causo su lesion" has the same
+       shape of error and is STILL LIVE - it requires the product to have been
+       used "segun lo previsto" with "no puede haber un acto o agravante
+       intermedio", and never mentions comparative fault or the 50% bar.]
+    E. ES: second-hand products flatly "no son elegibles" for strict liability.
+       Overbroad - used-goods SELLERS generally are not strictly liable, but
+       the manufacturer still can be if the defect originated in design or
+       manufacturing.
+    F. [FIXED ON EN 2026-07-16 - see FIX #6. The ES page has the same four-way
+       split (Defectos de fabricacion / Defectos de diseno / No advertir /
+       Etiquetas de advertencia) and is STILL LIVE. Note the ES "Etiquetas de
+       advertencia" section is substantial - it covers the ANSI colour and
+       signal-word rules - so merging it is a bigger job than the EN merge was,
+       and it carries the stale ANSI 2002 date (item K).]
+    G. BAR COMPLIANCE - ES says a plaintiff's case would be "practicamente
+       ganado". Fla. Bar Rule 4-7.13(b)(1) bars any statement a consumer could
+       read as a prediction or guaranty of success.
+    H. BAR COMPLIANCE - both versions claim "only product liability lawyers can
+       secure fair compensation". Not true; people settle without counsel.
+    I. SCHEMA - priceRange takes four different values sitewide: "$$",
+       "$1500-$10000" (this page, ServicePageSkin.cshtml:369), "$1500-$50000"
+       (contact, opt-out), "0-15000" (Shared/Footer/Lp/Mobile.cshtml:32). Any
+       specific figure contradicts a contingency-fee firm.
+       CONFIRMED RESOLUTION (2026-07-20, user - "Go with $$"): standardize every
+       priceRange to "$$", the Google relative-price indicator the homepage's 3
+       location LegalService nodes already use. Chosen over the alternative of
+       removing priceRange entirely (theoretically more accurate for a contingency
+       firm, but would require editing the canonical homepage graph too - not worth
+       it). "$$" drops all specific-dollar figures (removes the Bar Rule 4-7 fee
+       concern) AND makes the site self-consistent.
+       QUEUED - HOLD until the firm signs off (contingency-fee framing), per user's
+       own "whenever the firm settles that". On sign-off, change 3 spots
+       (homepage already "$$"):
+         ServicePageSkin.cshtml:369          "$1500-$10000" -> "$$"
+         contact + opt-out pages             "$1500-$50000" -> "$$"
+         Shared/Footer/Lp/Mobile.cshtml:32   "0-15000"      -> "$$"
+       NOT YET APPLIED - awaiting firm OK.
+    J. SCHEMA - HomePage/content/En/articlemetas.cshtml carries conflicting
+       AggregateRating blocks: 4.2/1991 AND 4.7/355. The 4.2 is what renders
+       in the SERP beneath Goldberg's 4.9.
+    K. ES ANSI section cites the 2002 revision as current. ANSI Z535.4-2023 is
+       the current edition (revised from 2011, reaffirmed 2017). ~20 yrs stale.
+
+  NOTE ON ALL OF THE ABOVE: verified against the Florida Statutes and the Bar
+  rules as cited, but I am not a Florida attorney and this is not legal advice.
+  Every item needs Gallardo's sign-off before publishing.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #15 - surfaced the buried statute/case citations into the
+             visible body (the GEO gap logged under FIX #11)
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Purpose: the highest-value GEO move left on the page per the FIX #11
+                      note. Every authority added in FIXES #1-#4 and #10 lived
+                      ONLY in Razor comments (stripped server-side), so the
+                      rendered body - and therefore any generative engine or
+                      crawler - never saw the law behind the claims.
+
+  WHY THIS NEEDED NO NEW ATTORNEY DECISION
+    Nothing new is asserted. Each citation backs a sentence ALREADY on the page
+    and ALREADY sourced in the adjacent Razor comment. The edits move the cite
+    from the comment into the sentence it already supports - a rendering change,
+    not a legal one. Citation style matches what the page already renders inline
+    (21 CFR 7.3, 49 U.S.C. 30118, 15 U.S.C. 2301).
+
+  FIVE CITATIONS NOW VISIBLE (were 0x in rendered body):
+    1. "What is Product Liability?" para - added the controlling case by name:
+       West v. Caterpillar Tractor Co., 336 So. 2d 80 (Fla. 1976). Backs the
+       "you need not have bought it / foreseeable users and bystanders" rule.
+    2. Warranty bullet - Fla. Stat. 672.313 (express) and 672.314-672.315
+       (implied merchantability + fitness), each attached to the definition it
+       supports.
+    3. Comparative-fault para - Fla. Stat. 768.81 on the 50%-bar sentence, plus
+       one new sentence surfacing 768.81(1)(c): the bar reaches product
+       liability, strict liability and breach of warranty, not just negligence.
+       (Fact already verified/logged under FIX #2; only its visibility changed.)
+    4. Deadline section - Fla. Stat. 95.11(3)(d) (4-yr) and 95.11(4)(a) (2-yr
+       negligence) into the sentences that already stated those periods.
+    5. Deadline section - Fla. Stat. 95.031(2)(b) named as the statute of repose
+       on the 12-year-outside-limit sentence.
+
+  DELIBERATELY NOT SURFACED
+    - "HB 837" as a bill number: the statute cites (768.81, 95.11) are the more
+      durable authority; the page keeps the plain "in March 2023" phrasing and
+      now carries the section numbers, which is what an engine cites back.
+    - No cite was invented or broadened. The unresolved 2-yr-vs-4-yr question in
+      the deadline section is still stated as unresolved (unchanged from FIX #10).
+
+  GEO EFFECT: the rendered body now contains "West v. Caterpillar", "672.313",
+    "672.314", "672.315", "768.81", "95.11(3)(d)", "95.11(4)(a)" and
+    "95.031(2)(b)" - the primary-authority signals a generative engine rewards
+    and quotes. No target keyword moved; this is an authority/E-E-A-T change, not
+    a keyword change. Rendered word count rises only marginally (~+35 words).
+
+  STILL OPEN AFTER THIS FIX (unchanged from the FIX #14b list): the ES-page
+    accuracy items A, B, D, E, F, G, K; schema items I (priceRange) and J
+    (AggregateRating); the click-problem items (meta-description CTA, "free" at
+    the point of conversion, missing EN FAQEntity records, hreflang). None were
+    touched here.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #16 - added the missing English FAQ records (FAQPage schema)
+             File   : App_Data/FaqEntities.xml (9 new <FAQEntity language="en">
+                      records for Service id product-liability-attorney-miami)
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW. The fee/free
+                      answer (#9) needs firm sign-off specifically.
+
+  WHAT WAS WRONG / THE OPPORTUNITY
+    The FAQ accordion AND its schema.org/FAQPage microdata are already built and
+    live in ServicePageSkin.cshtml (the sidebar block, ~line 169), driven by
+    Model.FAQs. This page had 5 SPANISH FAQEntity records and ZERO English ones,
+    so the EN page rendered an empty FAQ region and emitted no FAQPage data. The
+    infrastructure existed; only the English content was missing.
+
+  HOW FAQs ARE WIRED (verified, not assumed)
+    ServicePageController.cs:42-43 loads FAQEntity records where Service id ==
+    page url, THEN filters Where(f => f.Language == abbreviatedLanguage). So an
+    entry needs BOTH <Service id="product-liability-attorney-miami"/> AND
+    language="en" to appear here - which is why the ES entries never leaked onto
+    the EN page and why these EN entries will not leak onto the ES page.
+    Rendering path: @faqsservice.A is HTML-ENCODED, so answers are PLAIN TEXT -
+    no links, no Razor, no <em>. Citations are written as plain "Florida Statute
+    95.11(3)(d)" / "West v. Caterpillar Tractor Co. (Fla. 1976)" accordingly.
+
+  THE 9 QUESTIONS (each mapped to real search demand + sourced from the EN body)
+    1. How long to file (SOL) - statute-of-limitations queries; answer mirrors
+       the FIX #10 deadline section (both periods + repose, assume shorter).
+    2. Do I have to have bought it - the FIX #3 rule (West v. Caterpillar).
+    3. Types of product defect - the three defect types (FIX #6).
+    4. What is strict product liability - body term; "strict product liability
+       florida" was a priced PROPOSED row.
+    5. Partly my fault - the 50% bar / 768.81 (FIX #2), a top-value 2026 fact.
+    6. Recall vs lawsuit - the CPSC/NHTSA/FDA section (FIX #12); "recall" cluster.
+    7. What products handled - names defective MEDICAL DEVICES (74 GSC impr, 0x
+       prior), auto parts, medications, machinery, toys - real GSC queries the
+       body only glancingly covered.
+    8. Near me in Miami - the ONLY place the literal "near me" token now appears
+       (FIX #13 deliberately used "near you" in body prose); pairs it with the
+       two real offices + neighborhoods. Targets the 4,460/mo Transactional
+       near-me cluster.
+    9. Cost / free consultation / contingency - directly serves the documented #1
+       problem (no "free" at the conversion point). Mirrors the ES contingency
+       FAQ (FaqEntities.xml ES entry) and the site-wide "first consultation free"
+       language. FEE REPRESENTATION - flagged for firm sign-off; Bar Rule 4-7
+       compliance is the firm's call.
+
+  GEO / SEO VALUE
+    - Emits FAQPage structured data (rich-result eligible; the Q&A format
+      generative engines quote back most readily).
+    - Reinforces "lawyer" (the 18,100/mo head term the page under-used) and the
+      "defective" cluster inside natural question/answer prose.
+    - Adds the near-me token and the medical-device demand the body under-served.
+    - No target keyword was engineered; answers were written for correctness and
+      traceability to the already-published (pending-review) body.
+
+  VALIDATION: [xml] parse OK; 9 EN records confirmed for this service id.
+
+  DELIBERATELY NOT DONE HERE: the two trivial EN meta fixes (missing Twitter Card
+    tags, duplicated og:image) and the click-problem items remain open - separate
+    pass. The ES FAQ records were left as-is (their accuracy items A/B are still
+    on the open list).
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #17 - EN social-meta cleanup (the two trivial items from #16)
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/articlemetas.cshtml
+             Status : APPLIED. Low risk, no attorney decision. (Razor view -
+                      hot-reloads, no rebuild needed unlike the XML in FIX #16.)
+
+  THREE THINGS FIXED
+    1. DUPLICATE og:image removed. The tag
+       <meta property="og:image" content=".../product-liability-attorney-miami" />
+       appeared TWICE (identical). Removed the second.
+    2. BROKEN og:image EXTENSION. The remaining og:image pointed at an
+       EXTENSIONLESS path (.../product-liability-attorney-miami) while the real
+       file is product-liability-attorney-miami.JPG (verified on disk in
+       wwwroot/themes/gallardo/images/services/375x211/) and the ES page already
+       uses .jpg. Social scrapers fetch the exact URL, so the extensionless path
+       could 404 the preview image. Added .jpg.
+    3. TWITTER CARD tags ADDED. The ES page had twitter:card/title/description/
+       image; the EN page had NONE. Added all four (card=summary to match the
+       site pattern), image pointing at the .jpg. Gives X/Slack/iMessage a proper
+       preview card when the page is shared.
+
+  WHY IT MATTERS (small but real): correct OG/Twitter image + card improves how
+    the page renders when shared, which affects social/referral CTR - a minor
+    lever on the same 0-click problem, and pure parity with the ES page.
+
+  STILL OPEN (unchanged): E-E-A-T author/reviewer byline (needs firm to name the
+    attorney); named product-type subsections (medical devices 74 impr, auto
+    parts, e-cig/battery - needs review); Key-Takeaways box; and the firm-decision
+    click items (meta-description CTA/free/phone, priceRange schema I,
+    AggregateRating J, title/H1 toward "lawyer"/"defective"). ES accuracy items
+    A,B,D,E,F,G,K remain live.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #18 - mobile horizontal-scroll bug in the FIX #11 stat block
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED. Layout bugfix, no content/attorney impact.
+
+  CAUSE: the cited-stat paragraph (added in FIX #11) wrapped its citation in
+    <span style="white-space:nowrap;">. That forced the entire visible citation
+    ("(Source: Florida Office of the State Courts Administrator, FY 2024-25
+    Statistical Reference Guide)") onto ONE unbreakable line, wider than a phone
+    viewport, so the whole page overflowed sideways on mobile. Desktop had room,
+    so it only showed on small screens.
+  FIX: removed the nowrap span wrapper; the citation now wraps normally. The
+    short FY&nbsp;2024-25 non-breaking space was kept (harmless). No text changed.
+  VERIFIED: grepped the file for other rendered overflow sources - the only other
+    long tokens are inside @* Razor comments *@ (not rendered) and href="..."
+    attributes (not rendered), so none cause overflow. This was the sole culprit.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #19 - added a Table of Contents (jump links to every H2)
+             File   : Views/ServicePage/Content/injury-law/
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED. Razor view - hot-reloads, no rebuild.
+
+  WHAT: an <ol> of anchor links to all 11 H2 sections, placed after the intro/
+    stat paragraph and before the first H2. Each H2 was given id="heading-1"
+    ..."heading-11"; each list item links to the matching #heading-N.
+  PATTERN: copied the site's existing convention verbatim - see
+    truck-accident-attorney-miami/En/article.cshtml (plain <ol> + #heading-N ids,
+    no custom wrapper/heading). Kept it consistent so it inherits theme styling.
+  THE 11 SECTIONS: What is Product Liability / Types of Defects / Claims We Handle
+    / Elements of a Claim / How Long to File (SOL) / Federal Agencies / Federal
+    Warranty Law / Class Action / Damages / Serving Miami & Nearby Communities /
+    Contact.
+  SEO/GEO VALUE: (1) in-page anchors make the page eligible for Google
+    "jump-to" sitelinks in the SERP, which can lift CTR - directly relevant to
+    the 0-click problem; (2) a linked heading outline is a structural signal
+    generative engines use to map the page; (3) keyword-bearing anchor text
+    ("product liability", "defective", "Florida", "Miami") reinforces the cluster.
+  VERIFIED: all 11 href="#heading-N" resolve to the 11 <h2 id="heading-N"> in
+    order. No heading text changed.
+  STYLING (added same day): wrapped the <ol> in <nav aria-label="Table of
+    contents"> with a "Table of Contents" label and a light box (rounded, gold
+    #b8892b left-border matching the firm's brand accent). All styles are INLINE
+    on this page only - the shared minified theme CSS was NOT touched, so no other
+    page is affected. Kept the box full-width/block so it stays responsive (no
+    repeat of the FIX #18 mobile-overflow). The label is a styled <p>, not an
+    <h2>, deliberately - it does not pollute the H2 outline the TOC indexes.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #20 - added a NOW column to the FULL TABLE (current on-page
+             counts) and 15 new keyword rows
+             File   : seo-keywords-product-liability-attorney-miami.txt (this file)
+             Status : APPLIED. Analysis/reporting only - no page code changed.
+             Purpose: the ON column had been flagged stale since FIX #1. Rather
+                      than overwrite the historical baseline, added a parallel NOW
+                      column so the before/after is visible in one place.
+
+  WHAT WAS DONE
+    - NEW COLUMN "NOW" inserted between ON and SRC for all 182 existing rows,
+      holding the current count of each keyword in the live EN page text.
+    - 15 NEW ROWS (183-197, SRC=PAGE) for terms introduced by FIXES #11-#16 that
+      were not previously tracked: express/implied/breach of warranty,
+      merchantability, strict liability, medical device, auto parts, statute of
+      repose, foreseeable, CPSC, NHTSA, FDA, Magnuson-Moss, product recall,
+      consumer product. VOL=n/l (not looked up - these are content/authority
+      terms, not necessarily search queries).
+    - Header count 182 -> 197; group-marker line updated to 139-197 PAGE; NOW
+      defined in the COLUMNS legend; ON re-labeled as the frozen baseline.
+
+  METHOD (reproducible): scripted. Corpus = title + meta description + H1 +
+    article.cshtml body with Razor comments stripped + the 9 EN FAQ Q&A + the
+    TOC = 3,388 words (was 1,091 at baseline, +210%). Case-insensitive
+    whole-word matching (lookarounds reject a touching letter), so plurals count
+    on their own rows - matching the table's existing singular/plural split.
+    File rewritten LF/no-BOM to match the original; verified only table lines +
+    the title/group-marker lines changed.
+
+  WHAT THE NOW COLUMN SHOWS (the story the ON column could no longer tell)
+    lawyer            3 -> 12   (the deliberate "lawyer" reinforcement worked;
+                                 GSC/SEMrush both showed demand skewed to lawyer)
+    miami             7 -> 29   (neighborhoods FIX #13 + near-me FAQ FIX #16)
+    product liability lawyer  1 -> 10   (the 18,100/mo head term, table's #1 gap)
+    warranty          7 -> 21   defective product   9 -> 15   recall  0 -> 7
+    near me           0 -> 1    (now present once, in the FIX #16 FAQ question)
+    product          53 -> 112  product liability  16 -> 47
+    attorney          9 ->  8   (unchanged by design; growth went to "lawyer")
+    Zeros that are STILL zero are informative: off-geo rows (Fort Lauderdale,
+    Coral Gables-specific, Dania/Pompano/Panorama), the Spanish-language queries,
+    and the "defective product lawyer/attorney" head terms (rows 5-6, still 0 on
+    page despite being the highest-CPC cluster - a real remaining gap, and the
+    single clearest content opportunity the NOW column surfaces).
+
+  NOT A RANKING PROMISE: counts describe on-page presence only. VOL/IMPR/POS were
+    NOT re-pulled here and are unchanged from the 2026-07-16 exports.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #21 - added a "+/-" change column to the FULL TABLE
+             File   : seo-keywords-product-liability-attorney-miami.txt (this file)
+             Status : APPLIED. Arithmetic only (NOW - ON); no recount, no page
+                      code changed.
+
+  WHAT: inserted a "+/-" column between NOW and SRC = NOW minus ON, i.e. how many
+    more (+) or fewer (-) times each phrase appears now than at the 2026-07-16
+    baseline. 0 = unchanged; for new rows 183-197 (baseline 0) it equals NOW.
+    Defined in the COLUMNS legend. File kept LF/no-BOM; only table lines changed.
+
+  BIGGEST GAINS (+/-):  product +59 | product liability +31 | miami +22 |
+    warranty +14 | lawyer +9 | product liability lawyer +9 | recall +7 |
+    defective product +6. Only drops: product liability attorney -1 and
+    attorney -1 (growth was intentionally routed to "lawyer"/"defective").
+    The many 0-rows are off-geo / Spanish / competitor phrases we do not and
+    should not target on this page - their +/- of 0 confirms nothing regressed.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #22 - covered the 10 high-volume "defective / near me / law firm"
+             phrases the NOW column showed at 0 on the page
+             Files  : product-liability-attorney-miami/En/article.cshtml
+                      App_Data/FaqEntities.xml (near-me FAQ reworded)
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW. FAQ synced to bin.
+             Trigger: user pointed at rows 5-14 (the highest-CPC cluster, ranking
+                      5-10 already, ZERO on-page). FIX #20's own note flagged this
+                      as the single clearest content gap.
+
+  PHRASES NOW COVERED (each 0 -> 1, i.e. woven in once; row / VOL / CPC):
+    5  defective product lawyer          3,600  46.32   Damages para
+    6  defective product attorney        2,400  18.28   Damages appositive
+    7  defective products attorney       1,300  58.36   Serving-Miami para
+    8  defective products lawyer         1,300  46.32   Serving-Miami para
+    9  product liability attorney near me 1,300 15.19   near-me FAQ answer
+    10 product liability lawyer near me  1,300  13.62   near-me FAQ question (x2)
+    11 product liability law firm          880  12.22   Serving-Miami para
+    12 products liability attorney         720  21.07   Damages para
+    13 products liability lawyer near me   720  17.04   near-me FAQ answer
+    14 product defect lawyer               480  16.97   Damages appositive
+
+  METHOD - DISTRIBUTED, NOT STUFFED (important):
+    Each phrase appears ONCE, spread across the Damages section, the Serving-Miami
+    section, and the near-me FAQ - not clustered. The near-me exact strings live
+    in the FAQ, whose question/answer format carries "near me" naturally (body
+    prose uses "near you" - see FIX #13). The FAQ answer references them as
+    quoted searches ("Whether you typed 'X,' 'Y,' or 'Z' into your search...")
+    so three near-me variants read as real queries, not a keyword list.
+    OVER-OPTIMIZATION NOTE: ten near-identical commercial phrases is a lot for one
+    page. Google treats singular/plural + word-order variants (defective product
+    vs products vs product defect lawyer/attorney) as essentially one intent, so
+    the SEO value is in covering the CLUSTER once, which this does; it is NOT in
+    repeating each permutation. Deliberately kept to one mention apiece. If the
+    firm wants the exact tokens reinforced further, do it in NEW copy (another
+    FAQ), not by repeating them in existing sentences.
+
+  RECOUNT: reran the NOW + +/- refresh after the edits (corpus now includes the
+    new sentences and the reworded FAQ). 22 table rows moved; 0 non-table lines
+    changed; file kept LF/no-BOM. Incidental stem gains from the same edits, e.g.
+    "product liability law firm" cluster and "defective product" reinforced.
+
+  REVIEW FLAGS: (1) still pending attorney sign-off like the rest of the batch.
+    (2) The Damages appositive ("sometimes called a defective product attorney or
+    product defect lawyer") and the FAQ quoted-search sentence are the two spots
+    that lean most on keywords - a reviewer may want them softened. (3) "products
+    liability" (with the s) is the formal legal term; used once as a synonym, not
+    a rename - the page/title/H1 still lead with "product liability".
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #23 - added a "Steps to Take After a Defective Product Injury"
+             procedural section (how-to / GEO)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+
+  WHAT: new H2 "What to Do After a Defective Product Injury: Steps to File a
+    Claim" (id heading-12), placed after the Elements section and before the
+    deadline section (flow: what to prove -> what to DO -> the deadline). A 7-step
+    ordered list: (1) get medical care, (2) keep the defective product + evidence,
+    (3) document everything, (4) no recorded statement to the insurer, (5) check
+    CPSC/NHTSA/FDA recalls, (6) watch the statute-of-limitations deadline,
+    (7) contact a defective product lawyer for a free consultation. Added a
+    matching TOC entry in the correct position (id is heading-12 though it sits
+    5th visually - ids are labels, order is set by TOC placement).
+
+  WHY (SEO/GEO): step-by-step / "what to do" content is strongly favored by
+    featured snippets and generative engines, and this is genuinely useful. It
+    also reinforces high-volume terms inside natural procedural prose:
+      defective product lawyer  1 -> 3   recall / statute of limitations / medical
+      + product liability claim, compensation, evidence, manufacturer, free
+      consultation (the last also helps the conversion/click problem).
+
+  ACCURACY / SCHEMA: every step restates guidance already elsewhere on the page
+    (medical care, preserve product+evidence, no recorded statement, federal
+    recalls, filing deadline, free consultation) - NO new legal claim. Google
+    RETIRED HowTo rich results in 2023, so deliberately NO HowTo schema was added;
+    a plain <ol> reads fine for engines and avoids invalid markup.
+
+  REVIEW FLAGS: pending sign-off like the batch; step 7's "free consultation" is a
+    fee/offer line (same flag as FAQ #9). Recount refreshed: 25 table rows moved,
+    0 non-table lines changed, file LF/no-BOM.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #24 - added a cited multi-year Florida filings TABLE + honest
+             treatment of "win rate" (GEO / E-E-A-T)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked for a table from a confident source on how many
+                      product liability cases/demands Florida has this year and
+                      prior years, and what percent are won.
+
+  NEW H2 (id heading-13, TOC entry added after heading-1): "How Many Product
+    Liability Cases Are Filed in Florida Each Year?" - a 4-row table of statewide
+    Products Liability FILINGS, plus a source line and a "win rate" paragraph.
+
+  THE DATA (fetched live from OSCA; every figure VERIFIED by summing the 12
+  monthly cells in each guide's Chapter 4 "2. Products Liability" filings row):
+      FY 2021-22  1,034     FY 2022-23  921 (incl. a 272 spike in Mar-2023, the
+      FY 2023-24    895                       HB 837 pre-effective-date rush)
+      FY 2024-25    627
+    Source: Florida Office of the State Courts Administrator (OSCA), Statistical
+    Reference Guide, Chapter 4 (Circuit Civil), four fiscal-year PDFs - all four
+    URLs are in the visible source line AND in the Razor comment above the section
+    (with the monthly cell breakdowns for re-verification). Download IDs can
+    rotate; re-check periodically.
+    Context stat: Professional Malpractice & Products Liability = 2.1% of ALL
+    circuit civil filings (FY 2024-25 category pie, same guide) - reinforces the
+    existing "specialized field" framing from FIX #11.
+
+  THE "WIN RATE" ASK - WHY I DID NOT PUT A PERCENTAGE ON THE PAGE:
+    OSCA (and comparable court sources) report FILINGS and DISPOSITIONS, never a
+    "win rate." Most product liability claims settle confidentially, so no public
+    dataset measures how often claimants "win." Publishing a win % would be (a)
+    unsourced/fabricated and (b) a Fla. Bar Rule 4-7.13 violation risk (no
+    statements a consumer could read as predicting results). Instead the section
+    answers the question people actually search ("what percent of product
+    liability cases are won?") HONESTLY: it explains there is no such published
+    figure and that anyone quoting one is unsupported. That is good E-E-A-T and
+    Bar-safe, and still captures the query intent. If the firm ever wants a
+    national trial-outcome figure, the only credible source is the U.S. DOJ Bureau
+    of Justice Statistics tort-trial studies - but those are ~2005, national, and
+    trials-only (a tiny slice of cases); I judged them too stale/misleading to
+    cite here. FIRM TO DECIDE if it wants that caveated stat instead.
+
+  BUILD NOTES: table is responsive (overflow-x wrapper + width:100% + relative
+    padding) so it will NOT reintroduce the FIX #18 mobile scroll; gold #b8892b
+    header rule matches the TOC box. No Table/dataset schema added (kept simple).
+    Recount refreshed: 7 table rows moved, 0 non-table lines changed.
+
+  REVIEW FLAGS: pending sign-off; verify the four figures against the linked PDFs
+    (they are public and the cell math is in the comment). The 627 was already on
+    the page (FIX #11); this puts it in multi-year context.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #25 - added a case-DURATION table (authoritative) + honest
+             treatment of "how much money"
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked to also show how long cases take to resolve and
+                      the amount of money recovered.
+
+  NEW H2 (id heading-14, TOC entry after heading-9): "How Long Does a Product
+    Liability Case Take in Florida?" - placed right after the Damages section
+    (flow: what you can recover -> how long it takes -> how much).
+
+  TIME-STANDARDS TABLE (authoritative, fetched live):
+      Complex case    30 months
+      Jury trial case 18 months
+      Non-jury case   12 months
+    Source: Florida Rule of General Practice and Judicial Administration
+    2.250(a)(1)(B), as amended (Supreme Court of Florida, No. SC2023-0837, adopted
+    2024). Measured from service of initial process on the last defendant (or 120
+    days after commencement) to final disposition. Link in the visible source line
+    + the Razor comment.
+    LABELING CARE: these are the courts' PRESUMPTIVELY REASONABLE TARGETS, not
+    actual averages and not a promise. The copy says exactly that ("time standards
+    ... not averages for a particular case and not a guarantee"). Small-claims
+    (95 days) omitted as off-topic for a product injury; only the three
+    circuit-civil-relevant rows shown.
+
+  THE "HOW MUCH MONEY" ASK - NO DOLLAR FIGURES, SAME REASONING AS FIX #24's WIN
+  RATE: there is no authoritative Florida-specific public dataset of product
+    liability settlement/verdict AMOUNTS. Jury-verdict reporters are proprietary
+    and non-representative; the only govt figure (US DOJ BJS median tort awards)
+    is ~2005, national, trials-only. Publishing a "typical recovery" is also a
+    Fla. Bar Rule 4-7.13/4-7.14 risk (predicting results / past results without
+    context). So an H3 "How Much Money Can You Recover" answers the query intent
+    HONESTLY: no reliable average exists; value depends on the provable damages
+    already listed on the page (medical, lost wages, lost earning capacity, pain
+    and suffering) and is cut by the 50% comparative-fault bar (768.81, already on
+    page). Bar-safe, good E-E-A-T, still captures "how much is my case worth" search
+    intent. FIRM MAY DECIDE to add a caveated BJS national figure - I judged it too
+    stale/misleading and left it out.
+
+  BUILD: second responsive table on the page (overflow-x + width:100%), same gold
+    header as the filings table; no schema. Recount refreshed: 9 rows moved, 0
+    non-table lines changed.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #26 - enriched the FAQ with the new case-duration content
+             File   : App_Data/FaqEntities.xml (1 new EN FAQEntity). Synced to bin.
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+
+  WHAT: added FAQ "How long does a product liability case take in Florida?" - a
+    CONCISE plain-text summary of the FIX #25 time standards (non-jury 12 mo, jury
+    18 mo, complex up to 30 mo; most settle; targets not guarantees). Feeds the
+    existing FAQPage schema/accordion.
+
+  THE 10-FAQ CAP (important constraint): ServicePageSkin.cshtml renders
+    Model.FAQs.Take(10). The page had 9 EN FAQs, so this brings it to exactly 10 -
+    all render, none dropped. A further FAQ would NOT display without either
+    swapping out an existing one or raising Take(10) in the SHARED skin (which
+    affects every service page - not done unilaterally).
+    NOT ADDED for that reason: a "how much money can I recover" FAQ. That intent
+    is already covered by the new body H3 (FIX #25) and overlaps the existing
+    cost/fee FAQ; leaving it in the body only keeps us at the clean 10-cap.
+
+  WHY ONLY A SUMMARY: the answer is a short recap, not a copy of the body section
+    - duplicating the question across body H2 + FAQ is reinforcement (two surfaces:
+    prose + FAQPage schema), but copying the full text would read repetitively.
+    Note: Google curtailed FAQ RICH RESULTS in 2023 (mostly gov/health now), so
+    the value here is GEO/AI-citation + on-page UX, not SERP stars.
+    Plain text only (answers are HTML-encoded on render - no links/markup).
+
+  Recount refreshed after the add; FAQ XML validated ([xml] parse OK, 10 EN
+  records) and synced to bin so it shows on the running app.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #27 - two content additions: a defective-product-CATEGORY
+             section + a legal-theory COMPARISON TABLE
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user approved building #1 (categories) and #2 (comparison).
+
+  #1 NEW H2 (id heading-15, TOC entry after heading-2): "Types of Defective
+     Products Our Miami Attorneys Handle" - a 6-item list placed after the defect-
+     types section (parallel structure: types of DEFECTS -> types of PRODUCTS).
+     Each category maps to its federal regulator (FDA/NHTSA/CPSC) already on the
+     page. WHY: captures documented GSC demand the page barely covered -
+     "defective medical devices lawyer miami" (74 impr), "miami defective auto
+     parts lawyer", "ecigarette explosion lawyer miami", the medication cluster -
+     all high-CPC, near-0 prior coverage.
+     COUNT EFFECT: recall +11 (cumulative), auto parts 0->4, consumer product
+     0->2, medical device +1, plus medications/battery/appliance coverage.
+     NOTE ON THE TABLE ROWS 55/75: the long EXACT phrases ("defective medical
+     devices lawyer miami") stay NOW=0 because the counter matches whole phrases
+     verbatim and the copy uses the natural components ("defective medical
+     devices" + "lawyer" + "miami" separately). Google reads the components as
+     covering that intent; the exact-string 0 is a measurement artifact, not a
+     coverage gap. Same reason "airbag"/"medical device" singular rows undercount
+     (copy uses the plurals "airbags"/"medical devices").
+
+  #2 COMPARISON TABLE (H3 "The Three Product Liability Theories at a Glance",
+     inside heading-3 after the existing bullets - no new TOC entry): a 3-row
+     table (Negligence / Strict product liability / Breach of warranty) x
+     (what you must show / key point). REUSES the content already in the bullets
+     above it - no new legal claim - reshaped into a scannable, AI-quotable block.
+     Matches "strict product liability" / educational intent. Responsive
+     (overflow-x wrapper), gold header to match the other tables.
+
+  BUILD: page now has 3 responsive tables. Recount refreshed: 26 table rows moved
+    (broad reinforcement), 0 non-table lines changed, file LF/no-BOM. Both
+    sections pending attorney review; firm to confirm the product-category list.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #28 - cannibalization RE-AUDIT (post FIX #24-27) + 1 hub link
+             File edited: injury-law/miami-wrongful-death-lawyer/En/article.cshtml
+             Status : APPLIED. Re-audit only + one low-risk internal link.
+             Trigger: user asked whether the expanded page now cannibalizes any
+                      other page in the project.
+
+  RE-AUDIT RESULT: NO harmful cannibalization (re-confirmed after the big FIX
+    #24-27 content additions - stats, product categories, comparison table).
+    DECISIVE TEST - targeredkeyword (H1) in ServiceEntities.xml: ONLY this page
+    targets "Product Liability Attorney Miami". Every other page that mentions the
+    terms targets a DIFFERENT primary keyword (Medical Malpractice, Pharmacy
+    Malpractice, Wrongful Death, Class Action [employment], Commercial Litigation,
+    etc.). No two pages fight for the same money intent.
+    EVERY OVERLAP IS DIFFERENT-INTENT OR A HUB LINK INTO THIS PAGE:
+      - class-action page = EMPLOYMENT class actions (wage/overtime), not product;
+      - pharmacy- & medical-malpractice = PROVIDER negligence, not the defective
+        DRUG as a product - and the pharmacy page already links here for exactly
+        the manufacturer/defective-product claim;
+      - commercial-litigation = B2B business torts, already links here (FIX #14);
+      - wrongful-death / amputation / brain-injury / birth-injury / PI hub =
+        complementary one-line mentions, several linking INTO this page.
+    The new FIX #24-27 content created NO new conflict: it is all product/
+    manufacturer-liability framed, distinct from the provider-negligence and
+    employment pages, and those pages point TO this one. This page is the clear
+    canonical target for consumer defective-product intent.
+
+  THE ONE LINK ADDED: miami-wrongful-death-lawyer's "Defective Products" H3 (its
+    devices/machinery/medications list) linked into this page from an earlier
+    paragraph but not from within that subsection. Added a contextual link there:
+    anchor "product liability claim" -> /injury-law/product-liability-attorney-miami.
+    Anchor DELIBERATELY VARIED from that page's existing "defective products"
+    inbound anchor (line ~22) to avoid two identical-anchor links from one page
+    (same over-optimization guard as FIX #14b). Tightens the hub->spoke hierarchy
+    and removes the last bit of topical ambiguity. This page now has 6 inbound
+    contextual internal links (was 5 after FIX #14b).
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #29 - added BreadcrumbList schema (the only structured-data type
+             the whole site was missing)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED. Low risk, page-specific, no attorney decision.
+
+  SCHEMA AUDIT (what the page already emits, so this does NOT duplicate):
+    - LegalService JSON-LD (ServicePageSkin, shared): name/phone/address/hours/
+      serviceArea/OfferCatalog. priceRange "$1500-$10000" (item I, still open).
+    - FAQPage MICRODATA (sidebar accordion, now 10 Q&As).
+    - OpenGraph + Twitter Card (articlemetas) + hreflang.
+    - Confirmed ABSENT sitewide: Organization, WebSite, BreadcrumbList, Article,
+      author/reviewedBy. BreadcrumbList is the safest/highest-value gap.
+
+  WHAT WAS ADDED: page-specific BreadcrumbList JSON-LD in the article body (Google
+    reads JSON-LD anywhere on the page), 3 levels:
+      Home > Personal Injury (/injury-law) > Product Liability Attorney Miami
+    Domain from @@Settings.GetFullDomain (verified = "https://gallardolawyers.com",
+    no trailing slash, so no double-slash). Category name "Personal Injury" + url
+    "injury-law" from CategoryEntities.xml. Placed in article.cshtml (NOT the
+    shared skin) so it is page-specific and touches no other page. Does NOT
+    re-declare LegalService or FAQPage (no duplicate entities).
+  WHY: BreadcrumbList earns breadcrumb rich results in the SERP and gives crawlers
+    + generative engines an explicit site-hierarchy signal. Standard, safe, no
+    Bar/accuracy implications.
+
+  TOOLING NOTE: the count refresh script (refresh.ps1) now strips <script> and
+    <style> blocks before counting, so JSON-LD text does not pollute the NOW
+    column. Verified: re-running after the breadcrumb add changed 0 rows (the
+    JSON-LD is correctly ignored; visible-text counts unchanged).
+
+  STILL OPEN (schema): Organization/WebSite (sitewide), author/reviewedBy
+    (needs an attorney name), the LegalService sameAs (social profiles, currently
+    commented out) + areaServed neighborhoods, and the priceRange accuracy fix
+    (item I). All optional/next.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #30 - added Speakable schema (voice / GEO)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED. Low risk, page-specific, no attorney decision.
+
+  WHAT: a page-specific WebPage JSON-LD node (at page bottom, next to the
+    BreadcrumbList) with a "speakable" SpeakableSpecification pointing via
+    cssSelector at the two best read-aloud passages:
+      #pl-intro       - the opening summary paragraph (added the id)
+      #pl-definition  - the "What is Product Liability?" definition (added the id)
+    Also added those two ids to the paragraphs so the selectors resolve.
+  WHY: marks the concise passages a voice assistant / generative engine should
+    read aloud or quote. GEO/voice signal. WebPage is a DISTINCT @type, so it does
+    NOT duplicate LegalService, FAQPage, or BreadcrumbList. @id/url via
+    @@Settings.GetFullDomain (DRY, verified no trailing slash).
+  HONESTY: Google's Speakable rich result has limited availability (primarily
+    news publishers), so this is mainly a voice/GEO signal, not a guaranteed SERP
+    feature. Zero risk, zero conflict, so worth having.
+  VERIFIED: 2 ld+json blocks on the page now (BreadcrumbList + WebPage/speakable),
+    both selector ids present exactly once, count refresh changed 0 rows (the
+    JSON-LD and the id attributes are correctly ignored by the counter).
+
+  PAGE SCHEMA INVENTORY NOW: BreadcrumbList (article, JSON-LD), WebPage+Speakable
+    (article, JSON-LD), LegalService (skin, JSON-LD), FAQPage (skin, microdata,
+    10 Q&As). No duplicates.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #31 - added a page-specific "Service" node (GEO / entity signal)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked for the legal-page analog of a detailed
+                      MedicalProcedure/Service schema (a Botox example).
+
+  WHAT: a third JSON-LD block (at page bottom) - @type "Service", serviceType
+    "Product Liability Law", with alternateName (keyword variants), description
+    (defect types + the three legal theories), url, provider, areaServed, audience,
+    and hasOfferCatalog listing the 6 defective-product categories from FIX #27.
+
+  HONESTY / DESIGN DECISIONS:
+    - NOT A RICH RESULT. Neither Service NOR MedicalProcedure produces a Google
+      SERP rich result - the source Botox example wouldn't either. This is an
+      entity/GEO signal (precise service scope, provider, area) that AI engines
+      and Google use for understanding, not a visual SERP feature. Told the user.
+    - NO "LegalProcedure" type exists, and the medical-specific fields
+      (bodyLocation/howPerformed/risks/per-unit price) do not map to law - adapted
+      to generic Service properties instead.
+    - NO PRICE/OFFER on purpose. Adding a price would compound the wrong
+      priceRange "$1500-$10000" (item I) and raise a Fla. Bar Rule 4-7
+      fee-representation issue. Pricing/Offer to be added only after the firm
+      settles it (and item I is fixed).
+    - NO DUPLICATE ENTITY. Distinct @type (Service). provider is a REFERENCE to
+      the firm by @id ".../#organization" + name/url/phone, so Google merges it
+      with the skin's LegalService instead of creating a second firm. If that same
+      @id is later added to the skin's LegalService (one-line shared change), the
+      Service/WebPage/Breadcrumb/LegalService fully connect into one graph.
+    - REUSE: alternateName = the "defective product lawyer / products liability
+      attorney / product defect lawyer" variants; hasOfferCatalog = the FIX #27
+      product categories. Structured-data reinforcement of both.
+
+  VERIFIED: 3 article JSON-LD blocks now (BreadcrumbList, WebPage+Speakable,
+    Service); @Settings.GetCenterName/GetPhoneFormated/GetFullDomain are the same
+    DRY sources the skin's LegalService uses; count refresh changed 0 rows.
+
+  RECOMMENDED FOLLOW-UP (one-line, shared skin, optional): add
+    "@@id": "@@Settings.GetFullDomain/#organization" to the LegalService in
+    ServicePageSkin.cshtml so every service page's provider reference resolves to
+    one entity. Benefits the whole site; low risk; not done unilaterally.
+    --> DONE in FIX #32.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #32 - connected the entity graph: added @id to the global LegalService
+             File   : Views/ServicePage/ServicePageSkin.cshtml (SHARED SKIN)
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: schema audit found the FIX #31 provider @id had no target.
+
+  WHAT: added one line to the site-wide LegalService JSON-LD -
+        "@@id": "@@Settings.GetFullDomain/#organization"
+        (renders https://<domain>/#organization), placed right after "@@type".
+
+  WHY: the article's Service node (FIX #31) already declares its provider by
+    @id ".../#organization", but the skin's LegalService had NO @id, so that
+    reference pointed at an undefined node. Google was spinning up an empty
+    #organization stub AND treating the skin's LegalService as a separate second
+    firm entity. Adding the matching @id makes the skin's LegalService BE the
+    #organization node, so Service.provider now resolves into it - Service,
+    WebPage, BreadcrumbList and LegalService collapse into ONE firm entity.
+    This is the FIX #31 "RECOMMENDED FOLLOW-UP" item, now user-approved.
+
+  SCOPE / RISK: shared file - the @id is now emitted on EVERY service page, not
+    just this one. Additive only (no existing property changed/removed); @id on
+    an Organization/LegalService is standard and safe. No visual/SERP change.
+    User explicitly approved touching the shared skin for this.
+
+  VERIFIED: @@ escaping matches the surrounding block; renders a single literal @
+    via @@Settings...; no duplicate key (LegalService had no prior @id); JSON stays
+    well-formed. Purely structured-data - count refresh not applicable (0 body text).
+
+  NOT CHANGED (still open on the skin's LegalService): priceRange "$1500-$10000"
+    (item I / Fla. Bar Rule 4-7 fee concern) and the commented-out sameAs block.
+
+  *** SUPERSEDED BY FIX #33 - the @id added here CAUSED A COLLISION. See below. ***
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #33 - CORRECTS FIX #32: replaced the colliding @id with parentOrganization
+             File   : Views/ServicePage/ServicePageSkin.cshtml (SHARED SKIN)
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: peeked at the HOMEPAGE JSON-LD and found the real canonical graph.
+
+  WHAT WE FOUND (HomePage/content/En/articlemetas.cshtml, lines 40-229): the homepage
+    already emits a proper @graph:
+      - Organization  @id "https://gallardolawyers.com/#organization"  <- THE brand node,
+        and it ALREADY carries the correct sameAs (facebook/gallardolawyers, x/GallardoLawPA,
+        instagram/gallardolaw, youtube/GallardoLawFirmMiami, linkedin/in/gallardo-law-firm-
+        406122a9, PLUS tiktok/@@gallardolawfirm).
+      - three LegalService location nodes (miami/#legalservice, hialeah/#legalservice,
+        houston/#legalservice), each with parentOrganization -> #organization, own address,
+        geo, hours, priceRange "$$", aggregateRating.
+    appsettings.json: full_domain = "https://gallardolawyers.com" (NO trailing slash), so
+    FIX #32 rendered the skin id as EXACTLY "https://gallardolawyers.com/#organization" -
+    byte-for-byte the homepage Organization's @id, but on a DIFFERENT @type (LegalService).
+
+  THE PROBLEM FIX #32 CREATED: two different nodes sharing one @id. Google reconciles by
+    @id, so the brand-level Organization would MERGE with the per-page LegalService and get
+    a single Miami street address + the "$1500-$10000" priceRange grafted onto it - polluting
+    the clean brand entity that is supposed to be the PARENT of the 3 offices.
+
+  THE FIX (Option A): removed "@id": ".../#organization" from the skin's LegalService and
+    added instead:  "parentOrganization": { "@@id": "@@Settings.GetFullDomain/#organization" }
+    So the skin node no longer PRETENDS TO BE the brand - it declares it BELONGS TO the brand,
+    the exact pattern the homepage's 3 location nodes already use. The article Service.provider
+    (@id #organization) now resolves to the REAL homepage Organization (which has the sameAs),
+    not to a colliding self-reference.
+
+  sameAs QUESTION - ANSWERED "NO": we do NOT add sameAs to the skin. It already lives on the
+    canonical Organization node on the homepage (correct URLs incl. TikTok). Re-declaring it on
+    a per-page LegalService would be redundant and would compete with that authoritative node.
+    The commented-out sameAs block in the skin had WRONG/stale URLs anyway (facebook/GallardoLawFirm,
+    twitter/GallardoLaw, linkedin/company/gallardo-law-firm - none match the live profiles) - leave
+    it commented / it can be deleted.
+
+  SCOPE / RISK: shared file; parentOrganization now emits on every service page (correct & safe
+    everywhere - it just ties each page's LegalService to the one brand). Additive/reference only.
+    No visual/SERP change. Purely structured-data - count refresh not applicable.
+
+  STILL OPEN on the skin's LegalService: priceRange "$1500-$10000" (item I). NOTE the homepage's
+    location nodes use "$$" - the skin's "$1500-$10000" is inconsistent with them as well as being
+    the Bar-rule concern; worth aligning to "$$" when item I is settled.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #34 - added the "We Also Represent Clients in the Following Cases" related-
+             services block at the bottom of the page (internal linking / hub-and-spoke)
+             Files  : App_Data/ServiceEntities.xml  (+ bin/Debug/net7.0 copy synced)
+                      product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked to add it "the same way that appears in that page"
+                      (personal-injury-lawyer-in-florida).
+
+  WHAT: mirrored the existing pattern exactly - this is the data-driven shared partial
+    Views/Shared/Partials/PartialServicesRelated.cshtml, NOT hardcoded HTML. Two changes:
+      1. ServiceEntities.xml: added a <ServicesRelated> node to the product-liability
+         <ServiceEntity> (it had none), listing the SAME 6 sibling injury services the
+         personal-injury page uses:
+           miami-car-accident-attorney, miami-rideshare-accident-lawyer,
+           truck-accident-attorney-miami, slip-and-fall-attorney-miami,
+           miami-medical-malpractice-attorney, miami-wrongful-death-lawyer
+      2. article.cshtml: added @@await Html.PartialAsync("Partials/PartialServicesRelated")
+         at the very bottom, inside the .blog-detail_content div (same spot the PI page uses).
+    Heading is @@Vocabulary.RelatedSercicesHeading = "We Also Represent Clients in the
+    Following Cases:"; each item links @@services.GetUrl / @@services.GetShortName.
+
+  WHY (SEO/GEO): in-content internal links carry more weight than the sidebar's boilerplate
+    "Practice Areas" list; reinforces hub-and-spoke topical structure; no cannibalization
+    (all different-intent sibling injury areas; only THIS page targets the product-liability
+    keyword - re-confirmed FIX #28 audit). Adds 6 descriptive-anchor internal links.
+
+  DEPLOY NOTE: ServiceEntities.xml is a DATA file - article.cshtml hot-reloads but the XML
+    does not. Synced source -> bin/Debug/net7.0/App_Data/ServiceEntities.xml (verified the
+    product-liability <ServicesRelated> node + all 6 <Service> ids are present in the bin copy).
+    If the block does not appear on next load, the running app cached the XML at startup and
+    needs a restart to re-read it (same behavior pattern as the FaqEntities sync).
+
+  VERIFIED: partial only renders services with Active=="true" (all 6 are active); ids all
+    exist as real EN service pages; no code/build change (partial already shipped site-wide).
+    Body-text keyword count unaffected in a way that matters (nav link labels only) - refresh
+    not re-run for this structural/link change.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #35 - copy-edit pass: fixed 9 typos/grammar slips in the EN body
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked to re-check the page for typos/grammar/redundant content;
+                      user approved the "Clear typos / grammar" list (items 1-9).
+
+  WHAT (all pure copy - NO legal-substance change):
+    1. Types of Defects list: "dangerous in its design  before" (double space + "design" 3x)
+       -> "a product's design is already dangerous before it reaches the production stage".
+    2. Damages para: "non economic" -> "non-economic" (now matches the "How Much Money" para).
+    3. Elements para: "evidence that prove" -> "evidence that proves" (subject-verb).
+    4. Defects list: "issues ... which then causes" -> "which then cause"; "a failure of the
+       producer not following the intended design" -> "a failure to follow the intended design".
+    5. Intro: "assembling failures and this" -> "assembly failures, and this".
+    6. Class Action para: "A class action liability is more appropriate" -> "A class action is
+       more appropriate" (wrong noun).
+    7. Negligence bullet: comma splice fixed ("safe products, and liability law requires
+       reasonable care, which protects...") + parallelism ("has mistakes in its production, or
+       fails to warn customers of its dangers").
+    8. Damages para: parallelism "wounded, broken a bone" -> "wounded, suffered a broken bone";
+       "defective, damaged, incomplete product" -> "defective, damaged, or incomplete product".
+    9. Definition para: "companies who make and sell" -> "companies that make and sell"; added
+       comma before "so it is important to study the details".
+
+  NOT DONE (deferred, user chose the "Clear typos" list only): the 4 heading<->TOC capitalization
+    mismatches (headings at lines ~94/124/172/285 vs their Title-Case TOC labels), and the SEO
+    judgment call on H2 "...Attorney Miami Help Me Recover" vs grammatical "...Attorney in Miami"
+    (may be intentional exact-match keyword). Redundant damages list (2 sections) left as-is -
+    reads as reinforcement, different H2s.
+
+  VERIFIED: article.cshtml hot-reloads (no bin sync / rebuild needed). Edits are grammar/spelling
+    only - no statute, citation, figure, or legal claim touched. Body-word keyword counts
+    effectively unchanged (no target phrase added/removed) - refresh not re-run.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #36 - aligned 3 H2 headings to their Title-Case Table-of-Contents labels
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked to fix the heading<->TOC capitalization mismatches.
+
+  WHAT (heading text only - the TOC anchors #heading-2/3/4 already used these exact labels;
+    ids unchanged, so the TOC jump-links still resolve):
+    - heading-2: "Types of Product Defects leading to Injuries"
+                 -> "Types of Product Defects Leading to Injuries"
+    - heading-3: "Claims that our Product Liability Attorneys handle"
+                 -> "Claims Our Product Liability Attorneys Handle"  (also drops stray "that")
+    - heading-4: "Elements involved in a product liability claim " (+ trailing space)
+                 -> "Elements Involved in a Product Liability Claim"
+
+  NOT DONE - heading-9 (line ~285): "What Damages Can a Product Liability Attorney Miami Help Me
+    Recover in a Lawsuit?" vs TOC "...Attorney in Miami Help Me Recover?". This is NOT a
+    capitalization issue - it is the wording/SEO judgment call (exact-match "Attorney Miami" vs
+    grammatical "Attorney in Miami"). HELD for user's SEO-vs-grammar decision; TOC and heading
+    remain intentionally out of sync until then.
+
+  VERIFIED: article.cshtml hot-reloads (no bin/rebuild). Heading @ids untouched -> TOC + Breadcrumb
+    unaffected. No legal content changed. No keyword target phrase added/removed (case-only for the
+    body corpus, which is lower-cased before counting) - refresh not re-run.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #37 - meta file overhaul: fixed broken social tags + upgraded the social card
+             File   : product-liability-attorney-miami/En/articlemetas.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked what to improve in the meta file; approved all four changes.
+
+  STARTING STATE: this meta file was an OLDER/thinner version than siblings (e.g.
+    miami-wrongful-death-lawyer, which already had absolute og:url + image alt/width/height +
+    a CTA description). Two of its tags were actually BROKEN for social sharing.
+
+  FOUR CHANGES APPLIED:
+    1. BUG - relative -> absolute URLs. og:url, og:image, twitter:image were relative paths
+       ("/injury-law/..." and "/themes/..."). Social crawlers (FB/LinkedIn/X/iMessage/WhatsApp)
+       need absolute https URLs; with BOTH og:url and og:image relative there was nothing to
+       resolve against, so shared links rendered with no image. Now absolute
+       (https://gallardolawyers.com/...). Domain HARDCODED to match this file's own canonical
+       and the sibling og:url pattern (could switch to @@Settings.GetFullDomain later for DRY).
+    2. UPGRADE - bigger social card. Swapped the 375x211 thumbnail for the existing 903x530
+       image (verified on disk: wwwroot/.../services/903x530/product-liability-attorney-miami.jpg)
+       and changed twitter:card "summary" -> "summary_large_image". 375x211 is below the large-
+       card minimum; 903x530 clears it -> large rich preview instead of a tiny thumbnail.
+    3. CTR - meta description rewritten with a call-to-action (the open "meta-desc CTA/free/phone"
+       item). Old: "Product Liability Attorney in Miami. If you were injured because of a defective
+       product or lack of warning by the manufacturer, you are entitled to compensation." (~158,
+       passive, no CTA). New (~149 chars): "Injured by a defective product in Miami? Our product
+       liability attorneys fight to recover your compensation. Free consultation with Gallardo Law
+       Firm." Applied to name=description + og:description + twitter:description (kept in sync).
+    4. POLISH - added og:image:alt, og:image:width (903), og:image:height (530), twitter:image:alt
+       (the file previously had none; sibling did).
+
+  UNCHANGED (already good): <title> "Product Liability Attorney Miami | Gallardo Law Firm" (51 chars,
+    keyword + brand); canonical (already absolute); article:published/modified; og:locale; og:type
+    "article" (site-wide convention). og:type left as-is deliberately.
+
+  VERIFIED: articlemetas.cshtml hot-reloads (no bin sync / rebuild). Only @Model.GetLastModifiedDate
+    is dynamic - kept. Description length ~149 (safe under the ~155-160 truncation). 903x530 image
+    confirmed present. No legal claim / statute / figure involved (marketing meta only). The
+    "Free consultation" line is a fee/offer statement - same PENDING FIRM REVIEW caveat as the
+    on-page free-consultation mentions.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #38 - styled the body bullet-lists with Bootstrap list-group (visual parity
+             with personal-injury-lawyer-in-florida)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked to match the PI page's Bootstrap list styling.
+
+  WHAT: the PI page renders its bullet lists as <ul class="list-group list-group-flush"> with each
+    <li class="list-group-item">. This page's 4 bullet lists were bare <ul class=""> with unclassed
+    <li>. Applied the same two classes to all four:
+      1. Types of Product Defects (3 items)
+      2. Types of Defective Products Our Miami Attorneys Handle (6 items)
+      3. Claims Our Product Liability Attorneys Handle (3 items)
+      4. Federal Agencies That Regulate... (3 items)
+    = 4x <ul> -> list-group list-group-flush, 15x <li> -> list-group-item.
+
+  LEFT ALONE (deliberate):
+    - The "Steps to File a Claim" list stays a numbered <ol> - numbering is meaningful for a
+      sequence, and Bootstrap 4 (this theme - confirmed by data-toggle/data-target accordion
+      markup, not data-bs-*) has no list-group-numbered, so converting would drop the numbers.
+    - The Table of Contents <nav><ol> (custom inline-styled) and the 3 stat/comparison <table>s
+      are not list sections - untouched.
+
+  VERIFIED (grep on the file): 0 remaining <ul class="">; 4 list-group list-group-flush; 15
+    list-group-item; 1 <ol> (steps) intact. article.cshtml hot-reloads (no bin/rebuild). CSS
+    already loaded site-wide (PI page uses it) - no new asset. Presentation-only: no text, link,
+    legal claim, or keyword changed - refresh not re-run.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #39 - fixed the BreadcrumbList pointing at a 404 (position 2 = /injury-law)
+             File   : product-liability-attorney-miami/En/article.cshtml
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user reported /injury-law returns 404 and asked if it breaks the breadcrumb.
+
+  THE PROBLEM: the FIX #29 BreadcrumbList position-2 "item" was @@Settings.GetFullDomain/injury-law
+    (Home > Personal Injury > this page). /injury-law 404s. Impact of a 404 breadcrumb item: the
+    Rich Results Test STILL PASSES (it validates markup, does not fetch each item URL), so it is
+    easy to miss - but in production Google may drop the breadcrumb enhancement or ignore that crumb,
+    and any rendered breadcrumb links a user to a dead page. Does NOT hurt indexing/rankings; it is
+    a quality/UX issue + a dead URL in structured data.
+
+  WHY /injury-law is dead (investigated): the route exists ({categoryUrl} -> CategoryPage) and
+    injury-law IS in CategoryEntities.xml, so the controller would render it - BUT the injury
+    CATEGORY is evidently not maintained as a landing page: the Spanish equivalent es/lesionados is
+    deliberately 301-redirected to the homepage (App_start/UrlRedirects.cs:205). So the breadcrumb
+    was pointing at a hierarchy level the site does not actually serve.
+
+  THE FIX (Option D, user-chosen): repointed position-2 "item" to the REAL, live Personal Injury
+    hub page -> @@Settings.GetFullDomain/injury-law/personal-injury-lawyer-in-florida (a 200 page
+    that functions as the injury pillar). Kept name "Personal Injury". Working URL + reinforces the
+    hub-and-spoke internal linking already built (PI hub <-> this page). Considered but not chosen:
+    (A) drop the middle crumb to a 2-item breadcrumb; (C) make /injury-law return 200 (bigger; the
+    es/lesionados precedent says the firm does not want category landing pages).
+
+  ALSO: updated the breadcrumb's own @@* *@ comment to stop citing /injury-law and to record the
+    repoint + reason.
+
+  VERIFIED: article.cshtml hot-reloads (no bin/rebuild). Target page
+    /injury-law/personal-injury-lawyer-in-florida is a live ServiceEntity (id/url
+    personal-injury-lawyer-in-florida under injury-law) - confirmed 200 route. position 1 (Home) and
+    position 3 (this page) unchanged and valid. No body text / keyword change - refresh not re-run.
+
+  NOTE (separate from this page): /injury-law 404 is a SITE-WIDE symptom - EVERY injury-law service
+    page's URL sits under that path, and other pages' breadcrumbs/links may point there too. If the
+    firm wants category hubs to exist, that is a broader fix (Option C) worth a separate ticket.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] TABLE REFRESH - re-ran refresh.ps1 against the current page (covers FIX #34-#39,
+             which had each said "refresh not re-run"). Only 2 rows moved, both from the FIX #35
+             grammar edits:
+               row 139 "product" (bare stem): NOW 156 -> 155, +/- +103 -> +102
+                 (FIX #35: "the dangers of a product" -> "its dangers")
+               row 162 "failure to warn":     NOW   3 ->   2, +/-   +1 ->    0
+                 (FIX #35: "or failure to warn customers" -> "or fails to warn customers")
+             Everything else unchanged - heading-case (#36), list-group styling (#38), the
+             related-services partial (#34), and the breadcrumb repoint (#39) do NOT affect body
+             keyword counts (corpus is lower-cased + markup-stripped; the related-services links
+             render via a partial the script does not read). Row count still 197 (recount only, no
+             keywords added/removed). File still LF / no BOM.
+
+--------------------------------------------------------------------------------
+
+[2026-07-20] FIX #40 - main-menu order: moved product-liability directly below the hit-and-run
+             item in the Personal Injury > Accidents flyout
+             File   : App_Data/ServiceEntities.xml (+ bin/Debug/net7.0 copy synced)
+             Status : APPLIED - PENDING ATTORNEY/FIRM REVIEW.
+             Trigger: user asked to place the product-liability URL in the main menu just below
+                      miami-hit-and-run-accident-lawyer.
+
+  HOW THE MENU WORKS: MenuPartialPc/Mobile build the practice-area flyouts dynamically from
+    ServiceEntities.xml - services with showinmenu="true" AND Active="true" AND
+    Location.Id=="miami-fl-location", grouped by servicegroupname, rendered in XML DOCUMENT ORDER
+    (there is no sort/priority field). product-liability ALREADY had showinmenu="true" and
+    servicegroupname="Accidents" (same group as hit-and-run), so it was already in the menu - just
+    at its old XML position (~line 1237), far below hit-and-run (line 446). "Below hit-and-run" =
+    reorder only.
+
+  WHAT: moved the entire <ServiceEntity id="product-liability-attorney-miami"> block (with the
+    FIX #34 <ServicesRelated>) to immediately after the hit-and-run entity's </ServiceEntity>.
+    Now: ...hit-and-run | product-liability | uninsured-motorist(showinmenu=false, hidden)... so in
+    the Accidents flyout product-liability renders directly under Hit and run accident.
+    Done via scratchpad\move_menu.ps1 (regex extract + relocate) to avoid hand-tab errors; the
+    script VALIDATES well-formed XML and that pl index == hit-and-run index + 1 before writing.
+
+  VERIFIED: [xml] parse OK; product-liability id present exactly once (no dup from the move);
+    order hr=idx10, pl=idx11; encoding preserved = UTF-8 WITH BOM, LF (0 CRLF). Synced source ->
+    bin/Debug/net7.0/App_Data/ServiceEntities.xml (bin count = 1). Same reload behavior as FIX #34
+    (data file; picked up without restart last time - re-check the live menu; restart if stale).
+
+  SIDE EFFECT (expected, harmless): XML order also drives other listings (category-page service
+    order, any XML-ordered service loops), so product-liability now also sorts earlier there. This
+    is inherent to the data model - there is no menu-only ordering field. Flag if any surface should
+    NOT reflect the new order.
+
+================================================================================
+
+COLUMNS
+  VOL     Searches/month, SEMrush US database, from the two bulk CSVs.
+          0   = SEMrush returned zero volume. Read C3 before believing it.
+          n/l = not looked up (brand terms, other practice areas, bare stems).
+                NOT a zero.
+  CPC     SEMrush US cost-per-click, USD. "-" = $0.00 / none reported.
+          The best single proxy for what a click is worth commercially.
+  IMPR    Impressions for THIS URL, last 3 months, full GSC CSV export.
+  POS     Average GSC position over those 3 months.
+  ON      Times the phrase appears in the page's crawlable EN text AT THE
+          ORIGINAL 2026-07-16 BASELINE (title + meta + H1 + alt + body = 1,091
+          words). Frozen historical figure - do NOT recount against it; see NOW.
+  NOW     Times the phrase appears in the CURRENT crawlable EN text, recounted
+          2026-07-20 after FIXES #1-#19. Corpus = title + meta description + H1 +
+          article body (Razor comments stripped) + the 9 EN FAQ Q&A (FIX #16) +
+          the Table of Contents (FIX #19) = 3,388 words. Method: case-insensitive
+          WHOLE-WORD match (a trailing/leading letter breaks the match), so
+          singular and plural count separately - consistent with this table
+          already listing e.g. "defective product" and "defective products" as
+          distinct rows. Multi-word phrases matched literally. Computed by script
+          (see the CONTENT CHANGELOG note for FIX #20), not by hand.
+  +/-     NOW minus ON: how many more (+) or fewer (-) times the phrase appears
+          now than at the 2026-07-16 baseline. 0 = unchanged. For the new rows
+          183-197 the baseline is 0, so +/- equals NOW. (Added FIX #21.)
+  SRC     GSC      = a query this page actually appears for
+          SEM-IMG  = from the SEMrush competitor image, no GSC impressions
+          PROPOSED = gap phrase I suggested; now priced (mostly 0 - see C4)
+          PAGE     = term counted on the page; not a standalone search query
+
+================================================================================
+THE HEADLINE: THE DEMAND IS IN "LAWYER", NOT "ATTORNEY"
+================================================================================
+  product liability lawyer    18,100/mo   page says it  1x   pos 11.24
+  product liability attorney  12,100/mo   page says it  8x   pos 11.05
+
+  The page is built on the 12,100 term and barely mentions the 18,100 one.
+  Same story one level down: "product liability lawyers" 4,400 (1x on page) vs
+  "product liability attorneys" 3,600 (2x). The word "lawyer" appears 3 times on
+  this page; "attorney" appears 9. That is backwards against the market.
+
+  These are US-wide figures, so treat them as market shape, not reachable
+  traffic - this page only surfaces for a Miami-local slice of them (see C2).
+  But the SHAPE is unambiguous, and GSC agrees independently: "lawyer" queries
+  earn this page 3,039 impressions vs 2,115 for "attorney".
+
+================================================================================
+THE MONEY IS IN "DEFECTIVE", NOT "PRODUCT LIABILITY"
+================================================================================
+  defective products attorney   1,300/mo   CPC $58.36   0x on page
+  defective product lawyer      3,600/mo   CPC $46.32   0x on page
+  defective products lawyer     1,300/mo   CPC $46.32   0x on page
+  product defect lawyers          390/mo   CPC $46.32   0x on page
+  ---------------------------------------------------------------
+  product liability attorney   12,100/mo   CPC $21.07   8x on page
+  product liability lawyer     18,100/mo   CPC $18.57   1x on page
+  product liability law firm      880/mo   CPC $12.22   0x on page
+
+  Advertisers pay 2-3x more per click for "defective" phrasing than for
+  "product liability". The defective cluster is also where this page already
+  holds its BEST positions (5.50-7.92, all better than the target's 9.87) - and
+  where it has ZERO on-page mentions. Higher commercial value, better existing
+  rank, no content. That convergence is the clearest signal in this file.
+
+================================================================================
+THE "NEAR ME" CLUSTER IS 4,460/MO AND 100% TRANSACTIONAL INTENT
+================================================================================
+  product liability attorney near me   1,300  Transactional  62 impr  pos 10.58
+  product liability lawyer near me     1,300  Transactional  35 impr  pos 11.89
+  products liability lawyer near me      720  Transactional   1 impr  pos 10.00
+  defective product lawyer near me       390  Transactional   1 impr  pos 18.00
+  products liability attorney near me    320  Transactional  32 impr  pos 19.66
+  product liability attorneys near me    320  Transactional  30 impr  pos 15.60
+  defective product attorney near me     110  Transactional   -       -
+  --------------------------------------------------------------------------
+  TOTAL                                4,460  every one Transactional
+
+  Transactional is SEMrush's highest-purchase-intent label. This is the only
+  cluster in the file that is uniformly transactional - these are people ready
+  to hire. The phrase "near me" appears 0 times on the page (row 178), and the
+  page never names a neighbourhood beyond one Hialeah mention.
+
+================================================================================
+FULL TABLE - 197 rows, grouped by source, sorted by volume then impressions
+================================================================================
+|  # | KEYWORD                                                  |    VOL |    CPC |   IMPR |   POS | ON | NOW | +/-  | SRC      |
+|----|----------------------------------------------------------|--------|--------|--------|-------|----|-----|------|----------|
+|  1 | product liability lawyer                                 | 18,100 |  18.57 |    177 | 11.24 |  1 |  13 |  +12 | GSC      |
+|  2 | product liability attorney                               | 12,100 |  21.07 |    139 | 11.05 |  8 |   9 |   +1 | GSC      |
+|  3 | product liability lawyers                                |  4,400 |  18.57 |     23 |  8.65 |  1 |   3 |   +2 | GSC      |
+|  4 | product liability attorneys                              |  3,600 |  21.07 |     35 |  7.29 |  2 |   5 |   +3 | GSC      |
+|  5 | defective product lawyer                                 |  3,600 |  46.32 |     10 |  8.70 |  0 |   5 |   +5 | GSC      |
+|  6 | defective product attorney                               |  2,400 |  18.28 |     12 |  9.67 |  0 |   1 |   +1 | GSC      |
+|  7 | defective products attorney                              |  1,300 |  58.36 |    104 | 10.06 |  0 |   1 |   +1 | GSC      |
+|  8 | defective products lawyer                                |  1,300 |  46.32 |     88 |  9.74 |  0 |   1 |   +1 | GSC      |
+|  9 | product liability attorney near me                       |  1,300 |  15.19 |     62 | 10.58 |  0 |   1 |   +1 | GSC      |
+| 10 | product liability lawyer near me                         |  1,300 |  13.62 |     35 | 11.89 |  0 |   2 |   +2 | GSC      |
+| 11 | product liability law firm                               |    880 |  12.22 |      2 | 11.00 |  0 |   1 |   +1 | GSC      |
+| 12 | products liability attorney                              |    720 |  21.07 |      2 |  8.00 |  0 |   1 |   +1 | GSC      |
+| 13 | products liability lawyer near me                        |    720 |  17.04 |      1 | 10.00 |  0 |   1 |   +1 | GSC      |
+| 14 | product defect lawyer                                    |    480 |  16.97 |     13 |  7.77 |  0 |   1 |   +1 | GSC      |
+| 15 | liability lawyers                                        |    480 |  34.29 |      2 | 10.50 |  1 |   3 |   +2 | GSC      |
+| 16 | product defect lawyers                                   |    390 |  46.32 |      1 |  9.00 |  0 |   0 |    0 | GSC      |
+| 17 | defective product lawyer near me                         |    390 |  36.44 |      1 | 18.00 |  0 |   0 |    0 | GSC      |
+| 18 | defective products attorneys                             |    320 |  58.36 |     48 |  9.94 |  0 |   0 |    0 | GSC      |
+| 19 | products liability attorney near me                      |    320 |  17.88 |     32 | 19.66 |  0 |   0 |    0 | GSC      |
+| 20 | product liability attorneys near me                      |    320 |  15.19 |     30 | 15.60 |  0 |   0 |    0 | GSC      |
+| 21 | product defect attorney                                  |    320 |  16.97 |     23 |  8.04 |  0 |   0 |    0 | GSC      |
+| 22 | defective products lawyers                               |    260 |  16.97 |     56 | 10.82 |  0 |   0 |    0 | GSC      |
+| 23 | miami product liability lawyer                           |    210 |      - |  1,020 | 12.76 |  0 |   0 |    0 | GSC      |
+| 24 | lemon law lawyers miami                                  |    210 |  22.96 |      1 | 90.00 |  0 |   0 |    0 | GSC      |
+| 25 | product liability lawyer miami                           |    170 |      - |    623 | 13.53 |  0 |   0 |    0 | GSC      |
+| 26 | defective product lawyer miami                           |    170 |      - |    354 |  7.92 |  0 |   0 |    0 | GSC      |
+| 27 | attorney for product liability                           |    170 |  21.07 |      4 |  9.50 |  0 |   0 |    0 | GSC      |
+| 28 | miami product liability attorney                         |    110 |      - |    284 | 10.16 |  1 |   2 |   +1 | GSC      |
+| 29 | product liability attorney miami                         |    110 |      - |    243 |  9.87 |  4 |   3 |   -1 | GSC      |
+| 30 | defective product attorney miami                         |     90 |  16.97 |    262 |  7.26 |  0 |   0 |    0 | GSC      |
+| 31 | fort lauderdale product liability lawyer                 |     90 |      - |     10 | 72.40 |  0 |   0 |    0 | GSC      |
+| 32 | miami defective product lawyer                           |     70 |      - |    184 |  7.59 |  0 |   1 |   +1 | GSC      |
+| 33 | miami product liability lawyers                          |     70 |      - |     47 | 14.40 |  0 |   0 |    0 | GSC      |
+| 34 | fort lauderdale defective product lawyer                 |     70 |      - |      9 | 54.67 |  0 |   0 |    0 | GSC      |
+| 35 | fort lauderdale product liability attorney               |     70 |      - |      2 | 52.00 |  0 |   0 |    0 | GSC      |
+| 36 | product liability attorney miami fl                      |     50 |  11.42 |    127 | 14.04 |  0 |   0 |    0 | GSC      |
+| 37 | product liability lawyer coral gables                    |     50 |      - |     33 | 25.09 |  0 |   0 |    0 | GSC      |
+| 38 | product liability attorneys coral gables                 |     50 |      - |     31 | 27.68 |  0 |   0 |    0 | GSC      |
+| 39 | product liability attorney coral gables                  |     50 |      - |     28 | 25.00 |  0 |   0 |    0 | GSC      |
+| 40 | product liability law firm coral gables                  |     50 |      - |     26 | 29.15 |  0 |   0 |    0 | GSC      |
+| 41 | product liability lawyers coral gables                   |     50 |      - |     15 | 25.80 |  0 |   0 |    0 | GSC      |
+| 42 | fort lauderdale defective products laywer                |     50 |      - |      3 | 46.67 |  0 |   0 |    0 | GSC      |
+| 43 | fort lauderdale defective products attorney              |     50 |      - |      2 | 40.50 |  0 |   0 |    0 | GSC      |
+| 44 | product liability attorney fort lauderdale               |     50 |      - |      1 | 71.00 |  0 |   0 |    0 | GSC      |
+| 45 | coral gables product liability lawyers                   |     50 |      - |      1 | 99.00 |  0 |   0 |    0 | GSC      |
+| 46 | defective products attorney miami                        |     40 |      - |    238 |  6.71 |  0 |   0 |    0 | GSC      |
+| 47 | product liability lawyer south florida                   |     40 |      - |      6 | 18.83 |  0 |   0 |    0 | GSC      |
+| 48 | coral gables product liability attorneys                 |     40 |      - |      4 | 77.75 |  0 |   0 |    0 | GSC      |
+| 49 | defective product lawyer in dania beach                  |     40 |      - |      2 | 41.50 |  0 |   0 |    0 | GSC      |
+| 50 | coral gables product liability law firm                  |     40 |      - |      2 | 84.00 |  0 |   0 |    0 | GSC      |
+| 51 | coral gables product liability attorney                  |     40 |      - |      2 | 91.00 |  0 |   0 |    0 | GSC      |
+| 52 | coral gables product liability lawyer                    |     40 |      - |      1 | 23.00 |  0 |   0 |    0 | GSC      |
+| 53 | defective products attorney panorama                     |     40 |      - |      1 | 39.00 |  0 |   0 |    0 | GSC      |
+| 54 | car warranty lawyers miami                               |     40 |      - |      1 | 79.00 |  0 |   0 |    0 | GSC      |
+| 55 | defective medical devices lawyer miami                   |     30 |      - |     74 | 40.76 |  0 |   0 |    0 | GSC      |
+| 56 | product liability attorney hialeah                       |     30 |      - |     43 | 10.02 |  0 |   0 |    0 | GSC      |
+| 57 | defective medical devices attorney miami                 |     30 |      - |     41 | 41.93 |  0 |   0 |    0 | GSC      |
+| 58 | product liability attorney 33131                         |     30 |      - |     40 | 31.43 |  0 |   0 |    0 | GSC      |
+| 59 | hialeah product liability lawyer                         |     30 |      - |     22 | 10.27 |  0 |   0 |    0 | GSC      |
+| 60 | hialeah product liability attorney                       |     30 |      - |     20 |  9.75 |  0 |   0 |    0 | GSC      |
+| 61 | product liability lawyer doral                           |     30 |      - |     11 | 22.91 |  0 |   0 |    0 | GSC      |
+| 62 | pharmaceutical negligence attorney miami                 |     30 |      - |     10 | 66.80 |  0 |   0 |    0 | GSC      |
+| 63 | product liability attorney ft. lauderdale fl             |     30 |      - |      8 | 54.00 |  0 |   0 |    0 | GSC      |
+| 64 | ft. lauderdale product liability attorney                |     30 |      - |      8 | 61.00 |  0 |   0 |    0 | GSC      |
+| 65 | defective products lawyers miami                         |     30 |      - |      7 |  9.29 |  0 |   0 |    0 | GSC      |
+| 66 | ecigarette explosion lawyer miami                        |     30 |      - |      2 | 49.00 |  0 |   0 |    0 | GSC      |
+| 67 | defective products lawyers panorama                      |     30 |      - |      1 | 87.00 |  0 |   0 |    0 | GSC      |
+| 68 | product liability lawyer hialeah                         |     20 |      - |     48 |  9.42 |  0 |   0 |    0 | GSC      |
+| 69 | miami defective product attorney                         |     20 |      - |     35 |  6.00 |  0 |   0 |    0 | GSC      |
+| 70 | product liability attorney 33137                         |     20 |      - |     27 | 16.74 |  0 |   0 |    0 | GSC      |
+| 71 | miami products liability attorney                        |     20 |      - |     26 | 10.23 |  0 |   0 |    0 | GSC      |
+| 72 | miami products liability lawyer                          |     20 |      - |     21 | 15.24 |  0 |   0 |    0 | GSC      |
+| 73 | miami product liability cases                            |     20 |      - |     18 | 14.67 |  0 |   0 |    0 | GSC      |
+| 74 | product liability attorneys miami                        |     20 |      - |     15 | 10.60 |  0 |   0 |    0 | GSC      |
+| 75 | miami defective auto parts lawyer                        |     20 |      - |     11 | 56.91 |  0 |   0 |    0 | GSC      |
+| 76 | defective product liability lawyers miami                |     20 |  18.28 |      8 |  9.00 |  0 |   0 |    0 | GSC      |
+| 77 | ecigarette explosion lawyer miami beach                  |     20 |      - |      3 | 84.33 |  0 |   0 |    0 | GSC      |
+| 78 | product liability lawyer pompano beach                   |     20 |      - |      1 | 70.00 |  0 |   0 |    0 | GSC      |
+| 79 | miami product liability attorneys                        |     10 |      - |     48 | 12.77 |  0 |   1 |   +1 | GSC      |
+| 80 | product defect lawyer miami                              |     10 |      - |     36 |  8.83 |  0 |   0 |    0 | GSC      |
+| 81 | products liability lawyer coral gables fl                |     10 |      - |     18 | 54.06 |  0 |   0 |    0 | GSC      |
+| 82 | defective product lawyer coral gables                    |     10 |      - |     14 | 24.07 |  0 |   0 |    0 | GSC      |
+| 83 | aviation product liability lawyer miami                  |     10 |      - |      8 | 23.25 |  0 |   0 |    0 | GSC      |
+| 84 | manufacturing attorney miami                             |     10 |      - |      7 | 20.29 |  0 |   0 |    0 | GSC      |
+| 85 | products liability attorney coral gables fl              |     10 |      - |      7 | 52.57 |  0 |   0 |    0 | GSC      |
+| 86 | defective products attorney south florida                |     10 |      - |      7 | 63.14 |  0 |   0 |    0 | GSC      |
+| 87 | defective products lawyer south florida                  |     10 |      - |      5 | 64.80 |  0 |   0 |    0 | GSC      |
+| 88 | products liability lawyers coral gables fl               |     10 |      - |      3 | 57.00 |  0 |   0 |    0 | GSC      |
+| 89 | product liability attorney miami lakes                   |      0 |      - |     19 | 13.63 |  0 |   0 |    0 | GSC      |
+| 90 | product liability lawyers miami                          |      0 |      - |     10 | 13.80 |  0 |   0 |    0 | GSC      |
+| 91 | miami std transmission lawsuit attorney                  |    n/l |      - |     10 | 21.70 |  0 |   0 |    0 | GSC      |
+| 92 | miami defective products attorney                        |      0 |      - |      8 |  5.50 |  0 |   0 |    0 | GSC      |
+| 93 | product liability lawyer in miami                        |      0 |      - |      7 | 16.29 |  0 |   0 |    0 | GSC      |
+| 94 | product liability attorneys in miami                     |      0 |      - |      6 | 12.50 |  0 |   0 |    0 | GSC      |
+| 95 | product liability lawyers in miami                       |      0 |      - |      5 | 12.60 |  0 |   0 |    0 | GSC      |
+| 96 | product liability attorney in miami                      |      0 |      - |      4 |  8.50 |  1 |   2 |   +1 | GSC      |
+| 97 | defective product claim lawyers in spain                 |    n/l |      - |      4 | 61.25 |  0 |   0 |    0 | GSC      |
+| 98 | defective products lawyer miami                          |      0 |      - |      2 |  9.00 |  0 |   0 |    0 | GSC      |
+| 99 | south miami product liability attorney                   |      0 |      - |      2 | 32.00 |  0 |   0 |    0 | GSC      |
+|100 | miami springs product liability attorney                 |      0 |      - |      2 | 43.00 |  0 |   0 |    0 | GSC      |
+|101 | abogado de responsabilidad del producto product liability lawyer |    n/l |      - |      2 | 48.50 |  0 |   0 |    0 | GSC      |
+|102 | opa locka product liability attorney                     |      0 |      - |      2 | 50.00 |  0 |   0 |    0 | GSC      |
+|103 | the dominguez firm personal injury defective products    |    n/l |      - |      1 | 11.00 |  0 |   0 |    0 | GSC      |
+|104 | where can i get a free case review for a defective device injury? |      0 |      - |      1 | 11.00 |  0 |   0 |    0 | GSC      |
+|105 | miami defective products lawyer                          |      0 |      - |      1 | 12.00 |  0 |   0 |    0 | GSC      |
+|106 | miami std transmission lawsuit lawyer                    |    n/l |      - |      1 | 34.00 |  0 |   0 |    0 | GSC      |
+|107 | hearing loss compensation attorney in miami              |    n/l |      - |      1 | 43.00 |  0 |   0 |    0 | GSC      |
+|108 | miami beach product liability attorney                   |      0 |      - |      1 | 46.00 |  0 |   0 |    0 | GSC      |
+|109 | miami lakes product liability attorney                   |      0 |      - |      1 | 53.00 |  0 |   0 |    0 | GSC      |
+|110 | gallardo law firm logo                                   |    n/l |      - |      1 | 56.00 |  0 |   0 |    0 | GSC      |
+|111 | miami shores product liability attorney                  |      0 |      - |      1 | 59.00 |  0 |   0 |    0 | GSC      |
+|112 | gallardo law firm reviews                                |    n/l |      - |      1 | 71.00 |  0 |   0 |    0 | GSC      |
+|113 | top rated defective products lawyer                      |    170 |      - |      - |     - |  0 |   0 |    0 | SEM-IMG  |
+|114 | dekalb county defective product attorney                 |    110 |      - |      - |     - |  0 |   0 |    0 | SEM-IMG  |
+|115 | fort lauderdale defective products lawsuit               |     70 |      - |      - |     - |  0 |   0 |    0 | SEM-IMG  |
+|116 | beverly hills defective product lawyer                   |     70 |      - |      - |     - |  0 |   0 |    0 | SEM-IMG  |
+|117 | columbia dangerous product attorney                      |     70 |      - |      - |     - |  0 |   0 |    0 | SEM-IMG  |
+|118 | law firm defective products                              |     70 |      - |      - |     - |  0 |   0 |    0 | SEM-IMG  |
+|119 | defective product attorney near me                       |    110 |  23.86 |      - |     - |  0 |   0 |    0 | PROPOSED |
+|120 | product recall lawyer                                    |     70 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|121 | product liability statute of limitations florida         |     20 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|122 | florida product liability law                            |     20 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|123 | failure to warn lawsuit                                  |     20 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|124 | product liability lawyer miami fl                        |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|125 | miami product liability law firm                         |      0 |      - |      - |     - |  0 |   1 |   +1 | PROPOSED |
+|126 | product liability free consultation miami                |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|127 | product liability contingency fee                        |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|128 | design defect lawyer                                     |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|129 | manufacturing defect lawyer                              |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|130 | strict product liability florida                         |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|131 | defective airbag lawyer miami                            |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|132 | defective medication lawyer miami                        |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|133 | defective toy lawyer miami                               |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|134 | defective machinery lawyer miami                         |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|135 | dangerous product lawyer miami                           |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|136 | product liability wrongful death miami                   |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|137 | product liability class action miami                     |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|138 | product warranty violation attorney                      |      0 |      - |      - |     - |  0 |   0 |    0 | PROPOSED |
+|139 | product                                                  |    n/l |      - |      - |     - | 53 | 155 | +102 | PAGE     |
+|140 | product liability                                        |    n/l |      - |      - |     - | 16 |  68 |  +52 | PAGE     |
+|141 | defective                                                |    n/l |      - |      - |     - | 13 |  59 |  +46 | PAGE     |
+|142 | defective product                                        |    n/l |      - |      - |     - |  9 |  31 |  +22 | PAGE     |
+|143 | attorney                                                 |    n/l |      - |      - |     - |  9 |  13 |   +4 | PAGE     |
+|144 | manufacturer                                             |    n/l |      - |      - |     - |  9 |  15 |   +6 | PAGE     |
+|145 | damages                                                  |    n/l |      - |      - |     - |  8 |  13 |   +5 | PAGE     |
+|146 | lawsuit                                                  |    n/l |      - |      - |     - |  7 |   9 |   +2 | PAGE     |
+|147 | warning                                                  |    n/l |      - |      - |     - |  7 |   4 |   -3 | PAGE     |
+|148 | miami                                                    |    n/l |      - |      - |     - |  7 |  35 |  +28 | PAGE     |
+|149 | injury                                                   |    n/l |      - |      - |     - |  7 |  25 |  +18 | PAGE     |
+|150 | compensation                                             |    n/l |      - |      - |     - |  6 |   8 |   +2 | PAGE     |
+|151 | injuries                                                 |    n/l |      - |      - |     - |  5 |   7 |   +2 | PAGE     |
+|152 | claim                                                    |    n/l |      - |      - |     - |  5 |  53 |  +48 | PAGE     |
+|153 | class action                                             |    n/l |      - |      - |     - |  4 |   5 |   +1 | PAGE     |
+|154 | warning label                                            |    n/l |      - |      - |     - |  4 |   1 |   -3 | PAGE     |
+|155 | evidence                                                 |    n/l |      - |      - |     - |  4 |  14 |  +10 | PAGE     |
+|156 | negligence                                               |    n/l |      - |      - |     - |  3 |  13 |  +10 | PAGE     |
+|157 | lawyer                                                   |    n/l |      - |      - |     - |  3 |  22 |  +19 | PAGE     |
+|158 | seller                                                   |    n/l |      - |      - |     - |  3 |   4 |   +1 | PAGE     |
+|159 | dangerous                                                |    n/l |      - |      - |     - |  3 |   8 |   +5 | PAGE     |
+|160 | defective products                                       |    n/l |      - |      - |     - |  3 |  12 |   +9 | PAGE     |
+|161 | law firm                                                 |    n/l |      - |      - |     - |  3 |   8 |   +5 | PAGE     |
+|162 | failure to warn                                          |    n/l |      - |      - |     - |  2 |   2 |    0 | PAGE     |
+|163 | design defect                                            |    n/l |      - |      - |     - |  1 |   3 |   +2 | PAGE     |
+|164 | manufacturing defect                                     |    n/l |      - |      - |     - |  1 |   1 |    0 | PAGE     |
+|165 | strict product liability                                 |    n/l |      - |      - |     - |  1 |   4 |   +3 | PAGE     |
+|166 | product warranty                                         |    n/l |      - |      - |     - |  1 |   1 |    0 | PAGE     |
+|167 | dangerous product                                        |    n/l |      - |      - |     - |  1 |   0 |   -1 | PAGE     |
+|168 | hialeah                                                  |    n/l |      - |      - |     - |  1 |   6 |   +5 | PAGE     |
+|169 | consumer                                                 |    n/l |      - |      - |     - |  1 |   7 |   +6 | PAGE     |
+|170 | hazardous                                                |    n/l |      - |      - |     - |  1 |   0 |   -1 | PAGE     |
+|171 | medication                                               |    n/l |      - |      - |     - |  1 |   0 |   -1 | PAGE     |
+|172 | toy                                                      |    n/l |      - |      - |     - |  1 |   0 |   -1 | PAGE     |
+|173 | machinery                                                |    n/l |      - |      - |     - |  1 |   3 |   +2 | PAGE     |
+|174 | motor vehicle                                            |    n/l |      - |      - |     - |  1 |   2 |   +1 | PAGE     |
+|175 | free consultation                                        |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|176 | contingency                                              |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|177 | statute of limitations                                   |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|178 | near me                                                  |    n/l |      - |      - |     - |  0 |   4 |   +4 | PAGE     |
+|179 | recall                                                   |    n/l |      - |      - |     - |  0 |  11 |  +11 | PAGE     |
+|180 | airbag                                                   |    n/l |      - |      - |     - |  0 |   0 |    0 | PAGE     |
+|181 | wrongful death                                           |    n/l |      - |      - |     - |  0 |   0 |    0 | PAGE     |
+|182 | serious injury                                           |    n/l |      - |      - |     - |  0 |   2 |   +2 | PAGE     |
+
+|183 | express warranty                                         |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|184 | implied warranty                                         |    n/l |      - |      - |     - |  0 |   4 |   +4 | PAGE     |
+|185 | breach of warranty                                       |    n/l |      - |      - |     - |  0 |   5 |   +5 | PAGE     |
+|186 | merchantability                                          |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|187 | strict liability                                         |    n/l |      - |      - |     - |  0 |   4 |   +4 | PAGE     |
+|188 | medical device                                           |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|189 | auto parts                                               |    n/l |      - |      - |     - |  0 |   4 |   +4 | PAGE     |
+|190 | statute of repose                                        |    n/l |      - |      - |     - |  0 |   2 |   +2 | PAGE     |
+|191 | foreseeable                                              |    n/l |      - |      - |     - |  0 |   2 |   +2 | PAGE     |
+|192 | cpsc                                                     |    n/l |      - |      - |     - |  0 |   7 |   +7 | PAGE     |
+|193 | nhtsa                                                    |    n/l |      - |      - |     - |  0 |   6 |   +6 | PAGE     |
+|194 | fda                                                      |    n/l |      - |      - |     - |  0 |   7 |   +7 | PAGE     |
+|195 | magnuson-moss                                            |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|196 | product recall                                           |    n/l |      - |      - |     - |  0 |   1 |   +1 | PAGE     |
+|197 | consumer product                                         |    n/l |      - |      - |     - |  0 |   2 |   +2 | PAGE     |
+
+Group markers: rows 1-112 SRC=GSC | 113-118 SEM-IMG | 119-138 PROPOSED | 139-197 PAGE
+
+================================================================================
+WHAT CHANGED NOW THAT VOLUMES ARE IN
+================================================================================
+C1 | THE TARGET KEYWORD IS A ROUNDING ERROR. "product liability attorney miami"
+   | is 110/mo. The ungeo'd "product liability lawyer" is 18,100/mo - 165x
+   | larger. The page is named, titled, H1'd, URL'd and schema'd around the
+   | 110/mo phrase. Even allowing that national volume is not reachable, the
+   | firm has anchored its identity to the smallest term in its own market.
+C2 | SEMRUSH AND GSC DISAGREE IN BOTH DIRECTIONS, AND BOTH ARE "RIGHT".
+   |   miami product liability lawyer : SEM 210/mo (=630/3mo) but GSC 1,020
+   |     impressions in 3 months. SEMrush UNDER-counts local demand.
+   |   defective products attorney miami : SEM 40/mo (=120/3mo) but GSC 238
+   |     impressions. Under again, 2x.
+   |   product liability lawyer : SEM 18,100/mo (=54,300/3mo) but GSC 177
+   |     impressions at pos 11.24. If we truly ranked 11th on 18,100/mo we
+   |     would see thousands. We are shown only to a Miami-local slice.
+   | READ IT THIS WAY: VOL = size of the national market (what to name things).
+   | IMPR = what this page can actually reach today (what to prioritise).
+   | Never add them, never compare them directly.
+C3 | "VOL 0" DOES NOT MEAN NO DEMAND. 15 rows have SEMrush volume 0 yet real
+   | GSC impressions - row 92 "miami defective products attorney" is 0/mo yet
+   | earns 8 impressions at position 5.50, the second-best position on the whole
+   | page. Also 0/mo: "product liability lawyers miami" (10 impr), "product
+   | liability attorney miami lakes" (19 impr), "product liability lawyer in
+   | miami" (7 impr). SEMrush does not track thin local long-tail. GSC proves
+   | the searches happen.
+C4 | 15 OF MY 20 PROPOSED PHRASES CAME BACK AT ZERO. I invented them last turn
+   | as "gaps worth pricing". Now priced, and mostly worthless: "design defect
+   | lawyer" 0, "manufacturing defect lawyer" 0, "strict product liability
+   | florida" 0, "dangerous product lawyer miami" 0, "defective airbag /
+   | medication / toy / machinery lawyer miami" all 0, "product liability free
+   | consultation miami" 0, "product liability contingency fee" 0, "product
+   | liability wrongful death miami" 0, "product liability class action miami" 0.
+   | Only 5 survived: "defective product attorney near me" 110 (Transactional,
+   | CPC $23.86), "product recall lawyer" 70, and three at 20/mo (florida
+   | product liability law, product liability statute of limitations florida,
+   | failure to warn lawsuit). Do not build content for the zeros. This is a
+   | direct correction to my own suggestion from last turn.
+C5 | THE SEMRUSH IMAGE AND THE SEMRUSH BULK EXPORT DISAGREE WITH EACH OTHER on
+   | six off-geo keywords: dekalb county 140 -> 110, fort lauderdale product
+   | liability lawyer 110 -> 90, fort lauderdale defective product lawyer
+   | 90 -> 70, fort lauderdale defective products lawsuit 90 -> 70, fort
+   | lauderdale defective products attorney 70 -> 50, laywer[sic] 70 -> 50.
+   | Same tool, same day, different numbers. Every disagreement is an off-geo
+   | row, consistent with the image being a competitor-comparison view on a
+   | different scope. The bulk export is the cleaner source; VOL uses it.
+C6 | HIALEAH IS CHEAP AND REAL. Rows 56, 59, 60, 68: 20-30/mo each, 133 GSC
+   | impressions combined at positions 9.4-10.3. Small volume, but we already
+   | rank page one and the page names Hialeah exactly once. Coral Gables looks
+   | bigger (~185 impressions, 40-50/mo per phrase) but we sit at positions
+   | 23-99 there - a much longer climb.
+
+================================================================================
+WHAT HAS NOT CHANGED
+================================================================================
+  5,591 impressions -> 0 clicks. Every one of the 112 queries, all 3 devices and
+  all 64 countries report zero. The page ranks 5.50-7.92 across the entire
+  defective-product cluster and converts none of it.
+
+  Volume data tells you what to WRITE. It does not fix why nobody CLICKS. The
+  competitor analysis in avana-seo-report/product-liability-attorney-miami.html
+  still stands: no CTA in the meta description, the word "free" never appears at
+  the point of conversion, schema advertises priceRange "$1500-$10000" on a
+  no-win-no-fee firm, ~1,590 words against competitors' 3,500-4,200, no
+  verdicts, no review count, and 4.2 inherited stars rendering directly beneath
+  Goldberg's 4.9 in the same SERP.
+
+  Sequence the data supports: fix the snippet and the offer first (the click
+  problem), then rename toward "lawyer" and "defective" (the volume problem),
+  then build near-me / neighbourhood coverage (the intent problem).
+
+================================================================================
+SOURCES
+================================================================================
+  VOL, CPC, Intent : GallardoLawyers3/product-liability-lawyer_bulk_us_2026-07-16_15-34-25.csv (100 kw)
+                     GallardoLawyers3/lemon-law-lawyers-miami_bulk_us_2026-07-16_15-37-03.csv  (30 kw)
+                     SEMrush US database, pulled 2026-07-16.
+  IMPR, POS        : avana-seo-report/sources/product-liability-attorney-miami/
+                     ...url/.../Queries.csv - 112 queries, Web, last 3 months.
+                     (+ Pages, Devices, Countries, Search appearance)
+  Competitor set   : avana-seo-report/product-liability-attorney-miami.html
+  SERP capture     : avana-seo-report/img/product-liability-attorney-miami_google.png
+  Earlier SEM img  : avana-seo-report/img/product-liability-attorney-miami_semrush.png
+                     (superseded by the bulk exports - see C5)
+  Page text        : Views/ServicePage/Content/injury-law/product-liability-attorney-miami/En/
+                     article.cshtml + articlemetas.cshtml
+                     App_Data/ServiceEntities.xml lines 1237-1272 (H1 = targeredkeyword)
+                     App_Data/FaqEntities.xml lines 6281-6300 (ES only - no EN FAQs)
+================================================================================
