@@ -1,0 +1,1082 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallardo — Abogados de Responsabilidad del Producto en Miami | Análisis SEO</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; abogados de responsabilidad del producto en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="abogados-de-responsabilidad-del-producto-en-miami"></div>
+<div class="geo-history" data-slug="abogados-de-responsabilidad-del-producto-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isOwn) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isOwn ? 2 : 1.5,
+        borderDash: isOwn ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isOwn ? 4 : 3,
+        pointHoverRadius: isOwn ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('gallardolawyers') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Palabra clave</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    abogados de responsabilidad del producto en miami
+    <button onclick="navigator.clipboard.writeText('abogados de responsabilidad del producto en miami'); this.textContent='¡Copiado!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copiar</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami'); this.textContent='¡Copiado!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clics</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Palabra clave: "abogados de responsabilidad del producto en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impresiones</div>
+    <div class="kpi-value">75</div>
+    <div class="kpi-source">Palabra clave: "abogados de responsabilidad del producto en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0%</div>
+    <div class="kpi-source">Palabra clave: "abogados de responsabilidad del producto en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Posición</div>
+    <div class="kpi-value">3.83</div>
+    <div class="kpi-source">Palabra clave: "abogados de responsabilidad del producto en miami" — consulta principal</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN (keyword-filtered) ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Desglose por dispositivo para la palabra clave "abogados de responsabilidad del producto en miami" (filtrado por palabra clave)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Dispositivo</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clics</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impresiones</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Posición</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Móvil</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">76</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">3.8</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Solo móvil — la exportación de GSC filtrada por palabra clave contiene únicamente la fila Móvil (sin Escritorio ni Tableta): esta consulta en español solo recibe impresiones en móvil. Las 76 impresiones del dispositivo frente al total de la consulta (75) son un artefacto conocido de redondeo/anonimización de GSC entre las tablas de consulta y de dispositivo bajo el mismo filtro.</div>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="es-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — Todas las consultas para <span style="font-size:16px;font-weight:900;">https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami</span> — Últimos 3 meses</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Mostrar</a>
+  </div>
+  <div id="es-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Clics totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">15</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Impresiones totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">3,596</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">CTR promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">0.42%</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Posición promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">11.79</div></div>
+    </div>
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Consultas sin clics con más de 100 impresiones</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Consulta</th>
+            <th style="padding:7px 10px;text-align:right;">Impresiones</th>
+            <th style="padding:7px 10px;text-align:right;">Posición</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de responsabilidad del producto</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">279</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13.59</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de responsabilidad de productos de walmart</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">239</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">16.62</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿quién está mejor calificado para demandas por responsabilidad de productos?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">141</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">6.77</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿qué experiencia debe tener un abogado en demandas por productos defectuosos?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">140</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">10.13</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Mostrando las 4 de 4 consultas sin clics con más de 100 impresiones · La página gana 15 clics en total repartidos en consultas pequeñas (la más alta: "abogados de productos defectuosos", 2 clics) · Fuente: exportación de GSC filtrada por URL, 2026-07-21</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Palabras Clave Primarias y Secundarias — Análisis de Página</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extraído del código fuente en vivo — Gallardo ✅ | Panter ✅ | Hickey ✅ | Silva &amp; Silva ✅ &middot; Consultado 2026-07-21</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Elemento</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Gallardo 🔴 NUESTRA PÁGINA<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami" style="color:#fff;text-decoration:none;" target="_blank">gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Panter, Panter &amp; Sampedro ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://panterlaw.com/es/product-liability/defective-products/" style="color:#fff;text-decoration:none;" target="_blank">panterlaw.com/es/product-liability/defective-products/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Hickey Law Firm ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.hickeylawfirm.com/es/responsabilidad-por-productos/" style="color:#fff;text-decoration:none;" target="_blank">hickeylawfirm.com/es/responsabilidad-por-productos/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Silva &amp; Silva ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.silvasilva.com/es/products-liability-attorneys-in-south-miami-fl/" style="color:#fff;text-decoration:none;" target="_blank">silvasilva.com/es/products-liability-attorneys-in-south-miami-fl/</a>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Etiqueta de título</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Título de coincidencia exacta</div>
+            "Abogados de responsabilidad del producto en Miami | Gallardo Law Firm"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword exacta al frente + marca<br/>✅ ~68 caracteres — sin truncado</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin variante "productos defectuosos" — ese es el clúster de mayor demanda (walmart 239, "abogado de responsabilidad del producto" 279)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Cubre el clúster "productos defectuosos"</div>
+            "Abogado de responsabilidad por productos defectuosos en Miami | ..."            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "productos defectuosos" + geo</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Largo — se trunca en el SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Título = H1 (duplicado) — sin marca</div>
+            "Abogados de responsabilidad por productos defectuosos de Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword + geo</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin sufijo de marca; idéntico al H1</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Título larguísimo (~180 caracteres)</div>
+            "Abogados especializados en responsabilidad por productos defectuosos en South Miami, Florida | Abogados especializados en lesiones personales..."            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Se trunca fuerte<br/>❌ Geo de nicho "South Miami"</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Abogados de responsabilidad del producto en Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Coincide con título y keyword<br/>✅ Alineación temática fuerte</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin señal de valor/resultado (sin honorario, sin veredicto)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Abogados de productos defectuosos en Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Clúster "defectuosos" + geo limpio</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Abogados de responsabilidad por productos defectuosos de Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Geo explícito</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Idéntico al título</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Abogados especializados en responsabilidad por productos defectuosos en South Miami, Florida"            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Muy largo para un H1<br/>⚠️ Geo "South Miami" en vez de "Miami"</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keyword primaria</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogados de responsabilidad del producto en miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Consistente en título, H1, meta, slug de URL y schema — el targeting más ajustado de los cuatro. Ya rankea <strong>pos 3.83</strong> en esta keyword exacta</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Ignora la variante "productos defectuosos"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogados de productos defectuosos en miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Cubre el clúster de "productos defectuosos" (la variante que genera 279+239 impresiones sin clics de Gallardo)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ responsabilidad por productos defectuosos miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Frase legal formal completa + geo</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ responsabilidad por productos defectuosos (South Miami)</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Geo de nicho — compite por "South Miami", no por "Miami"</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keywords secundarias (H2)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div>• ¿Qué es la responsabilidad del producto?<br/>• Tipos de casos por defectos del producto<br/>• Reclamaciones que nuestros abogados manejan<br/>• Elementos involucrados en un reclamo<br/>• ¿Cuándo es apropiada una Demanda colectiva?<br/>• Daños que nuestros abogados pueden ayudarle a recuperar</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ 6 H2 — sin plazo/estatuto de limitaciones, sin "quién es responsable", sin valor del caso</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div>• Abogados experimentados en productos defectuosos<br/>• Resultados de nuestros casos<br/>• No firme nada sin consultar con un abogado<br/>• ¿Qué significa producto defectuoso?<br/>• Responsabilidad por medicamentos defectuosos<br/>• Retirada de medicamentos<br/>• Representaciones anteriores en casos</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ 10 H2 — resultados, medicamentos, retiradas, casos previos</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div>• ¿Qué es la responsabilidad del producto?<br/>• ¿Qué tipos de casos manejan en Miami?<br/>• ¿Quién es responsable de las lesiones?<br/>• ¿Qué tipos de lesiones sufren las víctimas?<br/>• ¿Cuánto vale mi reclamo en Miami?<br/>• ¿Tiene un abogado cerca de mí?</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ 6 H2, todas preguntas — cubre "quién es responsable", "cuánto vale", "cerca de mí"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div>• Abogado especializado en responsabilidad por productos defectuosos en South Miami<br/>• Por qué las víctimas eligen a Silva &amp; Silva<br/>• Consulta gratuita</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">🔴 ~3 H2 — estructura delgada</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cantidad de palabras</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~1,700 palabras — segunda más delgada</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ ~2× menos que Panter<br/>❌ La profundidad es la brecha de contenido más clara (el gemelo EN se amplió a ~3,388; el ES sigue sin ampliar)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~3,500 palabras — la más profunda</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Profundidad de formato largo = señal E-E-A-T en tema legal YMYL</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~2,800 palabras</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Profundidad sólida por debajo de cada pregunta</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ~1,500 palabras — la más delgada</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Se apoya en la autoridad de dominio y la red de áreas de práctica</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señal de costo</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Precio solo en schema — invisible para el buscador</div>            <div>• <code>priceRange: "$1500-$10000"</code> en LegalService JSON-LD<br/>• Contingencia a nivel de sitio ("primera consulta gratis")</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Un rango $1,500–$10,000 en una firma de contingencia es confuso — implica que el cliente paga<br/>❌ Nunca dice "gratis" en el punto de conversión</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Revisión de caso GRATIS" + 24h</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Sin recuperación, sin comisiones" (contingencia clara)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Las consultas iniciales son GRATUITAS"</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "No paga NADA a menos que haya acuerdo o veredicto"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Evaluación gratuita de su caso" (repetido)</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Reversión de riesgo clara</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta descripción</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Presente y liderada por keyword — la ÚNICA de las cuatro con meta</div>            "Abogados de responsabilidad del producto en Miami. Usted tiene derecho a ser indemnizado si ha sufrido lesiones a causa de productos o equipos defectuosos. Contácteos hoy"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword exacta primero</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin CTA fuerte, sin teléfono, sin "gratis"<br/>❌ Termina en afirmación pasiva</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Google escribe su propio snippet — sin control de CTR</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin control de snippet</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin control de snippet</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cobertura de FAQ</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 5 preguntas frecuentes con microdatos FAQPage</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Elegible para rich results (a diferencia del gemelo EN, que no tenía FAQ)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Solo 5 preguntas; menos que Panter/Hickey en profundidad</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ FAQ presente</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Por qué elegirnos, servicios, honorarios, legitimidad del caso</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 6 preguntas (H2 = preguntas)</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Definición, tipos, responsables, lesiones, valor, cerca de mí</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin sección FAQ</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Sin bloque de preguntas frecuentes</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señales de confianza</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 El stack de confianza más débil — nada cuantificado</div>            <div>• Badge de reseñas de Google (sin conteo ni calificación visible)<br/>• "24/7 Disponible" · Bilingüe · Oficinas FL + TX</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin veredictos/acuerdos<br/>❌ Sin conteo de reseñas<br/>❌ Sin años de práctica<br/>❌ Sin bio de abogado<br/>❌ Hereda 4.2★ de la home (Google la muestra en el SERP)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El stack de autoridad más fuerte</div>            <div>• 30+ años de práctica<br/>• $100M+ en veredictos/acuerdos<br/>• Casos: $2.1M Baycol · $1.78M · $1.125M · $830K Bayer<br/>• Board Certified · AV® Preeminent™ · Super Lawyers®<br/>• ~15 testimonios con nombres · 5 abogados con perfil</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ La prueba con montos nombrados es el elemento más persuasivo de las cuatro</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Autoridad + certificaciones</div>            <div>• John H. (Jack) Hickey — doble certificación (Civil Trial + Marítimo)<br/>• Admisiones a cortes federales (5.º y 11.º Circuito)<br/>• Best Lawyers · Top 100 National Trial Lawyers · AV · BBB<br/>• Reseña 5★ de Google</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Veredictos de alto perfil</div>            <div>• $1,200 millones (colapso de Surfside)<br/>• Caso "multimillonario" (carrito de golf)<br/>• 22+ áreas de práctica</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Bios de abogados no visibles en la página</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ CTA suave — sin reversión de riesgo en el punto de conversión</div>            <div>• "Hable con nuestros abogados"<br/>• "HABLAMOS ESPAÑOL | CONSULTA VIRTUAL"<br/>• (305) 261-7000</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Nunca dice "gratis" en el punto de conversión</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Teléfono + consulta gratis</div>            <div>"Llámanos hoy al 305-662-6178 para la CONSULTA GRATIS"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "LLAME A UN ESPECIALISTA HOY"</div>            <div>"Llama al 305.371.8000 o llene nuestro formulario"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Solicita una evaluación gratuita"</div>            <div>305-445-0011 — "revisión gratuita" repetida</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Marcado de schema</td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El mejor schema de las cuatro</div>            <div style="color:#059669;">✅ LegalService (nombre, teléfono, dirección)<br/>✅ Service — "Responsabilidad del producto"<br/>✅ OfferCatalog + Offer<br/>✅ PostalAddress + AdministrativeArea<br/>✅ Microdatos FAQPage (5 preguntas)</div>            <div style="color:#c0392b;margin-top:4px;">❌ Sin AggregateRating en la página (hereda 4.2 de la home)<br/>❌ Sin BreadcrumbList (el gemelo EN sí lo tiene ahora)<br/>❌ Sin Attorney/Person</div>
+            <div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #e67e22;font-size:11px;line-height:1.5;">
+              <strong style="color:#e67e22;">⚠️ priceRange "$1500-$10000"</strong> contradice la contingencia — mismo problema que el gemelo EN (ítem I, pendiente).
+            </div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Elegible para rich results</div>            <div style="color:#059669;">✅ FAQPage<br/>✅ AggregateRating (reseñas)<br/>✅ Organization · LocalBusiness<br/>✅ BreadcrumbList</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ FAQ + LocalBusiness</div>            <div style="color:#059669;">✅ FAQPage<br/>✅ LocalBusiness (varias oficinas)<br/>✅ Organization (probable)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin AggregateRating visible</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin JSON-LD detectado con claridad</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Estructura sugiere Organization/LegalService, pero sin rich results confirmados</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Conclusión clave del análisis de keywords:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Por qué Panter y Hickey superan a Gallardo en el nicho de "productos defectuosos":</strong><br/>
+          1. <strong>La prueba gana a las afirmaciones:</strong> Panter nombra veredictos ($100M+, Baycol $2.1M) y certificaciones (Board Certified, AV Preeminent); la página de Gallardo no tiene ni un veredicto, ni conteo de reseñas, ni bio de abogado<br/>
+          2. <strong>~2× la profundidad de contenido:</strong> Panter ~3,500 y Hickey ~2,800 palabras vs Gallardo ~1,700 — en una consulta legal YMYL, la profundidad es señal directa de E-E-A-T<br/>
+          3. <strong>Cubren las preguntas que Gallardo omite:</strong> ambos responden "quién es responsable" y "cuánto vale mi reclamo / plazo para demandar" — secciones de alta intención sin H2 en Gallardo<br/>
+          4. <strong>"Gratis" en el punto de conversión:</strong> los tres competidores dicen "consulta/evaluación gratis" en el CTA; el CTA de conversión de Gallardo es "Hable con nuestros abogados" y no repite la promesa de contingencia<br/>
+          5. <strong>Reseñas visibles y con schema:</strong> Panter tiene AggregateRating; Gallardo hereda 4.2★ de la home — que Google no puede mejorar desde esta página
+        </div>
+        <div>
+          <strong>Lo que Gallardo debe añadir (pos 3.83 en la keyword exacta — ya casi top 3):</strong><br/>
+          1. <strong>Arreglar el snippet:</strong> la keyword exacta ya rankea 3.83 con 75 impresiones y <em>cero</em> clics — el cuello de botella es el snippet, no el ranking. La meta ya existe (ventaja única); reescribir con CTA: "¿Lesionado por un producto defectuoso en Miami? No gana, no paga. Consulta gratis 24/7 — llame al (305) 261-7000."<br/>
+          2. <strong>Targetear el clúster "productos defectuosos":</strong> la mayor demanda usa esa variante ("walmart" 239, "abogado de responsabilidad del producto" 279) — añadir un H2 dedicado y anclas internas<br/>
+          3. <strong>Poner la prueba en la página:</strong> veredictos/acuerdos, conteo y calificación de reseñas como texto rastreable, años de práctica y bio del abogado — la mayor brecha vs Panter<br/>
+          4. <strong>Añadir BreadcrumbList + corregir priceRange "$1500-$10000":</strong> el gemelo EN ya tiene BreadcrumbList y corrigió estos ítems — portar al ES<br/>
+          5. <strong>Aplicar al ES las correcciones legales ya hechas en EN:</strong> plazo/estatuto de limitaciones con la reforma HB 837, la barra del 50% de culpa comparativa, fusionar el 4.º tipo de defecto "etiquetas de advertencia" y actualizar ANSI 2002→2023 — el gemelo ES sigue con esos errores (ítems A, B, D, E, F, G, K)
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/abogados-de-responsabilidad-del-producto-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/abogados-de-responsabilidad-del-producto-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/abogados-de-responsabilidad-del-producto-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
