@@ -721,6 +721,61 @@
     box-shadow: 0 4px 12px rgba(14,124,123,.5);
   }
 
+  /* ── Gallardo row — different client / different domain (gallardolawyers.com) ── */
+  .gallardo-row {
+    background: #fbf5e9 !important;
+    box-shadow: inset 4px 0 0 #b8892b;
+  }
+  .gallardo-row .done-btn {
+    display: inline-flex;
+    vertical-align: middle;
+    background: #b8892b !important;
+    box-shadow: 0 2px 6px rgba(184,137,43,.35);
+  }
+  .gallardo-row .done-btn:hover {
+    background: #a2761f !important;
+    box-shadow: 0 4px 12px rgba(184,137,43,.5);
+  }
+  .domain-badge {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    background: #b8892b;
+    color: #fff;
+  }
+  .pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    margin-left: 0;
+    padding: 5px 13px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    background: #fff;
+    color: #a2761f !important;
+    border: 1.5px solid #b8892b;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(184,137,43,.20);
+    transition: transform .15s, box-shadow .15s, background .15s;
+    flex-shrink: 0;
+  }
+  .pdf-btn::before { content: "\1F4C4"; }
+  .pdf-btn:hover {
+    background: #fbf5e9;
+    color: #a2761f !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(184,137,43,.4);
+  }
+
   /* ── Responsive ── */
   @media (max-width: 900px) {
     .main { padding: 16px; }
@@ -1758,11 +1813,12 @@ function toggleGeoOverview(h) {
             <td>18</td>
             <td><span class="ctr-badge bad">0.27%</span></td>
           </tr> -->
-          <tr style="background: #01154b30;">
-            <td><a class="query-link" href="product-liability-attorney-miami.html"><span class="seed">product liability attorney miami</span></a></td>
-            <td></td>
-            <td class="note-cell" contenteditable="true">Gallardo Law Firm &mdash; separate client property, not avanaplasticsurgery.com</td>
-            <td><a class="kw-url-link" href="https://gallardolawyers.com/injury-law/product-liability-attorney-miami" target="_blank">/injury-law/product-liability-attorney-miami</a></td>
+          <tr class="gallardo-row">
+            <td><a class="query-link" href="product-liability-attorney-miami.html"><span class="seed">product liability attorney miami</span></a> <a class="done-btn" href="product-liability-attorney-miami-improvements.html">Done July 21, 2026</a> <a class="pdf-btn" href="product-liability-attorney-miami-annotated.pdf" target="_blank">Annotated PDF</a></td>
+            <td>4 / 3</td>
+            <td class="note-cell" contenteditable="true"><strong>Changes</strong><code>&lt;/&gt; Meta</code><br><code>&lt;/&gt; Body</code><br><code>&lt;/&gt; Schema</code>
+              <br></td>
+            <td><a class="kw-url-link" href="https://gallardolawyers.com/injury-law/product-liability-attorney-miami" target="_blank">/injury-law/product-liability-attorney-miami</a><br><span class="domain-badge">gallardolawyers.com</span></td>
             <td>5,591</td>
             <td>2</td>
             <td><span class="ctr-badge bad">0.04%</span></td>
