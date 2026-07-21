@@ -797,6 +797,30 @@ PRODLIAB_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Spanish twin of PRODLIAB_EN (gallardolawyers.com/es/...). Variants are lowercase
+# and accent-free because normalize() strips accents before matching.
+PRODLIAB_ES = [
+    ("responsabilidad del producto", ["responsabilidad del producto", "responsabilidad de productos", "responsabilidad por productos"]),
+    ("abogados de responsabilidad del producto en miami", ["abogados de responsabilidad del producto en miami", "abogado de responsabilidad del producto en miami", "abogados de responsabilidad del producto"]),
+    ("abogados de productos defectuosos en miami", ["abogados de productos defectuosos en miami", "abogado de productos defectuosos", "abogados de productos defectuosos"]),
+    ("productos defectuosos", ["producto defectuoso", "productos defectuosos"]),
+    ("defecto de fabricacion", ["defecto de fabricacion", "defectos de fabricacion"]),
+    ("defecto de diseno", ["defecto de diseno", "defectos de diseno"]),
+    ("no advertir / etiquetas de advertencia", ["falta de advertencia", "no advertir", "advertencia inadecuada", "etiquetas de advertencia"]),
+    ("productos peligrosos", ["producto peligroso", "productos peligrosos", "irrazonablemente peligroso"]),
+    ("dispositivos medicos defectuosos", ["dispositivo medico defectuoso", "dispositivos medicos defectuosos"]),
+    ("medicamentos defectuosos", ["medicamento defectuoso", "medicamentos defectuosos"]),
+    ("demanda colectiva", ["demanda colectiva", "accion de clase"]),
+    ("estatuto de limitaciones", ["estatuto de limitaciones", "plazo para demandar", "cuanto tiempo tengo para presentar"]),
+    ("consulta gratis / honorarios", ["consulta gratis", "consulta gratuita", "evaluacion gratuita", "no gana no paga", "sin honorarios", "honorarios de contingencia"]),
+    ("retirada de productos", ["retirada de producto", "retirada de productos", "producto retirado", "retiro del mercado"]),
+    ("abogado de lesiones personales", ["abogado de lesiones personales", "abogados de lesiones personales", "abogado de lesiones"]),
+    ("responsabilidad del producto cerca de mi", ["abogado de responsabilidad del producto cerca de mi", "abogado de productos defectuosos cerca de mi"]),
+    ("productos defectuosos de walmart", ["walmart", "responsabilidad de productos de walmart"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── Structured data (schema.org) rows ────────────────────────────────────────
 # Tracked the same way as keywords: each row counts how many times that JSON-LD
 # @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
@@ -904,6 +928,8 @@ PAGES = {
         {"slug": "abdominoplastia-con-curvas-en-miami", "lang": "es", "kw": ABDOMINOPLASTIA_CURVAS_ES},
     "https://gallardolawyers.com/injury-law/product-liability-attorney-miami":
         {"slug": "product-liability-attorney-miami", "lang": "en", "kw": PRODLIAB_EN},
+    "https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami":
+        {"slug": "abogados-de-responsabilidad-del-producto-en-miami", "lang": "es", "kw": PRODLIAB_ES},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate
