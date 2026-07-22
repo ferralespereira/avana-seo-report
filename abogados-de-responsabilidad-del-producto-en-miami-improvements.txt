@@ -1,0 +1,524 @@
+================================================================================
+REGISTRO DE CAMBIOS — PÁGINA EN ESPAÑOL
+abogados-de-responsabilidad-del-producto-en-miami
+(espejo en español de: product-liability-attorney-miami)
+================================================================================
+URL:        https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami
+Idioma:     es_US
+Slug EN:    product-liability-attorney-miami
+Slug hub:   abogado-de-lesiones-personales-en-miami (hub Lesiones Personales)
+Estado:     COMPLETADO — PENDIENTE DE REVISIÓN DEL ABOGADO / BUFETE
+Registro EN complementario: seo-keywords-product-liability-attorney-miami.txt (raíz del proyecto)
+
+NOTA IMPORTANTE: Todo el contenido de esta página (texto, tablas, FAQ, esquemas)
+QUEDA PENDIENTE DE REVISIÓN Y APROBACIÓN DEL ABOGADO / BUFETE antes de publicarse.
+Aplica la Regla 4-7.13 / 4-7.14 del Colegio de Abogados de Florida (publicidad:
+no predecir resultados, no reclamos sobre honorarios ni resultados pasados) — TAMBIÉN
+al contenido en español.
+
+--------------------------------------------------------------------------------
+OBJETIVO
+--------------------------------------------------------------------------------
+Crear un espejo completo de la página en inglés (product-liability-attorney-miami)
+dentro de la versión en español, para que el contenido, la estructura, las tablas,
+la tabla de contenido, las FAQ y los esquemas JSON-LD coincidan con la página en
+inglés, adaptados a un español legal correcto y a la jurisdicción de Florida.
+
+================================================================================
+FIX #42 — REESCRITURA COMPLETA DEL ESPEJO EN ESPAÑOL
+================================================================================
+Fecha: 2026-07-21
+
+ARCHIVO 1:
+  Views/ServicePage/Content/injury-law/product-liability-attorney-miami/Es/article.cshtml
+  -> REESCRITURA COMPLETA (espejo del cuerpo en inglés)
+
+  Estructura implementada (coincide 1:1 con la página en inglés):
+  - Párrafo introductorio  id="pl-intro"
+  - Párrafo de estadística (627 casos) con cita a la Guía de Referencia Estadística de OSCA
+  - Tabla de Contenido con estilo (línea 28, "Tabla de Contenido"), UBICADA ARRIBA,
+    antes de las 15 secciones — igual que en inglés (tras los 2 párrafos introductorios)
+  - 15 secciones H2 con los MISMOS id de encabezado (#heading-1 ... #heading-15) y en el
+    MISMO orden que la página en inglés
+  - Orden de anclas de la TOC (coincide con los id de encabezado):
+    1, 13, 2, 15, 3, 4, 12, 5, 6, 7, 8, 9, 14, 10, 11  <- correspondencia perfecta 15<->15
+  - 3 tablas: estadísticas / estándares de tiempo (12-18-30 meses) / comparación
+    Cada tabla envuelta en <div> con overflow-x:auto (responsivo)
+  - 1 lista ordenada <ol> de 7 pasos
+  - 4 listas con estilo "list-group list-group-flush" (15 elementos "list-group-item")
+    -> replica el FIX #38 de la página en inglés (Bootstrap 4, NO list-group-numbered)
+  - Bloque de servicios relacionados:
+    @await Html.PartialAsync("Partials/PartialServicesRelated")
+    ("También Representamos a Clientes en los Siguientes Casos")
+  - 3 bloques JSON-LD:
+      * BreadcrumbList: Inicio > Lesiones Personales
+        [/es/lesionados/abogado-de-lesiones-personales-en-miami] > página actual
+        (apunta al hub EN VIVO, NO a la categoría /injury-law que da 404 — ver FIX #39 EN)
+      * WebPage + SpeakableSpecification (inLanguage "es", speakable #pl-intro / #pl-definition)
+      * Service (en español, provider por @id -> .../#organization vía parentOrganization del skin)
+
+  LIMPIEZA / CUMPLIMIENTO:
+  - Se eliminó un bloque obsoleto (ANSI, referencia de 2002)
+  - Se eliminó la línea NO conforme al Colegio de Abogados ("solo los abogados pueden...")
+  - Se reformuló la mención a demanda colectiva (class-action) para evitar promesas
+  - Español legal correcto en todo el cuerpo; citas de Florida (independientes del idioma):
+      West v. Caterpillar Tractor Co., 336 So. 2d 80 (Fla. 1976)
+      Ley de Florida 768.81 (barra de culpa comparativa >50%, HB 837, desde marzo 2023)
+      Ley de Florida 95.11 / 95.031 (prescripción / reposo de 12 años)
+      Ley de Florida 672.313-315 (garantías)
+      Magnuson-Moss (15 U.S.C. 2301)
+      Fla. R. Gen. Prac. & Jud. Admin. 2.250(a)(1)(B) (estándares de tiempo 30/18/12 meses)
+      Guía de Referencia Estadística de OSCA (627 casos)
+
+ARCHIVO 2:
+  Views/ServicePage/Content/injury-law/product-liability-attorney-miami/Es/articlemetas.cshtml
+  -> REESCRITURA COMPLETA
+
+  - <title>: "Abogados de Responsabilidad del Producto en Miami | Gallardo Law Firm"
+  - meta description (CTA): "¿Lesionado por un producto defectuoso en Miami? Nuestros
+    abogados de responsabilidad del producto luchan por recuperar su compensación.
+    Consulta gratis."
+  - canonical absoluto: .../es/lesionados/abogados-de-responsabilidad-del-producto-en-miami
+  - og:locale es_US, og:type article
+  - og:title / og:description / og:url ABSOLUTOS
+  - og:image ABSOLUTO 903x530:
+    https://gallardolawyers.com/themes/gallardo/images/services/903x530/product-liability-attorney-miami.jpg
+  - og:image:alt / og:image:width (903) / og:image:height (530)
+  - twitter:card = summary_large_image
+  - twitter:title / twitter:description / twitter:image ABSOLUTO / twitter:image:alt
+  - Se eliminaron metas heredadas (page-topic, page-type)
+
+================================================================================
+FIX #43 — REEMPLAZO DE LAS FAQ EN ESPAÑOL
+================================================================================
+Fecha: 2026-07-21
+
+ARCHIVO:
+  App_Data/FaqEntities.xml   (UTF-8 CON BOM, CRLF)
+
+  ACCIÓN: Se REEMPLAZARON las 5 FAQ ES antiguas de product-liability por 10 FAQ ES
+  nuevas (traducciones de las 10 FAQ EN — FIX #16 en inglés).
+  Resultado: 10 FAQ ES + 10 FAQ EN para este servicio.
+
+  MOTIVO DEL REEMPLAZO (en vez de sumar):
+  - La antigua FAQ ES #2 ("cuatro años ... doce años") CONTRADECÍA la nueva sección de
+    prescripción (2 vs 4 años — punto no resuelto tras HB 837)
+  - Una antigua FAQ de honorarios de contingencia planteaba una posible objeción del
+    Colegio de Abogados
+
+  Las 10 nuevas FAQ ES cubren:
+   1. ¿Cuánto tiempo tengo para presentar un reclamo? (prescripción 2/4 años + reposo 12 años)
+   2. ¿Debo haber comprado yo el producto? (West v. Caterpillar)
+   3. ¿Cuáles son los tipos de defecto? (fabricación / diseño / advertencia)
+   4. ¿Qué es la responsabilidad estricta del producto?
+   5. ¿Puedo recuperar si fue en parte mi culpa? (768.81, barra >50%)
+   6. ¿Un retiro del mercado (recall) es lo mismo que una demanda? (CPSC/NHTSA/FDA)
+   7. ¿Qué tipos de productos defectuosos maneja el bufete?
+   8. ¿Cómo encuentro un abogado cerca de mí en Miami? (Miami + Hialeah, geo)
+   9. ¿Cuánto cuesta contratar un abogado? (contingencia — PENDIENTE firma del bufete)
+  10. ¿Cuánto tarda un caso? (estándares de tiempo 12/18/30 meses)
+
+  MÉTODO (script validado, preservando codificación):
+  - scratchpad/replace_es_faqs.ps1 + scratchpad/es_faqs_fragment.xml
+  - Detecta y preserva BOM + CRLF
+  - Elimina exactamente las 5 FAQ ES antiguas (valida el conteo = 5)
+  - Inserta las 10 nuevas antes del ancla de comentario de las FAQ EN
+  - Valida XML bien formado: ES product-liability = 10, EN product-liability = 10
+  - Sincronizado a bin/Debug/net7.0/App_Data/FaqEntities.xml
+
+================================================================================
+FIX #44 — ENLACES INTERNOS + REFUERZO DE KEYWORD (SEO on-page)
+================================================================================
+Fecha: 2026-07-22
+ARCHIVO: Es/article.cshtml
+MOTIVO: auditoría SEO/GEO detectó 0 enlaces internos en el cuerpo (solo breadcrumb y
+        bloque de servicios relacionados). Datos reales de Semrush (export 2026-07-22)
+        confirmaron 2 keywords ganadoras (KD muy bajo) poco reforzadas en el título/intro.
+
+#1 — ENLACES INTERNOS CONTEXTUALES (de 0 a 4, todos categoría injury-law -> /es/lesionados/):
+  - "práctica general de lesiones personales" -> abogado-de-lesiones-personales-en-miami
+    (hub PI; en el párrafo de intro / 627 casos). Refuerza el padre y separa temas.
+  - "negligencia farmacéutica" -> abogado-negligencia-farmaceutica-en-miami
+    (ítem "Medicamentos peligrosos"). Enmarcado como reclamo DISTINTO (error de farmacia
+    != defecto del producto) para NO canibalizar.
+  - "accidente de auto" -> abogados-de-accidentes-de-auto-en-miami
+    (ítem "Autopartes defectuosas"; cuando la pieza provoca la colisión).
+  - "muerte por negligencia" -> abogados-de-muerte-por-negligencia-en-miami
+    (cierre de tipos de producto; cuando el producto causa un fallecimiento).
+  - SE SALTÓ demanda colectiva laboral: categoría "employment" (NO /es/lesionados/) -> 404.
+  - Rutas root-relative (/es/lesionados/...); no se tocó el patrón absoluto del breadcrumb.
+  - Etiquetas <a> balanceadas (29/29). No se tocaron encabezados ni la TOC (sin desajuste).
+
+#2 — REFUERZO "abogado de productos defectuosos" (VOL 110, KD 2 según Semrush):
+  - Añadida la frase exacta en el PRIMER párrafo (#pl-intro), como aposición natural:
+    "...abogados de responsabilidad del producto —también llamados abogados de productos
+    defectuosos— pueden ayudarle...". Señal temprana; refuerza las 9 apariciones previas.
+
+RETRACTADO (canibalización): la nota previa sugería añadir "abogado de lesiones personales
+en miami" (VOL 140). Se RETIRA: es la keyword objetivo del hub PI; añadirla aquí
+canibalizaría el hub. Esta página ahora ENLAZA al hub en su lugar (ver #1).
+
+PENDIENTE DE REVISIÓN DEL ABOGADO/BUFETE — especialmente la redacción de los enlaces a
+"negligencia farmacéutica" y "muerte por negligencia" (describen otras áreas de práctica).
+
+================================================================================
+FIX #45 — ENLACES ENTRANTES (INBOUND) DESDE 6 PÁGINAS HACIA ESTA
+================================================================================
+Fecha: 2026-07-22
+MOTIVO: análisis de canibalización. Se buscaron TODAS las páginas ES que mencionan
+        términos de responsabilidad del producto y no enlazaban aquí. Sirve doble:
+        resuelve canibalización (le dice a Google cuál es la página canónica del tema)
+        y pasa autoridad hacia esta página.
+
+HALLAZGO (6 páginas ES mencionaban el tema, 0 enlazaban aquí):
+  - commercial-litigation-attorney-miami (civil) = CANIBALIZADOR real (discutía
+    "responsabilidad por producto defectuoso" en prosa). El resto: menciones en listas/H3.
+
+ENLACES CREADOS (todos -> /es/lesionados/abogados-de-responsabilidad-del-producto-en-miami,
+con anclas VARIADAS para señal natural):
+  1. /es/civil/abogado-de-litigios-comerciales-en-miami       -> "abogado de responsabilidad del producto en Miami"
+  2. /es/lesionados/abogado-de-lesiones-personales-en-miami   -> "Productos defectuosos"  (HUB->hijo, el de mayor valor)
+  3. /es/lesionados/abogados-de-muerte-por-negligencia-en-miami -> "productos de consumo defectuosos"
+  4. /es/lesionados/muerte-por-negligencia-en-hialeah         -> "Productos defectuosos"
+  5. /es/lesionados/abogado-de-lesiones-por-amputacion-en-miami -> "productos defectuosos"
+  6. /es/lesionados/abogado-negligencia-farmaceutica-en-miami -> "reclamación por productos defectuosos"
+
+NOTA: 6 enlaces entrantes con anclas variadas = SIN riesgo de penalización (los enlaces
+      internos organizan tu sitio; Google los premia). Se SALTÓ demanda-colectiva-laboral
+      (categoría employment, no /es/lesionados/). Cada archivo con <a> balanceadas.
+PENDIENTE DE REVISIÓN DEL BUFETE (toca 6 archivos de otras páginas).
+
+================================================================================
+FIX #46 — CORRECCIONES DE GRAMÁTICA / CONSISTENCIA (Es/article.cshtml)
+================================================================================
+Fecha: 2026-07-22
+  1. "año judicial 2024-25" -> "año fiscal 2024-25" (consistente con la tabla y la
+     fuente FY de OSCA).
+  2. Ítem de lista que empezaba en minúscula: "...estricta del producto <br /> es el
+     concepto..." -> "...<br /> La responsabilidad estricta se centra únicamente..."
+     (formato consistente con los otros dos ítems de la lista).
+  3. Punto final añadido tras el teléfono en el párrafo de cierre (heading-11).
+  4. "describen los peligros potenciales y las instrucciones de uso" -> "...describen los
+     peligros potenciales E INCLUYEN las instrucciones de uso" (no se "describen"
+     instrucciones).
+
+================================================================================
+FIX #47 — SCHEMA: PROVIDER COMO REFERENCIA PURA (EN + ES)
+================================================================================
+Fecha: 2026-07-22
+PROBLEMA: en el bloque JSON-LD "Service", el "provider" re-declaraba el @id
+          .../#organization con @type "LegalService" + name/url/telephone. Pero el HOME
+          define .../#organization como @type "Organization". Mismo @id, dos tipos =
+          colisión al consolidar (la misma clase de bug que FIX #33 arregló en el skin).
+FIX: provider convertido en REFERENCIA PURA en EN y ES (quedan idénticas):
+       "provider": { "@@id": "@@Settings.GetFullDomain/#organization" }
+     Ahora #organization se declara UNA vez (Organization, en el home) y todo lo demás
+     (parentOrganization del skin, provider de esta página) lo referencia por @id. Grafo
+     limpio, sin re-tipar ni duplicar propiedades. Verificado: 3 bloques JSON-LD intactos.
+
+================================================================================
+NOTA — ITEM J (AggregateRating del HOME) RE-ANALIZADO 2026-07-22: SIN ACCIÓN
+================================================================================
+Al revisar el home a fondo, el schema NO está en conflicto: son 3 oficinas (Miami 4.2/1991,
+Hialeah 4.7/355, Houston 4.7/7), cada una con su propio @id y su rating por ubicación
+(estructura multi-ubicación CORRECTA). Se corrige mi diagnóstico previo (dije "conflicto"
+y "el 4.2 sale en el SERP" sin verificar). Consideraciones reales: (a) el aggregateRating
+"auto-servido" probablemente NO genera estrellas — vienen del Perfil de Empresa; (b) debe
+respaldarse con reseñas visibles y coincidir con cada Perfil. DECISIÓN DEL USUARIO
+(2026-07-22): NO tocar nada del home. Se deja registrado y cerrado.
+
+================================================================================
+FIX #48 — HREFLANG RECÍPROCO + og:locale:alternate (EN + ES)
+================================================================================
+Fecha: 2026-07-22
+ARCHIVOS: En/articlemetas.cshtml y Es/articlemetas.cshtml
+
+ORIGEN: el usuario añadió a mano en la ES un <meta property="og:locale:alternate"
+        content="en_US"  SIN CERRAR (faltaba " />"), lo que "se comía" el <meta og:type>
+        de la línea siguiente.
+
+CORRECCIONES:
+  1. BUG cerrado: <meta property="og:locale:alternate" content="en_US" />  (ES).
+  2. hreflang RECÍPROCO Y AUTO-REFERENCIAL añadido en AMBAS páginas (cada una lista las
+     dos versiones, incluida ella misma — requisito de Google):
+       ES declara:  hreflang="es" -> .../es/lesionados/abogados-de-responsabilidad-del-producto-en-miami (sí misma)
+                    hreflang="en" -> .../injury-law/product-liability-attorney-miami
+       EN declara:  hreflang="en" -> .../injury-law/product-liability-attorney-miami (sí misma)
+                    hreflang="es" -> .../es/lesionados/abogados-de-responsabilidad-del-producto-en-miami
+  3. og:locale:alternate SIMÉTRICO: la EN ahora también declara "es_US" (antes solo la ES
+     apuntaba a la EN; ahora es mutuo, para Facebook/redes).
+
+POR QUÉ IMPORTA: og:locale:alternate es señal de Facebook (NO da la URL). hreflang es lo
+     que GOOGLE usa (SÍ da la URL) para emparejar idiomas -> muestra ES a hispanohablantes
+     y EN a angloparlantes y evita que compitan como "duplicado" entre idiomas.
+VERIFICADO: 0 etiquetas <meta> sin cerrar en ninguna de las dos.
+ALCANCE: solo esta pareja de páginas. El resto del sitio probablemente tampoco tiene
+     hreflang -> proyecto aparte. PENDIENTE DE REVISIÓN DEL BUFETE.
+
+================================================================================
+CAMBIOS DE APOYO QUE HABILITAN EL ESPEJO EN ESPAÑOL
+(realizados en el lado EN / datos, con impacto en la página ES)
+================================================================================
+- ServiceEntities.xml (FIX #34/#40 EN):
+    * urlspanish="abogados-de-responsabilidad-del-producto-en-miami"
+    * Hub PI urlspanish="abogado-de-lesiones-personales-en-miami"
+    * <ServicesRelated> agregado (6 servicios) -> alimenta el bloque relacionado ES también
+    * Entidad reubicada para el orden del menú (showinmenu="true", grupo "Accidents")
+- Skin compartido (ServicePageSkin.cshtml, FIX #32/#33 EN):
+    * provider vía parentOrganization -> .../#organization (evita colisión de tipo con
+      el Organization#organization de la home) — aplica igual al Service ES
+
+================================================================================
+VERIFICACIÓN FINAL (2026-07-21) — TODO EN VERDE
+================================================================================
+article.cshtml (ES):
+  [OK] Tabla de Contenido en línea 28 — ARRIBA, antes de las 15 secciones (igual que EN)
+  [OK] Anclas TOC <-> id de encabezado: 15 <-> 15, correspondencia perfecta, mismo orden
+  [OK] 15 secciones H2
+  [OK] 4 listas list-group list-group-flush / 15 list-group-item
+  [OK] 3 tablas (estadísticas / estándares de tiempo / comparación)
+  [OK] 1 <ol> de pasos
+  [OK] bloque de servicios relacionados presente
+  [OK] speakable ids #pl-intro + #pl-definition
+  [OK] 3 bloques JSON-LD (BreadcrumbList + WebPage + Service)
+  [OK] <div> balanceados (4 abren / 4 cierran)
+articlemetas.cshtml (ES):
+  [OK] summary_large_image
+  [OK] og:image absoluto 903x530
+  [OK] 0 imágenes relativas (sin bug de ruta relativa)
+FaqEntities.xml:
+  [OK] 10 FAQ ES product-liability (fuente + bin sincronizados)
+
+PENDIENTE / RECORDATORIOS:
+  - REVISIÓN DEL ABOGADO / BUFETE de todo el contenido ES antes de publicar
+  - Ver la página ES en vivo para confirmar el renderizado de Razor (no se puede
+    compilar/probar aquí)
+  - priceRange "$" (item I EN): aplicar cuando el bufete lo confirme (afecta al skin
+    compartido, por tanto a ES también)
+  - Honorarios de contingencia / "consulta gratis" en FAQ #9 ES y en la meta description:
+    es una representación de honorarios — requiere firma del bufete (Regla 4-7 Colegio FL)
+================================================================================
+
+
+================================================================================
+TABLA DE PALABRAS CLAVE QUE IMPORTAN (SEO) — ANTES vs. AHORA
+================================================================================
+ANTES = versión anterior de la página ES (git HEAD, 99 líneas)
+AHORA = versión nueva / espejo en español (FIX #42, 361 líneas)
+Conteo = número de apariciones del término en el CUERPO de Es/article.cshtml
+         (ANTES desde git, AHORA desde el archivo actual), medido con grep.
+
+ALCANCE DE ESTA TABLA: se listan SOLO las keywords con valor SEO real — consultas que
+un usuario busca con intención comercial o informativa relacionada con contratar un
+abogado de responsabilidad del producto en Miami. Se EXCLUYEN a propósito:
+  - vocabulario genérico interno (fabricante, bufete, consumidor, vendedor, seguridad)
+  - citas de autoridad que nadie busca como query (West v. Caterpillar, Magnuson-Moss,
+    estatuto de reposo, "Ley de Florida") — son señales E-E-A-T, no keywords objetivo
+  - nombres de agencias (FDA, CPSC, NHTSA) — no son keywords de una página de abogados
+  - tokens geográficos sueltos sin intención propia (Florida, Coral Gables, Doral,
+    Miami Lakes, Miami Beach, "comunidades cercanas")
+  - señales estructurales (palabras, H2, tablas, JSON-LD, Speakable, FAQ) — NO son
+    keywords; su comparativa vive en el registro de cambios / VERIFICACIÓN FINAL arriba.
+
+*** AVISO SOBRE VOL / CPC ***
+Las columnas VOL (volumen de búsqueda mensual) y CPC (costo por clic, USD) son
+ESTIMACIONES APROXIMADAS SIN VERIFICAR — mercado EE. UU., idioma español. NO provienen
+de una herramienta de keywords en vivo. Se dan en rangos como referencia inicial y
+DEBEN reemplazarse con datos reales de Google Keyword Planner / Ahrefs / Semrush antes
+de tomar decisiones. "n/a" = modificador geográfico sin volumen propio como búsqueda
+aislada (su valor SEO se realiza combinado con el término principal, p. ej.
+"abogado de responsabilidad del producto EN MIAMI").
+
+-------------------------------------------------------------------------------------------------------
+PALABRA CLAVE (con valor SEO)                   | ANTES | AHORA |  +/-  | VOL/mes(est) | CPC USD(est)
+-------------------------------------------------------------------------------------------------------
+--- PRINCIPAL / COMERCIAL (intención de contratar) ---
+demanda / reclamo (por producto)                |   23  |   78  |  +55  |   40 – 90    |  $4 – $9
+responsabilidad del producto                    |   22  |   52  |  +30  |   70 – 140   |  $3 – $8
+producto(s) defectuoso(s)                       |    8  |   44  |  +36  |  110 – 250   |  $4 – $10
+abogado(s) de responsabilidad del producto      |   15  |   24  |   +9  |   10 – 30    | $12 – $40
+negligencia (del producto)                      |    5  |   14  |   +9  |  150 – 350   |  $2 – $6
+responsabilidad estricta (del producto)         |    4  |    8  |   +4  |   20 – 40    |  $1 – $3
+demanda colectiva                               |    4  |    5  |   +1  |   60 – 140   |  $5 – $15
+incumplimiento / violación de garantía          |    2  |    4  |   +2  |   20 – 40    |  $2 – $5
+--- TIPOS DE DEFECTO (informacional-comercial) ---
+falta de advertencia / advertencia              |   11  |    9  |   -2  |   20 – 50    |  $1 – $3
+defecto(s) de diseño                            |    4  |    2  |   -2  |   20 – 50    |  $1 – $3
+defecto(s) de fabricación                       |    3  |    3  |    0  |   30 – 60    |  $1 – $3
+--- VERTICALES DE PRODUCTO (alto valor) ---
+retiro del mercado / recall                     |    0  |    7  |   +7  |   30 – 70    |  $1 – $3
+medicamentos (peligrosos / defectuosos)         |    1  |    6  |   +5  |   40 – 90    |  $2 – $6
+dispositivos médicos (defectuosos)              |    0  |    4  |   +4  |   20 – 50    |  $3 – $8
+--- GEO / SEO LOCAL ---
+en Miami (modificador geo)                      |    8  |   17  |   +9  |     n/a      |    n/a
+Hialeah (SEO local)                             |    0  |    6  |   +6  |     n/a      |    n/a
+--- DAÑOS / CONVERSIÓN ---
+indemnización / daños                           |   12  |   13  |   +1  |   30 – 70    |  $2 – $6
+prescripción (plazo para demandar)              |    0  |   11  |  +11  |   30 – 70    |  $2 – $6
+compensación (por producto defectuoso)          |    3  |    5  |   +2  |   40 – 90    |  $3 – $8
+consulta gratis (abogado)                       |    0  |    2  |   +2  |   60 – 130   | $10 – $25
+abogados de lesiones                            |    0  |    1  |   +1  |   90 – 200   |  $8 – $20
+=======================================================================================================
+TOTAL (cobertura de keywords SEO; con solape*)  |  125  |  315  | +190  |      —       |    —
+=======================================================================================================
+
+NOTAS DE LA TABLA:
+- *El TOTAL cuenta apariciones de FRASES DISTINTAS y algunas están ANIDADAS dentro de
+  otras (p. ej. "abogado de responsabilidad del producto" cuenta también dentro de
+  "responsabilidad del producto"), así que NO es una suma limpia sin solape — es un
+  indicador de cobertura, no un conteo de palabras único.
+- Geo ("en Miami", "Hialeah") = n/a en VOL/CPC porque como token aislado no tiene
+  volumen; su valor se realiza COMBINADO con el término principal ("abogado de
+  responsabilidad del producto en Miami", "...en Hialeah").
+- Se EXCLUYERON de la tabla (ver ALCANCE arriba) los términos sin valor de query:
+  vocabulario interno (fabricante, bufete, consumidor, vendedor), citas de autoridad
+  (West v. Caterpillar, Magnuson-Moss, estatuto de reposo), agencias (FDA/CPSC/NHTSA),
+  tokens geográficos sueltos (Florida, Coral Gables, Doral, Miami Lakes, Miami Beach) y
+  las señales estructurales. Siguen presentes en la página; solo no son keywords objetivo.
+- Los long-tails "cerca de mí" / "abogado de productos defectuosos cerca de mí" viven en
+  la FAQ #8 (FaqEntities.xml), no en el cuerpo, por eso no tienen fila de conteo aquí.
+
+LONG-TAILS Q&A — 10 PREGUNTAS FAQ EN ESPAÑOL (fuente: FaqEntities.xml)
+ANTES: 5 FAQ ES antiguas  |  AHORA: 10 FAQ ES (FIX #43)
+ 1. ¿Cuánto tiempo tengo para presentar un reclamo de responsabilidad del producto en Florida?
+ 2. ¿Tengo que haber comprado el producto yo mismo para presentar un reclamo?
+ 3. ¿Cuáles son los diferentes tipos de defectos del producto?
+ 4. ¿Qué es la responsabilidad estricta del producto?
+ 5. ¿Puedo recuperar compensación si el accidente fue en parte mi culpa?
+ 6. ¿Un retiro del mercado es lo mismo que una demanda?
+ 7. ¿Qué tipos de productos defectuosos maneja su bufete?
+ 8. ¿Cómo encuentro un abogado de responsabilidad del producto cerca de mí en Miami?
+ 9. ¿Cuánto cuesta contratar a un abogado de responsabilidad del producto?
+10. ¿Cuánto tiempo tarda un caso de responsabilidad del producto en Florida?
+
+RESUMEN:
+- La página ES pasó de un artículo plano (2.2k palabras, 0 tablas, 0 esquemas, 0 TOC,
+  5 FAQ) a un espejo estructurado de la página en inglés (2.85k palabras, TOC arriba,
+  3 tablas, 3 esquemas JSON-LD, Speakable, 15 secciones, 10 FAQ).
+- Las apariciones de las keywords SEO que importan casi se triplicaron (125 -> 315) SIN
+  relleno artificial: el aumento viene de secciones nuevas reales (prescripción,
+  garantías, culpa comparativa, geo Miami/Hialeah, retiros/recall, verticales de
+  producto, FAQ). (Cobertura total de la página, incluyendo términos no-objetivo: 628.)
+- Se agregó cobertura de intención de búsqueda que ANTES no existía: citas de leyes de
+  Florida, agencias federales (FDA/CPSC/NHTSA), "cerca de mí"/Hialeah (geo local) y las
+  10 FAQ traducidas.
+================================================================================
+
+
+================================================================================
+TABLA COMPLETA — TODAS LAS KEYWORDS DEL VIEW (datos reales de Semrush)
+================================================================================
+Fuente VOL / CPC / KD / INT: Semrush Bulk Keyword Analysis, base de datos EE. UU.,
+export coral-gables_hialeah_doral_bulk_us_2026-07-22_09-44-17.csv (2026-07-22).
+Fuente ON / NOW: grep sobre la página (ON = git HEAD, solo cuerpo; NOW = vista actual =
+cuerpo del artículo + FAQ renderizadas). NOW RE-MEDIDO 2026-07-22 tras FIX #44–#47
+(cambiaron 4 filas: negligencia 17->21, productos defectuosos 24->25, responsabilidad
+estricta 11->12, producto defectuoso 28->29).
+
+DEFINICIÓN DE COLUMNAS:
+  #    = número de fila
+  VOL  = volumen de búsqueda mensual REAL (Semrush, US). "n/d" = Semrush sin dato de
+         volumen (típicamente <10 búsquedas/mes; aún así devuelve KD).
+  CPC  = costo por clic en USD REAL (Semrush). "0.00" = Semrush reporta CPC cero
+         (baja competencia de anunciantes en español). "—" = sin dato.
+  KD   = Keyword Difficulty de Semrush (0–100; menor = más fácil posicionar). "—" = sin dato.
+  INT  = intención de búsqueda (Semrush): Info=Informational, Com=Commercial,
+         Nav=Navigational, In+Nv=Info+Nav, In+Tr=Info+Transactional, —=sin dato.
+  ON   = apariciones en la página ANTES (git HEAD; solo cuerpo del artículo)
+  NOW  = apariciones en la VISTA AHORA (cuerpo del artículo + FAQ renderizadas)
+  +/-  = NOW menos ON
+  SRC  = SEM = volumen/CPC/KD/intención vienen de Semrush.
+         (IMPR/POS del log EN NO aplican: siguen requiriendo un export de Google
+          Search Console filtrado por la URL /es/ — aún no disponible.)
+
+-----------------------------------------------------------------------------------------------------------------
+  # | KEYWORD (query)                                    |   VOL | CPC   | KD | INT   | ON | NOW | +/- | SRC
+-----------------------------------------------------------------------------------------------------------------
+--- A. QUERIES OBJETIVO (orden: VOL real desc; luego KD asc para las de VOL n/d) ---
+  1 | negligencia                                        |  5400 |  0.00 | 30 | Info  |  5 |  21 | +16 | SEM
+  2 | demanda colectiva                                  |  1300 |  9.36 | 14 | Info  |  4 |   5 |  +1 | SEM
+  3 | lesiones personales                                |   480 | 13.73 |  7 | Info  |  0 |   3 |  +3 | SEM
+  4 | abogado de lesiones personales en miami            |   140 |  0.00 |  7 | Com   |  0 |   0 |   0 | SEM
+  5 | abogado de responsabilidad del producto            |   140 |  0.00 |  0 | Info  |  3 |  18 | +15 | SEM
+  6 | abogado de productos defectuosos                   |   110 |  4.76 |  2 | Info  |  0 |   9 |  +9 | SEM
+  7 | consulta gratis abogado                            |    90 | 10.60 | 21 | Info  |  0 |   0 |   0 | SEM
+  8 | retiro del mercado                                 |    40 |  0.00 | 13 | Info  |  0 |   5 |  +5 | SEM
+  9 | dolor y sufrimiento                                |    30 |  0.00 | —  | —     |  0 |   0 |   0 | SEM
+ 10 | honorarios de contingencia                         |    30 |  0.00 | —  | —     |  0 |   1 |  +1 | SEM
+ 11 | medicamentos peligrosos                            |    20 |  0.00 | —  | —     |  0 |   2 |  +2 | SEM
+ 12 | productos defectuosos                              |    20 |  0.00 | —  | —     |  2 |  25 | +23 | SEM
+ 13 | responsabilidad del producto                       |    20 |  0.00 | —  | —     | 22 |  63 | +41 | SEM
+ 14 | responsabilidad estricta                           |    20 |  0.00 | —  | —     |  4 |  12 |  +8 | SEM
+ 15 | defecto de fabricación                             |    10 |  0.00 | —  | —     |  0 |   2 |  +2 | SEM
+ 16 | gastos médicos                                     |    10 |  0.00 | —  | —     |  0 |   0 |   0 | SEM
+ 17 | recall de producto                                 |    10 |  0.00 | —  | —     |  0 |   0 |   0 | SEM
+ 18 | demanda por producto defectuoso                    |     0 |  0.00 | —  | —     |  0 |   0 |   0 | SEM
+ 19 | garantía expresa                                   |     0 |  0.00 | —  | —     |  1 |   2 |  +1 | SEM
+ 20 | garantía implícita                                 |     0 |  0.00 | —  | —     |  1 |   8 |  +7 | SEM
+ 21 | indemnización por producto defectuoso              |     0 |  0.00 | —  | —     |  0 |   0 |   0 | SEM
+ 22 | producto defectuoso                                |     0 |  0.00 | —  | —     |  6 |  29 | +23 | SEM
+ 23 | reclamo por producto defectuoso                    |     0 |  0.00 | —  | —     |  0 |   5 |  +5 | SEM
+ 24 | herramientas y maquinaria defectuosas              |   n/d |   —   |  2 | Info  |  0 |   0 |   0 | SEM
+ 25 | abogado de responsabilidad del producto en miami   |   n/d |   —   |  2 | Info  |  1 |   4 |  +3 | SEM
+ 26 | abogado de responsabilidad por productos en miami  |   n/d |   —   |  2 | Info  |  0 |   1 |  +1 | SEM
+ 27 | abogados de responsabilidad del producto           |   n/d |   —   |  3 | Info  | 12 |  11 |  -1 | SEM
+ 28 | prescripción demanda producto defectuoso           |   n/d |   —   |  4 | Info  |  0 |   0 |   0 | SEM
+ 29 | reclamo de responsabilidad del producto            |   n/d |   —   |  4 | Info  |  1 |   9 |  +8 | SEM
+ 30 | abogado de productos defectuosos cerca de mí       |   n/d |   —   |  5 | Com   |  0 |   1 |  +1 | SEM
+ 31 | compensación por producto defectuoso               |   n/d |   —   |  5 | Info  |  0 |   0 |   0 | SEM
+ 32 | abogado de responsabilidad del producto cerca de mí|   n/d |   —   |  6 | Info  |  0 |   2 |  +2 | SEM
+ 33 | dispositivos médicos defectuosos                   |   n/d |   —   |  6 | Info  |  0 |   4 |  +4 | SEM
+ 34 | responsabilidad estricta del producto              |   n/d |   —   |  6 | Info  |  2 |   5 |  +3 | SEM
+ 35 | responsabilidad por productos                      |   n/d |   —   |  6 | Info  |  1 |   3 |  +2 | SEM
+ 36 | incumplimiento de garantía                         |   n/d |   —   |  7 | Info  |  0 |   5 |  +5 | SEM
+ 37 | juguetes defectuosos                               |   n/d |   —   |  7 | In+Tr |  1 |   0 |  -1 | SEM
+ 38 | medicamentos defectuosos                           |   n/d |   —   |  7 | Info  |  0 |   0 |   0 | SEM
+ 39 | defecto de diseño                                  |   n/d |   —   |  8 | Info  |  3 |   1 |  -2 | SEM
+ 40 | electrodomésticos defectuosos                      |   n/d |   —   |  8 | Info  |  0 |   2 |  +2 | SEM
+ 41 | culpa comparativa                                  |   n/d |   —   |  9 | Info  |  0 |   0 |   0 | SEM
+ 42 | falta de advertencia                               |   n/d |   —   |  9 | Info  |  0 |   5 |  +5 | SEM
+ 43 | estatuto de reposo                                 |   n/d |   —   | 15 | In+Tr |  0 |   3 |  +3 | SEM
+ 44 | autopartes defectuosas                             |   n/d |   —   | 19 | Info  |  0 |   1 |  +1 | SEM
+ 45 | vehículos de motor defectuosos                     |   n/d |   —   | 27 | Info  |  0 |   0 |   0 | SEM
+--- B. GEO / MARCA / VOCABULARIO (alto VOL pero NO son query objetivo de esta página) ---
+ 46 | coral gables                                       | 49500 |  0.97 | 62 | In+Nv |  0 |   2 |  +2 | SEM
+ 47 | hialeah                                            | 40500 |  1.04 | 66 | In+Nv |  0 |   8 |  +8 | SEM
+ 48 | doral                                              | 27100 |  0.78 | 70 | Info  |  0 |   2 |  +2 | SEM
+ 49 | miami-dade                                         |  4400 |  0.00 | 73 | Info  |  0 |   4 |  +4 | SEM
+ 50 | gallardo law firm (marca)                          |  3600 |  5.47 | 42 | Nav   |  6 |   7 |  +1 | SEM
+ 51 | fabricante (vocabulario)                           |   480 |  0.00 | 29 | Info  | 15 |  26 | +11 | SEM
+ 52 | en miami (modificador geo)                         |   260 |  0.97 | 84 | Info  |  8 |  20 | +12 | SEM
+-----------------------------------------------------------------------------------------------------------------
+
+LECTURA RÁPIDA DE LOS DATOS REALES DE SEMRUSH:
+- OPORTUNIDADES CLARAS (buen VOL + KD bajo = fáciles de ganar):
+  * "abogado de responsabilidad del producto" — VOL 140, KD 0 (¡dificultad casi nula!),
+    ya reforzada en la página (NOW 18). Es la mejor keyword objetivo de la página.
+  * "abogado de productos defectuosos" — VOL 110, KD 2, NOW 9. Segunda mejor.
+  * "abogado de lesiones personales en miami" — VOL 140, KD 7, intención COMERCIAL, NOW 0.
+    NO PERSEGUIR EN ESTA PÁGINA (revisado 2026-07-22): es la keyword OBJETIVO del hub
+    personal-injury-lawyer-in-florida (urlspanish=abogado-de-lesiones-personales-en-miami,
+    targeredkeywordspanish="Abogado de Lesiones Personales en Miami"). Añadirla aquí
+    canibalizaría el hub. Esta página enlaza al hub, no compite con él (ver FIX #44).
+  * "lesiones personales" — VOL 480, KD 7, NOW 3. Igual: pertenece al hub; no forzar aquí.
+- ALTA COMPETENCIA / VOL alto pero difícil:
+  * "negligencia" VOL 5400 KD 30 y "demanda colectiva" VOL 1300 KD 14 CPC $9.36 — mucho
+    volumen pero término amplio/competido; la página ya los cubre razonablemente.
+- ¡OJO! CPC 0.00 en muchas keywords: Semrush no ve pujas de anunciantes en esas queries en
+  español; NO significa que no tengan valor de tráfico orgánico — solo poca competencia SEM.
+- Fila B (coral gables 49.5k, hialeah 40.5k, doral 27.1k): volumen enorme PERO es intención
+  local/navegacional genérica (gente buscando la ciudad), NO clientes de responsabilidad del
+  producto. Sirven como señal geo, no como keyword objetivo. No perseguir de forma aislada.
+- KD "—" + VOL con número (filas 9–23): Semrush dio volumen pero no calculó dificultad
+  (suele pasar con volúmenes muy bajos). KD "—" NO es KD 0.
+
+NOTAS:
+- ON = cuerpo del artículo viejo; NOW = cuerpo del artículo nuevo + FAQ renderizadas.
+- Conteos con solape (frases anidadas): "abogado de responsabilidad del producto" también
+  cuenta dentro de "responsabilidad del producto", etc. → indicador de cobertura, no suma.
+- Las 10 preguntas FAQ ES (FIX #43) suman 10 queries long-tail adicionales (SRC=FAQ).
+- Esta TABLA COMPLETA convive con la "TABLA DE PALABRAS CLAVE QUE IMPORTAN" (arriba): esa
+  es el subconjunto de alto valor; esta es el inventario total con datos reales de Semrush.
+  (La tabla enfocada aún muestra rangos ESTIMADOS en VOL/CPC; pendiente de sincronizar con
+  estos datos reales si lo deseas.)
+================================================================================

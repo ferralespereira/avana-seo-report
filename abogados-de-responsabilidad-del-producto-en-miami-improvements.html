@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abogados de Responsabilidad del Producto en Miami – Mejoras SEO</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        /* ── Section headers ── */
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card (meta tags) ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item  { font-size: 1.1rem; }
+
+        /* ── Info cards ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* sections list */
+        .sections-list {
+            list-style: none; display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
+        }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* cannibalization / note card */
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .removed {
+            text-decoration: line-through; color: #f38ba8;
+            background: #fff0f0; border-radius: 3px; padding: 0 3px;
+        }
+        .cannibal-block .added {
+            color: #065f46; background: #e6f4ea; border-radius: 3px; padding: 0 3px; font-weight: 600;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        /* keyword count table */
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .kw-table th, .kw-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eef0f2; }
+        .kw-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b8ba7; }
+        .kw-table td.num { text-align: center; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; }
+        .kw-table .up   { color: #065f46; font-weight: 700; }
+        .kw-table .down { color: #c0392b; font-weight: 700; }
+        .kw-table .kd   { color: #b8892b; font-weight: 700; }
+        .kw-table tr:last-child td { border-bottom: none; }
+
+        /* link change block */
+        .link-change {
+            background: #f4f5f7; border-radius: 8px; padding: 12px 16px;
+            font-size: 0.82rem; display: flex; flex-direction: column; gap: 5px;
+        }
+        .link-arrow { color: #89b4fa; font-weight: 700; font-size: 0.78rem; }
+
+        /* ── Schema cards ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .schema-divider { height: 1px; background: #e8eaed; }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .fixed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #dbeafe; color: #1e40af; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .removed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fee2e2; color: #991b1b; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .pending-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fef3c7; color: #92400e; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── Stat tiles ── */
+        .stat-row { display: flex; flex-wrap: wrap; gap: 14px; max-width: 900px; margin-bottom: 18px; }
+        .stat-tile {
+            flex: 1 1 150px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 16px 18px;
+        }
+        .stat-value { font-size: 1.35rem; font-weight: 700; color: #24292e; font-variant-numeric: tabular-nums; }
+        .stat-value .from { color: #f38ba8; }
+        .stat-value .to { color: #28c840; }
+        .stat-label { font-size: 0.72rem; color: #6a737d; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+
+        /* ── Callout ── */
+        .callout {
+            max-width: 900px; border-radius: 8px; padding: 14px 18px;
+            font-size: 0.84rem; line-height: 1.6; margin-bottom: 18px;
+        }
+        .callout-warn { background: #fff8f0; border-left: 4px solid #febc2e; color: #24292e; }
+        .callout-info { background: #eef6ff; border-left: 4px solid #0070c9; color: #24292e; }
+        .callout-legal { background: #fdf6ec; border-left: 4px solid #b8892b; color: #24292e; }
+        .callout strong { font-weight: 700; }
+
+        /* ── GEO Status section ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;flex-wrap:wrap;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Volver al Informe SEO</a>
+        <a href="abogados-de-responsabilidad-del-producto-en-miami.html" style="font-size:13px;font-weight:600;color:#b8892b;text-decoration:none;">← Análisis de la página</a>
+    </div>
+    <h1>Abogados de Responsabilidad del Producto en Miami — Mejoras SEO</h1>
+    <p class="subtitle">es/lesionados/abogados-de-responsabilidad-del-producto-en-miami &nbsp;·&nbsp; Gallardo Law Firm &nbsp;·&nbsp; Actualizado 2026-07-22 &nbsp;·&nbsp; Es / article.cshtml + articlemetas.cshtml + FaqEntities.xml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami" target="_blank" rel="noopener">https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami', this)">copiar</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Palabra clave</span>
+            <span class="page-info-keyword">abogados de responsabilidad del producto en miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('abogados de responsabilidad del producto en miami', this)">copiar</button>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         STAT TILES
+    ════════════════════════════════════ -->
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">~2,200</span> → <span class="to">~2,850</span></div>
+            <div class="stat-label">Palabras del cuerpo (Es)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">125</span> → <span class="to">315</span></div>
+            <div class="stat-label">Cobertura de keywords SEO (+190)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">5</span> → <span class="to">10</span></div>
+            <div class="stat-label">FAQ en español</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">3</span></div>
+            <div class="stat-label">Esquemas JSON-LD · 3 tablas · TOC</div>
+        </div>
+    </div>
+
+
+    <div class="callout callout-info">
+        <strong>Objetivo: espejo completo del gemelo en inglés.</strong> La página ES pasó de un artículo plano (2.2k palabras, 0 tablas, 0 esquemas, 0 TOC, 5 FAQ) a un espejo estructurado 1:1 de <a href="product-liability-attorney-miami.html" style="color:#0070c9;">product-liability-attorney-miami</a> (TOC arriba, 15 secciones H2 con los MISMOS id, 3 tablas, 3 bloques JSON-LD, Speakable, 10 FAQ) — en español legal correcto y con la jurisdicción de Florida.
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         1. META TAGS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Meta Tags <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— FIX #42 (reescritura) &amp; FIX #48 (hreflang)</span></div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">product-liability-attorney-miami / Es / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model ServicePageViewModel</span>
+<span class="c-comment fix-item">@* FIX #42 — se eliminaron las metas heredadas page-topic / page-type *@</span>
+<span class="c-tag">&lt;title&gt;</span>Abogados de Responsabilidad del Producto en Miami | <span class="c-razor">@Settings.GetCenterName</span><span class="c-tag">&lt;/title&gt;</span>
+<span class="c-comment fix-item">@* meta description con CTA (Regla 4-7: "consulta gratis" pendiente firma del bufete) *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"¿Lesionado por un producto defectuoso en Miami? Nuestros abogados de responsabilidad del producto luchan por recuperar su compensación. Consulta gratis."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* FIX #48 — hreflang RECÍPROCO y auto-referencial (cada página lista ambas versiones, incluida ella misma) *@</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"alternate"</span> <span class="c-attr">hreflang</span>=<span class="c-val">"es"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"alternate"</span> <span class="c-attr">hreflang</span>=<span class="c-val">"en"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/injury-law/product-liability-attorney-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"es_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* FIX #48 — se cerró la etiqueta og:locale:alternate (el usuario la dejó sin "/&gt;" y "se comía" la línea og:type) *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale:alternate"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Responsabilidad del Producto en Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"¿Lesionado por un producto defectuoso en Miami? Nuestros abogados de responsabilidad del producto luchan por recuperar su compensación. Consulta gratis."</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* URLs e imagen ABSOLUTAS *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/themes/gallardo/images/services/903x530/product-liability-attorney-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Responsabilidad del Producto en Miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"903"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"530"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* FIX #42 — tarjeta social grande + Twitter Card (la ES no tenía) *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary_large_image"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Responsabilidad del Producto en Miami | <span class="c-razor">@Settings.GetCenterName</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"¿Lesionado por un producto defectuoso en Miami? Consulta gratis con Gallardo Law Firm."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/themes/gallardo/images/services/903x530/product-liability-attorney-miami.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Responsabilidad del Producto en Miami"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+        <p style="max-width:900px;margin-top:12px;font-size:0.79rem;color:#6a737d;font-style:italic;line-height:1.5;">
+            El gemelo EN declara el hreflang simétrico (<code style="font-size:0.75rem">en</code> a sí mismo + <code style="font-size:0.75rem">es</code> a esta página). hreflang es la señal que <strong>Google</strong> usa para emparejar idiomas (sí da la URL); <code style="font-size:0.75rem">og:locale:alternate</code> es señal de Facebook (no da URL). Alcance: solo esta pareja de páginas.
+        </p>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. KEYWORD COVERAGE
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Cobertura de Keywords — Antes / Ahora (Es)</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Apariciones en el cuerpo + FAQ &nbsp;·&nbsp; VOL/CPC/KD reales de Semrush (US, es) · export 2026-07-22</span>
+            </div>
+            <div class="info-card-body">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Keyword</th><th>Vol</th><th>KD</th><th>Antes</th><th>Ahora</th><th>Δ</th><th>Nota</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>abogado de responsabilidad del producto</td><td class="num">140</td><td class="num kd">0</td><td class="num">3</td><td class="num">18</td><td class="num up">+15</td><td>⭐ mejor keyword — dificultad casi nula</td></tr>
+                        <tr><td>abogado de productos defectuosos</td><td class="num">110</td><td class="num kd">2</td><td class="num">0</td><td class="num">9</td><td class="num up">+9</td><td>2ª mejor; añadida en #pl-intro (FIX #44)</td></tr>
+                        <tr><td>responsabilidad del producto</td><td class="num">20</td><td class="num">—</td><td class="num">22</td><td class="num">63</td><td class="num up">+41</td><td>término núcleo de la página</td></tr>
+                        <tr><td>producto defectuoso</td><td class="num">0</td><td class="num">—</td><td class="num">6</td><td class="num">29</td><td class="num up">+23</td><td>vertical de producto</td></tr>
+                        <tr><td>productos defectuosos</td><td class="num">20</td><td class="num">—</td><td class="num">2</td><td class="num">25</td><td class="num up">+23</td><td>plural — clúster de mayor demanda</td></tr>
+                        <tr><td>negligencia</td><td class="num">5400</td><td class="num kd">30</td><td class="num">5</td><td class="num">21</td><td class="num up">+16</td><td>VOL alto pero término amplio/competido</td></tr>
+                        <tr><td>responsabilidad estricta (del producto)</td><td class="num">20</td><td class="num">—</td><td class="num">4</td><td class="num">12</td><td class="num up">+8</td><td>West v. Caterpillar</td></tr>
+                        <tr><td>reclamo de responsabilidad del producto</td><td class="num">n/d</td><td class="num kd">4</td><td class="num">1</td><td class="num">9</td><td class="num up">+8</td><td>—</td></tr>
+                        <tr><td>garantía implícita</td><td class="num">0</td><td class="num">—</td><td class="num">1</td><td class="num">8</td><td class="num up">+7</td><td>garantías (Ley FL 672.313-315)</td></tr>
+                        <tr><td>retiro del mercado / recall</td><td class="num">40</td><td class="num kd">13</td><td class="num">0</td><td class="num">5</td><td class="num up">+5</td><td>nueva sección CPSC/NHTSA/FDA</td></tr>
+                        <tr><td>incumplimiento de garantía</td><td class="num">n/d</td><td class="num kd">7</td><td class="num">0</td><td class="num">5</td><td class="num up">+5</td><td>—</td></tr>
+                        <tr><td>falta de advertencia</td><td class="num">n/d</td><td class="num kd">9</td><td class="num">0</td><td class="num">5</td><td class="num up">+5</td><td>3.er tipo de defecto</td></tr>
+                        <tr><td>prescripción (plazo para demandar)</td><td class="num">~50</td><td class="num">—</td><td class="num">0</td><td class="num">11</td><td class="num up">+11</td><td>sección nueva (2/4 años + reposo 12)</td></tr>
+                        <tr><td>dispositivos médicos defectuosos</td><td class="num">n/d</td><td class="num kd">6</td><td class="num">0</td><td class="num">4</td><td class="num up">+4</td><td>vertical de producto</td></tr>
+                        <tr><td>abogado de responsabilidad del producto en miami</td><td class="num">n/d</td><td class="num kd">2</td><td class="num">1</td><td class="num">4</td><td class="num up">+3</td><td>keyword objetivo + geo</td></tr>
+                        <tr><td>estatuto de reposo</td><td class="num">n/d</td><td class="num kd">15</td><td class="num">0</td><td class="num">3</td><td class="num up">+3</td><td>límite absoluto de 12 años</td></tr>
+                        <tr><td>abogado de responsabilidad del producto cerca de mí</td><td class="num">n/d</td><td class="num kd">6</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>vive en la FAQ #8</td></tr>
+                        <tr><td>demanda colectiva</td><td class="num">1300</td><td class="num kd">14</td><td class="num">4</td><td class="num">5</td><td class="num up">+1</td><td>reformulada para no prometer</td></tr>
+                        <tr><td>abogado de lesiones personales en miami</td><td class="num">140</td><td class="num kd">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>keyword del HUB — NO perseguir aquí (canibalización); se ENLAZA al hub</td></tr>
+                        <tr><td>abogados de responsabilidad del producto</td><td class="num">n/d</td><td class="num kd">3</td><td class="num">12</td><td class="num down">11</td><td class="num down">−1</td><td>plural — leve baja, crecimiento fue al singular objetivo</td></tr>
+                    </tbody>
+                </table>
+                <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:10px;">
+                    Fuente VOL/CPC/KD/INT: Semrush Bulk Keyword Analysis (base de datos US, español). "n/d" = Semrush sin dato de volumen (típicamente &lt;10/mes; aún da KD). CPC 0.00 en muchas queries en español = poca competencia de anunciantes, NO falta de valor orgánico. Antes = git HEAD (solo cuerpo); Ahora = cuerpo del artículo + 10 FAQ renderizadas. Conteos con solape (frases anidadas) = indicador de cobertura, no suma limpia. <strong>Faltan IMPR/POS</strong>: requieren un export de GSC filtrado por la URL /es/ (aún no disponible).
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. CONTENT CHANGES
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Cambios de Contenido <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— article.cshtml (Es): 99 → 361 líneas · espejo del cuerpo EN</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Contenido &nbsp;·&nbsp; Reescritura espejo · FAQ · Enlaces · Limpieza · Gramática</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:24px;">
+
+                <!-- Mirror rewrite -->
+                <div>
+                    <div class="schema-subsection-label">FIX #42 — Reescritura completa del espejo en español <span class="new-badge">ESTRUCTURA</span></div>
+                    <ul class="sections-list">
+                        <li>Párrafo introductorio <code style="font-size:0.78rem">id="pl-intro"</code> + párrafo de estadística (627 casos, cita a la Guía de OSCA)</li>
+                        <li>Tabla de Contenido ARRIBA (antes de las 15 secciones), igual que EN — 15 anclas ↔ 15 id de encabezado, mismo orden</li>
+                        <li>15 secciones H2 con los MISMOS <code style="font-size:0.78rem">#heading-1 … #heading-15</code> y en el mismo orden que la página EN</li>
+                        <li>3 tablas (estadísticas · estándares de tiempo 12/18/30 meses · comparación), cada una en <code style="font-size:0.78rem">&lt;div overflow-x:auto&gt;</code> (responsiva)</li>
+                        <li>1 lista <code style="font-size:0.78rem">&lt;ol&gt;</code> de 7 pasos + 4 listas <code style="font-size:0.78rem">list-group list-group-flush</code> (15 items) — replica el FIX #38 de EN</li>
+                        <li class="full-row">Bloque de servicios relacionados ("También Representamos a Clientes en los Siguientes Casos") vía <code style="font-size:0.78rem">PartialServicesRelated</code></li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- FAQ replacement -->
+                <div>
+                    <div class="schema-subsection-label">FIX #43 — Reemplazo de las FAQ en español (5 → 10) <span class="new-badge">NEW</span></div>
+                    <div class="cannibal-block">
+                        Se <strong>reemplazaron</strong> las 5 FAQ ES antiguas por 10 nuevas (traducción de las 10 FAQ EN). Motivo del reemplazo (en vez de sumar): la antigua FAQ #2 ES (<em>"cuatro años … doce años"</em>) <strong>contradecía</strong> la nueva sección de prescripción (2 vs 4 años, punto no resuelto tras HB 837), y una FAQ de honorarios de contingencia planteaba posible objeción del Colegio de Abogados.
+                        <span class="reason">Método con script validado (preserva BOM + CRLF; valida XML bien formado: 10 ES + 10 EN; sincronizado a bin). Las 10 cubren: prescripción, quién puede demandar (West v. Caterpillar), tipos de defecto, responsabilidad estricta, culpa comparativa >50% (768.81), recall vs demanda, tipos de productos, "cerca de mí" en Miami/Hialeah, costo (contingencia — pendiente firma), y duración del caso.</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Cleanup / compliance -->
+                <div>
+                    <div class="schema-subsection-label">Limpieza y Cumplimiento (parte de FIX #42) <span class="fixed-badge">CORREGIDO</span></div>
+                    <ul class="sections-list">
+                        <li>Se eliminó un bloque obsoleto (ANSI, referencia de 2002)</li>
+                        <li>Se eliminó la línea NO conforme al Colegio ("solo los abogados pueden…")</li>
+                        <li>Se reformuló la mención a demanda colectiva para evitar promesas de resultado</li>
+                        <li class="full-row">Citas de Florida en el cuerpo (señales E-E-A-T): West v. Caterpillar (Fla. 1976) · Ley FL 768.81 (barra >50%, HB 837) · 95.11 / 95.031 (prescripción / reposo 12 años) · 672.313-315 (garantías) · Magnuson-Moss (15 U.S.C. 2301) · Fla. R. Gen. Prac. 2.250 (30/18/12 meses) · Guía OSCA (627 casos)</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Grammar -->
+                <div>
+                    <div class="schema-subsection-label">FIX #46 — Correcciones de gramática / consistencia</div>
+                    <div class="cannibal-block" style="border-color:#0070c9;background:#eef6ff;">
+                        <span class="removed">"año judicial 2024-25"</span> → "año fiscal 2024-25" (consistente con la fuente FY de OSCA) · ítem de lista que empezaba en minúscula reformulado ("La responsabilidad estricta se centra únicamente…") · punto final tras el teléfono en el cierre · <span class="removed">"describen … las instrucciones de uso"</span> → "…E INCLUYEN las instrucciones de uso" (no se "describen" instrucciones).
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. INTERNAL LINKING
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Enlaces Internos y Canibalización <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— FIX #44 &amp; FIX #45</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">La página tenía 0 enlaces internos en el cuerpo (solo breadcrumb + servicios relacionados)</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block" style="border-color:#28c840;background:#f0fdf4;">
+                    <strong>Decisión clave de canibalización (FIX #44 retractado):</strong> la nota previa sugería añadir "abogado de lesiones personales en miami" (VOL 140). Se <strong>RETIRA</strong>: es la keyword OBJETIVO del hub de Lesiones Personales; añadirla aquí canibalizaría el hub. Esta página ahora <strong>ENLAZA al hub</strong> en su lugar, no compite con él.
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">FIX #44 — 4 enlaces internos contextuales salientes (de 0 a 4, todos /es/lesionados/)</div>
+                    <ul class="sections-list">
+                        <li>"práctica general de lesiones personales" → <code style="font-size:0.76rem">abogado-de-lesiones-personales-en-miami</code> (HUB)</li>
+                        <li>"negligencia farmacéutica" → <code style="font-size:0.76rem">abogado-negligencia-farmaceutica-en-miami</code> (reclamo DISTINTO, no canibaliza)</li>
+                        <li>"accidente de auto" → <code style="font-size:0.76rem">abogados-de-accidentes-de-auto-en-miami</code> (autopartes defectuosas)</li>
+                        <li>"muerte por negligencia" → <code style="font-size:0.76rem">abogados-de-muerte-por-negligencia-en-miami</code></li>
+                        <li class="full-row" style="font-style:italic;color:#6a737d;">Refuerzo de keyword: se añadió "abogado de productos defectuosos" (VOL 110, KD 2) como aposición natural en el primer párrafo (#pl-intro). Se saltó la demanda colectiva laboral (categoría employment → 404).</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">FIX #45 — 6 enlaces ENTRANTES hacia esta página (anclas variadas)</div>
+                    <div class="link-change">
+                        <span class="link-arrow">abogado-de-litigios-comerciales → "abogado de responsabilidad del producto en Miami" (canibalizador real, resuelto)</span>
+                        <span class="link-arrow">abogado-de-lesiones-personales (HUB) → "Productos defectuosos" (hub→hijo, el de mayor valor)</span>
+                        <span class="link-arrow">abogados-de-muerte-por-negligencia → "productos de consumo defectuosos" · muerte-por-negligencia-en-hialeah → "Productos defectuosos"</span>
+                        <span class="link-arrow">abogado-de-lesiones-por-amputacion → "productos defectuosos" · abogado-negligencia-farmaceutica → "reclamación por productos defectuosos"</span>
+                    </div>
+                    <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:8px;">
+                        6 páginas ES mencionaban el tema y 0 enlazaban aquí. Doble beneficio: resuelve la canibalización (le dice a Google cuál es la página canónica del tema) y pasa autoridad. Anclas variadas = sin riesgo de sobre-optimización. Toca 6 archivos de otras páginas — PENDIENTE DE REVISIÓN DEL BUFETE.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. SCHEMAS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Esquemas JSON-LD <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— la página ES no tenía NINGUNO</span></div>
+
+        <div class="callout callout-info">
+            <strong>3 bloques JSON-LD nuevos en el artículo</strong> (BreadcrumbList · WebPage+Speakable · Service), más el <code style="font-size:0.78rem">LegalService</code> del skin compartido y los microdatos <code style="font-size:0.78rem">FAQPage</code> (10 FAQ ES). El grafo consolida en <strong>una</strong> entidad de marca: todo referencia <code style="font-size:0.78rem">.../#organization</code> (Organization, declarada UNA vez en el home) por <code style="font-size:0.78rem">@id</code>.
+        </div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 1</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos — 3 niveles (en español)</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">posición 1</span><span class="sf-val">Inicio</span></div>
+                            <div class="schema-field"><span class="sf-key">posición 2</span><span class="sf-val">Lesiones Personales → hub EN VIVO (/es/lesionados/abogado-de-lesiones-personales-en-miami), NO la categoría /injury-law que da 404</span></div>
+                            <div class="schema-field"><span class="sf-key">posición 3</span><span class="sf-val">Abogados de Responsabilidad del Producto en Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>Migas de pan en el SERP + señal de jerarquía; apunta al hub que sí resuelve (200)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 2</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">inLanguage</span><span class="sf-val">es</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">#pl-intro, #pl-definition</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>Marca los pasajes que un asistente de voz / motor generativo debe leer o citar, en español (GEO)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 3</div>
+                    <div class="schema-card-title">Service</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos &nbsp;·&nbsp; FIX #47</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">serviceType</span><span class="sf-val">Responsabilidad del Producto (en español)</span></div>
+                            <div class="schema-field"><span class="sf-key">provider</span><span class="sf-val">REFERENCIA PURA: { "@id": ".../#organization" } — ya NO re-declara tipo/nombre/teléfono</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>Evita la colisión de tipo (Organization vs LegalService en el mismo @id) — misma clase de bug que arregló el FIX #33 del skin. Grafo limpio, sin duplicar propiedades</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 4</div>
+                    <div class="schema-card-title">LegalService <span style="font-size:0.62rem;color:#8b8ba7;">(skin)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">parentOrganization</span><span class="sf-val">@id .../#organization (FIX #33) — pertenece a la marca, no la suplanta</span></div>
+                            <div class="schema-field"><span class="sf-key">NAP</span><span class="sf-val">nombre · teléfono · dirección · área de servicio</span></div>
+                            <div class="schema-field"><span class="sf-key">priceRange</span><span class="sf-val" style="color:#b45309;">"$1500-$10000" — item I, PENDIENTE (afecta al skin, por tanto también a ES)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>El proveedor del bloque Service (bloque 3) resuelve a esta entidad de marca única</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 5</div>
+                    <div class="schema-card-title">FAQPage <span style="font-size:0.62rem;color:#8b8ba7;">(microdatos del skin)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Cobertura</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">10</span>10 preguntas ES (antes 5), <code style="font-size:0.75rem">language="es"</code></div>
+                            <div class="faq-q-item"><span class="q-num">✓</span>Texto plano — las respuestas se codifican en HTML al renderizar</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>El formato pregunta/respuesta es el que los motores generativos citan con más facilidad; incluye "cerca de mí", plazos y culpa comparativa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note card -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">Sin nodo autor</div>
+                    <div class="schema-card-title">A propósito — falta nombrar al abogado</div>
+                </div>
+                <div class="schema-card-body">
+                    <div class="schema-advantages" style="list-style:none;">
+                        <li>No se añade <code style="font-size:0.75rem">author</code> / <code style="font-size:0.75rem">reviewedBy</code> (firma E-E-A-T) — el bufete debe nombrar primero al abogado revisor.</li>
+                        <li>Sin <code style="font-size:0.75rem">Offer</code>/precio en el Service: añadirlo agravaría el priceRange erróneo (item I) y plantearía un tema de honorarios (Regla 4-7).</li>
+                        <li style="color:#92400e;">Item J (AggregateRating del home) RE-ANALIZADO 2026-07-22: SIN ACCIÓN — el schema multi-ubicación es correcto (decisión del usuario: no tocar el home).</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         6. ESTADO / PENDIENTE
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Estado — Hecho vs Pendiente</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Verificación final 2026-07-22 &nbsp;·&nbsp; abogados-de-responsabilidad-del-producto-en-miami (Es)</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Hecho</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> Tabla de Contenido ARRIBA + 15 secciones H2 (mismos id que EN)</li>
+                            <li><em class="geo-icon">✓</em> Anclas TOC ↔ id de encabezado: 15 ↔ 15, orden perfecto</li>
+                            <li><em class="geo-icon">✓</em> 3 tablas responsivas · 1 <code style="font-size:0.78rem">&lt;ol&gt;</code> de 7 pasos · 4 listas list-group (15 items)</li>
+                            <li><em class="geo-icon">✓</em> Bloque de servicios relacionados presente</li>
+                            <li><em class="geo-icon">✓</em> 3 bloques JSON-LD (BreadcrumbList + WebPage/Speakable + Service) · <code style="font-size:0.78rem">&lt;div&gt;</code> balanceados 4/4</li>
+                            <li><em class="geo-icon">✓</em> 10 FAQ ES (fuente + bin sincronizados)</li>
+                            <li><em class="geo-icon">✓</em> Meta: summary_large_image · og:image absoluto 903x530 · 0 imágenes relativas</li>
+                            <li><em class="geo-icon">✓</em> hreflang RECÍPROCO es/en + og:locale:alternate simétrico (FIX #48)</li>
+                            <li><em class="geo-icon">✓</em> 4 enlaces internos salientes + 6 entrantes (FIX #44/#45)</li>
+                            <li><em class="geo-icon">✓</em> provider como referencia pura (FIX #47) · gramática/consistencia (FIX #46)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="geo-col-title geo-needed-title">⚠ Pendiente</div>
+                        <ul class="geo-list needed">
+                            <li><em class="geo-icon">✕</em> <strong>REVISIÓN DEL ABOGADO / BUFETE de TODO el contenido ES</strong> antes de publicar (Regla 4-7 Colegio FL)</li>
+                            <li><em class="geo-icon">✕</em> Ver la página ES en vivo para confirmar el renderizado de Razor (no se puede compilar/probar aquí)</li>
+                            <li><em class="geo-icon">✕</em> <strong>priceRange "$"</strong> (item I): aplicar cuando el bufete lo confirme (afecta al skin compartido → también a ES)</li>
+                            <li><em class="geo-icon">✕</em> <strong>Honorarios de contingencia / "consulta gratis"</strong> en la FAQ #9 ES y en la meta description — representación de honorarios, requiere firma del bufete</li>
+                            <li><em class="geo-icon">✕</em> Redacción de los enlaces a "negligencia farmacéutica" y "muerte por negligencia" (describen otras áreas de práctica) — confirmar con el bufete</li>
+                            <li><em class="geo-icon">✕</em> IMPR/POS reales: requieren un export de GSC filtrado por la URL /es/ (aún no disponible)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = '¡copiado!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
