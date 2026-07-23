@@ -120,6 +120,9 @@ keywords = [
     # gallardolawyers.com — separate client property. Position tracking works
     # (it matches on target_url), but MY_DOMAIN above is Avana-only, so the
     # "my_pages_ranking" field stays empty for this keyword.
+    {"keyword": "miami brain injury lawyer",
+     "url": "https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer",
+     "lang": "en"},
     {"keyword": "product liability attorney miami",
      "url": "https://gallardolawyers.com/injury-law/product-liability-attorney-miami",
      "lang": "en"},

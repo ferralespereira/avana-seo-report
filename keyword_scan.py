@@ -821,6 +821,30 @@ PRODLIAB_ES = [
     ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Brain injury (gallardolawyers.com/injury-law/miami-brain-injury-lawyer).
+# Separate client property, not Avana. Variants are lowercase and accent-free.
+BRAININJURY_EN = [
+    ("brain injury", ["brain injury", "brain injuries"]),
+    ("miami brain injury lawyer", ["miami brain injury lawyer", "brain injury lawyer miami", "brain injury lawyers miami", "miami brain injury lawyers"]),
+    ("miami brain injury attorney", ["miami brain injury attorney", "brain injury attorney miami", "brain injury attorneys miami", "miami brain injury attorneys"]),
+    ("traumatic brain injury lawyer", ["traumatic brain injury lawyer", "traumatic brain injury lawyer miami", "miami traumatic brain injury lawyer"]),
+    ("traumatic brain injury attorney", ["traumatic brain injury attorney", "traumatic brain injury attorney miami", "miami traumatic brain injury attorney", "miami traumatic brain injury attorneys"]),
+    ("tbi lawyer / attorney", ["tbi lawyer", "tbi lawyers", "tbi attorney", "tbi lawyers miami", "tbi attorney miami"]),
+    ("brain injury attorney near me", ["brain injury attorney near me", "brain injury lawyer near me", "brain injury lawyers near me", "brain injury attorneys near me"]),
+    ("brain injury law firm", ["brain injury law firm", "miami brain injury law firm", "brain injury law firm coral gables", "law firms for brain injury"]),
+    ("head injury lawyer", ["head injury lawyer miami", "head injury attorney miami", "miami head injury lawyer"]),
+    ("anoxic / hypoxic brain injury", ["anoxic brain injury", "hypoxic brain injury", "anoxic brain injury lawyer", "hypoxic brain injury attorney", "hypoxic ischemic encephalopathy"]),
+    ("infant / perinatal brain injury", ["infant brain injury", "perinatal brain injury", "birth brain injury", "child brain injury"]),
+    ("neurological injury", ["neurological injury", "miami neurological injury lawyer", "miami neurological injury attorney", "concussion"]),
+    ("brain injury compensation / lawsuit", ["brain injury lawsuit", "brain injury claim", "brain injury compensation", "brain injury settlement"]),
+    ("statute of limitations", ["statute of limitations", "how long do you have to file", "time limit to file", "time limits for tbi claims"]),
+    ("brain injury cost / fees", ["no win no fee", "no fee unless", "contingency fee", "free consultation", "free case evaluation"]),
+    ("personal injury attorney", ["personal injury attorney", "personal injury lawyer"]),
+    ("injury attorney miami", ["injury attorney miami", "miami injury attorney", "injury lawyer miami", "miami injury lawyer"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── Structured data (schema.org) rows ────────────────────────────────────────
 # Tracked the same way as keywords: each row counts how many times that JSON-LD
 # @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
@@ -926,6 +950,8 @@ PAGES = {
         {"slug": "hourglass-tummy-tuck-in-miami", "lang": "en", "kw": HOURGLASS_EN},
     "https://avanaplasticsurgery.com/espanol/abdominoplastia-con-curvas-en-miami":
         {"slug": "abdominoplastia-con-curvas-en-miami", "lang": "es", "kw": ABDOMINOPLASTIA_CURVAS_ES},
+    "https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer":
+        {"slug": "miami-brain-injury-lawyer", "lang": "en", "kw": BRAININJURY_EN},
     "https://gallardolawyers.com/injury-law/product-liability-attorney-miami":
         {"slug": "product-liability-attorney-miami", "lang": "en", "kw": PRODLIAB_EN},
     "https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami":

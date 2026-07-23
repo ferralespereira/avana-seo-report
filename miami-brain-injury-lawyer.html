@@ -1,0 +1,1128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallardo — Miami Brain Injury Lawyer | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+  <a href="miami-brain-injury-lawyer-improvements.html" style="font-size:13px;font-weight:600;color:#b8892b;text-decoration:none;">View SEO Improvements →</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; miami brain injury lawyer</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">gallardolawyers.com/injury-law/miami-brain-injury-lawyer</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>gallardolawyers.com/injury-law/miami-brain-injury-lawyer</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="miami-brain-injury-lawyer"></div>
+<div class="geo-history" data-slug="miami-brain-injury-lawyer"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isOwn) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isOwn ? 2 : 1.5,
+        borderDash: isOwn ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isOwn ? 4 : 3,
+        pointHoverRadius: isOwn ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('gallardolawyers') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    miami brain injury lawyer
+    <button onclick="navigator.clipboard.writeText('miami brain injury lawyer'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer" style="color:var(--teal);text-decoration:none;" target="_blank">https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer</a>
+    <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clicks</div>
+    <div class="kpi-value">1</div>
+    <div class="kpi-source">Keyword: "miami brain injury lawyer" &mdash; all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impressions</div>
+    <div class="kpi-value">1,068</div>
+    <div class="kpi-source">Keyword: "miami brain injury lawyer" &mdash; all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0.09%</div>
+    <div class="kpi-source">Keyword: "miami brain injury lawyer" &mdash; all devices</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Position</div>
+    <div class="kpi-value">8.42</div>
+    <div class="kpi-source">Keyword: "miami brain injury lawyer" &mdash; primary query</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN (keyword-filtered) ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC &mdash; Device Breakdown for keyword "miami brain injury lawyer" (keyword-filtered)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">&#128421;&#65039; Desktop</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">1</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">687</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0.15%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">8.84</td>
+      </tr>
+      <tr style="background:#f8fbff;">
+        <td style="padding:9px 14px;">&#128241; Mobile</td>
+        <td style="padding:9px 14px;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;text-align:right;color:#7c3aed;">366</td>
+        <td style="padding:9px 14px;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;text-align:right;color:#d97706;">7.73</td>
+      </tr>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">&#128215; Tablet</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">15</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">6.13</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Keyword-filtered device split for "miami brain injury lawyer". Desktop + Mobile + Tablet impressions (687 + 366 + 15 = 1,068) reconcile exactly with the query-level total. Every click on this keyword came from desktop; mobile carries 366 impressions at 0% CTR.</div>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="brain-injury-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('brain-injury-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC &mdash; All Queries for <span style="font-size:18px;font-weight:900;">https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer</span> &mdash; Last 3 months</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('brain-injury-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">&#9654; Show</a>
+  </div>
+  <div id="brain-injury-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">3</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">7,966</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">0.04%</div>
+      </div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+        <div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+        <div style="font-size:22px;font-weight:700;color:#2563eb;">14.03</div>
+      </div>
+    </div>
+    <!-- Zero-click queries table -->
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Zero-Click Queries with 100+ Impressions</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Query</th>
+            <th style="padding:7px 10px;text-align:right;">Impressions</th>
+            <th style="padding:7px 10px;text-align:right;">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">brain injury attorney miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">498</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">10.42</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">north miami brain injury lawyer</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">478</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">21.79</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">brain injuries attorney aventura</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">356</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13.5</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami brain injury attorney</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">340</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">9.78</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">traumatic brain injury attorney aventura</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">335</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">15.13</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">traumatic brain injury attorney miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">321</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">8.9</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">traumatic brain injury lawyer north miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">311</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">18.35</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">traumatic brain injury attorney north miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">264</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">19.5</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">brain injury attorney near me</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">252</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">9.5</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">brain injury lawyer</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">218</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">8.35</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">brain injuries lawyer north miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">202</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">20.35</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">brain injury attorney</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">194</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">9.68</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">tbi lawyers miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">180</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">12.92</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">miami traumatic brain injury lawyer</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">168</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">12.71</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">tbi attorney miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">159</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13.7</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">traumatic brain injury lawyer miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">138</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">11.61</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">coral gables brain injury law firm</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">100</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">23.58</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Showing all 17 zero-click queries with 100+ impressions &middot; 17 of the 19 queries with 100+ impressions get zero clicks &mdash; the two that convert ("miami brain injury lawyer" 1,068 impr, "brain injury lawyer miami" 677 impr) earn just 1 click each &middot; Source: GSC URL-filtered export 2026-07-23</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">&#128273; Primary &amp; Secondary Keywords &mdash; Page Analysis</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page source &mdash; Gallardo &#9989; | Goldberg &amp; Rosen &#9989; | RBR &#9989; | Leesfield &#9989; &middot; Fetched 2026-07-23</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Element</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Gallardo &#128308; OUR PAGE<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer" style="color:#fff;text-decoration:none;" target="_blank">gallardolawyers.com/injury-law/miami-brain-injury-lawyer</a>
+              <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">&#128203;</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Goldberg &amp; Rosen &#9989;<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.goldbergandrosen.com/brain-injury/" style="color:#fff;text-decoration:none;" target="_blank">goldbergandrosen.com/brain-injury/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.goldbergandrosen.com/brain-injury/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">&#128203;</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            RBR &#9989;<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.rbrlaw.com/miami-personal-injury-lawyer/brain-injuries/" style="color:#fff;text-decoration:none;" target="_blank">rbrlaw.com/miami-personal-injury-lawyer/brain-injuries/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.rbrlaw.com/miami-personal-injury-lawyer/brain-injuries/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">&#128203;</button>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Leesfield &#9989;<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.leesfield.com/resources/other-resources/miami/miami-brain-injury-attorney/" style="color:#fff;text-decoration:none;" target="_blank">leesfield.com/&hellip;/miami-brain-injury-attorney/</a>
+              <button onclick="navigator.clipboard.writeText('https://www.leesfield.com/resources/other-resources/miami/miami-brain-injury-attorney/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy URL">&#128203;</button>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Exact-match title, front-loaded</div>
+            "Miami brain injury lawyer | Gallardo Law Firm"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; "Miami brain injury lawyer" exact match, first<br/>&#9989; Brand suffix<br/>&#9989; ~45 chars &mdash; no truncation</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; Lowercased "brain injury lawyer" &mdash; title-case reads cleaner in the SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Exact-match "attorney" variant</div>
+            "Miami Brain Injury Attorney | Goldberg &amp; Rosen"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Targets the "attorney" cluster (340 + 498 impr)<br/>&#9989; Clean, ~47 chars</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Keyword good, firm name eats the pixels</div>
+            "Miami Brain Injury Lawyers | Rossman, Baumberger, Reboso &amp; Spier, P.A."            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Plural "Lawyers" keyword up front</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; ~68 chars &mdash; the four-name firm truncates in SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Keyword + county geo, no brand</div>
+            "Miami Brain Injury Attorney | Miami-Dade County Accident Lawyer"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Doubles the geo ("Miami" + "Miami-Dade County")</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; No brand token; ~62 chars</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Miami Brain Injury Lawyer"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Exact keyword match<br/>&#9989; Matches title &mdash; strong topical alignment</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; No value/outcome signal (no verdict, no "free")</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Brain Injury Attorney Serving Palm Beach, Miami, and South Florida"            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; Leads with Palm Beach &mdash; "Miami" is the 2nd geo<br/>&#10060; Keyword intent diluted across three regions</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Miami Brain Injury Attorneys"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Clean geo + keyword<br/>&#9989; Plural = team scale</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Miami Brain Injury Attorney"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Exact match</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; ~820-word page can't support the H1's claim</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; miami brain injury lawyer</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Consistent across title, H1, meta, URL slug and schema &mdash; the tightest targeting of the four, and it already ranks 8.42</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; miami brain injury attorney</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Owns the "attorney" variant; but "Miami" is weakened in the H1</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; miami brain injury attorney / lawyer</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Both variants in title + H1, backed by heavy authority copy</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; miami brain injury attorney</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Right keyword, but thin content undercuts the signal</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords (H2s)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div>&bull; Brain Injury Cases We Handle<br/>&bull; Common Causes of Brain Injuries<br/>&bull; Elements Involved In a Traumatic Brain Injury Lawsuit<br/>&bull; Time Limits for TBI Claims in Miami<br/>&bull; How a Miami Brain Injury Lawyer Can Help You<br/>&bull; Gallardo Law Firm Representing Victims of Brain Injury Accidents</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Covers statute of limitations ("Time Limits") + claim elements &mdash; high-intent</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; 6 H2s &mdash; no symptoms section, no dedicated compensation/damages section, no TBI-type taxonomy</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div>&bull; Types of Brain Injuries<br/>&bull; Client Testimonials &mdash; 5 Stars from Over 1000 Reviews<br/>&bull; Causes of Brain Injuries<br/>&bull; Goldberg &amp; Rosen: Brain Injury Lawyer in Miami<br/>&bull; Your future health and quality of life<br/>&bull; Free &amp; Confidential Case Evaluation</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; TBI-type taxonomy + a social-proof H2 baked into the outline</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div>&bull; What Are Traumatic Brain Injuries?<br/>&bull; Common Causes of TBIs in Miami<br/>&bull; Common Symptoms of Brain Injuries<br/>&bull; Compensation After a Brain Injury in Florida<br/>&bull; Why Choose Our Brain Injury Attorney in Miami, FL?<br/>&bull; What Our Clients Think<br/>&bull; Recognized In Our Community<br/>&bull; Contact Us Today!</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Most complete outline &mdash; 10 H2s covering symptoms, compensation, why-choose AND social proof</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div>&bull; Choosing a brain injury lawyer in Miami<br/>&bull; Contact Us<br/>&bull; Practice Areas<br/>&bull; Leave Us a Message</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; Only 1 real content H2 &mdash; the rest are nav/contact furniture</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; ~3,135 words &mdash; mid-pack, respectable</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; On par with Goldberg &mdash; depth is NOT the main problem here (unlike other Gallardo pages)</div>            <div style="margin-top:4px;font-size:11px;color:#666;">The gap is proof + snippet, not length</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; ~3,457 words &mdash; deepest</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Long-form depth signals E-E-A-T on a YMYL query</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; ~2,100 words</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Shorter, but dense with verdicts + awards</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; ~820 words &mdash; thinnest by far</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Props up rankings via a large sitewide practice-area + verdicts network</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; "No Win, No Fee" on page, but priceRange in schema</div>            <div>&bull; "No Win, No Fee" / contingency in body copy<br/>&bull; "HABLAMOS TU IDIOMA" &mdash; bilingual<br/>&bull; <code>priceRange: "$1500-$10000"</code> in LegalService JSON-LD</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; A $1,500&ndash;$10,000 range on a contingency page contradicts "No Win, No Fee" &mdash; it implies the client pays</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; "Free &amp; Confidential Case Evaluation"</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Repeated as a section heading; <code>priceRange: "Free Consultation"</code> in schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; "Free Consultations for Florida Clients"</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Repeated near every CTA</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; "Free Consultation" prominent</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Standard risk-reversal framing</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Present and keyword-led</div>            "A Miami brain Injury Lawyer can help people to recover damages after a traumatic event as an accident, medical malpractice or third-party negligence. Call us"            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Exact keyword first<br/>&#9989; Names the injury triggers</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; "Call us" with no phone, no "free" hook<br/>&#10060; Capitalization typo ("brain Injury")<br/>&#10060; With 0.09% CTR, this snippet is the bottleneck</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Present</div>            "Brain injuries are among the most serious&hellip; recognized as the most accomplished brain injury lawyers in Palm Beach."            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; Ends on "Palm Beach", not Miami &mdash; geo mismatch for this SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Present &mdash; strongest CTA of the four</div>            "&hellip;contact our Miami brain injury attorneys for a free consultation."            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Keyword + geo + explicit "free consultation" CTA</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; ABSENT</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; No meta description &mdash; Google writes its own snippet, zero CTR control</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; No on-page FAQ section</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; Only a sitewide nav link to /faqs<br/>&#10060; "Time Limits" &amp; "Elements" H2s are question-shaped but not FAQ-marked<br/>&#10060; No FAQPage schema &mdash; zero FAQ rich-result eligibility</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; None</div>            <div style="margin-top:4px;font-size:11px;color:#666;">No FAQ block, no FAQPage schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; None</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Sitewide /faq/ link only</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; None</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#128161; Nobody has FAQPage &mdash; uncontested rich-result slot</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; Weakest on-page proof &mdash; nothing quantified</div>            <div>&bull; No verdict or settlement figures on the page<br/>&bull; No review count / rating as crawlable text<br/>&bull; No attorney bio on the page<br/>&bull; "No Win, No Fee", bilingual, FL + TX offices</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; SERP shows 4.2&#9733; inherited from the homepage's AggregateRating &mdash; and 4.2 sits directly under Goldberg's 4.9</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Strongest star signal</div>            <div>&bull; 4.9&#9733; from 998 reviews &mdash; in AggregateRating schema<br/>&bull; "5 Stars from Over 1000 Reviews" as an H2<br/>&bull; Embedded testimonials</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; Review count is both visible AND marked up &mdash; renders stars in SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Strongest authority content</div>            <div>&bull; "$900 Million in Verdicts &amp; Settlements"<br/>&bull; 200+ years combined &middot; 50+ years &middot; since 1974<br/>&bull; Best Lawyers 2025/2023/2021, Super Lawyers<br/>&bull; Named client testimonials</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; But only LocalBusiness schema &mdash; no AggregateRating, so no SERP stars despite the content</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Credential-heavy</div>            <div>&bull; Ira Leesfield 35+ years<br/>&bull; AV Preeminent, Super Lawyers, Multi-Million Dollar Advocates Forum<br/>&bull; Verdicts/settlements link, 6 named attorneys</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; Strong badges, but the ~820-word page shows little of it inline</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Soft CTA &mdash; no risk reversal at the ask</div>            <div>&bull; "Speak with Our Attorneys"<br/>&bull; (305) 261-7000</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; Never repeats "No Win, No Fee" or "free" at the point of conversion</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; "Free &amp; Confidential Case Evaluation"</div>            <div>(305) 374-4200</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; "Confidential" lowers friction</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; "Schedule Your Free Consultation!"</div>            <div>(305) 900-5493</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">&#9989; "Free" stated at the button</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; "Contact Us Now"</div>            <div>(800) 836-6400 &mdash; toll-free</div>            <div style="margin-top:4px;font-size:11px;color:#666;">"Free consultation" appears elsewhere, not on the button</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Solid service schema, but no rating/FAQ</div>            <div style="color:#059669;">&#9989; LegalService (name, phone, priceRange, address)<br/>&#9989; Service &mdash; "Brain Injury"<br/>&#9989; OfferCatalog + Offer<br/>&#9989; PostalAddress + AdministrativeArea</div>            <div style="color:#c0392b;margin-top:4px;">&#10060; No FAQPage<br/>&#10060; No AggregateRating <em>on this page</em><br/>&#10060; No BreadcrumbList<br/>&#10060; No Attorney / Person</div>
+            <div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #e67e22;font-size:11px;line-height:1.5;">
+              <strong style="color:#e67e22;">&#9888;&#65039; Stars are inherited, and they're the wrong number.</strong><br/>
+              Gallardo already renders stars in the SERP, but the value comes from the homepage's <code>AggregateRating</code> (<strong>4.2</strong>), not this page. So it displays <strong>4.2</strong> directly beneath Goldberg's <strong>4.9</strong> &mdash; the stars are currently <em>losing</em> the click.
+            </div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">&#9989; Rich-result eligible via ratings</div>            <div style="color:#059669;">&#9989; Organization<br/>&#9989; AggregateRating &mdash; 4.9 / 998<br/>&#9989; BreadcrumbList<br/>&#9989; WebPage &middot; Product &middot; City &middot; State</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">&#9888;&#65039; No FAQPage &middot; no LegalService</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#128308; Thin schema &mdash; no rating</div>            <div style="color:#c0392b;">&#10060; LocalBusiness + PostalAddress + GeoCoordinates only<br/>&#10060; No AggregateRating &rarr; no SERP stars despite $900M in proof<br/>&#10060; No FAQPage, no BreadcrumbList</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Broad schema, no rating</div>            <div style="color:#059669;">&#9989; LegalService + BreadcrumbList<br/>&#9989; WebPage + WebSite + ImageObject</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">&#10060; No AggregateRating, no FAQPage &middot; thin content undercuts it</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">&#128273; Key takeaway from keyword analysis:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Why Goldberg &amp; RBR out-compete Gallardo for "miami brain injury lawyer":</strong><br/>
+          1. <strong>Goldberg owns the stars:</strong> 4.9 from 998 reviews in AggregateRating schema renders review stars in the SERP; Gallardo inherits <strong>4.2</strong> from its homepage and sits directly beneath &mdash; the stars are losing the click, not the ranking (Gallardo is already 8.42)<br/>
+          2. <strong>RBR proves outcomes:</strong> "$900M in verdicts &amp; settlements", 50+ years, Best Lawyers &mdash; Gallardo's page shows no verdict, no settlement and no review count a searcher can verify<br/>
+          3. <strong>RBR's outline is more complete:</strong> 10 H2s covering symptoms, compensation, why-choose and community proof &mdash; Gallardo's 6 H2s skip symptoms and a dedicated compensation/damages section<br/>
+          4. <strong>Everyone says "free" at the ask except Gallardo:</strong> Goldberg "Free &amp; Confidential", RBR "Schedule Your Free Consultation" &mdash; Gallardo converts on "Speak with Our Attorneys" and never repeats No-Win-No-Fee at the button<br/>
+          5. <strong>Meta-description CTA:</strong> RBR's snippet ends "for a free consultation"; Gallardo's ends "Call us" with no phone and no hook &mdash; a weaker click magnet on the same SERP
+        </div>
+        <div>
+          <strong>What Gallardo must add to dominate "miami brain injury lawyer" (pos 8.42, 1,068 impr, 1 click, 0.09% CTR):</strong><br/>
+          1. <strong>Fix the CTR, not the ranking:</strong> 8.42 with 0.09% CTR means the snippet + stars are the bottleneck. The biggest lever is the 4.2-vs-4.9 star gap &mdash; add a page-level <code>AggregateRating</code> so the number is controlled here, and work the homepage average up as a business fix<br/>
+          2. <strong>Add FAQPage schema &mdash; uncontested:</strong> none of the four rivals has it. "Time Limits for TBI Claims" and "Elements Involved in a TBI Lawsuit" are already question-shaped &mdash; mark up 5&ndash;8 Q&amp;As for an FAQ rich result no competitor can currently win<br/>
+          3. <strong>Delete or fix <code>priceRange: "$1500-$10000"</code>:</strong> a No-Win-No-Fee firm advertising a price range in schema contradicts the contingency promise &mdash; remove it or switch to the free-consult framing<br/>
+          4. <strong>Put proof on the page:</strong> add verdict/settlement figures, the Google review count + rating as crawlable text, years in practice and an attorney bio &mdash; the single largest gap vs RBR ($900M) and Goldberg (998 reviews)<br/>
+          5. <strong>Capture the geo + variant cluster:</strong> 3,000+ zero-click impressions sit in "aventura", "north miami", "coral gables", "traumatic/tbi" and "attorney" variants where the page already ranks 8&ndash;15. Add H2s/anchors for "traumatic brain injury attorney", "TBI lawyer" and the North Miami / Aventura / Coral Gables service areas, plus symptoms and compensation sections
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/miami-brain-injury-lawyer_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/miami-brain-injury-lawyer_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/miami-brain-injury-lawyer_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
