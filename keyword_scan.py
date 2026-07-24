@@ -845,6 +845,28 @@ BRAININJURY_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Spanish twin of BRAININJURY_EN (gallardolawyers.com/es/lesionados/...). Variants
+# are lowercase and accent-free because normalize() strips accents before matching.
+BRAININJURY_ES = [
+    ("lesiones cerebrales", ["lesion cerebral", "lesiones cerebrales", "lesion de cerebro", "lesiones del cerebro"]),
+    ("abogados de lesiones cerebrales en miami", ["abogados de lesiones cerebrales en miami", "abogado de lesiones cerebrales en miami", "abogado de lesiones cerebrales miami", "abogados de lesiones cerebrales miami"]),
+    ("abogado de lesiones cerebrales", ["abogado de lesiones cerebrales", "abogados de lesiones cerebrales", "abogados lesiones cerebrales", "lesiones cerebrales abogado"]),
+    ("abogado de lesion de cerebro", ["abogado de lesion de cerebro", "abogado de lesion al cerebro", "abogado lesion de cerebro", "abogado de cerebro"]),
+    ("lesiones cerebrales traumaticas / tce", ["lesiones cerebrales traumaticas", "abogado de lesiones cerebrales traumaticas", "abogados de lesiones cerebrales traumaticas", "traumatismo cerebral", "abogado de traumatismo cerebral", "abogado de tce", "trauma craneal", "abogado de trauma craneal", "abogado de traumatismos cerebrales"]),
+    ("lesiones cerebrales y espinales / de columna", ["abogado de lesiones cerebrales y espinales", "mejor abogado de lesiones cerebrales y espinales", "abogado de lesiones cerebrales y de columna", "abogado de lesiones cerebrales y de columna vertebral", "abogado de lesiones cerebrales y de la columna vertebral", "mejor abogado de lesiones cerebrales y de columna", "mejor abogado de lesiones cerebrales y de columna vertebral"]),
+    ("lesiones de la medula espinal", ["lesion de la medula espinal", "lesiones de la medula espinal", "abogado de lesiones de la medula espinal", "lesion espinal", "lesiones espinales"]),
+    ("lesiones en la cabeza", ["abogado de lesiones en la cabeza miami", "abogado para lesiones la cabeza", "lesiones en la cabeza", "abogados por golpes en la cabeza"]),
+    ("lesion cerebral infantil / perinatal", ["lesiones cerebrales infantiles", "lesion cerebral perinatal", "lesion cerebral de nacimiento", "abogado de lesiones cerebrales perinatales"]),
+    ("lesion cerebral hipoxica / anoxica", ["lesion cerebral hipoxica", "lesion cerebral anoxica", "encefalopatia isquemica hipoxica", "encefalopatia bilirrubinica"]),
+    ("demanda / compensacion por lesion cerebral", ["demanda por lesion cerebral", "compensacion por lesion cerebral", "acuerdo por lesion cerebral", "reclamo por lesion cerebral"]),
+    ("estatuto de limitaciones / plazo", ["estatuto de limitaciones", "plazo para demandar", "limites de tiempo para reclamaciones de tbi", "cuanto tiempo tengo para presentar"]),
+    ("consulta gratis / honorarios", ["consulta gratis", "consulta gratuita", "evaluacion gratuita", "no gana no paga", "sin honorarios", "honorarios de contingencia"]),
+    ("abogado de lesiones personales", ["abogado de lesiones personales", "abogados de lesiones personales", "abogado de lesiones"]),
+    ("lesiones cerebrales cerca de mi", ["abogado de lesiones cerebrales cerca de mi", "abogado de lesion cerebral cerca de mi"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── Structured data (schema.org) rows ────────────────────────────────────────
 # Tracked the same way as keywords: each row counts how many times that JSON-LD
 # @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
@@ -956,6 +978,8 @@ PAGES = {
         {"slug": "product-liability-attorney-miami", "lang": "en", "kw": PRODLIAB_EN},
     "https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami":
         {"slug": "abogados-de-responsabilidad-del-producto-en-miami", "lang": "es", "kw": PRODLIAB_ES},
+    "https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami":
+        {"slug": "abogados-de-lesiones-cerebrales-en-miami", "lang": "es", "kw": BRAININJURY_ES},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate

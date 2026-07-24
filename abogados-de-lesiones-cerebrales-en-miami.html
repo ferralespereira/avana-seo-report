@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallardo — Abogados de Lesiones Cerebrales en Miami | Análisis SEO</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+  <a href="abogados-de-lesiones-cerebrales-en-miami-improvements.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">View Page Improvements →</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; abogados de lesiones cerebrales en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 100)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="abogados-de-lesiones-cerebrales-en-miami"></div>
+<div class="geo-history" data-slug="abogados-de-lesiones-cerebrales-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isOwn) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isOwn ? 2 : 1.5,
+        borderDash: isOwn ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isOwn ? 4 : 3,
+        pointHoverRadius: isOwn ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('gallardolawyers') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Palabra clave</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    abogados de lesiones cerebrales en miami
+    <button onclick="navigator.clipboard.writeText('abogados de lesiones cerebrales en miami'); this.textContent='¡Copiado!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copiar</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami'); this.textContent='¡Copiado!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clics</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Palabra clave: "abogados de lesiones cerebrales en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impresiones</div>
+    <div class="kpi-value">80</div>
+    <div class="kpi-source">Palabra clave: "abogados de lesiones cerebrales en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0%</div>
+    <div class="kpi-source">Palabra clave: "abogados de lesiones cerebrales en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Posición</div>
+    <div class="kpi-value">3.94</div>
+    <div class="kpi-source">Palabra clave: "abogados de lesiones cerebrales en miami" — consulta principal</div>
+  </div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN (keyword-filtered) ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Desglose por dispositivo para la palabra clave "abogados de lesiones cerebrales en miami" (filtrado por palabra clave)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Dispositivo</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clics</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impresiones</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Posición</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">📱 Móvil</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">0</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">81</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">0%</td>
+        <td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">3.93</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Solo móvil — la exportación de GSC filtrada por palabra clave contiene únicamente la fila Móvil (sin Escritorio ni Tableta): esta consulta en español solo recibe impresiones en móvil. Las 81 impresiones del dispositivo frente al total de la consulta (80) son un artefacto conocido de redondeo/anonimización de GSC entre las tablas de consulta y de dispositivo bajo el mismo filtro.</div>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="es-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — Todas las consultas para <span style="font-size:16px;font-weight:900;">https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami</span> — Últimos 3 meses</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Mostrar</a>
+  </div>
+  <div id="es-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Clics totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">0</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Impresiones totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">10,250</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">CTR promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">0%</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Posición promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">18.58</div></div>
+    </div>
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Consultas sin clics con más de 100 impresiones</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Consulta</th>
+            <th style="padding:7px 10px;text-align:right;">Impresiones</th>
+            <th style="padding:7px 10px;text-align:right;">Posición</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">mejor abogado de lesiones cerebrales y espinales</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">2,428</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">21.18</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">mejor abogado de lesiones cerebrales y de columna</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">1,531</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">21.4</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesión de cerebro</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">1,484</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">5.88</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones cerebrales y de columna</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">1,106</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">26.46</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones cerebrales y espinales</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">1,006</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">24.69</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones cerebrales</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">903</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">14.06</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de lesiones cerebrales</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">459</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">20.26</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados lesiones cerebrales</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">151</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">16.15</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones cerebrales miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">131</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">8.16</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones cerebrales y de columna vertebral</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">120</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">20.56</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones en la cabeza miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">116</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">6.13</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">mejor abogado de lesiones cerebrales y de columna vertebral</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">103</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">14.06</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Mostrando las 12 de 12 consultas sin clics con más de 100 impresiones · La página acumula 10,250 impresiones y <strong>cero clics</strong> en total — pese a rankear pos 3.94 en la keyword exacta · El clúster de mayor demanda combina <strong>cerebro + columna/espinal</strong> ("mejor abogado de lesiones cerebrales y espinales" 2,428, "…y de columna" 1,531, "…y espinales" 1,006) — una intención que esta página solo-cerebro no cubre · Fuente: exportación de GSC filtrada por URL, 2026-07-24</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Palabras Clave Primarias y Secundarias — Análisis de Página</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extraído del código fuente en vivo — Gallardo ✅ | Freidin Brown ✅ | Wolfson &amp; Leon ✅ | Panter ✅ &middot; Consultado 2026-07-24</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Elemento</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Gallardo 🔴 NUESTRA PÁGINA<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami" style="color:#fff;text-decoration:none;" target="_blank">gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Freidin Brown, P.A. ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.yourfloridatrialteam.com/es/miami/abogado-de-lesiones-cerebrales-traumaticas/" style="color:#fff;text-decoration:none;" target="_blank">yourfloridatrialteam.com/es/miami/abogado-de-lesiones-cerebrales-traumaticas/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Wolfson &amp; Leon ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.wolfsonlawfirm.com/espanol/comunidades-atendidas/spanish-north-miami-beach/abogado-de-lesiones-cerebrales-traumaticas-en-miami-beach/" style="color:#fff;text-decoration:none;" target="_blank">wolfsonlawfirm.com/…/abogado-de-lesiones-cerebrales-traumaticas-en-miami-beach/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Panter, Panter &amp; Sampedro ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://panterlaw.com/es/personal-injury/brain-spinal-cord-injuries/" style="color:#fff;text-decoration:none;" target="_blank">panterlaw.com/es/personal-injury/brain-spinal-cord-injuries/</a>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Etiqueta de título</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Título de coincidencia exacta</div>
+            "Abogados de lesiones cerebrales en Miami | Gallardo Law Firm"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword exacta al frente + marca<br/>✅ ~58 caracteres — sin truncado</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin "traumática/TBI" ni "espinal/columna" — pierde los dos clústeres de mayor demanda</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Keyword + marca</div>
+            "Abogado de Lesiones Cerebrales en Miami | Freidin Brown"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword al frente + marca corta</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Singular "abogado" y sin variante espinal</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Título = H1 (duplicado) — sin marca</div>
+            "Abogado de Lesiones Cerebrales Traumáticas en Miami Beach"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Incluye "traumáticas" (TBI)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Geo de nicho "Miami Beach", no "Miami"; sin sufijo de marca</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Cubre el clúster cerebro + médula espinal</div>
+            "Abogado de lesiones cerebrales y de médula espinal en Miami | Abogado de lesiones de la médula espinal"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "cerebrales Y médula espinal" = el clúster de 5,900+ impresiones</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Largo — se trunca en el SERP</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Abogados de Lesiones Cerebrales en Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Coincide con título y keyword<br/>✅ Alineación temática fuerte</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin señal de valor/resultado (sin honorario, sin veredicto)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Abogado de Lesiones Cerebrales Traumáticas en Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Añade "Traumáticas" (TBI) — variante que la página capta<br/>✅ Geo "Miami" limpio</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Abogado de Lesiones Cerebrales Traumáticas en Miami Beach"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Geo explícito</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Idéntico al título; geo "Miami Beach"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Abogados de lesiones cerebrales y de la médula espinal en Miami"            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Plural + cerebro Y médula espinal + geo — el H1 con mejor cobertura de intención</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keyword primaria</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogados de lesiones cerebrales en miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Consistente en título, H1, meta, slug de URL y schema — el targeting más ajustado en la keyword exacta. Ya rankea <strong>pos 3.94</strong> en esta keyword</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Ignora "espinal/columna" (5,900+ impresiones) y "traumática/TBI"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado de lesiones cerebrales traumáticas miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Cubre el clúster "traumáticas/TBI" además de la keyword base</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ lesiones cerebrales traumáticas (Miami Beach)</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Geo de nicho — compite por "Miami Beach", no por "Miami"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado de lesiones cerebrales y de médula espinal miami</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Cubre exactamente el clúster combinado que genera la mayor demanda sin clics de Gallardo (2,428 + 1,531 + 1,006 + …)</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keywords secundarias (H2)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div>• Los casos que los abogados de lesiones cerebrales manejamos<br/>• Causas más comunes de lesiones cerebrales<br/>• Elementos claves durante una demanda por lesión<br/>• Límites de tiempo para reclamaciones de TBI en Miami<br/>• ¿Cómo puede ayudarle un abogado de lesiones cerebrales?<br/>• Los abogados de Gallardo representan a las víctimas</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Incluye "límites de tiempo/TBI" (estatuto)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ 6 H2 — sin "lesiones de médula espinal", sin "cuánto vale mi caso", sin "resultados/veredictos"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div>• Recuperar la compensación máxima por lesiones cerebrales<br/>• Ayudamos a víctimas de una variedad de accidentes<br/>• Ayudamos a las víctimas a tomar medidas<br/>• Daños recuperables por una lesión cerebral en Florida<br/>• Comuníquese con Freidin Brown para su caso</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ 5 H2 — enfoque en compensación, daños recuperables y acción</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div>• Lesiones Cerebrales Traumáticas Comunes<br/>• Bufete de Abogados de TBI en Miami Beach<br/>• Bufete de Accidentes de TBI en Miami Beach<br/>• Daños y Perjuicios<br/>• Client Reviews<br/>• Contáctenos</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ 6 H2 pero delgados; "Client Reviews" sin traducir</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div>• Revisión de caso GRATIS<br/>• ¿Necesita un abogado de cerebro y médula?<br/>• Tipos de lesiones cerebrales y de médula espinal<br/>• Lesiones cerebrales / Lesiones de médula espinal<br/>• Los resultados de nuestros casos hablan por sí solos<br/>• ¿Por qué Panter? · ¿Qué servicios? · ¿Cuánto cobra? · ¿Tengo un caso legítimo?</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ 13 H2 — cubre médula espinal, resultados, honorarios y FAQ de intención</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cantidad de palabras</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~3,300 palabras — sólida pero superada por Panter</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Buena base de contenido<br/></div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ ~2× menos que Panter — sin sección de médula espinal ni de resultados</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~2,800–3,200 palabras</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Profundidad comparable a Gallardo, con más prueba social</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ~1,200–1,400 palabras — la más delgada</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Se apoya en la autoridad de dominio y red de sedes</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~6,500+ palabras — la más profunda</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Profundidad de formato largo = señal E-E-A-T en tema legal YMYL</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señal de costo</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Precio solo en schema — invisible para el buscador</div>            <div>• <code>priceRange: "$1500-$10000"</code> en LegalService JSON-LD<br/>• Menciona "gratis" en el cuerpo</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Un rango $1,500–$10,000 en una firma de contingencia es confuso — implica que el cliente paga<br/>❌ Sin "no gana, no paga" claro en el punto de conversión</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Sin recuperación, sin honorarios"</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Ofrecemos consultas gratuitas" — contingencia clara</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Consulta Gratuita" (repetido)</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Promesa de gratis junto al teléfono</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Revisión de caso GRATIS" (5+) + 24/7</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ "Sin recuperación, sin comisiones" — reversión de riesgo clara</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta descripción</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Presente y liderada por keyword — la ÚNICA de las cuatro con meta</div>            "Abogados de lesiones cerebrales en Miami. En casos de lesiones cerebrales por accidentes o negligencia Gallardo Law Firm es la ayuda legal que necesita."            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword exacta primero</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin CTA fuerte, sin teléfono, sin "gratis"<br/>❌ Termina en afirmación pasiva — con pos 3.94 y 0% CTR, este es el cuello de botella</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Google escribe su propio snippet — sin control de CTR</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin control de snippet</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin control de snippet</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cobertura de FAQ</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Sección FAQs + microdatos FAQPage</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Elegible para rich results; también existe una página /faqs/ dedicada</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Cobertura ligera; menos preguntas de intención que Panter</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin sección FAQ dedicada</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Contenido en prosa, sin bloque Q&amp;A con schema</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ FAQ en página aparte</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Enlaza a /faq-preguntas-mas-frecuentes/ — no on-page</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ FAQ on-page (H2 = preguntas)</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Por qué elegirnos, servicios, honorarios, legitimidad del caso</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señales de confianza</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 El stack de confianza más débil — nada cuantificado</div>            <div>• Badge de reseñas de Google (sin conteo ni calificación visible)<br/>• "24/7 Disponible" · Bilingüe · Oficinas FL + TX</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin veredictos/acuerdos<br/>❌ Sin conteo de reseñas<br/>❌ Sin años de práctica en la página<br/>❌ Sin bio de abogado<br/>❌ Hereda la calificación de la home (Google la muestra en el SERP)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Stack de autoridad muy fuerte</div>            <div>• 100+ reseñas de Google<br/>• 100+ años de experiencia combinada · 45+ años en servicio<br/>• $500M+ recuperado · casos $12.7M · $5.8M · $1.2M<br/>• 2 abogados litigantes civiles certificados por la Junta<br/>• Perfiles de abogados nombrados</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Prueba con montos y conteo de reseñas — muy persuasivo</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Antigüedad + testimonios, sin cifras</div>            <div>• Fundado en 1963 (60+ años)<br/>• 5 testimonios con nombres<br/>• Varias sedes (Miami, Fort Lauderdale, West Palm, Fort Myers, Hialeah)<br/>• Perfiles sociales (Avvo, Yelp, etc.)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin veredictos/acuerdos cuantificados</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El stack de prueba más fuerte</div>            <div>• 30+ años de práctica<br/>• $102.7M (puente FIU) · $11.9M · $7.7M · $7M (acuerdo TBI)<br/>• Best Lawyers · AV® Preeminent™ · Super Lawyers® · Board Certified<br/>• 5 abogados nombrados con bio · 13+ testimonios</div>            <div style="margin-top:4px;font-size:11px;color:#059669;">✅ Montos nombrados + certificaciones — el más creíble de los cuatro</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ CTA suave — sin reversión de riesgo en el punto de conversión</div>            <div>• "Habla con Nuestros Abogados"<br/>• "CONSULTA VIRTUAL"<br/>• (305) 261-7000</div>            <div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ No repite "gratis / no gana, no paga" en el CTA</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "CONTÁCTENOS AHORA"</div>            <div>888-677-7764 · (305) 371-3666 — junto a "consultas gratuitas"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Solicite una Consulta Gratuita"</div>            <div>(305) 285-1115 — promesa de gratis en el CTA</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Obtenga su revisión de caso GRATIS"</div>            <div>305-662-6178 — "Consulta Gratis" 24/7 repetida</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Marcado de schema</td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Buen schema base</div>            <div style="color:#059669;">✅ LegalService (nombre, teléfono, dirección)<br/>✅ Service — "Lesiones Cerebrales"<br/>✅ OfferCatalog + Offer<br/>✅ PostalAddress + AdministrativeArea<br/>✅ Microdatos FAQPage</div>            <div style="color:#c0392b;margin-top:4px;">❌ Sin AggregateRating en la página (hereda de la home)<br/>❌ Sin BreadcrumbList<br/>❌ Sin Attorney/Person</div>
+            <div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #e67e22;font-size:11px;line-height:1.5;">
+              <strong style="color:#e67e22;">⚠️ priceRange "$1500-$10000"</strong> contradice la contingencia — mismo patrón que el gemelo de responsabilidad del producto.
+            </div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Probable rich results</div>            <div style="color:#059669;">✅ Organization · LocalBusiness / LegalService<br/>✅ AggregateRating (100+ reseñas visibles)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ JSON-LD no confirmado en detalle</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Schema no visible con claridad</div>            <div style="margin-top:4px;font-size:11px;color:#666;">Estructura sugiere LocalBusiness/Organization; FAQ en página aparte</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ FAQ + LocalBusiness</div>            <div style="color:#059669;">✅ FAQPage (H2 = preguntas)<br/>✅ LocalBusiness / LawFirm<br/>✅ ContactPoint (7 sedes)</div>            <div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ AggregateRating no confirmado</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Conclusión clave del análisis de keywords:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Por qué Panter y Freidin Brown superan a Gallardo en el nicho de lesiones cerebrales:</strong><br/>
+          1. <strong>Capturan el clúster cerebro + médula espinal:</strong> el título y H1 de Panter incluyen "y de médula espinal" — exactamente el clúster de mayor demanda de Gallardo (2,428 + 1,531 + 1,006 + 120 + 103 ≈ 5,900 impresiones sin clics) que la página solo-cerebro no targetea<br/>
+          2. <strong>La prueba gana a las afirmaciones:</strong> Panter nombra veredictos ($102.7M, $7M TBI) y Freidin Brown "$500M+ recuperado" + "100+ reseñas"; la página de Gallardo no tiene ni un veredicto, ni conteo de reseñas, ni bio de abogado<br/>
+          3. <strong>Profundidad de contenido:</strong> Panter ~6,500 palabras con secciones dedicadas a médula espinal y resultados vs Gallardo ~3,300 sin esas secciones — en YMYL, la profundidad es señal directa de E-E-A-T<br/>
+          4. <strong>"Gratis" en el punto de conversión:</strong> los tres competidores dicen "consulta/revisión gratis" o "sin recuperación, sin honorarios" en el CTA; el CTA de Gallardo es "Habla con Nuestros Abogados" y no repite la promesa de contingencia<br/>
+          5. <strong>Reseñas visibles y con schema:</strong> Freidin Brown muestra 100+ reseñas y probable AggregateRating; Gallardo hereda la calificación de la home — que Google no puede mejorar desde esta página
+        </div>
+        <div>
+          <strong>Lo que Gallardo debe añadir (pos 3.94 en la keyword exacta — ya casi top 3, pero 0% CTR):</strong><br/>
+          1. <strong>Arreglar el snippet — máxima prioridad:</strong> la keyword exacta ya rankea 3.94 con 80 impresiones y <em>cero</em> clics, y la URL suma 10,250 impresiones con 0 clics — el cuello de botella es el snippet/CTR, no el ranking. La meta ya existe (ventaja única); reescribir con CTA: "¿Lesión cerebral en Miami? No gana, no paga. Consulta gratis 24/7 — llame al (305) 261-7000."<br/>
+          2. <strong>Targetear el clúster "cerebrales y espinales / de columna":</strong> es la mayor demanda (5,900+ impresiones). Añadir una sección/H2 de "lesiones de médula espinal y columna" y una variante de título, o crear/enlazar una página hermana — hoy Panter se lleva esa intención<br/>
+          3. <strong>Poner la prueba en la página:</strong> veredictos/acuerdos, conteo y calificación de reseñas como texto rastreable, años de práctica y bio del abogado — la mayor brecha vs Panter y Freidin Brown<br/>
+          4. <strong>Añadir AggregateRating + BreadcrumbList y corregir priceRange "$1500-$10000":</strong> el rango contradice la contingencia; sustituir por señal de "consulta gratis / no gana, no paga"<br/>
+          5. <strong>Ampliar cobertura de intención:</strong> añadir H2 de "¿cuánto vale mi caso de lesión cerebral?" y "abogado de lesiones en la cabeza" (query con 116 impresiones, pos 6.13) — preguntas de alta intención que hoy no tienen sección propia
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/abogados-de-lesiones-cerebrales-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/abogados-de-lesiones-cerebrales-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/abogados-de-lesiones-cerebrales-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>

@@ -129,6 +129,9 @@ keywords = [
     {"keyword": "abogados de responsabilidad del producto en miami",
      "url": "https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami",
      "lang": "es"},
+    {"keyword": "abogados de lesiones cerebrales en miami",
+     "url": "https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami",
+     "lang": "es"},
 ]
 
 # Locations to check each keyword from (Miami only)
