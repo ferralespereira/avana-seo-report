@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miami Brain Injury Lawyer – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-del     { color: #f38ba8; text-decoration: line-through; opacity: 0.75; }
+        .fix-item  { font-size: 1.05rem; }
+
+        /* ── Info card ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* ── Keyword table ── */
+        .kw-table-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; max-width: 900px;
+        }
+        .kw-table-wrap { overflow-x: auto; }
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        .kw-table th {
+            background: #2a2a3d; color: #8b8ba7; font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            padding: 10px 12px; text-align: left; white-space: nowrap;
+        }
+        .kw-table th.num { text-align: right; }
+        .kw-table td { padding: 9px 12px; border-bottom: 1px solid #e8eaed; color: #24292e; vertical-align: middle; }
+        .kw-table tr:last-child td { border-bottom: none; }
+        .kw-table tbody tr:hover td { background: #f8f9fa; }
+        .kw-before { text-align: right; color: #f38ba8; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-after  { text-align: right; color: #28c840; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-change { text-align: right; color: #0070c9; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-flat   { text-align: right; color: #8b8ba7; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-down   { color: #d97706; }
+        .kw-num    { text-align: right; color: #6a737d; font-variant-numeric: tabular-nums; }
+        .kw-cpc    { text-align: right; color: #b8892b; font-weight: 600; font-variant-numeric: tabular-nums; }
+        .kw-pos    { text-align: right; color: #24292e; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+        /* ── Sections list ── */
+        .sections-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* ── Subsection group label ── */
+        .group-label {
+            font-size: 0.75rem; color: #444d56; font-weight: 700;
+            margin-bottom: 14px; border-bottom: 1px solid #e8eaed;
+            padding-bottom: 6px;
+        }
+
+        /* ── Sub-section label ── */
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+
+        /* ── Before / After blocks ── */
+        .ba-before {
+            background: #fff8f8; border-left: 3px solid #f38ba8;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-after {
+            background: #f0fdf4; border-left: 3px solid #28c840;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-note { font-size: 0.79rem; color: #6a737d; font-style: italic; }
+
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        .schema-divider { height: 1px; background: #e8eaed; }
+
+        /* ── Callout / warning banner ── */
+        .callout {
+            max-width: 900px; border-radius: 8px; padding: 14px 18px;
+            font-size: 0.84rem; line-height: 1.6; margin-bottom: 18px;
+        }
+        .callout-warn { background: #fff8f0; border-left: 4px solid #febc2e; color: #24292e; }
+        .callout-info { background: #eef6ff; border-left: 4px solid #0070c9; color: #24292e; }
+        .callout-legal { background: #fdf6ec; border-left: 4px solid #b8892b; color: #24292e; }
+        .callout strong { font-weight: 700; }
+
+        /* ── Schema grid ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+
+        /* ── Badge ── */
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .fixed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #dbeafe; color: #1e40af; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .removed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fee2e2; color: #991b1b; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .pending-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fef3c7; color: #92400e; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── GEO Status ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+
+        /* ── Stat tiles ── */
+        .stat-row { display: flex; flex-wrap: wrap; gap: 14px; max-width: 900px; margin-bottom: 18px; }
+        .stat-tile {
+            flex: 1 1 150px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 16px 18px;
+        }
+        .stat-value { font-size: 1.35rem; font-weight: 700; color: #24292e; font-variant-numeric: tabular-nums; }
+        .stat-value .from { color: #f38ba8; }
+        .stat-value .to { color: #28c840; }
+        .stat-label { font-size: 0.72rem; color: #6a737d; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="miami-brain-injury-lawyer.html" style="font-size:13px;font-weight:600;color:#b8892b;text-decoration:none;">← Miami Brain Injury Lawyer Analysis</a>
+    </div>
+    <h1>Miami Brain Injury Lawyer — SEO Improvements</h1>
+    <p class="subtitle">miami-brain-injury-lawyer &nbsp;·&nbsp; Gallardo Law Firm &nbsp;·&nbsp; Updated 2026-07-24 &nbsp;·&nbsp; En / article.cshtml + FaqEntities.xml + ServiceEntities.xml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer" target="_blank" rel="noopener">https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Target Keyword</span>
+            <span class="page-info-keyword">miami brain injury lawyer</span>
+            <button class="copy-btn" onclick="copyPageInfo('miami brain injury lawyer', this)">copy</button>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         HEADLINE STAT TILES
+    ════════════════════════════════════ -->
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">2,545</span> → <span class="to">4,157</span></div>
+            <div class="stat-label">Crawlable EN words (+63%)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value">255</div>
+            <div class="stat-label">Keywords merged (106 GSC · 136 SEM)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">12</span></div>
+            <div class="stat-label">Inbound internal links</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">7</span></div>
+            <div class="stat-label">Related-service cross-links</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">3</span></div>
+            <div class="stat-label">JSON-LD blocks on the page</div>
+        </div>
+    </div>
+
+    <div class="callout callout-legal">
+        <strong>This is a legal (YMYL) page — every content block is PENDING ATTORNEY / FIRM REVIEW.</strong> All edits below are applied to the working tree and marked inline in <code style="font-size:0.78rem">article.cshtml</code>; they must not be published until Gallardo signs off. The service-area list and the statute-of-limitations framing are the two blocks that need counsel most. Statutes and CDC figures were verified as cited, but this is not legal advice.
+    </div>
+
+
+
+    <!-- ════════════════════════════════════
+         1. KEYWORD TARGETS (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keywords On The Page — Before → After</div>
+
+        <div class="callout callout-info">
+            One master table was built from three sources: <strong>Google Search Console</strong> (last 3 months, this URL — 106 queries), the <strong>Semrush keyword-gap report</strong> (136 keywords, volume / KD / our rank vs 3 competitors) and a <strong>Semrush bulk-volume export</strong> that filled 45 previously blank volumes. Total <strong>255 unique keywords</strong>, deduped into one file.
+        </div>
+
+        <div class="kw-table-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Was (pre-expansion baseline) → Now (recounted) &nbsp;·&nbsp; VOL/KD/RANK = Semrush US &nbsp;·&nbsp; POS/Impr = GSC 3-mo</span>
+            </div>
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th class="num">Vol/mo</th>
+                            <th class="num">KD</th>
+                            <th class="num">GSC pos</th>
+                            <th class="num">Impr</th>
+                            <th class="num">Rank</th>
+                            <th class="num">Was</th>
+                            <th class="num">Now</th>
+                            <th class="num">Δ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>brain injury lawyer <span style="font-style:italic;color:#6a737d;">(head term)</span></td><td class="kw-num">18,100</td><td class="kw-num">29</td><td class="kw-pos">8.3</td><td class="kw-num">218</td><td class="kw-num">—</td><td class="kw-before">15</td><td class="kw-after">27</td><td class="kw-change">+12</td></tr>
+                        <tr><td>brain injury attorney <span class="new-badge">BIGGEST GAP</span></td><td class="kw-num">12,100</td><td class="kw-num">33</td><td class="kw-pos">9.7</td><td class="kw-num">194</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">7</td><td class="kw-change">+7</td></tr>
+                        <tr><td>brain injury lawyers</td><td class="kw-num">5,400</td><td class="kw-num">30</td><td class="kw-pos">7.9</td><td class="kw-num">8</td><td class="kw-num">—</td><td class="kw-before">9</td><td class="kw-after">16</td><td class="kw-change">+7</td></tr>
+                        <tr><td>best brain and spine injury lawyer <span style="font-style:italic;color:#6a737d;">(KD 12 — soft target)</span></td><td class="kw-num">4,400</td><td class="kw-num">12</td><td class="kw-pos">20.0</td><td class="kw-num">1</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>brain injury attorneys</td><td class="kw-num">2,400</td><td class="kw-num">29</td><td class="kw-pos">9.5</td><td class="kw-num">57</td><td class="kw-num">—</td><td class="kw-before">1</td><td class="kw-after">3</td><td class="kw-change">+2</td></tr>
+                        <tr><td>brain injury law firm</td><td class="kw-num">2,400</td><td class="kw-num">40</td><td class="kw-pos">6.4</td><td class="kw-num">31</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>brain injury attorney near me <span style="font-style:italic;color:#6a737d;">(transactional)</span></td><td class="kw-num">1,600</td><td class="kw-num">28</td><td class="kw-pos">9.5</td><td class="kw-num">252</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>brain injury lawyer near me</td><td class="kw-num">1,600</td><td class="kw-num">32</td><td class="kw-pos">17.2</td><td class="kw-num">6</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>traumatic brain injury attorney near me</td><td class="kw-num">1,000</td><td class="kw-num">29</td><td class="kw-pos">9.5</td><td class="kw-num">2</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>north miami brain injury lawyer</td><td class="kw-num">320</td><td class="kw-num">9</td><td class="kw-pos">21.8</td><td class="kw-num">478</td><td class="kw-pos">23</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>miami brain injury lawyer <span style="font-style:italic;color:#6a737d;">(the named target — most impressions on the page)</span></td><td class="kw-num">210</td><td class="kw-num">12</td><td class="kw-pos">8.4</td><td class="kw-num">1,068</td><td class="kw-pos">11</td><td class="kw-before">7</td><td class="kw-after">7</td><td class="kw-flat">=</td></tr>
+                        <tr><td>brain injury lawyer miami</td><td class="kw-num">210</td><td class="kw-num">3</td><td class="kw-pos">11.2</td><td class="kw-num">677</td><td class="kw-pos">13</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>brain injury attorney miami</td><td class="kw-num">140</td><td class="kw-num">4</td><td class="kw-pos">10.4</td><td class="kw-num">498</td><td class="kw-pos">16</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>brain injuries attorney aventura</td><td class="kw-num">140</td><td class="kw-num">8</td><td class="kw-pos">13.5</td><td class="kw-num">356</td><td class="kw-pos">25</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>traumatic brain injury lawyer north miami</td><td class="kw-num">140</td><td class="kw-num">4</td><td class="kw-pos">18.4</td><td class="kw-num">311</td><td class="kw-pos">24</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>miami brain injury attorney</td><td class="kw-num">110</td><td class="kw-num">9</td><td class="kw-pos">9.8</td><td class="kw-num">340</td><td class="kw-pos">16</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>traumatic brain injury attorney aventura</td><td class="kw-num">110</td><td class="kw-num">4</td><td class="kw-pos">15.1</td><td class="kw-num">335</td><td class="kw-pos">24</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>traumatic brain injury attorney miami</td><td class="kw-num">70</td><td class="kw-num">2</td><td class="kw-pos">8.9</td><td class="kw-num">321</td><td class="kw-pos">16</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>tbi lawyers miami <span style="font-style:italic;color:#6a737d;">(acronym cluster)</span></td><td class="kw-num">70</td><td class="kw-num">4</td><td class="kw-pos">12.9</td><td class="kw-num">180</td><td class="kw-pos">16</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>coral gables brain injury law firm <span style="font-style:italic;color:#6a737d;">(worst geo cluster)</span></td><td class="kw-num">70</td><td class="kw-num">4</td><td class="kw-pos">23.6</td><td class="kw-num">100</td><td class="kw-pos">29</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>miami brain injury lawyers</td><td class="kw-num">40</td><td class="kw-num">7</td><td class="kw-pos">9.2</td><td class="kw-num">21</td><td class="kw-pos">8</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>miami brain injury law firm</td><td class="kw-num">0*</td><td class="kw-num">—</td><td class="kw-pos">4.1</td><td class="kw-num">8</td><td class="kw-num">—</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="padding:12px 16px;font-size:0.78rem;color:#6a737d;font-style:italic;line-height:1.5;border-top:1px solid #e8eaed;">
+                "Now" counts describe on-page presence only, not rankings. <strong>Rank</strong> = Semrush position (— = tracked but outside the top 100, or not tracked). Google reads singular/plural and word-order variants (brain injury lawyer / lawyers / attorney) as one intent, so the value is in covering the <strong>cluster once</strong>. VOL = size of the national market (what to name things); Impr = what this page can reach today (what to prioritise) — never compare them directly. *VOL 0 ≠ no demand: Semrush does not track thin local long-tail; GSC proves the searches happen. Counts were re-refreshed after the work-log's interim 3,449-word snapshot, so the final figures here run higher than the ones logged mid-session.
+            </div>
+        </div>
+
+        <div class="schema-subsection-label" style="margin-top:22px;">Bare-stem density (PAGE rows — reinforcement, not a keyphrase)</div>
+        <div class="kw-table-card">
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Stem</th><th class="num">Was</th><th class="num">Now</th><th class="num">Δ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>injury <span style="font-style:italic;color:#6a737d;">(word)</span></td><td class="kw-before">64</td><td class="kw-after">143</td><td class="kw-change">+79</td></tr>
+                        <tr><td>brain injury <span style="font-style:italic;color:#6a737d;">(phrase)</span></td><td class="kw-before">56</td><td class="kw-after">117</td><td class="kw-change">+61</td></tr>
+                        <tr><td>miami <span style="font-style:italic;color:#6a737d;">(the local signal — biggest relative gain)</span></td><td class="kw-before">10</td><td class="kw-after">30</td><td class="kw-change">+20</td></tr>
+                        <tr><td>lawyer <span style="font-style:italic;color:#6a737d;">(word)</span></td><td class="kw-before">18</td><td class="kw-after">33</td><td class="kw-change">+15</td></tr>
+                        <tr><td>tbi <span style="font-style:italic;color:#6a737d;">(acronym — was under-used)</span></td><td class="kw-before">6</td><td class="kw-after">20</td><td class="kw-change">+14</td></tr>
+                        <tr><td>case</td><td class="kw-before">15</td><td class="kw-after">27</td><td class="kw-change">+12</td></tr>
+                        <tr><td>injuries</td><td class="kw-before">16</td><td class="kw-after">26</td><td class="kw-change">+10</td></tr>
+                        <tr><td>medical</td><td class="kw-before">10</td><td class="kw-after">19</td><td class="kw-change">+9</td></tr>
+                        <tr><td>attorney <span style="font-style:italic;color:#6a737d;">(word)</span></td><td class="kw-before">8</td><td class="kw-after">16</td><td class="kw-change">+8</td></tr>
+                        <tr><td>brain injuries</td><td class="kw-before">4</td><td class="kw-after">12</td><td class="kw-change">+8</td></tr>
+                        <tr><td>claim</td><td class="kw-before">8</td><td class="kw-after">15</td><td class="kw-change">+7</td></tr>
+                        <tr><td>negligence</td><td class="kw-before">3</td><td class="kw-after">10</td><td class="kw-change">+7</td></tr>
+                        <tr><td>traumatic brain injury</td><td class="kw-before">7</td><td class="kw-after">13</td><td class="kw-change">+6</td></tr>
+                        <tr><td>compensation</td><td class="kw-before">19</td><td class="kw-after">25</td><td class="kw-change">+6</td></tr>
+                        <tr><td>accident</td><td class="kw-before">19</td><td class="kw-after">25</td><td class="kw-change">+6</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="schema-subsection-label" style="margin-top:22px;">13 tokens that were 0× on the page and now exist at all</div>
+        <div class="kw-table-card">
+            <div class="info-card-body" style="padding:16px 18px;">
+                <ul class="sections-list">
+                    <li>near me <strong style="margin-left:auto;color:#28c840;">0 → 2</strong></li>
+                    <li>free consultation <strong style="margin-left:auto;color:#28c840;">0 → 4</strong></li>
+                    <li>brain injury case <strong style="margin-left:auto;color:#28c840;">0 → 4</strong></li>
+                    <li>miami-dade <strong style="margin-left:auto;color:#28c840;">0 → 3</strong></li>
+                    <li>glasgow coma scale <strong style="margin-left:auto;color:#28c840;">0 → 3</strong></li>
+                    <li>head injury <strong style="margin-left:auto;color:#28c840;">0 → 2</strong></li>
+                    <li>traumatic brain injury (tbi) <strong style="margin-left:auto;color:#28c840;">0 → 2</strong></li>
+                    <li>statute of repose <strong style="margin-left:auto;color:#28c840;">0 → 1</strong></li>
+                    <li class="full-row">north miami · coral gables · doral · aventura · hialeah · miami gardens &nbsp;— each <strong style="color:#28c840;">0 → 1</strong> (the new service-area section)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. THE STRATEGY / GAP
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">The Keyword Strategy — Where the Demand Actually Is</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">GSC 106 queries + Semrush gap 136 kw &nbsp;·&nbsp; 255 unique keywords, one table</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block">
+                    <strong>The 12,100/mo head term was not on the page at all.</strong> "brain injury <em>attorney</em>" — 12,100 searches/mo, 194 GSC impressions, average position 9.7 — appeared <strong>0 times</strong> in the body. The page leaned entirely on "lawyer" (18,100/mo, 15×). Both are the same intent to a reader and nearly the same to Google, but a term that never appears cannot anchor a passage. Now 0 → 7, alongside "brain injury lawyer" 15 → 27.
+                    <span class="reason">These are US-wide volumes — market shape, not reachable traffic. GSC agrees on direction: the page already shows for "attorney" phrasings it never used.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">The impressions are geo, the volume is national — the two data sets point different directions, and both matter</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Cluster</th><th class="num">GSC queries</th><th class="num">Impr</th><th class="num">GSC pos</th><th class="num">Semrush rank</th><th>Token on page</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Miami core <span style="font-style:italic;color:#6a737d;">(miami / TBI / brain injury × lawyer, attorney, law firm)</span></td><td class="kw-num">11</td><td class="kw-num">3,735</td><td class="kw-pos">8.4–13.7</td><td class="kw-pos">8–18</td><td><span class="new-badge">miami 10 → 30</span></td></tr>
+                                <tr><td>North Miami</td><td class="kw-num">5</td><td class="kw-num">1,299</td><td class="kw-pos">16.2–21.8</td><td class="kw-pos">18–25</td><td><span class="new-badge">0 → 1</span></td></tr>
+                                <tr><td>Aventura</td><td class="kw-num">4</td><td class="kw-num">743</td><td class="kw-pos">13.5–15.7</td><td class="kw-pos">24–25</td><td><span class="new-badge">0 → 1</span></td></tr>
+                                <tr><td>Coral Gables <span style="font-style:italic;color:#6a737d;">(worst positions on the page)</span></td><td class="kw-num">10</td><td class="kw-num">357</td><td class="kw-pos">23.6–81.5</td><td class="kw-pos">29–62</td><td><span class="new-badge">0 → 1</span></td></tr>
+                                <tr><td>Doral</td><td class="kw-num">3</td><td class="kw-num">65</td><td class="kw-pos">15.0–53.7</td><td class="kw-pos">32</td><td><span class="new-badge">0 → 1</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">Miami core alone is <strong>3,735 impressions</strong> — over half of everything this URL earns — at positions 8–14, i.e. bottom of page 1 / top of page 2, the range where a small move is worth the most traffic. The satellite cities are where the page is weakest and the competition thinnest (Semrush KD 3–9): North Miami, Aventura and Coral Gables together are ~2,400 impressions sitting at positions 13–81 with, until now, <strong>zero</strong> mention of the city name in the copy.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">The "near me" cluster is ~5,900/mo and was 0× on the page</div>
+                    <div class="ba-after">Eight near-me variants: brain injury <strong>attorney</strong> near me (1,600/mo · 252 impr), brain injury <strong>lawyer</strong> near me (1,600), traumatic brain injury attorney near me (1,000), brain injury lawyers near me (880), plus attorneys/traumatic/law-firm/head-&amp;-brain variants. The literal token "near me" appeared <strong>0 times</strong>. It now appears twice, in the new service-area section (which also carries <code style="font-size:0.78rem">@Settings.GetPhoneFormated</code>), and two exact phrases — "brain injury attorney near me" and "brain injury lawyer near me" — are each present once. Prose that repeats "near me" reads badly; once each is the whole win.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">The long tail Google already trusts this page for — and the page barely mentions</div>
+                    <div class="ba-after">Roughly <strong>425 impressions across 25 condition-specific queries</strong> at average positions 7.7–24.5: <em>anoxic</em>, <em>hypoxic</em>, <em>hypoxic-ischemic encephalopathy</em>, <em>perinatal</em>, <em>infant</em>, <em>brain cooling</em>, <em>vegetative state</em>, <em>locked-in syndrome</em>, <em>neurological injury</em>, <em>loss of vision</em>, <em>stroke</em>, <em>TBI specialist</em> — each 0–10/mo in Semrush, so invisible to volume-first research, but Google is already ranking this URL for them. That is a content brief, not a keyword list.</div>
+                    <div class="ba-note" style="margin-top:8px;">Caution: infant / perinatal / brain-damage phrasing overlaps the birth-injury and cerebral-palsy pages. Expanding those terms here is the one move in this file that could <em>create</em> cannibalization — see the linking section, where the inbound-link pass deliberately skipped those anchors.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div class="cannibal-block" style="border-left-color:#febc2e;background:#fffbeb;">
+                    <strong>What has NOT changed: the multi-word geo phrases still read 0 on the page.</strong> "north miami brain injury lawyer", "traumatic brain injury attorney aventura", "coral gables brain injury law firm" — 2,400+ impressions between them — are counted as exact strings, and the exact strings are not in the copy. The component words now are, which is what actually moves a page. Whether to hard-code a handful of exact phrases is a copy decision, not a data one.
+                    <span class="reason">Sequence: attorney/lawyer parity (done) → satellite-city coverage (started) → work 3–4 exact geo phrases into headings → then the condition long-tail, carefully, without stealing from birth-injury.</span>
+                </div>
+
+                <div class="ba-note">Three rows in the merged table are noise, kept for transparency rather than targeting: "workers compensation doctor ives estates" (1 impr, pos 97), "gallardo law firm reviews" (brand), and two research-style queries about a real-estate investor's head injury — someone's long-form question, not a market.</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. ACCURACY FIX
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Accuracy — One FAQ Was Wrong and One Term Was Invented</div>
+
+        <div class="callout callout-warn">
+            <strong>The FAQ "How many people suffer from TBI?" carried 2002–2006 CDC figures and a fabricated classification.</strong> On a YMYL legal page, a made-up medical term is the most damaging kind of error there is — it is exactly what an E-E-A-T review, and increasingly an AI answer engine, checks first.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">App_Data/FaqEntities.xml &nbsp;·&nbsp; English entry only — Spanish left untouched per instruction</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div>
+                    <div class="schema-subsection-label">1 &middot; Stale CDC statistics <span class="fixed-badge">FIXED</span></div>
+                    <div style="display:flex;flex-direction:column;gap:7px;">
+                        <div class="ba-before">"1.7 million" TBIs and "52,000 deaths" — CDC figures from the <strong>2002–2006</strong> surveillance period, roughly two decades out of date and still presented as current.</div>
+                        <div class="ba-after">Replaced with current CDC data: approximately <strong>214,000 TBI-related hospitalizations in 2020</strong> and <strong>~69,000 TBI-related deaths in 2021</strong>. Source cited in an XML comment above the entry (cdc.gov/traumatic-brain-injury/data-research).</div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">2 &middot; "Type 1 / Type 2 TBI" — a classification that does not exist <span class="removed-badge">REMOVED</span></div>
+                    <div class="ba-before">The answer split TBI into "Type 1" and "Type 2". No such taxonomy exists in the clinical literature; it appears to have been invented for the copy.</div>
+                    <div class="ba-after">Replaced with the real, universally used severity classification — <strong>mild / moderate / severe</strong> — which is also what the new Glasgow Coma Scale table on the page now scores against, so the FAQ and the body agree for the first time.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">3 &middot; Statute of limitations re-verified <span class="fixed-badge">CONFIRMED CORRECT</span></div>
+                    <div class="ba-after">The page's "2 years" for negligence is <strong>correct</strong> under Florida HB 837 (effective 2023-03-24) — checked rather than assumed, because the pre-HB-837 figure was 4 years and stale copies of it are everywhere. No change needed; the body section around it was expanded instead (below).</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. CONTENT EXPANSION (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Expansion <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— 8 edits · body 2,545 → 4,157 words (+63%)</span></div>
+
+        <div class="callout callout-info">
+            The expansion was <strong>templated on the product-liability page</strong> — same section pattern, same TOC convention, same schema trio — so the two pages reinforce one structure instead of each inventing their own. Every edit carries a Razor comment in <code style="font-size:0.78rem">article.cshtml</code> citing its source.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Views/ServicePage/Content/injury-law/miami-brain-injury-lawyer/En/article.cshtml</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:26px;">
+
+                <!-- A: New sections -->
+                <div>
+                    <div class="group-label">A — New Content Sections (work log §7)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; "How Common Are Brain Injuries in the U.S.?" — cited stats section + table <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">Built on <strong>CDC Facts About TBI</strong>, the same corrected figures now used in the FAQ. A sourced statistic with a visible citation is the single pattern generative engines quote back most readily, and it gives the page an answer to a question competitors state without attribution.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; "Types and Severity of Brain Injuries" + Glasgow Coma Scale table <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">Mild / moderate / severe with the <strong>GCS score ranges</strong> that define them (Cleveland Clinic + Medscape). Adds the "glasgow coma scale" token (0 → 3) and the clinical vocabulary the condition long-tail searches in — and replaces the invented Type 1 / Type 2 split with the real one.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; "Time Limits for TBI Claims" expanded <span class="fixed-badge">EXPANDED</span></div>
+                            <div class="ba-before">A single "2 years" sentence — accurate, but it silently answered only the negligence case and left medical-malpractice readers with the wrong deadline.</div>
+                            <div class="ba-after">Now separates <strong>negligence</strong> from <strong>medical malpractice</strong> (Fla. Stat. 95.11 / HB 837) and adds the <strong>statute of repose</strong> (0 → 1 on the page). <span class="pending-badge">NEEDS COUNSEL</span> — the framing is a position, not a lookup.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">4 &middot; "Steps to Take After a Brain Injury" — ordered how-to list <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">A real <code style="font-size:0.78rem">&lt;ol&gt;</code> of actions after a TBI. No HowTo schema — Google retired that rich result in 2023; the value is the answer format, not markup.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">5 &middot; "Brain Injury Lawyers Serving Miami and Nearby Communities" <span class="new-badge">GEO</span></div>
+                            <div class="ba-after">North Miami, Coral Gables, Doral, Aventura, Hialeah, Miami Gardens and Miami-Dade — the exact clusters carrying 2,400+ unearned impressions — plus "near me" and <code style="font-size:0.78rem">@Settings.GetPhoneFormated</code>. Framed as <strong>service area, never branch offices</strong>. <span class="pending-badge">PENDING FIRM REVIEW</span> — which cities the firm will claim is a business decision.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">6 &middot; Table of Contents (10 sections) <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">Jump-links following the site's anchor convention, <strong>IDs verified 1:1 against their targets</strong> (a broken TOC is worse than none). Eligible for Google "jump-to" sitelinks, a structural signal for engines, and keyword-bearing anchor text in-page.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- B: Trimmed -->
+                <div>
+                    <div class="group-label">B — Self-Dilution Trimmed (work log §4–§5)</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+                        <div>
+                            <div class="schema-subsection-label">3 duplicated sections cut down and cross-linked instead <span class="fixed-badge">FIXED</span></div>
+                            <div class="ba-before">The page carried its own generic treatments of property-owner liability, product liability and medical malpractice — full sections competing with the three site pages that own those topics, on a page that should be about the brain injury itself.</div>
+                            <div class="ba-after">Each trimmed to a short, relevant paragraph that links out: property owner → <strong>slip-and-fall</strong>, product liability → <strong>product-liability</strong>, medical malpractice → <strong>medical-malpractice</strong>. The page loses nothing a brain-injury reader needs and stops competing with its own siblings.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. INTERNAL LINKING
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Internal Linking &amp; Cannibalization <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— work log §4 · §5 · §6</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">The ServiceEntity had NO related-service cross-links and no page linked in</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block" style="border-left-color:#28c840;background:#f0fdf4;">
+                    <strong>Cannibalization audit: none on the primary term.</strong> GSC Pages.csv shows only this URL ranking for "miami brain injury lawyer" — no other page competes for it. The genuine overlap is narrower and known: <em>infant / perinatal brain injury</em> is shared with the birth-injury and cerebral-palsy pages.
+                    <span class="reason">The real finding was the opposite of cannibalization — the page was a dead end in both directions: nothing linked in, and it linked to nothing.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">12 inbound contextual links added — one per page, all with varied natural anchors</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Source page</th><th>Why it fits</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>personal-injury-lawyer-in-florida <span style="color:#6a737d;font-style:italic;">(hub)</span></td><td>Top-level hub → strongest single link</td></tr>
+                                <tr><td>miami-car-accident-attorney</td><td>Leading TBI cause</td></tr>
+                                <tr><td>motorcycle-accident-attorney-miami</td><td>Highest head-injury rate per crash</td></tr>
+                                <tr><td>miami-pedestrian-accident-attorney</td><td>Leading TBI cause</td></tr>
+                                <tr><td>miami-hit-and-run-accident-lawyer</td><td>Crash cluster</td></tr>
+                                <tr><td>miami-head-on-collision-lawyer</td><td>Crash cluster</td></tr>
+                                <tr><td>construction-accident-lawyer-in-miami</td><td>Falls &amp; struck-by — CDC's other top TBI cause</td></tr>
+                                <tr><td>miami-commercial-vehicle-accident-lawyer</td><td>Crash cluster</td></tr>
+                                <tr><td>miami-pool-accident-attorney</td><td>Near-drowning → anoxic/hypoxic injury</td></tr>
+                                <tr><td>miami-railroad-accident-lawyer</td><td>High-energy impact</td></tr>
+                                <tr><td>miami-jet-ski-accident-lawyer</td><td>High-energy impact</td></tr>
+                                <tr><td>miami-medical-malpractice-attorney</td><td>Oxygen-deprivation &amp; surgical brain injury</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">Anchors are deliberately varied — over-optimization risk comes from repeating one exact-match money phrase, so no anchor is reused. <strong>Infant / perinatal "brain damage" mentions were skipped on purpose</strong> to avoid pulling those queries away from the birth-injury and cerebral-palsy pages.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">7 outbound related-service cross-links added to the ServiceEntity <span class="new-badge">NEW</span></div>
+                    <ul class="sections-list">
+                        <li>spinal-cord</li>
+                        <li>birth-injury</li>
+                        <li>cerebral-palsy</li>
+                        <li>car-accident</li>
+                        <li>slip-and-fall</li>
+                        <li>medical-malpractice</li>
+                        <li>product-liability</li>
+                        <li class="full-row"><strong>Root gap closed:</strong> the brain-injury ServiceEntity previously had no <code style="font-size:0.78rem">&lt;ServicesRelated&gt;</code> block at all — App_Data/ServiceEntities.xml (~line 1135), XML validated after the edit.</li>
+                        <li class="full-row" style="font-style:italic;color:#6a737d;">ServiceEntities.xml is a data file — synced to bin; needs an app restart if the running instance cached it at startup.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         6. SCHEMAS (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Structured Data Added <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— work log §7</span></div>
+
+        <div class="callout callout-info">
+            The article now emits <strong>three page-specific JSON-LD blocks</strong> where it previously emitted none. The most useful one is <code style="font-size:0.78rem">Service</code>: its <code style="font-size:0.78rem">alternateName</code> carries the naming variants the body cannot repeat naturally, and its <code style="font-size:0.78rem">areaServed</code> carries the neighborhood list — the two things the keyword table says the page is thinnest on.
+        </div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 Items</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Home</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Personal Injury hub</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Miami Brain Injury Lawyer</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Breadcrumb rich result; explicit site-hierarchy signal</li>
+                            <li>Same pattern as the product-liability page — consistent across service pages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">#bi-intro (id added to the intro block)</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks the concise passage a voice assistant / generative engine should read aloud</li>
+                            <li>Voice / GEO signal (the rich result itself is limited to news publishers — stated honestly)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">Service</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">serviceType</span><span class="sf-val">Brain Injury Law</span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">Brain Injury Attorney / TBI Lawyer / Head Injury Attorney</span></div>
+                            <div class="schema-field"><span class="sf-key">areaServed</span><span class="sf-val">North Miami · Coral Gables · Doral · Aventura · Hialeah · Miami Gardens</span></div>
+                            <div class="schema-field"><span class="sf-key">provider</span><span class="sf-val">the firm's organization node</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Carries the "attorney" / "TBI" / "head injury" naming variants without stuffing the prose</li>
+                            <li>Declares the satellite cities that hold 2,400+ unearned impressions</li>
+                            <li>Entity/GEO signal — not a SERP rich result, said plainly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 4</div>
+                    <div class="schema-card-title">FAQPage <span style="font-size:0.62rem;color:#8b8ba7;">(skin microdata)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Coverage</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">10</span>10 EN Q&amp;As already present (unlike the product-liability page, which had 0)</div>
+                            <div class="faq-q-item"><span class="q-num">✓</span>The TBI-statistics answer rewritten — see the accuracy section</div>
+                            <div class="faq-q-item"><span class="q-num">?</span>Emission by the skin indicated by the template — <span class="pending-badge">VERIFY</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>The Q&amp;A format generative engines quote back most readily</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note card -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">No author node</div>
+                    <div class="schema-card-title">On purpose — needs an attorney name</div>
+                </div>
+                <div class="schema-card-body">
+                    <ul class="schema-advantages">
+                        <li>author / reviewedBy (E-E-A-T byline) is NOT added — the firm must name the reviewing attorney first. On a medical-legal page this is the highest-value item still open.</li>
+                        <li>No offers / priceRange on the Service node — a fee statement is a Bar Rule 4-7 decision, not an SEO one.</li>
+                        <li style="color:#92400e;">Organization / WebSite schema remains a sitewide gap (separate ticket).</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <p style="max-width:900px;margin-top:14px;font-size:0.79rem;color:#6a737d;font-style:italic;line-height:1.5;">
+            The count-refresh tooling strips Razor comments, <code style="font-size:0.75rem">&lt;script&gt;</code> and markup before counting, so JSON-LD text does not inflate the keyword table — the 4,157-word figure is visible body + FAQ only. Each block is a distinct <code style="font-size:0.75rem">@type</code>, so no duplicate entities.
+        </p>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         7. STATUS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Status — Done vs Still Open</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">miami-brain-injury-lawyer (En) &nbsp;·&nbsp; every content item PENDING ATTORNEY REVIEW</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done (applied to working tree)</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> 255 keywords merged from GSC + Semrush + bulk-volume into one master table</li>
+                            <li><em class="geo-icon">✓</em> Body 2,545 → 4,157 words (+63%), 8 edits, each source-cited in-file</li>
+                            <li><em class="geo-icon">✓</em> "brain injury attorney" 0 → 7 (12,100/mo head term, previously absent)</li>
+                            <li><em class="geo-icon">✓</em> Stale 2002–2006 CDC stats replaced; invented "Type 1 / Type 2 TBI" removed</li>
+                            <li><em class="geo-icon">✓</em> SOL "2 years" verified against HB 837; negligence vs med-mal now separated + statute of repose</li>
+                            <li><em class="geo-icon">✓</em> Stats / severity + GCS / how-to / service-area sections; Table of Contents (IDs verified 1:1)</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList + WebPage/Speakable + Service JSON-LD (was none)</li>
+                            <li><em class="geo-icon">✓</em> 12 inbound internal links (was 0); 7 related-service cross-links (block did not exist)</li>
+                            <li><em class="geo-icon">✓</em> 3 self-diluting sections trimmed and cross-linked to the pages that own those topics</li>
+                        </ul>
+                    </div>
+                    <div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>

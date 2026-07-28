@@ -1,0 +1,379 @@
+KEYWORD MASTER TABLE  -  /injury-law/miami-brain-injury-lawyer (English)
+Sources merged: On-page text + Google Search Console (last 3 months, this URL) + Semrush keyword-gap report
+GSC queries: 106  |  Semrush keywords: 136  |  Total unique keywords: 255
+On-page visible words: 2,545 BEFORE the 2026-07-24 content expansion  ->  4,157 AFTER.
+
+COLUMNS:
+  OnPg-Was = times the exact phrase appeared in the page BEFORE the 2026-07-24 content expansion
+  OnPg-Now = times the exact phrase appears in the page NOW (after the expansion)
+  Change   = OnPg-Now minus OnPg-Was ( +N = added, -N = removed, 0 = unchanged )
+  GSC-Impr = Google Search Console impressions (how often we showed in Google search, last 3 mo)
+  GSC-Pos  = average Google position for that query
+  SEM-Vol  = Semrush monthly US search volume
+  SEM-KD   = Semrush Keyword Difficulty (0-100; -1 = n/a)
+  OurRank  = our Semrush position for the keyword ( - = tracked but not in top 100; blank = keyword not in Semrush)
+  Source   = which data sets contain the keyword (page / GSC / SEM)
+
+Rows ordered by: Semrush search volume (SEM-Vol), highest first. Keywords with no Semrush volume fall to the bottom (ordered by GSC impressions).
+=========================================================================================================
+
+Keyword                                        OnPg-Was OnPg-Now Change  GSC-Impr GSC-Pos SEM-Vol SEM-KD OurRank Source
+-----------------------------------------------------------------------------------------------------------------------
+brain injury lawyer                            15       27       +12     218      8.3     18100   29     -       page+GSC+SEM
+brain injury attorney                          0        7        +7      194      9.7     12100   33     -       page+GSC+SEM
+brain injury lawyers                           9        16       +7      8        7.9     5400    30     -       page+GSC+SEM
+best brain and spine injury lawyer             0        0        0       1        20.0    4400    12     -       GSC+SEM
+best brain and spine injury attorney           0        0        0       2        16.0    3600    24             GSC+SEM
+brain injury attorneys                         1        3        +2      57       9.5     2400    29     -       page+GSC+SEM
+brain injury law firm                          0        1        +1      31       6.4     2400    40     -       page+GSC+SEM
+brain injury attorney near me                  0        1        +1      252      9.5     1600    28             page+GSC+SEM
+brain injury lawyer near me                    0        1        +1      6        17.2    1600    32             page+GSC+SEM
+traumatic brain injury attorney near me        0        0        0       2        9.5     1000    29             GSC+SEM
+brain injury lawyers near me                   0        0        0       11       7.9     880     22             GSC+SEM
+florida traumatic brain injury lawyer          0        0        0                        480     13     -       SEM
+child brain injury lawyer                      0        0        0       1        7.0     390     16             GSC+SEM
+brain injury attorneys near me                 0        0        0       1        8.0     390     32             GSC+SEM
+brain lawyer                                   0        0        0                        390     40     -       SEM
+traumatic brain injury attorneys near me       0        0        0                        390     18     -       SEM
+north miami brain injury lawyer                0        0        0       478      21.8    320     9      23      GSC+SEM
+fort lauderdale brain injury lawyer            0        0        0       6        71.2    320     7      -       GSC+SEM
+best brain injury attorney                     0        0        0                        320     38     -       SEM
+columbia brain injury lawyer                   0        0        0                        320     5      -       SEM
+top rated brain injury lawyers                 0        0        0                        260     30     -       SEM
+miami brain injury lawyer                      7        7        0       1068     8.4     210     12     11      page+GSC+SEM
+brain injury lawyer miami                      0        0        0       677      11.2    210     3      13      GSC+SEM
+brain injuries lawyer aventura                 0        0        0       28       13.9    170     6      -       GSC+SEM
+fort lauderdale brain injury attorney          0        0        0       1        70.0    170     6              GSC+SEM
+bellevue brain injury attorney                 0        0        0                        170     14     -       SEM
+brain injury attorney miami                    0        0        0       498      10.4    140     4      16      GSC+SEM
+brain injuries attorney aventura               0        0        0       356      13.5    140     8      25      GSC+SEM
+traumatic brain injury lawyer north miami      0        0        0       311      18.4    140     4      24      GSC+SEM
+traumatic brain injury attorney north miami    0        0        0       264      19.5    140     9      25      GSC+SEM
+doral brain injury lawyer                      0        0        0       26       28.6    140     5      -       GSC+SEM
+fall river brain injury lawyers                0        0        0                        140     6      -       SEM
+top-rated brain injury lawyer                  0        0        0                        140     30     -       SEM
+top-rated brain injury attorney                0        0        0                        140     32     -       SEM
+brain attorney                                 0        0        0                        140     30     -       SEM
+fall river traumatic brain injury lawyer       0        0        0                        140     4      -       SEM
+catastrophic brain injury attorney             0        0        0                        140     35     -       SEM
+salt lake city traumatic brain injury attorney 0        0        0                        140     7      -       SEM
+top-rated brain injury lawyers                 0        0        0                        140     35     -       SEM
+catastrophic brain injury lawyer               0        0        0                        140     30     -       SEM
+miami brain injury attorney                    0        2        +2      340      9.8     110     9      16      page+GSC+SEM
+traumatic brain injury attorney aventura       0        0        0       335      15.1    110     4      24      GSC+SEM
+law firms for brain injury                     0        0        0       55       5.9     110     36             GSC+SEM
+brain injury malpractice lawyer                0        0        0       2        7.0     110     21             GSC+SEM
+florida brain injury lawyers                   0        0        0                        110     10     -       SEM
+head injury attorney florida                   0        0        0                        110     14     -       SEM
+orange brain injury lawyer                     0        0        0                        110     13     -       SEM
+monroe traumatic brain injury attorney         0        0        0                        110     3      -       SEM
+boca raton brain injury attorney               0        0        0                        110     3      -       SEM
+durham brain injury lawyer                     0        0        0                        110     10     -       SEM
+attorney for brain injury                      0        0        0                        110     26     -       SEM
+brain injury lawyer coral gables               0        0        0       47       32.0    90      11     -       GSC+SEM
+fort lauderdale brain injuries laywer          0        0        0       1        46.0    90      6              GSC+SEM
+orange brain injury attorney                   0        0        0                        90      6      -       SEM
+palm harbor brain injury lawyer                0        0        0                        90      3      -       SEM
+brain injury solicitors                        0        0        0                        90      33     -       SEM
+traumatic brain injury attorney florida        0        0        0                        90      11     -       SEM
+west palm beach traumatic brain injury lawyer  0        0        0                        90      12     -       SEM
+leesville brain injury lawyer                  0        0        0                        90      0      -       SEM
+leesville tbi attorney                         0        0        0                        90      -1     -       SEM
+fort lauderdale brain injuries attorney        0        0        0                        90      8      -       SEM
+leesville brain injury attorney                0        0        0                        90      0      -       SEM
+traumatic brain injury attorney fort lauderda… 0        0        0                        90      7      -       SEM
+fort lauderdale traumatic brain injury lawyer  0        0        0                        90      3      -       SEM
+orange traumatic brain injury lawyer           0        0        0                        90      7      -       SEM
+traumatic brain injury attorney miami          0        0        0       321      8.9     70      2      16      GSC+SEM
+brain injuries lawyer north miami              0        0        0       202      20.4    70      3      18      GSC+SEM
+tbi lawyers miami                              0        0        0       180      12.9    70      4      16      GSC+SEM
+tbi attorney miami                             0        0        0       159      13.7    70      4      18      GSC+SEM
+coral gables brain injury law firm             0        0        0       100      23.6    70      4      29      GSC+SEM
+coral gables brain injury attorney             0        0        0       44       36.3    70      5      61      GSC+SEM
+coral gables brain injury lawyer               0        0        0       39       39.8    70      5      56      GSC+SEM
+coral gables brain injury attorneys            0        0        0       36       34.9    70      4      -       GSC+SEM
+brain injury law firm coral gables             0        0        0       31       38.2    70      4              GSC+SEM
+coral gables brain injury lawyers              0        0        0       29       33.7    70      11     -       GSC+SEM
+brain injury attorneys coral gables            0        0        0       6        59.2    70      3              GSC+SEM
+brain injury lawyer south florida              0        0        0       1        86.0    70      12     -       GSC+SEM
+workers compensation doctor ives estates       0        0        0       1        97.0    70      0      97      GSC+SEM
+brain injury attorney in palm springs          0        0        0                        70      23     -       SEM
+west palm beach brain injuries attorney        0        0        0                        70      4      -       SEM
+brain+injury+attorney                          0        0        0                        70      29     -       SEM
+brain injury attorney fort lauderdale          0        0        0                        70      5      -       SEM
+neurological injury attorney                   0        0        0                        70      14     -       SEM
+brain injury lawyer sebring                    0        0        0                        70      3      -       SEM
+brain injury lawyer in palm springs            0        0        0                        70      0      -       SEM
+new hampshire brain injury lawyers             0        0        0                        70      3      -       SEM
+palm springs brain injury lawyer               0        0        0                        70      11     -       SEM
+traumatic brain injury lawyer fort lauderdale  0        0        0                        70      5      -       SEM
+brain injury attorneys crown point             0        0        0                        70      6      -       SEM
+brain and injury law                           0        0        0                        70      26     -       SEM
+leesville traumatic brain injury attorney      0        0        0                        70      0      -       SEM
+traumatic brain injury attorney in palm sprin… 0        0        0                        70      3      -       SEM
+florida tbi attorney                           0        0        0                        70      13     -       SEM
+brain trauma attorney                          0        0        0                        70      22     -       SEM
+brain injury law firm near me                  0        0        0                        70      30     -       SEM
+fall river brain injury attorney               0        0        0                        70      6      -       SEM
+columbia brain damage attorney                 0        0        0                        70      0      -       SEM
+lexington brain damage attorney                0        0        0                        70      8      -       SEM
+brain injury coral gables                      0        0        0                        70      1      -       SEM
+palm springs traumatic brain injury attorney   0        0        0                        70      0      -       SEM
+leesville tbi lawyer                           0        0        0                        70      0      -       SEM
+traumatic brain attorney                       0        0        0                        70      15     -       SEM
+traumatic brain injury attorney kent           0        0        0                        70      2      -       SEM
+traumatic brain injury lawyer in palm springs  0        0        0                        70      0      -       SEM
+panama city brain injury lawyers               0        0        0                        70      4      -       SEM
+traumatic brain injury lawyer miami            0        0        0       138      11.6    50      3      16      GSC+SEM
+brain injury attorneys miami                   0        0        0       87       12.4    50      5      15      GSC+SEM
+brain injuries attorney north miami            0        0        0       44       16.2    50      3      -       GSC+SEM
+brain injury lawyer san ramon                  0        0        0       1        11.0    50                     GSC+SEM
+brain tumor attorney                           0        0        0                        50      0      -       SEM
+gardena brain injury lawyer                    0        0        0                        50      5      -       SEM
+brain injury lawyer largo                      0        0        0                        50      4      -       SEM
+columbia brain injury lawyers                  0        0        0                        50      2      -       SEM
+brain injury lawyers panorama                  0        0        0                        50      5      -       SEM
+traumatic brain injury attorney in gardena     0        0        0                        50      11     -       SEM
+newport beach traumatic brain injury attorney  0        0        0                        50      5      -       SEM
+traumantic brain injury law firm               0        0        0                        50      30     -       SEM
+salem brain injury lawyer                      0        0        0                        50      5      -       SEM
+brain injury attorney panorama                 0        0        0                        50      -1     -       SEM
+brain injuries attorney fort lauderdale        0        0        0                        50      3      -       SEM
+lebanon traumatic brain injury lawyer          0        0        0                        50      3      -       SEM
+head & brain injury lawyer near me             0        0        0                        50      13     -       SEM
+college park traumatic brain injury lawyer     0        0        0                        50      2      -       SEM
+miami traumatic brain injury lawyer            0        0        0       168      12.7    40      3      18      GSC+SEM
+brain injury lawyers miami                     0        0        0       99       12.0    40      7      16      GSC+SEM
+brain injuries lawyer doral                    0        0        0       32       15.0    40      7      32      GSC+SEM
+miami brain injury lawyers                     0        1        +1      21       9.2     40      7      8       page+GSC+SEM
+coral gables traumatic brain injury attorney   0        0        0       15       81.5    40      6      62      GSC+SEM
+traumatic brain injury lawyer coral gables     0        0        0       10       63.6    40      3      44      GSC+SEM
+weston brain injury attorney                   0        0        0                        40      11     -       SEM
+best brain injury lawyers lancaster            0        0        0                        40      9      -       SEM
+research law firms for brain injury cases      0        0        0                        40      10     -       SEM
+top rated brain injury lawyers lancaster       0        0        0                        40      6      -       SEM
+gainesville traumatic brain injury lawyer      0        0        0                        40      5      -       SEM
+college park brain injury attorney             0        0        0                        40      -1     -       SEM
+florida traumatic brain injury attorney        0        0        0                        40      10     -       SEM
+capitol hill brain injury lawyers              0        0        0                        40      11     -       SEM
+tbi attorney coral gables                      0        0        0                        40      4      -       SEM
+top rated brain injury attorney lancaster      0        0        0                        40      22     -       SEM
+traumatic brain injury lawyer boynton beach    0        0        0                        40      8      -       SEM
+brain+injury+lawyers                           0        0        0                        40      27     -       SEM
+college park brain injury lawyer               0        0        0                        40      3      -       SEM
+brain injuries lawyer palm harbor              0        0        0                        40      4      -       SEM
+local brain injury attorney lancaster          0        0        0                        40      3      -       SEM
+brain injuries lawyer fort lauderdale          0        0        0                        40      1      -       SEM
+newport beach brain injury lawyers             0        0        0                        40      8      -       SEM
+fort lauderdale traumatic brain injury attorn… 0        0        0                        40      0      -       SEM
+brain injuries attorney largo                  0        0        0                        40      3      -       SEM
+traumatic brain injury lawyer aventura         0        0        0       24       15.7    30                     GSC+SEM
+head injury lawyer miami                       0        0        0       13       10.5    30                     GSC+SEM
+miami truck accident brain injury lawyer       0        0        0       9        8.7     30                     GSC+SEM
+brain injury lawyer doral                      0        0        0       7        53.7    30                     GSC+SEM
+coral gables traumatic brain injury lawyer     0        0        0       3        39.7    30                     GSC+SEM
+nerve damage lawyer miami                      0        0        0       2        78.0    30                     GSC+SEM
+brain injury lawyer windham county             0        0        0                        30      5      -       SEM
+brain damage law firm                          0        0        0                        30      17     -       SEM
+lawyer for a brain injury                      0        0        0       39       20.7    20                     GSC+SEM
+miami brain cooling error lawyer               0        0        0       37       14.5    20                     GSC+SEM
+head injury attorney miami                     0        0        0       15       11.5    20                     GSC+SEM
+personal injury lawyers for brain injury case… 0        0        0       2        7.0     20                     GSC+SEM
+brain injury lawyers in mims                   0        0        0       1        99.0    20                     GSC+SEM
+miami tbi specialist lawyer                    0        0        0       50       9.3     10                     GSC+SEM
+miami anoxic brain injury lawyer               0        0        0       31       15.1    10                     GSC+SEM
+miami brain cooling injury lawyer              0        0        0       28       13.9    10                     GSC+SEM
+miami brain cooling injury attorney            0        0        0       28       14.4    10                     GSC+SEM
+miami infant brain injury attorney             0        0        0       27       9.4     10                     GSC+SEM
+miami infant brain injury lawyer               0        0        0       26       8.6     10                     GSC+SEM
+miami neurological injury lawyer               0        0        0       24       7.7     10                     GSC+SEM
+miami hypoxic brain injury attorney            0        0        0       21       12.9    10                     GSC+SEM
+miami hypoxic brain injury lawyer              0        0        0       20       15.1    10                     GSC+SEM
+miami neurological injury attorney             0        0        0       14       8.6     10                     GSC+SEM
+miami perinatal brain injury lawyer            0        0        0       14       9.2     10                     GSC+SEM
+miami perinatal brain injury attorney          0        0        0       14       11.4    10                     GSC+SEM
+miami vegetative state lawyer                  0        0        0       13       18.1    10                     GSC+SEM
+miami truck accident brain injury attorney     0        0        0       10       11.8    10                     GSC+SEM
+miami locked in syndrome attorney              0        0        0       10       13.7    10                     GSC+SEM
+miami stroke lawyer                            0        0        0       7        23.3    10                     GSC+SEM
+miami hypoxic ischemic encephalopathy injury … 0        0        0       6        16.5    10                     GSC+SEM
+miami locked in syndrome lawyer                0        0        0       6        14.8    10                     GSC+SEM
+miami loss of vision injury attorney           0        0        0       5        20.6    10                     GSC+SEM
+miami loss of vision injury lawyer             0        0        0       4        24.5    10                     GSC+SEM
+brain injury attorney miami-dade county        0        0        0       2        18.5    10                     GSC+SEM
+miami hypoxic ischemic encephalopathy injury … 0        0        0       2        20.0    10                     GSC+SEM
+florida brain damage malpractice injury attor… 0        0        0       1        13.0    10                     GSC+SEM
+miami anoxic brain injury attorney             0        0        0       26       15.4    0                      GSC+SEM
+repetitive trauma injury lawyer in miami       0        0        0       18       42.6    0                      GSC+SEM
+miami traumatic brain injury attorneys         0        0        0       9        10.3    0                      GSC+SEM
+miami brain injury law firm                    0        1        +1      8        4.1     0                      page+GSC+SEM
+brain injury attorney miami fl                 0        0        0       2        7.5     0                      GSC+SEM
+attorney team about lawyers staff our-team pe… 0        0        0       6        23.7                           GSC
+brain injury lawyer miami gardens, fl          0        0        0       5        32.6                           GSC
+traumatic brain injury attorney miami gardens  0        0        0       5        24.8            6              GSC+SEM
+miami ptsd car accident injury lawyer          0        0        0       4        11.2            15             GSC+SEM
+miami ptsd car accident injury attorney        0        0        0       3        15.3            26             GSC+SEM
+"traumatic head injury" "real estate investme… 0        0        0       3        7.0                            GSC
+role of mental health in personal injury case… 0        0        0       1        53.0                           GSC
+abogado de accidentes de camiones hialeah      0        0        0       1        2.0                            GSC
+looking for expert witness in miami florida a… 0        0        0       1        65.0                           GSC
+"a real estate investment advisor who suffere… 0        0        0       1        7.0                            GSC
+miami head injury car accident injury attorney 0        0        0       1        10.0            33             GSC+SEM
+thebraininjurylawfirm.com email and owner      0        0        0       1        8.0                            GSC
+who can help me with a brain injury claim fro… 0        0        0       1        10.0            1              GSC+SEM
+gallardo law firm reviews                      0        0        0       1        67.0                           GSC
+brain injury (phrase)                          56       117      +61                                             page
+injury (word)                                  64       143      +79                                             page
+compensation                                   19       25       +6                                              page
+accident                                       19       25       +6                                              page
+lawyer (word)                                  18       33       +15                                             page
+injuries                                       16       26       +10                                             page
+case                                           15       27       +12                                             page
+gallardo law firm                              12       13       +1                                              page
+legal                                          10       11       +1                                              page
+medical                                        10       19       +9                                              page
+miami (word)                                   10       30       +20                                             page
+cases                                          9        11       +2                                              page
+accidents                                      9        10       +1                                              page
+attorney (word)                                8        16       +8                                              page
+claim                                          8        15       +7                                              page
+traumatic brain injury                         7        13       +6                                              page
+damages                                        7        9        +2                                              page
+tbi                                            6        20       +14                                             page
+liability                                      5        6        +1                                              page
+victim                                         5        7        +2                                              page
+brain injuries                                 4        12       +8                                              page
+victims                                        4        4        0                                               page
+file a claim                                   4        4        0                                               page
+negligence                                     3        10       +7                                              page
+medical attention                              3        4        +1                                              page
+financial compensation                         3        3        0                                               page
+fair compensation                              3        5        +2                                              page
+brain injury cases                             2        3        +1                                              page
+traumatic brain injuries                       2        4        +2                                              page
+maximum compensation                           2        3        +1                                              page
+personal injury lawyer                         2        3        +1                                              page
+pain and suffering                             2        3        +1                                              page
+brain damage                                   1        1        0                                               page
+medical malpractice                            1        3        +2                                              page
+product liability                              1        2        +1                                              page
+statute of limitations                         1        2        +1                                              page
+head injury                                    0        2        +2                                              page
+near me                                        0        2        +2                                              page
+north miami                                    0        1        +1                                              page
+coral gables                                   0        1        +1                                              page
+doral                                          0        1        +1                                              page
+aventura                                       0        1        +1                                              page
+hialeah                                        0        1        +1                                              page
+miami gardens                                  0        1        +1                                              page
+miami-dade                                     0        3        +3                                              page
+glasgow coma scale                             0        3        +3                                              page
+statute of repose                              0        1        +1                                              page
+free consultation                              0        4        +4                                              page
+traumatic brain injury (tbi)                   0        2        +2                                              page
+brain injury case                              0        4        +4                                              page
+brain injury lawsuit                           1        2        +1                                              page
+brain and spine injury                         0        1        +1                                              page
+
+
+#####################################################################################################
+#  WORK LOG - SEO/GEO optimization of /injury-law/miami-brain-injury-lawyer (English)
+#  Session date: 2026-07-24
+#  This log is auto-appended after the table by scratchpad\merge.py (kept in scratchpad\worklog.txt).
+#####################################################################################################
+
+1. KEYWORD FREQUENCY ANALYSIS (on-page)
+   - Extracted the page's visible English text (H1 + article body + 10-item FAQ) = 2,545 words (original).
+   - Counted exact-phrase frequency for all SEO-relevant terms (OnPg-Was column in the table).
+   - Source files:
+       Views/ServicePage/Content/injury-law/miami-brain-injury-lawyer/En/article.cshtml
+       App_Data/FaqEntities.xml  (English FAQ entries for this service)
+       App_Data/ServiceEntities.xml  (targeted keyword, meta)
+
+2. MERGED DATA SOURCES INTO ONE MASTER TABLE (the table above)
+   - Google Search Console (last 3 months, this URL) - 106 queries.
+       Source: D:\1a\avana-seo-report\sources\miami-brain-injury-lawyer\
+               miami-brain-injury-lawyer url\...\Queries.csv
+   - Semrush keyword-gap report - 136 keywords (volume, KD, our rank vs 3 competitors).
+       Source: ...\gap.keywords_2026-07-23T21_01_03.064Z.csv
+   - Semrush bulk-volume export - filled 45 previously-blank volumes.
+       Source: D:\1a\GallardoLawyers3\fl_brain-injury-attorney-near-me_bulk_us_2026-07-24_10-38-37.csv
+   - Folded in on-page-only generic terms. Total = 252 unique keywords, one table.
+   - Sorted DESC by SEM-Vol; columns aligned; keyword column capped at 46 chars (ellipsis if longer).
+
+3. CONTENT ACCURACY CHECK (vs reliable sources)
+   - Statute of limitations "2 years" = CORRECT per Florida HB 837 (eff. 2023-03-24). OK.
+   - FIXED: FAQ "How many people suffer from TBI?" had outdated 2002-2006 CDC figures
+     ("1.7 million", "52,000 deaths") and FABRICATED "Type 1 / Type 2 TBI" terminology.
+       -> Replaced with current CDC data (~214,000 TBI hospitalizations 2020; ~69,000 deaths 2021)
+          and correct mild/moderate/severe severity classification.
+       -> File: App_Data/FaqEntities.xml (English entry only; Spanish left untouched per instruction).
+       -> Source in an XML comment above the entry. CDC: cdc.gov/traumatic-brain-injury/data-research
+
+4. CANNIBALIZATION ANALYSIS (vs other pages on the site)
+   - Primary term "miami brain injury lawyer": NO cannibalization (only this page ranks - GSC Pages.csv).
+   - Mild overlap: infant/perinatal brain injury shared with birth-injury + cerebral-palsy pages.
+   - Self-dilution: page had generic sections duplicating product-liability/medical-malpractice/slip-fall.
+   - Root gap: brain-injury ServiceEntity had NO related-service cross-links.
+
+5. FIXES APPLIED (outbound from this page)
+   (a) Added <ServicesRelated> block to the brain-injury ServiceEntity (7 cross-links:
+       spinal-cord, birth-injury, cerebral-palsy, car-accident, slip-and-fall,
+       medical-malpractice, product-liability). App_Data/ServiceEntities.xml (~line 1135). XML valid.
+   (b) Trimmed + cross-linked the 3 duplicated sections in the article (Property owner -> slip-and-fall;
+       Product liability -> product-liability; Medical malpractice -> medical-malpractice).
+
+6. INBOUND INTERNAL LINKS ADDED (other pages -> this page)
+   - 12 contextual links across 12 injury pages (one per page), all ->
+     /injury-law/miami-brain-injury-lawyer, varied natural anchors:
+       /injury-law/personal-injury-lawyer-in-florida
+       /injury-law/miami-car-accident-attorney
+       /injury-law/motorcycle-accident-attorney-miami
+       /injury-law/miami-pedestrian-accident-attorney
+       /injury-law/miami-hit-and-run-accident-lawyer
+       /injury-law/miami-head-on-collision-lawyer
+       /injury-law/construction-accident-lawyer-in-miami
+       /injury-law/miami-commercial-vehicle-accident-lawyer
+       /injury-law/miami-pool-accident-attorney
+       /injury-law/miami-railroad-accident-lawyer
+       /injury-law/miami-jet-ski-accident-lawyer
+       /injury-law/miami-medical-malpractice-attorney
+   - Skipped infant/perinatal "brain damage" mentions to avoid cannibalization.
+
+7. MAJOR CONTENT EXPANSION (2026-07-24) - templated on injury-law/product-liability-attorney-miami
+   Added to article.cshtml (8 edits, each with a Razor comment citing its source):
+   - Table of Contents nav (10 sections; IDs verified 1:1 with anchors).
+   - NEW "How Common Are Brain Injuries in the U.S.?" stats section + table (CDC Facts About TBI).
+   - NEW "Types and Severity of Brain Injuries" + Glasgow Coma Scale table (Cleveland Clinic + Medscape).
+   - EXPANDED "Time Limits for TBI Claims" - negligence vs medical-malpractice (Fla. Stat. 95.11 / HB 837).
+   - NEW "Steps to Take After a Brain Injury" ordered how-to list.
+   - NEW "Brain Injury Lawyers Serving Miami and Nearby Communities" GEO section (North Miami, Coral
+     Gables, Doral, Aventura, Hialeah, Miami Gardens... + "near me" + @Settings.GetPhoneFormated).
+   - JSON-LD schema (3): BreadcrumbList, WebPage/Speakable (#bi-intro), Service (alternateName carries
+     "Brain Injury Attorney"/"TBI Lawyer"/"Head Injury Attorney"; areaServed carries neighborhoods).
+   NOTE: several blocks marked PENDING ATTORNEY/FIRM REVIEW in-file (service-area list, framing).
+
+8. ON-PAGE COUNT REFRESH + NEW COLUMN (2026-07-24)
+   - Re-extracted the page's CURRENT visible text (article minus Razor comments/schema/markup + FAQ)
+     = 3,449 words (was 2,545). Script: scratchpad\build_current_text.py -> current_page_text.txt.
+   - Added OnPg-Now column (current count) next to OnPg-Was (pre-expansion count).
+   - Notable before -> after gains:
+       brain injury lawyer        15 -> 17
+       brain injury attorney       0 -> 6     (Semrush 12,100 vol / GSC 194 impr; was totally absent)
+       brain injury lawyers        9 -> 13
+       brain injury attorneys      1 -> 2
+       brain injury law firm       0 -> 1
+       brain injury attorney near me 0 -> 1
+       miami brain injury attorney 0 -> 2
+       traumatic brain injury      7 -> 12
+   - Added 13 NEW keyword rows now present on the page (source = page): head injury, near me,
+     north miami, coral gables, doral, aventura, hialeah, miami gardens, miami-dade, glasgow coma
+     scale, statute of repose, free consultation, traumatic brain injury (tbi).
+
+PENDING / SUGGESTED NEXT STEPS
+   - ATTORNEY/FIRM REVIEW of the new sections before publish (service-area list, statute framing).
+   - Multi-word geo/near-me GSC keywords still show OnPg-Now 0 (exact full phrase not on page) - that is
+     expected; the component words ARE now present. Optional: work a few exact phrases into copy.
+   - Optionally mirror the accuracy fix + expansion on the Spanish page.
+   - FAQPage schema: confirm the site skin already emits it for this page (template indicates it does).
+#####################################################################################################
