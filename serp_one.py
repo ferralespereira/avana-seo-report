@@ -21,7 +21,24 @@ from urllib.parse import urlparse
 
 SERPER_KEY = os.environ.get("SERPER_API_KEY")
 MIAMI = ZoneInfo("America/New_York")
-MY_DOMAIN = "avanaplasticsurgery.com"
+
+
+def domain_of(url):
+    """URL -> bare host, 'www.' stripped and lowercased."""
+    try:
+        host = (urlparse(url).netloc or "").lower()
+    except Exception:
+        return ""
+    return host[4:] if host.startswith("www.") else host
+
+
+def same_site(link, domain):
+    """True when a search result belongs to `domain` (subdomains included).
+    Kept identical to seo_check.py so a one-off patch matches the daily scan."""
+    if not domain:
+        return False
+    host = domain_of(link)
+    return host == domain or host.endswith("." + domain)
 
 # ---- the single keyword to refresh -------------------------------------
 TARGET_KEYWORD = "breast implants miami"
@@ -53,11 +70,15 @@ def check_ranking(keyword, target_url, lang, location):
     competitors = []
     my_pages = []
 
+    # "Yours" = whatever domain this keyword's target URL points at, so the
+    # script works for any client property, not just Avana.
+    my_domain = domain_of(target_url)
+
     for i, item in enumerate(results, 1):
         link = item.get("link", "")
         if i <= 10:
             competitors.append({"position": i, "url": link, "title": item.get("title", "")})
-        if MY_DOMAIN in link:
+        if same_site(link, my_domain):
             my_pages.append({"position": i, "url": link})
         if target_url in link and position == "not found":
             position = i

@@ -10,6 +10,14 @@ from urllib.parse import urlparse
 
 MIAMI = ZoneInfo("America/New_York")
 REPORTS_DIR = "reports"
+
+# One table per brand, in this order. Anything whose domain is not listed here
+# falls into a trailing "Other" table so no keyword is silently dropped.
+DOMAIN_GROUPS = [
+    ("avanaplasticsurgery.com", "Avana Plastic Surgery"),
+    ("gallardolawyers.com", "Gallardo Law Firm"),
+]
+
 GMAIL_USER = os.environ["GMAIL_USER"]
 GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
 TO_EMAIL = os.environ.get("TO_EMAIL", GMAIL_USER)
@@ -53,6 +61,15 @@ def short_path(u):
         return urlparse(u).path or "/"
     except Exception:
         return u
+
+
+def domain_of(u):
+    """Full URL -> bare registrable host ('www.' stripped, lowercased)."""
+    try:
+        host = (urlparse(u).netloc or "").lower()
+    except Exception:
+        return ""
+    return host[4:] if host.startswith("www.") else host
 
 
 def norm_pos(p):
@@ -119,6 +136,64 @@ def ranking_pages_html(item, prev):
     return "".join(lines)
 
 
+def group_by_domain(items):
+    """[(label, domain, [item, ...]), ...] — DOMAIN_GROUPS order, then 'Other'.
+    Groups with no keywords are omitted; report order is kept inside a group."""
+    buckets = {domain: [] for domain, _ in DOMAIN_GROUPS}
+    other = []
+    for item in items:
+        domain = domain_of(item.get("target_url", ""))
+        buckets.get(domain, other).append(item)
+
+    groups = [(label, domain, buckets[domain])
+              for domain, label in DOMAIN_GROUPS if buckets[domain]]
+    if other:
+        groups.append(("Other", "", other))
+    return groups
+
+
+def keyword_table_html(items, prev_data):
+    rows = ""
+    for item in items:
+        kw = item.get("keyword", "")
+        url = item.get("target_url", "")
+        pages_html = ranking_pages_html(item, prev_data.get(url))
+
+        rows += f"""
+          <tr>
+            <td class="em-cell em-kw" style="padding:10px 14px;border-bottom:1px solid #eee;vertical-align:top;font-weight:600;font-size:13px;word-break:break-word;overflow-wrap:anywhere;">{kw}</td>
+            <td class="em-cell" style="padding:10px 14px;border-bottom:1px solid #eee;vertical-align:top;">{pages_html}</td>
+          </tr>"""
+
+    return f"""
+      <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;table-layout:fixed;">
+        <thead>
+          <tr style="background:#f0f0f0;">
+            <th class="em-cell" style="width:34%;padding:10px 14px;text-align:left;font-size:13px;color:#333;">Keyword</th>
+            <th class="em-cell" style="padding:10px 14px;text-align:left;font-size:13px;color:#333;">Ranking pages &amp; position</th>
+          </tr>
+        </thead>
+        <tbody>{rows}
+        </tbody>
+      </table>"""
+
+
+def section_html(label, domain, items, prev_data, first):
+    """A brand heading + its own keyword table."""
+    count = len(items)
+    plural = "" if count == 1 else "s"
+    domain_html = (f'<span style="font-family:monospace;font-size:12px;font-weight:normal;'
+                   f'color:#8a94a0;margin-left:8px;">{domain}</span>') if domain else ""
+    margin_top = "0" if first else "32px"
+
+    return f"""
+      <div style="margin:{margin_top} 0 10px;padding-bottom:8px;border-bottom:2px solid #1a1a2e;">
+        <h3 style="margin:0;font-size:15px;color:#1a1a2e;">{label}{domain_html}</h3>
+        <p style="margin:3px 0 0;font-size:12px;color:#8a94a0;">{count} keyword{plural} tracked</p>
+      </div>
+{keyword_table_html(items, prev_data)}"""
+
+
 def build_email():
     files = get_sorted_report_files()
     if not files:
@@ -133,19 +208,10 @@ def build_email():
 
     today = datetime.now(MIAMI).strftime("%B %d, %Y")
 
-    rows = ""
-    for item in latest:
-        kw = item.get("keyword", "")
-        url = item.get("target_url", "")
-        prev = prev_data.get(url)
-
-        pages_html = ranking_pages_html(item, prev)
-
-        rows += f"""
-        <tr>
-          <td class="em-cell em-kw" style="padding:10px 14px;border-bottom:1px solid #eee;vertical-align:top;font-weight:600;font-size:13px;word-break:break-word;overflow-wrap:anywhere;">{kw}</td>
-          <td class="em-cell" style="padding:10px 14px;border-bottom:1px solid #eee;vertical-align:top;">{pages_html}</td>
-        </tr>"""
+    sections = "".join(
+        section_html(label, domain, items, prev_data, first=(i == 0))
+        for i, (label, domain, items) in enumerate(group_by_domain(latest))
+    )
 
     html = f"""<!DOCTYPE html>
 <html>
@@ -169,26 +235,16 @@ def build_email():
 <body class="em-outer" style="margin:0;font-family:Arial,sans-serif;background:#f5f5f5;padding:24px;">
   <div style="max-width:640px;width:100%;margin:0 auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1);">
     <div class="em-head" style="background:#1a1a2e;padding:20px 28px;">
-      <h2 style="margin:0;color:#fff;font-size:18px;">Avana SEO Rankings</h2>
+      <h2 style="margin:0;color:#fff;font-size:18px;">SEO Rankings</h2>
       <p style="margin:4px 0 0;color:#aaa;font-size:13px;">{today}</p>
     </div>
-    <div class="em-pad" style="padding:24px 28px;">
-      <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;table-layout:fixed;">
-        <thead>
-          <tr style="background:#f0f0f0;">
-            <th class="em-cell" style="width:34%;padding:10px 14px;text-align:left;font-size:13px;color:#333;">Keyword</th>
-            <th class="em-cell" style="padding:10px 14px;text-align:left;font-size:13px;color:#333;">Ranking pages &amp; position</th>
-          </tr>
-        </thead>
-        <tbody>{rows}
-        </tbody>
-      </table>
+    <div class="em-pad" style="padding:24px 28px;">{sections}
     </div>
     <div class="em-foot" style="padding:16px 28px;background:#fafafa;border-top:1px solid #eee;">
       <p style="margin:0;font-size:12px;color:#999;">
         &#9650; improved &nbsp;|&nbsp; &#9660; dropped &nbsp;|&nbsp; &#8212; no change &nbsp;|&nbsp;
-        &#8627; other page of yours ranking for the same term &nbsp;|&nbsp; NR = not in top 100 &nbsp;|&nbsp;
-        Positions based on Google Miami search (top 100)
+        &#8627; other page of yours ranking for the same term &nbsp;|&nbsp; NR = not in top 10 &nbsp;|&nbsp;
+        Positions based on Google Miami search (top 10)
       </p>
       <a href="https://ferralespereira.github.io/avana-seo-report/"
          style="display:inline-block;margin-top:12px;padding:8px 16px;background:#1a1a2e;color:#fff;font-size:13px;font-weight:600;text-decoration:none;border-radius:5px;white-space:nowrap;">

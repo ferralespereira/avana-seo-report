@@ -4,14 +4,54 @@ import os
 import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from urllib.parse import urlparse
 
 SERPER_KEY = os.environ.get("SERPER_API_KEY")
 
 # Miami timezone — auto-handles EDT/EST daylight saving switches
 MIAMI = ZoneInfo("America/New_York")
 
-# Your domain — used to detect ANY of your pages ranking
-MY_DOMAIN = "avanaplasticsurgery.com"
+# How deep to look. Serper serves 10 organic results per request, so depth costs
+# API calls: one per 10 results, per keyword, per day.
+#
+# CURRENT SETTING IS 10 = one call per keyword (38/day), deliberately chosen to
+# keep the API bill flat. The consequence, and it is a real one: a page sitting
+# at #11-30 is reported as "not found", identical to a page that does not rank
+# at all. Raising the number is the only way to tell those apart.
+#
+# Measured against the last 30 days (64% of keyword-days rank in the top 10),
+# with STOP_WHEN_FOUND skipping deeper pages once the target is located:
+#     SERP_DEPTH = 10 ....  38 calls/day  <-- current
+#     SERP_DEPTH = 20 ....  52 calls/day  (sees page 2)
+#     SERP_DEPTH = 30 ....  65 calls/day  (sees pages 2-3)
+# Changing it is a one-line edit, but the wording in the email footer
+# (send_email_report.py) and the "not in top N" chart legends in the report
+# pages must be updated to match, or the report claims a depth it never scans.
+SERP_DEPTH = 10
+RESULTS_PER_PAGE = 10
+PAGES_TO_FETCH = -(-SERP_DEPTH // RESULTS_PER_PAGE)   # ceil
+STOP_WHEN_FOUND = True
+
+
+def domain_of(url):
+    """URL -> bare host, 'www.' stripped and lowercased."""
+    try:
+        host = (urlparse(url).netloc or "").lower()
+    except Exception:
+        return ""
+    return host[4:] if host.startswith("www.") else host
+
+
+def same_site(link, domain):
+    """True when a search result belongs to `domain` (subdomains included).
+
+    Host comparison, not a substring test: 'competitor.com/?ref=yourdomain.com'
+    used to count as one of your pages.
+    """
+    if not domain:
+        return False
+    host = domain_of(link)
+    return host == domain or host.endswith("." + domain)
 
 # Each keyword: its target URL and language ("en" or "es")
 keywords = [
@@ -117,9 +157,9 @@ keywords = [
     {"keyword": "tummy tuck en miami",
      "url": "https://avanaplasticsurgery.com/espanol/tummy-tuck-en-miami",
      "lang": "es"},
-    # gallardolawyers.com — separate client property. Position tracking works
-    # (it matches on target_url), but MY_DOMAIN above is Avana-only, so the
-    # "my_pages_ranking" field stays empty for this keyword.
+    # gallardolawyers.com — separate client property. Handled exactly like the
+    # Avana keywords: "my_pages_ranking" is scoped to whichever domain the
+    # keyword's own target URL points at.
     {"keyword": "miami brain injury lawyer",
      "url": "https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer",
      "lang": "en"},
@@ -140,20 +180,19 @@ locations = [
 ]
 
 
-def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4):
+def _fetch_page(keyword, lang, location, page, retries, retry_delay):
+    """One Serper request. Returns (organic_list_or_None, last_error)."""
     payload = {
         "q": keyword,
-        "gl": "us",          # country = United States
-        "hl": lang,          # result language (en or es)
-        "num": 100,          # top 100 results
+        "gl": "us",                  # country = United States
+        "hl": lang,                  # result language (en or es)
+        "num": RESULTS_PER_PAGE,
     }
-    if location:             # add city-level targeting when provided
+    if page > 1:
+        payload["page"] = page
+    if location:                     # add city-level targeting when provided
         payload["location"] = location
 
-    # A populated "organic" list is the success condition. An empty or failed
-    # response is almost always a transient Serper hiccup (rate-limit, blank
-    # page), which otherwise gets recorded as "no competitors" for the day and
-    # blanks every downstream table. Retry a few times before accepting it.
     results = None
     last_err = None
     for attempt in range(1, retries + 1):
@@ -173,17 +212,73 @@ def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4)
         if results:
             break
         if attempt < retries:
-            print(f"    (empty/failed result for '{keyword}', "
+            print(f"    (empty/failed result for '{keyword}' p{page}, "
                   f"retry {attempt}/{retries - 1})")
             time.sleep(retry_delay)
 
-    if results is None:
-        return {"position": "error", "found_on_page_1": False,
-                "my_pages_ranking": [], "top_10_competitors": [], "error": last_err}
+    return results, last_err
+
+
+def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4):
+    # Serper returns 10 organic results per request. A single num=100 call was
+    # NOT honoured — 53 days of history contain no position above 10 — so
+    # anything on page 2+ was recorded as "not found". Walk the pages instead.
+    #
+    # Page 1 is retried (an empty page 1 is a transient Serper failure, and
+    # recording it as "no competitors" blanks every downstream table). Pages 2+
+    # get a single attempt: an empty one legitimately means "no more results",
+    # and retrying every one of those would add minutes to the daily run.
+    merged = []
+    seen = set()
+    last_err = None
+
+    for page in range(1, PAGES_TO_FETCH + 1):
+        page_retries = retries if page == 1 else 1
+        results, err = _fetch_page(keyword, lang, location, page,
+                                   page_retries, retry_delay)
+        if results is None:
+            last_err = err
+            if page == 1:
+                return {"position": "error", "found_on_page_1": False,
+                        "my_pages_ranking": [], "top_10_competitors": [],
+                        "error": err}
+            break                    # keep the pages we did get
+        if not results:
+            break                    # no more results
+
+        # Dedupe by URL, preserving order. If `page` is ever ignored and the
+        # same 10 results come back, this collapses them instead of inventing
+        # fake positions 11-20 — the scan degrades to a top-10 check.
+        new_on_this_page = 0
+        for item in results:
+            link = item.get("link", "")
+            if link in seen:
+                continue
+            seen.add(link)
+            merged.append(item)
+            new_on_this_page += 1
+        if not new_on_this_page:
+            break                    # pagination isn't working — stop paying for it
+
+        # Target located: deeper pages cannot change its position, so don't buy
+        # them. This is what keeps the daily cost at ~65 calls instead of 114.
+        if STOP_WHEN_FOUND and any(target_url in (it.get("link") or "")
+                                   for it in merged):
+            break
+
+        if page < PAGES_TO_FETCH:
+            time.sleep(0.5)          # be gentle between pages of one keyword
+
+    results = merged[:SERP_DEPTH]
 
     position = "not found"
     competitors = []
-    my_pages = []   # ALL pages from your own domain that appear
+    my_pages = []   # ALL pages from this keyword's own domain that appear
+
+    # Which site "yours" means is taken from the keyword's target URL, so every
+    # client property gets this — it used to be hard-coded to Avana, leaving
+    # my_pages_ranking permanently empty for gallardolawyers.com keywords.
+    my_domain = domain_of(target_url)
 
     for i, item in enumerate(results, 1):
         link = item.get("link", "")
@@ -194,7 +289,7 @@ def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4)
                 "title": item.get("title", ""),
             })
         # record every page of yours, wherever it ranks
-        if MY_DOMAIN in link:
+        if same_site(link, my_domain):
             my_pages.append({"position": i, "url": link})
         # is THIS result the target page?
         if target_url in link and position == "not found":
@@ -205,6 +300,7 @@ def check_ranking(keyword, target_url, lang, location, retries=3, retry_delay=4)
         "found_on_page_1": isinstance(position, int) and position <= 10,
         "my_pages_ranking": my_pages,                      # every page of yours that shows
         "top_10_competitors": competitors,
+        "results_scanned": len(results),                   # how deep this scan really saw
     }
 
 
@@ -276,6 +372,21 @@ def run_daily_check():
                   f"competitor(s), position={r['position']}")
     else:
         print("\nAll keywords returned a full top-10 competitor set.")
+
+    # Depth check. This is what went unnoticed for 53 days: the scan asked for
+    # 100 results, got 10, and silently reported everything on page 2+ as "not
+    # found". If pagination stops working again, say so in the CI log.
+    depths = [r.get("results_scanned", 0) for r in reports]
+    deepest = max(depths, default=0)
+    if deepest <= RESULTS_PER_PAGE and SERP_DEPTH > RESULTS_PER_PAGE:
+        print(f"\nWARNING: no keyword saw more than {deepest} results, but "
+              f"SERP_DEPTH is {SERP_DEPTH}. Pagination is NOT working — every "
+              f"'not found' below means 'not in top {deepest}'. Check the "
+              f"Serper `page` parameter before trusting today's report.")
+    else:
+        print(f"Scan depth: deepest {deepest} results, "
+              f"median {sorted(depths)[len(depths) // 2] if depths else 0} "
+              f"(SERP_DEPTH={SERP_DEPTH}).")
 
 
 def generate_chart_data(reports_dir="reports"):
