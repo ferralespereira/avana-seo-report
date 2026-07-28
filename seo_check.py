@@ -345,6 +345,15 @@ def run_daily_check():
             f.write("date,location,keyword,target_url,target_position,"
                     "top_ranking_own_page,top_own_position\n")
 
+    # Drop any rows already written for this date before appending, so a manual
+    # re-run REPLACES the day instead of duplicating it. (Running the workflow
+    # twice on 2026-07-28 left 76 rows for that one day.)
+    else:
+        with open(csv_file, encoding="utf-8") as f:
+            kept = [ln for ln in f if not ln.startswith(f"{date},")]
+        with open(csv_file, "w", encoding="utf-8") as f:
+            f.writelines(kept)
+
     with open(csv_file, "a", encoding="utf-8") as f:
         for r in reports:
             # find the best-ranking page of yours (lowest position number)
