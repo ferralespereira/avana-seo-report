@@ -172,6 +172,9 @@ keywords = [
     {"keyword": "abogados de lesiones cerebrales en miami",
      "url": "https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami",
      "lang": "es"},
+    {"keyword": "deep plane facelift miami",
+     "url": "https://avanaplasticsurgery.com/deep-plane-facelift-miami",
+     "lang": "en"},
 ]
 
 # Locations to check each keyword from (Miami only)

@@ -1,0 +1,1587 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana &mdash; Deep Plane Facelift Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th.content-column {
+    background: var(--teal);
+    position: relative;
+  }
+  .data-table th.trust-column {
+    background: var(--gold);
+    color: var(--navy);
+    position: relative;
+  }
+  .data-table th.cta-column {
+    background: var(--orange);
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.schema-column {
+    background: #6366f1;
+    color: #fff;
+    position: relative;
+  }
+  .data-table th.content-column::after {
+    content: "CONTENT";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.trust-column::after {
+    content: "TRUST SIGNAL";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(27, 58, 92, .15);
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.cta-column::after {
+    content: "CTA";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th.schema-column::after {
+    content: "SCHEMA TYPE";
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    vertical-align: middle;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td.content-column {
+    background: #f4fbfb;
+  }
+  .data-table td.trust-column {
+    background: #fff8e8;
+  }
+  .data-table td.cta-column {
+    background: #fff3ec;
+  }
+  .data-table td.schema-column {
+    background: #f0f0ff;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .priority-high { background: var(--redBg) !important; color: var(--red); font-weight: 700; }
+  .priority-medium { background: var(--yellowBg) !important; color: #7d5a00; font-weight: 700; }
+  .priority-low { background: var(--greenBg) !important; color: var(--green); font-weight: 700; }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .subsection h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .lang-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--gold);
+    background: transparent;
+    transition: background .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .lang-btn:hover, .lang-btn.active-es { background: var(--gold); color: #fff; }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .site-tabs,
+    .indicator-nav { padding: 0 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+    .site-header { padding: 16px; }
+    .site-header h1 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;"><a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a></div>
+<main class="main">
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; deep plane facelift miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/deep-plane-facelift-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/deep-plane-facelift-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 10)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="deep-plane-facelift-miami"></div>
+<div class="geo-history" data-slug="deep-plane-facelift-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/deep-plane-facelift-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  deep plane facelift miami
+  <button onclick="navigator.clipboard.writeText('deep plane facelift miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='&#128203;', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">&#128203; Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/deep-plane-facelift-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/deep-plane-facelift-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/deep-plane-facelift-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='&#128203;', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">&#128203;</button>
+</div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:24px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">2</div>
+<div class="kpi-source">deep plane facelift miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">88</div>
+<div class="kpi-source">deep plane facelift miami &mdash; all devices</div>
+</div>
+<div class="kpi-card highlight">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">2.27%</div>
+<div class="kpi-source">deep plane facelift miami &mdash; all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">36.92</div>
+<div class="kpi-source">deep plane facelift miami &mdash; primary query</div>
+</div>
+</div>
+
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC &mdash; Device Breakdown for "deep plane facelift miami" (keyword-filtered)</div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;">&#128241; Mobile</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#2563eb;">1</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#7c3aed;">21</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#059669;">4.76%</td>
+<td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;color:#d97706;">29.38</td>
+</tr>
+<tr style="background:#f8fbff;">
+<td style="padding:9px 14px;">&#128421;&#65039; Desktop</td>
+<td style="padding:9px 14px;text-align:right;color:#2563eb;">1</td>
+<td style="padding:9px 14px;text-align:right;color:#7c3aed;">68</td>
+<td style="padding:9px 14px;text-align:right;color:#059669;">1.47%</td>
+<td style="padding:9px 14px;text-align:right;color:#d97706;">40.03</td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top:6px;font-size:11px;color:#999;font-style:italic;">No tablet row &mdash; GSC recorded 0 tablet impressions for "deep plane facelift miami" in this period.</div>
+
+<div id="url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el = document.getElementById('url-queries-content'); el.style.display = el.style.display === 'none' ? 'block' : 'none'; return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div onmouseout="this.style.opacity='0.9'" onmouseover="this.style.opacity='1'" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;transition:opacity 0.2s ease;opacity:0.9;">GSC &mdash; All Queries for <span style="font-size:18px;font-weight:900;color:#fff;">https://avanaplasticsurgery.com/deep-plane-facelift-miami</span> &mdash; Last 3 months (Jul 30, 2026)</div>
+</a>
+<a href="#" onclick="var el = document.getElementById('url-queries-content'); el.style.display = el.style.display === 'none' ? 'block' : 'none'; return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">&#9654; Show</a>
+</div>
+<div id="url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;"><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">7</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">386</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">1.81%</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">19.47</div>
+</div>
+</div>
+<!-- 0-click high impression queries -->
+<div>
+<div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">&#128308; 0-CLICK QUERIES &mdash; Top 20 opportunities</div>
+<div style="font-size:11px;color:#666;margin-bottom:6px;font-style:italic;">These queries show the page is appearing in Google &mdash; but nobody clicks. Each is an immediate content opportunity. <strong>Note:</strong> no query on this page reached 100+ impressions this period (page peak = 80), so the usual 100-impression floor is lifted and rows are ranked by impressions.</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#6ec6ff;">Clicks</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#34d399;">CTR</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+<th style="padding:7px 10px;text-align:left;">Opportunity</th>
+</tr>
+</thead>
+<tbody><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift cost miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">15</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">25</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; Top 0-click query &mdash; needs a dedicated <em>cost</em> H2 + price table</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift miami beach</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">11</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">29</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; Geo variant &mdash; add a Miami Beach service-area paragraph</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift fort lauderdale</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">10</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">37.1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; Broward demand &mdash; add Fort Lauderdale to the out-of-town section</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">facelift miami cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">9</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">24.33</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; pos 24 &mdash; cost intent already close; cross-link to /miami-facelift</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift pompano beach</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">9</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">62.56</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; pos 63 &mdash; no geo coverage north of Miami</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift coral gables</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">25.86</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; Dr. Afrooz targets this in his title tag &mdash; Avana does not</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">vertical facelift miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">32.86</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; Technique variant not mentioned anywhere on the page</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift in celebration, fl</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">7</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">67.29</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; Out-of-market &mdash; low priority</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">how much is a facelift in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">4</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">9.5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9989; pos 9.5 &mdash; closest to page 1; answer this phrasing verbatim in the FAQ</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift south miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">3</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">26</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; Geo variant &mdash; bundle into a service-area list</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">miami facelift surgery cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">24</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; Cost cluster &mdash; same fix as the top query</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">cost of facelift in miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">25</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; Cost cluster &mdash; natural-language variant for the FAQ</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift cost near me</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">36.5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; &quot;near me&quot; intent &mdash; needs LocalBusiness + geo signals</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift pearl river</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">90.5</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#128308; Out-of-market &mdash; ignore</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9989; <strong>pos 1</strong> &mdash; already #1, only 1 impression; volume follows authority</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">facelift cost miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9989; pos 2 &mdash; cost queries rank far better than the head term</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">mid face lift miami</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">2</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9989; pos 2 &mdash; add a short mid-face lift subsection to hold it</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">3</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9989; pos 3 on the national head term &mdash; strong topical signal</td>
+</tr><tr style="background:#fff8f8;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">dr triana avana plastic surgery</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#059669;font-size:12px;">9</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9989; Brand + surgeon query &mdash; add a named surgeon bio block</td>
+</tr><tr style="background:#fff;">
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift miami cost</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#999;font-weight:400;font-size:12px;">0</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#c0392b;font-size:12px;">0%</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">14</td>
+<td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px;color:#666;">&#9888;&#65039; Exact keyword + cost &mdash; pos 14, one push from page 1</td>
+</tr></tbody>
+</table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#999;font-style:italic;">Showing top 20 of 27 zero-click queries (all impression levels). No query reached 100+ impressions; the <code>site:avanaplasticsurgery.com</code> operator query (5 impressions) is excluded as it is not an organic opportunity.</div>
+</div>
+</div>
+</div>
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">&#128273; Primary &amp; Secondary Keywords &mdash; Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Avana (GSC-confirmed) vs Dr. Afrooz, Dr. Lampert, Dr. Rodr&iacute;guez-Feliz &mdash; all four pages fetched and parsed Jul 30, 2026</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+<th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;">Avana<br/><span style="font-weight:400;font-size:14px;"><a href="https://avanaplasticsurgery.com/deep-plane-facelift-miami" style="color:#fff;text-decoration:none;font-size:14px;" target="_blank">avanaplasticsurgery.com/deep-plane-facelift-miami</a> <button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/deep-plane-facelift-miami')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">&#128203;</button></span></th>
+<th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Dr. Afrooz<br/><span style="font-weight:400;font-size:14px;"><a href="https://www.drpaulafrooz.com/face/facelift-miami/deep-plane-facelift/" style="color:#fff;text-decoration:none;font-size:14px;" target="_blank">drpaulafrooz.com/face/facelift-miami/deep-plane-facelift/</a> <button onclick="navigator.clipboard.writeText('https://www.drpaulafrooz.com/face/facelift-miami/deep-plane-facelift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">&#128203;</button></span></th>
+<th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Dr. Lampert<br/><span style="font-weight:400;font-size:14px;"><a href="https://www.lampertmd.com/face/deep-plane-facelift/" style="color:#fff;text-decoration:none;font-size:14px;" target="_blank">lampertmd.com/face/deep-plane-facelift/</a> <button onclick="navigator.clipboard.writeText('https://www.lampertmd.com/face/deep-plane-facelift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">&#128203;</button></span></th>
+<th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Dr. Rodr&iacute;guez-Feliz<br/><span style="font-weight:400;font-size:14px;"><a href="https://rodriguezfelizmd.com/surgical/face-neck/deep-plane-facelift/" style="color:#fff;text-decoration:none;font-size:14px;" target="_blank">rodriguezfelizmd.com/surgical/face-neck/deep-plane-facelift/</a> <button onclick="navigator.clipboard.writeText('https://rodriguezfelizmd.com/surgical/face-neck/deep-plane-facelift/')" style="background:none;border:none;color:#fff;cursor:pointer;font-size:12px;padding:0;margin-left:4px;" title="Copy Url">&#128203;</button></span></th>
+</tr>
+</thead>
+<tbody>
+<!-- Title tag -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Best-optimised title of the four</div>
+"Deep Plane Facelift Miami - From $5,800 | Avana Plastic Surgery"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Exact keyword in first position<br/>&#9989; Only title of the four with a <strong>price signal</strong><br/>&#9989; 63 characters &mdash; no SERP truncation</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Dual-geo, no differentiator</div>
+"Deep Plane Facelift Miami | Deep Plane Facelift Coral Gables"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Captures <em>two</em> geos in one title<br/>&#9989; Coral Gables = a query Avana already surfaces for (7 impr, pos 26)<br/>&#10060; No price, no doctor authority, keyword stuffed</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Short and brand-led</div>
+"Deep Plane Facelift Miami | Dr. Lampert"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Clean keyword + doctor brand<br/>&#10060; Only 39 chars &mdash; wastes ~20 chars of SERP real estate<br/>&#10060; No price, no trust modifier</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Doctor-brand formula</div>
+"Deep Plane Facelift Miami | Dr. Jose Rodriguez-Feliz"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Keyword-first + named surgeon<br/>&#10060; No price signal<br/>&#10060; No "board certified" / authority modifier</div>
+</td>
+</tr>
+<!-- H1 -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Exact-match H1</div>
+"Deep plane facelift Miami"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Exact keyword match<br/>&#9888;&#65039; Sentence-case rendering ("facelift" lowercase) &mdash; cosmetic only<br/>&#9989; Single H1 on the page</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Natural-language match</div>
+"Deep Plane Facelift in Miami"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Keyword + preposition reads naturally<br/>&#9989; Matches title intent</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No geo modifier at all</div>
+"Deep Plane Facelift"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#10060; <strong>No "Miami" in the H1</strong> &mdash; the biggest on-page miss of any competitor<br/>&#9888;&#65039; Relies entirely on the title tag for local relevance</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Strongest geo H1</div>
+"Deep Plane Facelift in Miami, Florida"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; City <em>and</em> state in the H1<br/>&#9989; Best local-signal H1 of the four</div>
+</td>
+</tr>
+<!-- Primary keyword -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; deep plane facelift miami</div>
+Consistent across title, H1, meta and 17 H2s.
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; GSC-confirmed: 88 impressions, 2 clicks, pos 36.92<br/>&#9989; No keyword cannibalisation with /miami-facelift</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; deep plane facelift miami</div>
+Doubled with <em>deep plane facelift Coral Gables</em> as a second head term.
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Two-geo strategy widens the footprint</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; deep plane facelift</div>
+Geo only appears in the title tag &mdash; body copy targets the ungeo’d term.
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9888;&#65039; Ranks on domain authority rather than page-level geo relevance</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; deep plane facelift miami</div>
+Reinforced with <em>Miami, Florida</em> in the H1 and throughout.
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Clean single-intent targeting</div>
+</td>
+</tr>
+<!-- Secondary keywords (H2s) -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords (H2s)</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 17 H2s &mdash; widest topical coverage</div>
+vs. Traditional (SMAS) &middot; Benefits &middot; Best Candidate &middot; How It&rsquo;s Performed &middot; With Fat Transfer &middot; Before &amp; After &middot; Patient Reviews &middot; Testimonials &middot; Surgeon in Miami &middot; Recovery &middot; Results &amp; Longevity &middot; <strong>How Much Does It Cost in Miami?</strong> &middot; Local &amp; Out-of-Town Patients &middot; FAQs
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Only page of the four covering <em>fat transfer</em> and <em>out-of-town patients</em><br/>&#10060; FAQ answers are <em>not</em> promoted to H2s (Afrooz does this)</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 24 H2s &mdash; FAQ questions promoted to H2</div>
+What Is It &middot; Before &amp; After &middot; What Happens During &middot; Videos &middot; Candidates &middot; Benefits &middot; Recovery &middot; Results &middot; With Dr. Afrooz &middot; Signature 4D Lift &middot; Cost &middot; <strong>+ 10 FAQ questions each as its own H2</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; 10 question-form H2s harvest People-Also-Ask and long-tail directly<br/>&#9989; "Signature 4D Lift" = brandable differentiator</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; 8 H2s, one duplicated</div>
+What Is It &middot; How Performed &middot; Good Candidate &middot; Advantages &middot; <em>Good Candidate (repeat)</em> &middot; Recovery &middot; Cost &middot; Why Dr. Lampert
+<div style="margin-top:4px;font-size:11px;color:#555;">&#10060; Thinnest heading structure of the four<br/>&#10060; "Who is a good candidate" appears <strong>twice</strong> &mdash; duplicate H2 bug<br/>&#10060; No before/after or FAQ H2</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 13 H2s, question-led</div>
+Before &amp; Afters &middot; What Is It &middot; Real Results &middot; Benefits &middot; The Expert Surgeon &middot; Good Candidate? &middot; How Soon Results? &middot; The Procedure &middot; Recovery &middot; How Long Results Last &middot; Schedule &middot; FAQs &middot; Get Looks that Last
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Conversational H2s map to voice/AI-search phrasing<br/>&#10060; No cost H2 despite quoting a price range</div>
+</td>
+</tr>
+<!-- Word count -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; ~3,760 words &mdash; longest page</div>
+<strong>~3,762 words</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; 1.8&times; Afrooz, 2.4&times; Lampert and Rodr&iacute;guez-Feliz<br/>&#9989; Content depth is <em>not</em> the ranking blocker here</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; ~2,100 words</div>
+<strong>~2,102 words</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Sufficient depth + 7 embedded procedure videos<br/>&#9989; Media richness compensates for lower word count</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; ~1,540 words</div>
+<strong>~1,538 words</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9888;&#65039; Thin for a YMYL surgical page<br/>&#9989; Ranks on 790-review domain authority instead</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; ~1,540 words</div>
+<strong>~1,540 words</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9888;&#65039; Similar thinness &mdash; leans on media mentions and reviews</div>
+</td>
+</tr>
+<!-- Cost signal -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Published, but 5&times; below market</div>
+<strong>From $5,800</strong> (also $11,395 and $23,700 package tiers)
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Most transparent pricing &mdash; on-page, in the title, in the meta<br/>&#9888;&#65039; <strong>$5,800 vs a $25k&ndash;$60k competitive set</strong> &mdash; an unexplained 5&times; gap reads as a different (lesser) procedure to a comparison shopper</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Premium anchor</div>
+<strong>Starting at $50,000</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Highest anchor of the four &mdash; positions the page as the premium option<br/>&#9989; Dedicated cost H2</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Clear single figure</div>
+<strong>$35,000</strong> all-inclusive package
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; "How Much Does a Deep-Plane Facelift Cost?" H2<br/>&#9989; Package framing removes price ambiguity</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Honest range</div>
+<strong>$25,000&ndash;$60,000</strong>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Range format matches how searchers phrase cost queries<br/>&#10060; Buried in the FAQ &mdash; no cost H2</div>
+</td>
+</tr>
+<!-- Meta description -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Best meta of the four</div>
+"Deep plane facelift in Miami starting at $5,800 &mdash; natural, long-lasting lift of the midface, jowls &amp; neck by board-certified surgeons. Free consultation."
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; 156 chars &mdash; no truncation<br/>&#9989; Price + anatomy + credential + CTA in one line<br/>&#9989; Only meta of the four with an explicit offer</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; 271 chars &mdash; truncated in SERP</div>
+"The deep plane facelift uniquely addresses and tightens the underlying structure of the skin, the SMAS&hellip;"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#10060; Nearly double the display limit &mdash; Google rewrites it<br/>&#10060; No CTA, no price, no geo<br/>&#10060; Definition copy, not sales copy</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Solid, benefit-led</div>
+"Dramatically reduce the signs of aging with the deep plane facelift in Miami with Dr. Lampert&hellip; natural, youthful appearance."
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; ~199 chars &mdash; slightly long but mostly intact<br/>&#9989; Keyword + geo + doctor<br/>&#10060; No price, no CTA</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Authority-framed</div>
+"The Deep Plane Facelift is the pinnacle of modern facial plastic surgery. Trust your results to Dr. Jose Rodriguez-Feliz, one of the top Miami Deep Plane Facelift experts."
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; 170 chars<br/>&#9989; "top Miami expert" positioning<br/>&#10060; No price, no CTA</div>
+</td>
+</tr>
+<!-- FAQ coverage -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 14 questions + FAQPage schema</div>
+vs. regular facelift &middot; how long results last &middot; invasiveness &middot; natural look &middot; + neck lift &middot; candidacy &middot; travelling to Miami &middot; <strong>cost</strong> &middot; best age &middot; pain &middot; scars &middot; anesthesia &middot; final results &middot; + fat transfer
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Most FAQs of the four, and the only one with valid <code>FAQPage</code> + <code>Question</code>/<code>Answer</code> markup<br/>&#10060; Questions live in an accordion, not as H2 headings &mdash; less crawl weight than Afrooz&rsquo;s layout</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 10 questions + FAQPage schema</div>
+vs. mini/standard &middot; typical age &middot; looking like yourself &middot; combining procedures &middot; makeup/skincare timing &middot; risks &middot; preparation &middot; travelling home &middot; help at home &middot; second facelift
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; <strong>Each FAQ is a real H2</strong> &mdash; strongest heading + schema combination<br/>&#9989; Recovery-logistics angle Avana does not cover</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No FAQ section</div>
+None on-page (a site-wide FAQ page is linked in the nav).
+<div style="margin-top:4px;font-size:11px;color:#555;">&#10060; No <code>FAQPage</code> schema<br/>&#10060; Zero long-tail question capture from this URL</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; FAQ section, no schema</div>
+"Deep Plane Facelift FAQs" &mdash; cost and risks only (2 questions).
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Covers the highest-intent question (cost)<br/>&#10060; No <code>FAQPage</code> markup &mdash; ineligible for rich results<br/>&#10060; Only 2 questions</div>
+</td>
+</tr>
+<!-- Trust signals -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; No rating displayed &mdash; biggest gap</div>
+Board-certified surgeons &middot; before/after gallery &middot; patient reviews &amp; testimonials sections &middot; free-consultation offer
+<div style="margin-top:4px;font-size:11px;color:#555;">&#10060; <strong>No star rating and no review count anywhere on the page</strong><br/>&#10060; No <code>AggregateRating</code> schema &mdash; the only page of the four without one<br/>&#10060; No named surgeon with credentials in the body</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 4.9&#9733; / 241 reviews</div>
+Board-certified &middot; elite training programs &middot; 7 procedure videos &middot; named staff (Dr. Afrooz, Kayla Ferraro APRN, Samantha McLaughlin LE) &middot; before/after galleries
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Rating wired into <code>AggregateRating</code> schema<br/>&#9989; Named clinical team = textbook E-E-A-T for YMYL</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 4.9&#9733; / 790 reviews &mdash; most of any</div>
+ABPS board-certified &middot; FACS &middot; RealSelf Hall of Fame &amp; Top Doctor &middot; Mount Sinai residency &middot; ACGME craniofacial fellowship &middot; AHCA-certified facility
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; <strong>790 reviews</strong> &mdash; 3&times; the nearest competitor<br/>&#9989; Third-party editorial awards (RealSelf) carry link equity</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; 5.0&#9733; / 268 reviews</div>
+Board-certified facial plastic surgeon &middot; 15 years&rsquo; experience &middot; media features (New York Times, Newsweek, NBC Miami) &middot; before/after gallery &middot; patient quotes
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; National press mentions = strongest off-page authority signal<br/>&#9989; Perfect 5.0 rating displayed</div>
+</td>
+</tr>
+<!-- CTA -->
+<tr>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Free consultation &mdash; strongest offer</div>
+"Schedule Your Free Consultation" / "Schedule a free consultation" / "Book a Consultation"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Only page of the four offering a <strong>free</strong> consult &mdash; real conversion advantage<br/>&#9989; Repeated mid-page and in a dedicated H2<br/>&#9888;&#65039; Three different CTA wordings &mdash; worth standardising</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Consistent and repeated</div>
+"Request a Consultation"
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Same wording throughout, incl. two CTA H2s<br/>&#9989; Phone number offered as an alternative path</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Present but low-emphasis</div>
+"Schedule a Consultation" (in-office or virtual)
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Virtual option lowers friction for out-of-town patients<br/>&#10060; Not repeated within the body copy</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Repeated + branded close</div>
+"Request Consultation" &mdash; plus a "Get Looks that Last" closing H2
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Dedicated scheduling H2 near the fold<br/>&#9989; Branded tagline reinforces recall</div>
+</td>
+</tr>
+<!-- Schema markup -->
+<tr style="background:#f8fbff;">
+<td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup</td>
+<td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Richest schema stack of the four</div>
+<code>SurgicalProcedure</code> &middot; <code>FAQPage</code> &middot; <code>MedicalClinic</code> &middot; <code>MedicalOrganization</code> &middot; <code>MedicalSpecialty</code> &middot; <code>Offer</code> &middot; <code>Person</code> &middot; <code>EducationalOccupationalCredential</code> &middot; <code>BreadcrumbList</code> &middot; <code>WebPage</code> &middot; <code>SpeakableSpecification</code> &middot; <code>GeoCoordinates</code>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Only page with <code>SurgicalProcedure</code> + <code>Offer</code> (price eligible for rich results)<br/>&#9989; Only page with <code>SpeakableSpecification</code> (voice/AI surfaces)<br/>&#10060; <strong>No <code>AggregateRating</code></strong> &mdash; no stars in the SERP<br/>&#10060; No <code>Physician</code> entity for the operating surgeon</div>
+</td>
+<td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fff4">
+<div style="color:#16a34a;font-weight:700;margin-bottom:4px;">&#9989; Complete authority stack</div>
+<code>Physician</code> &middot; <code>FAQPage</code> &middot; <code>AggregateRating</code> &middot; <code>MedicalOrganization</code> &middot; <code>Organization</code> &middot; <code>Product</code> &middot; <code>Person</code> &middot; <code>CollegeOrUniversity</code> &middot; <code>City</code>/<code>State</code> &middot; <code>BreadcrumbList</code>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; <code>Physician</code> + <code>AggregateRating</code> + <code>FAQPage</code> together &mdash; the combination Avana lacks<br/>&#9989; <code>CollegeOrUniversity</code> encodes training provenance</div>
+</td>
+<td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0">
+<div style="color:#e67e22;font-weight:700;margin-bottom:4px;">&#9888;&#65039; Authority yes, content no</div>
+<code>Physician</code> &middot; <code>AggregateRating</code> &middot; <code>MedicalOrganization</code> &middot; <code>Organization</code> &middot; <code>Product</code> &middot; <code>Person</code> &middot; <code>BreadcrumbList</code> &middot; <code>City</code>/<code>State</code>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#9989; Stars render in the SERP off <code>AggregateRating</code><br/>&#10060; No <code>FAQPage</code><br/>&#10060; No procedure-level schema</div>
+</td>
+<td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff">
+<div style="color:#c0392b;font-weight:700;margin-bottom:4px;">&#10060; Weakest stack of the four</div>
+<code>LocalBusiness</code> &middot; <code>MedicalOrganization</code> &middot; <code>AggregateRating</code> &middot; <code>Place</code> &middot; <code>GeoCoordinates</code> &middot; <code>City</code>
+<div style="margin-top:4px;font-size:11px;color:#555;">&#10060; No <code>Physician</code> entity despite the surgeon-led positioning<br/>&#10060; No <code>FAQPage</code> despite an on-page FAQ<br/>&#10060; No <code>BreadcrumbList</code>, no procedure schema</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">&#128273; Key takeaway from keyword analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Why Dr. Afrooz outranks a longer, better-optimised Avana page:</strong><br/>
+          1. <strong>241 reviews at 4.9&#9733; wired into <code>AggregateRating</code> + <code>Physician</code> schema</strong> &mdash; Avana ships neither, so no stars appear in the SERP<br/>
+          2. Ten FAQ answers promoted to real <code>H2</code> headings (10 of his 24 H2s) &mdash; harvests People-Also-Ask and long-tail directly<br/>
+          3. Dual-geo title targets Miami <em>and</em> Coral Gables &mdash; a query Avana already surfaces for (7 impressions, pos 25.86) but never names<br/>
+          4. A $50,000 anchor matches what searchers expect a deep plane facelift to cost; Avana&rsquo;s $5,800 reads as a different procedure<br/>
+          5. Seven embedded procedure videos plus named clinical staff (surgeon, APRN, aesthetician) &mdash; the E-E-A-T depth Google rewards on YMYL pages
+        </div>
+<div>
+<strong>What Avana must add to dominate "deep plane facelift miami":</strong><br/>
+          1. <strong>Add <code>AggregateRating</code> + a <code>Physician</code> entity</strong> with the real Google review count &mdash; the single largest schema gap versus all three competitors<br/>
+          2. Promote the 14 existing FAQ answers from the accordion to real <code>H2</code> headings &mdash; the content already exists, only the markup is wrong<br/>
+          3. Reconcile the $5,800 figure against the $25k&ndash;$60k market: show what it includes and what the $11,395 / $23,700 tiers add, or comparison shoppers bounce<br/>
+          4. Add geo sections for Coral Gables, Miami Beach and Fort Lauderdale &mdash; 28 impressions of proven 0-click demand already sit on those three variants<br/>
+          5. Give "deep plane facelift cost miami" (15 impressions, pos 25 &mdash; the page&rsquo;s top 0-click query) its own H2 and a tiered cost table
+        </div>
+</div>
+</div>
+</div>
+<!-- <div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">📋 Competitor Summary — lipo-360-cost-table</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Key columns only — rated Good / Regular / Bad based on confirmed page data</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:140px;">Page</th>
+<th style="padding:10px 14px;text-align:left;min-width:180px;">Title Tag</th>
+<th style="padding:10px 14px;text-align:left;min-width:180px;">Meta Description</th>
+<th style="padding:10px 14px;text-align:left;min-width:180px;">Content</th>
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Trust Signals</th>
+<th style="padding:10px 14px;text-align:left;min-width:140px;">CTA</th>
+<th style="padding:10px 14px;text-align:left;min-width:180px;">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#eef6ff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);vertical-align:top;">
+          Avana Plastic Surgery<br/><span style="background:#c0392b;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;">OUR PAGE</span>
+<div style="font-size:10px;color:#888;margin-top:3px;font-weight:400;">avanaplasticsurgery.com/lipo-360-miami</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#c0392b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Bad</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Lipo 360 Miami - $3000 Circumferential Lipo | Avana Plastic Surgery"</div>
+<div style="margin-top:4px;color:#666;">❌ No "cost" keyword — typo fixed but title weak for cost intent</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#c0392b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Bad</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Lipo 360 Miami. Remove the fat in abdomen, flanks, and back..."</div>
+<div style="margin-top:4px;color:#666;">❌ No price — no financing — no cost language — purely procedural</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">~2,500 words — FAQ ✅ 10 questions — before/after ✅ 4 photos — pricing ⚠️ sourced from RealSelf not own price — no pricing table — financing only a link</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">Surgeon names in nav only — no credentials on page — 1 video testimonial — no star reviews shown — phone number ✅</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">Booking button ✅ — phone number ✅ — consultation form ✅ with location selector</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#c0392b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Bad</span>
+<div style="margin-top:5px;color:#666;">VideoObject ✅ 2 items — FAQPage ❌ — PriceRange ❌ — MedicalProcedure ❌ — BreadcrumbList ❌ — only 1 of 8 schema types present</div>
+</td>
+</tr>
+<tr style="background:#fff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);vertical-align:top;">
+          CareCredit
+          <div style="font-size:10px;color:#888;margin-top:3px;font-weight:400;">carecredit.com/well-u/health-wellness/lipo-360-cost/</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"How Much Does Lipo 360 Cost? | CareCredit"</div>
+<div style="margin-top:4px;color:#666;">✅ Exact question format — matches search intent perfectly — "cost" is primary signal</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Learn about the average cost of Lipo 360, what factors affect the price, and how to finance it..."</div>
+<div style="margin-top:4px;color:#666;">✅ Cost + price + financing all mentioned — matches cost query intent</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">~1,500 words — editorial cost article — cost ranges $3,000–$15,000+ — financing promoted throughout — FAQ ✅ — no patient photos (not a clinic)</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">Authority Score 72 — massive domain trust — financing authority — cited in Google AI Overview — no surgeon credentials (not a clinic)</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">"Apply for CareCredit" ✅ — "Find a Doctor" ✅ — no phone number — redirects to apply page not consultation</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">Articles ✅ 1 item (non-critical issues) — all clinic schema N/A — only 1 schema type present but appropriate for editorial content</div>
+</td>
+</tr>
+<tr style="background:#fff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);vertical-align:top;">
+          Icon Cosmetic Center
+          <div style="font-size:10px;color:#888;margin-top:3px;font-weight:400;">iconcosmeticcenter.com/360-lipo-miami</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Lipo 360 Miami - Best Price $3000 | Icon Cosmetic Center"</div>
+<div style="margin-top:4px;color:#666;">✅ "Best Price $3000" — strong CTR signal — price in title — competitive positioning</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Get Lipo 360 in Miami starting at $3,000. Board-certified surgeons, modern techniques..."</div>
+<div style="margin-top:4px;color:#666;">✅ Price — credentials — consultation offer — all key signals in meta</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">~2,500 words — 4 lipo techniques explained — FAQ ✅ 7 questions — cost H2 as question format — own pricing $4,000–$8,000 — before/after link</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">Surgeons listed with links — no credentials detail on page — no reviews on page — phone ✅ — Authority Score 0 but cited in AI Overview</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">"Free Consultation" button ✅ — "Book a Consultation" ✅ — phone number ✅ — consultation form ✅</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">FAQPage ✅ 1 item — VideoObject ✅ 2 items — Articles ✅ 1 item — 3 of 8 schema types — strongest schema of all competitors</div>
+</td>
+</tr>
+<tr style="background:#fff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);vertical-align:top;">
+          The Secret Plastic Surgery
+          <div style="font-size:10px;color:#888;margin-top:3px;font-weight:400;">thesecretplasticsurgery.com/.../lipo-360-miami/</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#c0392b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Bad</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Lipo 360 Miami - The Secret Plastic Surgery"</div>
+<div style="margin-top:4px;color:#666;">❌ No price — no "cost" keyword — only brand name — no CTR incentive</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"Lipo 360 in Miami from $3000. Lipo 360 cost can differ depending on factors..."</div>
+<div style="margin-top:4px;color:#666;">✅ "from $3000" — "Lipo 360 cost" exact keyword — best meta of all competitors for cost intent</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#c0392b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Bad</span>
+<div style="margin-top:5px;color:#666;">~800 words — very thin — no FAQ on page — no real before/after photos — cost H2 ✅ mid-page with $3,000 — financing ✅ specific: "0% interest $500 deposit"</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">3 surgeons named — no credentials detail — no patient reviews on page — phone ✅ prominent — placeholder GIF photos instead of real before/after</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">"Get a Quote" ✅ — "Get Started Now" ✅ — phone number ✅ multiple locations — consultation form ✅</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">BreadcrumbList ✅ 1 item — all other schema ❌ — only clinic with breadcrumb schema but weakest overall schema set</div>
+</td>
+</tr>
+<tr style="background:#fff;">
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);vertical-align:top;">
+          Dr. Troell
+          <div style="font-size:10px;color:#888;margin-top:3px;font-weight:400;">drtroell.com/blog/vaser-lipo-360-cost/</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"VASER Lipo 360 Cost 2026: Price by Area, City &amp; Technique | Dr. Troell"</div>
+<div style="margin-top:4px;color:#666;">✅ "Cost" + year "2026" + specific breakdown promise — strongest title of all for cost intent</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#444;font-style:italic;">"VASER Lipo 360 typically costs $5,000–$15,000. Get an honest price breakdown by body area..."</div>
+<div style="margin-top:4px;color:#666;">✅ Price range in meta — "honest price breakdown" — "body area" specificity — strong click incentive</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">~5,500 words — most comprehensive — 4 pricing tables (technique/area/city/state) — FAQ ✅ 9 questions — detailed cost breakdowns — no before/after photos</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">Dr. Troell board certifications ✅ — fellowship listed ✅ — Person/Physician schema ✅ — phone + text number ✅ — strongest credentials of all</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#059669;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Good</span>
+<div style="margin-top:5px;color:#666;">"Request a Consultation" ✅ multiple CTAs — phone ✅ — text number ✅ — consultation form ✅ at page bottom</div>
+</td>
+<td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;">
+<span style="display:inline-block;background:#e67e22;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;">Regular</span>
+<div style="margin-top:5px;color:#666;">MedicalBusiness ✅ — Person/Physician ✅ — FAQPage ❌ — PriceRange ❌ — VideoObject ❌ — 2 of 8 schema types — strong clinic schema but missing cost schema</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div> -->
+
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/deep-plane-facelift-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/deep-plane-facelift-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/deep-plane-facelift-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</div></main>
+</body>
+</html>

@@ -903,7 +903,33 @@ _SCHEMA_IGNORE = {
 }
 
 # target_url -> {slug (improvements page), lang, keyword set}
+DEEP_PLANE_FACELIFT_EN = [
+    ("deep plane facelift", ["deep plane facelift", "deep plane face lift", "deepplane facelift", "deep-plane facelift", "deep plane lift", "what is a deep plane facelift", "how is a deep plane facelift performed", "deep plane facelift results"]),
+    ("deep plane facelift miami", ["deep plane facelift miami", "deep plane face lift miami", "miami deep plane facelift", "deep plane facelift in miami", "deep plane facelift miami fl", "deep plane facelift miami florida", "deep plane facelift florida", "deep plane facelift south florida", "deep plane facelift near me"]),
+    ("deep plane facelift cost", ["deep plane facelift cost", "deep plane facelift cost miami", "deep plane facelift miami cost", "deep plane facelift price", "deep plane facelift cost near me", "how much is a deep plane facelift", "how much does a deep plane facelift cost", "cost of deep plane facelift"]),
+    ("deep plane facelift geo variants", ["deep plane facelift miami beach", "deep plane facelift coral gables", "deep plane facelift south miami", "deep plane facelift fort lauderdale", "deep plane facelift pompano beach", "deep plane facelift boca raton", "deep plane facelift aventura"]),
+    ("facelift miami", ["facelift miami", "face lift miami", "miami facelift", "facelift in miami", "facelift surgery miami", "facelift surgery in miami", "best facelift miami", "facelift miami fl"]),
+    ("facelift cost miami", ["facelift cost miami", "facelift miami cost", "miami facelift surgery cost", "cost of facelift in miami", "how much is a facelift in miami", "face lift cost miami", "facelift cost", "how much is a facelift"]),
+    ("smas / traditional facelift", ["smas facelift", "smas lift", "traditional facelift", "standard facelift", "full facelift", "deep plane vs smas", "deep plane facelift vs traditional facelift", "deep plane vs traditional facelift"]),
+    ("mini facelift miami", ["mini facelift miami", "mini face lift miami", "miami mini facelift", "mini facelift", "mini facelift cost miami", "weekend facelift", "short scar facelift"]),
+    ("mid face lift miami", ["mid face lift miami", "mid facelift miami", "midface lift miami", "mid face lift", "midface lift", "vertical facelift miami", "vertical facelift"]),
+    ("neck lift miami", ["neck lift miami", "neck lift in miami", "miami neck lift", "deep plane neck lift", "facelift and neck lift", "neck lift cost miami", "jowl surgery miami"]),
+    ("facelift surgeon miami", ["facelift surgeon miami", "deep plane facelift surgeon miami", "best deep plane facelift surgeon", "best facelift surgeon miami", "facelift doctor miami", "deep plane facelift surgeon", "top facelift surgeons miami"]),
+    ("facelift recovery", ["facelift recovery", "deep plane facelift recovery", "deep plane facelift recovery time", "facelift recovery time", "facelift downtime", "deep plane facelift swelling", "facelift scars"]),
+    ("facelift longevity / candidacy", ["how long does a deep plane facelift last", "how long do facelift results last", "deep plane facelift age", "best age for a facelift", "am i a candidate for a facelift", "deep plane facelift candidate", "facelift revision miami"]),
+    ("facelift before and after", ["facelift before and after", "deep plane facelift before and after", "facelift before after photos", "deep plane facelift photos", "facelift results photos"]),
+    ("facial rejuvenation / fat transfer", ["facial rejuvenation miami", "facial fat transfer miami", "fat transfer to face", "facelift with fat transfer", "facial fat grafting", "eyelid surgery miami", "brow lift miami"]),
+    ("board certified plastic surgeon", ["board certified plastic surgeon", "board certified plastic surgeons"]),
+    ("plastic surgeon", ["plastic surgeon", "plastic surgeons"]),
+    ("plastic surgery", ["plastic surgery"]),
+    ("cosmetic surgery", ["cosmetic surgery", "facial plastic surgery"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 PAGES = {
+    "https://avanaplasticsurgery.com/deep-plane-facelift-miami":
+        {"slug": "deep-plane-facelift-miami", "lang": "en", "kw": DEEP_PLANE_FACELIFT_EN},
     "https://avanaplasticsurgery.com/botox-injections-miami":
         {"slug": "botox-injections-miami", "lang": "en", "kw": BOTOX_EN},
     "https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami":
