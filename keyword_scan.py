@@ -927,9 +927,35 @@ DEEP_PLANE_FACELIFT_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+LIFTING_FACIAL_ES = [
+    ("lifting facial plano profundo en miami", ["lifting facial plano profundo en miami", "lifting facial plano profundo miami", "lifting facial de plano profundo en miami", "lifting facial profundo miami", "lifting facial profundo en miami", "lifting de plano profundo miami", "deep plane facelift miami en espanol"]),
+    ("lifting facial plano profundo", ["lifting facial plano profundo", "lifting facial de plano profundo", "lifting de plano profundo", "lifting plano profundo", "lifting facial profundo", "estiramiento facial profundo", "estiramiento facial de plano profundo", "que es un lifting facial plano profundo", "deep plane facelift en espanol"]),
+    ("lifting facial en miami", ["lifting facial en miami", "lifting facial miami", "miami lifting facial", "lifting de rostro en miami", "estiramiento facial en miami", "estiramiento facial miami", "cirugia de lifting facial en miami", "lifting facial en miami florida", "lifting facial cerca de mi"]),
+    ("lifting facial precio miami", ["lifting facial precio miami", "lifting facial precio en miami", "precio lifting facial miami", "costo lifting facial miami", "costo de lifting facial en miami", "cuanto cuesta un lifting facial en miami", "lifting facial miami precio"]),
+    ("lifting facial precio", ["lifting facial precio", "precio lifting facial", "lifting facial de plano profundo precio", "lifting facial plano profundo precio", "cuanto cuesta un lifting facial", "cuanto vale un lifting facial", "costo de un lifting facial", "lifting facial precio en estados unidos", "lifting facial costo"]),
+    ("lifting facial", ["lifting facial", "lifting de cara", "levantamiento facial", "estiramiento facial", "ritidectomia", "ritidectomía", "que es un lifting facial", "como se hace un lifting facial"]),
+    ("lifting facial vs smas", ["lifting facial smas", "lifting smas", "tecnica smas", "smas vs plano profundo", "lifting facial plano profundo vs smas", "lifting facial tradicional", "diferencia entre lifting facial y plano profundo"]),
+    ("mini lifting facial", ["mini lifting facial", "mini lifting", "mini lifting facial miami", "mini lifting facial precio", "lifting facial de hilos", "lifting de hilos miami"]),
+    ("lifting del tercio medio", ["lifting del tercio medio facial", "lifting del tercio medio facial precio", "lifting tercio medio", "lifting facial medio", "lifting de pomulos"]),
+    ("lifting de cuello miami", ["lifting de cuello miami", "lifting de cuello en miami", "levantamiento de cuello miami", "cirugia de papada miami", "eliminar papada miami", "lifting facial y de cuello"]),
+    ("cirujano de lifting facial miami", ["cirujano de lifting facial miami", "cirujano de lifting facial en miami", "mejor cirujano de lifting facial miami", "cirujano plastico facial miami", "cirujano facial en miami", "especialista en lifting facial miami"]),
+    ("lifting facial geo variantes", ["lifting facial profundo aventura", "lifting facial aventura", "lifting facial coral gables", "lifting facial doral", "lifting facial hialeah", "lifting facial kendall", "lifting facial miami beach"]),
+    ("recuperacion lifting facial", ["recuperacion lifting facial", "recuperación lifting facial", "cuanto dura la recuperacion de un lifting facial", "lifting facial cicatrices", "lifting facial dolor", "cuidados despues de un lifting facial"]),
+    ("resultados lifting facial", ["resultados lifting facial", "cuanto dura un lifting facial", "cuanto duran los resultados de un lifting facial", "lifting facial antes y despues", "lifting facial fotos", "mejor edad para un lifting facial", "soy candidato para un lifting facial"]),
+    ("rejuvenecimiento facial miami", ["rejuvenecimiento facial miami", "rejuvenecimiento facial en miami", "transferencia de grasa facial miami", "injerto de grasa facial", "lifting facial con transferencia de grasa", "cirugia de parpados miami", "blefaroplastia miami"]),
+    ("cirujano plastico certificado", ["cirujano plastico certificado", "cirujanos plasticos certificados", "cirujano plastico certificado en miami"]),
+    ("cirujano plastico", ["cirujano plastico", "cirujanos plasticos", "cirujano plástico"]),
+    ("cirugia plastica", ["cirugia plastica"]),
+    ("cirugia estetica", ["cirugia estetica", "medicina estetica"]),
+    ("miami florida", ["miami", "miami florida", "miami fl", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 PAGES = {
     "https://avanaplasticsurgery.com/deep-plane-facelift-miami":
         {"slug": "deep-plane-facelift-miami", "lang": "en", "kw": DEEP_PLANE_FACELIFT_EN},
+    "https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami":
+        {"slug": "lifting-facial-plano-profundo-en-miami", "lang": "es", "kw": LIFTING_FACIAL_ES},
     "https://avanaplasticsurgery.com/botox-injections-miami":
         {"slug": "botox-injections-miami", "lang": "en", "kw": BOTOX_EN},
     "https://avanaplasticsurgery.com/espanol/inyecciones-de-botox-en-miami":

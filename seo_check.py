@@ -175,6 +175,9 @@ keywords = [
     {"keyword": "deep plane facelift miami",
      "url": "https://avanaplasticsurgery.com/deep-plane-facelift-miami",
      "lang": "en"},
+    {"keyword": "lifting facial plano profundo en miami",
+     "url": "https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami",
+     "lang": "es"},
 ]
 
 # Locations to check each keyword from (Miami only)

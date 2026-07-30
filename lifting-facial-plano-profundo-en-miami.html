@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avana — Lifting Facial Plano Profundo en Miami | SEO Analysis</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; lifting facial plano profundo en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 10)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="lifting-facial-plano-profundo-en-miami"></div>
+<div class="geo-history" data-slug="lifting-facial-plano-profundo-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isAvana) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isAvana = comp.url.includes('avanaplasticsurgery');
+      const color = isAvana ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isAvana ? 2 : 1.5,
+        borderDash: isAvana ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isAvana ? 4 : 3,
+        pointHoverRadius: isAvana ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('avanaplasticsurgery') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Keyword</div>
+<h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+  lifting facial plano profundo en miami
+  <button onclick="navigator.clipboard.writeText('lifting facial plano profundo en miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copy</button>
+</h2>
+<div style="font-size:16px;color:var(--teal);margin-top:8px;">
+<a href="https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami</a>
+<button onclick="navigator.clipboard.writeText('https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami'); this.textContent='Copied!'; setTimeout(() => this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+</div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:8px;">
+<div class="kpi-card">
+<div class="kpi-label">Clicks</div>
+<div class="kpi-value">0</div>
+<div class="kpi-source">lifting facial plano profundo en miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Impressions</div>
+<div class="kpi-value">0</div>
+<div class="kpi-source">lifting facial plano profundo en miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">CTR</div>
+<div class="kpi-value">0%</div>
+<div class="kpi-source">lifting facial plano profundo en miami — all devices</div>
+</div>
+<div class="kpi-card">
+<div class="kpi-label">Position</div>
+<div class="kpi-value">&mdash;</div>
+<div class="kpi-source">lifting facial plano profundo en miami — primary query</div>
+</div>
+</div>
+<div class="insight info" style="margin-bottom:24px;"><span class="insight-icon">ℹ️</span><div>The exact phrase <strong>"lifting facial plano profundo en miami"</strong> recorded <strong>0 impressions</strong> in GSC for this period — virtually nobody searches that full long-tail string, so the keyword-filtered KPI cards and device export are empty. The URL itself, however, is performing <strong>well for its size</strong>: <strong>151 impressions</strong> and <strong>3 clicks</strong> (CTR <strong>1.99%</strong>) at an average position of <strong>7.78</strong> — the strongest average position of any recent Spanish page. Reach is the constraint, not ranking. It surfaces for a tight Spanish facelift cluster led by <strong>"lifting facial precio miami"</strong> (10 impr, pos <strong>4.6</strong>), <strong>"lifting facial precio en estados unidos"</strong> (4 impr, pos 8.75), <strong>"lifting facial en miami"</strong> (2 impr, pos <strong>1</strong>), <strong>"lifting facial profundo aventura"</strong> (2 impr, pos 6.5) and <strong>"lifting facial de plano profundo precio"</strong> (2 impr, pos 10.5) — a clear <em>precio/cost</em> intent signal (see all-queries breakdown below).</div></div>
+
+<!-- ===== DEVICE BREAKDOWN ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Device Breakdown for "lifting facial plano profundo en miami" <span style="font-weight:600;color:#999;text-transform:none;letter-spacing:0;">(keyword-filtered)</span></div>
+<table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+<thead>
+<tr style="background:var(--navy);color:#fff;">
+<th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Device</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clicks</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impressions</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+<th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="5" style="padding:18px 14px;text-align:center;color:#999;font-style:italic;">No device data &mdash; the keyword "lifting facial plano profundo en miami" had 0 impressions in GSC for this period, so the keyword-filtered device export is empty. See the URL-level reach in the all-queries section below.</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="acc-url-queries" style="margin-top:20px;margin-bottom:24px;">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+<a href="#" onclick="var el=document.getElementById('acc-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+<div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — All Queries for <span style="font-size:18px;font-weight:900;">https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami</span> — Last 3 months (Jul 30, 2026)</div>
+</a>
+<a href="#" onclick="var el=document.getElementById('acc-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Show</a>
+</div>
+<div id="acc-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Clicks</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">3</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Total Impressions</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">151</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average CTR</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">1.99%</div>
+</div>
+<div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;">
+<div style="font-size:10px;color:#666;margin-bottom:2px;">Average Position</div>
+<div style="font-size:22px;font-weight:700;color:#2563eb;">7.78</div>
+</div>
+</div>
+<div style="margin-bottom:4px;">
+<div style="background:#c0392b;color:#fff;padding:6px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:6px;">⚠️ ZERO-CLICK QUERIES — All 16 by impressions (0 reach 100+ impressions)</div>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;"><thead>
+<tr style="background:#1a3a5c;color:#fff;font-size:11px;">
+<th style="padding:7px 10px;text-align:left;">Query</th>
+<th style="padding:7px 10px;text-align:right;color:#c084fc;">Impressions</th>
+<th style="padding:7px 10px;text-align:right;color:#fbbf24;">Position</th>
+</tr>
+</thead><tbody>
+<tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial precio miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">10</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">4.6</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial precio en estados unidos</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">4</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">8.75</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">site:avanaplasticsurgery.com</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">4</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">30</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial en miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">1</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">6</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial profundo aventura</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">6.5</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">7</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift turkey price</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">9</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">turkey face lift cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">9.5</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial de plano profundo precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">10.5</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">cirujano de lifting facial miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">2</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#e67e22;font-size:12px;">24.5</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane facelift cost miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">5</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">7</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">deep plane lift cost</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">9</td></tr><tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting del tercio medio facial precio</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">9</td></tr><tr style="background:#fff;"><td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;">lifting facial profundo miami</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#7c3aed;font-size:12px;">1</td><td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:right;color:#16a34a;font-size:12px;">11</td></tr>
+</tbody></table>
+</div>
+<div style="margin-top:6px;font-size:11px;color:#555;font-style:italic;">Showing all 16 zero-click queries by impressions (0 reach 100+ impressions; the URL ranks well but has very low reach this period) · Source: GSC URL-filtered export 2026-07-30</div>
+</div>
+</div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+<div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+<div style="font-size:16px;font-weight:700;">🔑 Primary &amp; Secondary Keywords — Page Analysis</div>
+<div style="font-size:12px;color:#aac;margin-top:2px;">Extracted from live page content — Avana /espanol/lifting-facial-plano-profundo-en-miami ✅ (ES) | Dr. Bustillo ✅ (ES) | Miami Plastic Surgery ✅ (ES) | Icon Cosmetic Center ✅ (ES) — fetched live 2026-07-30</div>
+</div>
+<div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+<table style="width:100%;border-collapse:collapse;font-size:12px;">
+<thead>
+<tr style="background:#1a3a5c;color:#fff;">
+<th style="padding:10px 14px;text-align:left;min-width:160px;">Element</th>
+<th style="padding:10px 14px;text-align:left;background:#dc2626;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Avana 🔴 OUR PAGE (ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami" style="color:#fff;text-decoration:none;" target="_blank">avanaplasticsurgery.com/espanol/lifting-facial-plano-profundo-en-miami</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#16a34a;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Dr. Bustillo (ES · deep plane)<br/><span style="font-weight:400;font-size:11px;"><a href="https://es.drbustillo.com/procedimientos-cosmeticos/estiramiento-facial" style="color:#fff;text-decoration:none;" target="_blank">es.drbustillo.com</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#ea580c;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Miami Plastic Surgery (ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://miamiplasticsurgery.com/es/surgical-services/face/facelift/" style="color:#fff;text-decoration:none;" target="_blank">miamiplasticsurgery.com</a></span></th>
+<th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">Icon Cosmetic Center (ES)<br/><span style="font-weight:400;font-size:11px;"><a href="https://iconcosmeticcenter.com/es/lifting-facial-en-miami" style="color:#fff;text-decoration:none;" target="_blank">iconcosmeticcenter.com</a></span></th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Title tag</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Keyword exacto ES + precio + marca</div>"Lifting Facial Plano Profundo en Miami - Desde $5,800 | Avana Plastic Surgery"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ Keyword exacto + geo + <strong>precio en el title</strong> — el único del set con cifra y keyword exacta</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Geo doble + "profundo" + marca</div>"Estiramiento facial Miami | Estiramiento facial profundo | Coral Gables | Dr. Bustillo"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ Miami + Coral Gables + "profundo"</div><div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Usa "estiramiento facial", no "lifting facial"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Genérico, sin "plano profundo"</div>"Cirugía de estiramiento facial por expertos en Miami, Florida | Cirugía Plástica en Miami"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ Keyword + geo (ES)</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ Sin "plano profundo" ni precio en el title</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Keyword ES + precio</div>"Lifting facial en Miami desde $3800 | Icon Cosmetic Center"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ "Lifting facial en Miami" exacto + <strong>el precio más bajo del set</strong></div><div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ Cero mención de "plano profundo"</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1 heading</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Match exacto</div>"Lifting Facial Plano Profundo en Miami"<div style="font-size:11px;color:#059669;margin-top:3px;">✅ Keyword objetivo palabra por palabra + geo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ H1 ES fuerte</div>"Lifting facial en Miami"<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Genérico — pero es el término de mayor volumen</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ H1 ES + señal de confianza</div>"Cirugía de lifting facial en Miami con expertos de confianza y certificados."<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Largo; sin "plano profundo"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ H1 ES limpio</div>"Lifting Facial en Miami"<div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Genérico, sin técnica</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Primary keyword</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">lifting facial plano profundo en miami</span><div style="font-size:11px;color:#059669;margin-top:3px;">✅ <strong>75 menciones</strong> de "plano profundo" — la página más específica del set</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">🔴 GSC: keyword 0 impresiones; URL pos <strong>7.78</strong>, 151 impr, 3 clics — rankea bien, <strong>le falta alcance</strong></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">lifting facial miami / estiramiento facial profundo</span><div style="font-size:11px;color:#666;margin-top:3px;">ES — cubre el genérico <em>y</em> el deep plane</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">lifting facial en miami</span><div style="font-size:11px;color:#666;margin-top:3px;">ES — genérico, con H2 dedicado a plano profundo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><span style="background:#eef;padding:2px 6px;border-radius:3px;font-weight:700;">lifting facial en miami</span><div style="font-size:11px;color:#666;margin-top:3px;">ES — genérico + precio</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Secondary keywords</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 16 H2 (ES) + FAQ</div><div style="font-size:11px;">qué es · <strong>plano profundo vs. SMAS</strong> · beneficios · candidato · cómo se realiza · <strong>transferencia de grasa</strong> · antes/después · opiniones · cirujano · recuperación · resultados y duración · <strong>cuánto cuesta</strong> · pacientes de fuera · Preguntas frecuentes</div><div style="font-size:11px;color:#059669;margin-top:3px;">✅ La cobertura técnica más profunda (SMAS vs. plano profundo, grasa)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 14 H2 (ES) + FAQ</div><div style="font-size:11px;">beneficios · <strong>testimonios</strong> · qué es · <strong>tipos de lifting</strong> · candidato · proceso · antes/después · combinaciones · <strong>costo</strong> · recuperación · riesgos · por qué elegir al Dr. Bustillo · Preguntas frecuentes</div><div style="font-size:11px;color:#059669;margin-top:3px;">✅ Usa "lifting deep plane" y "plano profundo" en el cuerpo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 13 H2 (ES) + FAQ</div><div style="font-size:11px;">Dr. Wolf · qué es · técnicas personalizadas · <strong>Lifting facial de plano profundo</strong> · <strong>Lifting SMAS</strong> · <strong>Mini lifting</strong> · transformaciones · qué esperar · <strong>costo</strong> · cirujano certificado · Preguntas frecuentes · reserve consulta</div><div style="font-size:11px;color:#059669;margin-top:3px;">✅ H2 propio de "plano profundo" — el rival ES más directo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 12 H2 (ES) + 9 subtécnicas</div><div style="font-size:11px;">qué es · beneficios · qué corrige · <strong>tipos</strong> (completo, medio, mini, inferior, hilo) · áreas · <strong>técnicas</strong> (SMAS, MACS, cutáneo, S-lift) · masculino vs femenino · recuperación · resultados · Preguntas frecuentes</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ Lista SMAS/MACS/S-lift pero <strong>omite plano profundo</strong></div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Word count<br/><span style="font-size:11px;font-weight:400;color:#666;">(approx. — body)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~3,795 words (ES)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~4,300 words (ES) — el más profundo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~2,300 words (ES)</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~2,330 words (ES)</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cost signal</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Precio explícito + benchmarks</div><div style="font-size:11px;"><strong>"Desde $5,800"</strong> en title, meta y cuerpo + financiamiento. Contextualiza con <strong>RealSelf ~$23,700</strong> y <strong>ASPS $11,395</strong> — el único que ancla contra el promedio nacional.</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Precio premium muy alto</div><div style="font-size:11px;"><strong>"Generalmente comienzan en $30,000"</strong> — posicionamiento de lujo; deja libre todo el rango accesible para Avana.</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Sin cifra, con financiación</div><div style="font-size:11px;">Sin precio publicado; plan personalizado + financiación <strong>Cherry</strong></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Gancho barato + rango real</div><div style="font-size:11px;"><strong>"desde $3800"</strong> en title/meta, pero el cuerpo indica <strong>$10,000–$20,000</strong> — el ancla más agresiva del set.</div></td></tr>
+<tr style="background:#f8fbff;"><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta description</td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ES + precio + beneficio</div><div style="font-size:11px;">"Lifting facial plano profundo en Miami desde $5,800: rejuvenecimiento natural y duradero del tercio medio, papada y cuello por cirujanos certificados."</div><div style="font-size:11px;color:#059669;margin-top:3px;">✅ Keyword + precio + prueba — la mejor del set</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ No extraíble</div><div style="font-size:11px;">No expuesta; Google la auto-genera del cuerpo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ No extraíble</div><div style="font-size:11px;">No expuesta; Google la auto-genera del cuerpo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ES + precio</div><div style="font-size:11px;">"Lifting facial en Miami desde $3800. Mejore el contorno y el equilibrio de su rostro a través de la cirugía de estiramiento facial (ritidectomía) y del cuello."</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">FAQ coverage<br/><span style="font-size:11px;font-weight:400;color:#666;">(targets PAA)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 14 preguntas + <strong>FAQPage JSON-LD</strong></div><div style="font-size:11px;">diferencia vs. tradicional · duración · invasividad · naturalidad · combinar con lifting de cuello · candidato · viajar a Miami · <strong>cuánto cuesta</strong> · mejor edad · dolor · cicatrices · anestesia · resultados finales · transferencia de grasa</div><div style="font-size:11px;color:#059669;margin-top:3px;">✅ El único del set con FAQPage estructurado confirmado</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ FAQ presente (~6 temas)</div><div style="font-size:11px;">inflamación · duración · <strong>costo en Miami</strong> · vale la pena · dolor · duración de resultados</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ FAQ corta (4 temas)</div><div style="font-size:11px;">¿es adecuado para mí? · duración de resultados · combinar procedimientos · edad ideal</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ FAQ amplia (9 temas)</div><div style="font-size:11px;">cómo se realiza · riesgos · cuándo llamar · duración · cicatrices · ubicación de cicatrices · ducharse · combinar</div><div style="font-size:11px;color:#c0392b;margin-top:3px;">❌ Sin FAQPage schema (sólo Article)</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Trust signals<br/><span style="font-size:11px;font-weight:400;color:#666;">(credentials, reviews)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="font-size:11px;"><span style="color:#059669;">✅ Dr. Rudolph J. Triana — Cirujano Plástico Facial Certificado<br/>✅ Galería antes/después + sección "Opiniones de pacientes"<br/>✅ Consulta gratuita · contenido revisado y fechado (15 jul 2026)</span></div><div style="font-size:11px;color:#c0392b;margin-top:3px;">🔴 <strong>Sin calificación con estrellas ni número de reseñas</strong> — la mayor brecha frente a Bustillo</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="font-size:11px;"><span style="color:#059669;">✅ <strong>4.8★ · 190+ reseñas</strong><br/>✅ Doble certificación ABFPRS + ABOto · F.A.C.S.<br/>✅ Castle Connolly Top Doctor (10+ años) · Best Doctors 2020–21<br/>✅ 20+ años · antes/después · 305-663-3380</span></div><div style="font-size:11px;color:#059669;margin-top:3px;">🏆 El perfil de confianza más fuerte del set</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="font-size:11px;"><span style="color:#059669;">✅ Dr. Carlos Wolf — 30+ años<br/>✅ Doble certificación de junta<br/>✅ Profesor clínico FIU · columnista Miami Herald (15 años)<br/>✅ Galería + testimonios · 305.595.2969</span></div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="font-size:11px;"><span style="color:#059669;">✅ Cirujanos certificados por la junta<br/>✅ Galería antes/después · financiamiento<br/>✅ (786) 233-7080 · consulta gratuita</span></div><div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Sin estrellas ni cirujano destacado en la página</div></td></tr>
+<tr><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA<br/><span style="font-size:11px;font-weight:400;color:#666;">(conversion)</span></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Agende una consulta gratuita"</div><div style="font-size:11px;color:#666;margin-top:3px;">+ "Reserve una Consulta" · 2 secciones CTA dedicadas</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Solicite su consulta" / "programar ahora"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Solicitar una consulta" / "Reserve su consulta"</div></td><td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Consulta Gratuita" / "Reserve una Consulta"</div></td></tr>
+<tr><td style="padding:10px 14px;font-weight:700;color:var(--navy);">Schema markup<br/><span style="font-size:11px;font-weight:400;color:#666;">(JSON-LD)</span></td><td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;"><div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El más completo del set — 6 bloques JSON-LD</div><div style="font-size:11px;"><strong>SurgicalProcedure</strong> · <strong>FAQPage</strong> (14 Q&amp;A) · <strong>MedicalOrganization</strong> · BreadcrumbList · WebPage · Person · Offer · MedicalSpecialty · PostalAddress · GeoCoordinates · OpeningHoursSpecification · SpeakableSpecification</div><div style="font-size:11px;color:#e67e22;margin-top:3px;">⚠️ Falta sólo <strong>Review / AggregateRating</strong> — la única pieza que impide mostrar estrellas en la SERP</div></td><td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ No confirmado</div><div style="font-size:11px;">Probable LocalBusiness / Review; no verificable en el HTML servido</div></td><td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;"><div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ No confirmado</div><div style="font-size:11px;">Probable MedicalProcedure / FAQPage; no verificable en el HTML servido</div></td><td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;"><div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sólo Article + Person</div><div style="font-size:11px;">❌ Sin MedicalProcedure, FAQPage ni Review pese a tener FAQ y precio publicados</div></td></tr>
+</tbody>
+</table>
+<!-- Key takeaway -->
+<div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+<div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Key takeaway from competitor analysis:</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+<div>
+<strong>Competitive landscape for "lifting facial plano profundo en miami":</strong><br/>
+1. <strong>La keyword exacta no tiene volumen</strong> (0 impresiones GSC) — pero la página <em>ya rankea</em>: pos <strong>7.78</strong> con 151 impr y 3 clics (CTR 1.99%). El problema no es el ranking, es el <strong>alcance</strong>: está optimizada para una frase que nadie escribe completa.<br/>
+2. <strong>Bustillo domina el término genérico</strong> — "lifting facial en miami" con ~4,300 palabras, <strong>4.8★ / 190+ reseñas</strong>, doble certificación ABFPRS + ABOto, Castle Connolly y Best Doctors. Es el perfil E-E-A-T más fuerte del set.<br/>
+3. <strong>Miami Plastic Surgery es el rival semántico más directo</strong> — tiene un H2 propio "Lifting facial de plano profundo" dentro de una página que apunta al genérico, capturando ambas intenciones con una sola URL.<br/>
+4. <strong>El precio es el campo de batalla</strong> — Icon ancla en "desde $3800" (aunque su cuerpo diga $10k–$20k) y Bustillo en $30,000. Avana está en <strong>$5,800</strong>, el punto más creíble del rango — y el 40% de sus consultas GSC llevan la palabra <em>precio/cost</em>.<br/>
+5. <strong>Avana ya gana en SEO técnico</strong> — es la única con SurgicalProcedure + FAQPage (14 Q&amp;A) + MedicalOrganization, keyword exacta en title/H1/meta y precio publicado. Icon sólo tiene <em>Article</em>.
+</div>
+<div>
+<strong>What Avana must add to dominate "lifting facial plano profundo en miami":</strong><br/>
+1. <strong>Ampliar el objetivo al clúster que sí tiene volumen</strong> — reforzar "lifting facial en miami" (pos <strong>1</strong>, sólo 2 impr) y "lifting facial precio miami" (pos 4.6, 10 impr) en title, H1 y H2. Hoy la página rankea #1 para el término corto pero casi no se muestra: falta autoridad temática, no relevancia.<br/>
+2. <strong>Añadir Review / AggregateRating JSON-LD + estrellas visibles</strong> — es la <em>única</em> pieza de schema que le falta. Bustillo muestra 4.8★/190 reseñas; Avana no muestra ninguna calificación pese a tener sección "Opiniones de pacientes".<br/>
+3. <strong>Crear una sección/landing de precio explícita</strong> — "lifting facial precio miami", "lifting facial de plano profundo precio" y "lifting del tercio medio facial precio" son consultas reales de la URL. El precio de $5,800 ya existe: hay que darle su propio bloque indexable con tabla comparativa vs. el promedio nacional.<br/>
+4. <strong>Capturar la variante geográfica y de técnica</strong> — "lifting facial profundo aventura" (pos 6.5) y "cirujano de lifting facial miami" (pos 24.5) indican demanda por <em>ubicación</em> y por <em>cirujano</em>; añadir Aventura/Coral Gables y reforzar el perfil del Dr. Triana con credenciales tipo Castle Connolly.<br/>
+5. <strong>Construir el puente ES↔EN</strong> — la URL ya recibe impresiones en inglés ("deep plane facelift cost", "deep plane facelift miami", "deep plane facelift cost miami"). Enlazar con hreflang a <em>/deep-plane-facelift-miami</em> consolidaría señales en vez de competir consigo misma.
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel { position: relative; max-width: 100%; margin: auto; background: #fff; border: 1px solid #dce6f0; }
+.carousel-container { position: relative; padding: 16px 20px; display: flex; align-items: center; justify-content: center; min-height: 400px; }
+.carousel-slide { display: none; width: 100%; }
+.carousel-slide.active { display: block; }
+.carousel-slide img { max-width: 100%; height: auto; display: block; }
+.carousel-prev, .carousel-next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; background-color: rgba(0,0,0,0.5); font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 3px; user-select: none; }
+.carousel-next { right: 0; }
+.carousel-prev { left: 0; }
+.carousel-prev:hover, .carousel-next:hover { background-color: rgba(0,0,0,0.8); }
+.carousel-dots { text-align: center; padding: 12px 20px; background: #f9f9f9; border-top: 1px solid #dce6f0; }
+.carousel-dot { cursor: pointer; height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+.carousel-dot.active { background-color: #717171; }
+.carousel { max-width: 900px; margin: 30px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+.carousel-title { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 20px; font-size: 16px; font-weight: 600; text-align: center; letter-spacing: 0.5px; }
+.carousel-slide img { cursor: pointer; transition: transform 0.2s ease; }
+.carousel-slide img:hover { transform: scale(1.02); }
+.zoom-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); }
+.zoom-modal.active { display: flex; align-items: center; justify-content: center; }
+.zoom-modal-content { max-width: 90vw; max-height: 90vh; position: relative; }
+.zoom-modal-content img { width: 100%; height: auto; }
+.zoom-close { position: absolute; top: 20px; right: 40px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; user-select: none; }
+.zoom-close:hover { color: #bbb; }
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/lifting-facial-plano-profundo-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/lifting-facial-plano-profundo-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/lifting-facial-plano-profundo-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) { showSlide(currentIndex += n); }
+function currentSlide(n) { showSlide(currentIndex = n); }
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>
