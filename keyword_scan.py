@@ -845,6 +845,33 @@ BRAININJURY_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Surgical errors (gallardolawyers.com/injury-law/miami-surgical-errors-attorney).
+# The page targets the plural "surgical errors attorney", which has zero GSC
+# impressions; the singular "surgical error attorney/lawyer" forms carry the
+# demand, so both are tracked separately to show the gap.
+SURGICALERRORS_EN = [
+    ("surgical error", ["surgical error", "surgical errors", "surgery error", "surgery errors", "surgical mistake", "surgical mistakes"]),
+    ("miami surgical errors attorney", ["miami surgical errors attorney", "surgical errors attorney miami", "miami surgical errors attorneys", "surgical errors attorneys miami"]),
+    ("surgical error attorney", ["surgical error attorney", "surgical error attorneys", "surgical errors attorney", "surgical errors attorneys"]),
+    ("surgical error lawyer", ["surgical error lawyer", "surgical error lawyers", "surgical errors lawyer", "surgical errors lawyers"]),
+    ("surgical error attorney miami", ["surgical error attorney miami", "miami surgical error attorney", "surgical error attorney miami fl", "miami surgical error attorneys"]),
+    ("surgical error lawyer miami", ["surgical error lawyer miami", "miami surgical error lawyer", "surgical errors lawyers miami", "miami surgical error lawyers"]),
+    ("surgical errors law firm", ["surgical errors law firm", "surgical error law firm", "surgery errors law firm", "surgical errors law firms", "miami surgical errors law firm"]),
+    ("surgical mistake attorney", ["surgical mistake attorney", "surgical mistake lawyer", "surgical mistake attorneys", "surgical mistake lawyers", "surgical mistake attorney miami fl"]),
+    ("anesthesia error attorney", ["anesthesia error attorney", "anesthesia errors attorney", "anesthesia error attorney miami", "anesthesia errors attorney miami", "miami anesthesia error attorney"]),
+    ("anesthesia error lawyer", ["anesthesia error lawyer", "anesthesia errors lawyer", "anesthesia error lawyer miami", "anesthesia errors lawyer miami", "miami anesthesia error lawyer"]),
+    ("surgical malpractice lawyer", ["surgical malpractice lawyer", "surgical malpractice lawyers", "surgical malpractice attorney", "surgical malpractice lawyers in miami", "surgical negligence lawyer miami", "surgical negligence attorney"]),
+    ("medical malpractice attorney miami", ["medical malpractice attorney miami", "miami medical malpractice attorney", "medical malpractice lawyer miami", "medical malpractice lawyers in miami"]),
+    ("surgery complication attorney", ["miami surgery complication attorney", "miami surgery complication lawyer", "surgery complication attorney", "surgery complication lawyer"]),
+    ("post-surgical infection / nerve damage", ["post-surgical infection", "miami post-surgical infection injury lawyer", "surgical nerve damage", "miami surgical nerve damage lawsuit injury lawyer", "nerve damage lawyer"]),
+    ("foreign object / wrong site surgery", ["foreign object left inside", "miami foreign object left inside injury attorney", "wrong site surgery", "wrong patient surgery", "bowel perforation", "miami bowel perforation injury lawyer"]),
+    ("failed surgery malpractice", ["failed surgery", "miami failed surgery malpractice injury lawyer", "miami failed surgery malpractice injury attorney", "unnecessary procedures", "miami unnecessary procedures lawyer"]),
+    ("statute of limitations", ["statute of limitations", "how long do you have to file", "time limit to file", "time limits for medical malpractice"]),
+    ("cost / fees", ["no win no fee", "no fee unless", "contingency fee", "free consultation", "free case evaluation"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # Spanish twin of BRAININJURY_EN (gallardolawyers.com/es/lesionados/...). Variants
 # are lowercase and accent-free because normalize() strips accents before matching.
 BRAININJURY_ES = [
@@ -1026,6 +1053,8 @@ PAGES = {
         {"slug": "abdominoplastia-con-curvas-en-miami", "lang": "es", "kw": ABDOMINOPLASTIA_CURVAS_ES},
     "https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer":
         {"slug": "miami-brain-injury-lawyer", "lang": "en", "kw": BRAININJURY_EN},
+    "https://gallardolawyers.com/injury-law/miami-surgical-errors-attorney":
+        {"slug": "miami-surgical-errors-attorney", "lang": "en", "kw": SURGICALERRORS_EN},
     "https://gallardolawyers.com/injury-law/product-liability-attorney-miami":
         {"slug": "product-liability-attorney-miami", "lang": "en", "kw": PRODLIAB_EN},
     "https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami":
