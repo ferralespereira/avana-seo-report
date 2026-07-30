@@ -1,0 +1,1339 @@
+KEYWORD MASTER TABLE  -  /es/lesionados/abogados-de-lesiones-cerebrales-en-miami (Spanish)
+Sources merged: On-page text + Google Search Console (last 3 mo, this URL) + Semrush keyword-gap report + Semrush bulk export (US)
+GSC queries: 60 (10,109 impressions, 0 clicks)  |  Semrush gap: 25  |  Semrush bulk (US): 69  |  Total unique keywords: 197
+On-page visible words: 2,542 BEFORE the 2026-07-29 accuracy fix + content expansion  ->  4,791 AFTER.
+(article.cshtml Es + the 10 Spanish FAQ entries, both measured the same way.)
+
+COLUMNS:
+  OnPg-Was = times the exact phrase appeared in the page BEFORE the 2026-07-29 rewrite
+  OnPg-Now = times the exact phrase appears in the page NOW (after the rewrite)
+  Change   = OnPg-Now minus OnPg-Was ( +N = added, -N = removed, 0 = unchanged )
+  GSC-Impr = Google Search Console impressions (how often we showed in Google search, last 3 mo)
+  GSC-Pos  = average Google position for that query
+  SEM-Vol  = Semrush monthly search volume (US database)
+  SEM-KD   = Semrush Keyword Difficulty (0-100; -1 = n/a)
+  CPC      = Semrush average cost-per-click in USD - proxy for how commercially valuable the click is
+             (bulk-export keywords only; the gap report's CPC column was not carried over)
+  AIO      = Y when the US SERP for this keyword shows an AI Overview -> the GEO / generative-answer
+             target set. Blank means either no AI Overview or no SERP-feature data for that keyword.
+  OurRank  = our Semrush position ( - = tracked but not in top 100; blank = no position data for this
+             keyword, which is the case for every bulk-export term since that export has no rank column)
+  Source   = which data sets contain the keyword
+             page = appears in the page text | GSC = Search Console | SEM = keyword-gap report
+             BULK = Semrush bulk export (US, 2026-07-28) of the 69 candidate terms the gap report could
+                    not surface, because a gap report only returns keywords where our page or one of the
+                    3 tracked competitors already ranks.
+
+Rows ordered by: Semrush search volume (SEM-Vol), highest first. Keywords with no Semrush volume fall to the bottom (ordered by GSC impressions).
+Note 1: GSC returns the Spanish accented and unaccented spellings as separate queries (e.g. "lesión" vs "lesion",
+        "traumáticas" vs "traumaticas"). They are kept as separate rows because that is how Google reports them.
+Note 2: 95% of this URL's impressions (9,571 of 10,109) come from the United States, so the US database is
+        the correct market for every Semrush figure in this table.
+==================================================================================================================
+
+Keyword                                                      OnPg-Was OnPg-Now Change  GSC-Impr GSC-Pos SEM-Vol SEM-KD CPC     AIO  OurRank Source
+--------------------------------------------------------------------------------------------------------------------------------------------------
+abogado de lesiones cerebrales y de columna                  0        2        +2      1106     26.5    2900    3                   -       page+GSC+SEM
+abogado de lesiones cerebrales y espinales                   0        2        +2      1006     24.7    1900    0                   88      page+GSC+SEM
+mejor abogado de lesiones cerebrales y espinales             0        1        +1      2428     21.2    1600    0                   18      page+GSC+SEM
+mejor abogado de lesiones cerebrales y de columna            0        1        +1      1531     21.4    1600    5                   18      page+GSC+SEM
+abogado de lesiones cerebrales                               12       27       +15     903      14.1    720     3                   21      page+GSC+SEM
+abogado de lesión cerebral traumática                        0        2        +2                       720     1      $35.83  Y            page+BULK
+abogado de lesión de cerebro                                 0        1        +1      1484     5.9     590     2                   13      page+GSC+SEM
+abogados de lesiones cerebrales                              14       16       +2      459      20.3    480     3                   -       page+GSC+SEM
+abogados por golpes en la cabeza                             0        1        +1      5        18.6    260     2      $91.95  Y            page+GSC+BULK
+abogado de lesiones de columna vertebral                     0        0        0                        260     0      $0.00   Y            BULK
+abogado lesiones medulares                                   0        0        0                        210     2                   -       SEM
+abogado de lesión a la cabeza                                0        0        0                        210     1                   -       SEM
+abogado de tce                                               0        1        +1      6        29.5    140     4      $0.00   Y            page+GSC+BULK
+abogado de lesiones de medula espinal                        0        0        0                        140     1                   -       SEM
+abogado de lesiones cerebrales y de columna vertebral        0        0        0       120      20.6    110     1                   33      GSC+SEM
+abogado de lesiones cerebrales y de la columna vertebral     0        0        0       88       18.9    110     0                   -       GSC+SEM
+abogado de trauma craneal                                    0        1        +1      79       19.7    110     2      $0.00   Y            page+GSC+BULK
+abogado de lesiones cerebrales traumáticas cerca de mí       0        1        +1      3        70.7    90      0      $0.00   Y            page+GSC+BULK
+mejor abogado de lesiones cerebrales y de columna vertebral  0        0        0       103      14.1    70      0                   -       GSC+SEM
+abogados de lesiones cerebrales traumáticas                  0        1        +1      15       23.1    70      0      $0.00   Y            page+GSC+BULK
+abogado de lesión de cerebro en palm springs                 0        0        0                        70      5                   -       SEM
+abogado de lesión de cerebro en long beach                   0        0        0                        70      5                   -       SEM
+abogados lesiones cerebrales                                 0        0        0       151      16.1    50      1                   17      GSC+SEM
+abogado de lesión de cerebro en commerce                     0        0        0       23       19.1    50      0                   21      GSC+SEM
+abogado de lesion cerebral cheyenne                          0        0        0       7        62.9    50      1                   46      GSC+SEM
+abogado de lesión cerebral traumática en palm springs        0        0        0                        50      0                   -       SEM
+abogado de lesión cerebral traumática en commerce            0        0        0                        50      0                   -       SEM
+abogado de lesiones en la cabeza miami                       0        0        0       116      6.1     40      0                   4       GSC+SEM
+abogado de traumatismos cerebrales                           0        1        +1      28       13.1    40      0                   41      page+GSC+SEM
+abogado de lesiones cerebrales doral                         0        0        0       28       18.4    40      -1                  20      GSC+SEM
+fairfax abogado de lesiones cerebrales traumáticas           0        0        0       1        38.0    40      0                   37      GSC+SEM
+new brunswick abogado de lesiones cerebrales traumáticas     0        0        0                        40      0                   -       SEM
+abogado de lesiones cerebrales miami                         0        0        0       131      8.2     30             $0.00                GSC+BULK
+abogado de traumatismo cerebral                              0        0        0       6        5.5     30             $0.00                GSC+BULK
+abogado de lastimaduras cerebrales                           0        0        0       22       41.7    20             $0.00                GSC+BULK
+abogado de cerebro                                           0        0        0       21       15.7    20             $0.00                GSC+BULK
+abogado lesion de cerebro                                    0        0        0       5        6.6     20             $0.00                GSC+BULK
+abogado de lesiones cerebrales en miami                      2        3        +1      12       3.8     10             $0.00                page+GSC+BULK
+abogado para lesiones la cabeza                              0        0        0       9        1.8     10             $0.00                GSC+BULK
+abogado de lesion al cerebro                                 0        0        0       8        6.1     10             $0.00                GSC+BULK
+abogados de lesiones cerebrales en miami                     3        5        +2      78       2.4     0              $0.00                page+GSC+BULK
+lesiones cerebrales abogado                                  0        0        0       25       3.9     0              $0.00                GSC+BULK
+abogados de lesión cerebral traumática en orlando            0        0        0       13       47.1                                        GSC
+abogado de lesiones por encefalopatía bilirrubínica de orla… 0        0        0       12       18.7                                        GSC
+abogado de lastimaduras cerebrales traumáticas cerca de mí   0        0        0       7        78.1                                        GSC
+abogado de lesiones cerebrales traumáticas                   0        1        +1      6        30.7                                        page+GSC
+abogado de lesiones cerebrales infantiles en orlando         0        0        0       6        23.0                                        GSC
+abogados de lesiones cerebrales de fort lauderdale           0        0        0       6        27.5                                        GSC
+abogado de lesi n cerebral traum tica                        0        0        0       6        18.8                                        GSC
+abogado de lesiones cerebrales perinatales en orlando        0        0        0       5        29.6                                        GSC
+abogado de lesiones neurológicas en orlando                  0        0        0       5        22.0                                        GSC
+abogado de lesiones cerebrales traumáticas en jackson        0        0        0       4        73.2                                        GSC
+abogado de lesi n de cerebro                                 0        0        0       4        16.2                                        GSC
+abogado de lesiones por encefalopatía isquémica hipóxica de… 0        0        0       3        23.0                                        GSC
+abogado de traumatismo de cerebral                           0        0        0       3        3.7                                         GSC
+abogado de lesiones por accidente de coche en miami por les… 0        0        0       2        17.5                                        GSC
+abogado de lesiones cerebrales en orlando                    0        0        0       2        20.5                                        GSC
+newport beach abogado de lesiones por accidente cerebrovasc… 0        0        0       2        80.5                                        GSC
+abogado de lesión cerebral traumática cerca de mí            0        0        0       2        69.5                                        GSC
+abogados de monoplejía                                       0        0        0       2        29.0                                        GSC
+abogado de lesion de cerebro                                 0        0        0       2        26.0                                        GSC
+durham abogado de lesiones cerebrales traumáticas            0        0        0       2        88.0                                        GSC
+abogado de lesiones cerebrales hipóxicas en orlando          0        0        0       1        35.0                                        GSC
+¿cuál abogado con experiencia comprobada trabaja con neuról… 0        0        0       1        4.0                                         GSC
+abogado de lesiones deportivas san jose                      0        0        0       1        73.0                                        GSC
+joliet abogado de traumatismos cerebrales                    0        0        0       1        28.0                                        GSC
+abogado de lesiones cerebrales traumáticas en orange county  0        0        0       1        30.0                                        GSC
+abogado de lesiones cerebrales traumaticas                   0        0        0       1        73.0                                        GSC
+abogado perdida de audicion causada por ruido en miami       0        0        0       1        49.0                                        GSC
+abogados de familia en miami gratis                          0        0        0       1        49.0                                        GSC
+lesiones (palabra)                                           42       93       +51                                                          page
+lesión (palabra)                                             33       77       +44                                                          page
+cerebrales (palabra)                                         33       69       +36                                                          page
+lesiones cerebrales (frase)                                  33       68       +35                                                          page
+cerebral (palabra)                                           30       63       +33                                                          page
+lesión cerebral (frase)                                      23       53       +30                                                          page
+abogado (palabra)                                            19       46       +27                                                          page
+caso                                                         15       28       +13                                                          page
+abogados (palabra)                                           17       26       +9                                                           page
+miami (palabra)                                              9        23       +14                                                          page
+accidente                                                    10       19       +9                                                           page
+cabeza                                                       4        19       +15                                                          page
+lesión cerebral traumática                                   2        17       +15                                                          page
+tce (acrónimo)                                               0        17       +17                                                          page
+negligencia                                                  4        15       +11                                                          page
+compensación                                                 10       13       +3                                                           page
+casos                                                        9        13       +4                                                           page
+gallardo law firm                                            9        12       +3                                                           page
+reclamo                                                      5        11       +6                                                           page
+florida                                                      2        10       +8                                                           page
+accidentes                                                   8        9        +1                                                           page
+lesiones cerebrales traumáticas                              2        9        +7                                                           page
+médicos                                                      6        9        +3                                                           page
+daños                                                        9        8        -1                                                           page
+responsabilidad                                              6        7        +1                                                           page
+víctima                                                      4        7        +3                                                           page
+demanda                                                      5        7        +2                                                           page
+daño cerebral                                                3        6        +3                                                           page
+lesiones personales                                          3        6        +3                                                           page
+caídas                                                       4        6        +2                                                           page
+evidencia                                                    3        6        +3                                                           page
+negligencia médica                                           1        5        +4                                                           page
+cerebro                                                      3        5        +2                                                           page
+abogado de lesiones personales                               3        5        +2                                                           page
+sufrimiento                                                  4        5        +1                                                           page
+síntomas                                                     3        5        +2                                                           page
+columna (palabra)                                            0        5        +5                                                           page
+golpe en la cabeza                                           0        5        +5                                                           page
+víctimas                                                     1        4        +3                                                           page
+facturas médicas                                             1        4        +3                                                           page
+tratamientos                                                 4        4        0                                                            page
+escala de coma de glasgow                                    0        4        +4                                                           page
+consulta gratuita                                            0        4        +4                                                           page
+golpes en la cabeza                                          1        4        +3                                                           page
+lesiones cerebrales y espinales                              0        3        +3                               13                          page+BULK
+proceso legal                                                3        3        0                                                            page
+primera consulta es gratis                                   3        3        0                                                            page
+testigos                                                     2        3        +1                                                           page
+espinales (palabra)                                          0        3        +3                                                           page
+conmoción                                                    0        3        +3                                                           page
+señales de peligro                                           0        3        +3                                                           page
+abogado de lesión cerebral                                   0        2        +2                       0              $0.00                page+BULK
+demanda por lesión cerebral                                  0        2        +2                               5                           page+BULK
+daños y perjuicios                                           2        2        0                                                            page
+tbi                                                          4        2        -2                                                           page
+accidente de trabajo                                         1        2        +1                                                           page
+resbalones                                                   1        2        +1                                                           page
+miami-dade                                                   0        2        +2                                                           page
+caso de lesión cerebral                                      0        2        +2                                                           page
+lesiones cerebrales y de columna                             0        2        +2                                                           page
+lesiones en la cabeza                                        0        2        +2                                                           page
+trauma craneal                                               0        2        +2                                                           page
+abogado de lesiones en la cabeza en miami                    0        1        +1                               2                           page+BULK
+abogado de lesiones en la cabeza                             0        1        +1                       0              $0.00                page+BULK
+responsabilidad por productos                                1        1        0                                                            page
+trauma cerebral                                              1        1        0                                                            page
+traumatismo                                                  0        1        +1                                                           page
+estatuto de limitaciones                                     1        1        0                                                            page
+accidentes automovilísticos                                  1        1        0                                                            page
+accidente automovilístico                                    1        1        0                                                            page
+accidentes de trabajo                                        1        1        0                                                            page
+dolor y sufrimiento                                          0        1        +1                                                           page
+cerca de mí                                                  0        1        +1                                                           page
+columna vertebral                                            0        1        +1                                                           page
+médula espinal                                               0        1        +1                                                           page
+traumatismo craneoencefálico                                 0        1        +1                                                           page
+lesión de cerebro                                            0        1        +1                                                           page
+negligencia comparativa                                      1        1        0                                                            page
+abogado de lesión cerebral por accidente de trabajo          0        0        0                                2                           BULK
+abogado de coma                                              0        0        0                                5                           BULK
+abogado de anoxia cerebral                                   0        0        0                                5                           BULK
+abogado de lesión cerebral por negligencia médica            0        0        0                                3                           BULK
+abogado de lesión cerebral infantil                          0        0        0                                5                           BULK
+abogado de lesiones neurológicas                             0        0        0                                5                           BULK
+abogado de contusión cerebral                                0        0        0                                4                           BULK
+abogado de lesiones cerebrales hialeah                       0        0        0                                7                           BULK
+abogado de lesiones de la médula espinal en miami            0        0        0                                3                           BULK
+abogado de fractura de cráneo                                0        0        0                                4                           BULK
+abogado de secuelas neurológicas                             0        0        0                                6                           BULK
+abogado de lesiones cerebrales homestead                     0        0        0                                3                           BULK
+abogado de lesión cerebral miami                             0        0        0                                4                           BULK
+abogado de daño cerebral                                     0        0        0                                5                           BULK
+abogado de lesiones de columna en miami                      0        0        0                                4                           BULK
+abogado de lesiones de la médula espinal                     0        0        0                        0              $0.00                BULK
+abogado de lesiones cerebrales miami beach                   0        0        0                                7                           BULK
+abogado de lesiones cerebrales y de columna en miami         0        0        0                                1                           BULK
+abogado de lesiones espinales                                0        0        0                                5                           BULK
+abogado de lesiones espinales en miami                       0        0        0                                3                           BULK
+traumatismo craneoencefálico abogado                         0        0        0                                6                           BULK
+abogado de lesiones cerebrales north miami                   0        0        0                                4                           BULK
+abogado de golpes en la cabeza                               0        0        0                                3                           BULK
+compensación por lesión cerebral                             0        0        0                                5                           BULK
+abogado de lesión cerebral cerca de mí                       0        0        0                                6                           BULK
+abogado de estado vegetativo                                 0        0        0                                7                           BULK
+abogado de conmoción cerebral                                0        0        0                                5                           BULK
+abogado de lesiones cerebrales coral gables                  0        0        0                                4                           BULK
+abogado de lesión cerebral de nacimiento                     0        0        0                                3                           BULK
+abogado de lesión cerebral por caída                         0        0        0                                3                           BULK
+abogado especialista en lesiones cerebrales                  0        0        0                                4                           BULK
+abogado de paraplejia                                        0        0        0                                6                           BULK
+abogado de traumatismo craneoencefálico                      0        0        0                        0              $0.00                BULK
+abogado de cuadriplejia                                      0        0        0                                6                           BULK
+abogado de lesión cerebral por accidente de auto             0        0        0                                2                           BULK
+abogado de hipoxia cerebral                                  0        0        0                                5                           BULK
+abogado de lesiones cerebrales en florida                    0        0        0                                7                           BULK
+abogado de encefalopatía hipóxica isquémica                  0        0        0                                5                           BULK
+abogado de lesiones cerebrales cerca de mí                   0        0        0                                6                           BULK
+abogado de lesiones cerebrales miami gardens                 0        0        0                                7                           BULK
+abogado de lesiones cerebrales aventura                      0        0        0                                4                           BULK
+abogado de lesiones cerebrales kendall                       0        0        0                                3                           BULK
+cuánto vale un caso de lesión cerebral                       0        0        0                                3                           BULK
+abogado de lesiones cerebrales miami dade                    0        0        0                                3                           BULK
+abogado de accidente cerebrovascular                         0        0        0                                6                           BULK
+abogado de traumatismo craneal                               0        0        0                                5                           BULK
+demanda por daño cerebral                                    0        0        0                                6                           BULK
+máxima compensación                                          2        0        -2                                                           page
+mayor compensación                                           2        0        -2                                                           page
+
+
+#####################################################################################################
+#  WORK LOG - SEO/GEO optimization of /es/lesionados/abogados-de-lesiones-cerebrales-en-miami (Spanish)
+#  Session date: 2026-07-28
+#  This log is auto-appended after the table by scratchpad\merge_es.py (kept in scratchpad\worklog_es.txt).
+#  Companion file for the English page: miami-brain-injury-lawyer copy.txt
+#####################################################################################################
+
+STATUS: sections 1-5 below are the ANALYSIS, written 2026-07-28/29 BEFORE any edit. They are kept
+verbatim as the record of what the page looked like and why each change was made. The page HAS since
+been rewritten - see section 6 (what was fixed) and section 7 (the edit-by-edit changelog).
+
+1. KEYWORD FREQUENCY ANALYSIS (on-page) - BASELINE
+   - Extracted the page's visible Spanish text (article body + 10-item Spanish FAQ) = 2,542 words.
+     (For reference the English page was 2,545 words before its expansion and 4,157 after.)
+   - Counted exact-phrase frequency for all SEO-relevant terms (OnPage column in the table).
+   - Word boundaries are accent-aware (letter class [a-záéíóúüñ]), so "lesión" does not match inside
+     "lesiones" and "abogado" does not match inside "abogados".
+   - Source files:
+       Views/ServicePage/Content/injury-law/miami-brain-injury-lawyer/Es/article.cshtml
+       App_Data/FaqEntities.xml            (10 Spanish FAQ entries for this service)
+       App_Data/ServiceEntities.xml        (targeredkeywordspanish = "Abogados De Lesiones Cerebrales En Miami")
+   - NOTE (as of the baseline): the Spanish article had had NO content work. It was still the original
+     copy - no table of contents, no stats section, no severity/Glasgow section, no service-area (GEO)
+     section, no JSON-LD. ALL OF THOSE WERE ADDED on 2026-07-29; see sections 6 and 7.
+
+2. MERGED DATA SOURCES INTO ONE MASTER TABLE (the table above)
+   - Google Search Console (last 3 months, this URL) - 60 queries / 10,109 impressions / 0 clicks.
+       Source: D:\1a\avana-seo-report\sources\abogados-de-lesiones-cerebrales-en-miami\
+               abogados-de-lesiones-cerebrales-en-miami url\...\Queries.csv
+   - Semrush keyword-gap report - 25 keywords (volume, KD, our rank vs 3 Spanish competitors:
+     yourfloridatrialteam.com/es, wolfsonlawfirm.com/espanol, panterlaw.com/es).
+       Source: ...\gap.keywords_2026-07-24T13_17_13.774Z.csv
+   - Semrush BULK export, US database, 2026-07-28 - 69 candidate keywords, all 69 returned.
+       Source: d:\1a\GallardoLawyers3\abogado-de-lesión-cerebral-traumátic_bulk_us_2026-07-28_15-39-41.csv
+       Why a second Semrush pull was needed: a keyword-gap report only returns keywords where our page
+       or one of the 3 tracked competitors already ranks, which is why it came back with just 25 rows.
+       It is blind by construction to demand nobody in that set ranks for. The bulk export was built
+       from a hand-made candidate list (spine cluster, Miami geo, head/skull trauma, Spanish synonym
+       variants, injury-cause modifiers) to measure exactly that blind spot.
+       This export also carries CPC and SERP-features, which is where the CPC and AIO columns come from.
+   - Folded in on-page-only generic terms that actually occur on the page, plus (from 2026-07-29) the
+     tracking rows for the component phrases of the highest-value queries - "lesiones cerebrales y de
+     columna", "golpes en la cabeza", "trauma craneal", "tce", "cerca de mí" and the rest - so the
+     before/after effect of the rewrite is visible per phrase. Total = 197 unique keywords.
+   - Sorted DESC by SEM-Vol; keyword column capped at 60 chars (ellipsis if longer).
+   - Market check: 95% of this URL's impressions (9,571 of 10,109) are United States, so US is the
+     correct Semrush database. Brazil 85, UK 32, Mexico 31, Spain 13.
+
+3. WHAT THE BASELINE DATA SAYS (analysis as of 2026-07-28; acted on 2026-07-29 - see sections 6 and 7)
+
+   (a) 10,109 impressions and ZERO clicks in 3 months. The page is visible but never clicked, which
+       fits the average positions: the big-volume queries sit at position 21-26 (page 3).
+
+   (b) THE BRAIN + SPINE CLUSTER IS 63% OF ALL IMPRESSIONS AND IS NOT ON THE PAGE.
+       7 queries containing "columna" / "espinal" / "medular" = 6,382 impressions:
+           mejor abogado de lesiones cerebrales y espinales      2,428 impr  pos 21.2  vol 1,600
+           mejor abogado de lesiones cerebrales y de columna     1,531 impr  pos 21.4  vol 1,600
+           abogado de lesiones cerebrales y de columna           1,106 impr  pos 26.5  vol 2,900
+           abogado de lesiones cerebrales y espinales            1,006 impr  pos 24.7  vol 1,900
+           + 3 "columna vertebral" variants                        311 impr
+       The words "columna", "espinal", "medular" and "espina" appear ZERO times in the Spanish page.
+       Semrush also lists "abogado lesiones medulares" (210) and "abogado de lesiones de medula
+       espinal" (140) with our rank "-". This is the same pattern the English page had with
+       "best brain and spine injury lawyer/attorney" (4,400 + 3,600 vol).
+
+   (c) "abogado de lesion de cerebro" - 1,484 impressions at position 5.9, volume 590, our Semrush
+       rank 13. Highest-value near-miss on the page: 0 occurrences of that exact phrasing.
+
+   (d) HEAD-INJURY PHRASING IS MISSING. 211 impressions across "cabeza"/"craneal" queries, incl.
+       "abogado de lesiones en la cabeza miami" (116 impr, pos 6.1, vol 40, our rank 4) and
+       "abogado de trauma craneal" (79 impr, pos 19.7). The page uses "cabeza" only 4 times and
+       "traumatismo"/"craneal" not at all.
+
+   (e) LOCAL/GEO IS THIN - AND THE BULK EXPORT SAYS DO NOT BUILD IT OUT.
+       Only 341 impressions across the 7 GSC queries containing "miami". More decisively, ALL 11
+       Miami-neighborhood terms tested in the bulk export came back at 0 volume:
+         north miami, hialeah, coral gables, aventura, miami beach, kendall, homestead, miami gardens,
+         miami dade, "abogado de lesiones cerebrales en florida", "abogado de lesión cerebral miami".
+       => The Spanish-language neighborhood GEO section that the English page received is NOT justified
+          here. This REVERSES the recommendation made earlier in this session (before the bulk data
+          existed), which had assumed the English GEO play would transfer. It does not. One clean
+          Miami/Miami-Dade mention is enough; do not build a neighborhood list.
+       Caveat: a Semrush 0 means "below their measurement threshold", not "nobody searches this". But
+       GSC independently agrees (341 impressions total), so two sources point the same way.
+
+   (f) "cerca de mí" (near me) appears 0 times on the page, and here the two sources DISAGREE with (e):
+       "abogado de lesiones cerebrales traumáticas cerca de mí" has 90 volume, KD 0, and triggers an
+       AI Overview. Near-me is worth adding as phrasing even though neighborhood names are not.
+
+   (g) A lot of impressions come from cities we do not serve (Orlando, Jackson, Durham, Joliet,
+       Fairfax, Cheyenne, Commerce, San Jose, Orange County, Fort Lauderdale) - 18 queries but only
+       95 impressions total. Low value; do NOT optimize for these.
+
+   (h) The page's heaviest on-page phrases carry no measured demand of their own: "daños y perjuicios",
+       "causalidad", "responsabilidad de las instalaciones", "responsabilidad por productos". They do
+       not appear in GSC or Semrush in that form. Keep them for legal accuracy, but they are not
+       earning the word count they take up.
+
+3b. WHAT THE 2026-07-28 BULK EXPORT ADDED (69 keywords pulled, 69 returned)
+   Only 15 of the 69 carry any measurable US volume. That is itself the headline result: most of the
+   Spanish long-tail we hypothesised does not exist as measured demand. The 15:
+
+       720  KD 1  $35.83  AIO   abogado de lesión cerebral traumática      <-- THE FIND
+       260  KD 0   $0.00  AIO   abogado de lesiones de columna vertebral
+       260  KD 2  $91.95  AIO   abogados por golpes en la cabeza           <-- highest CPC in the set
+       140  KD 4   $0.00  AIO   abogado de tce
+       110  KD 2   $0.00  AIO   abogado de trauma craneal
+        90  KD 0   $0.00  AIO   abogado de lesiones cerebrales traumáticas cerca de mí
+        70  KD 0   $0.00  AIO   abogados de lesiones cerebrales traumáticas
+        30                      abogado de lesiones cerebrales miami
+        30                      abogado de traumatismo cerebral
+        20                      abogado de cerebro
+        20                      abogado de lastimaduras cerebrales
+        20                      abogado lesion de cerebro
+        10                      abogado de lesion al cerebro
+        10                      abogado de lesiones cerebrales en miami
+        10                      abogado para lesiones la cabeza
+
+   (i) TOP PRIORITY: "abogado de lesión cerebral traumática" - 720 volume, KD 1, CPC $35.83, and it
+       triggers an AI Overview. It is absent from the gap report entirely, which means neither we NOR
+       any of the 3 tracked competitors rank for it. 720 searches at difficulty 1 with nobody holding
+       the ground. The page currently uses that exact phrase twice. This is the cheapest win available
+       and it should lead the rewrite (H1/H2/intro/schema alternateName).
+
+   (j) THE 7 AI-OVERVIEW KEYWORDS ARE THE GEO TARGET SET. Every keyword in the set with volume >= 70
+       triggers an AI Overview; nothing below 70 does. If the goal is generative-engine visibility,
+       these 7 phrases are where extractable, directly-answerable copy has to live (short definitional
+       answers, FAQ-shaped blocks, Speakable schema).
+
+   (k) THE SPINE STORY IS A PHRASE FAMILY, NOT A TOPIC. Standalone spine terms are all 0 volume
+       (lesiones espinales, médula espinal, paraplejia, cuadriplejia, "espinales en miami"). The only
+       standalone spine term with volume is "abogado de lesiones de columna vertebral" (260). All the
+       big numbers sit in the COMBINED phrasing - "cerebrales y de columna" / "cerebrales y espinales"
+       (2,900 / 1,900 / 1,600 / 1,600 in the gap report, 6,382 GSC impressions). So this is one
+       compound keyword family, not a demand for spinal-injury content. Serve it with a short
+       brain-and-spine passage + a link to the existing Spanish spinal page. Do not build a spine
+       section here.
+
+   (l) CAUSE MODIFIERS ARE DEAD. All 0 volume: por accidente de auto, por accidente de trabajo, por
+       caída, por negligencia médica, infantil, de nacimiento, hipoxia, anoxia, encefalopatía hipóxica
+       isquémica, accidente cerebrovascular, coma, estado vegetativo, conmoción cerebral, contusión
+       cerebral, fractura de cráneo. The article's existing cause sections are fine for users but
+       should not be expanded for search.
+
+   (m) SEMRUSH UNDER-MEASURES SPANISH - TRUST GSC FIRST. The page's own declared target keyword
+       "abogados de lesiones cerebrales en miami" returns 0 volume in the bulk export, yet GSC records
+       78 impressions at position 2.4 for it. "lesiones cerebrales abogado" likewise: 0 volume, 25
+       impressions at position 3.9. Treat Semrush volume as a floor, not as truth, and let GSC
+       impressions break ties on this page.
+
+4. GAP LIST - terms with 0 occurrences on the page that the data says should be there
+   [RESOLVED 2026-07-29: every term under "WORTH ADDING" is now on the page. See section 6(d).]
+   (all on-page counts below verified as 0 against the extracted page text; REVISED after the
+    2026-07-28 bulk export, which killed several candidates that looked promising beforehand)
+
+   WORTH ADDING - demand confirmed:
+       abogado de lesión cerebral traumática   (720 vol, KD 1, $35.83, AI Overview - lead with this)
+       columna / "cerebrales y de columna" / "cerebrales y espinales"   (6,382 GSC impressions)
+       abogado de lesiones de columna vertebral   (260 vol, AI Overview)
+       golpes en la cabeza   (260 vol, $91.95 CPC - highest commercial value in the whole data set)
+       TCE   (140 vol, AI Overview - Spanish acronym for traumatic brain injury; page uses only "TBI")
+       trauma craneal / craneal   (110 vol, AI Overview)
+       cerca de mí   (90 vol on the traumáticas variant, KD 0, AI Overview)
+
+   DROPPED after the bulk export came back at 0 volume - do NOT write content for these:
+       North Miami, Coral Gables, Aventura, Hialeah, Miami Beach, Kendall, Homestead, Miami Gardens,
+       Miami-Dade, "en florida"  (the whole Spanish neighborhood GEO play - see 3(e))
+       médula espinal / lesiones espinales / paraplejia / cuadriplejia  (see 3(k))
+       conmoción cerebral, contusión cerebral, fractura de cráneo, hipoxia, anoxia, encefalopatía
+       hipóxica isquémica, accidente cerebrovascular, coma, estado vegetativo  (see 3(l))
+       traumatismo craneoencefálico  (0 volume, despite "trauma craneal" at 110 - use the short form)
+
+   STILL UNTESTED but likely worth keeping for users rather than search:
+       escala de coma de Glasgow  (severity classification; the English page added this)
+       consulta gratuita  (the page currently says "nuestra primera consulta es gratis")
+
+5. CONTENT ACCURACY REVIEW  (2026-07-29 - full pass over article.cshtml Es + all 10 Spanish FAQ
+   entries + articlemetas.cshtml. Every legal and medical claim checked against a primary source.)
+   12 issues, ordered by severity. ALL 12 WERE FIXED on 2026-07-29 - see section 6(a) for the
+   closure of each one (A1..A12) and section 7 for the corresponding edit.
+
+   -- CRITICAL: FALSE / INVENTED CONTENT --------------------------------------------------------
+
+   A1. FAQ es2 "¿Cuántas personas tienen TBI?" - INVENTED MEDICAL TERMINOLOGY.
+       Reads: "casi 1.7 millones ... cada año", "mas de 52000 mueren por una lesión cerebral TIPO 1",
+       "aproximadamente 125000 quedan afectadas de por vida por una lesión cerebral TIPO 2".
+       * "lesión cerebral tipo 1 / tipo 2" DOES NOT EXIST as a medical classification. It is not a
+         translation error - there is no such scheme. TBI is classified leve / moderada / grave,
+         assessed with the Glasgow Coma Scale.
+       * The 1.7M / 52,000 / 125,000 figures are the CDC's 2002-2006 era estimates, ~20 years stale.
+       Current CDC (cdc.gov/traumatic-brain-injury/data-research): ~214,110 TBI-related
+       hospitalizations (2020) and ~68,663 TBI-related deaths (2023) - about 586 hospitalizations and
+       190 deaths per day. NOTE: CDC has since moved the deaths figure to 2023; the English FAQ fixed
+       on 2026-07-24 still says "2021", so the English entry now needs a small year update too.
+       This is the exact twin of the English FAQ fixed on 2026-07-24 and left untouched in Spanish.
+       File: App_Data/FaqEntities.xml (language="es", Service id="miami-brain-injury-lawyer").
+
+   -- HIGH: LEGALLY WRONG OR OUT OF DATE SINCE THE 2023 TORT REFORM -----------------------------
+
+   A2. COMPARATIVE NEGLIGENCE IS DESCRIBED UNDER THE PRE-2023 RULE. Article, "Causalidad" paragraph:
+       "una persona o empresa puede ser acusada parcialmente culpable si tiene un porcentaje de
+       responsabilidad según las leyes de negligencia comparativa de la Florida."
+       That describes PURE comparative negligence. HB 837 (eff. 2023-03-24) added Fla. Stat.
+       768.81(6): Florida is now MODIFIED comparative negligence with a 51% bar - a claimant found
+       MORE THAN 50% at fault recovers NOTHING. The page never mentions the bar. A reader who is
+       largely at fault is left with the opposite impression of the law.
+       Exception worth stating on the page: 768.81(6) does NOT apply to medical-negligence claims.
+
+   A3. STATUTE OF LIMITATIONS - RIGHT NUMBER, WRONG FRAMING, THREE DEFECTS. Article, "Límites de
+       tiempo para reclamaciones de TBI en Miami":
+       (i)  No accrual-date caveat. The 2-year period applies to causes of action accruing ON OR
+            AFTER 2023-03-24. Claims that accrued BEFORE that date kept the old 4-year window. On a
+            page live since 2018 whose own FAQ es7 invites people with years-old accidents, omitting
+            this is materially misleading in both directions.
+       (ii) "se cuenta desde la fecha en que el individuo sufrió su lesión" is wrong for medical
+            malpractice, which the article itself lists as a claim type. Med-mal runs 2 years from
+            the incident OR from discovery (Fla. Stat. 95.11(4)(b)), capped by a 4-year statute of
+            repose, extended to 7 years for fraud/concealment, with a carve-out for minors up to the
+            child's 8th birthday. The page gives one flat number for every claim type.
+       (iii) "el tiempo límite ... es de APROXIMADAMENTE 2 anos". A limitations period is not
+            approximate. Coming from a law firm this is the worst possible hedge.
+
+   A4. FAQ es7 CONTRADICTS THE ARTICLE AND OMITS THE DEADLINE. "Tuve un accidente hace varios años.
+       ¿Todavía puedo presentar mi caso?" is answered "eso no quiere decir que su caso se
+       desestimará" with NO mention of any limitations period. It also contradicts A3(ii): the FAQ
+       correctly notes people discover brain damage months later, while the article says the clock
+       starts at the date of injury. One of the two has to change.
+
+   A5. PREMISES LIABILITY OVERSTATED. Article, "Responsabilidad de las instalaciones": "si no es así
+       el propietario de este lugar será juzgado como responsable por las lesiones del accidentado."
+       Stated as a certainty. It also omits the actual controlling requirement - under Fla. Stat.
+       768.0755 a claimant injured by a transitory foreign substance in a business establishment must
+       prove the business had ACTUAL OR CONSTRUCTIVE KNOWLEDGE of the condition. The paragraph also
+       addresses only commercial property; residential premises duties differ.
+
+   -- MEDIUM: MEDICAL INACCURACY ----------------------------------------------------------------
+
+   A6. FAQ es8 "¿Cómo diagnostican los médicos a alguien con TBI?" lists "rayos X" FIRST. Plain X-ray
+       does not diagnose a brain injury - it images skull fracture. CT (tomografía) and MRI are the
+       relevant imaging. The list also omits the Glasgow Coma Scale, the standard initial assessment.
+       NOTE: the English FAQ en8 has the identical defect and was NOT caught in the 2026-07-24 pass.
+       Fix both.
+
+   A7. FAQ es1 "¿Qué es una lesión cerebral traumática?" - two problems.
+       * "se atrofian las funciones normales de tu cerebro" - atrophy is a specific structural change,
+         not what a TBI does acutely. It disrupts/impairs function.
+       * "cuando recibes un golpe contundente en la cabeza" is too narrow: TBI also results from
+         acceleration/deceleration without any direct blow, from penetrating injury, and from blast.
+         The article itself contradicts this three sections later by describing a victim with no
+         external bruising, and by listing "explosión de bomba" as a cause.
+       This FAQ is also the answer that will be scraped for the "abogado de lesión cerebral
+       traumática" AI Overview (720 vol / KD 1) - the highest-value keyword on the page. It needs to
+       be right before it is promoted.
+
+   A8. SYMPTOM LIST OMITS THE EMERGENCY DANGER SIGNS. The article's "Síntomas de una lesión cerebral"
+       list is accurate as far as it goes, but leaves out the CDC "get medical help right away" red
+       flags: one pupil larger than the other, repeated vomiting, a headache that keeps worsening,
+       slurred speech, seizures, inability to wake up. For a page whose explicit advice is "vaya al
+       médico", omitting the danger signs is a safety gap, not just an SEO one.
+
+   -- MEDIUM: FLORIDA BAR ADVERTISING EXPOSURE (Rule 4-7.13, misleading advertising) -------------
+
+   A9. Three statements promise outcomes:
+       * "el propietario de este lugar será juzgado como responsable" (article, premises liability)
+       * "un buen abogado de lesiones personales ... PUEDE GANAR SU CASO" (FAQ es6)
+       * "nosotros lucharemos hasta el final para que en retribución reciba la MÁXIMA COMPENSACIÓN"
+         (article, section 1)
+       Rule 4-7.13 prohibits advertising that creates unjustified expectations about results. Flagging
+       for firm review - this is a judgment call for the attorneys, not for me.
+
+   A10. NO DISCLAIMER. Neither the article nor the FAQ carries any "this is general information, not
+        legal advice / no attorney-client relationship" line. Worth confirming whether the site
+        template supplies one globally.
+
+   -- LOW: TYPOS AND BROKEN REFERENCES ----------------------------------------------------------
+
+   A11. "2 anos" appears TWICE (article, límites de tiempo). Unaccented, "ano" means "anus" in
+        Spanish. It is in the single most-quoted sentence on the page. Also "Gallarlo Law Firm"
+        (should be Gallardo, closing section), "informacion" x4, and missing accents on "victima",
+        "cual", "solido", "medicas", "causo", "equivoco", "perdida", "mas".
+
+   A12. FAQ es4 DANGLING CROSS-REFERENCE: "vayan al artículo de tasa de contingencia por tarifa de
+        lesiones" - no link, and the name does not match the real page, which exists at
+        /es/honorarios-de-abogados-de-lesiones ("Honorarios de Abogados de Lesiones",
+        UncategorizedPageEntity id="personalinjuryfees"). Link it.
+
+   SOURCES USED FOR THIS REVIEW
+     Fla. Stat. 768.81(6) / HB 837 - modified comparative negligence, 51% bar, eff. 2023-03-24,
+       medical-negligence carve-out.
+     Fla. Stat. 95.11 - negligence SOL cut 4 yrs -> 2 yrs, applies to causes accruing on/after
+       2023-03-24; earlier claims keep 4 years.
+     Fla. Stat. 95.11(4)(b) - med-mal: 2 yrs from incident or discovery, 4-yr repose, minor's 8th
+       birthday exception.
+     Fla. Stat. 768.0755 - transitory foreign substance, actual/constructive knowledge.
+     CDC TBI Data - cdc.gov/traumatic-brain-injury/data-research (214,110 hospitalizations 2020;
+       68,663 deaths 2023; severity classified mild/moderate/severe).
+     Florida Bar Rule 4-7.13 - misleading advertising / unjustified expectations.
+     NOTE: cdc.gov returned HTTP 403 to direct fetch; the CDC figures above come from the search
+     engine's extract of that CDC page and were cross-checked against the USAFacts summary of it.
+     Re-verify the two numbers against cdc.gov in a browser before they go into published copy.
+
+6. FIXES APPLIED - 2026-07-29  (all 12 accuracy issues from section 5, plus the SEO/GEO expansion)
+   Every edit carries an in-file comment naming its source. Files touched:
+     Views/ServicePage/Content/injury-law/miami-brain-injury-lawyer/Es/article.cshtml   (rewritten)
+     Views/ServicePage/Content/injury-law/miami-brain-injury-lawyer/En/article.cshtml   (3 fixes)
+     App_Data/FaqEntities.xml                                     (6 Spanish + 3 English entries)
+
+   (a) ACCURACY - all 12 issues closed:
+       A1  FAQ es2: removed the invented "lesión cerebral tipo 1 / tipo 2" and the 2002-2006 CDC
+           figures. Now: ~214,110 hospitalizations (2020), ~68,663 deaths (2023), severity leve/
+           moderada/grave. New article section "¿Qué tan comunes...?" carries the same figures.
+       A2  Comparative negligence rewritten to the CURRENT rule: modified comparative, 51% bar,
+           medical-negligence carve-out (Fla. Stat. 768.81(6), verified at flsenate.gov).
+       A3  Statute of limitations rewritten: accrual-date caveat (2 yrs on/after 2023-03-24, 4 yrs
+           before), medical-malpractice discovery rule + 4-yr repose + 7-yr fraud + minor's 8th
+           birthday, and the word "aproximadamente" removed.
+       A4  FAQ es7 now states the actual deadlines instead of "no quiere decir que se desestimará",
+           and no longer contradicts the article.
+       A5  Premises liability now states the actual/constructive-knowledge requirement of
+           Fla. Stat. 768.0755 and no longer promises the owner "será juzgado como responsable".
+       A6  FAQ es8 rewritten: Glasgow Coma Scale first, CT/MRI as the imaging that shows brain
+           damage, and X-ray correctly described as showing skull fractures.
+       A7  FAQ es1 + the new definition section: a TBI can come from a jolt with no direct blow or
+           from a penetrating injury, and it "disrupts" rather than "atrophies" brain function.
+       A8  NEW "Síntomas y señales de peligro" section with the MedlinePlus emergency danger signs.
+       A9  Three outcome promises removed ("será juzgado como responsable", "puede ganar su caso",
+           "lucharemos hasta el final ... la máxima compensación"). This is why "máxima compensación"
+           and "mayor compensación" show -2 in the table: deliberate, per Fla. Bar Rule 4-7.13.
+       A10 Disclaimer added (general information, not legal or medical advice, no attorney-client
+           relationship). Confirm whether the site template already emits one globally.
+       A11 "2 anos" -> "2 años", "Gallarlo" -> "Gallardo", "informacion" x4 and the other missing
+           accents fixed throughout.
+       A12 FAQ es4 now points at the real page, /es/honorarios-de-abogados-de-lesiones.
+
+   (b) ENGLISH PAGE - 3 defects found while doing the Spanish work, fixed in place:
+       * en2 CDC deaths figure was 2021; CDC has moved to 2023. Updated (also in the article's
+         stats section and table), and the source link repointed from "Facts About TBI" to the
+         "TBI Data" page where those figures actually live.
+       * en8 had the identical X-ray defect as es8. Rewritten the same way.
+       * The article cited Fla. Stat. 95.11(4)(a) and (4)(b). In the current 2025 codification
+         subsection (4) is "WITHIN THREE YEARS" (medical debt); negligence is 95.11(5)(a) and
+         medical malpractice 95.11(5)(c). Citation corrected + accrual-date caveat added.
+       * en7 also omitted the filing deadline, same as es7. Corrected.
+       ADDED 2026-07-29 after an article-vs-FAQ consistency audit (two English twins had been left
+       behind when their Spanish counterparts were fixed):
+       * en4 still carried the dangling "check out our contingency fees article" with no link, the
+         same defect as es4. Now points at /personal-injury-lawyers-fees.
+       * en6 still said an excellent lawyer "can win your case" - the same Rule 4-7.13 outcome
+         promise removed from es6. Reworded to what the attorney pursues.
+
+   (b2) CONSISTENCY AUDIT - article vs FAQ, both languages. Verified that every figure and claim
+        changed in an article also changed in the matching FAQ entry, and vice versa:
+          CDC 214,110 / 68,663 ....... present in ES article, ES FAQ, EN article, EN FAQ
+          stale 214,000 / 69,000 / 2021 / 1.7 millones / 52000 / 125000 ..... gone from all four
+          invented "tipo 1 / tipo 2" ....... gone from all four
+          X-ray as a TBI diagnostic ....... gone from all four
+          Glasgow Coma Scale .............. present in all four
+          filing deadline stated .......... es7 and en7 both state it
+          outcome promises ................ gone from all four
+          dangling fees reference ......... gone from both, each now links its own language's page
+        Statute subsection citations (95.11(5)(a)/(5)(c), 768.81(6), 768.0755) live in the articles
+        only, not the FAQ answers - deliberate: the FAQs state the deadlines in plain language,
+        which is the right register for that format.
+
+   (c) SEO/GEO EXPANSION - 2,542 -> 4,586 visible words. New sections, all mirroring the English
+       page except where the Spanish data said otherwise: table of contents; "¿Qué es una lesión
+       cerebral traumática?" (the AI-Overview target); "¿Qué hace un abogado de lesiones
+       cerebrales?"; CDC statistics + table; brain-and-spine paragraph + link to the Spanish spinal
+       page; symptoms + danger signs; Glasgow severity table; "¿Tengo un caso?"; "Qué hacer después
+       de un golpe en la cabeza"; "Cómo elegir un abogado"; a short Miami/near-me section; the
+       related-services partial (the Spanish page never had it); and 3 JSON-LD blocks
+       (BreadcrumbList, WebPage/Speakable, Service) with inLanguage "es".
+
+       DELIBERATELY NOT COPIED FROM ENGLISH: no neighborhood GEO section. All 11 Miami-neighborhood
+       terms returned 0 volume in the bulk export and GSC agrees (341 impressions total). areaServed
+       in the Service schema is limited to Miami + Miami-Dade for the same reason.
+
+   (d) KEYWORD COVERAGE ACHIEVED (OnPg-Was -> OnPg-Now, see the table above):
+         abogado de lesiones cerebrales y de columna        0 -> 2   (2,900 vol / 1,106 impr)
+         abogado de lesiones cerebrales y espinales         0 -> 2   (1,900 vol / 1,006 impr)
+         mejor abogado de lesiones cerebrales y espinales   0 -> 1   (2,428 impr - most of any query)
+         mejor abogado de lesiones cerebrales y de columna  0 -> 1   (1,531 impr)
+         abogado de lesión cerebral traumática              0 -> 2   (720 vol / KD 1 / AI Overview)
+         abogado de lesión de cerebro                       0 -> 1   (590 vol / 1,484 impr / pos 5.9)
+         abogados por golpes en la cabeza                   0 -> 1   (260 vol / CPC $91.95)
+         abogado de tce                                     0 -> 1   (140 vol / AI Overview)
+         abogado de trauma craneal                          0 -> 1   (110 vol / AI Overview)
+         abogado de lesiones cerebrales traumáticas cerca de mí 0 -> 1 (90 vol / KD 0 / AI Overview)
+         abogados de lesiones cerebrales traumáticas        0 -> 1   (70 vol / AI Overview)
+         abogado de traumatismos cerebrales                 0 -> 1   (40 vol / 28 impr)
+         abogado de lesiones cerebrales                    12 -> 29
+         abogados de lesiones cerebrales en miami           3 -> 5   (the declared target keyword)
+       All 7 AI-Overview keywords now appear on the page. They did not before.
+
+   (e) KNOWN REMAINING ZEROS - deliberate, not oversights:
+       * "abogado de lesiones en la cabeza miami" (116 impr, pos 6.1, our Semrush rank 4) stays at
+         0 because the exact string omits the preposition. The page says "abogado de lesiones en la
+         cabeza en Miami", which is the correct Spanish. Forcing the exact string would read as
+         broken grammar for a marginal gain.
+       * Out-of-market geo queries (Orlando, Commerce, Palm Springs, Cheyenne, Long Beach, Jackson,
+         Durham, Joliet, Fairfax, San Jose) are left at 0 on purpose - we do not serve those markets.
+       * Standalone spine terms (médula espinal, paraplejia, cuadriplejia) stay minimal on purpose:
+         0 volume, and the dedicated Spanish spinal page owns that topic.
+
+   (f) VALIDATION RUN: FaqEntities.xml parses (20 brain-injury entries intact); Es article has all
+       HTML tags balanced outside Razor comments, 25/25 Razor comment delimiters, 3/3 JSON-LD blocks
+       parse as valid JSON after @@-unescaping, 15 TOC anchors map 1:1 to 15 H2 ids, and all 5
+       internal links use URL formats already in use elsewhere on the site.
+
+   (g) INBOUND INTERNAL LINKS - CLOSED 2026-07-29. Benchmarked against the rest of the Spanish site
+       first: the most-linked Spanish page had 7 in-content inbound links, so 10 (not the English
+       page's 12-16 range) was the number that puts this page at the top of the Spanish tier without
+       being a visible outlier. Excluded on purpose: cerebral-palsy, birth-injury, OB/GYN malpractice,
+       spinal-cord (their brain-injury language is about infant/spine injury - linking there would
+       blur the cannibalization boundary just drawn in section 3(b)/6) and the Houston auto-accident
+       page (wrong market). Each link wraps text the target page ALREADY had - no new sentences - and
+       anchors are varied on purpose (not 10x identical exact-match anchors):
+         1/10  personal-injury-lawyer-in-florida/Es           anchor: "daño cerebral"
+         2/10  motorcycle-accident-attorney-miami/Es          anchor: "Lesiones cerebrales traumáticas"
+         3/10  miami-pedestrian-accident-attorney/Es          anchor: "lesiones cerebrales"
+         4/10  miami-hit-and-run-accident-lawyer/Es           anchor: "Lesiones cerebrales traumáticas"
+         5/10  construction-accident-lawyer-in-miami/Es       anchor: "abogado de lesión cerebral traumática"
+         6/10  what-is-a-worker-comp-injury/Es                anchor: "lesiones en la cabeza"
+         7/10  miami-head-on-collision-lawyer/Es              anchor: "lesión cerebral"
+         8/10  miami-pool-accident-attorney/Es                anchor: "Daño cerebral por falta de oxígeno"
+         9/10  miami-anesthesia-errors-attorney/Es            anchor: "daño cerebral por falta de oxígeno"
+        10/10  miami-jet-ski-accident-lawyer/Es               anchor: "daño cerebral traumático"
+       Validated: all 10 files HTML-tag-balanced, each carries exactly one link to this page.
+       Headroom left deliberately - more Spanish pages can link in later without this looking like a
+       single-edit link injection.
+
+   (h) METAS - CLOSED 2026-07-29. Es/articlemetas.cshtml and En/articlemetas.cshtml (reciprocal half)
+       rewritten, same modernization pattern already used on
+       product-liability-attorney-miami/{Es,En}/articlemetas.cshtml:
+       * TITLE (ES): "Abogados de Lesiones Cerebrales en Miami - Lesión Cerebral Traumática |
+         Gallardo Law Firm" (89 chars) - keeps the exact declared target phrase INTACT (it holds
+         GSC position 2.4, 78 impressions/3mo - not worth risking) and adds the 720-vol/KD-1/
+         AI-Overview lead term as a second clause. In range for the site (up to 86 chars already
+         used elsewhere; avg 66).
+       * DESCRIPTION (ES): question-hook on the lead term + explicit "Consulta gratis" CTA. The old
+         description had neither, which plausibly explains 10,109 impressions / 0 clicks in 3 months
+         (position is fine; the snippet was not earning the click).
+       * page-topic/page-type refreshed to the current term set (TCE, trauma craneal, lesión
+         cerebral y de columna, cerca de mí).
+       * hreflang added as a reciprocal pair (ES page had none pointing at EN or vice versa before).
+       * og:locale:alternate, image upgraded 375x211 -> 903x530 with alt/width/height, twitter:card
+         summary_large_image - matching the site's newer template. og:title/twitter:title use the
+         short original phrase (not the combined SERP title), same split product-liability uses.
+       * EN metas: ONLY the structural/social tags touched (hreflang, locale-alternate, image,
+         twitter card) as the required reciprocal half. Title/description/page-topic text left
+         unchanged - not in scope this round, and not flagged as broken.
+
+   (i) STILL PENDING BEFORE PUBLISH:
+       * ATTORNEY/FIRM REVIEW of the whole page - especially the statute framing, the "mejor
+         abogado" paragraph (Rule 4-7.13; it can be deleted on its own without touching anything
+         else), and the service-area wording.
+       * Re-verify the two CDC numbers in a browser. cdc.gov returns HTTP 403 to automated fetch, so
+         they were confirmed via two independent extracts of that same CDC page rather than fetched.
+       * Confirm whether the site template already emits a global disclaimer; if so, drop the new one.
+       * Monitor GSC position on "abogados de lesiones cerebrales en miami" (currently 2.4) after the
+         title change - the exact phrase was kept intact specifically to protect it, but any title
+         change carries some re-evaluation risk while Google recrawls.
+
+7. EDIT-BY-EDIT CHANGELOG - SPANISH PAGE  (2026-07-29)
+   Every edit below carries an in-file comment at the same location naming its source. Line numbers
+   are as of the final version of Es/article.cshtml.
+
+   FILE: Views/ServicePage/Content/injury-law/miami-brain-injury-lawyer/Es/article.cshtml
+   ---------------------------------------------------------------------------------------------
+   L3    Header comment block: why the rewrite happened, the 6 sources used, the SEO/GEO priorities,
+         the container migration, and the Fla. Bar 4-7.13 note. Added @model ServicePageViewModel.
+   L3    CONTAINER MIGRATED from <section class="service-detail"><div class="auto-container"> to
+         <div class="blog-detail_content"> - the container used by 45 other Spanish articles and by
+         the English twin. No visual redesign, just the modern wrapper.
+   L52   NEW: Table of contents <nav>, 15 entries, anchors verified 1:1 against the 15 H2 ids.
+   L76   EDIT: intro. "victimas" -> "víctimas"; added the lead term "abogado de lesión
+         cerebral traumática". Given id="lc-intro" as a Speakable target.
+   L85   NEW SECTION "¿Qué es una lesión cerebral traumática?" (#lc-definicion). The page's main GEO
+         target. Fixes A7. Source: MedlinePlus (NIH) /spanish/traumaticbraininjury.html.
+   L105  NEW: synonym sentence - abogado de TCE / trauma craneal / traumatismos cerebrales / lesión
+         de cerebro. Captures 4 separate measured keywords in one natural sentence.
+   L112  NEW SECTION "¿Qué hace un abogado de lesiones cerebrales?" + 5-item list. Mirrors the EN
+         "What Does a Brain Injury Lawyer Do?". Service description, no external claim to cite.
+   L128  NEW SECTION "¿Qué tan comunes son las lesiones cerebrales en Estados Unidos?" + CDC table.
+         Fixes A1 at article level. Source: CDC TBI Data.
+   L176  NEW PARAGRAPH: brain + spine. The single biggest SEO correction (6,382 GSC impressions).
+         Adds an internal link to the Spanish spinal page. Deliberately a paragraph, not a section.
+   L189  EDIT: same paragraph, second pass - worked in the exact phrases "un abogado de lesiones
+         cerebrales y de columna" and "abogado de lesiones cerebrales y espinales".
+   L198  EDIT (Fla. Bar 4-7.13): removed "lucharemos hasta el final ... la máxima compensación".
+         Fixes A9 (1 of 3).
+   L207  EDIT: causes list - added lesiones deportivas, maltrato infantil, lesión penetrante.
+         Source: MedlinePlus (NIH).
+   L233  NEW SECTION "Síntomas y señales de peligro". Fixes A8 - the original had no emergency red
+         flags at all. Source: MedlinePlus (NIH). Also carries "golpes en la cabeza".
+   L275  NEW SECTION "Tipos y gravedad" + Glasgow Coma Scale table. Replaces the invented "tipo 1 /
+         tipo 2" framing at article level. Source: Cleveland Clinic GCS.
+   L308  EDIT: premises liability. Fixes A5 + A9 (2 of 3) - removed "será juzgado como responsable",
+         added the actual/constructive-knowledge requirement. Source: Fla. Stat. 768.0755.
+         Added internal link to the Spanish slip-and-fall page.
+   L319  EDIT: internal links added for product liability and medical malpractice (Spanish pages).
+   L326  EDIT: comparative negligence REWRITTEN. Fixes A2 - modified comparative, 51% bar, medical-
+         negligence carve-out. Source: Fla. Stat. 768.81(6).
+   L337  SECTION REWRITTEN "Límites de tiempo para reclamaciones de TCE en Miami". Fixes A3 (all
+         three defects: accrual date, med-mal discovery rule, "aproximadamente"). Source:
+         Fla. Stat. 95.11(5)(a) and 95.11(5)(c). H2 uses "TCE" for the 140-vol keyword.
+   L360  NEW SECTION "¿Tengo un caso de lesión cerebral?" - eligibility checklist, restates the
+         51% bar. Written not to cannibalize "Elementos claves".
+   L377  NEW SECTION "Qué hacer después de un golpe en la cabeza" - 6-step ordered list.
+   L384  EDIT: same section, second pass - exact phrase "abogados por golpes en la cabeza"
+         (260 vol, CPC $91.95, the highest in the data set).
+   L414  NEW SECTION "Cómo elegir un abogado de lesiones cerebrales" + link to the Spanish fees page.
+   L429  NEW PARAGRAPH (second pass): the "mejor abogado de lesiones cerebrales y espinales / y de
+         columna" paragraph - 3,959 impressions between those two queries, ~40% of the page total.
+         "mejor" used DESCRIPTIVELY per Rule 4-7.13, same pattern already approved in English.
+         THIS PARAGRAPH CAN BE DELETED ON ITS OWN if the firm prefers to avoid the word.
+   L440  NEW SECTION "Abogados de lesiones cerebrales en Miami y cerca de usted". DELIBERATELY has
+         NO neighborhood list - all 11 Miami-neighborhood terms returned 0 volume.
+   L452  EDIT: same section, second pass - "abogado de lesiones cerebrales traumáticas cerca de mí"
+         (90 vol, KD 0, AI Overview) and "abogado de lesiones en la cabeza en Miami".
+   L459  EDIT: "Gallarlo Law Firm" -> "Gallardo Law Firm". Fixes A11 (part).
+   L467  EDIT: closing paragraph, second pass - third placement of the lead term.
+   L473  NEW: disclaimer (general information, not legal or medical advice, no attorney-client
+         relationship). Fixes A10.
+   L477  NEW: the PartialServicesRelated partial - the Spanish page never rendered the
+         related-services block. Hub-and-spoke internal linking.
+   L485  NEW: JSON-LD BreadcrumbList (ES).
+   L516  NEW: JSON-LD WebPage + Speakable (ES), pointing at #lc-intro and #lc-definicion.
+   L538  NEW: JSON-LD Service (ES), inLanguage "es". alternateName carries the measured keyword
+         variants; areaServed limited to Miami + Miami-Dade (no neighborhoods, by design).
+   THROUGHOUT: A11 accent/spelling fixes - "2 anos" -> "2 años" (x2), "informacion" -> "información" (x4),
+         plus víctima, cuál, sólido, médicas, causó, equivocó, pérdida, más.
+
+   FILE: App_Data/FaqEntities.xml - SPANISH entries (language="es")
+   ---------------------------------------------------------------------------------------------
+   es1   REWRITTEN. Fixes A7 - jolt without a direct blow, penetrating injury, "disrupts" not
+         "atrophies". Source: MedlinePlus (NIH).
+   es2   REWRITTEN. Fixes A1 - removed the invented "tipo 1 / tipo 2" and the 2002-2006 figures.
+         Question retitled to carry "TCE". Source: CDC TBI Data.
+   es3   UPDATED - added sports injuries, child abuse, blast, penetrating. Source: MedlinePlus.
+   es4   FIXED. A12 - now points at /es/honorarios-de-abogados-de-lesiones.
+   es6   FIXED. A9 (3 of 3) - removed "puede ganar su caso" and "ganara para usted".
+   es7   REWRITTEN. Fixes A4 - now states the actual deadlines and no longer contradicts the article.
+         Source: Fla. Stat. 95.11(5)(a) and (5)(c).
+   es8   REWRITTEN. Fixes A6 - Glasgow first, CT/MRI as the imaging that shows brain damage, X-ray
+         correctly described as showing skull fractures. Question retitled to carry "TCE".
+   es5, es9, es10  UNCHANGED - reviewed and found accurate as written.
+
+   FILE: App_Data/FaqEntities.xml - ENGLISH entries + En/article.cshtml
+   ---------------------------------------------------------------------------------------------
+   (Not the Spanish page, but changed as a direct consequence of the Spanish review - each English
+   defect was found by comparing against its Spanish twin. Listed here so the record is complete.)
+   en2   CDC deaths year 2021 -> 2023, figures updated.
+   en4   Dangling "contingency fees article" -> /personal-injury-lawyers-fees.
+   en6   Removed "can win your case" (Rule 4-7.13).
+   en7   Added the filing deadlines it omitted.
+   en8   Same X-ray defect as es8, rewritten the same way.
+   EN article: stats section + table updated to 214,110 / 68,663 (2023); CDC source link repointed
+         from "Facts About TBI" to "TBI Data"; statute citations corrected from 95.11(4)(a)/(4)(b)
+         to 95.11(5)(a)/(5)(c) and the accrual-date caveat added.
+
+   HOW THIS FILE IS REGENERATED
+   ---------------------------------------------------------------------------------------------
+   scratchpad\build_es_text_now.py   re-extracts the CURRENT visible Spanish text (article minus
+                                     Razor comments/schema/markup + the 10 Spanish FAQ entries).
+   scratchpad\merge_es.py            re-merges GSC + Semrush gap + Semrush bulk + both on-page
+                                     counts and rewrites this file, appending scratchpad\worklog_es.txt.
+   Re-run both after any further content change so OnPg-Now stays accurate.
+
+8. COPY-EDIT PASS - SPANISH PAGE  (tercera pasada, 2026-07-29)
+   ---------------------------------------------------------------------------------------------
+   Requested as "look in this page for any typo or grammatical issue" -> "apply these". A full
+   read of Es/article.cshtml as prose (not as keyword coverage) turned up 16 items. Every one was
+   applied with an inline @* *@ comment stating the reason, and the file header comment now carries
+   a summary block titled "REVISION DE REDACCION 2026-07-29 (tercera pasada)".
+
+   Constraint honoured throughout: no fix was allowed to reduce keyword coverage. Verified after
+   the pass - every money term kept its OnPg-Now count:
+       abogado de lesiones cerebrales y de columna   0 -> 2   (unchanged by this pass)
+       abogado de lesion cerebral traumatica         0 -> 2   (unchanged by this pass)
+       abogados por golpes en la cabeza              0 -> 1   (unchanged by this pass)
+       abogado de tce                                0 -> 1   (unchanged by this pass)
+       abogado de lesiones cerebrales               12 -> 27  (unchanged by this pass)
+   Visible word count 4,586 -> 4,593. Structure re-validated: 15 TOC entries / 15 H2 ids,
+   0 mismatches between TOC label and H2 text.
+
+   (a) REAL GRAMMAR ERRORS
+       1. PERSON MISMATCH (the significant one). "si ha estado buscando ... cerca de mi" mixed a
+          second-person verb with a first-person possessive, because the search phrase was sitting
+          loose inside the sentence. Now quoted as the user's query with Spanish angle quotes:
+          buscando en Google &laquo;abogado de lesiones cerebrales traumaticas cerca de mi&raquo;.
+          Same device the English page uses for "brain injury lawyer near me". Keeps the exact
+          string (90 vol, KD 0, con AI Overview) and reads correctly.
+       2. "Los abogados ... estamos aqui" -> "En Gallardo Law Firm estamos aqui" (3rd-person
+          subject with a 1st-person-plural verb).
+       3. "bolsa de aire que no despliega" -> "que no se despliega" (missing reflexive).
+       4. "el dolor por el que" -> "por los que" (antecedent is plural).
+       5. "le debia un deber de cuidado" -> "tenia un deber de cuidado hacia usted" (deber/debia
+          redundancy).
+       6. "se podia haber evitado si ... siguieran" -> "se habria podido evitar si ... hubieran
+          seguido" (mixed conditional).
+
+   (b) AGREEMENT SLIPS
+       7.  "pueden obtener" -> "puede obtener".
+       8.  "o" -> "y" so the following plural "son la misma figura" agrees.
+       9.  "pueden indicar" -> "puede indicar".
+       10. "Vomitos o nauseas repetidas" -> "Vomitos repetidos o nauseas" (the adjective was
+           agreeing with the wrong noun).
+
+   (c) KEYWORD ARTIFACTS SMOOTHED OUT
+       These were the seams left by the second (exact-phrase) pass. All three keep the exact
+       keyword string; only the sentence around it changed.
+       11. "los abogados por golpes en la cabeza de nuestro equipo" ->
+           "Muchas personas nos encuentran buscando abogados por golpes en la cabeza; esto es lo
+           que normalmente recomendamos:" - reads as an observation instead of a job title.
+       12. The brain+spine sentence reordered subject-first: "el abogado de lesiones cerebrales y
+           espinales que lleva su reclamo trabaja junto a nuestros abogados de lesiones de la
+           medula espinal" - the previous order read as if two lawyers were the same person.
+       13. "la lesion de cerebro" -> "la lesion cerebral" in running prose. The awkward form is
+           kept ONLY where it is the actual keyword ("abogado de lesion de cerebro", 590 vol).
+
+   (d) CONSISTENCY / STYLE
+       14. "de la Florida" -> "de Florida" (matches the rest of the site).
+           "la espalda" -> "la columna" (anatomically correct for the spinal cross-link).
+           "Elementos claves" -> "Elementos clave" (TOC label + H2).
+           TOC labels realigned to their H2 text where they had drifted.
+           "en el plano emocional, fisico y conductual".
+           "a tener a su favor" -> "que debe tener a su favor".
+           "No de primero una declaracion grabada" (word order).
+           "a cambio" -> "que corresponde reclamar por ellos".
+           "resulto con una lesion cerebral" -> "sufrio una lesion cerebral".
+
+   (e) TERMINOLOGY / CALQUES
+       15. "planificadores de cuidado a largo plazo" -> "planificadores de cuidados a largo plazo".
+       16. "estatuto de reposo" kept (it is the term of art) but glossed on first use: 'un
+           "estatuto de reposo", es decir, un plazo de caducidad absoluto'.
+       LEFT AS-IS: "causas de accion". It is a calque of "causes of action" but it is the standard
+       form in US legal Spanish and the audience for this page is US-based.
+
+
+9. CDC FIGURES VERIFIED IN A BROWSER  (2026-07-30) - ITEM CLOSED
+   ---------------------------------------------------------------------------------------------
+   The one factual item left open from section 6 is now closed. cdc.gov returns HTTP 403 to
+   automated fetch - retried on 2026-07-30 both through the normal fetcher and through curl with a
+   full browser user-agent and Accept-Language header, 403 both times. It is a CDN-level block on
+   datacenter traffic, not a header problem. So the user opened the page manually and supplied the
+   text.
+
+   SOURCE: CDC, "TBI Data", https://www.cdc.gov/traumatic-brain-injury/data-research/index.html
+   CDC's own page-review date, as shown on the page: 2026-04-27.
+
+   VERBATIM, under the heading "Based on the most recent data:":
+       "There were approximately 214,110 TBI-related hospitalizations in 2020 and 68,663
+        TBI-related deaths in 2023."
+       "This represents more than 586 TBI-related hospitalizations and 190 TBI-related deaths
+        per day."
+       "People age 75 years and older had the highest numbers and rates of TBI-related
+        hospitalizations and deaths."
+
+   RESULT: EVERY FIGURE ON THE SITE IS CORRECT AS PUBLISHED. No number changed.
+       214,110 hospitalizations / 2020   -> matches
+       68,663 deaths / 2023              -> matches
+       586 hospitalizations per day      -> matches ("more than 586")
+       ~190 deaths per day               -> matches
+       75+ has the highest rates         -> matches
+   Also checked the thing most likely to have drifted: the hospitalization year is STILL 2020, so
+   there was no rollover and the derived per-day figure did not need recalculating.
+
+   ONE WORDING NOTE. CDC writes "more than 586 ... and 190 ... per day". Taken literally that would
+   make it "more than 190" deaths per day, but 68,663 / 365 = 188.1, so "more than" only governs
+   the hospitalizations figure and 190 is CDC's rounding. Both of our pages already say "about 190"
+   / "cerca de 190" rather than "more than 190", which is the arithmetically correct reading. Left
+   as-is deliberately.
+
+   COMMENTS UPDATED IN ALL FOUR FILES. The "CONFIRMAR EN NAVEGADOR antes de publicar" /
+   "Re-check in a browser before publishing" warnings were replaced with a verification record that
+   states the date, why a human had to do it, the CDC page-review date, and the verbatim quotes:
+       Es/article.cshtml       stats section comment (above heading-estadisticas)
+       En/article.cshtml       stats section comment (above heading-stats)
+       FaqEntities.xml es2     Spanish FAQ comment
+       FaqEntities.xml en2     English FAQ comment
+   The two FAQ comments now also name the other five locations, so whoever updates one is told
+   where the rest are.
+
+   NOT ADDED, AVAILABLE IF WANTED. The CDC page carries four facts the site does not use:
+       - the estimates EXCLUDE TBIs treated only in the ED, primary care, urgent care, or untreated
+         (a real caveat - it means our figures understate total TBI incidence);
+       - 75+ accounts for ~32% of TBI-related hospitalizations and ~28% of deaths;
+       - males are nearly 2x more likely to be hospitalized (79.9 vs 43.7 age-adjusted) and 3x more
+         likely to die (28.3 vs 8.4) than females;
+       - CDC publishes monthly fatal-TBI data through provisional 2025.
+   The first of these is the one worth considering, since as written both pages imply the figures
+   are the whole picture. Not added unilaterally - it is a content change, not a correction.
+
+
+10. STATS SECTION EXPANDED FOR GEO  (2026-07-30)
+   ---------------------------------------------------------------------------------------------
+   Follow-on to section 9. Once the CDC page had been read in a browser it turned out to carry
+   several facts the site was not using. Assessed all of them against the keyword table first.
+
+   SEO VALUE: NONE, and this was checked rather than assumed. There is no Spanish search demand for
+   TBI statistics - zero rows with volume in the 197-row table for "estadisticas", "cuantas
+   personas", mortality or age-risk phrasing. The nearest row is "cuanto vale un caso de lesion
+   cerebral" at 3 vol, which is about case value, not epidemiology. Nothing here was added to rank.
+
+   GEO VALUE: this is the reason it was added. Seven target keywords carry AI Overviews. What gets
+   cited by generative engines is specific, dated, attributed numbers in extractable form - which is
+   what these are. Applied in BOTH languages so the pair stays consistent.
+
+   (1) THE CAVEAT - the item worth having, and an accuracy fix rather than an enhancement.
+       CDC: "These estimates do not include the many TBIs that are only treated in the emergency
+       department, primary care, urgent care, or those that go untreated."
+       Both articles previously implied 214,110 was the national total of brain injuries. It is the
+       HOSPITALIZED SUBSET only. Added as its own short paragraph after the figures, ending on the
+       plain-language version: "214,110 son las hospitalizaciones, no el total de lesiones" /
+       "214,110 is the hospitalization count, not the injury count". Also added to FAQ es2 and en2
+       so the FAQs do not contradict the articles.
+
+   (2) THE DEMOGRAPHIC BREAKDOWN.
+       CDC: "This age group accounts for about 32% of TBI-related hospitalizations and 28% of
+       TBI-related deaths." and "Males were nearly two times more likely to be hospitalized (79.9
+       age-adjusted rate versus 43.7) and three times more likely to die from a TBI than females
+       (28.3 versus 8.4)."
+       Added as one clause in the opening paragraph plus two new table rows in each language. The
+       age-adjusted rates (79.9/43.7 and 28.3/8.4) are recorded in the in-file comments only, not in
+       the table, so the table stays readable. The tables now run 6 rows instead of 4.
+
+   (3) A VISIBLE "data current as of April 2026" LINE - PROPOSED AND DECLINED by the user. Not
+       added. The CDC review date is recorded in the in-file comments instead, so the information is
+       not lost if someone wants it later.
+
+   FILES TOUCHED: Es/article.cshtml (prose + 2 table rows), En/article.cshtml (prose + 2 table
+   rows), FaqEntities.xml es2 and en2 (caveat clause). Every change carries a comment quoting the
+   CDC sentence it came from. Markup re-validated afterwards: both articles balance (11 <tr>,
+   2 tables, all <p> and all @* *@ paired) and FaqEntities.xml still parses as well-formed XML.
+
+   STILL OPEN, RAISED HERE, NOT FIXED - A SOURCING PROBLEM. En/article.cshtml (the "leading causes"
+   paragraph) states "The CDC reports that people most often sustain a traumatic brain injury from a
+   fall, a firearm-related injury, a motor vehicle crash, or an assault... firearm-related suicide
+   is the leading cause of TBI-related deaths." The Spanish article makes a similar claim. That
+   claim is NOT on the TBI Data page we cite - that page defers leading-causes to "Surveillance
+   Report 2018 and 2019". The claim is probably correct but it is attributed to a URL that does not
+   support it. Needs the citation repointed to the surveillance report (which could not be fetched
+   to confirm its contents, same 403 problem). Left for a decision.
+
+
+11. LEADING-CAUSES CITATION REPOINTED AND VERIFIED  (2026-07-30) - CLOSES THE SOURCING GAP
+   ---------------------------------------------------------------------------------------------
+   Raised at the end of section 10. Now closed.
+
+   CORRECTION TO WHAT WAS REPORTED IN SECTION 10: the Spanish page does NOT have this defect. Its
+   causes list is sourced to MedlinePlus (NIH) and never attributes anything to the CDC. Checked
+   every CDC mention in Es/article.cshtml - only two, both on the statistics section. This was an
+   ENGLISH-ONLY problem, one paragraph.
+
+   THE DEFECT. En/article.cshtml said "The CDC reports that people most often sustain a TBI from a
+   fall, a firearm-related injury, a motor vehicle crash, or an assault. Falls are the leading cause
+   of TBI-related hospitalizations... firearm-related suicide is the leading cause of TBI-related
+   deaths." It sat directly under the source line for the statistics table, which points at CDC "TBI
+   Data" - and TBI Data does not carry leading-cause claims at all; it defers them elsewhere. The
+   claims were resting on a citation that did not support them.
+
+   THE SOURCE THAT DOES SUPPORT THEM: CDC, "Facts About TBI",
+   https://www.cdc.gov/traumatic-brain-injury/data-research/facts-stats/index.html
+   CDC page date: 2025-08-04. Retrieved in a browser by the user 2026-07-30 (403 to automated fetch,
+   as with every other cdc.gov URL in this project).
+
+   Chose this over the "Surveillance Report 2018 and 2019" that TBI Data points to, deliberately:
+   the surveillance report is a technical PDF on 2018-2019 data, and sending an injured reader from
+   a law firm page into a surveillance methodology document is worse for them than CDC's own
+   plain-language summary, which is also more current.
+
+   ALL THREE CLAIMS VERIFIED, NEAR-VERBATIM:
+       "People most commonly get TBIs from a fall, firearm-related injury, motor vehicle crash, or
+        an assault."                                                        -> claim 1 holds
+       "Falls lead to nearly half of the TBI-related hospitalizations."     -> claim 2 holds, and is
+        in fact STRONGER than what we had written
+       "Firearm-related suicide is the most common cause of TBI-related deaths in the United
+        States."                                                            -> claim 3 holds exactly
+       "Older adults are more likely to be hospitalized and die from a TBI compared to all other age
+        groups."                                                            -> supports the "older
+        adults" qualifier, which had been vague
+
+   TWO WORDING UPGRADES TAKEN FROM THE SOURCE, both GEO-positive because they replace vague
+   assertions with quantified, attributable ones:
+       "Falls are the leading cause of TBI-related hospitalizations"
+         -> "Falls alone lead to nearly half of all TBI-related hospitalizations"
+       "especially among older adults"
+         -> "older adults are more likely to be hospitalized and to die from a TBI than any other
+             age group"
+   The citation is now an inline link on "CDC" in that sentence, so the claim and its source are
+   attached to each other rather than separated by a table.
+
+   IMPORTANT FINDING - THE TWO CDC PAGES DISAGREE ON VINTAGE, AND THIS IS A TRAP.
+       "Facts About TBI" (page date 2025-08-04) says "over 69,000 TBI-related deaths in 2021".
+       "TBI Data"       (page date 2026-04-27) says "68,663 TBI-related deaths in 2023".
+   Both are CDC, both current-looking, three years apart. The statistics section correctly uses the
+   newer TBI Data figures. This also explains the history: the English article originally carried
+   "69,000 / 2021" because that is what Facts About TBI said - it was never wrong, just older.
+   A warning was written into the in-file comment telling the next editor to cite Facts About TBI
+   for CAUSES ONLY and TBI Data for FIGURES, and specifically not to "correct" the statistics
+   section to match the older page. This is the single most likely way for someone to reintroduce
+   stale data later.
+
+   FILE TOUCHED: En/article.cshtml only. Markup re-validated: 52 <p>/52 </p>, 20 @* /20 *@,
+   24 <a >/24 </a>.
+
+   OFFERED, NOT DONE: "las caidas provocan casi la mitad de las hospitalizaciones por TCE" would be
+   a good quantified fact for the Spanish page too - it is the kind of specific attributable number
+   generative engines cite. Not added, because the Spanish causes section is MedlinePlus-sourced and
+   is not broken, and mixing a second source into it is a content decision rather than a fix.
+
+
+12. CDC FALLS STATISTIC ADDED TO THE SPANISH CAUSES SECTION  (2026-07-30)
+   ---------------------------------------------------------------------------------------------
+   Offered at the end of section 11, approved, applied. One paragraph in Es/article.cshtml, placed
+   immediately after the traumatic-causes list and before the non-traumatic list.
+
+   TEXT ADDED:
+     "Segun los CDC, las caidas provocan casi la mitad de las hospitalizaciones por lesion cerebral
+      traumatica en Estados Unidos, y los adultos mayores tienen mas probabilidad de ser
+      hospitalizados y de morir por un TCE que cualquier otro grupo de edad. Los accidentes de
+      vehiculos de motor y las agresiones son las otras causas frecuentes."
+   with an inline link on "CDC" to Facts About TBI.
+
+   SOURCE: CDC, "Facts About TBI", .../data-research/facts-stats/index.html, CDC page date
+   2025-08-04, read in a browser 2026-07-30. Verbatim support for each clause:
+     "Falls lead to nearly half of the TBI-related hospitalizations."
+     "Older adults are more likely to be hospitalized and die from a TBI compared to all other age
+      groups."
+     "Motor vehicle crashes and assaults are other common ways a person may get a TBI."
+
+   WHY THIS PLACEMENT AND NOT THE STATISTICS SECTION. It is a fact about CAUSES. Sitting directly
+   under the "Causas mas comunes de lesiones cerebrales" H2 it is far more likely to be pulled as
+   the answer to "cual es la causa mas comun de una lesion cerebral?" than the same sentence buried
+   in the figures block ~100 lines earlier. Proximity of claim to heading is the whole point; this
+   is a GEO placement decision, not a keyword one.
+
+   WHY IT WAS WORTH ADDING AT ALL, given section 10 established that TBI statistics have no Spanish
+   search demand: this one is not really a statistic, it is a bridge to an existing practice area.
+   The page already links to /es/lesionados/abogados-de-resbalones-y-caidas-en-miami. "Nearly half
+   of TBI hospitalizations come from falls" turns that link from a cross-sell into a substantive
+   connection, and it is a specific, quantified, attributed number - the form generative engines
+   actually cite.
+
+   TWO SOURCES NOW COEXIST IN THIS SECTION - FLAGGED IN-FILE. The causes LIST remains MedlinePlus
+   (NIH) and was not touched; only this new paragraph is CDC. The in-file comment states the split
+   explicitly so a future editor does not blur them. They do not conflict: MedlinePlus says falls
+   are the most common cause in people over 65, CDC quantifies what share of hospitalizations falls
+   represent. Corroborating, not competing.
+
+   DELIBERATELY OMITTED, AND SAID SO IN THE FILE SO IT DOES NOT READ AS AN OVERSIGHT: the same CDC
+   page states "firearm-related suicide is the most common cause of TBI-related deaths in the United
+   States". True, and it IS on the English page, but it describes deaths that almost never give rise
+   to a negligence claim, in a section read by someone looking for help with their own injury. Added
+   only if parity with the English page is wanted.
+
+   Markup re-validated: 57 <p>/57 </p>, 35 @* /35 *@, 27 <a >/27 </a>, 4 <ol> pairs all closed.
+   Visible word count 4,779 -> 4,834. No keyword counts affected.
+
+
+13. GLOBAL-DISCLAIMER CHECK  (2026-07-30) - ITEM CLOSED, DISCLAIMER STAYS
+   *** INCOMPLETE - SEE SECTION 15, WHICH CORRECTS THIS. The conclusion below (the disclaimer
+   *** stays) is still right, but the search behind it was too narrow: it looked only at the footer
+   *** partials and at .cshtml files, and missed the App_Resources vocabulary strings and the
+   *** unrouted disclaimer page. Read section 15 with it.
+   ---------------------------------------------------------------------------------------------
+   Open since section 6: the Spanish article ends with a disclaimer paragraph, and it had to be
+   confirmed that the site template does not already emit one, or the page would show two.
+
+   RESULT: THE TEMPLATE EMITS NO DISCLAIMER. The new paragraph stays exactly as written.
+
+   HOW IT WAS CHECKED
+   - Views/Shared/_Layout.cshtml renders footer/Pc (desktop) or footer/Mobile. Neither partial
+     contains a disclaimer of any kind. The only legal line in the footer is
+     "@@Vocabulary.AllRightsReserved.<year> | Privacy Policy".
+   - The footer link set is: Privacy Policy, SMS Terms and Conditions, Accessibility Statement,
+     Opt Out, plus navigation. No disclaimer page, no terms-of-use page.
+   - Grepped every .cshtml under Views/ for disclaimer wording in both languages. Exactly ONE hit:
+     Es/article.cshtml line 561, the paragraph added in this project. It is the only page-level
+     disclaimer on the entire site.
+   - Also grepped App_Data/*.xml, *.resx, *.cs and *.json - no disclaimer content anywhere.
+
+   INCIDENTAL FINDING WORTH RAISING WITH THE FIRM: there is a DORMANT HOOK for exactly this.
+   Models/BaseModels/SitePages.cs line 157 defines
+       public BasePartialViewModel Disclaimer => UncategorizedPages.FirstOrDefault(u => u.Id == "disclaimer");
+   but no entity with id="disclaimer" exists in App_Data/UncategorizedPageEntities.xml, and no view
+   references the property. It is unused scaffolding inherited from the shared BaseProject template
+   (the same template also carries OutOfTownPatients and Medical-Staff, so it is built for medical
+   sites as well). The framework therefore already supports a site-wide disclaimer page - nobody
+   ever populated it. Creating that entity is a CONTENT entry, not a code change, and would be a
+   better answer than one disclaimer on one page. Flagging it for the same review pass as the
+   attorney sign-off; deliberately NOT created here, because a site-wide legal disclaimer is the
+   firm's text to write, not ours.
+
+   ASYMMETRY LEFT OPEN, NOT FIXED. The English twin has NO closing disclaimer - only an inline
+   "General information, not legal advice" note on its statute source line (En/article.cshtml:279).
+   The Spanish page has both that inline note (line 439) and the closing block (line 561), even
+   though the two pages make the same statutory claims and are joined by reciprocal hreflang.
+   Mirroring the block to English would be four lines and would remove an odd difference inside a
+   language pair. Not done: the English page keeps falling outside this round's scope and has
+   already been touched four times (stats figures, statute subsections, causes citation, social
+   tags). Worth doing, needs a decision.
+
+
+14. DISCLAIMER MIRRORED TO THE ENGLISH PAGE  (2026-07-30)
+   ---------------------------------------------------------------------------------------------
+   The parity item raised in section 13, now done. En/article.cshtml gets the same closing
+   disclaimer the Spanish page has carried since 2026-07-29, placed in the same position (after the
+   final CTA paragraph, before the related-services partial) with the same styling.
+
+   WHY: the two pages are joined by reciprocal hreflang and make the SAME statutory claims - the
+   95.11 deadlines, comparative negligence under HB 837, the 768.0755 knowledge standard. Only one
+   of them carrying a disclaimer was an inconsistency inside a language pair, not a deliberate
+   distinction. The English text is a translation of the Spanish block; no new legal language was
+   invented for it.
+
+   Also updated the Spanish disclaimer's own comment, which still said "confirmar si la plantilla
+   del sitio ya emite uno global" - that question is now answered, so the comment records the answer
+   and the evidence instead of the open question.
+
+   Both comments carry the note about the dormant Disclaimer hook in SitePages.cs, so whoever
+   eventually writes a site-wide disclaimer knows these two blocks can be removed at that point.
+   Both blocks are marked PENDING ATTORNEY/FIRM REVIEW like every other new block on these pages.
+
+   Markup re-validated after the edit:
+       Es: 57 <p>/57 </p>, 35 @* /35 *@, 27 <a >/27 </a>
+       En: 53 <p>/53 </p>, 21 @* /21 *@, 24 <a >/24 </a>
+
+   THE ENGLISH PAGE HAS NOW BEEN TOUCHED FIVE TIMES BY THIS SPANISH-SCOPED PROJECT, every time
+   because a defect or an inconsistency was found by comparing the pair. For the record, the full
+   list is: (1) CDC figures updated to 214,110/68,663 and the source link repointed; (2) statute
+   subsections corrected from 95.11(4)(a)/(4)(b) to (5)(a)/(5)(c); (3) social/hreflang tags in
+   articlemetas.cshtml; (4) the leading-causes citation repointed to Facts About TBI plus two
+   wording upgrades; (5) this disclaimer. Plus FAQ entries en2, en4, en6, en7, en8. Anyone reviewing
+   the English page should be aware it changed, even though it was never the target of this round.
+
+
+15. DISCLAIMER AUDIT, WIDENED - CORRECTS SECTION 13  (2026-07-30)
+   ---------------------------------------------------------------------------------------------
+   Re-run at the user's request across ALL content types and languages, with much broader phrasing
+   (14 patterns, es + en) and including App_Resources/*.resx and App_Data/*.xml, which the section
+   13 pass did not cover. The section 13 CONCLUSION holds - service pages get no disclaimer from the
+   template, so the two page-level blocks stay - but the picture was incomplete in two ways that
+   change the recommendation.
+
+   FINDING 1 - APPROVED DISCLAIMER TEXT ALREADY EXISTS AND IS ALREADY LIVE, ON LANDING PAGES ONLY.
+       App_Resources/Vocabulary.Es.resx and Vocabulary.resx define two strings:
+         TextFooterLp  (es) "La informacion proporcionada en esta pagina es solo para fines
+                            informativos y no constituye asesoramiento legal. Comuniquese con
+                            nuestra oficina para hablar con un abogado sobre su caso especifico."
+                       (en) "The information provided on this page is for informational purposes
+                            only and does not constitute legal advice. Contact our office to speak
+                            with an attorney about your specific case."
+         Text2FooterLp (es) "*Los resultados pueden variar segun sus circunstancias legales y hechos
+                            particulares."
+                       (en) "*Results may vary depending on your particular facts and legal
+                            circumstances."
+       Both are rendered together, at 10px, in Views/Shared/Footer/Lp/Pc.cshtml line 21 and
+       Views/Shared/Footer/Lp/Mobile.cshtml line 66 - the LANDING PAGE footer.
+       Service pages use ServicePageSkin.cshtml -> _Layout.cshtml -> footer/Pc, which renders
+       NEITHER. That is why the section 13 pass came back empty.
+
+       WHY THIS MATTERS: the recommendation in section 13 was that the firm would have to WRITE a
+       site-wide disclaimer. That is now wrong. The text already exists, in both languages, and is
+       already in production on landing pages - so it has presumably already been through whatever
+       approval the firm applies. Adding one line to Views/Shared/Footer/Pc.cshtml and
+       Footer/Mobile.cshtml
+           @@Vocabulary.TextFooterLp @@Vocabulary.Text2FooterLp
+       would put a disclaimer on all 57 service pages with zero new copy and zero drafting, after
+       which BOTH page-level blocks added by this project become removable. Still a site-wide change
+       that needs firm sign-off, but approving existing text is a far smaller ask than writing new.
+       Text2FooterLp is a "results may vary" disclaimer, which is Rule 4-7.13 territory and is
+       arguably more useful on service pages than on landing pages.
+
+   FINDING 2 - THERE IS A DISCLAIMER PAGE ON DISK, IT IS NOT ROUTED, AND ITS CONTENT IS FOR A
+   PLASTIC SURGERY CLINIC.
+       Views/UncategorizedPage/content/disclaimer/ contains En/ and Es/, each with article.cshtml
+       and articlemetas.cshtml. No entity with id="disclaimer" exists in
+       App_Data/UncategorizedPageEntities.xml (30 entities, none named that), so nothing routes to
+       it and it is not live. Section 13 reported the missing entity but did not notice that the
+       VIEW FILES exist.
+       The content is about before/after surgery photos, surgeons, blood tests, anesthetics,
+       pre/post-operative guidelines, surgical revision and "whether you are a suitable candidate
+       for multiple simultaneous surgeries" - leftover boilerplate from the shared BaseProject
+       template, which is also used for medical sites.
+       The Spanish file additionally has ENCODING CORRUPTION - "despu?s", "cirug?a", "informaci?n" -
+       it is not saved as UTF-8.
+
+       WHY THIS IS A HAZARD, NOT JUST CLUTTER: the obvious move for anyone who later decides the
+       site needs a disclaimer page is to add the missing entity, because the SitePages.cs property
+       and the view files both already exist and it looks like a one-line fix. The moment that
+       entity is added, a cosmetic-surgery disclaimer publishes on a law firm site, in mojibake
+       Spanish. Recommend deleting the four files or rewriting them now, before someone wires it up.
+
+   FINDING 3 - NOTHING ELSE. No service page, blog post, FAQ entity or category page carries a
+   disclaimer. The miami-brain-injury-lawyer pair remains the only content pages on the site with a
+   page-level disclaimer.
+
+   NOTHING WAS CHANGED BY THIS AUDIT. All three findings are reported for the firm's decision:
+   (a) whether to render the existing vocabulary strings in the main footer, (b) whether to delete
+   or rewrite the plastic-surgery disclaimer files, (c) whether the per-page blocks stay once (a) is
+   done. All three are site-wide calls, not this page's.
+
+
+16. PER-PAGE DISCLAIMERS REMOVED  (2026-07-30) - CLIENT DECISION
+   ---------------------------------------------------------------------------------------------
+   Both closing disclaimer blocks deleted at the client's direction, on the basis that the site
+   already has its own approved disclaimer text and no other service page carries a page-level one.
+       Es/article.cshtml  - block added 2026-07-29, removed 2026-07-30
+       En/article.cshtml  - block added 2026-07-30, removed the same day (section 14)
+   Section 14 is therefore superseded: the parity it created was achieved instead by neither page
+   having one.
+
+   A CONCERN WAS RAISED BEFORE ACTING AND THE CLIENT CONFIRMED. Recorded here because it is a real
+   gap, not a formatting preference: the approved strings TextFooterLp and Text2FooterLp render ONLY
+   in the landing-page footer (Footer/Lp/Pc.cshtml line 21, Lp/Mobile.cshtml line 66). Service pages
+   go ServicePageSkin.cshtml -> _Layout.cshtml -> footer/Pc, which does not render them. So AS OF
+   NOW these two pages display NO disclaimer of any kind, while still citing Fla. Stat. 95.11
+   deadlines, HB 837 comparative negligence, and the 768.0755 knowledge standard. The client was
+   told this and chose removal anyway. This is a legitimate call - no other service page on the site
+   has one either, so the pair is now consistent with the other 55 Spanish service pages rather than
+   being the odd ones out.
+
+   NOT DELETED SILENTLY. Each block was replaced by a comment in place, in the page's own language,
+   which records (a) that removal was a client decision and why, (b) that the approved strings exist
+   in App_Resources in both languages, (c) that they currently reach landing pages only, and (d) the
+   exact one-line fix for the main footer if the firm ever wants site-wide coverage. So the finding
+   from section 15 survives in the files themselves, not only in this log.
+
+   STILL PRESENT AND DELIBERATELY LEFT ALONE - these are NOT the page disclaimer and were not part
+   of the removal:
+       Es/article.cshtml line 439: "Informacion general, no asesoria legal sobre un caso especifico."
+       En/article.cshtml line 279: "General information, not legal advice about a specific case."
+   Both are the closing qualifier on the SOURCE LINE for the Fla. Stat. 95.11 citation, attached to
+   that specific statutory claim rather than to the page as a whole. Removing them would strip a
+   qualifier off a legal citation, which is a different act from removing a page-level disclaimer.
+   Flagging them so the client can decide separately if they want those gone too.
+
+   Markup re-validated: Es 56 <p>/56 </p>, 35 @* /35 *@, 27 <a >/27 </a>
+                        En 52 <p>/52 </p>, 21 @* /21 *@, 24 <a >/24 </a>
+   Disclaimer text remaining in either file: 0.
+
+
+PENDING / WHAT IS STILL MISSING  (revised 2026-07-29, replaces the 2026-07-28 list)
+   The 2026-07-28 list has been REMOVED because every content item on it is now done: the rewrite
+   leads on "abogado de lesion cerebral traumatica", the 7 AI-Overview phrases are answered
+   extractably, "golpes en la cabeza"/"TCE"/"trauma craneal" are all present, the brain+spine
+   passage links to the Spanish spinal page, cannibalization was checked in both directions, 10
+   inbound Spanish links were added, and the full content expansion (TOC, statistics, severity +
+   Glasgow, split SOL, next-steps, service area, 3 JSON-LD blocks) shipped. See sections 6-8.
+
+   WHAT IS ACTUALLY LEFT - none of it is copywriting; it all needs a human decision or a browser.
+
+   BLOCKING BEFORE PUBLISH
+   As of 2026-07-30 this is down to ONE item. Everything else on this list has been closed, and
+   every remaining entry below it is a decision or a post-publish task, not a blocker.
+   - ATTORNEY / FIRM REVIEW. Every new section carries "PENDIENTE DE REVISION DEL ABOGADO/BUFETE"
+     in-file. Three spots specifically:
+       * the statute framing (SOL, repose, the HB 837 comparative-negligence explanation);
+       * the "mejor abogado" paragraph - Florida Bar Rule 4-7.13 (unjustified expectations). It was
+         written as a self-contained block so it can be deleted on its own without touching
+         anything around it;
+       * the service-area wording.
+   - [DONE 2026-07-30] CDC figures re-verified in a browser - all correct as published, nothing
+     changed. See section 9. Only re-open this if CDC publishes a newer hospitalization year (it is
+     still 2020); the six locations are listed in section 9.
+   - [DONE 2026-07-30] Global-disclaimer check complete. The template emits none; the paragraph
+     stays. See section 13, which also flags a dormant site-wide disclaimer hook for the firm and an
+     English/Spanish asymmetry that is still open.
+
+   AFTER PUBLISH
+   - MONITOR GSC POSITION on "abogados de lesiones cerebrales en miami" (was 2.4 avg, 78 impr /
+     0 clicks over 3 months). The title changed, so this is the metric that tells us whether the
+     snippet rewrite fixed the 10,109-impression / 0-click problem or cost us the position.
+     Rollback is one line in Es/articlemetas.cshtml.
+   - RE-RUN build_es_text_now.py + merge_es.py after ANY further content edit, or OnPg-Now in the
+     table above goes stale.
+
+   OPEN DECISIONS RAISED BY THE 2026-07-30 WORK (small, none blocking)
+   - [SUPERSEDED] The disclaimer was mirrored to the English page (section 14) and then BOTH were
+     removed at the client's direction (section 16). Neither page carries one now.
+   - SITE-WIDE DISCLAIMER - three linked decisions, all for the firm, see section 15:
+       (a) render the EXISTING approved strings @@Vocabulary.TextFooterLp / Text2FooterLp in
+           Views/Shared/Footer/Pc.cshtml and Footer/Mobile.cshtml. They are already live on landing
+           pages, in both languages. One line each, no new copy to write. This is the recommended
+           route and it retires the two page-level blocks added by this project.
+       (b) DELETE OR REWRITE Views/UncategorizedPage/content/disclaimer/{En,Es}/ - the files exist,
+           are not routed, contain PLASTIC SURGERY boilerplate, and the Spanish one has broken
+           encoding. If anyone adds the missing entity to wire the page up, that content goes live
+           on a law firm site. Treat as a latent hazard, not clutter.
+       (c) [RESOLVED 2026-07-30] the per-page disclaimers were REMOVED from both pages at the
+           client's direction - see section 16. So (a) is now the only route by which these two
+           pages would ever show a disclaimer, and until it is done they show none.
+   - Add "firearm-related suicide is the most common cause of TBI-related deaths" to the Spanish
+     causes section, if parity with the English page is wanted. Deliberately omitted. See section 12.
+
+   OPEN QUESTIONS, DISCUSSED BUT NOT DECIDED (both are site-wide, not this page's call)
+   - Should /es/faqs/<category>/<slug> URLs canonicalize to their service page? The auto-generated
+     FAQ URL for this page draws 14 impressions at position 44.79 against the service page's 78 at
+     2.4. It is the only real cannibalization found, and it is a template-level decision affecting
+     every service page on the site - deliberately not patched here.
+   - Whether to add flsenate.gov links for 768.81 and 768.0755, for consistency with the 95.11
+     citation that does link out.
+#####################################################################################################

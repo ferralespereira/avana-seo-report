@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abogados de Lesiones Cerebrales en Miami – Mejoras SEO</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        /* ── Section headers ── */
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card (meta tags) ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-comment strong { font-weight: 900; font-style: italic; color: #9399b2; }
+        .fix-item  { font-size: 1.1rem; }
+
+        /* ── Info cards ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* sections list */
+        .sections-list {
+            list-style: none; display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px;
+        }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* cannibalization / note card */
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .removed {
+            text-decoration: line-through; color: #f38ba8;
+            background: #fff0f0; border-radius: 3px; padding: 0 3px;
+        }
+        .cannibal-block .added {
+            color: #065f46; background: #e6f4ea; border-radius: 3px; padding: 0 3px; font-weight: 600;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        /* keyword count table */
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .kw-table th, .kw-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eef0f2; }
+        .kw-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b8ba7; }
+        .kw-table td.num { text-align: center; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; }
+        .kw-table .up   { color: #065f46; font-weight: 700; }
+        .kw-table .down { color: #c0392b; font-weight: 700; }
+        .kw-table .kd   { color: #b8892b; font-weight: 700; }
+        .kw-table tr:last-child td { border-bottom: none; }
+        .aio-flag {
+            display: inline-block; font-size: 0.62rem; font-weight: 700;
+            background: #ede9fe; color: #5b21b6; border-radius: 3px; padding: 0 5px;
+        }
+        .table-scroll { overflow-x: auto; }
+
+        /* link change block */
+        .link-change {
+            background: #f4f5f7; border-radius: 8px; padding: 12px 16px;
+            font-size: 0.82rem; display: flex; flex-direction: column; gap: 5px;
+        }
+        .link-arrow { color: #89b4fa; font-weight: 700; font-size: 0.78rem; }
+
+        /* ── Schema cards ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .schema-divider { height: 1px; background: #e8eaed; }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .fixed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #dbeafe; color: #1e40af; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .removed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fee2e2; color: #991b1b; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .pending-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fef3c7; color: #92400e; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+
+        /* ── Stat tiles ── */
+        .stat-row { display: flex; flex-wrap: wrap; gap: 14px; max-width: 900px; margin-bottom: 18px; }
+        .stat-tile {
+            flex: 1 1 150px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 16px 18px;
+        }
+        .stat-value { font-size: 1.35rem; font-weight: 700; color: #24292e; font-variant-numeric: tabular-nums; }
+        .stat-value .from { color: #f38ba8; }
+        .stat-value .to { color: #28c840; }
+        .stat-label { font-size: 0.72rem; color: #6a737d; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+
+        /* ── Callout ── */
+        .callout {
+            max-width: 900px; border-radius: 8px; padding: 14px 18px;
+            font-size: 0.84rem; line-height: 1.6; margin-bottom: 18px;
+        }
+        .callout-warn { background: #fff8f0; border-left: 4px solid #febc2e; color: #24292e; }
+        .callout-info { background: #eef6ff; border-left: 4px solid #0070c9; color: #24292e; }
+        .callout-legal { background: #fdf6ec; border-left: 4px solid #b8892b; color: #24292e; }
+        .callout strong { font-weight: 700; }
+
+        /* ── GEO Status section ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-list.dropped li { background: #fdf6ec; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-list.dropped .geo-icon { color: #b8892b; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;flex-wrap:wrap;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Volver al Informe SEO</a>
+        <a href="abogados-de-lesiones-cerebrales-en-miami.html" style="font-size:13px;font-weight:600;color:#b8892b;text-decoration:none;">← Análisis de la página</a>
+    </div>
+    <h1>Abogados de Lesiones Cerebrales en Miami — Mejoras SEO</h1>
+    <p class="subtitle">es/lesionados/abogados-de-lesiones-cerebrales-en-miami &nbsp;·&nbsp; Gallardo Law Firm &nbsp;·&nbsp; Actualizado 2026-07-30 &nbsp;·&nbsp; Es / article.cshtml + articlemetas.cshtml + FaqEntities.xml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami" target="_blank" rel="noopener">https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami', this)">copiar</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Palabra clave</span>
+            <span class="page-info-keyword">abogados de lesiones cerebrales en miami</span>
+            <button class="copy-btn" onclick="copyPageInfo('abogados de lesiones cerebrales en miami', this)">copiar</button>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         STAT TILES
+    ════════════════════════════════════ -->
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">2,542</span> → <span class="to">4,834</span></div>
+            <div class="stat-label">Palabras visibles (Es)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">7</span></div>
+            <div class="stat-label">Keywords con AI Overview en la página</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">3</span></div>
+            <div class="stat-label">Esquemas JSON-LD · TOC · 2 tablas</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="to">12</span> / 12</div>
+            <div class="stat-label">Errores de exactitud corregidos (A1–A12)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">10</span></div>
+            <div class="stat-label">Enlaces internos entrantes (Es)</div>
+        </div>
+    </div>
+
+
+    <div class="callout callout-warn">
+        <strong>El diagnóstico: 10,109 impresiones y CERO clics en 3 meses.</strong> La página era visible pero nunca se hacía clic, y las posiciones lo explican — las consultas de mayor volumen estaban en posición 21–26 (página 3 de Google). Peor: el <strong>63% de todas las impresiones</strong> (6,382) venía del clúster «lesiones cerebrales <em>y de columna / y espinales</em>», y las palabras «columna», «espinal», «medular» y «espina» aparecían <strong>CERO veces</strong> en la página en español. El artículo nunca había recibido trabajo de contenido: sin tabla de contenido, sin estadísticas, sin sección de gravedad, sin JSON-LD.
+    </div>
+
+    <div class="callout callout-info">
+        <strong>Objetivo: cubrir la demanda real medida, no la supuesta.</strong> Se fusionaron 4 fuentes en una sola tabla maestra de <strong>197 keywords únicas</strong> (GSC 60 consultas · Semrush keyword-gap 25 · Semrush bulk export US 69 · términos on-page) y la reescritura se ordenó por lo que esos datos decían. El resultado es una expansión de 2,542 → 4,834 palabras con 15 secciones H2, TOC, 3 bloques JSON-LD y 12 correcciones de exactitud legal y médica — más el <strong>rechazo explícito</strong> de la sección GEO de barrios que sí tiene la versión en inglés (ver «Decisiones deliberadas»).
+    </div>
+
+    <div class="callout callout-legal">
+        <strong>El hallazgo principal: «abogado de lesión cerebral traumática».</strong> 720 de volumen, KD 1, CPC $35.83 y con AI Overview en el SERP. No aparecía en el keyword-gap report — lo que significa que <em>ni nosotros ni ninguno de los 3 competidores rastreados</em> posicionaban para él. 720 búsquedas con dificultad 1 y el terreno vacío. Ahora lidera el H1 del título, la intro, la sección de definición y el <code style="font-size:0.78rem">alternateName</code> del esquema Service.
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         1. META TAGS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Meta Tags <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— reescritura + hreflang recíproco (2026-07-29)</span></div>
+
+        <div class="code-card">
+            <div class="code-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">miami-brain-injury-lawyer / Es / articlemetas.cshtml</span>
+            </div>
+            <pre><code><span class="c-razor">@model BasePageWithStaticHtmlFilesViewModel</span>
+<span class="c-comment fix-item">@* TITLE — mantiene INTACTA la frase objetivo declarada (hoy en posición 2.4 de Google, 78 impr/3 meses)
+   y añade el término líder de 720 vol / KD 1 / AI Overview como segunda cláusula. 89 caracteres. *@</span>
+<span class="c-tag">&lt;title&gt;</span>Abogados de Lesiones Cerebrales en Miami - Lesión Cerebral Traumática | Gallardo Law Firm<span class="c-tag">&lt;/title&gt;</span>
+<span class="c-comment fix-item">@* page-topic / page-type actualizados al conjunto de términos medido (TCE, trauma craneal, cerca de mí) *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"page-topic"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogado de lesión cerebral traumática, abogados de lesiones cerebrales en Miami, TCE, trauma craneal, lesión cerebral y de columna, lesión cerebral traumática cerca de mí"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"page-type"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogado para casos de lesión cerebral traumática (TCE) por negligencia y accidentes"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* DESCRIPTION — pregunta-gancho con el término líder + CTA "Consulta gratis". La anterior no tenía
+   ninguno de los dos, lo que explica plausiblemente 10,109 impresiones / 0 clics. *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"description"</span> <span class="c-attr">content</span>=<span class="c-val">"¿Sufrió una lesión cerebral traumática en un accidente en Miami? Nuestros abogados de lesiones cerebrales luchan por su compensación. Consulta gratis."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"canonical"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* hreflang RECÍPROCO y auto-referencial — antes NINGUNA de las dos páginas apuntaba a la otra *@</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"alternate"</span> <span class="c-attr">hreflang</span>=<span class="c-val">"es"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-val">"alternate"</span> <span class="c-attr">hreflang</span>=<span class="c-val">"en"</span> <span class="c-attr">href</span>=<span class="c-val">"https://gallardolawyers.com/injury-law/miami-brain-injury-lawyer"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:published_time"</span> <span class="c-attr">content</span>=<span class="c-val">"2018-02-21T14:18:17+00:00"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"article:modified_time"</span> <span class="c-attr">content</span>=<span class="c-val">"<span class="c-razor">@Model.GetLastModifiedDate</span>"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale"</span> <span class="c-attr">content</span>=<span class="c-val">"es_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Señala que existe una versión en inglés de esta página *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:locale:alternate"</span> <span class="c-attr">content</span>=<span class="c-val">"en_US"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:type"</span> <span class="c-attr">content</span>=<span class="c-val">"article"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* og:title / twitter:title usan la frase corta original, NO el título combinado del SERP *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Lesiones Cerebrales en Miami | Gallardo Law Firm"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:description"</span> <span class="c-attr">content</span>=<span class="c-val">"¿Sufrió una lesión cerebral traumática en un accidente en Miami? Nuestros abogados de lesiones cerebrales luchan por su compensación. Consulta gratis."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:url"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:site_name"</span> <span class="c-attr">content</span>=<span class="c-val">"Gallardo Law Firm"</span> <span class="c-tag">/&gt;</span>
+<span class="c-comment fix-item">@* Imagen social 903x530 (antes 375x211) con alt/width/height *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/themes/gallardo/images/services/903x530/miami-brain-injury-lawyer.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Lesiones Cerebrales en Miami en Gallardo Law Firm"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:width"</span> <span class="c-attr">content</span>=<span class="c-val">"903"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">property</span>=<span class="c-val">"og:image:height"</span> <span class="c-attr">content</span>=<span class="c-val">"530"</span> <span class="c-tag">/&gt;</span>
+
+<span class="c-comment fix-item">@* Twitter Card grande — la página ES no tenía ninguna *@</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:card"</span> <span class="c-attr">content</span>=<span class="c-val">"summary_large_image"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:title"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Lesiones Cerebrales en Miami | Gallardo Law Firm"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:description"</span> <span class="c-attr">content</span>=<span class="c-val">"¿Sufrió una lesión cerebral traumática en un accidente en Miami? Nuestros abogados de lesiones cerebrales luchan por su compensación. Consulta gratis."</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image"</span> <span class="c-attr">content</span>=<span class="c-val">"https://gallardolawyers.com/themes/gallardo/images/services/903x530/miami-brain-injury-lawyer.jpg"</span> <span class="c-tag">/&gt;</span>
+<span class="c-tag">&lt;meta</span> <span class="c-attr">name</span>=<span class="c-val">"twitter:image:alt"</span> <span class="c-attr">content</span>=<span class="c-val">"Abogados de Lesiones Cerebrales en Miami en Gallardo Law Firm"</span> <span class="c-tag">/&gt;</span>
+</code></pre>
+        </div>
+        <p style="max-width:900px;margin-top:12px;font-size:0.79rem;color:#6a737d;font-style:italic;line-height:1.5;">
+            <strong>Riesgo asumido y por qué se asumió:</strong> la frase objetivo declarada mantiene posición media <strong>2.4</strong> en Google, así que se dejó literal dentro del título en lugar de reescribirla. Solo se añadió una segunda cláusula. En <code style="font-size:0.75rem">En/articlemetas.cshtml</code> se tocaron ÚNICAMENTE las etiquetas estructurales/sociales (hreflang, og:locale:alternate, imagen, twitter card) como mitad recíproca — el título y la descripción en inglés no estaban en alcance y no se modificaron. La reversión es una línea en <code style="font-size:0.75rem">Es/articlemetas.cshtml</code>.
+        </p>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. KEYWORD COVERAGE
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Cobertura de Keywords — Antes / Ahora (Es)</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Apariciones en el cuerpo + 10 FAQ &nbsp;·&nbsp; GSC 3 meses · Semrush gap 2026-07-24 · Semrush bulk US 2026-07-28</span>
+            </div>
+            <div class="info-card-body">
+                <div class="table-scroll">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Keyword</th><th>Vol</th><th>KD</th><th>Impr</th><th>Pos</th><th>Antes</th><th>Ahora</th><th>Δ</th><th>Nota</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>abogado de lesión cerebral traumática</td><td class="num">720</td><td class="num kd">1</td><td class="num">—</td><td class="num">—</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>⭐ CPC $35.83 · <span class="aio-flag">AIO</span> · nadie posicionaba (ni competidores)</td></tr>
+                        <tr><td>abogado de lesiones cerebrales y de columna</td><td class="num">2900</td><td class="num kd">3</td><td class="num">1,106</td><td class="num">26.5</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>clúster cerebro+columna</td></tr>
+                        <tr><td>abogado de lesiones cerebrales y espinales</td><td class="num">1900</td><td class="num kd">0</td><td class="num">1,006</td><td class="num">24.7</td><td class="num">0</td><td class="num">2</td><td class="num up">+2</td><td>clúster cerebro+columna</td></tr>
+                        <tr><td>mejor abogado de lesiones cerebrales y espinales</td><td class="num">1600</td><td class="num kd">0</td><td class="num">2,428</td><td class="num">21.2</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>la consulta con MÁS impresiones de toda la página</td></tr>
+                        <tr><td>mejor abogado de lesiones cerebrales y de columna</td><td class="num">1600</td><td class="num kd">5</td><td class="num">1,531</td><td class="num">21.4</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>«mejor» usado descriptivamente (Regla 4-7.13)</td></tr>
+                        <tr><td>abogado de lesiones cerebrales</td><td class="num">720</td><td class="num kd">3</td><td class="num">903</td><td class="num">14.1</td><td class="num">12</td><td class="num">27</td><td class="num up">+15</td><td>término núcleo de la página</td></tr>
+                        <tr><td>abogado de lesión de cerebro</td><td class="num">590</td><td class="num kd">2</td><td class="num">1,484</td><td class="num">5.9</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>el «casi-acierto» de mayor valor: pos 5.9 con 0 apariciones</td></tr>
+                        <tr><td>abogados de lesiones cerebrales</td><td class="num">480</td><td class="num kd">3</td><td class="num">459</td><td class="num">20.3</td><td class="num">14</td><td class="num">16</td><td class="num up">+2</td><td>plural</td></tr>
+                        <tr><td>abogados por golpes en la cabeza</td><td class="num">260</td><td class="num kd">2</td><td class="num">5</td><td class="num">18.6</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>CPC $91.95 — el más alto de todo el conjunto · <span class="aio-flag">AIO</span></td></tr>
+                        <tr><td>abogado de tce</td><td class="num">140</td><td class="num kd">4</td><td class="num">6</td><td class="num">29.5</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>acrónimo español de TBI; la página solo usaba «TBI» · <span class="aio-flag">AIO</span></td></tr>
+                        <tr><td>abogado de trauma craneal</td><td class="num">110</td><td class="num kd">2</td><td class="num">79</td><td class="num">19.7</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td><span class="aio-flag">AIO</span></td></tr>
+                        <tr><td>abogado de lesiones cerebrales traumáticas cerca de mí</td><td class="num">90</td><td class="num kd">0</td><td class="num">3</td><td class="num">70.7</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>«cerca de mí» sí vale; los barrios NO (ver decisiones) · <span class="aio-flag">AIO</span></td></tr>
+                        <tr><td>abogados de lesiones cerebrales traumáticas</td><td class="num">70</td><td class="num kd">0</td><td class="num">15</td><td class="num">23.1</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td><span class="aio-flag">AIO</span></td></tr>
+                        <tr><td>abogado de traumatismos cerebrales</td><td class="num">40</td><td class="num kd">0</td><td class="num">28</td><td class="num">13.1</td><td class="num">0</td><td class="num">1</td><td class="num up">+1</td><td>variante sinónima</td></tr>
+                        <tr><td>abogados de lesiones cerebrales en miami</td><td class="num">0</td><td class="num">—</td><td class="num">78</td><td class="num">2.4</td><td class="num">3</td><td class="num">5</td><td class="num up">+2</td><td>keyword OBJETIVO declarada — Semrush da 0, GSC da pos 2.4</td></tr>
+                        <tr><td>abogado de lesiones en la cabeza miami</td><td class="num">40</td><td class="num kd">0</td><td class="num">116</td><td class="num">6.1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>se deja en 0 A PROPÓSITO: la cadena exacta omite la preposición; la página dice «…en la cabeza EN Miami»</td></tr>
+                        <tr><td>máxima compensación</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">2</td><td class="num down">0</td><td class="num down">−2</td><td>ELIMINADA deliberadamente — Regla 4-7.13 del Colegio de FL</td></tr>
+                        <tr><td>mayor compensación</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">2</td><td class="num down">0</td><td class="num down">−2</td><td>ELIMINADA deliberadamente — Regla 4-7.13 del Colegio de FL</td></tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="schema-divider" style="margin:18px 0;"></div>
+
+                <div class="schema-subsection-label">Frases on-page — efecto de la expansión sobre el vocabulario del artículo</div>
+                <div class="table-scroll">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Término / frase</th><th>Antes</th><th>Ahora</th><th>Δ</th><th>Término / frase</th><th>Antes</th><th>Ahora</th><th>Δ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>lesiones (palabra)</td><td class="num">42</td><td class="num">93</td><td class="num up">+51</td><td>lesión cerebral traumática</td><td class="num">2</td><td class="num">17</td><td class="num up">+15</td></tr>
+                        <tr><td>lesión (palabra)</td><td class="num">33</td><td class="num">77</td><td class="num up">+44</td><td>TCE (acrónimo)</td><td class="num">0</td><td class="num">17</td><td class="num up">+17</td></tr>
+                        <tr><td>lesiones cerebrales (frase)</td><td class="num">33</td><td class="num">68</td><td class="num up">+35</td><td>cabeza</td><td class="num">4</td><td class="num">19</td><td class="num up">+15</td></tr>
+                        <tr><td>lesión cerebral (frase)</td><td class="num">23</td><td class="num">53</td><td class="num up">+30</td><td>columna (palabra)</td><td class="num">0</td><td class="num">5</td><td class="num up">+5</td></tr>
+                        <tr><td>abogado (palabra)</td><td class="num">19</td><td class="num">46</td><td class="num up">+27</td><td>golpe en la cabeza</td><td class="num">0</td><td class="num">5</td><td class="num up">+5</td></tr>
+                        <tr><td>miami (palabra)</td><td class="num">9</td><td class="num">23</td><td class="num up">+14</td><td>escala de coma de Glasgow</td><td class="num">0</td><td class="num">4</td><td class="num up">+4</td></tr>
+                        <tr><td>negligencia</td><td class="num">4</td><td class="num">15</td><td class="num up">+11</td><td>consulta gratuita</td><td class="num">0</td><td class="num">4</td><td class="num up">+4</td></tr>
+                        <tr><td>negligencia médica</td><td class="num">1</td><td class="num">5</td><td class="num up">+4</td><td>señales de peligro</td><td class="num">0</td><td class="num">3</td><td class="num up">+3</td></tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:14px;line-height:1.6;">
+                    <strong>Fuentes:</strong> Google Search Console (últimos 3 meses, esta URL — 60 consultas / 10,109 impresiones / 0 clics) · Semrush keyword-gap vs 3 competidores en español (25 kw) · Semrush bulk export base US 2026-07-28 (69 kw candidatas, 69 devueltas) · conteo on-page con límites de palabra sensibles a tildes (así «lesión» no cuenta dentro de «lesiones»). Total: <strong>197 keywords únicas</strong>. Mercado: el 95% de las impresiones de esta URL (9,571 de 10,109) son de Estados Unidos, por eso la base US es la correcta.<br>
+                    <strong>Advertencia metodológica registrada en el análisis:</strong> Semrush INFRAMIDE el español. La keyword objetivo declarada de la página devuelve volumen 0 en el bulk export, pero GSC registra 78 impresiones en posición 2.4. Se trató el volumen de Semrush como un piso, no como verdad, y GSC desempata.<br>
+                    Conteo de palabras visibles: 2,542 (antes) → 4,834 (tras la última adición del 2026-07-30). La cabecera de la tabla maestra dice 4,791 porque se regeneró antes de esa última edición.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. CONTENT CHANGES
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Cambios de Contenido <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— article.cshtml (Es): 2,542 → 4,834 palabras · 15 secciones H2</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Contenido &nbsp;·&nbsp; Expansión SEO/GEO · FAQ · Enlaces · Redacción</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:24px;">
+
+                <!-- Structure -->
+                <div>
+                    <div class="schema-subsection-label">Estructura — el artículo no había recibido NINGÚN trabajo de contenido antes <span class="new-badge">NUEVO</span></div>
+                    <ul class="sections-list">
+                        <li>Contenedor migrado a <code style="font-size:0.78rem">&lt;div class="blog-detail_content"&gt;</code> — el que ya usan otros 45 artículos en español</li>
+                        <li>Tabla de Contenido arriba: 15 anclas ↔ 15 <code style="font-size:0.78rem">id</code> de H2, verificadas 1:1</li>
+                        <li>«¿Qué es una lesión cerebral traumática?» <code style="font-size:0.78rem">#heading-definicion</code> — el objetivo GEO principal</li>
+                        <li>«¿Qué hace un abogado de lesiones cerebrales?» — espejo del H2 en inglés</li>
+                        <li>Estadísticas CDC + tabla de 6 filas <code style="font-size:0.78rem">#heading-estadisticas</code></li>
+                        <li>«Síntomas y señales de peligro» — antes NO había señales de emergencia (A8)</li>
+                        <li>«Tipos y gravedad» + tabla de la Escala de Coma de Glasgow</li>
+                        <li>«¿Tengo un caso de lesión cerebral?» — lista de elegibilidad</li>
+                        <li>«Qué hacer después de un golpe en la cabeza» — <code style="font-size:0.78rem">&lt;ol&gt;</code> de 6 pasos</li>
+                        <li>«Cómo elegir un abogado de lesiones cerebrales» + enlace a honorarios</li>
+                        <li>«Abogados de lesiones cerebrales en Miami y cerca de usted» — sin lista de barrios, a propósito</li>
+                        <li class="full-row">Párrafo cerebro + columna con enlace a la página en español de médula espinal — <strong>la mayor corrección SEO de todo el trabajo</strong> (6,382 impresiones de GSC que la página no atendía)</li>
+                        <li class="full-row">Bloque de servicios relacionados vía <code style="font-size:0.78rem">PartialServicesRelated</code> — la página en español nunca lo había renderizado</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- FAQ -->
+                <div>
+                    <div class="schema-subsection-label">FAQ en español — 6 de 10 reescritas <span class="fixed-badge">CORREGIDO</span></div>
+                    <div class="cannibal-block" style="border-color:#0070c9;background:#eef6ff;">
+                        Las 10 entradas ES ya existían; <strong>no se añadieron</strong>, se corrigieron. <strong>es1</strong> (definición de TCE — es la respuesta que se raspará para el AI Overview de la keyword de 720 vol, así que tenía que ser correcta antes de promocionarla) · <strong>es2</strong> (cifras CDC) · <strong>es3</strong> (causas) · <strong>es4</strong> (referencia rota a honorarios) · <strong>es6</strong> (promesa de resultado) · <strong>es7</strong> (plazo de prescripción) · <strong>es8</strong> (diagnóstico). <strong>es5, es9 y es10</strong> se revisaron y se dejaron intactas por ser correctas.
+                        <span class="reason">Auditoría de consistencia artículo ↔ FAQ ejecutada en ambos idiomas: cada cifra y afirmación cambiada en un artículo se verificó también en su FAQ gemela y viceversa (CDC 214,110 / 68,663 presentes en los 4; «tipo 1 / tipo 2», rayos X como diagnóstico de TBI y promesas de resultado eliminados de los 4).</span>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- Copy edit -->
+                <div>
+                    <div class="schema-subsection-label">Pasada de corrección de estilo — 16 ítems (tercera pasada, 2026-07-29) <span class="fixed-badge">CORREGIDO</span></div>
+                    <div class="cannibal-block">
+                        <strong>Errores gramaticales reales:</strong> <span class="removed">«si ha estado buscando … cerca de mi»</span> mezclaba verbo en 2.ª persona con posesivo en 1.ª — ahora la frase de búsqueda va entrecomillada como consulta del usuario: <span class="added">buscando en Google «abogado de lesiones cerebrales traumáticas cerca de mí»</span>, mismo recurso que usa la página en inglés · <span class="removed">«Los abogados … estamos aquí»</span> → <span class="added">«En Gallardo Law Firm estamos aquí»</span> · <span class="removed">«bolsa de aire que no despliega»</span> → <span class="added">«que no se despliega»</span> · <span class="removed">«le debía un deber de cuidado»</span> → <span class="added">«tenía un deber de cuidado hacia usted»</span> · condicional mixto corregido · 4 fallos de concordancia.
+                        <span class="reason">Restricción respetada en toda la pasada: ninguna corrección podía reducir la cobertura de keywords. Verificado después — todos los términos de valor mantuvieron su conteo. También se suavizaron 3 «costuras» dejadas por la pasada de frase exacta (p. ej. «los abogados por golpes en la cabeza de nuestro equipo» se reformuló como observación en vez de título de puesto), conservando la cadena exacta en los tres casos.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. ACCURACY & COMPLIANCE
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Exactitud y Cumplimiento <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— 12 problemas encontrados, 12 corregidos (A1–A12)</span></div>
+
+        <div class="callout callout-warn">
+            <strong>Esto no era una revisión SEO.</strong> Una pasada completa sobre el artículo en español y las 10 FAQ, con cada afirmación legal y médica contrastada contra su fuente primaria, encontró contenido <strong>inventado</strong> y derecho de Florida <strong>desactualizado desde la reforma HB 837 de 2023</strong>. Se corrigió todo antes de tocar nada de SEO.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Es/article.cshtml + FaqEntities.xml (es1–es10) &nbsp;·&nbsp; cada edición lleva un comentario en el archivo con su fuente</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:20px;">
+
+                <div>
+                    <div class="schema-subsection-label" style="color:#991b1b;">Crítico — contenido falso / inventado</div>
+                    <ul class="geo-list done">
+                        <li><em class="geo-icon">✓</em><span><strong>A1 · FAQ es2 — terminología médica INVENTADA.</strong> Decía «lesión cerebral <em>tipo 1</em>» y «<em>tipo 2</em>». Esa clasificación NO EXISTE; no era un error de traducción. El TCE se clasifica leve / moderado / grave con la Escala de Coma de Glasgow. Las cifras (1.7M / 52,000 / 125,000) eran estimaciones de los CDC de la era 2002-2006, ~20 años obsoletas.<span class="geo-note">Ahora: ~214,110 hospitalizaciones (2020) y ~68,663 muertes (2023). Fuente: CDC «TBI Data».</span></span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label" style="color:#92400e;">Alto — derecho de Florida erróneo o anterior a la reforma de 2023</div>
+                    <ul class="geo-list done">
+                        <li><em class="geo-icon">✓</em><span><strong>A2 · Negligencia comparativa bajo la regla PRE-2023.</strong> El texto describía negligencia comparativa PURA. HB 837 (vigente 2023-03-24) hizo de Florida un estado de comparativa MODIFICADA con barra del 51%: quien tenga más del 50% de culpa no recupera NADA. La página nunca mencionaba la barra, dejando al lector la impresión opuesta a la ley.<span class="geo-note">Reescrito con la regla actual + la excepción: 768.81(6) NO aplica a reclamos por negligencia médica. Fuente: Fla. Stat. 768.81(6), verificado en flsenate.gov.</span></span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A3 · Prescripción — número correcto, marco equivocado, 3 defectos.</strong> (i) sin salvedad de fecha de devengo — los 2 años aplican a causas nacidas desde 2023-03-24; las anteriores conservan 4 años; (ii) «se cuenta desde la fecha de la lesión» es falso para negligencia médica, que corre desde el incidente O desde el descubrimiento; (iii) decía «<em>aproximadamente</em> 2 años» — un plazo de prescripción no es aproximado, y viniendo de un bufete es la peor cobertura posible.<span class="geo-note">Reescrito con salvedad de devengo, regla de descubrimiento, reposo de 4 años, 7 años por fraude y excepción de menores hasta el 8.º cumpleaños. Fuente: Fla. Stat. 95.11(5)(a) y (5)(c).</span></span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A4 · FAQ es7 contradecía al artículo y omitía el plazo.</strong> «Tuve un accidente hace varios años, ¿todavía puedo presentar mi caso?» se respondía sin mencionar ningún plazo de prescripción.<span class="geo-note">Ahora declara los plazos reales y ya no contradice al artículo.</span></span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A5 · Responsabilidad de instalaciones exagerada.</strong> «El propietario <em>será juzgado como responsable</em>», dicho como certeza, y omitía el requisito que realmente controla: bajo Fla. Stat. 768.0755 hay que probar conocimiento ACTUAL O CONSTRUCTIVO de la condición.<span class="geo-note">Reescrito con el estándar real + enlace interno a la página de resbalones y caídas.</span></span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label" style="color:#b8892b;">Medio — inexactitud médica</div>
+                    <ul class="geo-list done">
+                        <li><em class="geo-icon">✓</em><span><strong>A6 · FAQ es8 ponía «rayos X» PRIMERO.</strong> Una radiografía simple no diagnostica una lesión cerebral: muestra fracturas de cráneo. La lista además omitía la Escala de Coma de Glasgow, que es la evaluación inicial estándar.<span class="geo-note">Reescrito: Glasgow primero, TC/RM como las imágenes que muestran daño cerebral, rayos X descrito correctamente. La FAQ en inglés en8 tenía el defecto idéntico y también se corrigió.</span></span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A7 · FAQ es1 — «se atrofian las funciones del cerebro» y «cuando recibes un golpe contundente».</strong> La atrofia es un cambio estructural específico, no lo que hace un TCE de forma aguda; y la definición era demasiado estrecha: el TCE también resulta de aceleración/desaceleración sin golpe directo, de lesión penetrante y de onda expansiva. El propio artículo se contradecía tres secciones más abajo.<span class="geo-note">Corregido en la FAQ y en la nueva sección de definición. Fuente: MedlinePlus (NIH).</span></span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A8 · La lista de síntomas omitía las señales de emergencia.</strong> Faltaban las banderas rojas de «busque atención médica de inmediato»: una pupila más grande que la otra, vómitos repetidos, dolor de cabeza que empeora, habla arrastrada, convulsiones, imposibilidad de despertar. En una página cuyo consejo explícito es «vaya al médico», eso es un hueco de seguridad, no solo de SEO.<span class="geo-note">Sección nueva «Síntomas y señales de peligro». Fuente: MedlinePlus (NIH).</span></span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label" style="color:#5b21b6;">Medio — exposición publicitaria ante el Colegio de Abogados de Florida (Regla 4-7.13)</div>
+                    <ul class="geo-list done">
+                        <li><em class="geo-icon">✓</em><span><strong>A9 · Tres promesas de resultado eliminadas.</strong> «el propietario <em>será juzgado como responsable</em>» · «un buen abogado <em>puede ganar su caso</em>» (FAQ es6) · «lucharemos hasta el final para que reciba la <em>máxima compensación</em>». La Regla 4-7.13 prohíbe la publicidad que crea expectativas injustificadas sobre resultados. <span class="removed-badge">ELIMINADAS</span><span class="geo-note">Por eso «máxima compensación» y «mayor compensación» aparecen con −2 en la tabla de keywords: es una pérdida de cobertura DELIBERADA.</span></span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A10 · Sin descargo de responsabilidad.</strong> Se añadió uno y después se <strong>retiró por decisión del cliente</strong> (2026-07-30), tras auditar que ninguna otra página de servicio del sitio lleva uno. Ver «Estado» para el detalle y la ruta recomendada.</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">Bajo — erratas y referencias rotas</div>
+                    <ul class="geo-list done">
+                        <li><em class="geo-icon">✓</em><span><strong>A11 · «2 anos» aparecía DOS veces</strong> en la frase más citada de la página (sin tilde, «ano» significa otra cosa en español). También «Gallar<strong>l</strong>o Law Firm» → «Gallardo», «informacion» ×4 y tildes faltantes en víctima, cuál, sólido, médicas, causó, equivocó, pérdida, más.</span></li>
+                        <li><em class="geo-icon">✓</em><span><strong>A12 · FAQ es4 con referencia cruzada colgante:</strong> «vayan al artículo de tasa de contingencia» sin enlace y con un nombre que no coincidía con la página real.<span class="geo-note">Ahora enlaza a /es/honorarios-de-abogados-de-lesiones.</span></span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="callout callout-info" style="margin-top:18px;">
+            <strong>Verificación en navegador (2026-07-30) — ítem cerrado.</strong> cdc.gov devuelve HTTP 403 a cualquier petición automatizada (bloqueo de CDN a tráfico de centro de datos, no un problema de cabeceras), así que el usuario abrió la página manualmente. <strong>Todas las cifras publicadas resultaron correctas</strong>: 214,110 hospitalizaciones (2020), 68,663 muertes (2023), 586 hospitalizaciones y ~190 muertes al día, y 75+ como grupo de mayor riesgo. El año de hospitalizaciones sigue siendo 2020, así que no hubo que recalcular la cifra diaria. Fecha de revisión de la propia página CDC: 2026-04-27.<br>
+            <strong>Trampa documentada en los archivos:</strong> las dos páginas de los CDC discrepan en antigüedad — «Facts About TBI» dice «más de 69,000 muertes en 2021» y «TBI Data» dice «68,663 en 2023». Se escribió una advertencia en el comentario del archivo indicando citar <em>Facts About TBI para CAUSAS</em> y <em>TBI Data para CIFRAS</em>, y no «corregir» la sección de estadísticas para que coincida con la página más antigua. Esa es la forma más probable de que alguien reintroduzca datos obsoletos más adelante.
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. INTERNAL LINKING
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Enlaces Internos y Canibalización</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">10 enlaces ENTRANTES nuevos desde otras páginas en español &nbsp;·&nbsp; anclas variadas a propósito</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block" style="border-color:#28c840;background:#f0fdf4;">
+                    <strong>Por qué 10 y no 16:</strong> se midió primero el resto del sitio en español — la página en español más enlazada tenía <strong>7</strong> enlaces entrantes en contenido. 10 pone a esta página en la cima de ese nivel sin convertirla en un valor atípico visible. Se dejó margen a propósito para que otras páginas puedan enlazar más adelante sin que parezca una inyección de enlaces de una sola vez.
+                    <span class="reason">Cada enlace envuelve texto que la página de origen YA tenía — no se escribió ni una frase nueva — y las anclas se variaron deliberadamente en lugar de repetir 10 veces la misma coincidencia exacta.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">Los 10 enlaces entrantes y su ancla</div>
+                    <div class="link-change">
+                        <span class="link-arrow">personal-injury-lawyer-in-florida → «daño cerebral» · motorcycle-accident-attorney-miami → «Lesiones cerebrales traumáticas»</span>
+                        <span class="link-arrow">miami-pedestrian-accident-attorney → «lesiones cerebrales» · miami-hit-and-run-accident-lawyer → «Lesiones cerebrales traumáticas»</span>
+                        <span class="link-arrow">construction-accident-lawyer-in-miami → «abogado de lesión cerebral traumática» · what-is-a-worker-comp-injury → «lesiones en la cabeza»</span>
+                        <span class="link-arrow">miami-head-on-collision-lawyer → «lesión cerebral» · miami-pool-accident-attorney → «Daño cerebral por falta de oxígeno»</span>
+                        <span class="link-arrow">miami-anesthesia-errors-attorney → «daño cerebral por falta de oxígeno» · miami-jet-ski-accident-lawyer → «daño cerebral traumático»</span>
+                    </div>
+                    <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:8px;">
+                        Validado: los 10 archivos con etiquetas HTML balanceadas, y cada uno con exactamente UN enlace a esta página.
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Excluidos a propósito — frontera de canibalización</div>
+                    <ul class="sections-list">
+                        <li>parálisis cerebral · lesiones de nacimiento · negligencia obstétrica · médula espinal — su lenguaje sobre lesión cerebral trata de lesión infantil o espinal; enlazar desde ahí difuminaría la frontera que se acababa de trazar</li>
+                        <li>página de accidentes de auto de Houston — mercado equivocado</li>
+                        <li class="full-row">Enlaces SALIENTES añadidos desde esta página: página en español de médula espinal (párrafo cerebro+columna) · resbalones y caídas · responsabilidad del producto · negligencia médica · honorarios de abogados</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         6. SCHEMAS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Esquemas JSON-LD <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— la página ES no tenía NINGUNO</span></div>
+
+        <div class="callout callout-info">
+            <strong>3 bloques JSON-LD nuevos en el artículo</strong> (BreadcrumbList · WebPage+Speakable · Service), todos con <code style="font-size:0.78rem">inLanguage: "es"</code>, más el <code style="font-size:0.78rem">LegalService</code> del skin compartido y los microdatos <code style="font-size:0.78rem">FAQPage</code> (10 FAQ ES). El grafo consolida en <strong>una</strong> entidad de marca: <code style="font-size:0.78rem">provider</code> referencia <code style="font-size:0.78rem">.../#organization</code> por <code style="font-size:0.78rem">@id</code> y no re-declara tipo, nombre ni teléfono.
+        </div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 1</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos — 3 niveles (en español)</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">posición 1</span><span class="sf-val">Inicio (/es)</span></div>
+                            <div class="schema-field"><span class="sf-key">posición 2</span><span class="sf-val">Lesiones Personales → el hub EN VIVO /es/lesionados/abogado-de-lesiones-personales-en-miami; la categoría «lesionados» redirige al home</span></div>
+                            <div class="schema-field"><span class="sf-key">posición 3</span><span class="sf-val">Abogados de Lesiones Cerebrales en Miami</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>Migas de pan en el SERP + señal de jerarquía; apunta a la URL que sí resuelve (200)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 2</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage (no duplica LegalService, FAQPage ni BreadcrumbList)</span></div>
+                            <div class="schema-field"><span class="sf-key">inLanguage</span><span class="sf-val">es</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">#lc-intro, #lc-definicion</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li><code style="font-size:0.75rem">#lc-definicion</code> es el pasaje que responde «abogado de lesión cerebral traumática» (720 vol, con AI Overview) — el objetivo GEO principal de la página</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 3</div>
+                    <div class="schema-card-title">Service</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">serviceType</span><span class="sf-val">Derecho de lesiones cerebrales</span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">6 variantes con demanda MEDIDA: Lesión Cerebral Traumática (720) · TCE (140) · Trauma Craneal (110) · Traumatismos Cerebrales (40) · Lesiones Cerebrales y de Columna · Lesiones en la Cabeza</span></div>
+                            <div class="schema-field"><span class="sf-key">areaServed</span><span class="sf-val">SOLO Miami + Condado de Miami-Dade — sin lista de barrios, al contrario que la versión en inglés</span></div>
+                            <div class="schema-field"><span class="sf-key">provider</span><span class="sf-val">referencia pura { "@id": ".../#organization" }</span></div>
+                            <div class="schema-field"><span class="sf-key">hasOfferCatalog</span><span class="sf-val">6 tipos de caso que la página YA describe — no añade ninguna afirmación nueva</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>Clasifica la página como representación legal por lesiones cerebrales. Sin <code style="font-size:0.75rem">priceRange</code> en ninguna Offer (riesgo de honorarios, Regla 4-7)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 4</div>
+                    <div class="schema-card-title">LegalService <span style="font-size:0.62rem;color:#8b8ba7;">(skin)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Campos</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">parentOrganization</span><span class="sf-val">@id .../#organization — pertenece a la marca, no la suplanta</span></div>
+                            <div class="schema-field"><span class="sf-key">NAP</span><span class="sf-val">nombre · teléfono · dirección · área de servicio</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>El <code style="font-size:0.75rem">provider</code> del bloque Service resuelve a esta entidad de marca única, sin colisión de tipos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 5 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Bloque 5</div>
+                    <div class="schema-card-title">FAQPage <span style="font-size:0.62rem;color:#8b8ba7;">(microdatos del skin)</span></div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Cobertura</div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">10</span>10 preguntas ES, <code style="font-size:0.75rem">language="es"</code> — 6 reescritas por exactitud</div>
+                            <div class="faq-q-item"><span class="q-num">✓</span>XML validado: las 20 entradas de lesión cerebral (10 ES + 10 EN) intactas y bien formadas</div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Ventajas</div>
+                        <ul class="schema-advantages">
+                            <li>El formato pregunta/respuesta es el que los motores generativos citan con más facilidad — y es8/es1 son las respuestas que se raspan para las keywords con AI Overview</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note card -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">Sin nodo autor</div>
+                    <div class="schema-card-title">A propósito — falta nombrar al abogado</div>
+                </div>
+                <div class="schema-card-body">
+                    <ul class="schema-advantages" style="list-style:none;">
+                        <li>No se añade <code style="font-size:0.75rem">author</code> / <code style="font-size:0.75rem">reviewedBy</code> (firma E-E-A-T) — el bufete debe nombrar primero al abogado revisor.</li>
+                        <li>Sin <code style="font-size:0.75rem">Offer</code> con precio: plantearía un tema de honorarios (Regla 4-7).</li>
+                        <li>Validación ejecutada: los 3 bloques parsean como JSON válido tras des-escapar <code style="font-size:0.75rem">@@</code>, y las 15 anclas del TOC mapean 1:1 con los 15 <code style="font-size:0.75rem">id</code> de H2.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         7. DECISIONES DELIBERADAS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Decisiones Deliberadas — lo que los datos dijeron que NO hiciéramos</div>
+
+        <div class="callout callout-warn">
+            <strong>El bulk export revirtió una recomendación previa.</strong> Antes de tener esos datos se había asumido que la sección GEO de barrios de la página en inglés se trasladaría al español. <strong>No se traslada.</strong> Los 11 términos de barrios de Miami probados devolvieron volumen 0, y GSC coincide de forma independiente (341 impresiones en total para todas las consultas con «miami»). Dos fuentes apuntando en la misma dirección.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Del bulk export de 69 keywords, solo 15 tienen volumen medible en EE. UU. — ese es el titular</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-needed-title">✕ Descartado — 0 volumen confirmado</div>
+                        <ul class="geo-list dropped">
+                            <li><em class="geo-icon">✕</em><span><strong>La sección GEO de barrios completa.</strong> North Miami, Hialeah, Coral Gables, Aventura, Miami Beach, Kendall, Homestead, Miami Gardens, Miami-Dade, «en florida». Basta una mención limpia de Miami/Miami-Dade.<span class="geo-note">Salvedad registrada: un 0 de Semrush significa «por debajo de su umbral», no «nadie busca esto». Pero GSC coincide.</span></span></li>
+                            <li><em class="geo-icon">✕</em><span><strong>Una sección de columna vertebral.</strong> Los términos de columna aislados dan todos 0 (lesiones espinales, médula espinal, paraplejia, cuadriplejia). Todos los números grandes están en la frase COMBINADA. Es una <em>familia de frases</em>, no un tema: se atiende con un párrafo cerebro+columna y un enlace a la página espinal en español.</span></li>
+                            <li><em class="geo-icon">✕</em><span><strong>Modificadores de causa.</strong> por accidente de auto, por caída, por negligencia médica, infantil, de nacimiento, hipoxia, anoxia, encefalopatía, accidente cerebrovascular, coma, estado vegetativo, conmoción, contusión, fractura de cráneo: 0 volumen. Las secciones de causas existentes están bien para el usuario, pero no se expandieron para búsqueda.</span></li>
+                            <li><em class="geo-icon">✕</em><span><strong>«traumatismo craneoencefálico».</strong> 0 volumen pese a que «trauma craneal» tiene 110. Se usa la forma corta.</span></li>
+                            <li><em class="geo-icon">✕</em><span><strong>Geografía fuera de mercado.</strong> Orlando, Jackson, Durham, Joliet, Fairfax, Cheyenne, Commerce, Palm Springs, Long Beach, San Jose, Orange County, Fort Lauderdale: 18 consultas, solo 95 impresiones en total. No servimos esos mercados.</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Añadido — demanda confirmada</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em><span><strong>«cerca de mí»</strong> — aquí las dos fuentes DISCREPAN con lo anterior: la variante «traumáticas cerca de mí» tiene 90 de volumen, KD 0 y AI Overview. La cercanía como <em>frase</em> vale; los nombres de barrio no.</span></li>
+                            <li><em class="geo-icon">✓</em><span><strong>Las 7 keywords con AI Overview son el conjunto GEO.</strong> Toda keyword con volumen ≥ 70 dispara un AI Overview; ninguna por debajo de 70 lo hace. Ahí es donde tiene que vivir el texto extraíble y directamente respondible. Las 7 aparecen ahora en la página; antes, ninguna.</span></li>
+                            <li><em class="geo-icon">✓</em><span><strong>Estadísticas CDC ampliadas por GEO, no por SEO.</strong> Se comprobó (no se supuso): NO hay demanda de búsqueda en español para estadísticas de TCE — cero filas con volumen en las 197. Se añadieron porque lo que los motores generativos citan son cifras específicas, fechadas y atribuidas.</span></li>
+                            <li><em class="geo-icon">✓</em><span><strong>«las caídas provocan casi la mitad de las hospitalizaciones por TCE»</strong> — colocada bajo el H2 de causas, no en el bloque de cifras, porque es mucho más probable que se extraiga como respuesta a «¿cuál es la causa más común de una lesión cerebral?». Además convierte el enlace a resbalones y caídas de venta cruzada en conexión sustantiva.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reason" style="font-size:0.78rem;color:#6a737d;font-style:italic;margin-top:14px;line-height:1.6;">
+                    <strong>Ceros conocidos y deliberados:</strong> «abogado de lesiones en la cabeza miami» (116 impr, pos 6.1) se queda en 0 porque la cadena exacta omite la preposición — forzarla se leería como español roto a cambio de una ganancia marginal.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         8. ESTADO / PENDIENTE
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Estado — Hecho vs Pendiente</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Verificación final 2026-07-30 &nbsp;·&nbsp; abogados-de-lesiones-cerebrales-en-miami (Es)</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Hecho</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> 12/12 problemas de exactitud legal y médica corregidos (A1–A12)</li>
+                            <li><em class="geo-icon">✓</em> Tabla de Contenido + 15 secciones H2 · anclas TOC ↔ id: 15 ↔ 15</li>
+                            <li><em class="geo-icon">✓</em> 2,542 → 4,834 palabras visibles · 2 tablas · 4 listas <code style="font-size:0.78rem">&lt;ol&gt;</code></li>
+                            <li><em class="geo-icon">✓</em> Las 7 keywords con AI Overview presentes en la página (antes: 0)</li>
+                            <li><em class="geo-icon">✓</em> 3 bloques JSON-LD parsean como JSON válido · <code style="font-size:0.78rem">inLanguage: es</code></li>
+                            <li><em class="geo-icon">✓</em> 10 FAQ ES (6 reescritas) · FaqEntities.xml bien formado, 20 entradas intactas</li>
+                            <li><em class="geo-icon">✓</em> Meta: título de 89 car. con la frase objetivo intacta · description con gancho + CTA · summary_large_image · og:image 903x530</li>
+                            <li><em class="geo-icon">✓</em> hreflang RECÍPROCO es/en + og:locale:alternate (ninguna de las dos páginas lo tenía)</li>
+                            <li><em class="geo-icon">✓</em> 10 enlaces entrantes + 5 salientes, todos con HTML balanceado</li>
+                            <li><em class="geo-icon">✓</em> Cifras CDC verificadas en navegador — correctas tal cual estaban publicadas</li>
+                            <li><em class="geo-icon">✓</em> Cita de «causas principales» reapuntada a la fuente que sí la respalda (solo afectaba a la página EN)</li>
+                            <li><em class="geo-icon">✓</em> Pasada de estilo de 16 ítems sin perder ni un conteo de keyword</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="geo-col-title geo-needed-title">⚠ Pendiente</div>
+                        <ul class="geo-list needed">
+                            <li><em class="geo-icon">✕</em> <strong>REVISIÓN DEL ABOGADO / BUFETE — único bloqueante antes de publicar.</strong> Cada sección nueva lleva «PENDIENTE DE REVISIÓN» en el archivo. Tres puntos concretos: el marco estatutario (prescripción, reposo, HB 837); el párrafo «mejor abogado» (Regla 4-7.13 — se escribió como bloque autónomo para poder borrarlo solo, sin tocar nada alrededor); y la redacción del área de servicio.</li>
+                            <li><em class="geo-icon">✕</em> <strong>Descargo de responsabilidad site-wide</strong> — el texto aprobado YA EXISTE en ambos idiomas (<code style="font-size:0.76rem">Vocabulary.TextFooterLp</code> / <code style="font-size:0.76rem">Text2FooterLp</code>) y ya está en producción, pero solo en el pie de las <em>landing pages</em>. Una línea en <code style="font-size:0.76rem">Footer/Pc.cshtml</code> y <code style="font-size:0.76rem">Footer/Mobile.cshtml</code> lo pondría en las 57 páginas de servicio sin redactar nada nuevo. Decisión del bufete.</li>
+                            <li><em class="geo-icon">✕</em> <strong>Peligro latente:</strong> <code style="font-size:0.76rem">Views/UncategorizedPage/content/disclaimer/{En,Es}/</code> existe pero no está ruteada, contiene texto de una <strong>clínica de cirugía plástica</strong> heredado de la plantilla base, y el archivo en español tiene la codificación rota. Si alguien añade la entidad que falta para «arreglarlo», ese contenido se publica en el sitio de un bufete. Recomendado borrarla o reescribirla antes.</li>
+                            <li><em class="geo-icon">✕</em> <strong>Monitorizar GSC</strong> tras el cambio de título: posición en «abogados de lesiones cerebrales en miami» (2.4 antes). Es la métrica que dirá si la reescritura del snippet arregló el problema de 10,109 impresiones / 0 clics. Reversión: una línea.</li>
+                            <li><em class="geo-icon">✕</em> Ver la página en vivo para confirmar el renderizado de Razor (no se puede compilar/probar aquí)</li>
+                            <li><em class="geo-icon">✕</em> Re-ejecutar <code style="font-size:0.76rem">build_es_text_now.py</code> + <code style="font-size:0.76rem">merge_es.py</code> tras cualquier edición futura, o el conteo on-page de la tabla queda obsoleto</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="schema-divider" style="margin:22px 0 18px;"></div>
+
+                <div class="cannibal-block">
+                    <strong>La página en INGLÉS se tocó CINCO veces en un proyecto de alcance español</strong>, siempre porque comparar la pareja destapó un defecto: (1) cifras CDC actualizadas a 214,110/68,663 y enlace de fuente reapuntado; (2) citas estatutarias corregidas de 95.11(4)(a)/(4)(b) a (5)(a)/(5)(c); (3) etiquetas hreflang/sociales; (4) cita de causas principales reapuntada + 2 mejoras de redacción; (5) el descargo (añadido y luego retirado). Más las FAQ en2, en4, en6, en7 y en8.
+                    <span class="reason">Quien revise la página en inglés debe saber que cambió, aunque nunca fue el objetivo de esta ronda.</span>
+                </div>
+
+                <div class="cannibal-block" style="margin-top:14px;border-color:#0070c9;background:#eef6ff;">
+                    <strong>Pregunta abierta a nivel de sitio, deliberadamente NO parcheada aquí:</strong> ¿deberían las URL <code style="font-size:0.78rem">/es/faqs/&lt;categoría&gt;/&lt;slug&gt;</code> canonicalizar hacia su página de servicio? La URL de FAQ autogenerada de esta página capta 14 impresiones en posición 44.79 frente a las 78 en posición 2.4 de la página de servicio. Es la única canibalización real encontrada, y es una decisión de plantilla que afecta a todas las páginas de servicio del sitio.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = '¡copiado!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
