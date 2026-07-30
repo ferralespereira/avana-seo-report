@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallardo — Abogado de Errores Quirúrgicos en Miami | Análisis SEO</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; abogado de errores quirúrgicos en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 10)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="errores-quirurgicos-en-miami"></div>
+<div class="geo-history" data-slug="errores-quirurgicos-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isOwn) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isOwn ? 2 : 1.5,
+        borderDash: isOwn ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isOwn ? 4 : 3,
+        pointHoverRadius: isOwn ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('gallardolawyers') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Palabra clave</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    abogado de errores quirúrgicos en miami
+    <button onclick="navigator.clipboard.writeText('abogado de errores quirúrgicos en miami'); this.textContent='¡Copiado!'; setTimeout(() =&gt; this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copiar</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami'); this.textContent='¡Copiado!'; setTimeout(() =&gt; this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:12px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clics</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Palabra clave: "abogado de errores quirúrgicos en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impresiones</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Palabra clave: "abogado de errores quirúrgicos en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">—</div>
+    <div class="kpi-source">Palabra clave: "abogado de errores quirúrgicos en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Posición</div>
+    <div class="kpi-value">—</div>
+    <div class="kpi-source">Palabra clave: "abogado de errores quirúrgicos en miami" — consulta principal</div>
+  </div>
+</div>
+
+<div class="insight bad" style="margin-bottom:24px;">
+  <span class="insight-icon">🔴</span>
+  <div><strong>La keyword exacta no existe en GSC.</strong> La exportación filtrada por la consulta exacta
+  "<strong>abogado de errores quirúrgicos en miami</strong>" viene <strong>vacía</strong> (solo cabecera): <strong>cero impresiones</strong> en los últimos 3 meses.
+  La demanda está en dos variantes que la página <em>no</em> targetea en singular:
+  <strong>"errores quirúrgicos en miami"</strong> (86 impresiones, pos <strong>2.5</strong> — sin "abogado") y
+  <strong>"abogados de errores quirúrgicos en miami"</strong> (69 impresiones, pos <strong>23.67</strong> — en plural).
+  El título y el H1 usan el singular "Abogado de Errores Quirúrgicos en Miami", que es exactamente la forma sin demanda medible.</div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN (keyword-filtered) ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Desglose por dispositivo para la palabra clave "abogado de errores quirúrgicos en miami" (filtrado por palabra clave)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Dispositivo</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clics</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impresiones</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Posición</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="5" style="padding:18px 14px;text-align:center;color:#999;font-style:italic;">Sin datos de dispositivo &mdash; la palabra clave "abogado de errores quirúrgicos en miami" tuvo 0 impresiones en GSC en este periodo, por lo que la exportación de dispositivos filtrada por palabra clave está vacía.</td></tr>
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">El alcance real de la URL se muestra abajo, en la sección filtrada por URL. Fuente: exportación de GSC filtrada por palabra clave, últimos 3 meses, 2026-07-30.</div>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="es-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — Todas las consultas para <span style="font-size:16px;font-weight:900;">https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami</span> — Últimos 3 meses</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Mostrar</a>
+  </div>
+  <div id="es-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Clics totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">15</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Impresiones totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">1,154</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">CTR promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">1.3%</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Posición promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">17.78</div></div>
+    </div>
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Consultas sin clics — top 20 por impresiones (<strong>ninguna</strong> alcanza 100 impresiones)</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Consulta</th>
+            <th style="padding:7px 10px;text-align:right;">Impresiones</th>
+            <th style="padding:7px 10px;text-align:right;">Posición</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">errores quirúrgicos en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">86</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">2.5</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de errores quirúrgicos en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">69</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">23.67</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de negligencia médica miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">30</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">78.37</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de negligencia médica en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">27</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">77.89</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de negligencia medica en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">20</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">77.65</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de errores quirurgicos</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">16</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">19.12</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">errores de ob-gyn miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">14</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">20.14</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de mala practica medica en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">70.38</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de errores quirúrgicos syracuse</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">12</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">35.92</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de errores de ob-gyn miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">12</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">42.75</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de errores quirúrgicos onondaga county</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">12</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">51.17</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de mala práctica médica miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">10</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">83</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de negligencia medica en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">7</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">79.86</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">carros quirurgicos</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">5</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">77.6</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">se puede demandar por una cirugía mal hecha</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">3</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">20</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de errores de anestesia syracuse</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">3</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">71.67</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de lesiones por error quirúrgico en orlando</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">2</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">37</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">errores farmacéuticos en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">2</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">45.5</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de mala practica medica en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">2</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">72.5</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de negligencia médica en miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">2</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">80</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Mostrando las top 20 de 30 consultas sin clics · <strong>0 consultas con más de 100 impresiones</strong> — la cola es muy plana: la mayor es "errores quirúrgicos en miami" con solo 86 · Esa consulta rankea <strong>pos 2.5</strong> y aún así no genera clics — el cuello de botella es el snippet, no el ranking · Todo el clúster "negligencia médica / mala práctica médica en miami" (30+27+20+13+10+7+2+2 ≈ 111 impresiones) está enterrado en <strong>pos 70–83</strong> · Hay contaminación geográfica fuera de mercado (Syracuse, Onondaga County, Orlando) · Fuente: exportación de GSC filtrada por URL, 2026-07-30</div>
+      <div style="font-size:11px;color:#7d5a00;background:var(--yellowBg);border-left:3px solid var(--orange);padding:8px 10px;margin-top:8px;line-height:1.5;">⚠️ <strong>Discrepancia en la exportación:</strong> la fila de <code>Pages.csv</code> declara <strong>15 clics / 1,154 impresiones</strong>, pero las tablas <code>Queries.csv</code> y <code>Devices.csv</code> del mismo filtro suman ~360 impresiones y <strong>0 clics</strong>. Las tarjetas de arriba usan <code>Pages.csv</code> (el total de la página, según el método estándar); la tabla de consultas refleja lo que GSC desglosa. La diferencia es la anonimización de consultas raras de GSC — conviene verificarla en la interfaz antes de reportar los 15 clics como cierto.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Palabras Clave Primarias y Secundarias — Análisis de Página</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extraído del código fuente en vivo — Gallardo ✅ | Needle &amp; Ellenberg ✅ | Freidin Brown ✅ | Stewart Tilghman ✅ &middot; Consultado 2026-07-30</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Elemento</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Gallardo 🔴 NUESTRA PÁGINA<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami" style="color:#fff;text-decoration:none;" target="_blank">gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Needle &amp; Ellenberg, P.A. ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://needleellenberg.com/abogado-de-errores-quirurgicos-en-miami/" style="color:#fff;text-decoration:none;" target="_blank">needleellenberg.com/abogado-de-errores-quirurgicos-en-miami/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Freidin Brown, P.A. ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.yourfloridatrialteam.com/es/miami/abogado-de-negligencia-medica/errores-de-hospitales/" style="color:#fff;text-decoration:none;" target="_blank">yourfloridatrialteam.com/…/abogado-de-negligencia-medica/errores-de-hospitales/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Stewart Tilghman Fox Bianchi ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.stfblaw.com/areas-de-practica/negligencia-medica/" style="color:#fff;text-decoration:none;" target="_blank">stfblaw.com/areas-de-practica/negligencia-medica/</a>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Etiqueta de título</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Coincidencia exacta con la keyword</div>"Abogado de Errores Quirúrgicos en Miami | Gallardo Law Firm"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword exacta al frente + marca<br/>✅ ~58 caracteres — sin truncado</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Singular "Abogado" — la forma con <strong>0 impresiones</strong>. El plural ("abogados", 69 impr.) y el head sin "abogado" ("errores quirúrgicos en miami", 86 impr.) son los que tienen demanda<br/>❌ Sin "negligencia médica" ni "mala práctica" — el clúster de ~111 impresiones donde la página está en pos 70–83</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Keyword + marca, orden invertido</div>"Miami Abogado De Errores Quirúrgicos | Needle &amp; Ellenberg, P.A."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Mismo target exacto que Gallardo — el competidor más directo</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Orden "Miami Abogado De…" es antinatural en español<br/>⚠️ Capitalización tipo título en inglés ("De")</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Ataca el head term, no el nicho</div>"Abogado de negligencia hospitalaria en Miami | Freidin Brown Law Firm"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "negligencia hospitalaria" = el clúster donde Gallardo está en pos 78</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ No menciona "errores quirúrgicos" en el título</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Head term puro de máximo volumen</div>"Abogado De Negligencia Médica En Miami | STFBC"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Coincide con "abogado de negligencia médica miami" (30 impr., Gallardo pos 78.37)</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ "STFBC" — sigla sin reconocimiento de marca</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Abogado de Errores Quirúrgicos en Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Coincide con título, meta, slug y schema — targeting muy consistente</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Repite el singular sin demanda; no cubre plural, ni "negligencia médica", ni "mala práctica"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Miami Abogado De Errores Quirúrgicos"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Además usa <strong>"Abogado De Errores Quirúrgicos En Miami"</strong> como primer H2 — cubre las dos permutaciones en una sola página</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Abogado de Negligencia Hospitalaria en Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ H1 alineado con el título y con la intención "error de hospital"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Abogados De Negligencia Médica En Miami, Fl"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Plural + geo con estado</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ "Fl" sin formato — descuido de calidad</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keyword primaria</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ abogado de errores quirúrgicos en miami — <strong>0 impresiones</strong></div><div style="margin-top:4px;font-size:11px;color:#666;">La página sí rankea <strong>pos 2.5</strong> en "errores quirúrgicos en miami" (86 impr.) — pero por el head term, no por el término que optimiza</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Optimizada para una forma sin volumen medible en GSC</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado de errores quirúrgicos miami</div><div style="margin-top:4px;font-size:11px;color:#666;">Mismo nicho exacto, pero cubre singular + plural + ambas permutaciones geo entre título, H1 y H2</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado de negligencia hospitalaria miami</div><div style="margin-top:4px;font-size:11px;color:#666;">Ataca "errores de hospitales" — intención adyacente con más volumen que "errores quirúrgicos"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado de negligencia médica en miami</div><div style="margin-top:4px;font-size:11px;color:#666;">El head term del vertical — el clúster de ~111 impresiones donde Gallardo está en pos 70–83</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keywords secundarias (H2)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div>• ¿Qué Constituye un Error Quirúrgico?<br/>• Causas de Errores Quirúrgicos en Florida<br/>• Tipos Comunes de Casos de Errores Quirúrgicos<br/>• Tus derechos como víctima de negligencia quirúrgica<br/>• Pasos a seguir si sospechas de un error quirúrgico<br/>• Navegando el Proceso Legal con Nuestra Firma de Abogados<br/>• Agenda una Consulta con uno de Nuestros Abogados de Errores Quirúrgicos en Miami</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ 7 H2 con buena cobertura educativa (qué/causas/tipos/derechos/pasos)</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Ningún H2 usa "negligencia médica" ni "mala práctica médica"<br/>❌ Sin H2 de resultados/veredictos ni de "¿cuánto vale mi caso?"<br/>❌ Sin H2 para "errores de ob-gyn" (14+12 impr.) ni "errores de anestesia"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div>• Abogado De Errores Quirúrgicos En Miami<br/>• ¿Por qué tipo de error quirúrgico resultó lesionado?<br/>• Póngase en contacto… para una evaluación gratuita<br/>• Probar o demostrar un error quirúrgico<br/>• Deje que un abogado especializado… lo ayude<br/>• Legal Services · Podcasts · Contact Us</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ H2 con la keyword exacta + "probar/demostrar" (intención de prueba del caso)</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Varios H2 sin traducir ("Contact Us", "Legal Services", "Podcasts") en una página en español</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div>• Ofrecemos el sentimiento de un despacho pequeño…<br/>• La negligencia médica es nuestro enfoque principal<br/>• ¿Tiene una lesión grave debido a la negligencia de un hospital?<br/>• <strong>Errores médicos comunes en los hospitales</strong><br/>• Nuestros abogados de errores hospitalarios lucharán por lo que merece<br/>• Lo que nuestros clientes están diciendo<br/>• Programe una Evaluación de Caso Gratuita</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ 9 H2 — mezcla intención informativa + prueba social + conversión</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div>• Más de 100 años de experiencia combinada representando a clientes en todo el país<br/>• ¿Por qué elegir a nuestro bufete de negligencia médica en el Sur de Florida?<br/>• Casos de negligencia médica que hemos manejado exitosamente</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Solo 3 H2 — la estructura más pobre de las cuatro</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cantidad de palabras</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~2,370 palabras — competitiva</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Al nivel de Needle &amp; Ellenberg y Freidin Brown; casi 2× STFB</div><div style="margin-top:4px;font-size:11px;color:#666;">La extensión <em>no</em> es la brecha en esta página — lo es la cobertura de términos y la prueba</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~2,300 palabras</div><div style="margin-top:4px;font-size:11px;color:#666;">Prácticamente empatado con Gallardo</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~2,200 palabras</div><div style="margin-top:4px;font-size:11px;color:#666;">Más corta, pero con mucha más densidad de prueba por palabra</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ~1,200 palabras — la más delgada</div><div style="margin-top:4px;font-size:11px;color:#666;">Se apoya en autoridad de dominio y en el historial de veredictos</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señal de costo</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Contingencia visible — mejor que el gemelo de lesiones cerebrales</div><div>• "Solo Pagas, Si Ganas" (cabecera)<br/>• "Evaluación Gratis" · "Llama Gratis"<br/>• "Disponibles 24/7"</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <code>priceRange: "$1500-$10000"</code> en el JSON-LD contradice frontalmente "Solo Pagas Si Ganas" — e implica que el cliente paga por adelantado</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Evaluación gratuita" (repetida en 2 H2)</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin declaración explícita de "no gana, no paga"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ La reversión de riesgo más fuerte</div><div style="margin-top:4px;font-size:11px;color:#059669;">"Sin recuperación, sin honorarios a menos que ganemos su caso" + "<strong>$0 honorarios a menos que ganemos</strong>"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Contingencia explicada</div><div style="margin-top:4px;font-size:11px;color:#059669;">"usted no nos paga a no ser que ganemos su caso"</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta descripción</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Presente — la <strong>ÚNICA</strong> de las cuatro con meta descripción</div>"Un abogado de errores quirúrgicos en Miami ayuda a las víctimas de lesiones en quirófanos causadas por negligencia médica. Le asesoramos y protegemos sus derechos."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword al frente · ~160 caracteres</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin CTA, sin teléfono, sin "gratis", sin "solo pagas si ganas"<br/>❌ Cierra en afirmación pasiva — con pos 2.5 y 0 clics en el head term, este snippet <strong>es</strong> el cuello de botella</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Google escribe el snippet — sin control de CTR</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin control de snippet</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 AUSENTE</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin control de snippet</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cobertura de FAQ</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ La mejor cobertura de FAQ de las cuatro — 10 preguntas con microdatos FAQPage</div><div style="font-size:11px;color:#666;">¿Consecuencias de los errores quirúrgicos? · ¿Realmente necesitaba una cirugía? · ¿El cirujano estaba capacitado? · ¿Puede admitir el error? · ¿Puedo demandar si la cirugía no cura? · ¿Debo sentirme mal por demandar? · ¿Cómo sé si tengo caso? · ¿Será difícil el proceso? · ¿Qué es negligencia médica? · ¿Cuánto tiempo tengo para demandar?</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Elegible para rich results · Única ventaja estructural clara sobre los tres competidores</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ En microdatos, no en JSON-LD — y las preguntas no aparecen como H2, así que no capturan la keyword</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin sección FAQ</div><div style="margin-top:4px;font-size:11px;color:#666;">Contenido en prosa; un H2 en forma de pregunta, sin bloque Q&amp;A</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin sección FAQ</div><div style="margin-top:4px;font-size:11px;color:#666;">Un H2 interrogativo, sin schema Q&amp;A</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin sección FAQ</div><div style="margin-top:4px;font-size:11px;color:#666;">Solo 3 H2 — sin bloque de preguntas</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señales de confianza</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 El stack de confianza más débil — nada cuantificado</div><div>• 4 abogados nombrados (Gallardo, Maria Vargas, Jesús Novo, Natalia Timmons)<br/>• Bilingüe · 24/7 · Oficinas Miami / Hialeah / Houston</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin veredictos ni acuerdos<br/>❌ Sin conteo ni calificación de reseñas<br/>❌ Sin años de ejercicio en la página<br/>❌ Sin certificaciones de la Junta ni premios<br/>❌ Sin testimonios de clientes</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Experiencia + testimonios, sin cifras</div><div>• "Más de 50 años de experiencia combinada"<br/>• 6 testimonios con nombre<br/>• Bios de Andrew Needle y Andrew Ellenberg<br/>• 4 sedes en Florida</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin veredictos cuantificados ni certificaciones</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Stack de autoridad muy fuerte</div><div>• <strong>100+ reseñas de Google</strong><br/>• <strong>$500M+ recuperado</strong> · casos $38M · $12.7M · $9.75M<br/>• 100+ años de experiencia combinada · 45+ años en servicio<br/>• 5 abogados nombrados con bio · testimonios</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Montos + conteo de reseñas = el más persuasivo en el SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El historial de veredictos más creíble</div><div>• Desde <strong>1984</strong> · 100+ años de experiencia combinada<br/>• Acuerdos y veredictos de <strong>$1.5M a $15M</strong><br/>• Participación en el caso Terri Schiavo</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin conteo de reseñas visible</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ CTA con reversión de riesgo</div><div>• "Evaluación Gratis" · "Agenda una Cita"<br/>• "Habla con Nuestros Abogados" — EN INGLÉS O ESPAÑOL | CONSULTA VIRTUAL<br/>• "Llama Gratis (305) 261-7000" · Disponibles 24/7</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Fuerte en página, pero nada de esto llega al snippet del SERP</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Free Case Evaluation"</div><div>(305) 530-0000</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ CTA en inglés en página en español — fricción de conversión</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "CONTÁCTENOS AHORA"</div><div>(305) 371-3666 · 888-677-7764 — junto a "$0 honorarios a menos que ganemos"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Llame al (305) 770-6335 o programe online una cita"</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Doble vía: teléfono + agenda online</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Marcado de schema</td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El único de los cuatro con schema real</div><div style="color:#059669;">✅ LegalService (nombre, teléfono, dirección, horarios)<br/>✅ PostalAddress + AdministrativeArea (Miami, FL)<br/>✅ OfferCatalog + Offer + Service — "Errores Quirúrgicos"<br/>✅ Microdatos FAQPage / Question / Answer (10 preguntas)</div><div style="color:#c0392b;margin-top:4px;">❌ Sin AggregateRating (hereda de la home)<br/>❌ Sin BreadcrumbList<br/>❌ Sin Attorney / Person pese a nombrar 4 abogados</div><div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #e67e22;font-size:11px;line-height:1.5;"><strong style="color:#e67e22;">⚠️ priceRange "$1500-$10000"</strong> contradice "Solo Pagas Si Ganas" — mismo patrón que los gemelos de lesiones cerebrales y responsabilidad del producto. Es un defecto sistémico de plantilla en todo el sitio.</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin JSON-LD detectado</div><div style="margin-top:4px;font-size:11px;color:#666;">Sin FAQPage, sin LegalService, sin AggregateRating</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin JSON-LD detectado</div><div style="margin-top:4px;font-size:11px;color:#666;">La autoridad viene del dominio y de la prueba on-page, no del schema</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin JSON-LD detectado</div><div style="margin-top:4px;font-size:11px;color:#666;">Sin marcado estructurado en la página de práctica</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Conclusión clave del análisis de keywords:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Por qué estos competidores capturan la demanda que Gallardo no convierte:</strong><br/>
+          1. <strong>Needle &amp; Ellenberg cubre las dos permutaciones:</strong> su título/H1 usan "Miami Abogado De Errores Quirúrgicos" y su primer H2 es "Abogado De Errores Quirúrgicos En Miami" — una sola página capta ambas formas, mientras Gallardo repite la misma variante singular (0 impresiones) en título, H1, meta y slug<br/>
+          2. <strong>Freidin Brown y STFB juegan en el head term, no en el nicho:</strong> "negligencia médica" / "negligencia hospitalaria" es donde está el volumen real (~111 impresiones combinadas). Gallardo aparece ahí en <strong>pos 70–83</strong> — prácticamente invisible<br/>
+          3. <strong>La prueba cuantificada gana el clic:</strong> Freidin Brown muestra "$500M+ recuperado", "100+ reseñas de Google" y veredictos de $38M/$12.7M; STFB lista acuerdos de $1.5M–$15M desde 1984. La página de Gallardo no tiene <em>ni un solo</em> número: ni veredicto, ni reseña, ni años de ejercicio<br/>
+          4. <strong>Reversión de riesgo más explícita:</strong> "$0 honorarios a menos que ganemos" (Freidin Brown) es más concreto que "Solo Pagas, Si Ganas", y ninguno se contradice con un <code>priceRange</code> de $1,500–$10,000 en el schema<br/>
+          5. <strong>Ventaja de dominio:</strong> los tres son firmas de negligencia médica especializadas; Gallardo es generalista (auto, inmigración, penal, laboral), lo que diluye la señal tópica del sitio en un vertical YMYL
+        </div>
+        <div>
+          <strong>Lo que Gallardo debe corregir (pos 2.5 en el head term — y aún así 0 clics):</strong><br/>
+          1. <strong>Reescribir la meta descripción — máxima prioridad:</strong> es la única de las cuatro páginas que tiene meta, o sea una ventaja regalada. Con pos <strong>2.5</strong> en "errores quirúrgicos en miami" (86 impresiones) y <strong>cero</strong> clics, el problema no es el ranking sino el snippet. Propuesta: "¿Lesionado por un error quirúrgico en Miami? Solo pagas si ganas. Consulta gratis 24/7 — llama al (305) 261-7000."<br/>
+          2. <strong>Pluralizar y ampliar el targeting:</strong> añadir "abogados de errores quirúrgicos en miami" (69 impresiones, pos 23.67) como H2 y variante en el título. Hoy toda la página apunta al singular, que registra <strong>0 impresiones</strong> en GSC<br/>
+          3. <strong>Entrar al clúster "negligencia / mala práctica médica en miami":</strong> ~111 impresiones en pos 70–83. Añadir H2 y copy con esos términos, o enlazar desde/hacia una página hermana dedicada — hoy STFB y Freidin Brown se llevan esa intención completa<br/>
+          4. <strong>Poner prueba cuantificada en la página:</strong> veredictos y acuerdos, conteo y calificación de reseñas como texto rastreable, años de ejercicio y bios enlazadas de los 4 abogados ya nombrados. Es la brecha más grande frente a Freidin Brown y STFB<br/>
+          5. <strong>Arreglar el schema:</strong> eliminar o corregir <code>priceRange "$1500-$10000"</code> (contradice "Solo Pagas Si Ganas"), migrar el FAQPage de microdatos a JSON-LD, y añadir AggregateRating, BreadcrumbList y Attorney/Person. También cubrir subnichos con demanda propia: "errores de ob-gyn miami" (14+12 impresiones) y "errores de anestesia"
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/errores-quirurgicos-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/errores-quirurgicos-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/errores-quirurgicos-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>

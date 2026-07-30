@@ -894,6 +894,35 @@ BRAININJURY_ES = [
     ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Spanish twin of SURGICALERRORS_EN (gallardolawyers.com/es/lesionados/...).
+# The page targets the SINGULAR "abogado de errores quirurgicos en miami", which
+# has zero GSC impressions; the demand sits on the plural ("abogados de errores
+# quirurgicos en miami", 69 impr) and on the head term without "abogado"
+# ("errores quirurgicos en miami", 86 impr, pos 2.5), so all three are tracked
+# separately to show the gap. Variants are lowercase and accent-free because
+# normalize() strips accents before matching.
+SURGICALERRORS_ES = [
+    ("errores quirurgicos", ["error quirurgico", "errores quirurgicos", "error de cirugia", "errores de cirugia", "error medico", "errores medicos"]),
+    ("errores quirurgicos en miami", ["errores quirurgicos en miami", "errores quirurgicos miami", "error quirurgico en miami", "error quirurgico miami"]),
+    ("abogado de errores quirurgicos en miami", ["abogado de errores quirurgicos en miami", "abogado de errores quirurgicos miami", "abogado errores quirurgicos miami", "miami abogado de errores quirurgicos"]),
+    ("abogados de errores quirurgicos en miami", ["abogados de errores quirurgicos en miami", "abogados de errores quirurgicos miami", "abogados errores quirurgicos miami"]),
+    ("abogado de errores quirurgicos", ["abogado de errores quirurgicos", "abogados de errores quirurgicos", "abogado de error quirurgico", "abogado especializado en errores quirurgicos"]),
+    ("negligencia quirurgica", ["negligencia quirurgica", "abogado de negligencia quirurgica", "abogados de negligencia quirurgica", "negligencia quirurgica miami"]),
+    ("abogado de negligencia medica en miami", ["abogado de negligencia medica en miami", "abogado de negligencia medica miami", "abogados de negligencia medica en miami", "abogados de negligencia medica miami"]),
+    ("abogado de negligencia medica", ["abogado de negligencia medica", "abogados de negligencia medica", "negligencia medica"]),
+    ("mala practica medica en miami", ["abogados de mala practica medica en miami", "abogado de mala practica medica en miami", "abogado de mala practica medica miami", "mala practica medica miami", "mala practica medica"]),
+    ("negligencia hospitalaria / errores de hospitales", ["negligencia hospitalaria", "abogado de negligencia hospitalaria", "errores de hospitales", "errores medicos en hospitales", "abogado de errores hospitalarios"]),
+    ("errores de anestesia", ["error de anestesia", "errores de anestesia", "abogado de errores de anestesia", "abogado de error de anestesia"]),
+    ("errores de ob-gyn / obstetricia", ["errores de ob-gyn miami", "abogados de errores de ob-gyn miami", "errores de ob-gyn", "negligencia obstetrica", "errores de obstetricia"]),
+    ("cirugia mal hecha / demandar", ["se puede demandar por una cirugia mal hecha", "se puede reclamar una cirugia mal hecha", "cirugia mal hecha", "demandar por cirugia mal hecha", "demanda por error quirurgico"]),
+    ("objeto olvidado / cirugia en sitio equivocado", ["objeto olvidado en el cuerpo", "instrumento olvidado en cirugia", "cirugia en el lugar equivocado", "cirugia en la parte equivocada", "amputacion de la parte del cuerpo equivocada", "perforacion intestinal"]),
+    ("estatuto de limitaciones / plazo", ["estatuto de limitaciones", "plazo para demandar", "cuanto tiempo tengo para presentar", "cuanto tiempo tengo para demandar por negligencia medica"]),
+    ("consulta gratis / honorarios", ["consulta gratis", "consulta gratuita", "evaluacion gratuita", "no gana no paga", "solo pagas si ganas", "sin honorarios", "honorarios de contingencia"]),
+    ("abogado de lesiones personales", ["abogado de lesiones personales", "abogados de lesiones personales", "abogado de lesiones", "clinica de lesiones personales miami"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── Structured data (schema.org) rows ────────────────────────────────────────
 # Tracked the same way as keywords: each row counts how many times that JSON-LD
 # @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
@@ -1061,6 +1090,8 @@ PAGES = {
         {"slug": "abogados-de-responsabilidad-del-producto-en-miami", "lang": "es", "kw": PRODLIAB_ES},
     "https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami":
         {"slug": "abogados-de-lesiones-cerebrales-en-miami", "lang": "es", "kw": BRAININJURY_ES},
+    "https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami":
+        {"slug": "errores-quirurgicos-en-miami", "lang": "es", "kw": SURGICALERRORS_ES},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate
