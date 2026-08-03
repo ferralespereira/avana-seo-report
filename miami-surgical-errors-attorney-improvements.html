@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miami Surgical Errors Attorney – SEO Improvements</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f4f5f7;
+            color: #24292e;
+            padding: 40px 24px;
+        }
+
+        h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 6px; }
+
+        .subtitle { font-size: 0.875rem; color: #6a737d; margin-bottom: 40px; }
+
+        .section-title {
+            font-size: 1rem; font-weight: 700; color: #24292e;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 14px; padding-bottom: 6px;
+            border-bottom: 2px solid #d1d5db; max-width: 900px;
+        }
+
+        .section-wrap { margin-bottom: 48px; }
+
+        /* ── Code card ── */
+        .code-card {
+            background: #1e1e2e; border-radius: 10px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.18); max-width: 900px;
+        }
+        .code-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #ff5f57; }
+        .dot-yellow { background: #febc2e; }
+        .dot-green  { background: #28c840; }
+        .filename {
+            margin-left: 8px; font-size: 0.78rem; color: #8b8ba7;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+        pre {
+            margin: 0; padding: 24px 28px; overflow-x: auto;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.82rem; line-height: 1.7; color: #cdd6f4; tab-size: 4;
+        }
+        .c-tag     { color: #89b4fa; }
+        .c-attr    { color: #a6e3a1; }
+        .c-val     { color: #f38ba8; }
+        .c-razor   { color: #f9e2af; }
+        .c-comment { color: #6c7086; font-style: italic; }
+        .c-del     { color: #f38ba8; text-decoration: line-through; opacity: 0.75; }
+        .fix-item  { font-size: 1.05rem; }
+
+        /* ── Info card ── */
+        .info-card {
+            max-width: 900px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+        }
+        .info-card-header {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; padding: 12px 18px;
+        }
+        .info-card-header .filename { margin-left: 0; }
+        .info-card-body { padding: 22px 26px; }
+
+        /* ── Keyword table ── */
+        .kw-table-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; max-width: 900px;
+        }
+        .kw-table-wrap { overflow-x: auto; }
+        .kw-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        .kw-table th {
+            background: #2a2a3d; color: #8b8ba7; font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            padding: 10px 12px; text-align: left; white-space: nowrap;
+        }
+        .kw-table th.num { text-align: right; }
+        .kw-table td { padding: 9px 12px; border-bottom: 1px solid #e8eaed; color: #24292e; vertical-align: middle; }
+        .kw-table tr:last-child td { border-bottom: none; }
+        .kw-table tbody tr:hover td { background: #f8f9fa; }
+        .kw-before { text-align: right; color: #f38ba8; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-after  { text-align: right; color: #28c840; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-change { text-align: right; color: #0070c9; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-flat   { text-align: right; color: #8b8ba7; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-down   { text-align: right; color: #d97706; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .kw-num    { text-align: right; color: #6a737d; font-variant-numeric: tabular-nums; }
+        .kw-cpc    { text-align: right; color: #b8892b; font-weight: 600; font-variant-numeric: tabular-nums; }
+        .kw-pos    { text-align: right; color: #24292e; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+        /* ── Sections list ── */
+        .sections-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+        .sections-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.88rem; color: #24292e; background: #f4f5f7;
+            border-radius: 7px; padding: 9px 12px;
+        }
+        .sections-list li::before { content: "✦"; color: #89b4fa; flex-shrink: 0; margin-top: 1px; font-size: 0.7rem; }
+        .sections-list li.full-row { grid-column: 1 / -1; }
+
+        /* ── Subsection group label ── */
+        .group-label {
+            font-size: 0.75rem; color: #444d56; font-weight: 700;
+            margin-bottom: 14px; border-bottom: 1px solid #e8eaed;
+            padding-bottom: 6px;
+        }
+
+        /* ── Sub-section label ── */
+        .schema-subsection-label {
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: #8b8ba7; margin-bottom: 6px;
+        }
+
+        /* ── Before / After blocks ── */
+        .ba-before {
+            background: #fff8f8; border-left: 3px solid #f38ba8;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-after {
+            background: #f0fdf4; border-left: 3px solid #28c840;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+        }
+        .ba-statute {
+            background: #fdf6ec; border-left: 3px solid #b8892b;
+            border-radius: 0 6px 6px 0; padding: 10px 14px;
+            font-size: 0.83rem; color: #24292e; line-height: 1.6;
+            font-family: Georgia, "Times New Roman", serif; font-style: italic;
+        }
+        .ba-note { font-size: 0.79rem; color: #6a737d; font-style: italic; }
+
+        .cannibal-block {
+            background: #fff8f0; border-left: 4px solid #f38ba8;
+            border-radius: 0 8px 8px 0; padding: 14px 18px;
+            font-size: 0.86rem; color: #24292e; line-height: 1.6;
+        }
+        .cannibal-block .reason {
+            display: block; margin-top: 8px; font-size: 0.8rem;
+            color: #6a737d; font-style: italic;
+        }
+
+        .schema-divider { height: 1px; background: #e8eaed; }
+
+        /* ── Callout / warning banner ── */
+        .callout {
+            max-width: 900px; border-radius: 8px; padding: 14px 18px;
+            font-size: 0.84rem; line-height: 1.6; margin-bottom: 18px;
+        }
+        .callout-warn { background: #fff8f0; border-left: 4px solid #febc2e; color: #24292e; }
+        .callout-info { background: #eef6ff; border-left: 4px solid #0070c9; color: #24292e; }
+        .callout-legal { background: #fdf6ec; border-left: 4px solid #b8892b; color: #24292e; }
+        .callout strong { font-weight: 700; }
+
+        /* ── Schema grid ── */
+        .schemas-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 16px; max-width: 900px;
+        }
+        .schema-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden;
+            display: flex; flex-direction: column;
+        }
+        .schema-card-head { background: #2a2a3d; padding: 13px 16px; }
+        .schema-type-badge {
+            display: inline-block;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            font-size: 0.72rem; font-weight: 700; color: #f9e2af;
+            background: rgba(249,226,175,0.12); border: 1px solid rgba(249,226,175,0.3);
+            border-radius: 5px; padding: 2px 8px; margin-bottom: 4px;
+        }
+        .schema-card-title { font-size: 0.88rem; font-weight: 700; color: #cdd6f4; }
+        .schema-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .schema-fields { display: flex; flex-direction: column; gap: 4px; }
+        .schema-field { display: flex; gap: 8px; font-size: 0.8rem; }
+        .schema-field .sf-key {
+            color: #a6e3a1; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            flex-shrink: 0; min-width: 110px;
+        }
+        .schema-field .sf-val { color: #444d56; }
+        .schema-advantages { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+        .schema-advantages li {
+            font-size: 0.79rem; color: #444d56; line-height: 1.5;
+            padding-left: 14px; position: relative;
+        }
+        .schema-advantages li::before {
+            content: "→"; position: absolute; left: 0;
+            color: #28c840; font-size: 0.72rem; top: 2px;
+        }
+        .faq-q-list { display: flex; flex-direction: column; gap: 3px; }
+        .faq-q-item { font-size: 0.78rem; color: #444d56; padding-left: 22px; position: relative; line-height: 1.5; }
+        .faq-q-item .q-num {
+            position: absolute; left: 0; color: #89b4fa;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.72rem;
+        }
+
+        /* ── Badge ── */
+        .new-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #d1fae5; color: #065f46; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .fixed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #dbeafe; color: #1e40af; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .removed-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fee2e2; color: #991b1b; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .pending-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fef3c7; color: #92400e; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .critical-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fecaca; color: #7f1d1d; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+        }
+        .cite-badge {
+            display: inline-block; font-size: 0.65rem; font-weight: 700;
+            background: #fdf1dc; color: #8a5a00; border-radius: 3px;
+            padding: 0 5px; vertical-align: middle; margin-left: 4px;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+        }
+
+        /* ── GEO Status ── */
+        .geo-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 640px) { .geo-cols { grid-template-columns: 1fr; } }
+        .geo-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+        .geo-done-title   { color: #065f46; }
+        .geo-needed-title { color: #92400e; }
+        .geo-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+        .geo-list li {
+            display: flex; align-items: flex-start; gap: 8px;
+            font-size: 0.84rem; color: #24292e; border-radius: 7px;
+            padding: 8px 12px; line-height: 1.5;
+        }
+        .geo-list.done   li { background: #f0fdf4; }
+        .geo-list.needed li { background: #fff8f0; }
+        .geo-icon { flex-shrink: 0; font-style: normal; }
+        .geo-list.done   .geo-icon { color: #28c840; }
+        .geo-list.needed .geo-icon { color: #f38ba8; }
+        .geo-note { display: block; font-size: 0.75rem; color: #6a737d; font-style: italic; margin-top: 2px; }
+
+        /* ── Page info bar ── */
+        .page-info-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+        .page-info-item {
+            display: flex; align-items: center; gap: 8px;
+            background: #2a2a3d; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px; padding: 8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .page-info-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b8ba7; }
+        .page-info-link { color: #89b4fa; text-decoration: none; font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; }
+        .page-info-link:hover { text-decoration: underline; }
+        .page-info-keyword { font-family: "Cascadia Code", "Fira Code", "Courier New", monospace; font-size: 0.8rem; color: #f9e2af; }
+        .copy-btn {
+            display: inline-flex; align-items: center; background: #2a2a3d;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 5px;
+            color: #8b8ba7; font-size: 0.72rem; padding: 3px 9px; cursor: pointer;
+            font-family: "Cascadia Code", "Fira Code", "Courier New", monospace;
+            transition: background 0.15s, color 0.15s;
+        }
+        .copy-btn:hover  { background: #3a3a55; color: #cdd6f4; }
+        .copy-btn.copied { background: #1e3a2a; color: #a6e3a1; border-color: rgba(40,200,64,0.3); }
+
+        /* ── Stat tiles ── */
+        .stat-row { display: flex; flex-wrap: wrap; gap: 14px; max-width: 900px; margin-bottom: 18px; }
+        .stat-tile {
+            flex: 1 1 150px; background: #fff; border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 16px 18px;
+        }
+        .stat-value { font-size: 1.35rem; font-weight: 700; color: #24292e; font-variant-numeric: tabular-nums; }
+        .stat-value .from { color: #f38ba8; }
+        .stat-value .to { color: #28c840; }
+        .stat-label { font-size: 0.72rem; color: #6a737d; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:28px;flex-wrap:wrap;">
+        <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">← Back to SEO Report</a>
+        <a href="miami-surgical-errors-attorney.html" style="font-size:13px;font-weight:600;color:#b8892b;text-decoration:none;">← Miami Surgical Errors Attorney Analysis</a>
+    </div>
+    <h1>Miami Surgical Errors Attorney — SEO Improvements</h1>
+    <p class="subtitle">miami-surgical-errors-attorney &nbsp;·&nbsp; Gallardo Law Firm &nbsp;·&nbsp; Audited 2026-07-30, reworked 2026-07-31 &nbsp;·&nbsp; En / article.cshtml + articlemetas.cshtml + FaqEntities.xml + sitemap.xml</p>
+
+    <div class="page-info-bar">
+        <div class="page-info-item">
+            <span class="page-info-label">URL</span>
+            <a class="page-info-link" href="https://gallardolawyers.com/injury-law/miami-surgical-errors-attorney" target="_blank" rel="noopener">https://gallardolawyers.com/injury-law/miami-surgical-errors-attorney</a>
+            <button class="copy-btn" onclick="copyPageInfo('https://gallardolawyers.com/injury-law/miami-surgical-errors-attorney', this)">copy</button>
+        </div>
+        <div class="page-info-item">
+            <span class="page-info-label">Target Keyword</span>
+            <span class="page-info-keyword">miami surgical errors attorney</span>
+            <button class="copy-btn" onclick="copyPageInfo('miami surgical errors attorney', this)">copy</button>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         HEADLINE STAT TILES
+    ════════════════════════════════════ -->
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">970</span> → <span class="to">2,432</span></div>
+            <div class="stat-label">Article body words (+151%)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">141</span> → <span class="to">447</span></div>
+            <div class="stat-label">Keyword occurrences (art + meta + FAQ)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">2</span> → <span class="to">8</span></div>
+            <div class="stat-label">Inbound internal links</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">1</span> → <span class="to">10</span></div>
+            <div class="stat-label">Outbound internal links</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">13</span></div>
+            <div class="stat-label">External citations (all HTTP-tested)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">3</span></div>
+            <div class="stat-label">JSON-LD blocks on the page</div>
+        </div>
+    </div>
+
+    <div class="stat-row">
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">19.2%</span> → <span class="to">37.5%</span></div>
+            <div class="stat-label">Share of the page's GSC impressions covered</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">21.1%</span> → <span class="to">45.5%</span></div>
+            <div class="stat-label">Share of tracked Semrush volume covered</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">7</span> → <span class="to">10</span></div>
+            <div class="stat-label">English FAQs (427 → 1,183 words)</div>
+        </div>
+        <div class="stat-tile">
+            <div class="stat-value"><span class="from">0</span> → <span class="to">10</span></div>
+            <div class="stat-label">Legal accuracy defects fixed (C-1…C-7, A-1, A-2)</div>
+        </div>
+    </div>
+
+    <div class="callout callout-legal">
+        <strong>This is a legal (YMYL) page — every content block is PENDING ATTORNEY / FIRM REVIEW.</strong> The work here started as a <em>legal accuracy</em> audit, not an SEO one: the live page stated Florida's medical-malpractice deadline incompletely and described two statutory exceptions backwards. Those corrections are the most important thing on this page and they need counsel's sign-off before publication. Every statute was read from flsenate.gov and every citation HTTP-tested, but this is not legal advice. Fla. Bar Rule 4-7 was treated as a hard constraint throughout — no fee claims, no case values, no superlatives.
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         1. LEGAL ACCURACY
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Legal Accuracy — Three Statutory Errors on the Live Page</div>
+
+        <div class="callout callout-warn">
+            <strong>The page told readers they had two years and stopped there.</strong> Florida med-mal claims are governed by a 2-year limitations period <em>and</em> an absolute 4-year statute of repose. A reader whose retained sponge surfaced in year five would have concluded from this page that they still had a claim. They do not. The page then attached the eighth-birthday exception to the wrong clock, and described the 7-year fraud <em>ceiling</em> as if it were a 7-year <em>bonus</em>.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Views/ServicePage/Content/injury-law/miami-surgical-errors-attorney/En/article.cshtml &nbsp;·&nbsp; Pass 1</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:22px;">
+
+                <div>
+                    <div class="schema-subsection-label">C-1 &middot; The 4-year statute of repose was missing entirely <span class="critical-badge">CRITICAL</span> <span class="fixed-badge">FIXED</span></div>
+                    <div style="display:flex;flex-direction:column;gap:7px;">
+                        <div class="ba-before"><strong>Was:</strong> "the statue of limitations on medical practice in Florida is two years after the discovery of the damages." That is the discovery rule and nothing else — no outer limit, no repose.</div>
+                        <div class="ba-statute">Fla. Stat. &sect; 95.11: "…in no event shall the action be commenced later than 4 years from the date of the incident or occurrence out of which the cause of action accrued."</div>
+                        <div class="ba-after"><strong>Now:</strong> a dedicated <em>Surgical Error Deadlines</em> H3 stating the 2-year discovery rule <strong>and</strong> the 4-year repose, naming repose explicitly as a different kind of deadline. It leads on the surgical case for it: a retained sponge or instrument can sit undetected for years while the repose clock runs from the day of the operation.</div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-2 &middot; The eighth-birthday exception was attached to the wrong clock <span class="critical-badge">CRITICAL</span> <span class="fixed-badge">FIXED</span></div>
+                    <div style="display:flex;flex-direction:column;gap:7px;">
+                        <div class="ba-before"><strong>Was:</strong> "The exceptions of this would include claimants under the age of eight…" — presented as an exception to the 2-year limitations period, and phrased as a class of claimant.</div>
+                        <div class="ba-statute">"…except that this 4-year period shall not bar an action brought on behalf of a minor on or before the child's eighth birthday."</div>
+                        <div class="ba-after"><strong>Now:</strong> written as an exception to the <strong>repose</strong> periods (and the 7-year fraud ceiling), phrased around the filing date relative to the child's eighth birthday — the statute turns on the child's age <em>at filing</em>, not on a category of claimant. Under C-1 the exception had nothing to except in the first place.</div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-3 &middot; The 7-year fraud provision was described backwards <span class="critical-badge">CRITICAL</span> <span class="fixed-badge">FIXED</span></div>
+                    <div style="display:flex;flex-direction:column;gap:7px;">
+                        <div class="ba-before"><strong>Was:</strong> "an extension of a maximum 7 years" — reads as though fraud <em>grants</em> the claimant seven extra years.</div>
+                        <div class="ba-after"><strong>Now:</strong> "extends two years forward from discovery, but in no event beyond seven years from the date of the incident." Seven years is the <strong>ceiling</strong> on the extension, not the extension. The page had inverted a cap into a bonus.</div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-4 &middot; Citation numbering — a cheap, verifiable edge over every competitor <span class="new-badge">GEO WIN</span></div>
+                    <div class="ba-after">2023's HB 837 renumbered the med-mal limitations provision from <code style="font-size:0.78rem">&sect; 95.11(4)(b)</code> to <code style="font-size:0.78rem">&sect; 95.11(5)(c)</code>. Most competing Miami med-mal pages still cite the superseded subsection. The page now cites the current one, which an AI engine can validate against flsenate.gov in one hop. The page previously cited <strong>no statute at all</strong>.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-5 &middot; Presuit described in one sentence — the two gates that decide a case were absent <span class="fixed-badge">EXPANDED</span></div>
+                    <div style="display:flex;flex-direction:column;gap:7px;">
+                        <div class="ba-before"><strong>Was:</strong> "Before filing your claim you would have to provide a notice and go through a presuit screening." That is the entire treatment.</div>
+                        <div class="ba-after"><strong>Now:</strong> a full walkthrough. <strong>&sect; 766.203</strong> — the verified written medical expert opinion that must accompany the notice of intent; a hard gate, no affidavit no case, and on this page it must come from a surgeon in the <em>same specialty</em> reading the operative report, anesthesia record, nursing notes and pathology findings. <strong>&sect; 766.106</strong> — the 90-day presuit screening period, and the fact that <strong>the statute of limitations is tolled throughout it</strong>. The tolling point is the single most reassuring fact for an anxious reader and the page did not have it.</div>
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-6a &middot; Florida's "free kill" law — &sect; 768.21(8) <span class="critical-badge">HIGH</span> <span class="new-badge">ADDED</span></div>
+                    <div class="ba-before">The page repeatedly referenced errors that "cost the patient their life" and then listed recoverable noneconomic damages — with no mention that Florida law bars adult children 25+ and the parents of an adult decedent from recovering pain and suffering in a med-mal wrongful death action. The family members most likely to be reading are the ones the statute excludes.</div>
+                    <div class="ba-after">Added with the <strong>correct current status</strong>, which most competitor pages get wrong: HB 6017 passed both chambers in 2025 and was <strong>vetoed</strong> on 2025-05-29; the House declined to override; HB 6003 passed the House on 2026-01-15 but its Senate companion died in committee. <strong>&sect; 768.21(8) has not been repealed.</strong> Pages that say "repealed in 2025" are stating something false.</div>
+                    <div class="ba-note" style="margin-top:6px;">Highest-GEO item on the page: a live, contested, frequently-queried Florida-specific issue with a clean verifiable timeline — and a visible review stamp, because this is legislation still in motion.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-6b &middot; The damage caps in the statute book are unenforceable <span class="new-badge">ADDED</span></div>
+                    <div class="ba-after">&sect; 766.118 still <em>prints</em> caps, including the $500,000 practitioner limit, but <em>Estate of McCall</em> (Fla. 2014) struck the wrongful-death noneconomic cap and <em>North Broward Hospital District v. Kalitan</em> (Fla. 2017) extended that to surviving patients. Florida is a no-cap jurisdiction for ordinary medical negligence noneconomic damages. This is a strongly favourable fact for the reader on a high-intent query — and because the caps remain in the printed statute, a reader who looks up &sect; 766.118 unaided reaches the <strong>wrong</strong> conclusion. The page now pre-empts that.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">C-7 &middot; Med-mal is exempt from the 51% comparative-fault bar <span class="new-badge">ADDED</span> <span class="cite-badge">§ 768.81(6)</span></div>
+                    <div class="ba-after">HB 837 moved Florida to modified comparative negligence with a 51% bar — but &sect; 768.81(6) expressly exempts personal injury and wrongful death arising out of medical negligence under Chapter 766. A surgical-error claimant found 60% at fault can still recover 40%. Competitor pages routinely apply the 51% bar site-wide and get this wrong; so would this firm's own non-med-mal injury pages if their language were copied here, and an in-file Razor comment now warns against exactly that. The page states the precise position — damages are still <em>reduced</em> by the claimant's share, just not <em>eliminated</em> by it.</div>
+                    <div class="ba-note" style="margin-top:6px;">C-7 stayed open through three passes because there was no comparative-fault section to attach it to. Pass 4 created one — "Do I Have a Surgical Error Case?" — which serves bottom-of-funnel eligibility intent at the same time.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">A-1 &middot; "Complications after surgery" was listed as a type of surgical error <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-before">A post-surgical complication is not per se an error and not per se negligence. Listing it flatly among "common types of surgical mistakes" conflates a recognised risk of surgery with actionable malpractice — legally wrong, and it invites unqualified leads. The <strong>Spanish page already handled this correctly</strong>; the English page had no equivalent caveat anywhere.</div>
+                    <div class="ba-after">The list item became "Negligent management of complications after surgery", and the Spanish caveat was ported into English: not every bad surgical outcome is malpractice. That framing is a trust signal for readers and for answer engines — and it later became the natural home for the "failed surgery" phrasing the page was losing to the hub.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">A-2 &middot; "These mistakes occur everyday" — an unsourced frequency claim <span class="fixed-badge">REPLACED</span></div>
+                    <div class="ba-after">Replaced with a sourced statistics section (see below). Unsourced frequency claims are dead weight for generative engines, which preferentially cite passages carrying attributable numbers.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         2. KEYWORD TARGETS (EN)
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Keywords On The Page — Before → After</div>
+
+        <div class="callout callout-info">
+            One master table of <strong>160 rows</strong> was built from <strong>Google Search Console</strong> (last 3 months, filtered to this URL — 85 queries), the <strong>Semrush keyword-gap export</strong> against yourfloridatrialteam.com, southflinjury.com and fhvlegal.com (42 keywords), and vocabulary terms measured directly on the page. Counts cover <strong>article + metas + the 10 English FAQ entries</strong> — the three sources a crawler actually reads. JSON-LD is excluded on both sides, deliberately: counting it would double-count the FAQ text and inflate every brand and geography term via <code style="font-size:0.78rem">areaServed</code>.
+        </div>
+
+        <div class="kw-table-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">BEF = git HEAD (b648389c) &nbsp;·&nbsp; NOW = working tree, rev 8 &nbsp;·&nbsp; VOL/KD = Semrush US &nbsp;·&nbsp; Impr/Pos = GSC 3-mo, this URL</span>
+            </div>
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th class="num">Vol/mo</th>
+                            <th class="num">KD</th>
+                            <th class="num">GSC pos</th>
+                            <th class="num">Impr</th>
+                            <th class="num">Was</th>
+                            <th class="num">Now</th>
+                            <th class="num">Δ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>surgical error attorney <span style="font-style:italic;color:#6a737d;">(highest-impression tracked term)</span></td><td class="kw-num">880</td><td class="kw-num">5</td><td class="kw-pos">15.9</td><td class="kw-num">318</td><td class="kw-before">1</td><td class="kw-after">1</td><td class="kw-flat">=</td></tr>
+                        <tr><td>surgical error lawyer <span class="new-badge">BIGGEST GAP</span></td><td class="kw-num">1,600</td><td class="kw-num">7</td><td class="kw-pos">21.5</td><td class="kw-num">287</td><td class="kw-before">0</td><td class="kw-after">4</td><td class="kw-change">+4</td></tr>
+                        <tr><td>surgical error attorney miami <span style="font-style:italic;color:#6a737d;">(word-order variant — see below)</span></td><td class="kw-num">90</td><td class="kw-num">4</td><td class="kw-pos">9.2</td><td class="kw-num">258</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>surgical error lawyer miami <span style="font-style:italic;color:#6a737d;">(word-order variant)</span></td><td class="kw-num">90</td><td class="kw-num">3</td><td class="kw-pos">13.4</td><td class="kw-num">251</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>surgical errors attorney <span style="font-style:italic;color:#6a737d;">(the named target)</span></td><td class="kw-num">590</td><td class="kw-num">0</td><td class="kw-pos">11.1</td><td class="kw-num">161</td><td class="kw-before">5</td><td class="kw-after">6</td><td class="kw-change">+1</td></tr>
+                        <tr><td>anesthesia errors attorney miami <span style="font-style:italic;color:#6a737d;">(left at 0 on purpose)</span></td><td class="kw-num">40</td><td class="kw-num">—</td><td class="kw-pos">39.3</td><td class="kw-num">96</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>miami surgical error lawyer</td><td class="kw-num">20</td><td class="kw-num">—</td><td class="kw-pos">10.4</td><td class="kw-num">77</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>surgical errors law firm</td><td class="kw-num">70</td><td class="kw-num">0</td><td class="kw-pos">9.4</td><td class="kw-num">75</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>surgical errors law firms <span style="font-style:italic;color:#6a737d;">(plural — page only had the singular)</span></td><td class="kw-num">40</td><td class="kw-num">—</td><td class="kw-pos">7.7</td><td class="kw-num">19</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>surgical errors attorneys</td><td class="kw-num">70</td><td class="kw-num">0</td><td class="kw-pos">8.3</td><td class="kw-num">18</td><td class="kw-before">1</td><td class="kw-after">2</td><td class="kw-change">+1</td></tr>
+                        <tr><td>surgical errors lawyers coral gables</td><td class="kw-num">320</td><td class="kw-num">5</td><td class="kw-pos">22.9</td><td class="kw-num">14</td><td class="kw-before">0</td><td class="kw-after">0</td><td class="kw-flat">=</td></tr>
+                        <tr><td>what type of attorney handles wrongful death from a surgical mistake <span class="new-badge">FAQ-ONLY WIN</span></td><td class="kw-num">—</td><td class="kw-num">5</td><td class="kw-pos">6.2</td><td class="kw-num">13</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                        <tr><td>surgical malpractice lawyers</td><td class="kw-num">170</td><td class="kw-num">13</td><td class="kw-pos">21.0</td><td class="kw-num">1</td><td class="kw-before">0</td><td class="kw-after">1</td><td class="kw-change">+1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="padding:12px 16px;font-size:0.78rem;color:#6a737d;font-style:italic;line-height:1.5;border-top:1px solid #e8eaed;">
+                "Now" counts describe on-page presence only, not rankings. Phrase matching is word-boundary aware and treats hyphens and spaces as equivalent, so "wrong-site" and "wrong site" both count. The <strong>anesthesia row is deliberately zero</strong> — a dedicated 1,292-word anesthesia page owns those queries (see the cannibalization section). The two <em>miami</em> word-order rows are also zero by design; the page says "Miami surgical error attorney" and Google resolves the inversion. Forcing the literal strings would be stuffing.
+            </div>
+        </div>
+
+        <div class="schema-subsection-label" style="margin-top:22px;">Vocabulary density (measured across article + metas + FAQs)</div>
+        <div class="kw-table-card">
+            <div class="kw-table-wrap">
+                <table class="kw-table">
+                    <thead>
+                        <tr><th>Term</th><th class="num">Vol/mo</th><th class="num">Was</th><th class="num">Now</th><th class="num">Δ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>florida</td><td class="kw-num">673,000</td><td class="kw-before">4</td><td class="kw-after">48</td><td class="kw-change">+44</td></tr>
+                        <tr><td>surgical error <span style="font-style:italic;color:#6a737d;">(11 of these are in the FAQs)</span></td><td class="kw-num">70</td><td class="kw-before">9</td><td class="kw-after">48</td><td class="kw-change">+39</td></tr>
+                        <tr><td>claim</td><td class="kw-num">49,500</td><td class="kw-before">6</td><td class="kw-after">47</td><td class="kw-change">+41</td></tr>
+                        <tr><td>malpractice</td><td class="kw-num">22,200</td><td class="kw-before">9</td><td class="kw-after">28</td><td class="kw-change">+19</td></tr>
+                        <tr><td>miami <span style="font-style:italic;color:#6a737d;">(the local signal)</span></td><td class="kw-num">450,000</td><td class="kw-before">9</td><td class="kw-after">23</td><td class="kw-change">+14</td></tr>
+                        <tr><td>surgeon</td><td class="kw-num">49,500</td><td class="kw-before">6</td><td class="kw-after">21</td><td class="kw-change">+15</td></tr>
+                        <tr><td>surgical errors</td><td class="kw-num">1,000</td><td class="kw-before">12</td><td class="kw-after">21</td><td class="kw-change">+9</td></tr>
+                        <tr><td>patient</td><td class="kw-num">135,000</td><td class="kw-before">11</td><td class="kw-after">19</td><td class="kw-change">+8</td></tr>
+                        <tr><td>medical malpractice</td><td class="kw-num">14,800</td><td class="kw-before">5</td><td class="kw-after">14</td><td class="kw-change">+9</td></tr>
+                        <tr><td>hospital</td><td class="kw-num">165,000</td><td class="kw-before">1</td><td class="kw-after">13</td><td class="kw-change">+12</td></tr>
+                        <tr><td>lawyer <span style="font-style:italic;color:#6a737d;">(the K1 fix — was effectively absent)</span></td><td class="kw-num">110,000</td><td class="kw-before">1</td><td class="kw-after">10</td><td class="kw-change">+9</td></tr>
+                        <tr><td>wrong site</td><td class="kw-num">40</td><td class="kw-before">0</td><td class="kw-after">10</td><td class="kw-change">+10</td></tr>
+                        <tr><td>wrongful death</td><td class="kw-num">9,900</td><td class="kw-before">0</td><td class="kw-after">8</td><td class="kw-change">+8</td></tr>
+                        <tr><td>lawyers</td><td class="kw-num">33,100</td><td class="kw-before">1</td><td class="kw-after">7</td><td class="kw-change">+6</td></tr>
+                        <tr><td>standard of care <span style="font-style:italic;color:#6a737d;">(the legal term of art)</span></td><td class="kw-num">2,900</td><td class="kw-before">0</td><td class="kw-after">6</td><td class="kw-change">+6</td></tr>
+                        <tr><td>surgical malpractice</td><td class="kw-num">390</td><td class="kw-before">0</td><td class="kw-after">6</td><td class="kw-change">+6</td></tr>
+                        <tr><td>consultation</td><td class="kw-num">22,200</td><td class="kw-before">2</td><td class="kw-after">6</td><td class="kw-change">+4</td></tr>
+                        <tr><td>anesthesia <span style="font-style:italic;color:#6a737d;">(capped on purpose — sibling page owns it)</span></td><td class="kw-num">110,000</td><td class="kw-before">2</td><td class="kw-after">5</td><td class="kw-change">+3</td></tr>
+                        <tr><td>foreign object</td><td class="kw-num">2,400</td><td class="kw-before">0</td><td class="kw-after">4</td><td class="kw-change">+4</td></tr>
+                        <tr><td>wrong patient</td><td class="kw-num">20</td><td class="kw-before">0</td><td class="kw-after">4</td><td class="kw-change">+4</td></tr>
+                        <tr><td>nerve damage</td><td class="kw-num">12,100</td><td class="kw-before">0</td><td class="kw-after">3</td><td class="kw-change">+3</td></tr>
+                        <tr><td>statute of limitations</td><td class="kw-num">60,500</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>free consultation</td><td class="kw-num">1,900</td><td class="kw-before">0</td><td class="kw-after">2</td><td class="kw-change">+2</td></tr>
+                        <tr><td>doctor <span style="font-style:italic;color:#6a737d;">(head term, 0 impressions — lost with 5 removed generic FAQs)</span></td><td class="kw-num">135,000</td><td class="kw-before">5</td><td class="kw-after">1</td><td class="kw-down">−4</td></tr>
+                        <tr><td>settlement <span style="font-style:italic;color:#6a737d;">(head term, 0 impressions — Rule 4-7 fee claim removed)</span></td><td class="kw-num">40,500</td><td class="kw-before">1</td><td class="kw-after">0</td><td class="kw-down">−1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="padding:12px 16px;font-size:0.78rem;color:#6a737d;font-style:italic;line-height:1.5;border-top:1px solid #e8eaed;">
+                Five terms decreased — <em>doctor, attorney, compensation, damages, settlement</em>. Every one is a generic head term with <strong>zero GSC impressions on this URL</strong> and no realistic prospect of ranking standalone. <strong>No tracked keyword decreased.</strong> Three of the five trace to one deliberate action: Pass 5 replaced five generic medical-malpractice FAQs with surgical-specific ones, and those five carried all four FAQ instances of "doctor" and the only instance of "settlement" (inside a contingency-fee sentence that Rule 4-7 made unwise anyway). The loss is the intended outcome of the cannibalization cleanup, not a regression.
+            </div>
+        </div>
+
+        <div class="schema-subsection-label" style="margin-top:22px;">21 keywords went from absent to present</div>
+        <div class="kw-table-card">
+            <div class="info-card-body" style="padding:16px 18px;">
+                <ul class="sections-list">
+                    <li>surgical error lawyer <strong style="margin-left:auto;color:#28c840;">0 → 4</strong></li>
+                    <li>surgical malpractice <strong style="margin-left:auto;color:#28c840;">0 → 6</strong></li>
+                    <li>wrong site <strong style="margin-left:auto;color:#28c840;">0 → 10</strong></li>
+                    <li>wrong patient <strong style="margin-left:auto;color:#28c840;">0 → 4</strong></li>
+                    <li>foreign object <strong style="margin-left:auto;color:#28c840;">0 → 4</strong></li>
+                    <li>nerve damage <strong style="margin-left:auto;color:#28c840;">0 → 3</strong></li>
+                    <li>wrongful death <strong style="margin-left:auto;color:#28c840;">0 → 8</strong></li>
+                    <li>standard of care <strong style="margin-left:auto;color:#28c840;">0 → 6</strong></li>
+                    <li>statute of limitations <strong style="margin-left:auto;color:#28c840;">0 → 2</strong></li>
+                    <li>free consultation <strong style="margin-left:auto;color:#28c840;">0 → 2</strong></li>
+                    <li>nurse <strong style="margin-left:auto;color:#28c840;">0 → 3</strong></li>
+                    <li>cosmetic surgery <strong style="margin-left:auto;color:#28c840;">0 → 1</strong></li>
+                    <li class="full-row">Geography added to a page that named only Miami and Hialeah: <strong>Coral Gables</strong> · <strong>Fort Lauderdale</strong> (and "Ft. Lauderdale") · Doral · Aventura · North Miami · Miami-Dade · Broward — each <strong style="color:#28c840;">0 → 1</strong>, from the new service-area section</li>
+                    <li class="full-row" style="font-style:italic;color:#6a737d;">Out-of-market Florida cities in the keyword set (Gainesville, Ocala, Palatka, Hernando, St Augustine, Indian River, Weston) and all out-of-state noise were deliberately excluded. They are not targets.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         3. THE STRATEGY / GAP
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">The Keyword Strategy — Where the Demand Actually Is</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Baseline: 3,021 impressions · 1 click · CTR 0.03% · avg position 21.05 · 85 distinct queries</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block">
+                    <strong>The word "lawyer" appeared once on a page competing for "surgical error lawyer" (1,600/mo).</strong> The page was built entirely on "attorney". Both are the same intent to a reader and nearly the same to Google, but a term that barely appears cannot anchor a passage. Now: lawyer 1 → 10, lawyers 1 → 7.
+                    <span class="reason">Correction made mid-pass: the first edit <em>replaced</em> "attorney" with "lawyer" rather than adding, pushing attorney 5 → 3. That was wrong — "surgical error attorney" is itself an 880-volume, 318-impression term. Rebalanced so neither vocabulary was sacrificed.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">The seven clusters the GSC export revealed</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Cluster</th><th class="num">Impr</th><th>State before</th><th>Action taken</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>C1 &nbsp;Core — surgical error(s) + attorney/lawyer</td><td class="kw-num">~1,900</td><td>"attorney" half only</td><td><span class="new-badge">both vocabularies now</span></td></tr>
+                                <tr><td>C2 &nbsp;Anesthesia errors</td><td class="kw-num">396</td><td>pos 39–52, worst on the page</td><td><span class="removed-badge">routed to sibling page</span></td></tr>
+                                <tr><td>C3 &nbsp;Surgical / medical malpractice phrasing</td><td class="kw-num">~48</td><td>"malpractice" appeared once</td><td><span class="new-badge">1 → 28, in an H2</span></td></tr>
+                                <tr><td>C4 &nbsp;Geo expansion — Coral Gables, Ft Lauderdale</td><td class="kw-num">~45</td><td>miami ×4, hialeah ×1</td><td><span class="new-badge">7 cities + 2 counties</span></td></tr>
+                                <tr><td>C5 &nbsp;Procedure / injury specific</td><td class="kw-num">~180</td><td>ranking 10–12 on no content</td><td><span class="new-badge">17 error types + eye/ortho</span></td></tr>
+                                <tr><td>C6 &nbsp;Question intent <span style="font-style:italic;color:#6a737d;">(GEO-critical)</span></td><td class="kw-num">~30</td><td>pos 4–6 with no FAQ answer</td><td><span class="new-badge">3 FAQs added</span></td></tr>
+                                <tr><td>C7 &nbsp;Adjacent areas — misdiagnosis, failure to diagnose</td><td class="kw-num">~50</td><td>no link, no coverage</td><td><span class="fixed-badge">linked, not absorbed</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">The single strongest signal in the whole export: <strong>"what type of attorney handles wrongful death from a surgical mistake" ranked at position 6.2 with 13 impressions and the page had no FAQ block answering it at all.</strong> That is a question-intent query Google already trusts this URL for, sitting on nothing.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">90% of the apparent keyword shortfall was a measurement artifact — and acting on it would have been stuffing</div>
+                    <div class="ba-before">104 tracked keywords still showed <code style="font-size:0.78rem">Count = 0</code> after the rework, apparently 1,112 uncovered impressions. That reads like an argument for a lot more content.</div>
+                    <div class="ba-after">Each was reclassified by asking a different question. The table asks "does this exact phrase appear". The classifier asks "does the page contain every <em>word</em> in this phrase, in any order". Result: <strong>38 keywords / 1,004 impressions (90%) were word-order artifacts</strong> — the page already contains every content word. The four largest "gaps" were <em>surgical error attorney miami</em> (258 impr), <em>surgical error lawyer miami</em> (251), <em>miami surgical error attorney</em> (74), <em>surgical error attorney florida</em> (67). The page says "Miami surgical error attorney". Google resolves word order; writing those literal strings into sentences would read exactly like what it is.</div>
+                    <div class="ba-after" style="margin-top:7px;"><strong>Genuine content gaps: 9 keywords, 46 impressions.</strong> Seven were closed with evidence-led additions. <strong>The last two are deliberately left open</strong> — "<em>top</em> medical malpractice attorneys miami surgical" and "<em>best</em> personal injury legal service for surgical negligence" both require the page to call itself top or best. Fla. Bar Rule 4-7.13(b) prohibits unsubstantiated superlatives. 12 impressions is not worth a Bar problem.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div class="cannibal-block" style="border-left-color:#febc2e;background:#fffbeb;">
+                    <strong>Where the remaining upside is — and it is not on-page copy.</strong> The page ranks 9–13 on its core commercial terms, which is not a thin-content signature; thin pages rank 40+. Google already understands and trusts it. Word count is at benchmark parity with miami-brain-injury-lawyer. What is left: <strong>inbound internal links</strong> (addressed — 2 → 8) and <strong>CTR at current position</strong>, because ranking 9–13 with ~1 click means the title and meta description are not earning the click even when shown.
+                    <span class="reason">Standing rule adopted for future passes: any content proposal must first answer "which measured, in-market, non-superlative query is the page silent on?" As of the last pass, the answer is none.</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         4. CONTENT EXPANSION
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Content Expansion <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— 11 passes · article body 970 → 2,432 words (+151%)</span></div>
+
+        <div class="callout callout-info">
+            The expansion was <strong>templated on miami-brain-injury-lawyer</strong> — same section pattern, same TOC convention, same schema trio, same source-line style — so the reworked pages reinforce one structure instead of each inventing their own. Every edit carries a Razor comment in <code style="font-size:0.78rem">article.cshtml</code> citing its source and, where relevant, stating the rule a future editor must not break.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">Views/ServicePage/Content/injury-law/miami-surgical-errors-attorney/En/article.cshtml</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:26px;">
+
+                <!-- A: New sections -->
+                <div>
+                    <div class="group-label">A — New Content Sections</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+
+                        <div>
+                            <div class="schema-subsection-label">1 &middot; "How Often Do Surgical Errors Happen?" — the page's primary citation target <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">Built on <strong>Mehtsun et al., <em>Surgery</em> 2013;153(4):465–472</strong> (Johns Hopkins / National Practitioner Data Bank): ~4,000 surgical never events a year in the US; ~39 retained objects, ~20 wrong procedures and ~20 wrong-site operations <em>per week</em>; 9,744 paid claims over 20 years totalling $1.3 billion; outcomes 6.6% death / 32.9% permanent / 59.2% temporary. Plus <strong>The Joint Commission's 2024 Sentinel Event Annual Review</strong>: 1,575 sentinel events, of which 127 wrong surgery and 119 retained foreign objects = 246 reported surgical never events.</div>
+                            <div class="ba-after" style="margin-top:7px;"><strong>The Florida angle is the differentiator.</strong> Fla. Stat. &sect; 395.0197 "Code 15" reporting: hospitals must report defined adverse incidents within 15 calendar days, and in the state's own surgery-centre reporting wrong-site surgery was the single largest category. Almost no competitor page uses state-level data, and it directly reinforces the Miami geo intent.</div>
+                            <div class="ba-note" style="margin-top:7px;"><strong>Scope discipline, stated on the page rather than buried:</strong> sentinel-event reporting is voluntary and the report itself says no conclusions should be drawn about relative frequency — so 246 is presented as a <em>floor</em>, not a rate. The Code 15 figures were tracked to the source document and turned out to be <strong>ambulatory surgery centres only, FY2007-08, on a base of 86 reports</strong>. The page had been implying current, statewide, all-facility data. It now states the count, the scope and the vintage explicitly and points to the live state portal.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">2 &middot; Error-type list expanded 8 → 17 items <span class="fixed-badge">EXPANDED</span></div>
+                            <div class="ba-before">The English page listed 8 error types. The <strong>Spanish page listed 17</strong> — the English version was the weaker of the two, which is backwards, since English is the primary indexable version for the competitive queries.</div>
+                            <div class="ba-after">The 9 Spanish-only types were ported and existing items reworded into indexable clinical phrasing the page previously described in prose but never named: <em>wrong site, wrong patient, retained foreign object, nerve damage, post-surgical infection</em>. Later passes added eye surgery (cataract, LASIK, ocular lens implants — the third-largest category in Florida's own reporting at 13.9%) and an orthopedic/cosmetic paragraph covering open reduction and bone graft.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">3 &middot; "Do I Have a Surgical Error Case?" — eligibility + the comparative-fault carve-out <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">A 5-point checklist — standard of care breached, causation, real damages, expert opinion available, within the deadline — mirroring the brain-injury page's equivalent section. Serves bottom-of-funnel "do I qualify" intent and gave C-7 somewhere to live.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">4 &middot; "What a Surgical Error Claim Can Seek to Recover" <span class="new-badge">NEW</span> <span class="pending-badge">NO MEASURED DEMAND</span></div>
+                            <div class="ba-after">8 items, every one specific to surgery: corrective and revision surgery; the cost of the original operation where it was unnecessary, wrong-site or repeated; extended admission and readmission for surgical site infection, sepsis or a retained object; permanent loss of function or of an organ; scarring from repeated corrective procedures; nerve damage and chronic pain; income lost during a recovery <em>the error prolonged</em>, measured against the recovery the patient should have had; future care and monitoring. The general categories — medical expenses, lost earning capacity, pain and suffering — are deferred to the hub by link.</div>
+                            <div class="ba-note" style="margin-top:7px;"><strong>Recorded plainly so a later review does not read this as a ranking play that failed:</strong> the compensation terms in the keyword table (compensation 49,500 vol, settlement 40,500, damages 22,200) all carry <strong>zero GSC impressions on this URL</strong>. This section will not move rankings. It was added because "what can I actually recover" is one of the first questions a real claimant has, it is a clean GEO answer target, and the page previously sent them to the hub to find out.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">5 &middot; "Surgical Error Lawyers Serving Miami and Nearby Communities" <span class="new-badge">GEO</span></div>
+                            <div class="ba-after">Miami, Hialeah, Coral Gables, Doral, Aventura, North Miami and Fort Lauderdale, plus Miami-Dade and Broward. Framed as <strong>service area, never branch offices</strong>. <span class="pending-badge">PENDING FIRM REVIEW</span> — which cities the firm will claim is a business decision, not an SEO one.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">6 &middot; "Steps to Take if You Suspect a Surgical Error" — prose converted to a list <span class="fixed-badge">RESTRUCTURED</span></div>
+                            <div class="ba-after">The English page buried this in one dense paragraph; the Spanish page already had it as a proper list. Now a 5-item list, with two steps the page did not have: write down your own account while it is fresh, and do not sign anything from the hospital or its insurer before it is reviewed.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">7 &middot; Table of contents, 10 entries <span class="new-badge">NEW</span></div>
+                            <div class="ba-after">Replicating the benchmark's styled nav — both inline style strings compared character-for-character against miami-brain-injury-lawyer and identical. One entry per H2, in document order, <strong>anchors verified 1:1 against their targets</strong>. It also makes the 15 id anchors added earlier visible to readers rather than only to crawlers.</div>
+                        </div>
+
+                        <div class="schema-divider"></div>
+
+                        <div>
+                            <div class="schema-subsection-label">8 &middot; Bootstrap list styling + copy defects cleared <span class="fixed-badge">FIXED</span></div>
+                            <div class="ba-after">5 of 5 <code style="font-size:0.78rem">&lt;ul class=""&gt;</code> → <code style="font-size:0.78rem">list-group list-group-flush</code>, all <code style="font-size:0.78rem">&lt;li&gt;</code> → <code style="font-size:0.78rem">list-group-item</code> (CSS availability confirmed in the site-wide bootstrap.css, not assumed). Every typo from the audit cleared: "the the right", "statue of limitations", "medical practice" → "medical malpractice", "Some of thee include", "it's details", "have been in involved", "one of of Miami…", and "the appropriate amount of care" → "the accepted <strong>standard of care</strong>", which is the actual legal term of art and a 2,900-volume term the page did not contain.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <!-- B: Trimmed -->
+                <div>
+                    <div class="group-label">B — Self-Dilution Trimmed</div>
+                    <div style="display:flex;flex-direction:column;gap:18px;">
+                        <div>
+                            <div class="schema-subsection-label">The "Your Rights" section was 672 words at 0.7% surgical density <span class="fixed-badge">REFRAMED</span></div>
+                            <div class="ba-before">It restated the general Florida malpractice rules — which miami-medical-malpractice-attorney already covers in full, with six presuit sub-steps of its own. That was the single largest cannibalization risk on the page, <strong>and it was introduced by our own Pass 1</strong>.</div>
+                            <div class="ba-after">Every paragraph now applies the rule to surgical facts: defendants named as surgeon / anesthesiologist / surgical nursing staff / hospital rather than "the medical professionals involved"; the presuit expert explained as needing a surgeon in the <em>same specialty</em> reading the operative record; deadlines led by the surgical delayed-discovery problem. Density 0.7% → 3.1%. An in-file comment states the governing rule: <strong>if a paragraph would read identically on the medical malpractice page, it does not belong here.</strong></div>
+                        </div>
+                        <div>
+                            <div class="schema-subsection-label">"Navigating the Legal Process" was 157 words of generic claim-handling boilerplate <span class="fixed-badge">REFRAMED</span></div>
+                            <div class="ba-after">Rewritten around the surgical investigation specifically — assembling the operative record, instrument and sponge count sheets, the adverse incident report, same-specialty surgeon review, identifying which member of the operating team departed from the standard. Density 1.3% → 6.2%. Zero sections now sit below 2.5% surgical density; three did before.</div>
+                        </div>
+                        <div>
+                            <div class="schema-subsection-label">A generic damages list that had duplicated the hub since before this project began <span class="removed-badge">REMOVED</span></div>
+                            <div class="ba-before">"You <strong>can receive</strong> compensation for economic and non-economic damages. Some of these include: Medical bills / Lost income / Permanent physical injuries / Pain and suffering / Inability to pursue hobbies…" — three independent problems: it duplicated the hub's Compensation section verbatim in substance; it was <strong>orphaned under the statute-of-limitations H3</strong>, so a reader hit a damages list mid-way through a discussion of filing clocks; and "you can receive" states an <em>outcome</em> to a prospective client, which is Rule 4-7 exposure.</div>
+                            <div class="ba-after">Removed. Every category is either covered surgically in the new recovery section or deferred to the hub by link, and the replacement says Florida law "allows a claim to <strong>seek</strong>" — accurate rather than predictive. The full original text is preserved in an in-file comment so the decision is auditable.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         5. INTERNAL LINKING / CANNIBALIZATION
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Internal Linking &amp; Cannibalization <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— tested against three real GSC exports</span></div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">The page linked OUT once and received TWO inbound links · 482 of its impressions belonged to sibling pages</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div class="cannibal-block">
+                    <strong>The headline finding: a finished 1,292-word anesthesia page existed and was missing from the sitemap.</strong> This page was drawing <strong>396 impressions across 8 anesthesia queries at positions 29–52</strong> — the worst band on the entire page — supported by exactly two mentions of "anesthesia", both inside list items. Meanwhile <code style="font-size:0.78rem">/injury-law/miami-anesthesia-errors-attorney</code> sat fully built, with metas and both image assets, absent from sitemap.xml and unlinked from its most obvious parent.
+                    <span class="reason">This overturned an earlier recommendation in this same audit to build out an anesthesia section here. That would have created real cannibalization against a purpose-built page. The recommendation was written before the sibling page was discovered.</span>
+                </div>
+
+                <div>
+                    <div class="schema-subsection-label">The GSC data then rejected <em>both</em> hypotheses — and the fix it prescribed had nothing to act on</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Anesthesia query</th><th class="num">Anesthesia page</th><th class="num">This page</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>anesthesia errors attorney miami</td><td class="kw-pos">7.0 &nbsp;<span style="color:#6a737d;font-weight:400;">(73)</span></td><td class="kw-num">39.3 <span style="color:#6a737d;">(96)</span></td></tr>
+                                <tr><td>anesthesia errors lawyer miami</td><td class="kw-pos">8.1 &nbsp;<span style="color:#6a737d;font-weight:400;">(82)</span></td><td class="kw-num">41.2 <span style="color:#6a737d;">(63)</span></td></tr>
+                                <tr><td>miami anesthesia error lawyer</td><td class="kw-pos">8.9 &nbsp;<span style="color:#6a737d;font-weight:400;">(76)</span></td><td class="kw-num">29.3 <span style="color:#6a737d;">(39)</span></td></tr>
+                                <tr><td>anesthesia error lawyer miami</td><td class="kw-pos">10.3 <span style="color:#6a737d;font-weight:400;">(102)</span></td><td class="kw-num">47.6 <span style="color:#6a737d;">(93)</span></td></tr>
+                                <tr><td>anesthesia error attorney miami</td><td class="kw-pos">11.7 <span style="color:#6a737d;font-weight:400;">(56)</span></td><td class="kw-num">52.1 <span style="color:#6a737d;">(81)</span></td></tr>
+                                <tr><td>+ 3 more <span style="font-style:italic;color:#6a737d;">— the anesthesia page wins 8 of 8</span></td><td class="kw-pos">7.8 – 9.2</td><td class="kw-num">24 – 51</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">The anesthesia page is <strong>not invisible</strong> — it ranks 7–12. And the "trim this page's anesthesia content" branch could not fire, because the content does not exist: <em>"anesthesia error"</em> 0, <em>"anesthesia malpractice"</em> 0, anesthesia in title/meta 0. The only references are <em>anesthesiologist</em> ×3 (a real defendant in a surgical case) and <em>anesthesia record</em> ×3 (real evidence to obtain) — legally necessary, and deleting them would damage accuracy for zero SEO gain. <strong>A decision rule written before looking at the object it operates on can fire correctly and still prescribe the wrong action.</strong> The 396 impressions at positions 24–52 earn 0 clicks and take nothing from a page that already wins.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div class="cannibal-block" style="border-left-color:#28c840;background:#f0fdf4;">
+                    <strong>Is this page cannibalizing the medical malpractice hub? No — and the overlap runs the other way.</strong> 27 queries surface both. Split by intent: on 15 hub-intent queries the hub wins 12; on 12 surgical-intent queries this page wins 9, and wins the core commercial terms decisively (<em>surgical error attorney miami</em> 9.2 vs 28.8; <em>surgical errors lawyers miami</em> 7.2 vs 28.6). This page touches 2.2% of the hub's 37,510 impressions, at positions 40–77 where it does. That is noise, not competition.
+                    <span class="reason">What the data <em>did</em> find: the hub outranks this page on three surgical queries and appears on two more where this page is absent entirely ("eye surgery malpractice attorney miami", 23 impr). Root cause was coverage, not ranking — the page named 17 error types and eye surgery was not one of them, and the exact phrase "failed surgery" appeared nowhere. Both fixed, both supported by data already cited on the page.</span>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">6 inbound links added — 2 → 8, six different anchors</div>
+                    <div class="kw-table-wrap" style="border:1px solid #e8eaed;border-radius:8px;">
+                        <table class="kw-table">
+                            <thead>
+                                <tr><th>Source page</th><th>Anchor text</th><th>Why it fits</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>personal-injury-lawyer-in-florida <span style="color:#6a737d;font-style:italic;">(hub)</span></td><td>Surgical Error in Hospitals</td><td>Top-level practice page — most weight</td></tr>
+                                <tr><td>miami-wrongful-death-lawyer</td><td>surgical errors</td><td>Reciprocal — received nothing back for 2 links out</td></tr>
+                                <tr><td>miami-anesthesia-errors-attorney</td><td>surgical error claim</td><td>Reciprocal + explicit disambiguation</td></tr>
+                                <tr><td>miami-brain-injury-lawyer</td><td>surgical error</td><td>The style benchmark page</td></tr>
+                                <tr><td>miami-burn-injury-lawyer</td><td>surgical errors due to medical negligence</td><td>Phrase already in its copy</td></tr>
+                                <tr><td>miami-amputation-lawyer</td><td>poorly performed surgery</td><td>Phrase already in its copy</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ba-note" style="margin-top:8px;">Selection rule: the source page must <strong>already contain a natural anchor phrase</strong>, so no sentence is invented to host a link. Five of six wrap existing text. Anchors are 6 unique of 6 — repeating one exact anchor six times across a site is a recognisable manufactured-link pattern. <strong>Excluded on purpose:</strong> chapter-7-bankruptcy-miami mentions surgical errors, but only because it carries a personal-injury practice-area list copy-pasted word-for-word from personal-injury-lawyer-in-florida. Linking would have propped up a page with a duplicate-content problem.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">10 outbound internal links — disambiguation, not dilution</div>
+                    <ul class="sections-list">
+                        <li>miami-medical-malpractice-attorney <strong style="margin-left:auto;color:#6a737d;">×4</strong></li>
+                        <li>miami-wrongful-death-lawyer <strong style="margin-left:auto;color:#6a737d;">×2</strong></li>
+                        <li>miami-anesthesia-errors-attorney</li>
+                        <li>miami-misdiagnosis-lawyer</li>
+                        <li>miami-ob-gyn-malpractice-lawyer</li>
+                        <li>miami-birth-injury-lawyer</li>
+                        <li>miami-pharmacy-malpractice-lawyer</li>
+                        <li class="full-row">Routed <strong>by scenario, not as a link list</strong>: missed condition → misdiagnosis · pregnancy or delivery → OB-GYN / birth injury · wrong drug or dose → pharmacy · patient did not survive → wrongful death. One clause each. That is the mechanism that stops the 482 misdirected impressions landing here — it is not the cause of them.</li>
+                        <li class="full-row" style="font-style:italic;color:#6a737d;">All six targets HTTP-tested 200 before a single link was written. No link was added on the assumption that a page exists.</li>
+                    </ul>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Sitemap: the anesthesia page added <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-after">Both language URLs added, placed beside their surgical-errors siblings so the malpractice cluster stays contiguous. The Spanish slug (<code style="font-size:0.76rem">abogado-para-casos-de-errores-de-anestesia-en-miami</code>) was <strong>read from disk, not derived</strong> — it is not derivable from the English one. Verified the omission was an oversight rather than deliberate: 36 <code style="font-size:0.78rem">showinmenu="false"</code> pages <em>are</em> in the sitemap, so menu visibility does not govern inclusion on this site.</div>
+                    <div class="ba-note" style="margin-top:6px;">A wider sitemap gap was found (9 built injury-law pages absent) and 16 URLs were added in a later pass — then <strong>rolled back</strong>, because six of them 404'd. See the corrections section below. Only the anesthesia pair belongs to this project and only that pair remains in the working tree.</div>
+                </div>
+
+                <div class="ba-note"><strong>Honest ceiling:</strong> internal links redistribute authority the domain already has; they do not create it. Moving position 9–13 into the top 5 on competitive Miami legal terms is driven mainly by external authority. What this does is stop the site's existing authority flowing past the page. Necessary, not sufficient — and it should not later be reported as the cause of any ranking movement on its own. Re-pull GSC in 4–6 weeks; earlier than that is crawl noise.</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         6. SCHEMAS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Structured Data Added <span style="font-size:0.7rem;font-weight:600;color:#6a737d;text-transform:none;letter-spacing:0;">— audited to full parity with the brain-injury benchmark</span></div>
+
+        <div class="callout callout-info">
+            The page previously emitted <strong>zero page-specific structured data</strong> — only the site-wide LegalService block from the skin applied. It now emits <strong>three JSON-LD blocks</strong>, four in the rendered output. A two-way property-path diff against miami-brain-injury-lawyer (both pages parsed, Razor comments stripped, <code style="font-size:0.78rem">@Settings.GetFullDomain</code> substituted, flattened to dotted paths) now returns <strong>zero differences in either direction</strong>.
+        </div>
+
+        <div class="schemas-grid">
+
+            <!-- Schema 1 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 1</div>
+                    <div class="schema-card-title">BreadcrumbList</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields — 3 items</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">position 1</span><span class="sf-val">Home</span></div>
+                            <div class="schema-field"><span class="sf-key">position 2</span><span class="sf-val">Personal Injury hub</span></div>
+                            <div class="schema-field"><span class="sf-key">position 3</span><span class="sf-val">Miami Surgical Errors Attorney</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Breadcrumb rich result; explicit site-hierarchy signal</li>
+                            <li>Position 2 points at personal-injury-lawyer-in-florida because /injury-law has no landing page — same reasoning as the benchmark</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 2 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 2</div>
+                    <div class="schema-card-title">WebPage + Speakable</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">@type</span><span class="sf-val">WebPage</span></div>
+                            <div class="schema-field"><span class="sf-key">speakable</span><span class="sf-val">#se-intro · #se-definition · #se-stats</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Marks the passages an answer engine should read aloud</li>
+                            <li>Held to three selectors on purpose — a speakable list covering half the page stops being a signal</li>
+                            <li>Voice / GEO signal; the rich result itself is limited to news publishers, stated honestly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 3 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge">Schema 3</div>
+                    <div class="schema-card-title">Service</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="schema-subsection-label">Fields</div>
+                        <div class="schema-fields">
+                            <div class="schema-field"><span class="sf-key">serviceType</span><span class="sf-val">Surgical Error Malpractice Law</span></div>
+                            <div class="schema-field"><span class="sf-key">description</span><span class="sf-val">added in the parity audit — the property an answer engine reads to decide what the service <em>is</em></span></div>
+                            <div class="schema-field"><span class="sf-key">alternateName</span><span class="sf-val">6 demand-weighted variants: Surgical Error Lawyer (1,600) · Attorney (880) · Surgical Errors Attorney (590) · Surgical Malpractice Lawyer · Surgical Mistake Lawyer (260) · Surgery Error Law Firm</span></div>
+                            <div class="schema-field"><span class="sf-key">areaServed</span><span class="sf-val">Miami-Dade + Broward + 7 cities</span></div>
+                            <div class="schema-field"><span class="sf-key">audienceType</span><span class="sf-val">was <code>name</code> — corrected to the schema.org Audience property</span></div>
+                            <div class="schema-field"><span class="sf-key">hasOfferCatalog</span><span class="sf-val">9 claim types, all already described in the page's own Types section</span></div>
+                        </div>
+                    </div>
+                    <div class="schema-divider"></div>
+                    <div>
+                        <div class="schema-subsection-label">Advantages</div>
+                        <ul class="schema-advantages">
+                            <li>Carries the lawyer / attorney / mistake naming variants the prose cannot repeat naturally</li>
+                            <li>Declares the satellite cities the body copy names only once each</li>
+                            <li>No new claim is made — every offer maps to existing page content</li>
+                            <li>No priceRange on any Offer (Fla. Bar Rule 4-7), consistent with the benchmark</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schema 4 -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">Not added</div>
+                    <div class="schema-card-title">FAQPage — deliberately NOT hand-rolled</div>
+                </div>
+                <div class="schema-card-body">
+                    <div>
+                        <div class="faq-q-list">
+                            <div class="faq-q-item"><span class="q-num">✓</span>ServicePageSkin.cshtml <strong>already</strong> renders this page's FAQs inside containers carrying <code style="font-size:0.75rem">itemtype="schema.org/FAQPage"</code> microdata</div>
+                            <div class="faq-q-item"><span class="q-num">✗</span>A hand-rolled FAQPage node would have duplicated it</div>
+                            <div class="faq-q-item"><span class="q-num">!</span>This corrects the original audit checklist, which listed FAQPage as missing. The mechanism existed all along — what was missing was FAQ <em>content</em> for the ranking questions. Documented inline so the next person does not re-add it.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note card -->
+            <div class="schema-card">
+                <div class="schema-card-head">
+                    <div class="schema-type-badge" style="color:#f38ba8;background:rgba(243,139,168,0.12);border-color:rgba(243,139,168,0.3);">Cluster finding</div>
+                    <div class="schema-card-title">Only the two reworked pages have any JSON-LD</div>
+                </div>
+                <div class="schema-card-body">
+                    <ul class="schema-advantages">
+                        <li>miami-brain-injury-lawyer — 3 blocks &nbsp;·&nbsp; miami-surgical-errors-attorney — 3 blocks</li>
+                        <li style="color:#92400e;">miami-medical-malpractice-attorney — <strong>0</strong>, and it is the biggest page in the cluster at 37,510 impressions</li>
+                        <li style="color:#92400e;">miami-anesthesia-errors-attorney — <strong>0</strong>, and it ranks 7–12 on its terms</li>
+                        <li style="color:#92400e;">miami-wrongful-death-lawyer — <strong>0</strong></li>
+                        <li>No conflict today over "Anesthesia error claims" in this page's OfferCatalog, because that page makes no structured claim to it. If it ever gets schema, revisit the offer — the body copy already defers anesthesia upward and the structured data should agree.</li>
+                        <li>author / reviewedBy (E-E-A-T byline) is NOT added — the firm must name the reviewing attorney first. On a medical-legal page this is the highest-value item still open.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="schema-subsection-label" style="margin-top:22px;">3 FAQs added, 6 rewritten — 7 → 10 English entries, 427 → 1,183 words</div>
+        <div class="info-card">
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:14px;">
+                <div class="ba-after"><strong>Added, each targeting a query already ranking with nothing behind it:</strong> "What type of attorney handles wrongful death from a surgical mistake?" (position 6.2, 13 impressions, no answer on the page — and the answer carries the &sect; 768.21(8) restriction); "My surgical injury was not discovered until years later. Is it too late to file?"; "Is a complication after surgery the same as a surgical error?"</div>
+                <div class="ba-before"><strong>Removed — five generic med-mal FAQs that duplicated the hub:</strong> "Are unexpected results considered a medical abuse?" · "Can I sue a doctor or hospital just because a treatment doesn't cure my problem?" · "What will the attorney prove in a medical malpractice case?" · "How long can a case take?" · "How will I pay for the attorney's fees?" (that last one also made a contingency-fee claim).</div>
+                <div class="ba-after"><strong>Replaced with surgical-specific equivalents:</strong> "Does signing a surgical consent form mean I cannot sue?" — consent to known risks is not consent to wrong-organ surgery · "Who can be held responsible for a surgical error?" — names the operating team roles · "How do you prove a surgical error was negligence and not a known risk?" — built on the operative record · "What does it cost to investigate a surgical error claim?" — same-specialty expert cost, free consultation kept, fee claim removed.</div>
+                <div class="ba-note">All 10 English FAQs now carry surgical terms (3–13 each). Highest question-similarity against the hub fell 56% → 43%. One FAQ that was itself a Pass 3 addition sat at 56% similarity to the hub's equivalent and was reworded to target the delayed-discovery scenario the hub does not cover, rather than competing head-on. <strong>The FAQs carry roughly a fifth of the page's total keyword coverage</strong>, and one tracked query is covered by an FAQ and nowhere else — measuring the article alone hid that entirely.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         7. METADATA + PROOFREADING
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Metadata &amp; Proofreading</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">En/articlemetas.cshtml &nbsp;·&nbsp; En/article.cshtml &nbsp;·&nbsp; App_Data/FaqEntities.xml</span>
+            </div>
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+                <div>
+                    <div class="schema-subsection-label">1 &middot; og:image and twitter:image were relative paths <span class="critical-badge">REAL DEFECT</span> <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-after">Open Graph requires absolute URLs, so social and AI crawlers could not resolve the images at all. Now absolute, and repointed from the 375×211 asset to the <strong>903×530</strong> one that already existed for this page. Added og:image:alt / width / height and twitter:image:alt; twitter:card <code style="font-size:0.78rem">summary</code> → <code style="font-size:0.78rem">summary_large_image</code>. Three commented-out legacy meta blocks removed.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">2 &middot; Meta description rewritten <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-after">The previous description used "attorney" exclusively and carried no differentiator. It now carries "lawyer" as well, plus the free consultation and phone.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">3 &middot; article:published_time — left alone, deliberately <span class="ba-note">reversing an earlier call</span></div>
+                    <div class="ba-after">The original audit flagged the hardcoded 2024-06-13 as stale. On reflection that was wrong: it records first publication, not revision, and <code style="font-size:0.78rem">article:modified_time</code> already tracks revisions dynamically via <code style="font-size:0.78rem">Model.GetLastModifiedDate</code>.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">4 &middot; A visible review stamp <span class="new-badge">NEW</span></div>
+                    <div class="ba-after">"Legal content on this page last reviewed against Florida Statutes and current legislation on July 31, 2026." Static rather than <code style="font-size:0.78rem">Model.GetLastModifiedDate</code> on purpose — it records when a <strong>human verified the law</strong>, not when the file was touched. That distinction matters here specifically, because the &sect; 768.21(8) repeal attempts are live legislation and this stamp is what tells a reader how current the "not repealed" statement is.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">5 &middot; 13 British spellings — introduced by this project, not inherited <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-before">analysed · totalling · neighbouring · practising ×2 · recognised · labelled · sterilisation (article) — recognised ×2 · practising · authorise · materialised (FAQs)</div>
+                    <div class="ba-after">All corrected to US forms. This matters beyond tidiness: the page targets Miami, cites Florida statutes and speaks to US patients. British orthography reads as outsourced, which undercuts the exact E-E-A-T signal the legal-accuracy work was built to establish.</div>
+                    <div class="ba-note" style="margin-top:6px;"><strong>Method note worth keeping:</strong> the first sweep used a fixed list of ~45 British/American pairs and caught 10, missing <em>sterilisation</em>, <em>authorise</em> and <em>materialised</em>. A second sweep on the <code style="font-size:0.76rem">-ise/-ised/-ising/-isation</code> <strong>suffix pattern</strong>, with a whitelist for the ~25 words legitimately spelled -ise in American English (advise, supervise, comprise, exercise, franchise, expertise…), caught all three. A word list finds the words on the list; a pattern finds the class.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">6 &middot; TOC / heading mismatch — 1 of 10 <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-after">The TOC entry read "Book a Consultation with a Miami Surgical Errors Attorney" while the H2 it pointed at read "…with one of our Miami Surgical Errors Attorneys". The H2 was aligned to the TOC. Measured side benefit: the singular is an exact match for <strong>"surgical errors attorney"</strong> — 590 volume, 161 impressions — which the plural did not produce. That row moved 5 → 6 while "surgical errors attorneys" held at 1, so both variants survive.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">7 &middot; The duplicate H1 <span class="removed-badge">REMOVED</span></div>
+                    <div class="ba-before">The article opened with <code style="font-size:0.78rem">&lt;h2 id="heading-title"&gt;Miami Surgical Errors Attorney&lt;/h2&gt;</code> — an <strong>exact duplicate</strong> of the H1 the skin renders from <code style="font-size:0.78rem">PartialHeaderServices.cshtml</code>. An earlier entry in this same audit had concluded ServicePage renders no H1 at all; that conclusion came from grepping Views/ServicePage/ and the top level of Views/Shared/ and missed Views/Shared/Partials/. It was wrong, and it is corrected in the log.</div>
+                    <div class="ba-after">Removed. Safe: nothing referenced <code style="font-size:0.78rem">#heading-title</code> — the TOC had already excluded it, and no JSON-LD, speakable selector or internal link pointed at it. The <em>&lt;em&gt;</em> tagline was kept and now sits under the H1 as a subtitle. Clean h1 → h2 → h3 descent with exactly one h1, matching all three other reworked pages in this cluster, none of which opens with a title heading.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">8 &middot; False positives checked and deliberately not "fixed"</div>
+                    <div class="ba-note">The first automated proofread reported 20 punctuation problems and a doubled word. Every one was an artifact of the checking method. "Space before comma" ×20: tag-stripping turns <code style="font-size:0.76rem">&lt;em&gt;Surgery&lt;/em&gt;,</code> into "Surgery , " — re-checked against raw source, 0 real occurrences. "damage Damage": two adjacent list items joined by flattening. "tolled": correct US legal terminology. "labelled" ×11: all instances of the ARIA attribute <code style="font-size:0.76rem">aria-labelledby</code>, spelled with the double L by specification. <strong>Verify a flag against the source before acting on it.</strong></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         8. CORRECTIONS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Corrections — Four Findings That Were Wrong And Were Fixed</div>
+
+        <div class="callout callout-warn">
+            <strong>The same failure shape occurred four times: a check was run, it passed, and the pass was reported as if it answered the broader question.</strong> Recorded here in full rather than quietly amended, because the pattern will recur otherwise, and because two of the four were caught by the client rather than by us.
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-body" style="display:flex;flex-direction:column;gap:18px;">
+
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">2 &middot; "No duplication with the hub" — measured with the wrong instrument <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-before">A statistics block was added carrying Florida's closed-claim data: 3,340 statewide claims, 360 in Miami-Dade, the "highest county" framing, the injury-location breakdown. <strong>The hub had published the same figures from the same source since before this project began.</strong> The duplication check that had cleared the page used 8-word shingles and found 9 shared of 3,397 (0.26%) — correct about what it measured, wrong about what mattered. Shingles detect <em>copied text</em>; this was the <em>same facts in different words</em>, with zero 8-word matches and total substantive overlap.</div>
+                    <div class="ba-after">The block was replaced with a two-sentence deferral that keeps the local proof point, drops every duplicated figure and routes the dataset to its owner by link. The speakable paragraph — the passage most likely to be lifted by an answer engine — was still carrying the duplicated figure and was rewritten to surgical-only facts. A dangling referent left by the removal ("the same Florida report…") was fixed. <strong>Method change: duplication is now tested at fact level — shared figures, shared named sources — not by n-gram overlap alone.</strong></div>
+                    <div class="ba-note" style="margin-top:6px;">Root cause: the sources were verified rigorously; <strong>prior art on the same site was not checked at all</strong>. The rule now applied before any research-backed content is written: does another page here already own this?</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">3 &middot; "Only 1 page links to this one" — stated from a 2-page sample <span class="fixed-badge">CORRECTED</span></div>
+                    <div class="ba-after">The real figure was 2, found by scanning every .cshtml under Views/ServicePage/Content. And the second of the two was weak — miami-ob-gyn-malpractice-lawyer links with the bare anchor "surgeons" inside a sentence about delivery liability. So the true starting position was one strong link and one weak one, against 10 links out. <strong>Scan, then state.</strong></div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">4 &middot; Two keyword regressions caught only by the before/after columns <span class="fixed-badge">FIXED</span></div>
+                    <div class="ba-before">"surgical error attorneys" (110 vol) went 1 → 0 when "contacting one of of Miami Surgical Error Attorneys" was rewritten to "one of our Miami surgical error lawyers". Then "surgical malpractice lawyers" (170 vol) went 1 → 0 <em>while fixing the first one</em> — the repair sentence broke a different phrase.</div>
+                    <div class="ba-after">Both restored, in one clause carrying both: "Our surgical malpractice lawyers and surgical error attorneys". A third instance of the same failure happened later, when a rewrite protecting "failed surgery" dropped "surgical mistake" 2 → 1; caught and rewritten to carry both. <strong>Keyword loss during a rewrite is invisible to a word count and to a live-page check.</strong> This is what the before/after columns are for.</div>
+                </div>
+
+                <div class="schema-divider"></div>
+
+                <div>
+                    <div class="schema-subsection-label">Two verification traps worth carrying forward</div>
+                    <div class="ba-note"><strong>Tool disagreement.</strong> jointcommission.org returns 403 to WebFetch and to a bare curl, but 200 to curl with a browser user-agent — bot detection, not a dead link. Conversely a Joint Commission URL still recommended by web search is a genuine 404, and the AHCA deep link cited in an earlier pass returned 404 to a browser UA and 403 to WebFetch. Never call a link dead — or alive — on one tool's reading. Also: <code style="font-size:0.76rem">while read … | curl</code> returns 000 for every URL, because curl eats the loop's stdin.</div>
+                    <div class="ba-note" style="margin-top:8px;"><strong>Stale renders.</strong> One live fetch returned HTTP 200 with the new list item but the <em>old</em> paragraph, so a phrase counted 0 on the page while the file on disk had 3. Trusting it would have meant "reverting" an edit to fix a problem that did not exist. Verify against the file before believing a live response that contradicts it; all subsequent checks were cache-busted.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════
+         9. STATUS
+    ════════════════════════════════════ -->
+    <div class="section-wrap">
+        <div class="section-title">Status — Done vs Still Open</div>
+
+        <div class="info-card">
+            <div class="info-card-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="filename">miami-surgical-errors-attorney (En) &nbsp;·&nbsp; every content item PENDING ATTORNEY REVIEW</span>
+            </div>
+            <div class="info-card-body">
+                <div class="geo-cols">
+                    <div>
+                        <div class="geo-col-title geo-done-title">✓ Done (applied to working tree)</div>
+                        <ul class="geo-list done">
+                            <li><em class="geo-icon">✓</em> All 10 legal accuracy defects closed — repose, eighth birthday, fraud ceiling, presuit, free kill, damage caps, comparative fault, complications caveat, sourced statistics, current statute numbering</li>
+                            <li><em class="geo-icon">✓</em> Article body 970 → 2,432 words (+151%); FAQs 7 → 10, 427 → 1,183 words</li>
+                            <li><em class="geo-icon">✓</em> 160-keyword master table built from GSC + Semrush; coverage 19.2% → 37.5% of impressions, 21.1% → 45.5% of volume</li>
+                            <li><em class="geo-icon">✓</em> "lawyer" 1 → 10 — the page was competing for a 1,600/mo term it did not contain</li>
+                            <li><em class="geo-icon">✓</em> Error types 8 → 17, ported from the stronger Spanish page, plus eye / orthopedic / cosmetic coverage</li>
+                            <li><em class="geo-icon">✓</em> BreadcrumbList + WebPage/Speakable + Service JSON-LD (was none); full property parity with the brain-injury benchmark, verified two-way</li>
+                            <li><em class="geo-icon">✓</em> 16 id anchors, 10-entry TOC, bootstrap list styling — style parity with the benchmark</li>
+                            <li><em class="geo-icon">✓</em> Duplicate H1/H2 removed; heading hierarchy clean</li>
+                            <li><em class="geo-icon">✓</em> Inbound internal links 2 → 8 (6 unique anchors); outbound 1 → 10, routed by scenario</li>
+                            <li><em class="geo-icon">✓</em> Anesthesia page added to sitemap.xml and linked — a finished 1,292-word page was uncrawlable</li>
+                            <li><em class="geo-icon">✓</em> 13 external citations, every one HTTP-tested with a browser UA; 0 redirects; one dead AHCA link found and replaced</li>
+                            <li><em class="geo-icon">✓</em> Metas: absolute og/twitter images, 903×530 asset, summary_large_image, legacy blocks stripped</li>
+                            <li><em class="geo-icon">✓</em> Generic med-mal content that duplicated the hub removed from both the article and the FAQs</li>
+                            <li><em class="geo-icon">✓</em> Proofread: 13 British spellings, TOC/heading mismatch, trailing whitespace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    function copyPageInfo(text, btn) {
+        navigator.clipboard.writeText(text).then(function () {
+            var orig = btn.textContent;
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+        });
+    }
+    </script>
+
+</body>
+</html>
