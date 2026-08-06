@@ -872,6 +872,35 @@ SURGICALERRORS_EN = [
     ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Wrongful death (gallardolawyers.com/injury-law/miami-wrongful-death-lawyer).
+# Separate client property, not Avana. The page targets the "lawyer" form, but
+# GSC shows the "attorney" variants carry more demand ("wrongful death attorney"
+# 3,205 impr vs "miami wrongful death lawyer" 2,770), so both are tracked.
+# Variants are lowercase and accent-free.
+WRONGFULDEATH_EN = [
+    ("wrongful death", ["wrongful death", "wrong death", "wrongful death case", "miami wrongful death case"]),
+    ("miami wrongful death lawyer", ["miami wrongful death lawyer", "wrongful death lawyer miami", "wrongful death lawyers miami", "miami wrongful death lawyers"]),
+    ("miami wrongful death attorney", ["miami wrongful death attorney", "wrongful death attorney miami", "wrongful death attorneys miami", "miami wrongful death attorneys", "wrongful death attorney in miami", "wrongful death attorney miami fl"]),
+    ("wrongful death lawyer", ["wrongful death lawyer", "wrongful death lawyers"]),
+    ("wrongful death attorney", ["wrongful death attorney", "wrongful death attorneys"]),
+    ("wrongful death lawyer near me", ["wrongful death lawyer near me", "wrongful death lawyers near me", "wrongful death attorney near me", "wrongful death attorneys near me"]),
+    ("wrongful death law firm", ["wrongful death law firm", "wrongful death law firms", "miami wrongful death law firm", "best wrongful death lawyer miami"]),
+    ("north miami / miami-dade", ["north miami wrongful death lawyer", "north miami wrongful death attorney", "miami dade wrongful death lawyer", "miami dade wrongful death attorney"]),
+    ("miami death attorney", ["miami death attorney", "miami death lawyer", "death attorney miami", "death lawyer miami"]),
+    ("fatal accident / fatal injury", ["fatal accident", "fatal injury", "fatal injury claim", "fatal car accident lawyer", "fatal accident attorney miami"]),
+    ("wrongful death lawsuit / claim", ["wrongful death lawsuit", "wrongful death claim", "wrongful death suit", "how to file a wrongful death claim"]),
+    ("wrongful death settlement / compensation", ["wrongful death settlement", "wrongful death compensation", "wrongful death damages", "wrongful death payout"]),
+    ("who can file / survivors", ["who can file a wrongful death lawsuit", "who can file wrongful death", "wrongful death survivors", "personal representative"]),
+    ("florida wrongful death act", ["florida wrongful death act", "florida wrongful death law", "florida wrongful death statute"]),
+    ("statute of limitations", ["statute of limitations", "how long do you have to file", "time limit to file", "wrongful death statute of limitations"]),
+    ("cost / fees", ["no win no fee", "no fee unless", "contingency fee", "free consultation", "free case evaluation", "how much does a wrongful death lawyer cost"]),
+    ("medical malpractice wrongful death", ["medical malpractice wrongful death", "wrongful death medical malpractice", "hospital negligence death"]),
+    ("personal injury attorney", ["personal injury attorney", "personal injury lawyer"]),
+    ("injury attorney miami", ["injury attorney miami", "miami injury attorney", "injury lawyer miami", "miami injury lawyer"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "south florida"]),
+    ("miami neighborhoods", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # Spanish twin of BRAININJURY_EN (gallardolawyers.com/es/lesionados/...). Variants
 # are lowercase and accent-free because normalize() strips accents before matching.
 BRAININJURY_ES = [
@@ -1086,6 +1115,8 @@ PAGES = {
         {"slug": "miami-surgical-errors-attorney", "lang": "en", "kw": SURGICALERRORS_EN},
     "https://gallardolawyers.com/injury-law/product-liability-attorney-miami":
         {"slug": "product-liability-attorney-miami", "lang": "en", "kw": PRODLIAB_EN},
+    "https://gallardolawyers.com/injury-law/miami-wrongful-death-lawyer":
+        {"slug": "miami-wrongful-death-lawyer", "lang": "en", "kw": WRONGFULDEATH_EN},
     "https://gallardolawyers.com/es/lesionados/abogados-de-responsabilidad-del-producto-en-miami":
         {"slug": "abogados-de-responsabilidad-del-producto-en-miami", "lang": "es", "kw": PRODLIAB_ES},
     "https://gallardolawyers.com/es/lesionados/abogados-de-lesiones-cerebrales-en-miami":
