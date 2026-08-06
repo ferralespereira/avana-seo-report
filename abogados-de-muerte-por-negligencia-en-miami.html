@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+  <meta name="robots" content="noindex, nofollow"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallardo — Abogados de Muerte por Negligencia en Miami | Análisis SEO</title>
+<style>
+  :root {
+    --navy:      #1B3A5C;
+    --teal:      #0E7C7B;
+    --gold:      #C9A84C;
+    --lightBlue: #D6E8F5;
+    --lightGray: #F4F6F8;
+    --midGray:   #CCCCCC;
+    --darkGray:  #444444;
+    --red:       #C0392B;
+    --green:     #1E7E34;
+    --orange:    #E67E22;
+    --redBg:     #FDECEA;
+    --greenBg:   #EAF4EC;
+    --yellowBg:  #FEF9E7;
+    --blueBg:    #D6E8F5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: var(--darkGray);
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 40px;
+    border-bottom: 4px solid var(--teal);
+  }
+  .site-header h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .site-header p  { font-size: 13px; color: #aac; margin-top: 4px; }
+
+  .site-tabs {
+    display: flex;
+    background: var(--navy);
+    padding: 0 40px;
+    border-bottom: 3px solid var(--teal);
+  }
+  .site-tab {
+    padding: 14px 28px;
+    color: #aac;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    transition: color .2s, border-color .2s;
+  }
+  .site-tab.active { color: #fff; border-bottom-color: var(--teal); }
+  .site-tab:hover  { color: #fff; }
+
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .indicator-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid var(--midGray);
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  }
+  .ind-btn {
+    padding: 6px 14px;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--navy);
+    background: transparent;
+    transition: background .15s, color .15s;
+  }
+  .ind-btn:hover, .ind-btn.active { background: var(--navy); color: #fff; }
+
+  .main {
+    padding: 24px;
+    width: min(98vw, 2200px);
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .site-panel { display: none; }
+  .site-panel.active { display: block; }
+
+  .indicator-section {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--midGray);
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+  .indicator-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--navy);
+    color: #fff;
+  }
+  .indicator-number {
+    width: 36px;
+    height: 36px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .indicator-title { font-size: 18px; font-weight: 700; }
+  .indicator-subtitle { font-size: 12px; color: #aac; margin-top: 2px; }
+  .status-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .status-badge.good  { background: var(--green); color: #fff; }
+  .status-badge.warn  { background: var(--orange); color: #fff; }
+  .status-badge.bad   { background: var(--red); color: #fff; }
+  .status-badge.info  { background: var(--teal); color: #fff; }
+
+  .indicator-summary {
+    background: #f0f4f8;
+    border-bottom: 1px solid var(--midGray);
+    padding: 20px 24px;
+  }
+  .summary-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .summary-item {
+    background: #fff;
+    border: 1px solid var(--midGray);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-item.priority-high { border-left-color: var(--red); }
+  .summary-item.priority-med  { border-left-color: var(--orange); }
+  .summary-item.priority-low  { border-left-color: var(--green); }
+  .summary-item-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy);
+    margin-bottom: 5px;
+  }
+  .summary-item-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  .indicator-body { padding: 24px; }
+
+  .kpi-row {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kpi-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .kpi-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .kpi-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .kpi-card {
+    background: var(--blueBg);
+    border: 1.5px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .kpi-card.highlight { background: var(--greenBg); }
+  .kpi-label { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .4px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: var(--teal); margin: 6px 0 4px; }
+  .kpi-source { font-size: 11px; color: #999; }
+
+  .insight {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border-left: 4px solid;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .insight.good { background: var(--greenBg); border-color: var(--green); color: #155724; }
+  .insight.warn { background: var(--yellowBg); border-color: var(--orange); color: #7d5a00; }
+  .insight.bad { background: var(--redBg); border-color: var(--red); color: #7b1a14; }
+  .insight.info { background: var(--blueBg); border-color: var(--navy); color: var(--navy); }
+  .insight-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  .data-table {
+    width: 100%;
+    min-width: 2100px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .data-table th:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .data-table th:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .data-table tbody tr {
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+  }
+  .data-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+  .data-table tbody tr:hover {
+    background: #eef6ff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(27, 58, 92, .12);
+  }
+  .data-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #dce6f0;
+    border-bottom: 1px solid #dce6f0;
+    vertical-align: top;
+  }
+  .data-table td:first-child {
+    border-left: 1px solid #dce6f0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    word-break: break-word;
+  }
+  .data-table td:last-child {
+    border-right: 1px solid #dce6f0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .subsection { margin-top: 24px; }
+  .subsection h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  .bullet-list { list-style: disc; padding-left: 20px; }
+  .bullet-list li { margin: 5px 0; font-size: 13px; line-height: 1.5; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .badge.red { background: var(--redBg); color: var(--red); }
+  .badge.green { background: var(--greenBg); color: var(--green); }
+  .badge.yellow { background: var(--yellowBg); color: #7d5a00; }
+  .badge.blue { background: var(--blueBg); color: var(--navy); }
+
+  .source { font-size: 11px; color: #999; font-style: italic; }
+
+  .section-divider {
+    background: var(--teal);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 12px;
+  }
+
+  .query {
+    background: var(--yellowBg);
+    color: #7d5a00;
+    border: 1px solid #efd78c;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .main { padding: 16px; }
+    .kpi-row.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .kpi-row.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .kpi-row.cols-4,
+    .kpi-row.cols-3,
+    .kpi-row.cols-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;gap:24px;">
+  <a href="index.html" style="font-size:13px;font-weight:600;color:#0070c9;text-decoration:none;">&larr; Back to SEO Report</a>
+</div>
+<main class="main">
+
+<!-- Position Tracking Chart -->
+<div style="background:#fff;border-radius:8px;border:1px solid var(--midGray);margin-bottom:28px;overflow:hidden;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div>
+      <div style="font-size:16px;font-weight:700;">&#128200; Position Tracking &mdash; abogados de muerte por negligencia en miami</div>
+      <div style="font-size:12px;color:#aac;margin-top:2px;"><strong style="color:#fff;">gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami</strong> &nbsp;&middot;&nbsp; Tracked daily via SERP checks</div>
+    </div>
+    <div id="chartStatus" style="font-size:12px;color:#aac;white-space:nowrap;"></div>
+  </div>
+  <div style="padding:20px 24px;">
+    <div id="chartMessage" style="text-align:center;padding:30px;color:#999;font-size:13px;">Loading tracking data&hellip;</div>
+    <div id="chartWrap" style="display:none;position:relative;">
+      <canvas id="positionChart"></canvas>
+    </div>
+    <div id="chartLegend" style="display:none;margin-top:12px;flex-wrap:wrap;gap:16px;font-size:12px;color:#555;align-items:center;">
+      <span style="display:flex;align-items:center;gap:6px;background:#e6f4f4;border:1px solid #0E7C7B;border-radius:4px;padding:3px 8px;font-weight:700;color:#0E7C7B;"><span style="width:28px;height:3px;background:#0E7C7B;display:inline-block;border-radius:2px;flex-shrink:0;"></span>gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami</span>
+      <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;background:#f0f0f0;border:1px dashed #aaa;display:inline-block;border-radius:2px;"></span>Not ranked (not in top 10)</span>
+      <span id="chartNote" style="margin-left:auto;font-size:11px;color:#aaa;font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Daily Competitor Keyword History (auto-updated by keyword_scan.py) -->
+<div class="kw-history" data-slug="abogados-de-muerte-por-negligencia-en-miami"></div>
+<div class="geo-history" data-slug="abogados-de-muerte-por-negligencia-en-miami"></div>
+<script src="reports/keyword-history.js"></script>
+<script src="kw-history-widget.js"></script>
+<script src="geo-widget.js"></script>
+
+<script src="reports/chart-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  const TARGET_URL  = 'https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami';
+  const COMP_COLORS = ['#dc6b6b','#e09050','#9b72d0','#5599d4','#55aa77','#d4a017','#c0598a','#3db8b8','#8e7e6e','#6b8cdc'];
+
+  function formatDate(d) {
+    const [, m, day] = d.split('-');
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(m, 10) - 1] + ' ' + parseInt(day, 10);
+  }
+
+  function buildChart() {
+    const msgEl    = document.getElementById('chartMessage');
+    const wrapEl   = document.getElementById('chartWrap');
+    const legendEl = document.getElementById('chartLegend');
+    const statusEl = document.getElementById('chartStatus');
+    const noteEl   = document.getElementById('chartNote');
+
+    const urlData     = window.SEO_POSITION_DATA && window.SEO_POSITION_DATA[TARGET_URL];
+    const entries     = (urlData && urlData.series) || [];
+    const competitors = (urlData && urlData.competitors) || [];
+
+    if (!entries.length) {
+      msgEl.textContent = 'No tracking data found yet. Data will appear after the next daily check.';
+      return;
+    }
+
+    let maxRanked = 10;
+    entries.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; });
+    competitors.forEach(c => c.series.forEach(e => { if (e.position !== null && e.position > maxRanked) maxRanked = e.position; }));
+    const NOT_FOUND_VAL = maxRanked + 5;
+
+    const labels    = entries.map(e => formatDate(e.date));
+    const rawVals   = entries.map(e => e.position);
+    const chartVals = rawVals.map(v => v === null ? NOT_FOUND_VAL : v);
+    const ptColors  = rawVals.map(v => v === null ? '#e2e8f0' : '#0E7C7B');
+    const ptBorder  = rawVals.map(v => v === null ? '#94a3b8' : '#1B3A5C');
+
+    const latest = entries[entries.length - 1];
+    statusEl.textContent = latest.position === null
+      ? `Latest (${formatDate(latest.date)}): Not ranked`
+      : `Latest (${formatDate(latest.date)}): Position ${latest.position}`;
+    noteEl.textContent = `${entries.length} check${entries.length !== 1 ? 's' : ''} recorded`;
+
+    competitors.forEach((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      const el = document.createElement('span');
+      el.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      if (isOwn) {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px solid ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;color:${color};">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      } else {
+        el.innerHTML = `<span style="width:22px;height:0;border-top:2px dashed ${color};display:inline-block;flex-shrink:0;"></span>`
+          + `<span title="${comp.url}" style="max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${comp.url.replace(/^https?:\/\//, '')}</span>`;
+      }
+      legendEl.insertBefore(el, noteEl);
+    });
+
+    msgEl.style.display    = 'none';
+    wrapEl.style.display   = 'block';
+    legendEl.style.display = 'flex';
+
+    const compDatasets = competitors.map((comp, i) => {
+      const isOwn = comp.url.includes('gallardolawyers');
+      const color = isOwn ? '#C9A84C' : (COMP_COLORS[i] || '#999');
+      return {
+        label: comp.url.replace(/^https?:\/\//, ''),
+        data: comp.series.map(e => e.position === null ? NOT_FOUND_VAL : e.position),
+        borderColor: color,
+        backgroundColor: 'transparent',
+        borderWidth: isOwn ? 2 : 1.5,
+        borderDash: isOwn ? [] : [5, 3],
+        tension: 0.3,
+        fill: false,
+        pointRadius: isOwn ? 4 : 3,
+        pointHoverRadius: isOwn ? 6 : 5,
+        spanGaps: true,
+        rawSeries: comp.series.map(e => e.position),
+      };
+    });
+
+    const ctx = document.getElementById('positionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: TARGET_URL.replace(/^https?:\/\//, ''),
+            data: chartVals,
+            borderColor: '#0E7C7B',
+            backgroundColor: 'rgba(14,124,123,0.08)',
+            borderWidth: 2.5,
+            tension: 0.3,
+            fill: true,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: ptColors,
+            pointBorderColor: ptBorder,
+            pointBorderWidth: 1.5,
+            spanGaps: true,
+            rawSeries: rawVals,
+          },
+          ...compDatasets
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 3.5,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              label(ctx) {
+                const raw = ctx.dataset.rawSeries ? ctx.dataset.rawSeries[ctx.dataIndex] : undefined;
+                const name = ctx.dataset.label || '';
+                const val = (raw === null || raw === undefined) ? 'Not ranked' : `#${raw}`;
+                const prefix = name.includes('gallardolawyers') ? '★ ' : '  ';
+                return `${prefix}${name}: ${val}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#f0f0f0' },
+            ticks: { font: { size: 11 }, color: '#666' }
+          },
+          y: {
+            reverse: true,
+            min: 1,
+            max: NOT_FOUND_VAL + 1,
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              font: { size: 11 },
+              color: '#666',
+              stepSize: 1,
+              callback(val) {
+                if (val >= NOT_FOUND_VAL) return 'Not ranked';
+                return `#${val}`;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Position (1 = top result)',
+              font: { size: 11 },
+              color: '#888'
+            }
+          }
+        }
+      }
+    });
+  }
+
+  buildChart();
+})();
+</script>
+
+<!-- ===== KEYWORD HEADER ===== -->
+<div style="margin-bottom:20px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:4px;">Palabra clave</div>
+  <h2 style="font-size:26px;font-weight:700;color:var(--navy);margin:0;">
+    abogados de muerte por negligencia en miami
+    <button onclick="navigator.clipboard.writeText('abogados de muerte por negligencia en miami'); this.textContent='¡Copiado!'; setTimeout(() =&gt; this.textContent='📋', 2000);" style="margin-left: 12px; padding: 6px 12px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋 Copiar</button>
+  </h2>
+  <div style="font-size:16px;color:var(--teal);margin-top:8px;">
+    <a href="https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami" style="color:var(--teal);text-decoration:none;" target="_blank">https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami</a>
+    <button onclick="navigator.clipboard.writeText('https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami'); this.textContent='¡Copiado!'; setTimeout(() =&gt; this.textContent='📋', 2000);" style="margin-left: 8px; padding: 4px 10px; background: var(--teal); color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">📋</button>
+  </div>
+</div>
+
+<!-- ===== KPI CARDS (keyword-filtered) ===== -->
+<div class="kpi-row cols-4" style="margin-bottom:12px;">
+  <div class="kpi-card">
+    <div class="kpi-label">Clics</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-source">Palabra clave: "abogados de muerte por negligencia en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Impresiones</div>
+    <div class="kpi-value">148</div>
+    <div class="kpi-source">Palabra clave: "abogados de muerte por negligencia en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">CTR</div>
+    <div class="kpi-value">0%</div>
+    <div class="kpi-source">Palabra clave: "abogados de muerte por negligencia en miami" — todos los dispositivos</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Posición</div>
+    <div class="kpi-value">10.46</div>
+    <div class="kpi-source">Palabra clave: "abogados de muerte por negligencia en miami" — consulta principal</div>
+  </div>
+</div>
+
+<div class="insight bad" style="margin-bottom:12px;">
+  <span class="insight-icon">🔴</span>
+  <div><strong>148 impresiones, 0 clics — CTR 0% en la keyword exacta.</strong> A diferencia del gemelo de errores quirúrgicos, aquí la keyword <em>sí</em> tiene demanda medible y la página <em>sí</em> rankea:
+  <strong>posición 3.89</strong> para esta URL en concreto (117 de las 148 impresiones, según el <code>Pages.csv</code> filtrado por keyword).
+  Estar en el top 4 y no capturar <strong>ni un solo clic</strong> en 3 meses apunta a dos causas: el snippet no compite y la SERP está absorbiendo la respuesta antes del clic.</div>
+</div>
+
+<div class="insight warn" style="margin-bottom:24px;">
+  <span class="insight-icon">⚠️</span>
+  <div><strong>Canibalización interna: 14 URLs de Gallardo compiten por la misma keyword.</strong> La posición media de <strong>10.46</strong> que muestra la tarjeta es el promedio ponderado de todas ellas, no el de esta página.
+  El desglose del <code>Pages.csv</code> filtrado por keyword: esta URL <strong>pos 3.89</strong> (117 impr.) ·
+  <code>/es</code> home <strong>pos 44.66</strong> (35 impr.) ·
+  <code>/es/lesionados/muerte-por-negligencia-en-miami</code> <strong>pos 19.97</strong> (30 impr.) ·
+  <code>/es/lesionados/abogados-de-negligencia-medica-en-miami</code> <strong>pos 41.28</strong> (25 impr.).
+  Existe una <strong>segunda página en español sobre muerte por negligencia</strong> (<code>/muerte-por-negligencia-en-miami</code>) que compite con esta por la misma intención — consolidarlas o diferenciarlas es la decisión estructural pendiente.</div>
+</div>
+
+<!-- ===== DEVICE BREAKDOWN (keyword-filtered) ===== -->
+<div style="margin-top:16px;margin-bottom:24px;">
+  <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:8px;">GSC — Desglose por dispositivo para la palabra clave "abogados de muerte por negligencia en miami" (filtrado por palabra clave)</div>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--midGray);">
+    <thead>
+      <tr style="background:var(--navy);color:#fff;">
+        <th style="padding:10px 14px;text-align:left;font-weight:700;font-size:12px;">Dispositivo</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#6ec6ff;">Clics</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#c084fc;">Impresiones</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#34d399;">CTR</th>
+        <th style="padding:10px 14px;text-align:right;font-weight:700;font-size:12px;color:#fbbf24;">Posición</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;font-weight:700;">Móvil</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;">0</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;">102</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;">0%</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;font-weight:700;color:#1E7E34;">8.04</td></tr>
+      <tr style="background:#f8fbff;"><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;font-weight:700;">Escritorio</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;">0</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;">54</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;">0%</td><td style="padding:9px 14px;border-bottom:1px solid #dce6f0;text-align:right;font-weight:700;color:#E67E22;">15.57</td></tr>
+    </tbody>
+  </table>
+  <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;"><strong>Sin fila de tablet</strong> — la exportación filtrada por keyword solo trae Móvil y Escritorio · El <strong>69% de las impresiones son móviles</strong> (102 de 156) y ahí la posición es casi el doble de buena (<strong>8.04</strong> vs 15.57 en escritorio) — el snippet móvil es el que hay que optimizar primero · Fuente: exportación de GSC filtrada por palabra clave, últimos 3 meses, 2026-08-06.</div>
+</div>
+
+<!-- ===== ALL QUERIES (URL-filtered totals) ===== -->
+<div id="es-url-queries" style="margin-top:20px;margin-bottom:24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="cursor:pointer;text-decoration:none;display:block;">
+      <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:#fff;padding:8px 14px;background:#2563eb;border-radius:4px;opacity:0.9;">GSC — Todas las consultas para <span style="font-size:16px;font-weight:900;">https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami</span> — Últimos 3 meses</div>
+    </a>
+    <a href="#" onclick="var el=document.getElementById('es-url-queries-content');el.style.display=el.style.display==='none'?'block':'none';return false;" style="font-size:12px;color:#fff;background:#2563eb;padding:6px 12px;border-radius:4px;text-decoration:none;font-weight:600;cursor:pointer;">▶ Mostrar</a>
+  </div>
+  <div id="es-url-queries-content" style="display:none;background:#dbeafe;border-radius:6px;padding:14px;margin-top:10px;border-left:4px solid #2563eb;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Clics totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">10</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Impresiones totales</div><div style="font-size:22px;font-weight:700;color:#2563eb;">6,274</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">CTR promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">0.16%</div></div>
+      <div style="background:#fff;border-radius:6px;padding:10px 14px;text-align:center;border:2px solid #2563eb;"><div style="font-size:10px;color:#666;margin-bottom:2px;">Posición promedio</div><div style="font-size:22px;font-weight:700;color:#2563eb;">10.69</div></div>
+    </div>
+    <div style="margin-top:4px;">
+      <div style="font-size:11px;font-weight:700;color:#1e40af;margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px;">Consultas sin clics con 100+ impresiones — ordenadas por impresiones</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px;background:#fff;border-radius:6px;overflow:hidden;">
+        <thead>
+          <tr style="background:#1e3a5f;color:#fff;">
+            <th style="padding:7px 10px;text-align:left;">Consulta</th>
+            <th style="padding:7px 10px;text-align:right;">Impresiones</th>
+            <th style="padding:7px 10px;text-align:right;">Posición</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de muerte por negligencia</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">1,251</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13.38</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado por muerte injusta</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">536</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">5.96</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de muerte injustificada</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">308</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">13.96</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogados de muerte por negligencia</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">236</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">19.54</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿quién se especializa en representar a familiares en casos de muerte por negligencia?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">211</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">5.14</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿con qué rapidez puede iniciar mi caso un abogado por muerte por negligencia?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">210</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">5.7</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿cuáles son los resultados de los principales bufetes en muerte por negligencia?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">157</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">6.05</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿cuáles son los mejores bufetes para casos de muerte por negligencia?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">135</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">5.7</td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de muerte injusta en florida</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">118</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">8.07</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;"><strong>abogados de muerte por negligencia en miami</strong> <span style="font-size:10px;color:#2563eb;">← keyword objetivo</span></td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">117</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;"><strong>3.89</strong></td></tr>
+          <tr><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">¿cómo comparo abogados para reclamos por muerte injusta?</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">104</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">3.39</td></tr>
+          <tr style="background:#f8fbff;"><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;">abogado de muerte injusta miami</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">101</td><td style="padding:6px 10px;border-bottom:1px solid #dce6f0;text-align:right;">6.26</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px;color:#666;margin-top:5px;font-style:italic;">Mostrando las 12 de <strong>12 consultas sin clics con 100+ impresiones</strong> · <strong>Las 138 consultas del export tienen 0 clics</strong> — no hay una sola query con clic desglosada · La consulta más grande, "abogado de muerte por negligencia" (1,251 impr.), está en <strong>pos 13.38</strong>: página 2, fuera del alcance real · El clúster "muerte injusta / injustificada" suma <strong>1,943 impresiones</strong> en 47 consultas y rankea mejor (pos 5.96–13.96) que el clúster "muerte por negligencia" que la página targetea · Fuente: exportación de GSC filtrada por URL, 2026-08-06</div>
+      <div style="font-size:11px;color:#7d5a00;background:var(--yellowBg);border-left:3px solid var(--orange);padding:8px 10px;margin-top:8px;line-height:1.5;">🤖 <strong>Absorción por AI Overview / SERP conversacional:</strong> 5 de las 12 consultas son preguntas largas en lenguaje natural ("¿quién se especializa…?", "¿con qué rapidez…?", "¿cuáles son los mejores bufetes…?", "¿cuáles son los resultados…?", "¿cómo comparo abogados…?") que suman <strong>817 impresiones en posiciones 3.39–6.05</strong> — top 6 — y <strong>cero clics</strong>. En total, las 29 consultas de tipo pregunta del export suman <strong>1,013 impresiones</strong>. Rankear en el top 6 sin recibir clics en consultas conversacionales es la firma típica de que la respuesta se está sirviendo dentro del propio resultado. Es contenido que la página ya gana pero no monetiza.</div>
+      <div style="font-size:11px;color:#7d5a00;background:var(--yellowBg);border-left:3px solid var(--orange);padding:8px 10px;margin-top:8px;line-height:1.5;">⚠️ <strong>Discrepancia en la exportación:</strong> la fila de <code>Pages.csv</code> declara <strong>10 clics / 6,274 impresiones</strong>, pero las tablas <code>Queries.csv</code> y <code>Devices.csv</code> del mismo filtro suman <strong>5,391 impresiones y 0 clics</strong>. Las tarjetas de arriba usan <code>Pages.csv</code> (el total de la página, según el método estándar); la tabla de consultas refleja lo que GSC desglosa. La diferencia (~883 impresiones) es la anonimización de consultas raras de GSC — conviene verificar los 10 clics en la interfaz antes de reportarlos como cierto.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COMPETITOR COMPARISON TABLE ===== -->
+<div style="margin-top:32px;">
+  <div style="background:var(--navy);color:#fff;padding:14px 20px;border-radius:8px 8px 0 0;">
+    <div style="font-size:16px;font-weight:700;">🔑 Palabras Clave Primarias y Secundarias — Análisis de Página</div>
+    <div style="font-size:12px;color:#aac;margin-top:2px;">Extraído del código fuente en vivo — Gallardo ✅ | Amanda Demanda ✅ | STFB ✅ | Panter, Panter &amp; Sampedro ✅ &middot; Consultado 2026-08-06</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--midGray);border-top:none;border-radius:0 0 8px 8px;padding:0;">
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead>
+        <tr style="background:#1a3a5c;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;min-width:140px;">Elemento</th>
+          <th style="padding:10px 14px;text-align:left;background:#c0392b;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Gallardo 🔴 NUESTRA PÁGINA<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami" style="color:#fff;text-decoration:none;" target="_blank">gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#27ae60;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Amanda Demanda Injury Lawyers ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.callamandademanda.com/es/abogado-para-casos-de-muerte-por-negligencia-en/" style="color:#fff;text-decoration:none;" target="_blank">callamandademanda.com/es/abogado-para-casos-de-muerte-por-negligencia-en/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#e67e22;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Stewart Tilghman Fox Bianchi ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://www.stfblaw.com/areas-de-practica/muerte-por-negligencia/" style="color:#fff;text-decoration:none;" target="_blank">stfblaw.com/areas-de-practica/muerte-por-negligencia/</a>
+            </span>
+          </th>
+          <th style="padding:10px 14px;text-align:left;background:#7c3aed;min-width:200px;color:#fff;font-size:12px;font-weight:700;">
+            Panter, Panter &amp; Sampedro ✅<br/>
+            <span style="font-weight:400;font-size:11px;">
+              <a href="https://panterlaw.com/es/personal-injury/wrongful-death/" style="color:#fff;text-decoration:none;" target="_blank">panterlaw.com/es/personal-injury/wrongful-death/</a>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Etiqueta de título</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Coincidencia exacta con la keyword + segundo clúster</div>"Abogados de Muerte por Negligencia en Miami | Muerte Injusta | Gallardo Law Firm"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword exacta al frente, en <strong>plural</strong> — la forma con demanda (148 impr.)<br/>✅ Es el único de los cuatro que mete "Muerte Injusta" en el título — el clúster de <strong>1,943 impresiones</strong></div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <strong>~79 caracteres — se trunca en el SERP.</strong> Google corta después de ~60: "Muerte Injusta | Gallardo Law Firm" probablemente no se ve<br/>❌ Doble pipe = título de plantilla, no de conversión: cero promesa, cero cifra, cero "gratis"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Singular + marca larga</div>"Abogado para casos de muerte por negligencia en Miami | Amanda Demanda Injury Lawyers"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Marca reconocible en el mercado hispano de Miami (campañas de TV)</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ ~85 caracteres — también se trunca<br/>⚠️ Singular "Abogado para casos de" — más largo y menos directo que el plural</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El más limpio de los cuatro</div>"Abogado De Muerte Por Negligencia En Miami | STFBC"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ ~50 caracteres — <strong>no se trunca</strong><br/>✅ Keyword exacta + marca, sin relleno</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ "STFBC" — sigla sin reconocimiento de marca<br/>⚠️ Capitalización tipo título en inglés ("De", "Por", "En")</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Ataca la variante que más rankea</div>"Abogados de Muerte Injusta en Miami | Acuerdos por homicidio culposo en Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Cubre <strong>3</strong> variantes en un título: "muerte injusta", "homicidio culposo" y "acuerdos"<br/>✅ "Acuerdos" = intención transaccional (¿cuánto me toca?), no informativa</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ ~76 caracteres — se trunca<br/>⚠️ Sin marca en el título</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">H1</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            "Abogados de Muerte por Negligencia en Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Coincidencia <strong>exacta</strong> con la keyword objetivo y con el slug — targeting perfectamente consistente<br/>✅ Plural correcto (la forma con impresiones)</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ El H1 no aporta nada que el título no diga ya — oportunidad desperdiciada para meter "muerte injusta" o una cifra</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            "Abogados para casos de muerte por negligencia en Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Plural + geo; repite el H1 como primer H2 (refuerzo)</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ "para casos de" diluye la coincidencia exacta</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            "Abogados De Muerte Por Negligencia De Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Plural + geo</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <strong>"De Miami"</strong> en vez de "En Miami" — no coincide con ninguna variante de búsqueda real<br/>❌ Desalineado con su propio título, que sí dice "En Miami"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            "Abogados de muerte por negligencia en Miami"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ <strong>Idéntico al H1 de Gallardo</strong> — mismo target exacto, es el competidor más directo<br/>✅ Y además su título ataca "muerte injusta": cubre los dos clústeres con una sola página</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keyword primaria</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogados de muerte por negligencia en miami — <strong>148 impr., pos 3.89</strong></div><div style="margin-top:4px;font-size:11px;color:#666;">A diferencia del gemelo de errores quirúrgicos, aquí la keyword <em>sí</em> tiene demanda y la página <em>sí</em> rankea top 4</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <strong>0 clics con pos 3.89</strong> — el problema no es rankear, es el snippet<br/>❌ El head term sin geo, "abogado de muerte por negligencia" (<strong>1,251 impr.</strong>), está en pos 13.38 — página 2</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado para casos de muerte por negligencia en miami</div><div style="margin-top:4px;font-size:11px;color:#666;">Mismo nicho exacto. Compensa la coincidencia más floja con volumen de contenido (4,308 palabras) y con autoridad de marca offline</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogado de muerte por negligencia en miami</div><div style="margin-top:4px;font-size:11px;color:#666;">Coincidencia exacta con el <strong>singular</strong>. Se apoya casi por completo en autoridad de dominio: 1,013 palabras le bastan</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ abogados de muerte injusta / por negligencia en miami</div><div style="margin-top:4px;font-size:11px;color:#666;">Es el único que targetea <strong>los dos</strong> clústeres a la vez. En GSC, "muerte injusta" pesa <strong>1,943 impresiones</strong> en 47 consultas — más que "muerte por negligencia en miami"</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Keywords secundarias (H2)</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div>• ¿Qué es una muerte por negligencia o muerte injusta?<br/>• ¿Quién puede presentar una demanda por muerte injusta en Florida?<br/>• ¿Cómo se demuestra una muerte por negligencia?<br/>• Causas comunes de muerte por negligencia en Miami<br/>• Daños y compensación en casos de muerte injusta<br/>• ¿Cuánto vale un caso de muerte injusta?<br/>• Costos de reclamos por muerte injusta<br/>• ¿Cuánto tiempo tiene para presentar una demanda?<br/>• Cómo puede ayudarle Gallardo Law Firm<br/>• Por qué elegir un bufete con experiencia en muerte injusta<br/>• Hable con abogados de muerte por negligencia en Miami</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ <strong>11 H2, la mejor arquitectura semántica de las cuatro</strong> — cubre qué/quién/cómo/causas/daños/valor/costos/plazo<br/>✅ Coincide casi 1:1 con las preguntas que GSC muestra en pos 3–6 ("¿quién se especializa…?", "¿con qué rapidez…?")</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Ningún H2 de <strong>resultados/veredictos</strong> — y "¿cuáles son los resultados de los principales bufetes?" tiene 157 impr. en pos 6.05<br/>❌ Ningún H2 comparativo ("mejores bufetes", "cómo comparo abogados") — 239 impr. combinadas en pos 3.39–5.7</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div>• Abogados para casos de muerte por negligencia en Miami<br/>• Ayudando a las familias a hacer justicia<br/>• ¿Qué es la muerte por negligencia?<br/>• ¿Son comunes las muertes por negligencia?<br/>• ¿Por qué debería una familia presentar una demanda…?<br/>• ¿Cuál es el proceso…?<br/>• ¿Quién puede presentar una demanda… en Florida?<br/>• ¿Qué se necesita para ganar…?<br/>• ¿Cómo se define el "deber de cuidado"?<br/>• ¿Cuál es la fecha límite…?<br/>• Programe una consulta gratis… hoy mismo</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ 15 H2, 8 en forma de pregunta — formato pensado para AI Overviews</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Todo informativo, sin H2 de resultados ni de comparación</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div>• Cientos de millones ganados. Más de 100 años de experiencia colectiva.<br/>• Sabemos cómo ganar casos de muerte por negligencia</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <strong>Solo 2 H2</strong> — la estructura más pobre con diferencia</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Pero el primer H2 <em>es</em> la prueba: mete la cifra y los años en el encabezado, no enterrados en prosa</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div>• Por qué las familias de Miami recurren a Panter, Panter &amp; Sampedro<br/>• <strong>Casos notables de muerte por negligencia en Miami</strong><br/>• <strong>Cientos de reseñas de 5 estrellas</strong><br/>• Buscar una indemnización mediante una demanda…<br/>• Reclamos por muerte injusta<br/>• Muerte por negligencia contra homicidio involuntario<br/>• ¿Qué indemnización puede obtenerse… en Florida?<br/>• ¿Quién puede presentar una demanda… en Florida?<br/>• Cómo funciona una demanda por muerte por negligencia<br/>• ¿Cómo se prueba la muerte por negligencia?<br/>• Preguntas frecuentes · Reseñas y testimonios</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ <strong>18 H2</strong> — mezcla informativo + <strong>prueba</strong> (casos notables, reseñas) + conversión<br/>✅ Es el único con H2 de "casos notables" y de "reseñas": exactamente los dos ángulos donde Gallardo tiene impresiones y ningún contenido</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cantidad de palabras</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ ~2,944 palabras — tercera de cuatro</div><div style="margin-top:4px;font-size:11px;color:#666;">Casi 3× STFB, pero <strong>1,364 palabras por debajo de Amanda Demanda</strong> y <strong>2,673 por debajo de Panter</strong></div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Extensión suficiente para el tema; la brecha no es de volumen sino de <em>qué</em> falta (prueba, casos, reseñas)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~4,308 palabras</div><div style="margin-top:4px;font-size:11px;color:#666;">~1.5× Gallardo, con más profundidad procesal por pregunta</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 ~1,013 palabras — la más delgada</div><div style="margin-top:4px;font-size:11px;color:#666;">Compite con un tercio del contenido de Gallardo apoyándose en autoridad de dominio y en el historial de veredictos</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ ~5,617 palabras — la más completa</div><div style="margin-top:4px;font-size:11px;color:#666;">Casi 2× Gallardo. Es una guía + página de servicio + prueba social + FAQ en una sola URL</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señal de costo</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Contingencia visible + H2 dedicado al costo</div><div>• "Solo Pagas, Si Ganas En Casos de Lesiones" (cabecera)<br/>• "Evaluación Gratis" · "Agenda una Cita"<br/>• H2: "Costos de reclamos por muerte injusta"<br/>• H2: "¿Cuánto vale un caso de muerte injusta?"<br/>• "Disponibles 24/7" · "Llama Gratis"</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <code>priceRange: "$1500-$10000"</code> en el JSON-LD <strong>contradice frontalmente</strong> "Solo Pagas Si Ganas" — e implica que la familia paga por adelantado en el peor momento de su vida</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Consulta gratis, sin contingencia explícita</div><div>• "Consulta gratis" / "Consulta gratuita" (repetida)<br/>• "Inicie Su Consulta Gratuita"</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Mismo defecto que Gallardo: <code>priceRange "$1000-$25000"</code> en el schema<br/>❌ Sin "no gana, no paga" en la página</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Contingencia explícita, sin contradicción</div><div style="margin-top:4px;font-size:11px;color:#059669;">"no cobramos a no ser que ganemos" + "consultas gratis de los casos"</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ <strong>Sin <code>priceRange</code> en el schema</strong> — nada que contradiga el mensaje</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ La ejecución correcta — y la lección directa para Gallardo</div><div>• H2 dedicado: "Sin recuperación, sin cargo"<br/>• "Revisión de caso GRATIS" · honorarios condicionales</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ <code>priceRange: "Free Consultation / Contingency Fee"</code> — <strong>usa el campo para reforzar el mensaje en vez de contradecirlo</strong>. Es exactamente lo que Gallardo debería poner en lugar de "$1500-$10000"</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Meta descripción</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Presente y bien escrita — pero es <strong>la peor de las cuatro para el clic</strong></div>"Abogados de muerte por negligencia en Miami que ayudan a familias a buscar justicia y compensación tras una muerte injusta causada por negligencia o accidente fatal."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Keyword al frente · ~163 caracteres · cubre "muerte injusta" y "accidente fatal"</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <strong>Sin teléfono, sin "gratis", sin "solo pagas si ganas", sin CTA</strong> — los otros tres sí llevan al menos uno<br/>❌ Es descriptiva, no persuasiva: describe qué hace el bufete en vez de qué gana el usuario<br/>❌ Con <strong>pos 3.89 y 0 clics</strong>, este snippet <em>es</em> el cuello de botella medible</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ La mejor meta de las cuatro</div>"Perdió a un ser querido por negligencia ajena? Amanda Demanda ofrece representación compasiva. Llame al 305-697-5001. Consulta gratis."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Abre con <strong>pregunta empática</strong> (engancha el dolor) → <strong>teléfono en el snippet</strong> → "Consulta gratis"<br/>✅ ~135 caracteres, no se trunca</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Falta el signo de apertura "¿"</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Presente — mete la prueba en el snippet</div>"Con más de 100 años de experiencia colectiva, nuestros abogados certificados de muerte por negligencia en Miami persiguen a los culpables… ¡Llame hoy!"<div style="margin-top:4px;font-size:11px;color:#059669;">✅ Cifra ("100 años") + "certificados" + CTA "¡Llame hoy!"</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ ~190 caracteres — se trunca</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Presente, con CTA</div>"Panter, Panter &amp; Sampedro son abogados agresivos de muerte por negligencia. Luchemos por tu justicia. Contáctenos hoy para una consulta GRATUITA."<div style="margin-top:4px;font-size:11px;color:#059669;">✅ "GRATUITA" en mayúsculas + CTA explícito · ~146 caracteres</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Empieza por la marca, no por la keyword</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Cobertura de FAQ</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ 10 preguntas con microdatos FAQPage completos (10 Question + 10 Answer)</div><div style="font-size:11px;color:#666;">¿Qué es una reclamación por muerte injusta? · ¿Qué daños son recuperables? · ¿Quién puede presentar una demanda? · ¿Tengo una legítima demanda? · ¿Cuánto podría costar mi caso? · ¿Cuánto tiempo puede tardar? · ¿Cuándo puedo demandar por negligencia médica? · ¿Quién puede ser responsable? · ¿Puedo tener remuneración si la pérdida afecta mis ingresos? · ¿Se puede demandar por perder la capacidad de disfrutar de la vida?</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Cobertura muy superior a Amanda Demanda y STFB</div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ En <strong>microdatos</strong>, no en JSON-LD — Panter sí lo hace en JSON-LD<br/>⚠️ Las preguntas son <code>h4</code>, no <code>h2</code>: pesan menos semánticamente<br/>❌ Ninguna responde a "¿cuáles son los mejores bufetes?" ni "¿cómo comparo abogados?" (239 impr., pos 3.39–5.7)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ 8 preguntas como H2, sin schema FAQ</div><div style="margin-top:4px;font-size:11px;color:#666;">Formato Q&amp;A en encabezados (más peso que los h4 de Gallardo), pero <strong>sin FAQPage</strong> — no es elegible para rich results</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Sin sección FAQ</div><div style="margin-top:4px;font-size:11px;color:#666;">Solo 2 H2, ninguno interrogativo</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Sección "Preguntas frecuentes" + <strong>FAQPage en JSON-LD</strong></div><div style="font-size:11px;color:#666;">¿Por qué Panter, Panter &amp; Sampedro? · ¿Qué servicios proporcionan? · ¿Cuánto cobra por sus servicios? · ¿Quién puede decirme si tengo un caso legítimo?</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Menos preguntas que Gallardo, pero <strong>mejor implementadas</strong> (JSON-LD) y de intención comercial: precio, servicios, "¿por qué nosotros?"</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">Señales de confianza</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#c0392b;font-weight:700;margin-bottom:4px;">🔴 Cero prueba cuantificada — <strong>ni un solo número en toda la página</strong></div><div>• 4 abogados nombrados (Carmen Gallardo, Maria Vargas, Jesús Novo, Natalia Timmons)<br/>• 3 oficinas: Miami · Hialeah · Houston<br/>• Bilingüe · Disponibles 24/7</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ 0 veredictos · 0 acuerdos · 0 montos recuperados<br/>❌ 0 reseñas y 0 calificación (los otros tres muestran 4.8–4.9 y cientos de reseñas)<br/>❌ Sin años de ejercicio ni experiencia combinada<br/>❌ Sin premios, certificaciones ni membresías<br/>❌ Sin testimonios de clientes</div><div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #c0392b;font-size:11px;line-height:1.5;">Es la <strong>brecha #1</strong> de esta página. En un vertical YMYL donde la consulta literal del usuario es "¿cuáles son los resultados de los principales bufetes?" (157 impr., pos 6.05), no tener resultados publicados es perder el clic antes de darlo.</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Prueba social masiva + autoridad de medios</div><div>• <strong>AggregateRating 4.9 · 500 reseñas</strong> (en schema)<br/>• Veredicto de <strong>$43,000,000</strong> destacado<br/>• 8 abogados nombrados<br/>• "Presentada En": Univision, América TV, 7 News Miami, Channel 10, 51 Miami News, 6 South Florida News<br/>• 4 oficinas (Miami, Downtown Miami, Tampa, Houston)</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El stack de credenciales de élite</div><div>• <strong>Cientos de millones ganados</strong> · 100+ años de experiencia colectiva<br/>• Veredictos <strong>$14M · $4.1M · $2.1M</strong><br/>• Best Law Firms® (U.S. News)<br/>• Martindale-Hubbell® AV® Preeminent™<br/>• Especialistas certificados por el Florida Bar<br/>• <strong>Inner Circle of Advocates</strong></div><div style="margin-top:4px;font-size:11px;color:#e67e22;">⚠️ Sin conteo de reseñas visible</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El más completo — prueba + reseñas + casos con H2 propio</div><div>• <strong>AggregateRating 4.8 · 246 reseñas</strong> (en schema) + H2 "Cientos de reseñas de 5 estrellas"<br/>• <strong>MÁS DE $100 MILLONES RECUPERADOS</strong><br/>• Casos con nombre y monto: $1.77M (adolescente, accidente policial Miami Beach) · $1.4M (sobredosis mortal) · $1.1M (ahogamiento en alquiler vacacional)<br/>• 30+ años · 5 abogados nombrados<br/>• Super Lawyers · Martindale AV · Florida Board Certified · Avvo · Justia<br/>• 7 oficinas</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Los casos <strong>narrados</strong> (no solo la cifra) son lo que responde a "¿cuáles son los resultados de los principales bufetes?"</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;font-weight:700;color:var(--navy);">CTA</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ CTA fuerte en página, con reversión de riesgo</div><div>• "Evaluación Gratis" · "Agenda una Cita"<br/>• "Habla con Nuestros Abogados" — EN INGLÉS O ESPAÑOL | CONSULTA VIRTUAL<br/>• "Llama Gratis (305) 261-7000" · Revisión confidencial de casos<br/>• Disponibles 24/7</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ <strong>Nada de esto llega al snippet del SERP</strong> — el teléfono, "gratis" y "solo pagas si ganas" se quedan dentro de la página. Amanda Demanda sí pone su teléfono en la meta</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Inicie Su Consulta Gratuita"</div><div>1-844-DEMANDA (1-844-336-2632) · (305) 505-1000</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Teléfono vanity memorizable + teléfono local, y <strong>ambos refuerzan la marca de TV</strong></div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Llame hoy al (305) 770-6335"</div><div>+ "programar una consulta gratuita" · "¿Necesitas ayuda?" · "¡Póngase en contacto con nosotros hoy!"</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ CTA repetido como H2 — con solo 2 H2, la mitad de la estructura es conversión</div>
+          </td>
+          <td style="padding:10px 14px;border-bottom:1px solid #dce6f0;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ "Obtenga su revisión de caso GRATIS"</div><div>305-662-6178 · info@panterlaw.com · formulario en página<br/>"Consulta de abogado instantánea disponible 24 horas al día, 7 días a la semana"</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Triple vía: teléfono + email + formulario, repetido al inicio y al final</div>
+          </td>
+        </tr>
+
+        <tr style="background:#f8fbff;">
+          <td style="padding:10px 14px;font-weight:700;color:var(--navy);">Marcado de schema</td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#eef6ff;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Base sólida, pero le falta todo lo que genera rich results</div><div style="color:#059669;">✅ JSON-LD: LegalService · PostalAddress · AdministrativeArea · OfferCatalog · Offer · Service<br/>✅ Microdatos: FAQPage + 10 Question + 10 Answer<br/>✅ Microdatos VideoObject</div><div style="color:#c0392b;margin-top:4px;">❌ Sin <strong>AggregateRating</strong> — Amanda Demanda (4.9/500) y Panter (4.8/246) sí lo tienen<br/>❌ Sin BreadcrumbList<br/>❌ Sin Attorney / Person pese a nombrar 4 abogados<br/>❌ FAQPage en microdatos en vez de JSON-LD</div><div style="margin-top:6px;padding:6px 8px;background:#fff;border-left:3px solid #e67e22;font-size:11px;line-height:1.5;"><strong style="color:#e67e22;">⚠️ priceRange "$1500-$10000"</strong> contradice "Solo Pagas Si Ganas" — el mismo defecto sistémico de plantilla que ya se documentó en los gemelos de errores quirúrgicos, lesiones cerebrales y responsabilidad del producto. Panter demuestra la alternativa correcta: <code>priceRange: "Free Consultation / Contingency Fee"</code>.</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f0fdf4;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ Stack de entidad muy completo</div><div style="color:#059669;font-size:11px;">LocalBusiness · Organization · <strong>AggregateRating (4.9/500)</strong> · <strong>BreadcrumbList</strong> · Person · ContactPoint · WebSite · ImageObject · GeoCoordinates · City · AdministrativeArea · PostalAddress · DefinedTerm · EducationalOccupationalCredential</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin FAQPage pese a tener 8 preguntas como H2<br/>❌ <code>priceRange "$1000-$25000"</code> — mismo error que Gallardo</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#fff8f0;">
+            <div style="color:#e67e22;font-weight:700;margin-bottom:4px;">⚠️ Mínimo — solo lo básico</div><div style="font-size:11px;color:#666;">LegalService · PostalAddress · GeoCoordinates</div><div style="margin-top:4px;font-size:11px;color:#c0392b;">❌ Sin FAQPage, sin AggregateRating, sin BreadcrumbList</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ Sin <code>priceRange</code> contradictorio</div>
+          </td>
+          <td style="padding:10px 14px;vertical-align:top;font-size:12px;line-height:1.6;background:#f5f0ff;">
+            <div style="color:#059669;font-weight:700;margin-bottom:4px;">✅ El marcado más completo de los cuatro — el modelo a copiar</div><div style="color:#059669;font-size:11px;">LegalService · <strong>FAQPage + Question + Answer</strong> · <strong>AggregateRating (4.8/246)</strong> · <strong>BreadcrumbList</strong> · Organization · Person · WebPage · WebSite · Service · OfferCatalog · Offer · <strong>PriceSpecification</strong> · OpeningHoursSpecification · ContactPoint · Audience · CommunicateAction · GeoCoordinates</div><div style="margin-top:4px;font-size:11px;color:#059669;">✅ <code>priceRange: "Free Consultation / Contingency Fee"</code> — coherente con el mensaje de la página</div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ===== KEY TAKEAWAY BOX ===== -->
+    <div style="padding:16px 20px;background:#eef6ff;border-top:2px solid var(--teal);">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">🔑 Conclusión clave del análisis de keywords:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:12px;line-height:1.6;">
+        <div>
+          <strong>Por qué Panter (y los otros dos) capturan la demanda que Gallardo ya rankea pero no convierte:</strong><br/>
+          1. <strong>Publican resultados; Gallardo no publica ninguno.</strong> Panter lista casos con nombre y monto ($1.77M, $1.4M, $1.1M) bajo un H2 propio, STFB muestra $14M/$4.1M/$2.1M y Amanda Demanda un veredicto de $43M. La página de Gallardo no contiene <em>ni un solo número</em> — y la consulta literal "¿cuáles son los resultados de los principales bufetes en muerte por negligencia?" tiene <strong>157 impresiones en pos 6.05</strong><br/>
+          2. <strong>Tienen calificación y reseñas en el schema:</strong> Amanda Demanda 4.9 con 500 reseñas, Panter 4.8 con 246. Gallardo no tiene <code>AggregateRating</code> en esta página, así que su resultado sale sin estrellas mientras los competidores sí las muestran<br/>
+          3. <strong>Meten la conversión en el snippet, no solo en la página:</strong> Amanda Demanda pone el teléfono y "Consulta gratis" dentro de la meta descripción; STFB abre con "más de 100 años" y cierra con "¡Llame hoy!"; Panter escribe "GRATUITA" en mayúsculas. La meta de Gallardo solo <em>describe</em> el servicio<br/>
+          4. <strong>Panter cubre los dos clústeres con una sola URL:</strong> título "muerte injusta" + H1 "muerte por negligencia" + H2 "homicidio culposo". En GSC el clúster "muerte injusta / injustificada" vale <strong>1,943 impresiones</strong> en 47 consultas y rankea entre pos 5.96 y 13.96 — más volumen que la keyword objetivo<br/>
+          5. <strong>El <code>priceRange</code> de Panter refuerza el mensaje en vez de romperlo:</strong> "Free Consultation / Contingency Fee" frente al "$1500-$10000" de Gallardo, que contradice literalmente el "Solo Pagas Si Ganas" de su propia cabecera
+        </div>
+        <div>
+          <strong>Lo que Gallardo debe corregir (pos 3.89 en la keyword objetivo — y aun así 0 clics en 3 meses):</strong><br/>
+          1. <strong>Reescribir la meta descripción — máxima prioridad y de coste casi nulo:</strong> con <strong>pos 3.89</strong>, 148 impresiones y <strong>cero</strong> clics, el ranking ya está ganado y el snippet es el único punto de fuga. Propuesta: "¿Perdió a un familiar por negligencia en Miami? Solo paga si ganamos. Consulta gratis 24/7 en español — llame al (305) 261-7000." (pregunta empática + reversión de riesgo + teléfono, el patrón exacto de Amanda Demanda)<br/>
+          2. <strong>Acortar el título a ≤60 caracteres:</strong> "Abogados de Muerte por Negligencia en Miami | Muerte Injusta | Gallardo Law Firm" son ~79 y se trunca. Propuesta: "Abogados de Muerte Injusta en Miami | Gallardo Law Firm" — mantiene el clúster de 1,943 impresiones y cabe entero<br/>
+          3. <strong>Añadir prueba cuantificada a la página:</strong> veredictos y acuerdos con monto, conteo y calificación de reseñas como texto rastreable, años de ejercicio, y bios enlazadas de los 4 abogados ya nombrados. Es la brecha más grande frente a los tres competidores y la respuesta directa a las consultas de tipo "mejores bufetes / resultados" (<strong>239+157 impresiones en pos 3.39–6.05</strong>)<br/>
+          4. <strong>Resolver la canibalización:</strong> 14 URLs de Gallardo compiten por esta keyword, incluida una <strong>segunda página en español sobre el mismo tema</strong> (<code>/es/lesionados/muerte-por-negligencia-en-miami</code>, pos 19.97). Consolidar con 301 hacia esta URL o diferenciarlas con intención distinta, y enlazar internamente hacia la ganadora<br/>
+          5. <strong>Arreglar el schema:</strong> cambiar <code>priceRange "$1500-$10000"</code> por el patrón de Panter ("Free Consultation / Contingency Fee") o eliminarlo; migrar el FAQPage de microdatos a JSON-LD y subir las preguntas de <code>h4</code> a <code>h2</code>; añadir <strong>AggregateRating</strong>, BreadcrumbList y Attorney/Person. Y añadir dos FAQ nuevas que ataquen "¿cuáles son los mejores bufetes para casos de muerte por negligencia?" y "¿cómo comparo abogados para reclamos por muerte injusta?"
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end competitor table wrapper -->
+</div><!-- end competitor section -->
+
+<!-- ===== CAROUSEL ===== -->
+<div style="margin-top:20px;">
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #dce6f0;
+}
+.carousel-container {
+  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.carousel-slide {
+  display: none;
+  width: 100%;
+}
+.carousel-slide.active {
+  display: block;
+}
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-prev, .carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.carousel-dots {
+  text-align: center;
+  padding: 12px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #dce6f0;
+}
+.carousel-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
+.carousel {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.carousel-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.carousel-slide img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel-slide img:hover {
+  transform: scale(1.02);
+}
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.zoom-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+.zoom-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+.zoom-close:hover {
+  color: #bbb;
+}
+</style>
+<div class="carousel">
+  <div class="carousel-title">SEO Analysis Images from: AuthorityLabs, Semrush and Google.com</div>
+  <div class="carousel-container">
+    <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <div class="carousel-slide active">
+      <img src="img/abogados-de-muerte-por-negligencia-en-miami_authoritylabs.png" alt="Authority Labs SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/abogados-de-muerte-por-negligencia-en-miami_semrush.png" alt="Semrush SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <div class="carousel-slide">
+      <img src="img/abogados-de-muerte-por-negligencia-en-miami_google.png" alt="Google SEO Analysis" onclick="openZoom(this.src)"/>
+    </div>
+    <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+  <div class="carousel-dots">
+    <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+<div class="zoom-modal" id="zoomModal">
+  <div class="zoom-modal-content">
+    <span class="zoom-close" onclick="closeZoom()">&times;</span>
+    <img id="zoomImage" src="" alt="Zoomed Image"/>
+  </div>
+</div>
+<script>
+let currentIndex = 0;
+function changeSlide(n) {
+  showSlide(currentIndex += n);
+}
+function currentSlide(n) {
+  showSlide(currentIndex = n);
+}
+function showSlide(n) {
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.carousel-dot');
+  if (n >= slides.length) currentIndex = 0;
+  if (n < 0) currentIndex = slides.length - 1;
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  slides[currentIndex].classList.add('active');
+  dots[currentIndex].classList.add('active');
+}
+function openZoom(src) {
+  document.getElementById('zoomImage').src = src;
+  document.getElementById('zoomModal').classList.add('active');
+}
+function closeZoom() {
+  document.getElementById('zoomModal').classList.remove('active');
+}
+document.getElementById('zoomModal').addEventListener('click', function(e) {
+  if (e.target === this) closeZoom();
+});
+</script>
+</div>
+
+</main>
+</body>
+</html>

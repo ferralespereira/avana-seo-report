@@ -952,6 +952,38 @@ SURGICALERRORS_ES = [
     ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
 ]
 
+# Spanish twin of WRONGFULDEATH_EN (gallardolawyers.com/es/lesionados/...).
+# Unlike the surgical-errors twin, the exact target keyword DOES have demand
+# ("abogados de muerte por negligencia en miami", 148 impr, this URL at pos
+# 3.89) — but it converts 0 clicks. The bigger pools sit on the head term
+# without geo ("abogado de muerte por negligencia", 1,251 impr, pos 13.38) and
+# on the whole "muerte injusta / injustificada" cluster (1,943 impr across 47
+# queries, pos 5.96-13.96), so all three are tracked separately. The long
+# natural-language questions are tracked too: they rank pos 3.4-6.1 with zero
+# clicks, which is the AI-Overview absorption signature. Variants are lowercase
+# and accent-free because normalize() strips accents before matching.
+WRONGFULDEATH_ES = [
+    ("muerte por negligencia", ["muerte por negligencia", "muertes por negligencia", "caso de muerte por negligencia", "casos de muerte por negligencia", "muerte por casos de negligencia abogados"]),
+    ("muerte injusta / injustificada", ["muerte injusta", "muertes injustas", "muerte injustificada", "homicidio culposo", "perdida de vida"]),
+    ("abogados de muerte por negligencia en miami", ["abogados de muerte por negligencia en miami", "abogados de muerte por negligencia miami", "abogados muerte por negligencia miami", "miami abogados de muerte por negligencia"]),
+    ("abogado de muerte por negligencia en miami", ["abogado de muerte por negligencia en miami", "abogado de muerte por negligencia miami", "abogado muerte por negligencia miami", "abogado para casos de muerte por negligencia en miami"]),
+    ("abogado de muerte por negligencia", ["abogado de muerte por negligencia", "abogados de muerte por negligencia", "abogado por muerte por negligencia", "abogado para casos de muerte por negligencia"]),
+    ("abogado de muerte injusta", ["abogado de muerte injusta", "abogados de muerte injusta", "abogada de muerte injusta", "abogado por muerte injusta", "abogados especializados en muerte injusta", "center abogado de muerte injusta"]),
+    ("abogado de muerte injustificada", ["abogado de muerte injustificada", "abogados de muerte injustificada", "abogado por muerte injustificada"]),
+    ("muerte injusta miami / florida", ["abogado de muerte injusta miami", "abogado de muerte injusta en miami", "abogados de muerte injusta en miami", "abogado de muerte injusta en florida", "abogado de muerte injusta doral"]),
+    ("mejores bufetes / comparar abogados", ["cuales son los mejores bufetes para casos de muerte por negligencia", "cuales son los resultados de los principales bufetes en muerte por negligencia", "como comparo abogados para reclamos por muerte injusta", "mejor abogado de muerte por negligencia", "mejores abogados de muerte injusta"]),
+    ("quien puede presentar / sobrevivientes", ["quien se especializa en representar a familiares en casos de muerte por negligencia", "quien puede presentar una demanda por muerte injusta", "quien puede demandar por muerte por negligencia", "representante personal", "abogado para sobrevivientes miami"]),
+    ("demanda / reclamo por muerte injusta", ["demanda por muerte injusta", "demanda por muerte por negligencia", "reclamo por muerte injusta", "reclamos por muerte injusta", "como presentar una demanda por muerte injusta"]),
+    ("compensacion / acuerdo / cuanto vale", ["compensacion por muerte injusta", "indemnizacion por muerte injusta", "acuerdo por muerte injusta", "cuanto vale un caso de muerte injusta", "danos por muerte injusta"]),
+    ("estatuto de limitaciones / plazo", ["estatuto de limitaciones", "plazo para demandar", "cuanto tiempo tengo para presentar", "con que rapidez puede iniciar mi caso un abogado por muerte por negligencia"]),
+    ("muerte por negligencia medica", ["muerte por negligencia medica", "muerte por mala practica medica", "abogado de negligencia medica", "negligencia medica", "mala practica medica"]),
+    ("accidente fatal / mortal", ["accidente fatal", "accidente mortal", "accidente de auto fatal", "abogado de accidente fatal", "muerte en accidente de trabajo"]),
+    ("consulta gratis / honorarios", ["consulta gratis", "consulta gratuita", "evaluacion gratuita", "no gana no paga", "solo pagas si ganas", "sin honorarios", "honorarios de contingencia"]),
+    ("abogado de lesiones personales", ["abogado de lesiones personales", "abogados de lesiones personales", "abogado de lesiones"]),
+    ("miami fl / florida", ["miami", "miami fl", "miami florida", "sur de la florida", "sur de florida"]),
+    ("barrios de miami", ["miami beach", "south miami", "north miami", "north miami beach", "miami lakes", "miami gardens", "miami shores", "miami springs", "west miami", "downtown miami", "key biscayne", "aventura", "coral gables", "doral", "kendall", "hialeah", "brickell", "pinecrest", "coconut grove", "wynwood", "sunny isles", "bal harbour", "cutler bay", "palmetto bay", "homestead", "weston", "fort lauderdale", "hollywood", "pembroke pines", "miramar"]),
+]
+
 # ── Structured data (schema.org) rows ────────────────────────────────────────
 # Tracked the same way as keywords: each row counts how many times that JSON-LD
 # @type appears on a page (1 = present). Detected by PARSING the ld+json blocks
@@ -1123,6 +1155,8 @@ PAGES = {
         {"slug": "abogados-de-lesiones-cerebrales-en-miami", "lang": "es", "kw": BRAININJURY_ES},
     "https://gallardolawyers.com/es/lesionados/errores-quirurgicos-en-miami":
         {"slug": "errores-quirurgicos-en-miami", "lang": "es", "kw": SURGICALERRORS_ES},
+    "https://gallardolawyers.com/es/lesionados/abogados-de-muerte-por-negligencia-en-miami":
+        {"slug": "abogados-de-muerte-por-negligencia-en-miami", "lang": "es", "kw": WRONGFULDEATH_ES},
 }
 
 # Append the national/out-of-state row to every page (by language). Concatenate
